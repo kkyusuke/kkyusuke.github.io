@@ -1,0 +1,32 @@
+html { overflow-y: scroll;}
+pre { padding: 0;}
+pre code { padding: .5em; display: block;}
+nav.navbar { margin: 5px;}
+header.nav { margin-bottom: 50px;}
+.post-title { margin-top: 0;}
+.post-content { margin-bottom: 20px;}
+.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5 { margin-top: 20px; margin-bottom: 20px;}
+.post-tags,.post-rels { margin-bottom: 50px;}
+footer.copy { padding: 20px 0;}
+body{ font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;}
+p{font-size:12pt; line-height:175%;margin-bottom: 2em;}
+.post-content ul{
+  color: #668ad8;
+  border: dashed 2px #668ad8;
+  background: #f1f8ff;
+  padding: 0.5em 0.5em 0.5em 2em;}
+.post-content ul li{
+  line-height: 1.5;
+  padding: 0.5em 0;}
+table{border-collapse: collapse; white-space: nowrap; display: block; width: 100%; overflow: auto; word-break: keep-all; }
+th{/*width: 25%;*/padding: 6px;vertical-align: top;color: #fff; background-color: #555; border-left: 5px solid #337AB7; border-top: 1px solid #fff;}
+td{/*width: 25%;*/padding: 6px;background-color: #fff; border-bottom: 1px solid #999;
+border-left: 1px solid #999; border-right: 1px solid #999;}
+.post-content h2{position:relative;margin:0 -10px;padding:10px 20px;background:#45afe6;box-shadow:0 7px 7px 0 rgba(0,0,0,0.1);font-size: 180%;color: #ffffff;margin-top: 20px;margin-bottom: 20px;}
+img.page1{max-width:100%;height: auto;}
+@media screen and (max-width: 780px){.sns > li{width: 80px !important;margin: 0 7px 10px 0;}}
+iframe.twitter-share-button {width: 60px!important;}
+h3{color: #45afe6;}
+h4{border-left: 5px solid #45afe6; padding: 5px 10px;}
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }

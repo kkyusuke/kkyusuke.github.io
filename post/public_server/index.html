@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="gXQoBSKaki727pLqAXFBzBCg3NMxB05wy5QHZGJhKCY" />
+<meta charset="utf-8">
+<link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/>
+<link href='//www.gstatic.com' rel='dns-prefetch'/>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9557285789637667",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="https://www.yyyak.com/blog">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="宅内サーバを外部に公開する &middot; YuNext: Make&#43;">
+
+<meta property="og:site_name" content="YuNext: Make&#43;">
+
+<title>
+    
+    宅内サーバを外部に公開する
+    
+</title>
+
+
+
+
+
+<link rel="shortcut icon" href="https://www.yyyak.com/blog/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.yyyak.com/blog/index.xml">
+
+</head>
+<body>
+<div id="fb-root"></div>
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.yyyak.com/blog">YuNext: Make&#43;</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+                        <li><a href="https://www.yyyak.com/blog/tags">Tags</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kkyusuke" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post">
+
+            <header>
+                <div class="post-date">
+                    
+                    <time datetime="2016-04-20T00:38+09:00">
+                        2016.4.20 00:38
+                    </time>
+                </div>
+                <h1 class="post-title">
+                    <a href="https://www.yyyak.com/blog/post/public_server/">宅内サーバを外部に公開する</a>
+                </h1>
+            </header>
+
+            
+
+            <div class="post-content">
+                <p>宅内に設置したサーバに外部からアクセスする方法について説明します。
+</p>
+
+<h2 id="宅内サーバを公開するメリット">宅内サーバを公開するメリット</h2>
+
+<p>宅内にサーバを設置して公開するメリットとしては、以下のことが考えられます。</p>
+
+<ul>
+<li>外部にサーバを借りるお金がかからない</li>
+<li>自宅に保存してあるデータを簡単に公開できる。データ容量がほぼ無制限。</li>
+<li>お金をかけずにサーバ設置の練習をしたい</li>
+</ul>
+
+<p>サーバ管理者志望の方でも、月1000円ほどするVPSなどを借りて勉強するのは難しい方もいるかと思います。そういった方には、とりあえず自宅で設置してみて、一通りできるようになってから外部のものを借りるのは良いステップかと思います。
+また、写真や動画を公開したい人にとって、ディスク容量は非常に重要です。しかし、数TBものディスクを借りようとすると、それだけで月に数万円も払わなくてはなりません。その点、自宅サーバであればディスクは自分が購入した分だけ使用できるのでとても経済的です。</p>
+
+<p>ただし、デメリットもあります。</p>
+
+<ul>
+<li>プロバイダによって、宅内サーバ設置を禁止していることがある</li>
+<li>短期間で大容量のアップロードをする場合、プロバイダから契約解除される可能性がある</li>
+<li>VPSやレンタルサーバと違って、あらゆる問題に自分で対処する必要がある。（特にセキュリティ）</li>
+<li>セキュリティ的な問題が発生した場合、自宅内のあらゆるPCに影響が発生する</li>
+</ul>
+
+<p>プロバイダはサーバが設置されているかどうか分かるわけではないので、異様に大量の通信をしなければ問題ないでしょう。問題はセキュリティです。外部サーバでもセキュリティには注意しなくてはなりませんが、基幹部分のアップデートは自動で行われることが多いですし、通信内容をある程度監視して問題のあるトラフィックを通知してもらうこともできます。こういったサービスは一切受けられないので、しっかり自己責任で管理しなくてはなりません。最低限、ソフトウェアアップデートくらいはしっかりしないといけないでしょう。</p>
+
+<h2 id="外部からくる通信をすべて特定マシンに転送">外部からくる通信をすべて特定マシンに転送</h2>
+
+<p>とにかく標題のことができれば、サーバは完成です。IPアドレスであとはアクセスすればOKです。どのように設定するか以下に説明します。</p>
+
+<h3 id="dmz機能を利用">DMZ機能を利用</h3>
+
+<p>例えばフレッツ光の付属ルータ(PR-400ne)には、DMZ機能があります。DMZに特定マシンのIPアドレスを設定すると、外部からの新規の通信はすべてこのマシンに設定されます。以下のように設定します。</p>
+
+<p>詳細設定-&gt;高度な設定から「DMZホスト」を見つけて下さい。DMZホストの設置場所はLAN側にするのが都合が良いでしょう。これでDMZホストに設定されたPCはLANにアクセスしながら外部へも公開が可能になります。
+DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&rdquo;192.168.1.10&rdquo;をホストに設定しています。</p>
+
+<a href="/blog/images/DMZ.PNG" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/blog/images/DMZ.PNG" alt="" />
+</a>
+
+
+<h2 id="アクセス">アクセス</h2>
+
+<h3 id="ipアドレスでアクセス">IPアドレスでアクセス</h3>
+
+<p>自宅のIPアドレスが分かれば、DMZのマシンにアクセス出来ます。IPアドレスは、例えば<a href="https://www.cman.jp/network/support/go_access.cgi">このWEBページ</a>から確認できます。HTTPサーバなどを立ててみて確認しましょう。</p>
+
+<h3 id="ドメイン名でアクセス">ドメイン名でアクセス</h3>
+
+<p>IPアドレスは、固定サービスに加入しない限りは変更されますので、その場合にはダイナミックDNSを使いましょう。
+<a href="www.yyyak.com/blog/post/dynamic_router">こちらのポスト</a>を確認して下さい。</p>
+
+<p>以上です。</p>
+            </div>
+
+
+	    <script type="text/javascript">
+	      window.___gcfg = {lang: 'ja'};
+	      (function() {
+	      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	      po.src = 'https://apis.google.com/js/platform.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	      })();
+	    </script>
+	    <br>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/network">
+                            <i class="fa fa-tags"></i>
+                            network
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+
+            
+            
+            </aside>
+
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="https://www.yyyak.com/blog/post/aruite/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="https://www.yyyak.com/blog/post/linux_basic_cron/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/blog/post/vslinux/" class="list-group-item">Visual Studio ver15.7でのLinux開発</a>
+                    
+                    <a href="/blog/post/huawerwatch/" class="list-group-item">Huawei Watch2 Classic</a>
+                    
+                    <a href="/blog/post/wf100x/" class="list-group-item">WF-1000Xレビュー</a>
+                    
+                    <a href="/blog/post/braava/" class="list-group-item">ブラーバジェットでクイックルワイパーのシートを使う！</a>
+                    
+                    <a href="/blog/post/kairos2017/" class="list-group-item">Kairos Watch倒産したみたい</a>
+                    
+                    <a href="/blog/post/colormunki/" class="list-group-item">ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</a>
+                    
+                    <a href="/blog/post/network_check_linux/" class="list-group-item">インターネットに繋がらないときの５つのコマンド（Linux編）</a>
+                    
+                    <a href="/blog/post/firefox55/" class="list-group-item">Firefox55はどれくらい速くなった？</a>
+                    
+                    <a href="/blog/post/android_sec_compare/" class="list-group-item">Android各機種のアップデート頻度比較！</a>
+                    
+                    <a href="/blog/post/wnax1167gr/" class="list-group-item">WN-AX1167GRでv6プラスをやってみた</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/android" class="list-group-item">
+                        <span class="badge">7</span>
+                        android
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/ebook" class="list-group-item">
+                        <span class="badge">3</span>
+                        ebook
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/howto" class="list-group-item">
+                        <span class="badge">16</span>
+                        howto
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/linux" class="list-group-item">
+                        <span class="badge">12</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/make" class="list-group-item">
+                        <span class="badge">3</span>
+                        make
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/money" class="list-group-item">
+                        <span class="badge">1</span>
+                        money
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/movie" class="list-group-item">
+                        <span class="badge">1</span>
+                        movie
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/network" class="list-group-item">
+                        <span class="badge">8</span>
+                        network
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/research" class="list-group-item">
+                        <span class="badge">1</span>
+                        research
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/review" class="list-group-item">
+                        <span class="badge">23</span>
+                        review
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/windows" class="list-group-item">
+                        <span class="badge">7</span>
+                        windows
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2018  YuNext: Make&#43; </p>
+
+</footer>
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/lightbox.css"  />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/highlight.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/styles.css" />
+<script src="https://www.yyyak.com/blog/js/jquery-2.1.3.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.yyyak.com/blog/js/highlight-9.4.0.min.js"></script>
+<script async src="https://www.yyyak.com/blog/js/lightbox.js"></script>
+<script async src="https://www.yyyak.com/blog/js/bootstrap-3.3.1.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-65248081-1', 'auto');
+ga('send', 'pageview');</script>
+</body>
+</html>
+

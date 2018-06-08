@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="gXQoBSKaki727pLqAXFBzBCg3NMxB05wy5QHZGJhKCY" />
+<meta charset="utf-8">
+<link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/>
+<link href='//www.gstatic.com' rel='dns-prefetch'/>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9557285789637667",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="https://www.yyyak.com/blog">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Let&#39;sNote RZ4をWindows10にアップグレード &middot; YuNext: Make&#43;">
+
+<meta property="og:site_name" content="YuNext: Make&#43;">
+
+<title>
+    
+    Let&#39;sNote RZ4をWindows10にアップグレード
+    
+</title>
+
+
+
+
+
+<link rel="shortcut icon" href="https://www.yyyak.com/blog/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.yyyak.com/blog/index.xml">
+
+</head>
+<body>
+<div id="fb-root"></div>
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.yyyak.com/blog">YuNext: Make&#43;</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+                        <li><a href="https://www.yyyak.com/blog/tags">Tags</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kkyusuke" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post">
+
+            <header>
+                <div class="post-date">
+                    
+                    <time datetime="2015-12-16T00:43+09:00">
+                        2015.12.16 00:43
+                    </time>
+                </div>
+                <h1 class="post-title">
+                    <a href="https://www.yyyak.com/blog/post/lets_rz/">Let&#39;sNote RZ4をWindows10にアップグレード</a>
+                </h1>
+            </header>
+
+            
+
+            <div class="post-content">
+                <p>Let&rsquo;s Note RZ4(2015春モデル)をWindows10にアップグレードしました。
+快適に利用するには設定が必要でしたので、まとめました。
+</p>
+
+<h2 id="rzシリーズは使い方にコツが必要">RZシリーズは使い方にコツが必要？</h2>
+
+<p>Let&rsquo;s Note RZシリーズはCoreMプロセッサを搭載した超軽量モバイルノートブック。
+745gは確かに圧倒的な軽さで、「今日は重いのが嫌だからPC持っていくのやめようかな」みたいな思考がなくなります。
+CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイルの編集などまでなら余裕でこなしてくれる性能を持っています。</p>
+
+<p>ただ、バッテリーの持ちがあまり良くないです・・・。特にWindows10にアップデートしてからはその傾向が顕著になってしまっていました。以下が挙げられます。
+* バッテリーがフル充電から3時間程度しか持たない
+* バッテリー表示が不正確。残量80%で、残り30分とか言う
+* 電源管理をモバイルにすると異様に動作が遅い</p>
+
+<p>この状態で2ヶ月くらい使い続けたのですが、さすがに不便だったので設定を見直してみました。</p>
+
+<h2 id="常駐ソフトウェアを減らす">常駐ソフトウェアを減らす</h2>
+
+<p>Windows10には常駐ソフトウェアのON/OFFを設定する画面があります。
+「スタートボタン → 設定 → プライバシー → バックグラウンドアプリ」を開いてみましょう。</p>
+
+<a href="/blog/images/background.png" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/blog/images/background.png" alt="" />
+</a>
+
+
+<p>初期設定では、すべてのアプリにバックグラウンド実行が許可されていました。いらないものはすべてOFFにしてしまいましょう。</p>
+
+<h2 id="windows-searchを無効にする">Windows Searchを無効にする</h2>
+
+<p>常駐ソフトウェアを切るだけでかなり電池持ちは長くなりますが、さらにWindows Searchを無効にすると電池持ちが長くなります。</p>
+
+<p>ウィンドウズボダンを右クリックして「コントロールパネル」を起動しましょう。
+検索バーで&rdquo;service&rdquo;を検索すると、以下のような画面になるはずです。</p>
+
+<a href="/blog/images/services.PNG" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/blog/images/services.PNG" alt="" />
+</a>
+
+
+<p>ここで、「ローカルサービスの表示」をクリックします。</p>
+
+<a href="/blog/images/local_services.png" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/blog/images/local_services.png" alt="" />
+</a>
+
+
+<p>ここから&rdquo;Windows Search&rdquo;を探して、プロパティから「無効」にします。</p>
+
+<p>この操作を行うと、スタートボタンからの検索はほとんど出来なくなってしまいます。Windows10は検索機能がウリのOSでもあるのでこの機能を無効化するかどうかはよく考えましょう。本当に必要のない人は無効にした方が快適になると思います。</p>
+
+<h2 id="2つの設定の効果">2つの設定の効果</h2>
+
+<p>私の場合、この2つを行うだけでかなり電池持ちが改善しました。
+常にCPU使用率が90%以上だったのが、10％未満で安定するようになっています。ファンもうるさくなくなりました。
+試してみると良いと思います。</p>
+            </div>
+
+
+	    <script type="text/javascript">
+	      window.___gcfg = {lang: 'ja'};
+	      (function() {
+	      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	      po.src = 'https://apis.google.com/js/platform.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	      })();
+	    </script>
+	    <br>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/review">
+                            <i class="fa fa-tags"></i>
+                            review
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/windows">
+                            <i class="fa fa-tags"></i>
+                            Windows
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/huawerwatch/">Huawei Watch2 Classic</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/wf100x/">WF-1000Xレビュー</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/kairos2017/">Kairos Watch倒産したみたい</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/colormunki/">ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/firefox55/">Firefox55はどれくらい速くなった？</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/android_sec_compare/">Android各機種のアップデート頻度比較！</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/wnax1167gr/">WN-AX1167GRでv6プラスをやってみた</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/tmobile/">海外でSIM入手（アメリカ、T-mobile、年に数回行く人編）</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/airtel/">海外でSIM入手（インド・ムンバイ、Airtel）</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/android_secutiry/">Android Security Bulletinsについて</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/sandisk_wireless/">SanDisk ワイヤレスメディアドライブのレビュー</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/android_sec/">Androidにもセキュリティソフトが必要な理由</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/sonicare_easyclena/">Sonicareのイージークリーンを購入してみた</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/aruite_3month/">docomoの『歩いておトク』は2ヶ月で解約がおすすめ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/so01g_6/">ドコモ版Xperia Z3のAndroid6.0は電池の心配ナシ！</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/kairos2016/">Kairos Watch現状報告2016</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/aruite/">docomoの『歩いておトク』は結構ポイントがたまる！</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/interlink/">インターリンクの回線速度</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/kairos/">スマートウォッチ Kairos Watchを1週間使って</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/wddm_nvidia/">Windows10にしたらデュアルGPUがおかしい！</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/netflix/">Netflixを1ヶ月間使ってみた</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/iijhikari/">ビック光 フレッツ光から乗り換えました！</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/sonyreader/">電子書籍リーダのすすめ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+
+            
+            
+            </aside>
+
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="https://www.yyyak.com/blog/post/smt/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="https://www.yyyak.com/blog/post/credit_us/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/blog/post/vslinux/" class="list-group-item">Visual Studio ver15.7でのLinux開発</a>
+                    
+                    <a href="/blog/post/huawerwatch/" class="list-group-item">Huawei Watch2 Classic</a>
+                    
+                    <a href="/blog/post/wf100x/" class="list-group-item">WF-1000Xレビュー</a>
+                    
+                    <a href="/blog/post/braava/" class="list-group-item">ブラーバジェットでクイックルワイパーのシートを使う！</a>
+                    
+                    <a href="/blog/post/kairos2017/" class="list-group-item">Kairos Watch倒産したみたい</a>
+                    
+                    <a href="/blog/post/colormunki/" class="list-group-item">ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</a>
+                    
+                    <a href="/blog/post/network_check_linux/" class="list-group-item">インターネットに繋がらないときの５つのコマンド（Linux編）</a>
+                    
+                    <a href="/blog/post/firefox55/" class="list-group-item">Firefox55はどれくらい速くなった？</a>
+                    
+                    <a href="/blog/post/android_sec_compare/" class="list-group-item">Android各機種のアップデート頻度比較！</a>
+                    
+                    <a href="/blog/post/wnax1167gr/" class="list-group-item">WN-AX1167GRでv6プラスをやってみた</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/android" class="list-group-item">
+                        <span class="badge">7</span>
+                        android
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/ebook" class="list-group-item">
+                        <span class="badge">3</span>
+                        ebook
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/howto" class="list-group-item">
+                        <span class="badge">16</span>
+                        howto
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/linux" class="list-group-item">
+                        <span class="badge">12</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/make" class="list-group-item">
+                        <span class="badge">3</span>
+                        make
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/money" class="list-group-item">
+                        <span class="badge">1</span>
+                        money
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/movie" class="list-group-item">
+                        <span class="badge">1</span>
+                        movie
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/network" class="list-group-item">
+                        <span class="badge">8</span>
+                        network
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/research" class="list-group-item">
+                        <span class="badge">1</span>
+                        research
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/review" class="list-group-item">
+                        <span class="badge">23</span>
+                        review
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/windows" class="list-group-item">
+                        <span class="badge">7</span>
+                        windows
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2018  YuNext: Make&#43; </p>
+
+</footer>
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/lightbox.css"  />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/highlight.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/styles.css" />
+<script src="https://www.yyyak.com/blog/js/jquery-2.1.3.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.yyyak.com/blog/js/highlight-9.4.0.min.js"></script>
+<script async src="https://www.yyyak.com/blog/js/lightbox.js"></script>
+<script async src="https://www.yyyak.com/blog/js/bootstrap-3.3.1.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-65248081-1', 'auto');
+ga('send', 'pageview');</script>
+</body>
+</html>
+

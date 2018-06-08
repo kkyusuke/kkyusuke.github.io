@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="gXQoBSKaki727pLqAXFBzBCg3NMxB05wy5QHZGJhKCY" />
+<meta charset="utf-8">
+<link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/>
+<link href='//www.gstatic.com' rel='dns-prefetch'/>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9557285789637667",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="https://www.yyyak.com/blog">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux基礎講座：ユーザの追加(CUI) &middot; YuNext: Make&#43;">
+
+<meta property="og:site_name" content="YuNext: Make&#43;">
+
+<title>
+    
+    Linux基礎講座：ユーザの追加(CUI)
+    
+</title>
+
+
+
+
+
+<link rel="shortcut icon" href="https://www.yyyak.com/blog/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.yyyak.com/blog/index.xml">
+
+</head>
+<body>
+<div id="fb-root"></div>
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.yyyak.com/blog">YuNext: Make&#43;</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+                        <li><a href="https://www.yyyak.com/blog/tags">Tags</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kkyusuke" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post">
+
+            <header>
+                <div class="post-date">
+                    
+                    <time datetime="2016-03-13T12:07+09:00">
+                        2016.3.13 12:07
+                    </time>
+                </div>
+                <h1 class="post-title">
+                    <a href="https://www.yyyak.com/blog/post/linux_basic_useradd/">Linux基礎講座：ユーザの追加(CUI)</a>
+                </h1>
+            </header>
+
+            
+
+            <div class="post-content">
+                <p>LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。
+</p>
+
+<h2 id="linuxのユーザ概念">Linuxのユーザ概念</h2>
+
+<p>CUIでの操作を説明する前に、Linuxのユーザ管理手法について簡単に説明します。</p>
+
+<h3 id="ユーザとグループ">ユーザとグループ</h3>
+
+<p>LinuxにはWindowsと同じように複数ユーザが同じマシンを用いる仕組みが導入されています。
+ユーザの識別は「ユーザ名」で行われていて、各ユーザは「パスワード」を設定することが出来ます。</p>
+
+<p>Linuxではさらに利便性を向上させるため「グループ」という仕組みも導入しており、各ユーザは好きなグループに入ることができます。
+グループには「グループ名」と「グループパスワード」があり、ユーザは複数のグループに所属することが可能です。
+ファイルのアクセス権をグループに付与することもできるので、簡単に同じPC上の他ユーザとデータを共有することができます。</p>
+
+<p>Windowsにも複数ユーザのアクセス管理を行う仕組みはありますが、グループはあまり良く登場する概念ではありませんね。</p>
+
+<h3 id="ファイル構成">ファイル構成</h3>
+
+<p>Linuxではユーザ名やパスワードはテキスト形式のファイルに保存されています。
+それぞれ、以下のファイルを参照してみて下さい。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="left">ファイル名</th>
+<th align="left">説明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">ユーザ名</td>
+<td align="left">/etc/passwd</td>
+<td align="left">ユーザ名やホームディレクトリが記述されている</td>
+</tr>
+
+<tr>
+<td align="center">ユーザパスワード</td>
+<td align="left">/etc/shadow</td>
+<td align="left">ハッシュ化されたパスワードとハッシュアルゴリズムが記載されている</td>
+</tr>
+
+<tr>
+<td align="center">グループ名</td>
+<td align="left">/etc/group</td>
+<td align="left">グループ名や所属するユーザが記述されている</td>
+</tr>
+
+<tr>
+<td align="center">グループパスワード</td>
+<td align="left">/etc/gshadow</td>
+<td align="left">グループパスワードが記述されている</td>
+</tr>
+</tbody>
+</table>
+
+<p>以前はpasswdファイル中にパスワードもハッシュ化された上で保存されていましたが、最近のディストリビュションではすべて別ファイルに保存されます。また、OSを新しくインストールした場合、これらのファイルをコピーすればユーザ情報を復活することが出来ます。</p>
+
+<h2 id="cuiでユーザ追加">CUIでユーザ追加</h2>
+
+<p>新たなユーザ&rdquo;newuser&rdquo;を追加するには、以下のようにコマンドラインに入力します。
+これでユーザが追加され、ホームディレクトリなども自動で作成されます。</p>
+
+<pre><code># adduser newuser
+</code></pre>
+
+<p>ユーザを作成するだけでは、パスワードがありません。パスワードを設定するには、以下のようなコマンドを実行します。
+対話形式でパスワードを2度聞かれますので、同じ文字列を入力してパスワードを設定しましょう。</p>
+
+<pre><code># passwd newuser
+</code></pre>
+            </div>
+
+
+	    <script type="text/javascript">
+	      window.___gcfg = {lang: 'ja'};
+	      (function() {
+	      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	      po.src = 'https://apis.google.com/js/platform.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	      })();
+	    </script>
+	    <br>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/linux">
+                            <i class="fa fa-tags"></i>
+                            Linux
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/howto">
+                            <i class="fa fa-tags"></i>
+                            HowTo
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/network_check_linux/">インターネットに繋がらないときの５つのコマンド（Linux編）</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/texlipse/">Texlipse EclipseでTexを書く</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/egit_slow/">EGitでCommit/PushするとEclipseがおかしくなる</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/gmail_pop3/">GmailのPOP3受信をリアルタイムに</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_cron/">Linux基礎講座：定期的なプログラムの実行(cron)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_permission/">Linux基礎講座：パーミッション</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_app/">Linux基礎講座：アプリケーション管理(yum/aptitude)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_ssh/">Linux基礎講座：SSH(外部サーバへのアクセス)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic/">Linux基礎講座目次</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/smt/">SMT2ファイルの書き方</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/dns_centos7/">unboundとbind9の違い</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/router_nat/">ひかり回線が繋がらなくなる問題</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/push/">Wifi環境でPUSH通知が届かない</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/hugo/">Hugoのセットアップ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/nvidia_linux/">FedoraでNVIDIAの純正ドライバを使う</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+
+            
+            
+            </aside>
+
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="https://www.yyyak.com/blog/post/linux_basic_app/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="https://www.yyyak.com/blog/post/linux_basic_ssh/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/blog/post/vslinux/" class="list-group-item">Visual Studio ver15.7でのLinux開発</a>
+                    
+                    <a href="/blog/post/huawerwatch/" class="list-group-item">Huawei Watch2 Classic</a>
+                    
+                    <a href="/blog/post/wf100x/" class="list-group-item">WF-1000Xレビュー</a>
+                    
+                    <a href="/blog/post/braava/" class="list-group-item">ブラーバジェットでクイックルワイパーのシートを使う！</a>
+                    
+                    <a href="/blog/post/kairos2017/" class="list-group-item">Kairos Watch倒産したみたい</a>
+                    
+                    <a href="/blog/post/colormunki/" class="list-group-item">ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</a>
+                    
+                    <a href="/blog/post/network_check_linux/" class="list-group-item">インターネットに繋がらないときの５つのコマンド（Linux編）</a>
+                    
+                    <a href="/blog/post/firefox55/" class="list-group-item">Firefox55はどれくらい速くなった？</a>
+                    
+                    <a href="/blog/post/android_sec_compare/" class="list-group-item">Android各機種のアップデート頻度比較！</a>
+                    
+                    <a href="/blog/post/wnax1167gr/" class="list-group-item">WN-AX1167GRでv6プラスをやってみた</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/android" class="list-group-item">
+                        <span class="badge">7</span>
+                        android
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/ebook" class="list-group-item">
+                        <span class="badge">3</span>
+                        ebook
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/howto" class="list-group-item">
+                        <span class="badge">16</span>
+                        howto
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/linux" class="list-group-item">
+                        <span class="badge">12</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/make" class="list-group-item">
+                        <span class="badge">3</span>
+                        make
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/money" class="list-group-item">
+                        <span class="badge">1</span>
+                        money
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/movie" class="list-group-item">
+                        <span class="badge">1</span>
+                        movie
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/network" class="list-group-item">
+                        <span class="badge">8</span>
+                        network
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/research" class="list-group-item">
+                        <span class="badge">1</span>
+                        research
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/review" class="list-group-item">
+                        <span class="badge">23</span>
+                        review
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/windows" class="list-group-item">
+                        <span class="badge">7</span>
+                        windows
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2018  YuNext: Make&#43; </p>
+
+</footer>
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/lightbox.css"  />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/highlight.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/styles.css" />
+<script src="https://www.yyyak.com/blog/js/jquery-2.1.3.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.yyyak.com/blog/js/highlight-9.4.0.min.js"></script>
+<script async src="https://www.yyyak.com/blog/js/lightbox.js"></script>
+<script async src="https://www.yyyak.com/blog/js/bootstrap-3.3.1.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-65248081-1', 'auto');
+ga('send', 'pageview');</script>
+</body>
+</html>
+

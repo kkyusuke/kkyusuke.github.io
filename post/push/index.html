@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="gXQoBSKaki727pLqAXFBzBCg3NMxB05wy5QHZGJhKCY" />
+<meta charset="utf-8">
+<link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/>
+<link href='//www.gstatic.com' rel='dns-prefetch'/>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9557285789637667",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="https://www.yyyak.com/blog">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wifi環境でPUSH通知が届かない &middot; YuNext: Make&#43;">
+
+<meta property="og:site_name" content="YuNext: Make&#43;">
+
+<title>
+    
+    Wifi環境でPUSH通知が届かない
+    
+</title>
+
+
+
+
+
+<link rel="shortcut icon" href="https://www.yyyak.com/blog/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.yyyak.com/blog/index.xml">
+
+</head>
+<body>
+<div id="fb-root"></div>
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.yyyak.com/blog">YuNext: Make&#43;</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+                        <li><a href="https://www.yyyak.com/blog/tags">Tags</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kkyusuke" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post">
+
+            <header>
+                <div class="post-date">
+                    
+                    <time datetime="2015-07-27T04:05+09:00">
+                        2015.7.27 04:05
+                    </time>
+                </div>
+                <h1 class="post-title">
+                    <a href="https://www.yyyak.com/blog/post/push/">Wifi環境でPUSH通知が届かない</a>
+                </h1>
+            </header>
+
+            
+
+            <div class="post-content">
+                <p>何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。
+</p>
+
+<h2 id="準備-pushの仕組み">準備 ― PUSHの仕組み ―</h2>
+
+<p>メールやSNSの通知はリアルタイムで来ることが当たり前になっていますが、どのような仕組みになっているのでしょうか。もし各端末が5秒おきとかに通知の有無をサーバに問い合わせたりしたら、サーバの負荷もネットワーク負荷も大変そうです。</p>
+
+<p>PUSH通信では、Googleのサーバと通信状態を保持しておき、何か通知事項があったらすぐに端末へパケットを投げられる状態を保っておく工夫をしています。30分に1回だけGoogleのサーバにKeepAlive信号を送信し、わざわざ端末から伺いを立てなくても良いようになっているのです。例えば以下のログは、同一のAndroid端末が30分おきに特定のIPアドレスへ通信をしていることが分かります。</p>
+
+<pre><code>Aug  7 14:30:58 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=43981 DF PROTO=TCP SPT=56899 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 15:01:11 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=74.125.204.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=22546 DF PROTO=TCP SPT=34188 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 15:31:41 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=27676 DF PROTO=TCP SPT=44014 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 16:02:09 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=63798 DF PROTO=TCP SPT=49070 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=12610 DF PROTO=TCP SPT=46566 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+
+</code></pre>
+
+<p>逆にこのKeepAlive通知がうまく伝わっていないと、GoogleからKeepAliveを通知することができません。Wifi環境でPUSH通知が受信できない場合、この仕組みを阻害してしまう設定がされているかもしれません。</p>
+
+<h2 id="設定を見直そう-pr-400neの場合">設定を見直そう  ― PR-400NEの場合 ―</h2>
+
+<p>多くの家庭では、1つのネットワーク契約で複数の端末が同時に利用できるようにしているはずです。これをやってくれるルータは、各端末がどんな通信をしているか把握しながら、外部からの通信を各端末に配信しています。</p>
+
+<p>もし、誰がどこと通信しているか記憶しておく時間の長さの設定が30分よりも短いと、PUSH通信がうまく行きません。SPI(Stateful Packet Inspection)設定を変更し、30分(1800秒)よりも長く通信が保持できるようにしましょう。</p>
+
+<ul>
+<li>まずは設定画面にアクセスです。<a href="http://192.168.0.1">http://192.168.0.1</a> などにアクセスしましょう。</li>
+</ul>
+
+<p><img src="/images/pr400ne_1.png" alt="" /></p>
+
+<ul>
+<li>SPI設定を探します。</li>
+</ul>
+
+<p><img src="/images/pr400ne_2.png" alt="" /></p>
+
+<ul>
+<li>TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。</li>
+</ul>
+
+<p>~~<br>[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。<a href="http://www.yyyak.com/blog/post/router_nat">こちらの投稿</a>を参考にどうぞ。</p>
+
+<p><img src="/images/pr400ne_3.png" alt="" /></p>
+
+<p>以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。</p>
+            </div>
+
+
+	    <script type="text/javascript">
+	      window.___gcfg = {lang: 'ja'};
+	      (function() {
+	      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	      po.src = 'https://apis.google.com/js/platform.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	      })();
+	    </script>
+	    <br>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/network">
+                            <i class="fa fa-tags"></i>
+                            Network
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/android">
+                            <i class="fa fa-tags"></i>
+                            Android
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://www.yyyak.com/blog/tags/howto">
+                            <i class="fa fa-tags"></i>
+                            HowTo
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                
+                
+                <h3>Related Post</h3>
+                <ul class="post-rels">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/network_check_linux/">インターネットに繋がらないときの５つのコマンド（Linux編）</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/texlipse/">Texlipse EclipseでTexを書く</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/egit_slow/">EGitでCommit/PushするとEclipseがおかしくなる</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/gmail_pop3/">GmailのPOP3受信をリアルタイムに</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/dualpdf/">DualPDF</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_cron/">Linux基礎講座：定期的なプログラムの実行(cron)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/dynamic_router/">ルータのダイナミックDNS対応</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_permission/">Linux基礎講座：パーミッション</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_app/">Linux基礎講座：アプリケーション管理(yum/aptitude)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_useradd/">Linux基礎講座：ユーザの追加(CUI)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic_ssh/">Linux基礎講座：SSH(外部サーバへのアクセス)</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/linux_basic/">Linux基礎講座目次</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/interlink/">インターリンクの回線速度</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/port_open/">ポート開放の仕組みと設定方法</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/smt/">SMT2ファイルの書き方</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/dns_centos7/">unboundとbind9の違い</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/router_nat/">ひかり回線が繋がらなくなる問題</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/iijhikari/">ビック光 フレッツ光から乗り換えました！</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/hugo/">Hugoのセットアップ</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="https://www.yyyak.com/blog/post/nvidia_linux/">FedoraでNVIDIAの純正ドライバを使う</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+
+            
+            
+            </aside>
+
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous"><a href="https://www.yyyak.com/blog/post/iijhikari/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="https://www.yyyak.com/blog/post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="https://www.yyyak.com/blog/post/ebook2015/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/blog/post/vslinux/" class="list-group-item">Visual Studio ver15.7でのLinux開発</a>
+                    
+                    <a href="/blog/post/huawerwatch/" class="list-group-item">Huawei Watch2 Classic</a>
+                    
+                    <a href="/blog/post/wf100x/" class="list-group-item">WF-1000Xレビュー</a>
+                    
+                    <a href="/blog/post/braava/" class="list-group-item">ブラーバジェットでクイックルワイパーのシートを使う！</a>
+                    
+                    <a href="/blog/post/kairos2017/" class="list-group-item">Kairos Watch倒産したみたい</a>
+                    
+                    <a href="/blog/post/colormunki/" class="list-group-item">ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</a>
+                    
+                    <a href="/blog/post/network_check_linux/" class="list-group-item">インターネットに繋がらないときの５つのコマンド（Linux編）</a>
+                    
+                    <a href="/blog/post/firefox55/" class="list-group-item">Firefox55はどれくらい速くなった？</a>
+                    
+                    <a href="/blog/post/android_sec_compare/" class="list-group-item">Android各機種のアップデート頻度比較！</a>
+                    
+                    <a href="/blog/post/wnax1167gr/" class="list-group-item">WN-AX1167GRでv6プラスをやってみた</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/android" class="list-group-item">
+                        <span class="badge">7</span>
+                        android
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/ebook" class="list-group-item">
+                        <span class="badge">3</span>
+                        ebook
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/howto" class="list-group-item">
+                        <span class="badge">16</span>
+                        howto
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/linux" class="list-group-item">
+                        <span class="badge">12</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/make" class="list-group-item">
+                        <span class="badge">3</span>
+                        make
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/money" class="list-group-item">
+                        <span class="badge">1</span>
+                        money
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/movie" class="list-group-item">
+                        <span class="badge">1</span>
+                        movie
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/network" class="list-group-item">
+                        <span class="badge">8</span>
+                        network
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/research" class="list-group-item">
+                        <span class="badge">1</span>
+                        research
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/review" class="list-group-item">
+                        <span class="badge">23</span>
+                        review
+                    </a>
+                    
+                    
+                    <a href="https://www.yyyak.com/blog/tags/windows" class="list-group-item">
+                        <span class="badge">7</span>
+                        windows
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2018  YuNext: Make&#43; </p>
+
+</footer>
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/lightbox.css"  />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/highlight.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://www.yyyak.com/blog/css/styles.css" />
+<script src="https://www.yyyak.com/blog/js/jquery-2.1.3.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.yyyak.com/blog/js/highlight-9.4.0.min.js"></script>
+<script async src="https://www.yyyak.com/blog/js/lightbox.js"></script>
+<script async src="https://www.yyyak.com/blog/js/bootstrap-3.3.1.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-65248081-1', 'auto');
+ga('send', 'pageview');</script>
+</body>
+</html>
+

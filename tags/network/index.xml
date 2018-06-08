@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on YuNext: Make&#43;</title>
+    <link>https://www.yyyak.com/blog/tags/network/</link>
+    <description>Recent content in Network on YuNext: Make&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 20 Apr 2016 00:38:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.yyyak.com/blog/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>宅内サーバを外部に公開する</title>
+      <link>https://www.yyyak.com/blog/post/public_server/</link>
+      <pubDate>Wed, 20 Apr 2016 00:38:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/public_server/</guid>
+      <description>&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ルータのダイナミックDNS対応</title>
+      <link>https://www.yyyak.com/blog/post/dynamic_router/</link>
+      <pubDate>Sat, 19 Mar 2016 12:38:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/dynamic_router/</guid>
+      <description>&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
+無線LANルータの主なメーカがどうのような対応をしているのかまとめました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>インターリンクの回線速度</title>
+      <link>https://www.yyyak.com/blog/post/interlink/</link>
+      <pubDate>Tue, 16 Feb 2016 13:00:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/interlink/</guid>
+      <description>ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。 インターリンクという会社です。 契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。 測定はここで行っていて、茨城県南、精度高、圧縮率普通で計測しています。
+2016/03/21 19:10 2016/03/04 22:10 2016/02/16 22:00 2016/02/15 20:00 </description>
+    </item>
+    
+    <item>
+      <title>ポート開放の仕組みと設定方法</title>
+      <link>https://www.yyyak.com/blog/post/port_open/</link>
+      <pubDate>Thu, 04 Feb 2016 12:07:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/port_open/</guid>
+      <description>ポート開放の仕組みを説明した上で、 Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。 なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で ポート開放することが出来るはずです。
+ポート開放とは ポート開放と一言になっていますが、実際には複数の仕組みの組み合わせです。 何をすることを指すのか、しっかり把握しましょう。
+目的 そもそもポート開放は、特定のポートに来る通信を特定の端末に転送する設定のことを言います。
+ポート開放していないルータは、すべての通信はLAN内の端末から開始されることを前提としています。 だから、これまでの通信履歴から「外からの通信をどの内部端末に転送すれば良いか」が分かります。 （一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）
+しかし、通信履歴から転送の相手先を決める手法は、通信速度が重要となるWEBゲームなどでは適さない場合があります。 そこで、決まったポートを使う通信は「あらかじめルート設定を済ませておこう」ということになるわけです。これがポート開放です。
+つまりポート開放は「IPアドレスの固定＋ルート情報の固定」という2つの設定をして初めて出来ることなのです！
+やるべきこと やるべきことは3つあります。 - ルータのDHCP設定を変更 - 端末の設定を変更 - ルート情報固定（狭義のポート開放）
+最初の2つがIPアドレスの固定のための設定です。 PCを使っていて、普段はわざわざIPアドレスを指定はしていないと思います。 これは、ルータがDHCPというサービスを提供していて、使われていないIPを自動で割り当ててくれているからです。 端末のIPを固定する場合には、まずルータの設定を変更して、自動割り当て範囲内に固定するIPが入らないようにしましょう。 その上で、端末の設定でIPアドレスを固定します。
+なお高価なルータでは、特定のMACアドレスに対して特定のIPを割り当てることが可能です。家庭用でそのような機能を提供してくれるものは少ないようなので、ここでは割愛します。
+作業1：ルータのDHCP設定を変更 まず、ルータのDHCP機能の設定を確認します。ブラウザから以下のページにアクセスします。 ntt.setup ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。
+DHCPサーバこそがIPアドレスの自動割り当てを行っています。たとえば以下のように設定すると、自動割り当て区間が192.168.1.2~192.168.1.81になります。 「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。
+作業2：端末のIPアドレスを固定 さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。
+以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。
+さて、表示された画面から「インターネットプロトコルバージョン4(TCP/IPv4)」を選択し、プロパティボタンを押します。
+以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&amp;rdquo;255.255.255.0&amp;rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。
+作業3：ポート開放 さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。
+ここで、ポート番号・転送先のIPアドレスを設定すればOK。プロトコルは適宜選択ですが、TCPやUDPが一般的でしょうか。ソフトウェアによって違うのでプロトコルはいくつか試してみてください。
+おわりに ポート開放は以上の設定で終了です。 当然ですが、ポート開放によって初出がLAN内でない通信が内部に中継されることになるので、セキュリティは低下します。転送先のマシンにウイルス対策ソフトを導入するのはもちろん、必要のないポート転送の設定は無効にしておくなど、注意しましょう。</description>
+    </item>
+    
+    <item>
+      <title>unboundとbind9の違い</title>
+      <link>https://www.yyyak.com/blog/post/dns_centos7/</link>
+      <pubDate>Sun, 25 Oct 2015 12:47:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/dns_centos7/</guid>
+      <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
+2つの違いを調べました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ひかり回線が繋がらなくなる問題</title>
+      <link>https://www.yyyak.com/blog/post/router_nat/</link>
+      <pubDate>Sun, 11 Oct 2015 08:30:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/router_nat/</guid>
+      <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
+&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ビック光 フレッツ光から乗り換えました！</title>
+      <link>https://www.yyyak.com/blog/post/iijhikari/</link>
+      <pubDate>Wed, 23 Sep 2015 11:02:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/iijhikari/</guid>
+      <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
+速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
+
+&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;http://netspeed-tokyo.studio-radish.com&lt;/a&gt;
+測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wifi環境でPUSH通知が届かない</title>
+      <link>https://www.yyyak.com/blog/post/push/</link>
+      <pubDate>Mon, 27 Jul 2015 04:05:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/push/</guid>
+      <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

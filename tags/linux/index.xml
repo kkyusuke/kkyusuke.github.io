@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on YuNext: Make&#43;</title>
+    <link>https://www.yyyak.com/blog/tags/linux/</link>
+    <description>Recent content in Linux on YuNext: Make&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 24 Sep 2017 06:20:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.yyyak.com/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>インターネットに繋がらないときの５つのコマンド（Linux編）</title>
+      <link>https://www.yyyak.com/blog/post/network_check_linux/</link>
+      <pubDate>Sun, 24 Sep 2017 06:20:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/network_check_linux/</guid>
+      <description>&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Texlipse EclipseでTexを書く</title>
+      <link>https://www.yyyak.com/blog/post/texlipse/</link>
+      <pubDate>Sun, 29 Jan 2017 04:56:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/texlipse/</guid>
+      <description>TexlipseというEclipseプラグインの使い方を解説します。 皆さんTexを書く時にはどんな環境を利用していますか。 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。 例えば次のような良い点があります。
+ Tex専用の環境を用意する必要がなく、ディスク容量に優しい Gitとの連携が可能 入力のサジェストや段落構成ビューが利用できる  Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。
+Texlipseのインストール インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。 「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。
+ 名前：　Texlipse（適当に） サイト：　http://texlipse.sourceforge.net/  Bibsonomy, Pdf4Eclipse, TeXlipseなどが候補に表示されるので、Texlipseを選択してインストールして下さい。 他のプラグインは必須ではありません。
+設定 ビルダー設定 Texlipseの設定をします。 一般的な日本人研究者は「platexでdviを生成してdvipdfmxでPDFを書き出し」という流れでTexを使っている人が多いと（勝手に）思っていますが、どうなのでしょうか。
+何はともあれ、海外製プラグインはその辺りの設定がされてません。やってしまいましょう。 おそらく以下の箇条書き部分を修正すれば大丈夫です。
+ Latex program: latexではなく、platexに設定する Bibtex program: bibtexではなく、pbibtexに設定する Dvipdf program: dvipdfmではなく、dvipdfmxに設定する  ビューア設定 いつも使うビューアをトップに設定しておけば良いでしょう。 実行ファイルの場所の指定をしっかりすれば、他のオプションはそのままで良いと思います。
+使い方 Texlipseビューにすると、新規プロジェクト作成時に言語やビルダーの設定などができます。 あまり深く考えず、以下の部分を設定すれば良さそうです。
+ Language Code: en/ja 出力ファイル形式： pdf/dvi ビルダー設定: pdflatex/latex+dvipdfm  後はいつも通りにTexを書き進めます。「ビルド」を実行すると自動でdviやPDFが生成されます。 ビューアを新たに起動したときには「Ctrl+4」をしましょう。
+トラブル回避テクニック Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。
+このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。
+みなさんのTexライフが快適なものになりますように！！</description>
+    </item>
+    
+    <item>
+      <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
+      <link>https://www.yyyak.com/blog/post/egit_slow/</link>
+      <pubDate>Sat, 21 Jan 2017 11:27:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/egit_slow/</guid>
+      <description>&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基礎講座：定期的なプログラムの実行(cron)</title>
+      <link>https://www.yyyak.com/blog/post/linux_basic_cron/</link>
+      <pubDate>Mon, 21 Mar 2016 10:18:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/linux_basic_cron/</guid>
+      <description>&lt;p&gt;定期的にプログラムを実行する方法を説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基礎講座：パーミッション</title>
+      <link>https://www.yyyak.com/blog/post/linux_basic_permission/</link>
+      <pubDate>Sat, 19 Mar 2016 12:05:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/linux_basic_permission/</guid>
+      <description>&lt;p&gt;Linuxでのファイルのアクセス権限について説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基礎講座：アプリケーション管理(yum/aptitude)</title>
+      <link>https://www.yyyak.com/blog/post/linux_basic_app/</link>
+      <pubDate>Sat, 19 Mar 2016 08:53:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/linux_basic_app/</guid>
+      <description>&lt;p&gt;アプリケーション管理をCUIで行いましょう。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基礎講座：ユーザの追加(CUI)</title>
+      <link>https://www.yyyak.com/blog/post/linux_basic_useradd/</link>
+      <pubDate>Sun, 13 Mar 2016 12:07:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/linux_basic_useradd/</guid>
+      <description>&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基礎講座：SSH(外部サーバへのアクセス)</title>
+      <link>https://www.yyyak.com/blog/post/linux_basic_ssh/</link>
+      <pubDate>Thu, 10 Mar 2016 04:39:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/linux_basic_ssh/</guid>
+      <description>&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux基礎講座目次</title>
+      <link>https://www.yyyak.com/blog/post/linux_basic/</link>
+      <pubDate>Sat, 05 Mar 2016 11:58:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/linux_basic/</guid>
+      <description>&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>unboundとbind9の違い</title>
+      <link>https://www.yyyak.com/blog/post/dns_centos7/</link>
+      <pubDate>Sun, 25 Oct 2015 12:47:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/dns_centos7/</guid>
+      <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
+2つの違いを調べました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugoのセットアップ</title>
+      <link>https://www.yyyak.com/blog/post/hugo/</link>
+      <pubDate>Tue, 21 Jul 2015 10:30:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/hugo/</guid>
+      <description>&lt;p&gt;HugoはGo言語で作成されたウェブサイト生成ソフトウェアです。Markdown形式で記事を作成することが出来ます。このページではHugoをダウンロードしてからウェブページを公開するまでの流れをなるべく詳細に記述します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FedoraでNVIDIAの純正ドライバを使う</title>
+      <link>https://www.yyyak.com/blog/post/nvidia_linux/</link>
+      <pubDate>Sat, 18 Jul 2015 11:31:11 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/nvidia_linux/</guid>
+      <description>&lt;p&gt;近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
+性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

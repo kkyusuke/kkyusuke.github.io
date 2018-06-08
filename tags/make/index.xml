@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on YuNext: Make&#43;</title>
+    <link>https://www.yyyak.com/blog/tags/make/</link>
+    <description>Recent content in Make on YuNext: Make&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 14 May 2018 14:06:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.yyyak.com/blog/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visual Studio ver15.7でのLinux開発</title>
+      <link>https://www.yyyak.com/blog/post/vslinux/</link>
+      <pubDate>Mon, 14 May 2018 14:06:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/vslinux/</guid>
+      <description>&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ブラーバジェットでクイックルワイパーのシートを使う！</title>
+      <link>https://www.yyyak.com/blog/post/braava/</link>
+      <pubDate>Sat, 23 Dec 2017 04:48:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/braava/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
+
+&lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DualPDF</title>
+      <link>https://www.yyyak.com/blog/post/dualpdf/</link>
+      <pubDate>Sun, 05 Jun 2016 07:38:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/dualpdf/</guid>
+      <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

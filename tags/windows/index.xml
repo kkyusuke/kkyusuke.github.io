@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on YuNext: Make&#43;</title>
+    <link>https://www.yyyak.com/blog/tags/windows/</link>
+    <description>Recent content in Windows on YuNext: Make&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 14 May 2018 14:06:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.yyyak.com/blog/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visual Studio ver15.7でのLinux開発</title>
+      <link>https://www.yyyak.com/blog/post/vslinux/</link>
+      <pubDate>Mon, 14 May 2018 14:06:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/vslinux/</guid>
+      <description>&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</title>
+      <link>https://www.yyyak.com/blog/post/colormunki/</link>
+      <pubDate>Mon, 09 Oct 2017 11:32:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/colormunki/</guid>
+      <description>&lt;p&gt;ディスプレイを長年使っていたり2画面使っていたりすると、ディスプレイの色合いが気になってしまうことがあります。このポストでは、キャリブレータを使って正しい発色を目指すことにします。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Firefox55はどれくらい速くなった？</title>
+      <link>https://www.yyyak.com/blog/post/firefox55/</link>
+      <pubDate>Mon, 14 Aug 2017 00:03:41 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/firefox55/</guid>
+      <description>&lt;img src=&#34;https://www.yyyak.com/blog/blog/images/firefox55.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
+改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Texlipse EclipseでTexを書く</title>
+      <link>https://www.yyyak.com/blog/post/texlipse/</link>
+      <pubDate>Sun, 29 Jan 2017 04:56:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/texlipse/</guid>
+      <description>TexlipseというEclipseプラグインの使い方を解説します。 皆さんTexを書く時にはどんな環境を利用していますか。 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。 例えば次のような良い点があります。
+ Tex専用の環境を用意する必要がなく、ディスク容量に優しい Gitとの連携が可能 入力のサジェストや段落構成ビューが利用できる  Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。
+Texlipseのインストール インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。 「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。
+ 名前：　Texlipse（適当に） サイト：　http://texlipse.sourceforge.net/  Bibsonomy, Pdf4Eclipse, TeXlipseなどが候補に表示されるので、Texlipseを選択してインストールして下さい。 他のプラグインは必須ではありません。
+設定 ビルダー設定 Texlipseの設定をします。 一般的な日本人研究者は「platexでdviを生成してdvipdfmxでPDFを書き出し」という流れでTexを使っている人が多いと（勝手に）思っていますが、どうなのでしょうか。
+何はともあれ、海外製プラグインはその辺りの設定がされてません。やってしまいましょう。 おそらく以下の箇条書き部分を修正すれば大丈夫です。
+ Latex program: latexではなく、platexに設定する Bibtex program: bibtexではなく、pbibtexに設定する Dvipdf program: dvipdfmではなく、dvipdfmxに設定する  ビューア設定 いつも使うビューアをトップに設定しておけば良いでしょう。 実行ファイルの場所の指定をしっかりすれば、他のオプションはそのままで良いと思います。
+使い方 Texlipseビューにすると、新規プロジェクト作成時に言語やビルダーの設定などができます。 あまり深く考えず、以下の部分を設定すれば良さそうです。
+ Language Code: en/ja 出力ファイル形式： pdf/dvi ビルダー設定: pdflatex/latex+dvipdfm  後はいつも通りにTexを書き進めます。「ビルド」を実行すると自動でdviやPDFが生成されます。 ビューアを新たに起動したときには「Ctrl+4」をしましょう。
+トラブル回避テクニック Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。
+このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。
+みなさんのTexライフが快適なものになりますように！！</description>
+    </item>
+    
+    <item>
+      <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
+      <link>https://www.yyyak.com/blog/post/egit_slow/</link>
+      <pubDate>Sat, 21 Jan 2017 11:27:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/egit_slow/</guid>
+      <description>&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;sNote RZ4をWindows10にアップグレード</title>
+      <link>https://www.yyyak.com/blog/post/lets_rz/</link>
+      <pubDate>Wed, 16 Dec 2015 00:43:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/lets_rz/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s Note RZ4(2015春モデル)をWindows10にアップグレードしました。
+快適に利用するには設定が必要でしたので、まとめました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows10にしたらデュアルGPUがおかしい！</title>
+      <link>https://www.yyyak.com/blog/post/wddm_nvidia/</link>
+      <pubDate>Sun, 25 Oct 2015 13:25:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/wddm_nvidia/</guid>
+      <description>Windows10にアップグレードしたところ、2枚のうち1枚のGPUが動かなくなってしまいました。 結局、WDDMバージョンが問題でした。 詳細は以下のNVIDIAの公式ポストにあります。 http://nvidia.custhelp.com/app/answers/detail/a_id/3707/~/windows-10-will-not-load-the-nvidia-display-driver-for-my-older-graphics-card
+世代の違うビデオカードはうまく動かない場合がある Windows10では、WDDM2.0というものが採用されているそうです。WDDMは&amp;rdquo;Windows Display Driver Model&amp;rdquo;の略で、GPUドライバの共通規格のようなものだそうです。 WDDMにはバージョンがあるのですが、世代によってサポートされているバージョンが違います。NVIDIAの場合は以下の通りです。
+   コードネーム 型番 対応Ver     Maxwell Geforce 700,900シリーズ 2.0   Kepler Geforce 600シリーズ 2.0   Fermi Geforce 400,500シリーズ 1.3    問題は、対応バージョンの異なるビデオカードが同時に動作した場合です。 Nvidiaは以下のように説明しています。
+ If combination of graphics cards results in mixed WDDM modes, only graphics cards compatible with first card&amp;rsquo;s WDDM mode will load display driver. Other graphics card(s) with different WDDM mode will fail to load driver.</description>
+    </item>
+    
+  </channel>
+</rss>

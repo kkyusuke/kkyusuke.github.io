@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on YuNext: Make&#43;</title>
+    <link>https://www.yyyak.com/blog/tags/android/</link>
+    <description>Recent content in Android on YuNext: Make&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 25 Feb 2018 05:25:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.yyyak.com/blog/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Huawei Watch2 Classic</title>
+      <link>https://www.yyyak.com/blog/post/huawerwatch/</link>
+      <pubDate>Sun, 25 Feb 2018 05:25:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/huawerwatch/</guid>
+      <description>&lt;p&gt;Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android各機種のアップデート頻度比較！</title>
+      <link>https://www.yyyak.com/blog/post/android_sec_compare/</link>
+      <pubDate>Mon, 17 Jul 2017 10:40:50 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/android_sec_compare/</guid>
+      <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
+有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android Security Bulletinsについて</title>
+      <link>https://www.yyyak.com/blog/post/android_secutiry/</link>
+      <pubDate>Sat, 10 Dec 2016 11:23:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/android_secutiry/</guid>
+      <description>Androidの「セキュリティパッチレベル」について説明します。 Android Security Bulletins | Android Open Source Project
+セキュリティパッチレベルの確認の仕方 Android端末を購入するとき、Androidのバージョンを調べる人は多いと思います。だいたい年1回ごとにアップデートされ、開発コード名はアルファベット順にお菓子の名前が割り当てられます。 KitkatとかMarshmallowとかのあれです。
+お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。
+なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。
+セキュリティパッチレベルとは？ セキュリティパッチレベルは基準となる日付で表記されており、その一覧はAndroid Security Bulletinsから確認できます。日付が後の方が、セキュリティがしっかりしているという事になります。
+例えば2016年11月では、1日・5日・6日の3種類が用意されています。 2016/11/01では、主に以下の脆弱性に対処する必要があります。
+ CVE-2016-6699 CVE-2016-6700 他  2016/11/05では、2016/11/01で対応される脆弱性に加えて主に以下に対処する必要があります。
+ CVE-2016-6725 CVE-2016-6828 他  2016/11/06では、2016/11/05に加えて以下に対処します。
+ CVE-2016-5195  このように、各セキュリティレベルには「対処すべき脆弱性」が定められており、それらにすべて対応出来た端末だけが当該パッチレベルを表示できます。 Androidはセキュリティの対応がグダグダであることが問題となっていますが、Googleもその現状を何とかしたいと考えているようです。セキュリティパッチレベルは2015年10月から始まっています。
+Androidのバージョンとセキュリティパッチレベルについて Android Security Bulletinsでは、各脆弱性がAndroidのどのバージョンで改修されるかが分かります。 例えばCVE-2016-6703では以下のように示されます。
+   CVE 参照 重大度 更新対象のGoogle端末 更新対象のAOSPバージョン 報告日     CVE-2016-6703 A-30765246 高 なし 4.4.4, 5.0.2, 5.1.1
+6.0, 6.0.1 Google 社内    この例の場合Android6.</description>
+    </item>
+    
+    <item>
+      <title>SanDisk ワイヤレスメディアドライブのレビュー</title>
+      <link>https://www.yyyak.com/blog/post/sandisk_wireless/</link>
+      <pubDate>Tue, 29 Nov 2016 23:39:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/sandisk_wireless/</guid>
+      <description>&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Androidにもセキュリティソフトが必要な理由</title>
+      <link>https://www.yyyak.com/blog/post/android_sec/</link>
+      <pubDate>Fri, 18 Nov 2016 03:55:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/android_sec/</guid>
+      <description>Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。 Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。
+主張その1：絶対にいらない。 さて、Android用対策ソフトについて検索すると必ず出てくるニュースに以下のようなものがあります。
+ Androidにはウイルス対策ソフトは必要ない。
+ウイルス対策なんて言っているのは全部詐欺だ！
+ Androidにウイルス対策アプリは不要。グーグル関係者、ウイルス企業は「ペテン師」と痛烈批判 : スマホ口コミ評価速報 まあ、なかの人がそういうのなら、そういうものなのかな。
+でも、本当？
+主張その2：なんだかんだ必要。だってウイルスあるんだもん。 さて、商売の邪魔をされて黙っているバカはいません。各ベンダーはこぞってブログに以下のような記事を投稿します。
+ 知っていますか？Androidのウイルスの脅威は日に日に増しています。
+当社の対策ソフトを購入してあなたの社会的信頼を守りましょう
+ Android ウイルス感染の不安を解消する3つのポイント たしかに、Androidのウイルスの話題はよく聞くし、このあいだも友達がFBに変な投稿してました。やっぱり必要なのでは？
+この議論の問題点：「ウイルス」とは何か 主張その1の「ウイルス」は、ウイルスではない・・・ 多くの人が指摘していますが、1つ目の主張で言うところの「ウイルス」は、Androidには存在しないか、あったとしても悪さができません。
+Androidはアプリをインストールして使うように設計されています。各アプリはサンドボックスと呼ばれる保護機構によって、他のアプリとは高度に切り離された状態にあります。もしウイルスが悪さをしようとしても、このサンドボックスによって目論見は阻止されるのです！
+ん？？なんかおかしい・・・
+気付きましたか？そう、彼らのいうウイルスとはマルウェアなのです。Windowsで悪さを働くマルウェアは、Androidではうまく動きません。
+Androidで俗に言う「マルウェア」は、身から出たサビ さて、マルウェアはAndroidでは動作しないことはお話しました。しかし、例外があります。それは「マルウェアの活動をユーザ自身が許可した場合」です。 多くの人はアプリをインストールする際にアプリの要求権限を深く吟味しません。不注意によって、悪意のあるアプリをユーザーが自発的にインストールしてしまうことがあるのです。
+販売されているウイルス対策ソフトは、ユーザによる自発的なアプリのインストールも監視していて、あまりに怪しいアプリをインストールしようとしていれば警告を発してくれます。ベンダーによっては、インストール数の多いアプリを独自に解析して、危険なアプリをインストールしないよう啓蒙しているところもあります。
+権限の確認はいちいち面倒ですし、権限を確認したとしても意図しない動作をされてしまうことは考えられます。そういった観点から、ウイルス対策ソフトは有効です。
+ウイルスにはどう対処するのか さて、最も深刻なのは「サンドボックスの脆弱性を突かれる」ことです。これこそがウイルスです。 ウイルス対策ソフトはウイルスを駆除することができるのでしょうか。
+できません。（おそらく）
+ウイルスを駆除するには、OSの奥深くの領域まで検査する必要が有ります。しかしウイルス対策ソフトもアプリの１つ。サンドボックスによって行動が制限されています。ウイルス対策ソフトがサンドボックスの脆弱性を突く以外、ウイルスを駆除する手立てはないのです。 もしそんなウイルス対策ソフトがあったとして、それはもうウイルスです。
+重大な脆弱性が発見された場合、その脆弱性を塞ぐアップデートを適用するしかないのです。
+   ウイルスに感染しないために 脆弱性を突かれてしまっては、もうどうしようもないのですが、なるべくやられないようにするポイントがあります。 以下に挙げます。
+ アップデートが頻繁に行われる機種を使う。 不要なアプリはインストールしない。 標準アプリでも、使っていないものは無効化する  みなさん、くれぐれもウイルスとマルウェアには注意しましょう。</description>
+    </item>
+    
+    <item>
+      <title>DualPDF</title>
+      <link>https://www.yyyak.com/blog/post/dualpdf/</link>
+      <pubDate>Sun, 05 Jun 2016 07:38:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/dualpdf/</guid>
+      <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wifi環境でPUSH通知が届かない</title>
+      <link>https://www.yyyak.com/blog/post/push/</link>
+      <pubDate>Mon, 27 Jul 2015 04:05:00 +0900</pubDate>
+      
+      <guid>https://www.yyyak.com/blog/post/push/</guid>
+      <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
