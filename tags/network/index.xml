@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Network on YuNext: Make&#43;</title>
-    <link>https://www.yyyak.com/blog/tags/network/</link>
-    <description>Recent content in Network on YuNext: Make&#43;</description>
+    <title>Network on Make &amp; Review</title>
+    <link>https://blog.yyyak.com/tags/network/</link>
+    <description>Recent content in Network on Make &amp; Review</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Wed, 20 Apr 2016 00:38:00 +0900</lastBuildDate>
     
-	<atom:link href="https://www.yyyak.com/blog/tags/network/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yyyak.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>宅内サーバを外部に公開する</title>
-      <link>https://www.yyyak.com/blog/post/public_server/</link>
+      <link>https://blog.yyyak.com/post/public_server/</link>
       <pubDate>Wed, 20 Apr 2016 00:38:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/public_server/</guid>
+      <guid>https://blog.yyyak.com/post/public_server/</guid>
       <description>&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ルータのダイナミックDNS対応</title>
-      <link>https://www.yyyak.com/blog/post/dynamic_router/</link>
+      <link>https://blog.yyyak.com/post/dynamic_router/</link>
       <pubDate>Sat, 19 Mar 2016 12:38:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/dynamic_router/</guid>
+      <guid>https://blog.yyyak.com/post/dynamic_router/</guid>
       <description>&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
 無線LANルータの主なメーカがどうのような対応をしているのかまとめました。
 &lt;/p&gt;</description>
@@ -34,20 +34,20 @@
     
     <item>
       <title>インターリンクの回線速度</title>
-      <link>https://www.yyyak.com/blog/post/interlink/</link>
+      <link>https://blog.yyyak.com/post/interlink/</link>
       <pubDate>Tue, 16 Feb 2016 13:00:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/interlink/</guid>
+      <guid>https://blog.yyyak.com/post/interlink/</guid>
       <description>ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。 インターリンクという会社です。 契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。 測定はここで行っていて、茨城県南、精度高、圧縮率普通で計測しています。
 2016/03/21 19:10 2016/03/04 22:10 2016/02/16 22:00 2016/02/15 20:00 </description>
     </item>
     
     <item>
       <title>ポート開放の仕組みと設定方法</title>
-      <link>https://www.yyyak.com/blog/post/port_open/</link>
+      <link>https://blog.yyyak.com/post/port_open/</link>
       <pubDate>Thu, 04 Feb 2016 12:07:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/port_open/</guid>
+      <guid>https://blog.yyyak.com/post/port_open/</guid>
       <description>ポート開放の仕組みを説明した上で、 Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。 なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で ポート開放することが出来るはずです。
 ポート開放とは ポート開放と一言になっていますが、実際には複数の仕組みの組み合わせです。 何をすることを指すのか、しっかり把握しましょう。
 目的 そもそもポート開放は、特定のポートに来る通信を特定の端末に転送する設定のことを言います。
@@ -70,10 +70,10 @@
     
     <item>
       <title>unboundとbind9の違い</title>
-      <link>https://www.yyyak.com/blog/post/dns_centos7/</link>
+      <link>https://blog.yyyak.com/post/dns_centos7/</link>
       <pubDate>Sun, 25 Oct 2015 12:47:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/dns_centos7/</guid>
+      <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
       <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
 2つの違いを調べました。
 &lt;/p&gt;</description>
@@ -81,10 +81,10 @@
     
     <item>
       <title>ひかり回線が繋がらなくなる問題</title>
-      <link>https://www.yyyak.com/blog/post/router_nat/</link>
+      <link>https://blog.yyyak.com/post/router_nat/</link>
       <pubDate>Sun, 11 Oct 2015 08:30:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/router_nat/</guid>
+      <guid>https://blog.yyyak.com/post/router_nat/</guid>
       <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
 &lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
 &lt;/p&gt;</description>
@@ -92,10 +92,10 @@
     
     <item>
       <title>ビック光 フレッツ光から乗り換えました！</title>
-      <link>https://www.yyyak.com/blog/post/iijhikari/</link>
+      <link>https://blog.yyyak.com/post/iijhikari/</link>
       <pubDate>Wed, 23 Sep 2015 11:02:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/iijhikari/</guid>
+      <guid>https://blog.yyyak.com/post/iijhikari/</guid>
       <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
 速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
 
@@ -105,10 +105,10 @@
     
     <item>
       <title>Wifi環境でPUSH通知が届かない</title>
-      <link>https://www.yyyak.com/blog/post/push/</link>
+      <link>https://blog.yyyak.com/post/push/</link>
       <pubDate>Mon, 27 Jul 2015 04:05:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/push/</guid>
+      <guid>https://blog.yyyak.com/post/push/</guid>
       <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
 設定を見なおしてみましょう。
 &lt;/p&gt;</description>

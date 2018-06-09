@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on YuNext: Make&#43;</title>
-    <link>https://www.yyyak.com/blog/post/</link>
-    <description>Recent content in Posts on YuNext: Make&#43;</description>
+    <title>Posts on Make &amp; Review</title>
+    <link>https://blog.yyyak.com/post/</link>
+    <description>Recent content in Posts on Make &amp; Review</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 14 May 2018 14:06:00 +0900</lastBuildDate>
     
-	<atom:link href="https://www.yyyak.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.yyyak.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Visual Studio ver15.7でのLinux開発</title>
-      <link>https://www.yyyak.com/blog/post/vslinux/</link>
+      <link>https://blog.yyyak.com/post/vslinux/</link>
       <pubDate>Mon, 14 May 2018 14:06:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/vslinux/</guid>
+      <guid>https://blog.yyyak.com/post/vslinux/</guid>
       <description>&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Huawei Watch2 Classic</title>
-      <link>https://www.yyyak.com/blog/post/huawerwatch/</link>
+      <link>https://blog.yyyak.com/post/huawerwatch/</link>
       <pubDate>Sun, 25 Feb 2018 05:25:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/huawerwatch/</guid>
+      <guid>https://blog.yyyak.com/post/huawerwatch/</guid>
       <description>&lt;p&gt;Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>WF-1000Xレビュー</title>
-      <link>https://www.yyyak.com/blog/post/wf100x/</link>
+      <link>https://blog.yyyak.com/post/wf100x/</link>
       <pubDate>Mon, 12 Feb 2018 11:31:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/wf100x/</guid>
+      <guid>https://blog.yyyak.com/post/wf100x/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://www.sony.jp/products/picture/WF-1000X_B_03.jpg&#34; alt=&#34;WF-1000X&#34; width=300/&gt;&lt;/p&gt;
 
 &lt;p&gt;ソニーのフルワイヤレスイヤホン&lt;a href=&#34;http://amzn.to/2BTYiM1&#34;&gt;WF1000-X&lt;/a&gt;を購入したのでレビューします！
@@ -45,10 +45,10 @@
     
     <item>
       <title>ブラーバジェットでクイックルワイパーのシートを使う！</title>
-      <link>https://www.yyyak.com/blog/post/braava/</link>
+      <link>https://blog.yyyak.com/post/braava/</link>
       <pubDate>Sat, 23 Dec 2017 04:48:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/braava/</guid>
+      <guid>https://blog.yyyak.com/post/braava/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
 
 &lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。
@@ -57,20 +57,20 @@
     
     <item>
       <title>Kairos Watch倒産したみたい</title>
-      <link>https://www.yyyak.com/blog/post/kairos2017/</link>
+      <link>https://blog.yyyak.com/post/kairos2017/</link>
       <pubDate>Fri, 17 Nov 2017 12:48:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/kairos2017/</guid>
+      <guid>https://blog.yyyak.com/post/kairos2017/</guid>
       <description>&lt;p&gt;長年見守っていたKairos、遂に倒産しちゃったね！
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</title>
-      <link>https://www.yyyak.com/blog/post/colormunki/</link>
+      <link>https://blog.yyyak.com/post/colormunki/</link>
       <pubDate>Mon, 09 Oct 2017 11:32:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/colormunki/</guid>
+      <guid>https://blog.yyyak.com/post/colormunki/</guid>
       <description>&lt;p&gt;ディスプレイを長年使っていたり2画面使っていたりすると、ディスプレイの色合いが気になってしまうことがあります。このポストでは、キャリブレータを使って正しい発色を目指すことにします。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -78,21 +78,21 @@
     
     <item>
       <title>インターネットに繋がらないときの５つのコマンド（Linux編）</title>
-      <link>https://www.yyyak.com/blog/post/network_check_linux/</link>
+      <link>https://blog.yyyak.com/post/network_check_linux/</link>
       <pubDate>Sun, 24 Sep 2017 06:20:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/network_check_linux/</guid>
+      <guid>https://blog.yyyak.com/post/network_check_linux/</guid>
       <description>&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Firefox55はどれくらい速くなった？</title>
-      <link>https://www.yyyak.com/blog/post/firefox55/</link>
+      <link>https://blog.yyyak.com/post/firefox55/</link>
       <pubDate>Mon, 14 Aug 2017 00:03:41 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/firefox55/</guid>
-      <description>&lt;img src=&#34;https://www.yyyak.com/blog/blog/images/firefox55.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+      <guid>https://blog.yyyak.com/post/firefox55/</guid>
+      <description>&lt;img src=&#34;https://blog.yyyak.com/blog/images/firefox55.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
 改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;
@@ -102,10 +102,10 @@
     
     <item>
       <title>Android各機種のアップデート頻度比較！</title>
-      <link>https://www.yyyak.com/blog/post/android_sec_compare/</link>
+      <link>https://blog.yyyak.com/post/android_sec_compare/</link>
       <pubDate>Mon, 17 Jul 2017 10:40:50 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/android_sec_compare/</guid>
+      <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
       <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
 有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
 
@@ -114,10 +114,10 @@
     
     <item>
       <title>WN-AX1167GRでv6プラスをやってみた</title>
-      <link>https://www.yyyak.com/blog/post/wnax1167gr/</link>
+      <link>https://blog.yyyak.com/post/wnax1167gr/</link>
       <pubDate>Sun, 28 May 2017 11:41:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/wnax1167gr/</guid>
+      <guid>https://blog.yyyak.com/post/wnax1167gr/</guid>
       <description>&lt;p&gt;フレッツ光のプロバイダによってはv6プラスを提供しているものがあります。
 WN-AX1167GRを使ってどのようにこの機能を使うか解説します。
 &lt;/p&gt;</description>
@@ -125,10 +125,10 @@ WN-AX1167GRを使ってどのようにこの機能を使うか解説します。
     
     <item>
       <title>海外でSIM入手（アメリカ、T-mobile、年に数回行く人編）</title>
-      <link>https://www.yyyak.com/blog/post/tmobile/</link>
+      <link>https://blog.yyyak.com/post/tmobile/</link>
       <pubDate>Fri, 26 May 2017 15:32:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/tmobile/</guid>
+      <guid>https://blog.yyyak.com/post/tmobile/</guid>
       <description>&lt;p&gt;アメリカでSIMを入手する方法については、いろんな人が解説しています。
 でも、毎回SIMカード買うのはCostlyです。ここでは、定期契約するほどではないけど年に数回行く人のための良いプランを紹介します。
 &lt;/p&gt;</description>
@@ -136,20 +136,20 @@ WN-AX1167GRを使ってどのようにこの機能を使うか解説します。
     
     <item>
       <title>海外でSIM入手（インド・ムンバイ、Airtel）</title>
-      <link>https://www.yyyak.com/blog/post/airtel/</link>
+      <link>https://blog.yyyak.com/post/airtel/</link>
       <pubDate>Sat, 01 Apr 2017 08:24:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/airtel/</guid>
+      <guid>https://blog.yyyak.com/post/airtel/</guid>
       <description>&lt;p&gt;インド・ムンバイの国際空港でAirtelのSIMを購入して使用する方法を解説します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Texlipse EclipseでTexを書く</title>
-      <link>https://www.yyyak.com/blog/post/texlipse/</link>
+      <link>https://blog.yyyak.com/post/texlipse/</link>
       <pubDate>Sun, 29 Jan 2017 04:56:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/texlipse/</guid>
+      <guid>https://blog.yyyak.com/post/texlipse/</guid>
       <description>TexlipseというEclipseプラグインの使い方を解説します。 皆さんTexを書く時にはどんな環境を利用していますか。 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。 例えば次のような良い点があります。
  Tex専用の環境を用意する必要がなく、ディスク容量に優しい Gitとの連携が可能 入力のサジェストや段落構成ビューが利用できる  Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。
 Texlipseのインストール インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。 「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。
@@ -166,20 +166,20 @@ Texlipseのインストール インストールは「ヘルプ→新規ソフ�
     
     <item>
       <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
-      <link>https://www.yyyak.com/blog/post/egit_slow/</link>
+      <link>https://blog.yyyak.com/post/egit_slow/</link>
       <pubDate>Sat, 21 Jan 2017 11:27:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/egit_slow/</guid>
+      <guid>https://blog.yyyak.com/post/egit_slow/</guid>
       <description>&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Android Security Bulletinsについて</title>
-      <link>https://www.yyyak.com/blog/post/android_secutiry/</link>
+      <link>https://blog.yyyak.com/post/android_secutiry/</link>
       <pubDate>Sat, 10 Dec 2016 11:23:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/android_secutiry/</guid>
+      <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
       <description>Androidの「セキュリティパッチレベル」について説明します。 Android Security Bulletins | Android Open Source Project
 セキュリティパッチレベルの確認の仕方 Android端末を購入するとき、Androidのバージョンを調べる人は多いと思います。だいたい年1回ごとにアップデートされ、開発コード名はアルファベット順にお菓子の名前が割り当てられます。 KitkatとかMarshmallowとかのあれです。
 お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。
@@ -196,20 +196,20 @@ Androidのバージョンとセキュリティパッチレベルについて And
     
     <item>
       <title>SanDisk ワイヤレスメディアドライブのレビュー</title>
-      <link>https://www.yyyak.com/blog/post/sandisk_wireless/</link>
+      <link>https://blog.yyyak.com/post/sandisk_wireless/</link>
       <pubDate>Tue, 29 Nov 2016 23:39:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/sandisk_wireless/</guid>
+      <guid>https://blog.yyyak.com/post/sandisk_wireless/</guid>
       <description>&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Androidにもセキュリティソフトが必要な理由</title>
-      <link>https://www.yyyak.com/blog/post/android_sec/</link>
+      <link>https://blog.yyyak.com/post/android_sec/</link>
       <pubDate>Fri, 18 Nov 2016 03:55:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/android_sec/</guid>
+      <guid>https://blog.yyyak.com/post/android_sec/</guid>
       <description>Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。 Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。
 主張その1：絶対にいらない。 さて、Android用対策ソフトについて検索すると必ず出てくるニュースに以下のようなものがあります。
  Androidにはウイルス対策ソフトは必要ない。
@@ -237,10 +237,10 @@ Androidで俗に言う「マルウェア」は、身から出たサビ さて、
     
     <item>
       <title>Sonicareのイージークリーンを購入してみた</title>
-      <link>https://www.yyyak.com/blog/post/sonicare_easyclena/</link>
+      <link>https://blog.yyyak.com/post/sonicare_easyclena/</link>
       <pubDate>Fri, 18 Nov 2016 00:46:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/sonicare_easyclena/</guid>
+      <guid>https://blog.yyyak.com/post/sonicare_easyclena/</guid>
       <description>ソニッケアーの独特の販売手法を解き明かしながら、ベストバイの「イージークリーン」を解説します。 Philips - 日本
 そもそも何でこんな投稿を作ったのかを書きたいと思います。
 私は3年前から「フレックスケアー・プラチナ」を使っていました。ドイツ製らしいシンプルで分かりやすいデザインや機能性を気に入っていたのですが、ついに最近壊れてしまいました。数回に1回、異様に振動が弱くなってしまったのです。
@@ -261,10 +261,10 @@ Androidで俗に言う「マルウェア」は、身から出たサビ さて、
     
     <item>
       <title>電子書籍サービス徹底比較！2016</title>
-      <link>https://www.yyyak.com/blog/post/ebook2016/</link>
+      <link>https://blog.yyyak.com/post/ebook2016/</link>
       <pubDate>Mon, 15 Aug 2016 06:36:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/ebook2016/</guid>
+      <guid>https://blog.yyyak.com/post/ebook2016/</guid>
       <description>2016年版、電子書籍リーダ比較です。 新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。
 2015年版はこちら。
 電子書籍ストア 書籍数 まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2016年8月15日現在の書籍数をまとめました。 括弧内の数字は昨年との比較です。
@@ -288,30 +288,30 @@ Androidで俗に言う「マルウェア」は、身から出たサビ さて、
     
     <item>
       <title>GmailのPOP3受信をリアルタイムに</title>
-      <link>https://www.yyyak.com/blog/post/gmail_pop3/</link>
+      <link>https://blog.yyyak.com/post/gmail_pop3/</link>
       <pubDate>Mon, 15 Aug 2016 00:01:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/gmail_pop3/</guid>
+      <guid>https://blog.yyyak.com/post/gmail_pop3/</guid>
       <description>&lt;p&gt;GmailはPOP3のメールサービスにアクセスできますが、メールの更新が数十分遅れるという欠点があります。改善策を紹介します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>docomoの『歩いておトク』は2ヶ月で解約がおすすめ</title>
-      <link>https://www.yyyak.com/blog/post/aruite_3month/</link>
+      <link>https://blog.yyyak.com/post/aruite_3month/</link>
       <pubDate>Sun, 14 Aug 2016 23:33:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/aruite_3month/</guid>
+      <guid>https://blog.yyyak.com/post/aruite_3month/</guid>
       <description>&lt;p&gt;実際に3ヶ月間使って得られたポイントは1500ポイント、果たして継続契約の価値はあるのか！？
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ドコモ版Xperia Z3のAndroid6.0は電池の心配ナシ！</title>
-      <link>https://www.yyyak.com/blog/post/so01g_6/</link>
+      <link>https://blog.yyyak.com/post/so01g_6/</link>
       <pubDate>Wed, 10 Aug 2016 10:35:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/so01g_6/</guid>
+      <guid>https://blog.yyyak.com/post/so01g_6/</guid>
       <description>&lt;p&gt;ドコモ版Xperia Z3のAndroid6.0アップデートがついに公開されました。
 電池の減りを心配する声があるので、検証しました。
 &lt;/p&gt;</description>
@@ -319,10 +319,10 @@ Androidで俗に言う「マルウェア」は、身から出たサビ さて、
     
     <item>
       <title>Kairos Watch現状報告2016</title>
-      <link>https://www.yyyak.com/blog/post/kairos2016/</link>
+      <link>https://blog.yyyak.com/post/kairos2016/</link>
       <pubDate>Sat, 02 Jul 2016 12:25:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/kairos2016/</guid>
+      <guid>https://blog.yyyak.com/post/kairos2016/</guid>
       <description>KairosWatchの購入を考えている人のために、現状をお伝えします。 続編記事は「Kairos Watch倒産したみたい」です。
 KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってというポストを見てください。 この記事は、KairosWatchを購入してみたいけど迷っている人に、せめて待つよう買い留まらせる記事です。
 スマートウォッチ Kairos Watchを1週間使って 2016年1月からの進展 あまり進展らしい進展はありませんが、以下が改善されました。
@@ -336,20 +336,20 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>DualPDF</title>
-      <link>https://www.yyyak.com/blog/post/dualpdf/</link>
+      <link>https://blog.yyyak.com/post/dualpdf/</link>
       <pubDate>Sun, 05 Jun 2016 07:38:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/dualpdf/</guid>
+      <guid>https://blog.yyyak.com/post/dualpdf/</guid>
       <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>docomoの『歩いておトク』は結構ポイントがたまる！</title>
-      <link>https://www.yyyak.com/blog/post/aruite/</link>
+      <link>https://blog.yyyak.com/post/aruite/</link>
       <pubDate>Sun, 08 May 2016 09:56:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/aruite/</guid>
+      <guid>https://blog.yyyak.com/post/aruite/</guid>
       <description>&lt;p&gt;docomoの月額サービス『歩いておトク』を契約して1週間使いました。
 歩くほどdポイントがたまるのですが、月額料金に見合ったペイがあるのか調べました。
 
@@ -358,30 +358,30 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>宅内サーバを外部に公開する</title>
-      <link>https://www.yyyak.com/blog/post/public_server/</link>
+      <link>https://blog.yyyak.com/post/public_server/</link>
       <pubDate>Wed, 20 Apr 2016 00:38:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/public_server/</guid>
+      <guid>https://blog.yyyak.com/post/public_server/</guid>
       <description>&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux基礎講座：定期的なプログラムの実行(cron)</title>
-      <link>https://www.yyyak.com/blog/post/linux_basic_cron/</link>
+      <link>https://blog.yyyak.com/post/linux_basic_cron/</link>
       <pubDate>Mon, 21 Mar 2016 10:18:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/linux_basic_cron/</guid>
+      <guid>https://blog.yyyak.com/post/linux_basic_cron/</guid>
       <description>&lt;p&gt;定期的にプログラムを実行する方法を説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ルータのダイナミックDNS対応</title>
-      <link>https://www.yyyak.com/blog/post/dynamic_router/</link>
+      <link>https://blog.yyyak.com/post/dynamic_router/</link>
       <pubDate>Sat, 19 Mar 2016 12:38:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/dynamic_router/</guid>
+      <guid>https://blog.yyyak.com/post/dynamic_router/</guid>
       <description>&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
 無線LANルータの主なメーカがどうのような対応をしているのかまとめました。
 &lt;/p&gt;</description>
@@ -389,70 +389,70 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>Linux基礎講座：パーミッション</title>
-      <link>https://www.yyyak.com/blog/post/linux_basic_permission/</link>
+      <link>https://blog.yyyak.com/post/linux_basic_permission/</link>
       <pubDate>Sat, 19 Mar 2016 12:05:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/linux_basic_permission/</guid>
+      <guid>https://blog.yyyak.com/post/linux_basic_permission/</guid>
       <description>&lt;p&gt;Linuxでのファイルのアクセス権限について説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux基礎講座：アプリケーション管理(yum/aptitude)</title>
-      <link>https://www.yyyak.com/blog/post/linux_basic_app/</link>
+      <link>https://blog.yyyak.com/post/linux_basic_app/</link>
       <pubDate>Sat, 19 Mar 2016 08:53:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/linux_basic_app/</guid>
+      <guid>https://blog.yyyak.com/post/linux_basic_app/</guid>
       <description>&lt;p&gt;アプリケーション管理をCUIで行いましょう。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux基礎講座：ユーザの追加(CUI)</title>
-      <link>https://www.yyyak.com/blog/post/linux_basic_useradd/</link>
+      <link>https://blog.yyyak.com/post/linux_basic_useradd/</link>
       <pubDate>Sun, 13 Mar 2016 12:07:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/linux_basic_useradd/</guid>
+      <guid>https://blog.yyyak.com/post/linux_basic_useradd/</guid>
       <description>&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux基礎講座：SSH(外部サーバへのアクセス)</title>
-      <link>https://www.yyyak.com/blog/post/linux_basic_ssh/</link>
+      <link>https://blog.yyyak.com/post/linux_basic_ssh/</link>
       <pubDate>Thu, 10 Mar 2016 04:39:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/linux_basic_ssh/</guid>
+      <guid>https://blog.yyyak.com/post/linux_basic_ssh/</guid>
       <description>&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux基礎講座目次</title>
-      <link>https://www.yyyak.com/blog/post/linux_basic/</link>
+      <link>https://blog.yyyak.com/post/linux_basic/</link>
       <pubDate>Sat, 05 Mar 2016 11:58:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/linux_basic/</guid>
+      <guid>https://blog.yyyak.com/post/linux_basic/</guid>
       <description>&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>インターリンクの回線速度</title>
-      <link>https://www.yyyak.com/blog/post/interlink/</link>
+      <link>https://blog.yyyak.com/post/interlink/</link>
       <pubDate>Tue, 16 Feb 2016 13:00:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/interlink/</guid>
+      <guid>https://blog.yyyak.com/post/interlink/</guid>
       <description>ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。 インターリンクという会社です。 契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。 測定はここで行っていて、茨城県南、精度高、圧縮率普通で計測しています。
 2016/03/21 19:10 2016/03/04 22:10 2016/02/16 22:00 2016/02/15 20:00 </description>
     </item>
     
     <item>
       <title>ポート開放の仕組みと設定方法</title>
-      <link>https://www.yyyak.com/blog/post/port_open/</link>
+      <link>https://blog.yyyak.com/post/port_open/</link>
       <pubDate>Thu, 04 Feb 2016 12:07:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/port_open/</guid>
+      <guid>https://blog.yyyak.com/post/port_open/</guid>
       <description>ポート開放の仕組みを説明した上で、 Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。 なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で ポート開放することが出来るはずです。
 ポート開放とは ポート開放と一言になっていますが、実際には複数の仕組みの組み合わせです。 何をすることを指すのか、しっかり把握しましょう。
 目的 そもそもポート開放は、特定のポートに来る通信を特定の端末に転送する設定のことを言います。
@@ -475,10 +475,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>スマートウォッチ Kairos Watchを1週間使って</title>
-      <link>https://www.yyyak.com/blog/post/kairos/</link>
+      <link>https://blog.yyyak.com/post/kairos/</link>
       <pubDate>Thu, 07 Jan 2016 08:43:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/kairos/</guid>
+      <guid>https://blog.yyyak.com/post/kairos/</guid>
       <description>&lt;p&gt;香港のベンチャー企業が販売しているKairos Watchというスマートウォッチを2年くらい前に注文したのですが、ようやく12月に到着しました。
 1週間使った感想です。
 &lt;/p&gt;</description>
@@ -486,20 +486,20 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>SMT2ファイルの書き方</title>
-      <link>https://www.yyyak.com/blog/post/smt/</link>
+      <link>https://blog.yyyak.com/post/smt/</link>
       <pubDate>Thu, 17 Dec 2015 00:08:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/smt/</guid>
+      <guid>https://blog.yyyak.com/post/smt/</guid>
       <description>&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Let&#39;sNote RZ4をWindows10にアップグレード</title>
-      <link>https://www.yyyak.com/blog/post/lets_rz/</link>
+      <link>https://blog.yyyak.com/post/lets_rz/</link>
       <pubDate>Wed, 16 Dec 2015 00:43:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/lets_rz/</guid>
+      <guid>https://blog.yyyak.com/post/lets_rz/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s Note RZ4(2015春モデル)をWindows10にアップグレードしました。
 快適に利用するには設定が必要でしたので、まとめました。
 &lt;/p&gt;</description>
@@ -507,10 +507,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>ドル払いができるクレジットカードの使い道</title>
-      <link>https://www.yyyak.com/blog/post/credit_us/</link>
+      <link>https://blog.yyyak.com/post/credit_us/</link>
       <pubDate>Sun, 13 Dec 2015 10:38:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/credit_us/</guid>
+      <guid>https://blog.yyyak.com/post/credit_us/</guid>
       <description>&lt;p&gt;外貨口座から直接ドル支払いができるクレジットカードが存在します。
 使い道を考えてみました。
 &lt;/p&gt;</description>
@@ -518,10 +518,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>Windows10にしたらデュアルGPUがおかしい！</title>
-      <link>https://www.yyyak.com/blog/post/wddm_nvidia/</link>
+      <link>https://blog.yyyak.com/post/wddm_nvidia/</link>
       <pubDate>Sun, 25 Oct 2015 13:25:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/wddm_nvidia/</guid>
+      <guid>https://blog.yyyak.com/post/wddm_nvidia/</guid>
       <description>Windows10にアップグレードしたところ、2枚のうち1枚のGPUが動かなくなってしまいました。 結局、WDDMバージョンが問題でした。 詳細は以下のNVIDIAの公式ポストにあります。 http://nvidia.custhelp.com/app/answers/detail/a_id/3707/~/windows-10-will-not-load-the-nvidia-display-driver-for-my-older-graphics-card
 世代の違うビデオカードはうまく動かない場合がある Windows10では、WDDM2.0というものが採用されているそうです。WDDMは&amp;rdquo;Windows Display Driver Model&amp;rdquo;の略で、GPUドライバの共通規格のようなものだそうです。 WDDMにはバージョンがあるのですが、世代によってサポートされているバージョンが違います。NVIDIAの場合は以下の通りです。
    コードネーム 型番 対応Ver     Maxwell Geforce 700,900シリーズ 2.0   Kepler Geforce 600シリーズ 2.0   Fermi Geforce 400,500シリーズ 1.3    問題は、対応バージョンの異なるビデオカードが同時に動作した場合です。 Nvidiaは以下のように説明しています。
@@ -530,10 +530,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>unboundとbind9の違い</title>
-      <link>https://www.yyyak.com/blog/post/dns_centos7/</link>
+      <link>https://blog.yyyak.com/post/dns_centos7/</link>
       <pubDate>Sun, 25 Oct 2015 12:47:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/dns_centos7/</guid>
+      <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
       <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
 2つの違いを調べました。
 &lt;/p&gt;</description>
@@ -541,10 +541,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>ひかり回線が繋がらなくなる問題</title>
-      <link>https://www.yyyak.com/blog/post/router_nat/</link>
+      <link>https://blog.yyyak.com/post/router_nat/</link>
       <pubDate>Sun, 11 Oct 2015 08:30:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/router_nat/</guid>
+      <guid>https://blog.yyyak.com/post/router_nat/</guid>
       <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
 &lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
 &lt;/p&gt;</description>
@@ -552,10 +552,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>Netflixを1ヶ月間使ってみた</title>
-      <link>https://www.yyyak.com/blog/post/netflix/</link>
+      <link>https://blog.yyyak.com/post/netflix/</link>
       <pubDate>Thu, 08 Oct 2015 01:10:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/netflix/</guid>
+      <guid>https://blog.yyyak.com/post/netflix/</guid>
       <description>&lt;p&gt;ついに日本上陸を果たしたNetflixを1ヶ月間無料体験しました。結論としては１ヶ月で解約となりましたが、また再契約するかもしれません。視聴した映画やドラマを紹介します。
 
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
@@ -563,10 +563,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>ビック光 フレッツ光から乗り換えました！</title>
-      <link>https://www.yyyak.com/blog/post/iijhikari/</link>
+      <link>https://blog.yyyak.com/post/iijhikari/</link>
       <pubDate>Wed, 23 Sep 2015 11:02:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/iijhikari/</guid>
+      <guid>https://blog.yyyak.com/post/iijhikari/</guid>
       <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
 速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
 
@@ -576,10 +576,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>Wifi環境でPUSH通知が届かない</title>
-      <link>https://www.yyyak.com/blog/post/push/</link>
+      <link>https://blog.yyyak.com/post/push/</link>
       <pubDate>Mon, 27 Jul 2015 04:05:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/push/</guid>
+      <guid>https://blog.yyyak.com/post/push/</guid>
       <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
 設定を見なおしてみましょう。
 &lt;/p&gt;</description>
@@ -587,10 +587,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>電子書籍サービス徹底比較！2015</title>
-      <link>https://www.yyyak.com/blog/post/ebook2015/</link>
+      <link>https://blog.yyyak.com/post/ebook2015/</link>
       <pubDate>Sat, 25 Jul 2015 10:50:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/ebook2015/</guid>
+      <guid>https://blog.yyyak.com/post/ebook2015/</guid>
       <description>2015年版、電子書籍リーダ比較です。 新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。
 電子書籍ストア 書籍数 まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2015年7月23日現在の書籍数をまとめました。 書店によっては重複カウントを除去できなかったものもありますが・・・やはりKindle最強ですね。これといって弱い分野が見当たらないです。
 電子書籍リーダで読むのはコミック/文学・新書/ライトノベルあたりかと思いますが、このあたりは多少Kindleが強いくらいで横並びとも言えます。Kindleは自費出版なども販売していますので、そのあたりで書籍数がグンと増えるのでしょうか？
@@ -599,10 +599,10 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>電子書籍リーダのすすめ</title>
-      <link>https://www.yyyak.com/blog/post/sonyreader/</link>
+      <link>https://blog.yyyak.com/post/sonyreader/</link>
       <pubDate>Thu, 23 Jul 2015 10:48:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/sonyreader/</guid>
+      <guid>https://blog.yyyak.com/post/sonyreader/</guid>
       <description>&lt;p&gt;ソニーの電子書籍リーダ、PRS-T3Sを購入したのですが、便利すぎてびっくりしています。
 なぜ電子書籍リーダが良いのか、説明します！
 &lt;/p&gt;</description>
@@ -610,20 +610,20 @@ KairosWathcとは スマートウォッチ Kairos Watchを1週間使ってとい
     
     <item>
       <title>Hugoのセットアップ</title>
-      <link>https://www.yyyak.com/blog/post/hugo/</link>
+      <link>https://blog.yyyak.com/post/hugo/</link>
       <pubDate>Tue, 21 Jul 2015 10:30:00 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/hugo/</guid>
+      <guid>https://blog.yyyak.com/post/hugo/</guid>
       <description>&lt;p&gt;HugoはGo言語で作成されたウェブサイト生成ソフトウェアです。Markdown形式で記事を作成することが出来ます。このページではHugoをダウンロードしてからウェブページを公開するまでの流れをなるべく詳細に記述します。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>FedoraでNVIDIAの純正ドライバを使う</title>
-      <link>https://www.yyyak.com/blog/post/nvidia_linux/</link>
+      <link>https://blog.yyyak.com/post/nvidia_linux/</link>
       <pubDate>Sat, 18 Jul 2015 11:31:11 +0900</pubDate>
       
-      <guid>https://www.yyyak.com/blog/post/nvidia_linux/</guid>
+      <guid>https://blog.yyyak.com/post/nvidia_linux/</guid>
       <description>&lt;p&gt;近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
 性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。
 &lt;/p&gt;</description>
