@@ -1,103 +1,657 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windows on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/windows/</link>
-    <description>Recent content in Windows on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 14 May 2018 14:06:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://blog.yyyak.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Visual Studio ver15.7でのLinux開発</title>
-      <link>https://blog.yyyak.com/post/vslinux/</link>
-      <pubDate>Mon, 14 May 2018 14:06:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/vslinux/</guid>
-      <description>&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</title>
-      <link>https://blog.yyyak.com/post/colormunki/</link>
-      <pubDate>Mon, 09 Oct 2017 11:32:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/colormunki/</guid>
-      <description>&lt;p&gt;ディスプレイを長年使っていたり2画面使っていたりすると、ディスプレイの色合いが気になってしまうことがあります。このポストでは、キャリブレータを使って正しい発色を目指すことにします。&lt;/p&gt;
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2018-05-14 14:06:00 &#43;0900 JST</updated>
 
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Firefox55はどれくらい速くなった？</title>
-      <link>https://blog.yyyak.com/post/firefox55/</link>
-      <pubDate>Mon, 14 Aug 2017 00:03:41 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/firefox55/</guid>
-      <description>&lt;img src=&#34;https://blog.yyyak.com/blog/images/firefox55.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+        <item>
+          <title>Visual Studio ver15.7でのLinux開発</title>
+          <link>https://blog.yyyak.com/post/vslinux/</link>
+          <pubDate>Mon, 14 May 2018 14:06:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/vslinux/</guid>
+          <description>
+
+&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。&lt;/p&gt;
+
+&lt;h2 id=&#34;visual-studioでlinux開発&#34;&gt;Visual StudioでLinux開発&lt;/h2&gt;
+
+&lt;p&gt;Visual Studioでは2017版からLinux開発がデフォルト機能として正式サポートされています。
+ちゃんと&lt;a href=&#34;https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/&#34;&gt;ブログ記事&lt;/a&gt;などにも操作方法が紹介されているのですが、問題はこのドキュメントが古いこと！最新のVSではコード補完が上手く動作せず使い物になりません。&lt;/p&gt;
+
+&lt;h2 id=&#34;最新-v15-7-の変更事項1-プロジェクトファイルの内容が変わった&#34;&gt;最新(v15.7)の変更事項1: プロジェクトファイルの内容が変わった！&lt;/h2&gt;
+
+&lt;p&gt;古いプロジェクトファイルは最新のVSでは動きません。
+これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;予想ですが、将来的には一つのプロジェクトでWindowsとLinux開発の両方を行えるようにしているのだと思います。特殊なプロジェクトとして扱われていたLinuxプロジェクトが、変更を経て徐々に普通のプロジェクトファイルに近付きつつあります。期待しましょう！&lt;/p&gt;
+
+&lt;h2 id=&#34;最新-v15-7-の変更事項2-ヘッダーファイルのキャッシュ&#34;&gt;最新(v15.7)の変更事項2: ヘッダーファイルのキャッシュ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blogs.msdn.microsoft.com/vcblog/2018/04/09/intellisense-for-remote-linux-headers/&#34;&gt;最新のブログ記事&lt;/a&gt;によると、このバージョンからはVS付属のヘッダファイルだけでなく、実行先のマシンのヘッダーファイルをキャッシュしてIntellisenseで使えるようになりました。&lt;/p&gt;
+
+&lt;p&gt;ここまでは良いのですが、すべて手動で設定しなくてはいけません。これまでに使えていたデフォルト補完がなくなり、&lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt;などがすべてエラーになります。正しい設定方法は以下の3ステップです。&lt;/p&gt;
+
+&lt;h3 id=&#34;キャッシュを転送&#34;&gt;キャッシュを転送&lt;/h3&gt;
+
+&lt;p&gt;ボタンを辿って、以下のページを表示して下さい。&lt;br /&gt;
+[ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;&lt;code&gt;sudo apt install zip&lt;/code&gt;コマンドの実行がクライアント側で必要になるかもしれません。クライアント側の設定は以前のものにしたがって下さい。&lt;/p&gt;
+
+&lt;p&gt;キャッシュのダウンロードが終わると、内容が閲覧できます。「探索」ボタンで表示してみましょう。以下のようなパスに保存されているはずです。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;C:\Users\NAME\AppData\Local\Microsoft\Linux\Header Cache\1.0\-1204525716&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;デフォルトインクルードパスを取得&#34;&gt;デフォルトインクルードパスを取得&lt;/h3&gt;
+
+&lt;p&gt;クライアントで&lt;code&gt;gcc -xc++ -v -&lt;/code&gt;を実行して下さい。以下のようにデフォルトインクルードパスが表示されるはずです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gcc -xc++ -v -
+...
+#include &amp;lt;...&amp;gt; search starts here:
+ /usr/include/c++/6
+ /usr/include/x86_64-linux-gnu/c++/6
+ /usr/include/c++/6/backward
+ /usr/lib/gcc/x86_64-linux-gnu/6/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ver15.7ではこれらのパスが自動設定されないので、IntelliSenseに教えてあげる必要があります。
+&lt;code&gt;/usr/include/c++/6&lt;/code&gt;は&lt;code&gt;C:\Users\NAME\AppData\Local\Microsoft\Linux\Header Cache\1.0\-1204525716\user\include\c++\6&lt;/code&gt;にキャッシュされています。すべてWindows側のパスに直してメモ帳にでもまとめて下さい。&lt;/p&gt;
+
+&lt;h3 id=&#34;プロジェクトファイルに設定&#34;&gt;プロジェクトファイルに設定&lt;/h3&gt;
+
+&lt;p&gt;ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
+[C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。&lt;code&gt;;&lt;/code&gt;で区切れます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;これでようやく補完がまともに働きます。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;少しずつ改善が進んでいて喜ばしいのですが、急に仕様を変えてドキュメントも無いのは酷いと思いました。MSにはその辺りも頑張ってほしいものです。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ColorMunki Photoをレンタルしてディスプレイをキャリブレーションしてみた</title>
+          <link>https://blog.yyyak.com/post/colormunki/</link>
+          <pubDate>Mon, 09 Oct 2017 11:32:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/colormunki/</guid>
+          <description>
+
+&lt;p&gt;ディスプレイを長年使っていたり2画面使っていたりすると、ディスプレイの色合いが気になってしまうことがあります。このポストでは、キャリブレータを使って正しい発色を目指すことにします。&lt;/p&gt;
+
+&lt;h2 id=&#34;気になって仕方がない&#34;&gt;気になって仕方がない！&lt;/h2&gt;
+
+&lt;p&gt;私は四六時中PCを使う仕事をしていますが、デザイナーではありません。色味にこだわる必要はないのですが、結構気になる場面があることに気付きました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2画面のPCで左右の色が違いすぎる&lt;/li&gt;
+&lt;li&gt;印刷したときの発色が違いすぎる&lt;/li&gt;
+&lt;li&gt;灰色のはずのWEBページの背景が水色&lt;/li&gt;
+&lt;li&gt;家のPCと職場のPCで画像の印象がまるで違う&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;良くあることではないでしょうか？
+そこでキャリブレータの出番です。人の目に頼らずに、様々な色を実際に表示させて測定しながら正しい色に追い込んでくれます。どんなキャリブレータがあるのか見てみましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;キャリブレータ&#34;&gt;キャリブレータ&lt;/h2&gt;
+
+&lt;p&gt;キャリブレータは目的によって搭載する機能が異なります。多くの場合キャリブレーションの目的は次の3つに大別されます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;測定したディスプレイの光が目標に近づくようにする&lt;/li&gt;
+&lt;li&gt;ディスプレイの発色を環境光まで考慮して目標に近づける&lt;/li&gt;
+&lt;li&gt;ディスプレイの発色を印刷結果に近づける&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;すべてのキャリブレータは精度の差こそあれディスプレイ用に押しつけて使用する輝度センサーを搭載しています。
+更に、環境光センサーも搭載していたり、紙面にも流用できる機構を搭載していたりします。
+購入する場合、i1Display Proというのが手頃な価格と性能で人気のようで、だいたい3万円くらいです。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B005N1OP5M&amp;linkId=7fac40c2a30172804e90fdcc9f1454d9&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B012VQSANE&amp;linkId=2bd71f749f3a8082e6308eb5ee43c696&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B0017WKGUY&amp;linkId=5c8d7c58889bb44c33d4ce5605607a7d&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;レンタルしよう&#34;&gt;レンタルしよう&lt;/h3&gt;
+
+&lt;p&gt;「デザイナーでもないのに3万円は高い！」という方がほとんどですよね。
+私もその口でしたので、レンタルしました。&lt;a href=&#34;https://www.apex106.com/other/shuhen/colormunki-photo.php&#34;&gt;Apex&lt;/a&gt;という会社を使ってみました。
+レンタルできる機種は&lt;a href=&#34;http://www.xrite.co.jp/products/color-monkey/colormunki-photo.html&#34;&gt;ColorMunki Photo&lt;/a&gt;でした。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;日数&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;価格&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1泊2日&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3,200円&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2泊3日&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4,480円&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;1日追加&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;+ 640円&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;(11泊以上)&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;+ 320円&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;宅急便か店頭レンタルか選択できます。私は店頭レンタルを選択したのですが、日・月（祝）を挟むように土～火まで借りたところ1泊2日の料金で済みました。
+個人利用の場合にはこのテクニックも活用したいですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;非デザイナのためのおすすめキャリブレーション方法&#34;&gt;非デザイナのためのおすすめキャリブレーション方法&lt;/h2&gt;
+
+&lt;p&gt;念のため、非デザイナとはどんな人かまとめておきます。
+以下の項目に当てはまれば、この記事を参考にするのがよいでしょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プリンターはプロ向けではなく、普通のもの。色合わせはしない。&lt;/li&gt;
+&lt;li&gt;リファレンス照明はない。部屋はそんなに明るくない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;下準備&#34;&gt;下準備&lt;/h3&gt;
+
+&lt;p&gt;キャリブレーションする前に、ディスプレイの設定をリセットしてください。そのあとは、以下に挙げることをなるべくやって下さい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;輝度は最大に&lt;/li&gt;
+&lt;li&gt;コントラストは最大に&lt;/li&gt;
+&lt;li&gt;ダイナミックコントラストの設定はONにしておいて良い&lt;/li&gt;
+&lt;li&gt;色調整・色温度などの設定は標準的なものにするか、ユーザ設定で全部同じ値にしておく&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ソフトウェアのインストール&#34;&gt;ソフトウェアのインストール&lt;/h3&gt;
+
+&lt;p&gt;レンタルするとCDが付属してきますが、最新版が&lt;a href=&#34;http://xritephoto.com/colormunki-photo&#34;&gt;公式WEBページ&lt;/a&gt;からダウンロードできます。
+ライセンスは必要なく、本体を接続すればどんなPCでも使えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;photo-ソフトウェアの起動&#34;&gt;「Photo」ソフトウェアの起動&lt;/h3&gt;
+
+&lt;p&gt;Photoという名前のソフトウェアがインストールされるので、起動してみましょう。&lt;/p&gt;
+
+&lt;p&gt;アプリを起動します。ディスプレイの設定だけをすればよいので、２つめの選択肢を選びます。
+&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color01.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;設定したいディスプレイを選びます。複数ディスプレイを使っている場合には、１つずつ設定します。ディスプレイによって色合いが違うので、当然両方やらないとダメです。&lt;/p&gt;
+
+&lt;p&gt;環境光も含めて設定するのが一番なのですが、普通の作業環境はデザイナーさんの環境よりも暗いことが多いです。ですから、ここではあえて環境光を使わずに設定を進めます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ディスプレイタイプ：LCD&lt;/li&gt;
+&lt;li&gt;ディスプレイの設定方法：詳細モード&lt;/li&gt;
+&lt;li&gt;白色点設定：D65&lt;/li&gt;
+&lt;li&gt;輝度：120cd/m2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color02.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color03.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;設定が終わったら、センサーのキャリブレーションをしてディスプレイに設定します。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color04.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color05.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;キャリブレーション中にやるべきことは、輝度とコントラストを調整することだけです。
+インジケーターが中央に来るように、輝度とコントラストを動かしましょう。ディスプレイ本体の設定画面を使います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color06.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color07.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;あとはやることはありません。5分間、いろいろな色が表示されます。
+キャリブレーション結果はカラープロファイルとして登録されます。コントロールパネルから「色の管理」を見ると、確かに登録されていることがわかるはずです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color08.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;以上、キャリブレーションの仕方をまとめました。
+これをすれば、色が自然になって2ディスプレイ間の色合いの違いも小さくなります。
+ぜひやってみて下さい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ColorMunki Photoでのキャリブレーション方法をまとめました&lt;/li&gt;
+&lt;li&gt;環境光を使わないのがポイントです&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Firefox55はどれくらい速くなった？</title>
+          <link>https://blog.yyyak.com/post/firefox55/</link>
+          <pubDate>Mon, 14 Aug 2017 00:03:41 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/firefox55/</guid>
+          <description>
+
+  &lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
 改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Texlipse EclipseでTexを書く</title>
-      <link>https://blog.yyyak.com/post/texlipse/</link>
-      <pubDate>Sun, 29 Jan 2017 04:56:00 +0900</pubDate>
+&lt;h2 id=&#34;firefox55のポイント&#34;&gt;Firefox55のポイント&lt;/h2&gt;
+
+&lt;p&gt;Firefox55の&lt;a href=&#34;https://www.mozilla.org/en-US/firefox/55.0/releasenotes/&#34;&gt;リリースノート&lt;/a&gt;によると、主に以下のような変更点が挙げられています。速度面では、大量のタブを扱う際の挙動が改善したようです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;WebVRのサポート&lt;/li&gt;
+&lt;li&gt;インストーラの改善、Windowsでの64bit版デフォルト化&lt;/li&gt;
+&lt;li&gt;大量のタブを復元するのが高速に&lt;/li&gt;
+&lt;li&gt;アドレスバー等のデザイン変更&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;firefox54との速度比較&#34;&gt;Firefox54との速度比較&lt;/h2&gt;
+
+&lt;h3 id=&#34;実験環境&#34;&gt;実験環境&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s Note RZ4で実験しました。CoreM-5Y71,8GBメモリ,512GBSSD(SATA接続)搭載モデルです。Creator&amp;rsquo;s Update適用済みWindows10を使用しています。Firefox64bit版での実験結果です。&lt;/p&gt;
+
+&lt;h3 id=&#34;起動時間とメモリ&#34;&gt;起動時間とメモリ&lt;/h3&gt;
+
+&lt;p&gt;結果を表に示しましたが、あまり速くなっていないですね…。体感では違いがありません。少しメモリ消費量が少なくなっている気がします。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Ver&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;起動時間&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;メモリー消費量&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Firefox 54&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.2秒&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;212MB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Firefox 55&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;6.5秒&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;202MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;webサイトの読み込み時間&#34;&gt;WEBサイトの読み込み時間&lt;/h3&gt;
+
+&lt;p&gt;私個人の私的な経験から、読み込みに時間がかかると感じられる２つのウェブページ(&lt;a href=&#34;https://www.youtube.com/?hl=ja&amp;amp;gl=JP&#34;&gt;Youtube&lt;/a&gt;と&lt;a href=&#34;http://www.wacom.com/ja-jp&#34;&gt;Wacom&lt;/a&gt;の公式ページ)を使って読み込み時間を計測しました。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Ver&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Youtube&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Wacom&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Firefox 54&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.5秒&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;3.8秒&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Firefox 55&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4.0秒&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7.3秒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;あれ？むしろ遅くなってる…。アップデート直後だから調子が悪いのかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firefox55は54と比べて普段使いで大きな違いはなし！&lt;/li&gt;
+&lt;li&gt;普段からたくさんのタブを使う人は違いが実感できる？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;追記&#34;&gt;追記&lt;/h3&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;Firefox55からはパフォーマンス調整のためのオプションが追加されて、PCの性能によってはあえて性能が制限されることもあるようです。私の場合は、スレッド数1が既定の設定となっていました。サイトの表示が遅かったのはこのせいかもしれないです。メモリ消費量が微減したのも納得です。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/texlipse/</guid>
-      <description>TexlipseというEclipseプラグインの使い方を解説します。 皆さんTexを書く時にはどんな環境を利用していますか。 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。 例えば次のような良い点があります。
- Tex専用の環境を用意する必要がなく、ディスク容量に優しい Gitとの連携が可能 入力のサジェストや段落構成ビューが利用できる  Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。
-Texlipseのインストール インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。 「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。
- 名前：　Texlipse（適当に） サイト：　http://texlipse.sourceforge.net/  Bibsonomy, Pdf4Eclipse, TeXlipseなどが候補に表示されるので、Texlipseを選択してインストールして下さい。 他のプラグインは必須ではありません。
-設定 ビルダー設定 Texlipseの設定をします。 一般的な日本人研究者は「platexでdviを生成してdvipdfmxでPDFを書き出し」という流れでTexを使っている人が多いと（勝手に）思っていますが、どうなのでしょうか。
-何はともあれ、海外製プラグインはその辺りの設定がされてません。やってしまいましょう。 おそらく以下の箇条書き部分を修正すれば大丈夫です。
- Latex program: latexではなく、platexに設定する Bibtex program: bibtexではなく、pbibtexに設定する Dvipdf program: dvipdfmではなく、dvipdfmxに設定する  ビューア設定 いつも使うビューアをトップに設定しておけば良いでしょう。 実行ファイルの場所の指定をしっかりすれば、他のオプションはそのままで良いと思います。
-使い方 Texlipseビューにすると、新規プロジェクト作成時に言語やビルダーの設定などができます。 あまり深く考えず、以下の部分を設定すれば良さそうです。
- Language Code: en/ja 出力ファイル形式： pdf/dvi ビルダー設定: pdflatex/latex+dvipdfm  後はいつも通りにTexを書き進めます。「ビルド」を実行すると自動でdviやPDFが生成されます。 ビューアを新たに起動したときには「Ctrl+4」をしましょう。
-トラブル回避テクニック Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。
-このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。
-みなさんのTexライフが快適なものになりますように！！</description>
-    </item>
     
-    <item>
-      <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
-      <link>https://blog.yyyak.com/post/egit_slow/</link>
-      <pubDate>Sat, 21 Jan 2017 11:27:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/egit_slow/</guid>
-      <description>&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Let&#39;sNote RZ4をWindows10にアップグレード</title>
-      <link>https://blog.yyyak.com/post/lets_rz/</link>
-      <pubDate>Wed, 16 Dec 2015 00:43:00 +0900</pubDate>
+        <item>
+          <title>Texlipse EclipseでTexを書く</title>
+          <link>https://blog.yyyak.com/post/texlipse/</link>
+          <pubDate>Sun, 29 Jan 2017 04:56:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/texlipse/</guid>
+          <description>
+
+&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。&lt;/p&gt;
+
+&lt;p&gt;皆さんTexを書く時にはどんな環境を利用していますか。
+TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。
+例えば次のような良い点があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tex専用の環境を用意する必要がなく、ディスク容量に優しい&lt;/li&gt;
+&lt;li&gt;Gitとの連携が可能&lt;/li&gt;
+&lt;li&gt;入力のサジェストや段落構成ビューが利用できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。&lt;/p&gt;
+
+&lt;h2 id=&#34;texlipseのインストール&#34;&gt;Texlipseのインストール&lt;/h2&gt;
+
+&lt;p&gt;インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。
+「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;名前：　Texlipse（適当に）&lt;/li&gt;
+&lt;li&gt;サイト：　&lt;a href=&#34;http://texlipse.sourceforge.net/&#34;&gt;http://texlipse.sourceforge.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bibsonomy, Pdf4Eclipse, TeXlipseなどが候補に表示されるので、Texlipseを選択してインストールして下さい。
+他のプラグインは必須ではありません。&lt;/p&gt;
+
+&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
+
+&lt;h3 id=&#34;ビルダー設定&#34;&gt;ビルダー設定&lt;/h3&gt;
+
+&lt;p&gt;Texlipseの設定をします。
+一般的な日本人研究者は「platexでdviを生成してdvipdfmxでPDFを書き出し」という流れでTexを使っている人が多いと（勝手に）思っていますが、どうなのでしょうか。&lt;/p&gt;
+
+&lt;p&gt;何はともあれ、海外製プラグインはその辺りの設定がされてません。やってしまいましょう。
+おそらく以下の箇条書き部分を修正すれば大丈夫です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Latex program: latexではなく、platexに設定する&lt;/li&gt;
+&lt;li&gt;Bibtex program: bibtexではなく、pbibtexに設定する&lt;/li&gt;
+&lt;li&gt;Dvipdf program: dvipdfmではなく、dvipdfmxに設定する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ビューア設定&#34;&gt;ビューア設定&lt;/h3&gt;
+
+&lt;p&gt;いつも使うビューアをトップに設定しておけば良いでしょう。
+実行ファイルの場所の指定をしっかりすれば、他のオプションはそのままで良いと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
+
+&lt;p&gt;Texlipseビューにすると、新規プロジェクト作成時に言語やビルダーの設定などができます。
+あまり深く考えず、以下の部分を設定すれば良さそうです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Language Code: en/ja&lt;/li&gt;
+&lt;li&gt;出力ファイル形式： pdf/dvi&lt;/li&gt;
+&lt;li&gt;ビルダー設定: pdflatex/latex+dvipdfm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;後はいつも通りにTexを書き進めます。「ビルド」を実行すると自動でdviやPDFが生成されます。
+ビューアを新たに起動したときには「Ctrl+4」をしましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;トラブル回避テクニック&#34;&gt;トラブル回避テクニック&lt;/h2&gt;
+
+&lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
+
+&lt;p&gt;みなさんのTexライフが快適なものになりますように！！&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/lets_rz/</guid>
-      <description>&lt;p&gt;Let&amp;rsquo;s Note RZ4(2015春モデル)をWindows10にアップグレードしました。
-快適に利用するには設定が必要でしたので、まとめました。
-&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Windows10にしたらデュアルGPUがおかしい！</title>
-      <link>https://blog.yyyak.com/post/wddm_nvidia/</link>
-      <pubDate>Sun, 25 Oct 2015 13:25:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/wddm_nvidia/</guid>
-      <description>Windows10にアップグレードしたところ、2枚のうち1枚のGPUが動かなくなってしまいました。 結局、WDDMバージョンが問題でした。 詳細は以下のNVIDIAの公式ポストにあります。 http://nvidia.custhelp.com/app/answers/detail/a_id/3707/~/windows-10-will-not-load-the-nvidia-display-driver-for-my-older-graphics-card
-世代の違うビデオカードはうまく動かない場合がある Windows10では、WDDM2.0というものが採用されているそうです。WDDMは&amp;rdquo;Windows Display Driver Model&amp;rdquo;の略で、GPUドライバの共通規格のようなものだそうです。 WDDMにはバージョンがあるのですが、世代によってサポートされているバージョンが違います。NVIDIAの場合は以下の通りです。
-   コードネーム 型番 対応Ver     Maxwell Geforce 700,900シリーズ 2.0   Kepler Geforce 600シリーズ 2.0   Fermi Geforce 400,500シリーズ 1.3    問題は、対応バージョンの異なるビデオカードが同時に動作した場合です。 Nvidiaは以下のように説明しています。
- If combination of graphics cards results in mixed WDDM modes, only graphics cards compatible with first card&amp;rsquo;s WDDM mode will load display driver. Other graphics card(s) with different WDDM mode will fail to load driver.</description>
-    </item>
+        <item>
+          <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
+          <link>https://blog.yyyak.com/post/egit_slow/</link>
+          <pubDate>Sat, 21 Jan 2017 11:27:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/egit_slow/</guid>
+          <description>
+
+&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;原因はstaging-view&#34;&gt;原因はStaging　View&lt;/h2&gt;
+
+&lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
+もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;解決策-staging-viewを使わない&#34;&gt;解決策：Staging Viewを使わない&lt;/h2&gt;
+
+&lt;p&gt;Staging Viewを使わなければ良いので、他の画面からコミットするようにします。
+「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
+私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;上手くいかなかった解決策&#34;&gt;上手くいかなかった解決策&lt;/h2&gt;
+
+&lt;p&gt;EGitを最新版にする、アンインストールした後に再インストールし直す、など基本的なことは試したのですが問題は解決しませんでした。&lt;/p&gt;
+
+&lt;p&gt;VisualStudioがGitサポートを始めているので、そちらに移るのもありなのかなぁ、とか思ったりもしました。&lt;/p&gt;
+</description>
+        </item>
+      
     
+      
+        <item>
+          <title>Let&#39;sNote RZ4をWindows10にアップグレード</title>
+          <link>https://blog.yyyak.com/post/lets_rz/</link>
+          <pubDate>Wed, 16 Dec 2015 00:43:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/lets_rz/</guid>
+          <description>
+
+&lt;p&gt;Let&amp;rsquo;s Note RZ4(2015春モデル)をWindows10にアップグレードしました。
+快適に利用するには設定が必要でしたので、まとめました。&lt;/p&gt;
+
+&lt;h2 id=&#34;rzシリーズは使い方にコツが必要&#34;&gt;RZシリーズは使い方にコツが必要？&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s Note RZシリーズはCoreMプロセッサを搭載した超軽量モバイルノートブック。
+745gは確かに圧倒的な軽さで、「今日は重いのが嫌だからPC持っていくのやめようかな」みたいな思考がなくなります。
+CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイルの編集などまでなら余裕でこなしてくれる性能を持っています。&lt;/p&gt;
+
+&lt;p&gt;ただ、バッテリーの持ちがあまり良くないです・・・。特にWindows10にアップデートしてからはその傾向が顕著になってしまっていました。以下が挙げられます。
+* バッテリーがフル充電から3時間程度しか持たない
+* バッテリー表示が不正確。残量80%で、残り30分とか言う
+* 電源管理をモバイルにすると異様に動作が遅い&lt;/p&gt;
+
+&lt;p&gt;この状態で2ヶ月くらい使い続けたのですが、さすがに不便だったので設定を見直してみました。&lt;/p&gt;
+
+&lt;h2 id=&#34;常駐ソフトウェアを減らす&#34;&gt;常駐ソフトウェアを減らす&lt;/h2&gt;
+
+&lt;p&gt;Windows10には常駐ソフトウェアのON/OFFを設定する画面があります。
+「スタートボタン → 設定 → プライバシー → バックグラウンドアプリ」を開いてみましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/background.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/background.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;初期設定では、すべてのアプリにバックグラウンド実行が許可されていました。いらないものはすべてOFFにしてしまいましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;windows-searchを無効にする&#34;&gt;Windows Searchを無効にする&lt;/h2&gt;
+
+&lt;p&gt;常駐ソフトウェアを切るだけでかなり電池持ちは長くなりますが、さらにWindows Searchを無効にすると電池持ちが長くなります。&lt;/p&gt;
+
+&lt;p&gt;ウィンドウズボダンを右クリックして「コントロールパネル」を起動しましょう。
+検索バーで&amp;rdquo;service&amp;rdquo;を検索すると、以下のような画面になるはずです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/services.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/services.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ここで、「ローカルサービスの表示」をクリックします。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/local_services.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/local_services.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ここから&amp;rdquo;Windows Search&amp;rdquo;を探して、プロパティから「無効」にします。&lt;/p&gt;
+
+&lt;p&gt;この操作を行うと、スタートボタンからの検索はほとんど出来なくなってしまいます。Windows10は検索機能がウリのOSでもあるのでこの機能を無効化するかどうかはよく考えましょう。本当に必要のない人は無効にした方が快適になると思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;2つの設定の効果&#34;&gt;2つの設定の効果&lt;/h2&gt;
+
+&lt;p&gt;私の場合、この2つを行うだけでかなり電池持ちが改善しました。
+常にCPU使用率が90%以上だったのが、10％未満で安定するようになっています。ファンもうるさくなくなりました。
+試してみると良いと思います。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Windows10にしたらデュアルGPUがおかしい！</title>
+          <link>https://blog.yyyak.com/post/wddm_nvidia/</link>
+          <pubDate>Sun, 25 Oct 2015 13:25:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/wddm_nvidia/</guid>
+          <description>
+
+&lt;p&gt;Windows10にアップグレードしたところ、2枚のうち1枚のGPUが動かなくなってしまいました。
+結局、WDDMバージョンが問題でした。&lt;/p&gt;
+
+&lt;p&gt;詳細は以下のNVIDIAの公式ポストにあります。
+&lt;a href=&#34;http://nvidia.custhelp.com/app/answers/detail/a_id/3707/~/windows-10-will-not-load-the-nvidia-display-driver-for-my-older-graphics-card&#34;&gt;http://nvidia.custhelp.com/app/answers/detail/a_id/3707/~/windows-10-will-not-load-the-nvidia-display-driver-for-my-older-graphics-card&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;世代の違うビデオカードはうまく動かない場合がある&#34;&gt;世代の違うビデオカードはうまく動かない場合がある&lt;/h2&gt;
+
+&lt;p&gt;Windows10では、WDDM2.0というものが採用されているそうです。WDDMは&amp;rdquo;Windows Display Driver Model&amp;rdquo;の略で、GPUドライバの共通規格のようなものだそうです。
+WDDMにはバージョンがあるのですが、世代によってサポートされているバージョンが違います。NVIDIAの場合は以下の通りです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;コードネーム&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;型番&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;対応Ver&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Maxwell&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Geforce 700,900シリーズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2.0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Kepler&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Geforce 600シリーズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2.0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Fermi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Geforce 400,500シリーズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;問題は、対応バージョンの異なるビデオカードが同時に動作した場合です。
+Nvidiaは以下のように説明しています。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;If combination of graphics cards results in mixed WDDM modes, only graphics cards compatible with first card&amp;rsquo;s WDDM mode will load display driver. Other graphics card(s) with different WDDM mode will fail to load driver.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;つまり、はじめにPOSTされたGPUのWDDMバージョンでOSは動作し、異なるバージョンで動作するGPUはドライバのロードに失敗してしまいます。私のPCの場合、QuadroK620はVer2.0で、GeforceGTX560TiはVer1.3で動作するので、どちらかを使うとどちらかは動かなくなってしまいました。&lt;/p&gt;
+
+&lt;p&gt;なお、FermiについてはVer2.0に対応予定だそうです。いつ公開されるのか、果たして公開されるのか分かりませんが、期待しましょう。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>

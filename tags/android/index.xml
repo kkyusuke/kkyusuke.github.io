@@ -1,119 +1,759 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/android/</link>
-    <description>Recent content in Android on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 25 Feb 2018 05:25:00 +0900</lastBuildDate>
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2018-02-25 05:25:00 &#43;0900 JST</updated>
+
     
-	<atom:link href="https://blog.yyyak.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Huawei Watch2 Classic</title>
-      <link>https://blog.yyyak.com/post/huawerwatch/</link>
-      <pubDate>Sun, 25 Feb 2018 05:25:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/huawerwatch/</guid>
-      <description>&lt;p&gt;Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Android各機種のアップデート頻度比較！</title>
-      <link>https://blog.yyyak.com/post/android_sec_compare/</link>
-      <pubDate>Mon, 17 Jul 2017 10:40:50 +0900</pubDate>
+        <item>
+          <title>Huawei Watch2 Classic</title>
+          <link>https://blog.yyyak.com/post/huawerwatch/</link>
+          <pubDate>Sun, 25 Feb 2018 05:25:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/huawerwatch/</guid>
+          <description>
+
+&lt;p&gt;Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。&lt;/p&gt;
+
+&lt;h2 id=&#34;ファーウェイのスマートウォッチ&#34;&gt;ファーウェイのスマートウォッチ&lt;/h2&gt;
+
+&lt;p&gt;ファーウェイは最近勢いのある中国の電気機器メーカです。
+格安SIMとセット販売されている機種などで有名ですが、スマートウォッチも販売しています。&lt;/p&gt;
+
+&lt;p&gt;Huawei Watch2は日本でも売っているのですが、私はClassicバージョンを購入してみました。
+Classicと無印の違いは、デザインだけです。無印はスポーツ向けでプラスチック外装ですが、Classicは少し高級な感じになっています。ソフトウェア上の違いは全くないようで、技適番号は無印と全く同じようです。単なる「色違い」として扱われているんですね！&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=
+&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B06XDP223X&amp;linkId=1f715984a89973542fc44817dc3c45dc&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B072J572MP&amp;linkId=3cc8343033f8c2c95c1f68fcbb9550fc&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;デザイン&#34;&gt;デザイン&lt;/h2&gt;
+
+&lt;p&gt;スポーツデザインの方はおもちゃみたいな見た目なので、会社に着けていくのは厳しい感じに見えました。
+そのせいでClassicを買ってみたのですが、今のところ良い感じです。&lt;/p&gt;
+
+&lt;p&gt;さすがに高級時計と比べるとチープ感がありますが、他のどのスマートウォッチよりも高級感を醸し出せていると思います。
+金属ですが軽いので、付けていて疲れたりはしていません。&lt;/p&gt;
+
+&lt;h2 id=&#34;電池持ち&#34;&gt;電池持ち&lt;/h2&gt;
+
+&lt;p&gt;結論から言うと、2日間はたっぷり持ちます。3日目に突入すると、日中にバッテリーが切れてしまうかもしれないので、使い方次第です。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;使い方には工夫が必要で、いつでも明るく光らせておくとすぐに電池がなくなっていまいます。
+例えば、しっかり見るときは左の画像のように明るく表示すればよいのですが、見ていないときやチラ見するだけの時は右の画像のように極力光らせないモードにする設定があります。こういうのを使っていると、しっかり2日持つようになります。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ランニングに最適&#34;&gt;ランニングに最適&lt;/h2&gt;
+
+&lt;p&gt;GPSが搭載されているので、Runtasticなどを使ってスマホなしでランニングに出かけられます。
+下の画像のように、スタートボタンを押すだけでワークアウトの記録が行われます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;自宅に到着するとバックグラウンドでデータがサーバに自動送信されます。
+WEBで見てみると、GPSと心拍がしっかり記録されているのが分かります。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;単体で音楽が聴ける&#34;&gt;単体で音楽が聴ける&lt;/h2&gt;
+
+&lt;p&gt;Google Play Music を使っている人は、プレイリストや楽曲単位でスマートウォッチに曲を保存して、外部スピーカやBluetoothを使って聞くことができます。
+ランニングに出るときや、スマホの電池が無くなってしまったときに便利です。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;簡単な返信ならスマホを取り出さずにok&#34;&gt;簡単な返信ならスマホを取り出さずにOK&lt;/h2&gt;
+
+&lt;p&gt;スマホに来ているLINEやAlloの通知は、取り出さなくても時計から閲覧して返信までできます。
+日本語に対応した手書きキーボードや音声入力があるので、定型文に限らず好きな文章を入力できます。これも便利です。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;通知の取得の仕方が頭良い&#34;&gt;通知の取得の仕方が頭良い&lt;/h2&gt;
+
+&lt;p&gt;基本的にこの時計はスマホとの連携を前提に作られています。アプリを入れればスマホと独立して色々できますが、スペックを考えると快適とは言えないでしょう。&lt;/p&gt;
+
+&lt;p&gt;しかし、Androidとの連携ならあの手この手で通信を試みようとするのが面白いです。例えば、普段はBluetoothで通信するのですが、途切れた時にはWifiに接続してくれます。もし同じアクセスポイントに接続している場合、Wifi経由でスマホの通知が送られてきます。「うっかりデスクにスマホ忘れてきた！」となっても、会議室から大事な通知を受け取ることができるのはスゴいと思いました。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;以上、良いところばかりをあげてきました。
+たまに動作がモッサリしたりもしますが、とても便利な製品で、あえて紹介したい不満点はありませんでした。
+ぜひ購入をお勧めします。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
-      <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
+    
+      
+        <item>
+          <title>Android各機種のアップデート頻度比較！</title>
+          <link>https://blog.yyyak.com/post/android_sec_compare/</link>
+          <pubDate>Mon, 17 Jul 2017 10:40:50 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
+          <description>
+
+&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
 有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Android Security Bulletinsについて</title>
-      <link>https://blog.yyyak.com/post/android_secutiry/</link>
-      <pubDate>Sat, 10 Dec 2016 11:23:00 +0900</pubDate>
+&lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
+
+&lt;p&gt;異なる機種のアップデート状況を比較するのには、&lt;a href=&#34;www.yyyak.com/blog/post/android_secutiry/&#34;&gt;セキュリティパッチレベル&lt;/a&gt;という仕組みを使いました。Androidのバージョン情報だけでは大雑把すぎるので、もっと細かくて統一的なナンバリング、ということで白羽の矢が立ちました。&lt;/p&gt;
+
+&lt;p&gt;パッチレベルは日付で表されていて、日付が後になる方が新しいことになります。なるべく新しいパッチレベルがすぐに配信される端末を使うのには、どのメーカを使えば良いのでしょうか？？&lt;/p&gt;
+
+&lt;h2 id=&#34;xperia-xz&#34;&gt;Xperia XZ&lt;/h2&gt;
+
+&lt;p&gt;携帯3社（ドコモ,au,Softbank）の調査結果を下表に示します。
+驚くべき事に、キャリアに関係なく2ヶ月に1回セキュリティアップデートが配信されています。
+配信開始はドコモが速い印象ですが、他社も2週間遅れ以内には必ず配信されているようです。
+数年前までの、「日本のキャリア端末はアップデートが遅い」という常識を打ち破るほど迅速だと言えます。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;レベル&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;ドコモ&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;au&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Softbank&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2017年6月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/6/21&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/6/22&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/6/20&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2017年4月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/4/6&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/4/11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/4/6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2017年2月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/3/2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/3/14&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/3/3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Android7.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/1/21&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/1/18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/1/27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2016年12月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/12/8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/12/13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/12/16&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;galaxy-s6-edge&#34;&gt;Galaxy S6 edge&lt;/h2&gt;
+
+&lt;p&gt;少し古めの機種ですが、全キャリアが扱っているGalaxy端末ということでチョイスしました。
+結果はイマイチで、au,Softbankはメジャーバージョンアップ間で1回だけアップデートがかかっています。
+ドコモについてはまあまあで、2016年後半から2017年にかけて頻繁にアップデートを行っています。
+Sonyと比べると日本版のアップデート頻度は悪いです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;レベル&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;ドコモ&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;au&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;Softbank&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2017年4月(Android7.0)&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/6/5&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/4/13&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/5/10&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2017年1月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/1/31&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2016年11月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/11/17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/12/6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2016年10月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/10/27&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2016年6月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/6/20&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Android 6.0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/3/17&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/5/19&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2016/4/5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;asus-zenfone-3-ze552kl-jp&#34;&gt;Asus Zenfone 3 (ZE552KL-JP)&lt;/h2&gt;
+
+&lt;p&gt;SIMフリー端末としては有名なAsus社の代表として&lt;a href=&#34;http://amzn.to/2vlGYvT&#34;&gt;Zenfone3&lt;/a&gt;が登場です。
+国際版・台湾版・中国版・日本版の4種が主流のようですが、今回は日本版について調べました。
+発売当初のパッチレベルから、3ヶ月ごとにアップデートがかかっているようです。ただ、2ヶ月遅れなのが痛い。
+この調子で毎3ヶ月アップデートがかかれば、無難な端末と呼べそうですが、調査時点の2017年7月時点では新パッチは登場していません。
+もはやキャリア機種の方がアップデート頻度は良いみたいですね。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;レベル&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;日付&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2017年3月(Android7.0)&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/5/17&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2016年12月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2017/2/24&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;2016年9月&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;発売当初&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;まとめ-各キャリア健闘も-ドコモのxperiaが最強か-simフリー系は良くない&#34;&gt;まとめ：各キャリア健闘も、ドコモのXperiaが最強か。SIMフリー系は良くない&lt;/h2&gt;
+
+&lt;p&gt;やはり、まめにSecurity系のアップデートが配信されるドコモは頑張っていると思います。
+メーカにもよりますが、Xperiaを買っておくのが一番安心です。&lt;/p&gt;
+
+&lt;p&gt;SIMフリー系としてASUSを調査しましたが、頻度は低いようでした。購入前には要検討です。&lt;/p&gt;
+
+&lt;p&gt;今回はSony以外の国産メーカは調査対象外にしましたが、アップデート頻度は少ないです。
+この場合、ドコモの端末を購入しておくのが無難でしょう。&lt;/p&gt;
+
+&lt;p&gt;なお、セキュリティパッチの配信が遅い端末は、ウイルス対策ソフトを入れて怪しいアプリをシャットアウトできるようにするのも大切です。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01M1893YL&amp;linkId=5330526d2740fcc4ad424153e815574f&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01KGS7GTS&amp;linkId=bd22d6ebb819fa52fc9210fab9e3d702&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B006RD7L8I&amp;linkId=a2417b4aa3191df657ef978037e382d5&#34;&gt;&lt;/iframe&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
-      <description>Androidの「セキュリティパッチレベル」について説明します。 Android Security Bulletins | Android Open Source Project
-セキュリティパッチレベルの確認の仕方 Android端末を購入するとき、Androidのバージョンを調べる人は多いと思います。だいたい年1回ごとにアップデートされ、開発コード名はアルファベット順にお菓子の名前が割り当てられます。 KitkatとかMarshmallowとかのあれです。
-お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。
-なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。
-セキュリティパッチレベルとは？ セキュリティパッチレベルは基準となる日付で表記されており、その一覧はAndroid Security Bulletinsから確認できます。日付が後の方が、セキュリティがしっかりしているという事になります。
-例えば2016年11月では、1日・5日・6日の3種類が用意されています。 2016/11/01では、主に以下の脆弱性に対処する必要があります。
- CVE-2016-6699 CVE-2016-6700 他  2016/11/05では、2016/11/01で対応される脆弱性に加えて主に以下に対処する必要があります。
- CVE-2016-6725 CVE-2016-6828 他  2016/11/06では、2016/11/05に加えて以下に対処します。
- CVE-2016-5195  このように、各セキュリティレベルには「対処すべき脆弱性」が定められており、それらにすべて対応出来た端末だけが当該パッチレベルを表示できます。 Androidはセキュリティの対応がグダグダであることが問題となっていますが、Googleもその現状を何とかしたいと考えているようです。セキュリティパッチレベルは2015年10月から始まっています。
-Androidのバージョンとセキュリティパッチレベルについて Android Security Bulletinsでは、各脆弱性がAndroidのどのバージョンで改修されるかが分かります。 例えばCVE-2016-6703では以下のように示されます。
-   CVE 参照 重大度 更新対象のGoogle端末 更新対象のAOSPバージョン 報告日     CVE-2016-6703 A-30765246 高 なし 4.4.4, 5.0.2, 5.1.1
-6.0, 6.0.1 Google 社内    この例の場合Android6.</description>
-    </item>
     
-    <item>
-      <title>SanDisk ワイヤレスメディアドライブのレビュー</title>
-      <link>https://blog.yyyak.com/post/sandisk_wireless/</link>
-      <pubDate>Tue, 29 Nov 2016 23:39:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/sandisk_wireless/</guid>
-      <description>&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Androidにもセキュリティソフトが必要な理由</title>
-      <link>https://blog.yyyak.com/post/android_sec/</link>
-      <pubDate>Fri, 18 Nov 2016 03:55:00 +0900</pubDate>
+        <item>
+          <title>Android Security Bulletinsについて</title>
+          <link>https://blog.yyyak.com/post/android_secutiry/</link>
+          <pubDate>Sat, 10 Dec 2016 11:23:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
+          <description>
+
+&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。&lt;/p&gt;
+
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;セキュリティパッチレベルの確認の仕方&#34;&gt;セキュリティパッチレベルの確認の仕方&lt;/h2&gt;
+
+&lt;p&gt;Android端末を購入するとき、Androidのバージョンを調べる人は多いと思います。だいたい年1回ごとにアップデートされ、開発コード名はアルファベット順にお菓子の名前が割り当てられます。
+KitkatとかMarshmallowとかのあれです。&lt;/p&gt;
+
+&lt;p&gt;お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。&lt;/p&gt;
+
+&lt;h2 id=&#34;セキュリティパッチレベルとは&#34;&gt;セキュリティパッチレベルとは？&lt;/h2&gt;
+
+&lt;p&gt;セキュリティパッチレベルは基準となる日付で表記されており、その一覧は&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34;&gt;Android Security Bulletins&lt;/a&gt;から確認できます。日付が後の方が、セキュリティがしっかりしているという事になります。&lt;/p&gt;
+
+&lt;p&gt;例えば2016年11月では、1日・5日・6日の3種類が用意されています。
+2016/11/01では、主に以下の脆弱性に対処する必要があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CVE-2016-6699&lt;/li&gt;
+&lt;li&gt;CVE-2016-6700&lt;/li&gt;
+&lt;li&gt;他&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2016/11/05では、2016/11/01で対応される脆弱性に加えて主に以下に対処する必要があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CVE-2016-6725&lt;/li&gt;
+&lt;li&gt;CVE-2016-6828&lt;/li&gt;
+&lt;li&gt;他&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2016/11/06では、2016/11/05に加えて以下に対処します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CVE-2016-5195&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このように、各セキュリティレベルには「対処すべき脆弱性」が定められており、それらにすべて対応出来た端末だけが当該パッチレベルを表示できます。
+Androidはセキュリティの対応がグダグダであることが問題となっていますが、Googleもその現状を何とかしたいと考えているようです。セキュリティパッチレベルは2015年10月から始まっています。&lt;/p&gt;
+
+&lt;h2 id=&#34;androidのバージョンとセキュリティパッチレベルについて&#34;&gt;Androidのバージョンとセキュリティパッチレベルについて&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34;&gt;Android Security Bulletins&lt;/a&gt;では、各脆弱性がAndroidのどのバージョンで改修されるかが分かります。
+例えばCVE-2016-6703では以下のように示されます。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;CVE&lt;/th&gt;
+&lt;th&gt;参照&lt;/th&gt;
+&lt;th&gt;重大度&lt;/th&gt;
+&lt;th&gt;更新対象のGoogle端末&lt;/th&gt;
+&lt;th&gt;更新対象のAOSPバージョン&lt;/th&gt;
+&lt;th&gt;報告日&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CVE-2016-6703&lt;/td&gt;
+&lt;td&gt;A-30765246&lt;/td&gt;
+&lt;td&gt;高&lt;/td&gt;
+&lt;td&gt;なし&lt;/td&gt;
+&lt;td&gt;4.4.4, 5.0.2, 5.1.1&lt;br&gt;6.0, 6.0.1&lt;/td&gt;
+&lt;td&gt;Google 社内&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;この例の場合Android6.0.1ならパッチがアップされていますが、おそらくAndroid3.0系ではパッチがありません。（脆弱性そのものに関係ないかもしれません。）&lt;/p&gt;
+
+&lt;p&gt;問題は、メーカがそのアップデートを反映させるかどうかです。こういったセキュリティの心配に対してわかりやすさを提供してくれるのが「セキュリティパッチレベル」と言うことが出来そうです。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/android_sec/</guid>
-      <description>Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。 Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。
-主張その1：絶対にいらない。 さて、Android用対策ソフトについて検索すると必ず出てくるニュースに以下のようなものがあります。
- Androidにはウイルス対策ソフトは必要ない。
-ウイルス対策なんて言っているのは全部詐欺だ！
- Androidにウイルス対策アプリは不要。グーグル関係者、ウイルス企業は「ペテン師」と痛烈批判 : スマホ口コミ評価速報 まあ、なかの人がそういうのなら、そういうものなのかな。
-でも、本当？
-主張その2：なんだかんだ必要。だってウイルスあるんだもん。 さて、商売の邪魔をされて黙っているバカはいません。各ベンダーはこぞってブログに以下のような記事を投稿します。
- 知っていますか？Androidのウイルスの脅威は日に日に増しています。
-当社の対策ソフトを購入してあなたの社会的信頼を守りましょう
- Android ウイルス感染の不安を解消する3つのポイント たしかに、Androidのウイルスの話題はよく聞くし、このあいだも友達がFBに変な投稿してました。やっぱり必要なのでは？
-この議論の問題点：「ウイルス」とは何か 主張その1の「ウイルス」は、ウイルスではない・・・ 多くの人が指摘していますが、1つ目の主張で言うところの「ウイルス」は、Androidには存在しないか、あったとしても悪さができません。
-Androidはアプリをインストールして使うように設計されています。各アプリはサンドボックスと呼ばれる保護機構によって、他のアプリとは高度に切り離された状態にあります。もしウイルスが悪さをしようとしても、このサンドボックスによって目論見は阻止されるのです！
-ん？？なんかおかしい・・・
-気付きましたか？そう、彼らのいうウイルスとはマルウェアなのです。Windowsで悪さを働くマルウェアは、Androidではうまく動きません。
-Androidで俗に言う「マルウェア」は、身から出たサビ さて、マルウェアはAndroidでは動作しないことはお話しました。しかし、例外があります。それは「マルウェアの活動をユーザ自身が許可した場合」です。 多くの人はアプリをインストールする際にアプリの要求権限を深く吟味しません。不注意によって、悪意のあるアプリをユーザーが自発的にインストールしてしまうことがあるのです。
-販売されているウイルス対策ソフトは、ユーザによる自発的なアプリのインストールも監視していて、あまりに怪しいアプリをインストールしようとしていれば警告を発してくれます。ベンダーによっては、インストール数の多いアプリを独自に解析して、危険なアプリをインストールしないよう啓蒙しているところもあります。
-権限の確認はいちいち面倒ですし、権限を確認したとしても意図しない動作をされてしまうことは考えられます。そういった観点から、ウイルス対策ソフトは有効です。
-ウイルスにはどう対処するのか さて、最も深刻なのは「サンドボックスの脆弱性を突かれる」ことです。これこそがウイルスです。 ウイルス対策ソフトはウイルスを駆除することができるのでしょうか。
-できません。（おそらく）
-ウイルスを駆除するには、OSの奥深くの領域まで検査する必要が有ります。しかしウイルス対策ソフトもアプリの１つ。サンドボックスによって行動が制限されています。ウイルス対策ソフトがサンドボックスの脆弱性を突く以外、ウイルスを駆除する手立てはないのです。 もしそんなウイルス対策ソフトがあったとして、それはもうウイルスです。
-重大な脆弱性が発見された場合、その脆弱性を塞ぐアップデートを適用するしかないのです。
-   ウイルスに感染しないために 脆弱性を突かれてしまっては、もうどうしようもないのですが、なるべくやられないようにするポイントがあります。 以下に挙げます。
- アップデートが頻繁に行われる機種を使う。 不要なアプリはインストールしない。 標準アプリでも、使っていないものは無効化する  みなさん、くれぐれもウイルスとマルウェアには注意しましょう。</description>
-    </item>
     
-    <item>
-      <title>DualPDF</title>
-      <link>https://blog.yyyak.com/post/dualpdf/</link>
-      <pubDate>Sun, 05 Jun 2016 07:38:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/dualpdf/</guid>
-      <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Wifi環境でPUSH通知が届かない</title>
-      <link>https://blog.yyyak.com/post/push/</link>
-      <pubDate>Mon, 27 Jul 2015 04:05:00 +0900</pubDate>
+        <item>
+          <title>SanDisk ワイヤレスメディアドライブのレビュー</title>
+          <link>https://blog.yyyak.com/post/sandisk_wireless/</link>
+          <pubDate>Tue, 29 Nov 2016 23:39:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/sandisk_wireless/</guid>
+          <description>
+
+&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。&lt;/p&gt;
+
+&lt;h2 id=&#34;どんなデバイス&#34;&gt;どんなデバイス？&lt;/h2&gt;
+
+&lt;p&gt;ワイヤレスメディアドライブには32GB/64GBのフラッシュメモリが搭載されていて、スマートフォンアプリやブラウザ・USB経由で中にアクセス出来るようになっています。SDカードスロットが搭載されていて、容量を拡張することが出来ます。&lt;/p&gt;
+
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fwww.sandisk.co.jp%2Fhome%2Fmobile-device-storage%2Fconnect-wireless-media-drive&#34; title=&#34;サンディスク コネクト ワイヤレスメディアドライブ&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://www.sandisk.co.jp/home/mobile-device-storage/connect-wireless-media-drive&#34; target=&#34;\_blank&#34;&gt;サンディスク コネクト ワイヤレスメディアドライブ&lt;/a&gt;&lt;/iframe&gt;
+
+&lt;p&gt;用途としては、次のようなことが考えられそうです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iPhone/Androidのバックアップとして&lt;/li&gt;
+&lt;li&gt;PC/スマホ間のデータの受け渡しに&lt;/li&gt;
+&lt;li&gt;ペーパーレスでの資料配布に&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;すでに製造は収束しつつあるようで、ビックカメラなどでは製品そのものが確認できません。Amazonでは15000円程度で売っているようです。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00DR8LAE2&amp;linkId=fec513350ad563a2edfcd2a90df7ce28&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
+
+&lt;p&gt;接続の仕方は以下の3通りです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iOS/Androidアプリ経由&lt;/li&gt;
+&lt;li&gt;ブラウザ&lt;/li&gt;
+&lt;li&gt;USBデバイスとして&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このうち、機器の設定を管理できるのはアプリ・ブラウザ経由のみです。&lt;/p&gt;
+
+&lt;h3 id=&#34;アプリ経由で初期設定してみる&#34;&gt;アプリ経由で初期設定してみる&lt;/h3&gt;
+
+&lt;p&gt;ストアからアプリをダウンロードしてください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/jp/app/sandisk-connect-wireless-media/id646153884?mt=8&#34; style=&#34;display:block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/ja-jp/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;margin-left: auto;margin-right: auto;&#34;&gt;&lt;/a&gt;
+&lt;a href=&#39;https://play.google.com/store/apps/details?id=com.SanDisk.AirCruzer&amp;hl=ja&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&#39;&gt;&lt;img alt=&#39;Google Play で手に入れよう&#39; style=&#34;width:156px; display:block;margin-left: auto;margin-right: auto;&#34; src=&#39;https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png&#39;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;メディアドライブの電源ボタンを長押ししてLEDが点滅し始めたら、アプリを起動します。デバイスを選択する画面が表されるはずなので、&amp;rdquo;Sandisk Media ****&amp;ldquo;というものを選択します。初期のパスワードは&amp;rdquo;admin&amp;rdquo;です。
+すると、メモリー内の内容が表示されるようになります。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h3 id=&#34;設定&#34;&gt;設定&lt;/h3&gt;
+
+&lt;p&gt;設定ボタンを押すと、様々な設定を行えます。ワイヤレスドライブの無線LANのパスワード変更は必ずしておきましょう。
+既存のWifiネットワークに接続して、LAN内のすべてのマシンから閲覧できるようにもできます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h3 id=&#34;ブラウザから接続する&#34;&gt;ブラウザから接続する&lt;/h3&gt;
+
+&lt;p&gt;メディアデバイスが出すWifiに接続する場合、192.168.11.1にアクセスすれば中身を閲覧できます。
+メディアデバイスが既存のWifiネットワークに接続する場合、IPアドレスは割り当てられたものを使用します。&lt;/p&gt;
+
+&lt;h2 id=&#34;良い点&#34;&gt;良い点&lt;/h2&gt;
+
+&lt;h4 id=&#34;コンパクト&#34;&gt;コンパクト&lt;/h4&gt;
+
+&lt;p&gt;軽くて小さくて持ち運びやすいです。フラッシュメモリなので振動にも強い！&lt;/p&gt;
+
+&lt;h4 id=&#34;安定性&#34;&gt;安定性&lt;/h4&gt;
+
+&lt;p&gt;ここ数週間、特に問題なく使えています。&lt;br /&gt;
+また、スマホアプリは無駄な権限を取得することもなく、非常に安定して動作します。似たようなデバイスはたくさん販売されていますが、さすが大手メーカ製といった所です。&lt;/p&gt;
+
+&lt;h4 id=&#34;豊富な接続方法&#34;&gt;豊富な接続方法&lt;/h4&gt;
+
+&lt;p&gt;アプリ経由だけでなく、ブラウザ経由やUSB経由でデータを閲覧することができます。特にブラウザが使えるということは、事実上あらゆるマシンからデータを閲覧できることになります。&lt;/p&gt;
+
+&lt;h4 id=&#34;sdカードでデータ容量を拡張できる&#34;&gt;SDカードでデータ容量を拡張できる。&lt;/h4&gt;
+
+&lt;p&gt;数百GBまでデータ容量を拡張できます。ネットワークに接続できない事情のあるマシンにも、最悪SD経由でデータを渡せるので便利だと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;悪い点&#34;&gt;悪い点&lt;/h2&gt;
+
+&lt;h4 id=&#34;ファイルの重複検出ができない&#34;&gt;ファイルの重複検出ができない&lt;/h4&gt;
+
+&lt;p&gt;アプリ経由でデータをアップロードすると、同じファイルが存在しても別ファイルとして書き込んでしまいます。
+ですので、スマホ内の写真をバックアップしたい場合には、その都度バックアップしたい新しい画像を指定する必要があります。本当はフォルダを指定すると新ファイルだけを自動でアップして欲しいのですが・・・。&lt;/p&gt;
+
+&lt;h4 id=&#34;最大接続数は8&#34;&gt;最大接続数は8&lt;/h4&gt;
+
+&lt;p&gt;Wifiの最大接続数は8つです。みんなにデータを配布するにしても、同時に8人しか受け付けられないとなる、小さな会議でしか使えそうにないです。&lt;/p&gt;
+
+&lt;h4 id=&#34;アクセス権限の概念がない&#34;&gt;アクセス権限の概念がない&lt;/h4&gt;
+
+&lt;p&gt;バックアップ用途・ファイル公開用途の両方に同時に使う事は出来ません。なぜなら、デバイスに接続できる人はすべてのデータにアクセス出来てしまうのです。&lt;/p&gt;
+
+&lt;p&gt;本当は、もっときめ細かな管理がしたいです。例えば・・・
+* 2つのWifiアクセスポイントがあって、Guest用は限られたフォルダしか閲覧できない
+* Adminにしか見れないフォルダが作れる
+* ブラウザ経由では見れないフォルダが作れる&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;どうしてもWifi経由でファイルを公開したい人向けのデバイスだと思います。PCで参加する人が多い会議では、そこそこ便利でしょう。いっそ会議室に常駐させておくと良いかもしれません。
+スマホアプリの作りは甘いです。タイムスタンプをチェックする機能が実装されれば使い勝手が急激に改善するはずです。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/push/</guid>
-      <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
-設定を見なおしてみましょう。
-&lt;/p&gt;</description>
-    </item>
     
+      
+        <item>
+          <title>Androidにもセキュリティソフトが必要な理由</title>
+          <link>https://blog.yyyak.com/post/android_sec/</link>
+          <pubDate>Fri, 18 Nov 2016 03:55:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/android_sec/</guid>
+          <description>
+
+&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。&lt;/p&gt;
+
+&lt;p&gt;Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
+
+&lt;h2 id=&#34;主張その1-絶対にいらない&#34;&gt;主張その1：絶対にいらない。&lt;/h2&gt;
+
+&lt;p&gt;さて、Android用対策ソフトについて検索すると必ず出てくるニュースに以下のようなものがあります。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Androidにはウイルス対策ソフトは必要ない。&lt;br /&gt;
+ウイルス対策なんて言っているのは全部詐欺だ！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fblog.livedoor.jp%2Fyoblo%2Farchives%2F42617284.html&#34; title=&#34;Androidにウイルス対策アプリは不要。グーグル関係者、ウイルス企業は「ペテン師」と痛烈批判 : スマホ口コミ評価速報&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://blog.livedoor.jp/yoblo/archives/42617284.html&#34; target=&#34;\_blank&#34;&gt;Androidにウイルス対策アプリは不要。グーグル関係者、ウイルス企業は「ペテン師」と痛烈批判 : スマホ口コミ評価速報&lt;/a&gt;&lt;/iframe&gt;
+
+&lt;p&gt;まあ、なかの人がそういうのなら、そういうものなのかな。&lt;br /&gt;
+でも、本当？&lt;/p&gt;
+
+&lt;h2 id=&#34;主張その2-なんだかんだ必要-だってウイルスあるんだもん&#34;&gt;主張その2：なんだかんだ必要。だってウイルスあるんだもん。&lt;/h2&gt;
+
+&lt;p&gt;さて、商売の邪魔をされて黙っているバカはいません。各ベンダーはこぞってブログに以下のような記事を投稿します。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;知っていますか？Androidのウイルスの脅威は日に日に増しています。&lt;br /&gt;
+当社の対策ソフトを購入してあなたの社会的信頼を守りましょう&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fjapan.norton.com%2Fandroid-virus-1763&#34; title=&#34;Android ウイルス感染の不安を解消する3つのポイント&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://japan.norton.com/android-virus-1763&#34; target=&#34;\_blank&#34;&gt;Android ウイルス感染の不安を解消する3つのポイント&lt;/a&gt;&lt;/iframe&gt;
+
+&lt;p&gt;たしかに、Androidのウイルスの話題はよく聞くし、このあいだも友達がFBに変な投稿してました。やっぱり必要なのでは？&lt;/p&gt;
+
+&lt;h2 id=&#34;この議論の問題点-ウイルス-とは何か&#34;&gt;この議論の問題点：「ウイルス」とは何か&lt;/h2&gt;
+
+&lt;h3 id=&#34;主張その1の-ウイルス-は-ウイルスではない&#34;&gt;主張その1の「ウイルス」は、ウイルスではない・・・&lt;/h3&gt;
+
+&lt;p&gt;多くの人が指摘していますが、1つ目の主張で言うところの「ウイルス」は、Androidには存在しないか、あったとしても悪さができません。&lt;/p&gt;
+
+&lt;p&gt;Androidはアプリをインストールして使うように設計されています。各アプリはサンドボックスと呼ばれる保護機構によって、他のアプリとは高度に切り離された状態にあります。もしウイルスが悪さをしようとしても、このサンドボックスによって目論見は阻止されるのです！&lt;/p&gt;
+
+&lt;p&gt;ん？？なんかおかしい・・・&lt;br /&gt;
+気付きましたか？そう、彼らのいうウイルスとは&lt;strong&gt;マルウェア&lt;/strong&gt;なのです。Windowsで悪さを働くマルウェアは、Androidではうまく動きません。&lt;/p&gt;
+
+&lt;h3 id=&#34;androidで俗に言う-マルウェア-は-身から出たサビ&#34;&gt;Androidで俗に言う「マルウェア」は、身から出たサビ&lt;/h3&gt;
+
+&lt;p&gt;さて、マルウェアはAndroidでは動作しないことはお話しました。しかし、例外があります。それは「&lt;strong&gt;マルウェアの活動をユーザ自身が許可した場合&lt;/strong&gt;」です。
+多くの人はアプリをインストールする際にアプリの要求権限を深く吟味しません。不注意によって、悪意のあるアプリをユーザーが自発的にインストールしてしまうことがあるのです。&lt;/p&gt;
+
+&lt;p&gt;販売されているウイルス対策ソフトは、ユーザによる自発的なアプリのインストールも監視していて、あまりに怪しいアプリをインストールしようとしていれば警告を発してくれます。ベンダーによっては、インストール数の多いアプリを独自に解析して、危険なアプリをインストールしないよう啓蒙しているところもあります。&lt;/p&gt;
+
+&lt;p&gt;権限の確認はいちいち面倒ですし、権限を確認したとしても意図しない動作をされてしまうことは考えられます。そういった観点から、ウイルス対策ソフトは有効です。&lt;/p&gt;
+
+&lt;h2 id=&#34;ウイルスにはどう対処するのか&#34;&gt;ウイルスにはどう対処するのか&lt;/h2&gt;
+
+&lt;p&gt;さて、最も深刻なのは「サンドボックスの脆弱性を突かれる」ことです。これこそが&lt;strong&gt;ウイルス&lt;/strong&gt;です。
+ウイルス対策ソフトはウイルスを駆除することができるのでしょうか。&lt;/p&gt;
+
+&lt;p&gt;できません。（おそらく）&lt;/p&gt;
+
+&lt;p&gt;ウイルスを駆除するには、OSの奥深くの領域まで検査する必要が有ります。しかしウイルス対策ソフトもアプリの１つ。サンドボックスによって行動が制限されています。ウイルス対策ソフトがサンドボックスの脆弱性を突く以外、ウイルスを駆除する手立てはないのです。
+もしそんなウイルス対策ソフトがあったとして、それはもうウイルスです。&lt;/p&gt;
+
+&lt;p&gt;重大な脆弱性が発見された場合、その脆弱性を塞ぐアップデートを適用するしかないのです。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01M1893YL&amp;linkId=5330526d2740fcc4ad424153e815574f&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01KGS7GTS&amp;linkId=bd22d6ebb819fa52fc9210fab9e3d702&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B006RD7L8I&amp;linkId=a2417b4aa3191df657ef978037e382d5&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;ウイルスに感染しないために&#34;&gt;ウイルスに感染しないために&lt;/h2&gt;
+
+&lt;p&gt;脆弱性を突かれてしまっては、もうどうしようもないのですが、なるべくやられないようにするポイントがあります。
+以下に挙げます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アップデートが頻繁に行われる機種を使う。&lt;/li&gt;
+&lt;li&gt;不要なアプリはインストールしない。&lt;/li&gt;
+&lt;li&gt;標準アプリでも、使っていないものは無効化する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;みなさん、くれぐれもウイルスとマルウェアには注意しましょう。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>DualPDF</title>
+          <link>https://blog.yyyak.com/post/dualpdf/</link>
+          <pubDate>Sun, 05 Jun 2016 07:38:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/dualpdf/</guid>
+          <description>
+
+&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;dualpdf&#34;&gt;DualPDF&lt;/h2&gt;
+
+&lt;p&gt;DualPDFは同時に２つのPDFファイルを閲覧することが出来るAndroidアプリです。
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=jp.kkyusuke.DualPDF&#34;&gt;Google Play Store&lt;/a&gt;からダウンロードして下さい。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;https://play.google.com/store/apps/details?id=jp.kkyusuke.DualPDF&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&#39;&gt;&lt;img alt=&#39;Google Play で手に入れよう&#39; src=&#39;https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png&#39; width=&#34;200&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;更新履歴&#34;&gt;更新履歴&lt;/h2&gt;
+
+&lt;h3 id=&#34;ver-1-10&#34;&gt;Ver 1.10&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改善：　64bitCPUで動作するよう改善&lt;/li&gt;
+&lt;li&gt;お知らせ：　Android2.3以下の端末は今後のアップデート対象外となります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-6&#34;&gt;Ver 1.6&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;追加：　外部アプリから開く&lt;/li&gt;
+&lt;li&gt;追加：　非対称ビュー&lt;/li&gt;
+&lt;li&gt;改善：　縦表示に対応&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-5&#34;&gt;Ver 1.5&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;修正：　一度PDFファイルを読み込むと、ほかのPDFが開けなくなる不具合&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-4&#34;&gt;Ver 1.4&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;修正：　Android4.0-4.3でPDFが開けない問題&lt;/li&gt;
+&lt;li&gt;改善：　不要な権限を削除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-3&#34;&gt;Ver 1.3&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改善：　安定性の向上&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-2&#34;&gt;Ver 1.2&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;修正：　一部端末でPDFが表示されない問題&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-1&#34;&gt;Ver 1.1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改善：　新しい端末のUI&lt;/li&gt;
+&lt;li&gt;修正：　ライセンス表記&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;動作検証&#34;&gt;動作検証&lt;/h2&gt;
+
+&lt;p&gt;下記の端末で正常に動作することが確認できています。
+なおAndroid2.x世代の端末では正常に動作しない場合があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sony Xperia XZ (Android 6.0)&lt;/li&gt;
+&lt;li&gt;ASUS Nexus7 (2013, Android6.0)&lt;/li&gt;
+&lt;li&gt;Sony Xperia Z3 (Android 5.0)&lt;/li&gt;
+&lt;li&gt;Huawei dtab 01 (Android 4.1)&lt;/li&gt;
+&lt;li&gt;Samsung Galaxy S3α (Android 4.3)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ライセンス&#34;&gt;ライセンス&lt;/h2&gt;
+
+&lt;p&gt;このアプリケーションではPDFのレンダリングにpdf.jsが利用されています。pdf.jsはApache License 2.0で公開されているオープンソースソフトウェアです。&lt;/p&gt;
+
+&lt;p&gt;このアプリケーションはXamarinを用いて開発されました。Dream SparkでライセンスされたVisual Studio 2015 Enterpriseでコンパイルされているため、一切の購入・広告料は頂いていません。
+当アプリは、Apache License 2.0の下でソースコードを公開しています。&lt;a href=&#34;https://github.com/kkyusuke/DualPDF&#34;&gt;Githubページを&lt;/a&gt;ご覧下さい。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Wifi環境でPUSH通知が届かない</title>
+          <link>https://blog.yyyak.com/post/push/</link>
+          <pubDate>Mon, 27 Jul 2015 04:05:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/push/</guid>
+          <description>
+
+&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;準備-pushの仕組み&#34;&gt;準備 ― PUSHの仕組み ―&lt;/h2&gt;
+
+&lt;p&gt;メールやSNSの通知はリアルタイムで来ることが当たり前になっていますが、どのような仕組みになっているのでしょうか。もし各端末が5秒おきとかに通知の有無をサーバに問い合わせたりしたら、サーバの負荷もネットワーク負荷も大変そうです。&lt;/p&gt;
+
+&lt;p&gt;PUSH通信では、Googleのサーバと通信状態を保持しておき、何か通知事項があったらすぐに端末へパケットを投げられる状態を保っておく工夫をしています。30分に1回だけGoogleのサーバにKeepAlive信号を送信し、わざわざ端末から伺いを立てなくても良いようになっているのです。例えば以下のログは、同一のAndroid端末が30分おきに特定のIPアドレスへ通信をしていることが分かります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Aug  7 14:30:58 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=43981 DF PROTO=TCP SPT=56899 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 15:01:11 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=74.125.204.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=22546 DF PROTO=TCP SPT=34188 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 15:31:41 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=27676 DF PROTO=TCP SPT=44014 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 16:02:09 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=63798 DF PROTO=TCP SPT=49070 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=12610 DF PROTO=TCP SPT=46566 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;逆にこのKeepAlive通知がうまく伝わっていないと、GoogleからKeepAliveを通知することができません。Wifi環境でPUSH通知が受信できない場合、この仕組みを阻害してしまう設定がされているかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;設定を見直そう-pr-400neの場合&#34;&gt;設定を見直そう  ― PR-400NEの場合 ―&lt;/h2&gt;
+
+&lt;p&gt;多くの家庭では、1つのネットワーク契約で複数の端末が同時に利用できるようにしているはずです。これをやってくれるルータは、各端末がどんな通信をしているか把握しながら、外部からの通信を各端末に配信しています。&lt;/p&gt;
+
+&lt;p&gt;もし、誰がどこと通信しているか記憶しておく時間の長さの設定が30分よりも短いと、PUSH通信がうまく行きません。SPI(Stateful Packet Inspection)設定を変更し、30分(1800秒)よりも長く通信が保持できるようにしましょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SPI設定を探します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;http://www.yyyak.com/blog/post/router_nat&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>

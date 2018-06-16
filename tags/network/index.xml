@@ -1,118 +1,637 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Network on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/network/</link>
-    <description>Recent content in Network on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Apr 2016 00:38:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://blog.yyyak.com/tags/network/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>宅内サーバを外部に公開する</title>
-      <link>https://blog.yyyak.com/post/public_server/</link>
-      <pubDate>Wed, 20 Apr 2016 00:38:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/public_server/</guid>
-      <description>&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ルータのダイナミックDNS対応</title>
-      <link>https://blog.yyyak.com/post/dynamic_router/</link>
-      <pubDate>Sat, 19 Mar 2016 12:38:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/dynamic_router/</guid>
-      <description>&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
-無線LANルータの主なメーカがどうのような対応をしているのかまとめました。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>インターリンクの回線速度</title>
-      <link>https://blog.yyyak.com/post/interlink/</link>
-      <pubDate>Tue, 16 Feb 2016 13:00:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/interlink/</guid>
-      <description>ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。 インターリンクという会社です。 契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。 測定はここで行っていて、茨城県南、精度高、圧縮率普通で計測しています。
-2016/03/21 19:10 2016/03/04 22:10 2016/02/16 22:00 2016/02/15 20:00 </description>
-    </item>
-    
-    <item>
-      <title>ポート開放の仕組みと設定方法</title>
-      <link>https://blog.yyyak.com/post/port_open/</link>
-      <pubDate>Thu, 04 Feb 2016 12:07:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/port_open/</guid>
-      <description>ポート開放の仕組みを説明した上で、 Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。 なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で ポート開放することが出来るはずです。
-ポート開放とは ポート開放と一言になっていますが、実際には複数の仕組みの組み合わせです。 何をすることを指すのか、しっかり把握しましょう。
-目的 そもそもポート開放は、特定のポートに来る通信を特定の端末に転送する設定のことを言います。
-ポート開放していないルータは、すべての通信はLAN内の端末から開始されることを前提としています。 だから、これまでの通信履歴から「外からの通信をどの内部端末に転送すれば良いか」が分かります。 （一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）
-しかし、通信履歴から転送の相手先を決める手法は、通信速度が重要となるWEBゲームなどでは適さない場合があります。 そこで、決まったポートを使う通信は「あらかじめルート設定を済ませておこう」ということになるわけです。これがポート開放です。
-つまりポート開放は「IPアドレスの固定＋ルート情報の固定」という2つの設定をして初めて出来ることなのです！
-やるべきこと やるべきことは3つあります。 - ルータのDHCP設定を変更 - 端末の設定を変更 - ルート情報固定（狭義のポート開放）
-最初の2つがIPアドレスの固定のための設定です。 PCを使っていて、普段はわざわざIPアドレスを指定はしていないと思います。 これは、ルータがDHCPというサービスを提供していて、使われていないIPを自動で割り当ててくれているからです。 端末のIPを固定する場合には、まずルータの設定を変更して、自動割り当て範囲内に固定するIPが入らないようにしましょう。 その上で、端末の設定でIPアドレスを固定します。
-なお高価なルータでは、特定のMACアドレスに対して特定のIPを割り当てることが可能です。家庭用でそのような機能を提供してくれるものは少ないようなので、ここでは割愛します。
-作業1：ルータのDHCP設定を変更 まず、ルータのDHCP機能の設定を確認します。ブラウザから以下のページにアクセスします。 ntt.setup ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。
-DHCPサーバこそがIPアドレスの自動割り当てを行っています。たとえば以下のように設定すると、自動割り当て区間が192.168.1.2~192.168.1.81になります。 「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。
-作業2：端末のIPアドレスを固定 さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。
-以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。
-さて、表示された画面から「インターネットプロトコルバージョン4(TCP/IPv4)」を選択し、プロパティボタンを押します。
-以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&amp;rdquo;255.255.255.0&amp;rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。
-作業3：ポート開放 さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。
-ここで、ポート番号・転送先のIPアドレスを設定すればOK。プロトコルは適宜選択ですが、TCPやUDPが一般的でしょうか。ソフトウェアによって違うのでプロトコルはいくつか試してみてください。
-おわりに ポート開放は以上の設定で終了です。 当然ですが、ポート開放によって初出がLAN内でない通信が内部に中継されることになるので、セキュリティは低下します。転送先のマシンにウイルス対策ソフトを導入するのはもちろん、必要のないポート転送の設定は無効にしておくなど、注意しましょう。</description>
-    </item>
-    
-    <item>
-      <title>unboundとbind9の違い</title>
-      <link>https://blog.yyyak.com/post/dns_centos7/</link>
-      <pubDate>Sun, 25 Oct 2015 12:47:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
-      <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
-2つの違いを調べました。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ひかり回線が繋がらなくなる問題</title>
-      <link>https://blog.yyyak.com/post/router_nat/</link>
-      <pubDate>Sun, 11 Oct 2015 08:30:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/router_nat/</guid>
-      <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ビック光 フレッツ光から乗り換えました！</title>
-      <link>https://blog.yyyak.com/post/iijhikari/</link>
-      <pubDate>Wed, 23 Sep 2015 11:02:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/iijhikari/</guid>
-      <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
-速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2016-04-20 00:38:00 &#43;0900 JST</updated>
 
-&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;http://netspeed-tokyo.studio-radish.com&lt;/a&gt;
-測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Wifi環境でPUSH通知が届かない</title>
-      <link>https://blog.yyyak.com/post/push/</link>
-      <pubDate>Mon, 27 Jul 2015 04:05:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/push/</guid>
-      <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
-設定を見なおしてみましょう。
-&lt;/p&gt;</description>
-    </item>
+        <item>
+          <title>宅内サーバを外部に公開する</title>
+          <link>https://blog.yyyak.com/post/public_server/</link>
+          <pubDate>Wed, 20 Apr 2016 00:38:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/public_server/</guid>
+          <description>
+
+&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;宅内サーバを公開するメリット&#34;&gt;宅内サーバを公開するメリット&lt;/h2&gt;
+
+&lt;p&gt;宅内にサーバを設置して公開するメリットとしては、以下のことが考えられます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;外部にサーバを借りるお金がかからない&lt;/li&gt;
+&lt;li&gt;自宅に保存してあるデータを簡単に公開できる。データ容量がほぼ無制限。&lt;/li&gt;
+&lt;li&gt;お金をかけずにサーバ設置の練習をしたい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;サーバ管理者志望の方でも、月1000円ほどするVPSなどを借りて勉強するのは難しい方もいるかと思います。そういった方には、とりあえず自宅で設置してみて、一通りできるようになってから外部のものを借りるのは良いステップかと思います。
+また、写真や動画を公開したい人にとって、ディスク容量は非常に重要です。しかし、数TBものディスクを借りようとすると、それだけで月に数万円も払わなくてはなりません。その点、自宅サーバであればディスクは自分が購入した分だけ使用できるのでとても経済的です。&lt;/p&gt;
+
+&lt;p&gt;ただし、デメリットもあります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プロバイダによって、宅内サーバ設置を禁止していることがある&lt;/li&gt;
+&lt;li&gt;短期間で大容量のアップロードをする場合、プロバイダから契約解除される可能性がある&lt;/li&gt;
+&lt;li&gt;VPSやレンタルサーバと違って、あらゆる問題に自分で対処する必要がある。（特にセキュリティ）&lt;/li&gt;
+&lt;li&gt;セキュリティ的な問題が発生した場合、自宅内のあらゆるPCに影響が発生する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;プロバイダはサーバが設置されているかどうか分かるわけではないので、異様に大量の通信をしなければ問題ないでしょう。問題はセキュリティです。外部サーバでもセキュリティには注意しなくてはなりませんが、基幹部分のアップデートは自動で行われることが多いですし、通信内容をある程度監視して問題のあるトラフィックを通知してもらうこともできます。こういったサービスは一切受けられないので、しっかり自己責任で管理しなくてはなりません。最低限、ソフトウェアアップデートくらいはしっかりしないといけないでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;外部からくる通信をすべて特定マシンに転送&#34;&gt;外部からくる通信をすべて特定マシンに転送&lt;/h2&gt;
+
+&lt;p&gt;とにかく標題のことができれば、サーバは完成です。IPアドレスであとはアクセスすればOKです。どのように設定するか以下に説明します。&lt;/p&gt;
+
+&lt;h3 id=&#34;dmz機能を利用&#34;&gt;DMZ機能を利用&lt;/h3&gt;
+
+&lt;p&gt;例えばフレッツ光の付属ルータ(PR-400ne)には、DMZ機能があります。DMZに特定マシンのIPアドレスを設定すると、外部からの新規の通信はすべてこのマシンに設定されます。以下のように設定します。&lt;/p&gt;
+
+&lt;p&gt;詳細設定-&amp;gt;高度な設定から「DMZホスト」を見つけて下さい。DMZホストの設置場所はLAN側にするのが都合が良いでしょう。これでDMZホストに設定されたPCはLANにアクセスしながら外部へも公開が可能になります。
+DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&amp;rdquo;192.168.1.10&amp;rdquo;をホストに設定しています。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;アクセス&#34;&gt;アクセス&lt;/h2&gt;
+
+&lt;h3 id=&#34;ipアドレスでアクセス&#34;&gt;IPアドレスでアクセス&lt;/h3&gt;
+
+&lt;p&gt;自宅のIPアドレスが分かれば、DMZのマシンにアクセス出来ます。IPアドレスは、例えば&lt;a href=&#34;https://www.cman.jp/network/support/go_access.cgi&#34;&gt;このWEBページ&lt;/a&gt;から確認できます。HTTPサーバなどを立ててみて確認しましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;ドメイン名でアクセス&#34;&gt;ドメイン名でアクセス&lt;/h3&gt;
+
+&lt;p&gt;IPアドレスは、固定サービスに加入しない限りは変更されますので、その場合にはダイナミックDNSを使いましょう。
+&lt;a href=&#34;www.yyyak.com/blog/post/dynamic_router&#34;&gt;こちらのポスト&lt;/a&gt;を確認して下さい。&lt;/p&gt;
+
+&lt;p&gt;以上です。&lt;/p&gt;
+</description>
+        </item>
+      
     
+      
+        <item>
+          <title>ルータのダイナミックDNS対応</title>
+          <link>https://blog.yyyak.com/post/dynamic_router/</link>
+          <pubDate>Sat, 19 Mar 2016 12:38:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/dynamic_router/</guid>
+          <description>
+
+&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
+無線LANルータの主なメーカがどうのような対応をしているのかまとめました。&lt;/p&gt;
+
+&lt;h2 id=&#34;ダイナミックdnsとは&#34;&gt;ダイナミックDNSとは？&lt;/h2&gt;
+
+&lt;p&gt;外部から自宅のネットワークにアクセスするには自宅のIPアドレスを知る必要があります。
+家庭用の契約ではIPアドレスは固定されないことが多いので、IPアドレスを指定してアクセスしても自宅にたどり着かないです。
+ドメインを取っても、これでは意味がありません。&lt;/p&gt;
+
+&lt;p&gt;IPアドレスが変わったときは自宅からIPアドレスの変更を自動的に反映させることが出来ればOKです。それを実現するのがダイナミックDNSです。
+そのためにPCを24時間起動するのはもったいないので、ルータがその機能を持っていることがあります。&lt;/p&gt;
+
+&lt;p&gt;本ポストは、メーカごとのダイナミックDNSサービスの対応状況をまとめています。
+一般的なフリーのサービスに対応している製品もあれば、メーカ独自のものしかサポートしていない物もあります。
+購入の参考にしてください。&lt;/p&gt;
+
+&lt;h2 id=&#34;vpnとは&#34;&gt;VPNとは&lt;/h2&gt;
+
+&lt;p&gt;外出先からも、まるで自宅にいるように家庭内のPCやBDレコーダにアクセスしたいことはありませんか。
+VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
+
+&lt;p&gt;本来はPCが担う仕事ですが、最近はルータにもその機能が搭載されていることがあります。
+ダイナミックDNS機能とVPN機能が両方搭載されていれば、簡単に外部から内部ネットワークにアクセス出来ます。&lt;/p&gt;
+
+&lt;h2 id=&#34;メーカごとの対応&#34;&gt;メーカごとの対応&lt;/h2&gt;
+
+&lt;p&gt;以下の製品を各メーカの代表として調べました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Buffalo: WXR-1900DHP2&lt;/li&gt;
+&lt;li&gt;NEC: Aterm WG2600HP&lt;/li&gt;
+&lt;li&gt;IO-DATA: WN-AC1600DGR3&lt;/li&gt;
+&lt;li&gt;ELECOM: WRC-1900GHBK-A&lt;/li&gt;
+&lt;li&gt;ASUS: RT-AC1200HP&lt;/li&gt;
+&lt;li&gt;NETGEAR: R8000&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;メーカ&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;対応DDNS&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;VPNサーバ機能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Buffalo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自サービス・DynDNS他&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;NEC&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自サービス・お名前.com&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;×&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;IO-DATA&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自サービス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ELECOM&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自サービス・DynDNS&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;×&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ASUS&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自サービス・DynDNS・ZoneEdit他&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;NETGEAR&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;No-IP・DynDNS他&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;すべての製品がダイナミックDNS機能は搭載しています。よって、自宅からWEBページを公開したりすることは全製品で可能です。
+ただし、IO-DATA製の製品は独自サービスしか対応していないようです。有料であったり、使い勝手が悪い可能性がありますので注意して下さい。私は実際に使っているわけではないので、細かい機能は分かりません。&lt;/p&gt;
+
+&lt;p&gt;VPN機能はNEC、ELECOMは未対応です。セキュリティ的には安心なのですが、外部から自宅にいるかのようにアクセスすることは出来ません。VPNを使いたいのであれば他のメーカを買うべきですが、VPNを使わないのならあえてNEC製を買ってリスクヘッジするのもありです。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ダイナミックDNSは使うが、VPNを使わない： NEC製、ELECOM製&lt;/li&gt;
+&lt;li&gt;ダイナミックDNS・VPNを使う： Buffalo製、ASUS製、NETGEAR製&lt;/li&gt;
+&lt;li&gt;ダイナミックDNSを使わない： IO-DATAもOK&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>インターリンクの回線速度</title>
+          <link>https://blog.yyyak.com/post/interlink/</link>
+          <pubDate>Tue, 16 Feb 2016 13:00:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/interlink/</guid>
+          <description>
+
+&lt;p&gt;ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
+&lt;a href=&#34;http://www.interlink.or.jp/&#34;&gt;インターリンク&lt;/a&gt;という会社です。&lt;/p&gt;
+
+&lt;p&gt;契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
+測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;ここ&lt;/a&gt;で行っていて、茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-03-04-22-10&#34;&gt;2016/03/04 22:10&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-02-16-22-00&#34;&gt;2016/02/16 22:00&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ポート開放の仕組みと設定方法</title>
+          <link>https://blog.yyyak.com/post/port_open/</link>
+          <pubDate>Thu, 04 Feb 2016 12:07:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/port_open/</guid>
+          <description>
+
+&lt;p&gt;ポート開放の仕組みを説明した上で、
+Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。&lt;/p&gt;
+
+&lt;p&gt;なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
+ポート開放することが出来るはずです。&lt;/p&gt;
+
+&lt;h2 id=&#34;ポート開放とは&#34;&gt;ポート開放とは&lt;/h2&gt;
+
+&lt;p&gt;ポート開放と一言になっていますが、実際には複数の仕組みの組み合わせです。
+何をすることを指すのか、しっかり把握しましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;目的&#34;&gt;目的&lt;/h3&gt;
+
+&lt;p&gt;そもそもポート開放は、特定のポートに来る通信を特定の端末に転送する設定のことを言います。&lt;/p&gt;
+
+&lt;p&gt;ポート開放していないルータは、すべての通信はLAN内の端末から開始されることを前提としています。
+だから、これまでの通信履歴から「外からの通信をどの内部端末に転送すれば良いか」が分かります。
+（一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/NAT.svg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/NAT.svg&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;しかし、通信履歴から転送の相手先を決める手法は、通信速度が重要となるWEBゲームなどでは適さない場合があります。
+そこで、決まったポートを使う通信は「あらかじめルート設定を済ませておこう」ということになるわけです。これがポート開放です。&lt;/p&gt;
+
+&lt;p&gt;つまりポート開放は「IPアドレスの固定＋ルート情報の固定」という2つの設定をして初めて出来ることなのです！&lt;/p&gt;
+
+&lt;h3 id=&#34;やるべきこと&#34;&gt;やるべきこと&lt;/h3&gt;
+
+&lt;p&gt;やるべきことは3つあります。
+- ルータのDHCP設定を変更
+- 端末の設定を変更
+- ルート情報固定（狭義のポート開放）&lt;/p&gt;
+
+&lt;p&gt;最初の2つがIPアドレスの固定のための設定です。
+PCを使っていて、普段はわざわざIPアドレスを指定はしていないと思います。
+これは、ルータがDHCPというサービスを提供していて、使われていないIPを自動で割り当ててくれているからです。
+端末のIPを固定する場合には、まずルータの設定を変更して、自動割り当て範囲内に固定するIPが入らないようにしましょう。
+その上で、端末の設定でIPアドレスを固定します。&lt;/p&gt;
+
+&lt;p&gt;なお高価なルータでは、特定のMACアドレスに対して特定のIPを割り当てることが可能です。家庭用でそのような機能を提供してくれるものは少ないようなので、ここでは割愛します。&lt;/p&gt;
+
+&lt;h2 id=&#34;作業1-ルータのdhcp設定を変更&#34;&gt;作業1：ルータのDHCP設定を変更&lt;/h2&gt;
+
+&lt;p&gt;まず、ルータのDHCP機能の設定を確認します。ブラウザから以下のページにアクセスします。
+ ntt.setup
+ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/menu.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/menu.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;DHCPサーバこそがIPアドレスの自動割り当てを行っています。たとえば以下のように設定すると、自動割り当て区間が192.168.1.2~192.168.1.81になります。
+「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/dhcp.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/dhcp.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;作業2-端末のipアドレスを固定&#34;&gt;作業2：端末のIPアドレスを固定&lt;/h2&gt;
+
+&lt;p&gt;さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_adapter.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_adapter.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;さて、表示された画面から「インターネットプロトコルバージョン4(TCP/IPv4)」を選択し、プロパティボタンを押します。&lt;/p&gt;
+
+&lt;p&gt;以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&amp;rdquo;255.255.255.0&amp;rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_property.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_property.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;作業3-ポート開放&#34;&gt;作業3：ポート開放&lt;/h2&gt;
+
+&lt;p&gt;さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/port_open.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/port_open.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ここで、ポート番号・転送先のIPアドレスを設定すればOK。プロトコルは適宜選択ですが、TCPやUDPが一般的でしょうか。ソフトウェアによって違うのでプロトコルはいくつか試してみてください。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;ポート開放は以上の設定で終了です。
+当然ですが、ポート開放によって初出がLAN内でない通信が内部に中継されることになるので、セキュリティは低下します。転送先のマシンにウイルス対策ソフトを導入するのはもちろん、必要のないポート転送の設定は無効にしておくなど、注意しましょう。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>unboundとbind9の違い</title>
+          <link>https://blog.yyyak.com/post/dns_centos7/</link>
+          <pubDate>Sun, 25 Oct 2015 12:47:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
+          <description>
+
+&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
+2つの違いを調べました。&lt;/p&gt;
+
+&lt;h2 id=&#34;unboundとは&#34;&gt;Unboundとは？&lt;/h2&gt;
+
+&lt;p&gt;Unboundは主にキャッシュDNSサーバを運用する際に用いられるソフトウェアです。
+アーキテクチャはVerisignなどが開発し、そのC言語版のメンテナンスはNLnet Labsという会社によって行われています（公式ウェブより）。
+OSSですが、有償サポートも行われています。
+&lt;a href=&#34;http://unbound.net/&#34;&gt;http://unbound.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;unboundとbindの違い&#34;&gt;UnboundとBindの違い&lt;/h2&gt;
+
+&lt;p&gt;Redhat系のOSを使用してDNSサーバを設置する場合、bindというOSSを利用することが定石でした。
+なぜUnboundが新たに登場して活躍しているのでしょうか。違いを見てみましょう。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Bind&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unbound&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;キャッシュサーバ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;コンテンツサーバ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;△&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;権威サーバ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;×&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;リリース&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2000(Ver.9)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2008(Ver.1)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ライセンス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ISC(≑BSD)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;BSD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;bindとUnboundのライセンスは変わりありません。機能はむしろbindの方が多くこちらを使った方が良いように感じます。
+しかしbindは古くから開発された巨大なOSSであり、脆弱性を狙った攻撃が多いように感じます。（名前解決の仕組みそのものが脆弱性の温床であることもありますが。）
+この点、Unboundはまだbindほどメジャーではない上にアーキテクチャが新しいので攻撃される可能性は低いです。
+また、権威DNSサーバを設置する必要のあるユーザはそう多くはないので、多くの人は機能制限版のunboundの方がむしろ安全とも言えます。&lt;/p&gt;
+
+&lt;p&gt;では、unboundの使い方を見てみましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&amp;camp=247&amp;creative=7399&amp;field-keywords=DNS&amp;linkCode=ur2&amp;rh=n%3A465392%2Ck%3ADNS&amp;tag=makereview-22&amp;url=search-alias%3Dstripbooks&#34;&gt;&amp;lt;PR&amp;gt; Amazonで&amp;rdquo;DNS&amp;rdquo;に関する書籍を検索する&lt;/a&gt;&lt;img src=&#34;https://ir-jp.amazon-adsystem.com/e/ir?t=makereview-22&amp;l=ur2&amp;o=9&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;unboundをdnsキャッシュサーバとして利用する&#34;&gt;UnboundをDNSキャッシュサーバとして利用する&lt;/h2&gt;
+
+&lt;p&gt;まずは設定ファイルを編集します。なお、DNSSECの設定はしないものとします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  # comment  unboundのIPアドレスを設定
+  interface: 127.0.0.1
+  interface: 192.168.12.43
+
+  # comment IPv6が不要の場合
+  do-ip6: no
+
+  # comment 応答するIPアドレスを指定
+  access-control: 0.0.0.0/0 refuse
+  access-control: 127.0.0.0/8 allow
+  access-control: 192.168.1.0/24 allow
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;DNSの問い合わせをフォワーディングするには、conf.dディレクトリ内に新たにforward.confを作成すれば良いです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  forward-zone:
+# ドメインに応じて問い合わせ先を変更可能
+    name: &amp;quot;.&amp;quot;
+# 上位のDNSサーバを指定
+    forward-addr: 133.11.58.3
+    forward-addr: 133.11.58.4
+    forward-addr: 133.11.100.151
+    forward-first: yes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;設定し終わったら、サービスを開始します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# systemctl start unbound.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;基本はこれだけで動作するはずです。他のマシンからnslookupコマンドで動作を確認してみてください。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup
+# DNSサーバアドレスを指定
+&amp;gt; server 192.168.1.XX
+&amp;gt; www.google.com
+# comment 以下に解決結果が表示されればOK
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ひかり回線が繋がらなくなる問題</title>
+          <link>https://blog.yyyak.com/post/Router_NAT/</link>
+          <pubDate>Sun, 11 Oct 2015 08:30:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/Router_NAT/</guid>
+          <description>
+
+&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
+&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+
+&lt;p&gt;自宅の光回線が、プロバイダを変更してから定期的に繋がらなくなる問題がありました。
+光終端装置（ルータ機能付き, PR-400NE）を再起動すると解決しますが、数日するとまた繋がらなくなっていまいます。&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
+
+&lt;p&gt;「NAT溢れ」が原因のようです。NATは内容に応じて各端末に通信の振り分けを行う機能です。
+NATはどの通信をどこに転送するかをリストにして覚えているのですが、このリストが長くなりすぎるとハングアップしてしまうルータがあるようです。
+PR-400NEなどのルータはこの問題が起こることで有名らしいです。&lt;/p&gt;
+
+&lt;h2 id=&#34;解決策&#34;&gt;解決策&lt;/h2&gt;
+
+&lt;p&gt;NATのリストを定期的に削除するよう設定してあげれば良いようです。&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;で説明していますが、SPI設定で値を小さくしてあげればOKです。
+たとえば、TCP:2400, UDP:300, ICMP:300などで良いでしょう。（写真の設定では問題が発生するはずです。）
+&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;でも&#34;&gt;でも・・・&lt;/h2&gt;
+
+&lt;p&gt;この設定でも、OCNやInterlinkの時は問題なく通信できていたんですよね・・・。IIJになってからおかしくなってしまいました。
+もしかしたらプロバイダの変更時期がたまたま重複しただけで他の問題が発生しているのかもしれません。
+とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>ビック光 フレッツ光から乗り換えました！</title>
+          <link>https://blog.yyyak.com/post/IIJHikari/</link>
+          <pubDate>Wed, 23 Sep 2015 11:02:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/IIJHikari/</guid>
+          <description>
+
+&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
+速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;http://netspeed-tokyo.studio-radish.com&lt;/a&gt;
+測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;結論としては、大満足です。回線はNTT東日本のままで何も変わりませんが、これまでに契約していたOCN、インターリンクよりも
+速度が速いです。地域や回線種別にも依るでしょうが、IIJは概ね品質は良いですね。&lt;/del&gt;
+近頃速度がかなり遅くなってきました。普通に使っていても明らかに遅いと感じるほどです。動画の閲覧は厳しいです。
+ビック光はユーザが急激に増えていて速度が低下しているようなので、転用は当分控えることをおすすめします。（2015/11/02）&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
+
+&lt;p&gt;近頃あまりに速度が遅いので、プロバイダだけ他社も契約してみました。インターリンクという会社です。結果は以下の通り。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同じ時間のビック光は以下の通り。下りの違いは歴然です。ビック光に関しては、契約して失敗したと思います。
+大幅な設備増強がない限り、使い物にならないプロバイダでしょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed10.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-02-06-12-00&#34;&gt;2016/02/06 12:00&lt;/h2&gt;
+
+&lt;p&gt;いまいちです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed9.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-02-03-19-40&#34;&gt;2016/02/03 19:40&lt;/h2&gt;
+
+&lt;p&gt;いまいちです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed8.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016-01-06-22-00&#34;&gt;2016/01/06 22:00&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed7.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-11-02-22-10&#34;&gt;2015/11/02 22:10&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed6.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-11-01-17-50&#34;&gt;2015/11/01 17:50&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed5.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-9-28-22-00&#34;&gt;2015/9/28 22:00&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed4.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-9-24-21-00&#34;&gt;2015/9/24 21:00&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed3.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-9-23-22-25&#34;&gt;2015/ &lt;sup&gt;9&lt;/sup&gt;&amp;frasl;&lt;sub&gt;23&lt;/sub&gt; 22:25&lt;/h2&gt;
+
+&lt;p&gt;予想以上の早さ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed2.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015-9-23-20-15&#34;&gt;2015/9/23 20:15&lt;/h2&gt;
+
+&lt;p&gt;夕方にしては早いほう？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed1.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Wifi環境でPUSH通知が届かない</title>
+          <link>https://blog.yyyak.com/post/push/</link>
+          <pubDate>Mon, 27 Jul 2015 04:05:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/push/</guid>
+          <description>
+
+&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;準備-pushの仕組み&#34;&gt;準備 ― PUSHの仕組み ―&lt;/h2&gt;
+
+&lt;p&gt;メールやSNSの通知はリアルタイムで来ることが当たり前になっていますが、どのような仕組みになっているのでしょうか。もし各端末が5秒おきとかに通知の有無をサーバに問い合わせたりしたら、サーバの負荷もネットワーク負荷も大変そうです。&lt;/p&gt;
+
+&lt;p&gt;PUSH通信では、Googleのサーバと通信状態を保持しておき、何か通知事項があったらすぐに端末へパケットを投げられる状態を保っておく工夫をしています。30分に1回だけGoogleのサーバにKeepAlive信号を送信し、わざわざ端末から伺いを立てなくても良いようになっているのです。例えば以下のログは、同一のAndroid端末が30分おきに特定のIPアドレスへ通信をしていることが分かります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Aug  7 14:30:58 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=43981 DF PROTO=TCP SPT=56899 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 15:01:11 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=74.125.204.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=22546 DF PROTO=TCP SPT=34188 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 15:31:41 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=27676 DF PROTO=TCP SPT=44014 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 16:02:09 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=63798 DF PROTO=TCP SPT=49070 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 LEN=60 TOS=0x00 PREC=0x00 TTL=63 ID=12610 DF PROTO=TCP SPT=46566 DPT=5228 WINDOW=65535 RES=0x00 SYN URGP=0
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;逆にこのKeepAlive通知がうまく伝わっていないと、GoogleからKeepAliveを通知することができません。Wifi環境でPUSH通知が受信できない場合、この仕組みを阻害してしまう設定がされているかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;設定を見直そう-pr-400neの場合&#34;&gt;設定を見直そう  ― PR-400NEの場合 ―&lt;/h2&gt;
+
+&lt;p&gt;多くの家庭では、1つのネットワーク契約で複数の端末が同時に利用できるようにしているはずです。これをやってくれるルータは、各端末がどんな通信をしているか把握しながら、外部からの通信を各端末に配信しています。&lt;/p&gt;
+
+&lt;p&gt;もし、誰がどこと通信しているか記憶しておく時間の長さの設定が30分よりも短いと、PUSH通信がうまく行きません。SPI(Stateful Packet Inspection)設定を変更し、30分(1800秒)よりも長く通信が保持できるようにしましょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SPI設定を探します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;http://www.yyyak.com/blog/post/router_nat&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>

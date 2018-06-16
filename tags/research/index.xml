@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/research/</link>
-    <description>Recent content in Research on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Thu, 17 Dec 2015 00:08:00 +0900</lastBuildDate>
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2015-12-17 00:08:00 &#43;0900 JST</updated>
+
     
-	<atom:link href="https://blog.yyyak.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>SMT2ファイルの書き方</title>
-      <link>https://blog.yyyak.com/post/smt/</link>
-      <pubDate>Thu, 17 Dec 2015 00:08:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/smt/</guid>
-      <description>&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
-&lt;/p&gt;</description>
-    </item>
+        <item>
+          <title>SMT2ファイルの書き方</title>
+          <link>https://blog.yyyak.com/post/smt/</link>
+          <pubDate>Thu, 17 Dec 2015 00:08:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/smt/</guid>
+          <description>
+
+&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;smtソルバーとは&#34;&gt;SMTソルバーとは&lt;/h2&gt;
+
+&lt;p&gt;SMT(Satisfaction Modulo Theory)ソルバとは与えられた複数の制約式の充足可否や、
+充足可能時の値の組み合わせを求める事が出来るソフトウェアです。
+この分野には先行してSATソルバというものがあり、こちらは全量演算子∀などが扱えないという条件があります。
+SMTソルバではこのような条件はなくほとんどすべての論理制約を解析可能であると同時に、ビット幅のある変数の宣言などを直接記述できるなど使い勝手が向上しています。個人的には、多様な変数名を設定できることはとても便利です。&lt;/p&gt;
+
+&lt;p&gt;SATソルバは数十万変数から数百万変数の制約式が解析可能と言われていますが、SMTソルバは高機能故にそこまでのスケーラビリティを実現出来ていません。大きな問題を解く場合にはSATソルバをうまく活用する事を考える必要があるけれど、それほど大きな問題を解かないのであればSMTソルバの活用を考えるべきでしょう。&lt;/p&gt;
+
+&lt;p&gt;このポストでは、今までSATソルバで記述できていたような制約式(CNF式、DIMACS形式など)を、SMT2式で書く方法について説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;変数の宣言&#34;&gt;変数の宣言&lt;/h2&gt;
+
+&lt;p&gt;まずは変数の宣言を行います。例えば1bit変数aは以下のようにして宣言します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;( declare-fun a () Bool )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;制約の追加&#34;&gt;制約の追加&lt;/h2&gt;
+
+&lt;p&gt;必要な変数を宣言し終わったら、制約を追加することができます。例えば変数bが変数aの否定である場合(b != a)は以下のように制約を記述します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;( assert (=  (not a) b) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##例） 2入力AND回路の出力が1になるかどうかの検査
+2入力ANDの出力が1になるのは、両方の入力が1になる時です。「1になるかどうか」という命題は真ですので、その旨を出力させたいです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;( declare-fun in0 () Bool )
+( declare-fun in1 () Bool )
+( declare-fun out () Bool )
+( assert (= out (and in0 in1) ) )
+( assert (= out true) )
+( check-sat )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これをSMTソルバに入力すると以下のように出力するはずです。今回はZ3というSMTソルバを使います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ z3 -smt2 test1.stm2
+sat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;ldquo;sat&amp;rdquo;と表示されました。できれば、どのようなときに1になるかも出力させたいので、それもやってみます。&lt;/p&gt;
+
+&lt;p&gt;SATの場合に値の割り当てを見たい場合には、get-valueを用います。以下のようになるはずです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;( declare-fun in0 () Bool )
+( declare-fun in1 () Bool )
+( declare-fun out () Bool )
+( assert (= out (and in0 in1) ) )
+( assert (= out true) )
+( check-sat )
+( get-value (in0) )
+( get-valule (in1) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;では、実行してみましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ z3 -smt2 test2.stm2
+sat
+((in0 true))
+((in1 true))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;まだまだあるsmt2形式の言語仕様&#34;&gt;まだまだあるSMT2形式の言語仕様&lt;/h2&gt;
+
+&lt;p&gt;SMT2式の書き方についてはPDFにまとまっている言語仕様を参照すると良いでしょう。
+&lt;a href=&#34;http://smtlib.cs.uiowa.edu/&#34;&gt;http://smtlib.cs.uiowa.edu/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;SMTソルバによってはPythonAPIなどを提供していることもあるので、それを利用して実装を簡単にすることもできます。&lt;/p&gt;
+</description>
+        </item>
+      
     
+
   </channel>
 </rss>

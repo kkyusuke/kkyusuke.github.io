@@ -106,10 +106,12 @@
             
 
             <div class="post-content">
-                <p>ポート開放の仕組みを説明した上で、
-Flet&rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。
+                
 
-なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
+<p>ポート開放の仕組みを説明した上で、
+Flet&rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。</p>
+
+<p>なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
 ポート開放することが出来るはずです。</p>
 
 <h2 id="ポート開放とは">ポート開放とは</h2>
@@ -126,7 +128,7 @@ Flet&rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕
 （一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）</p>
 
 <a href="/blog/images/NAT.svg" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/NAT.svg" alt="" />
+  <img class="page1 img-thumbnail" src="/images/NAT.svg" alt="" />
 </a>
 
 
@@ -157,7 +159,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。</p>
 
 <a href="/blog/images/menu.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/menu.png" alt="" />
+  <img class="page1 img-thumbnail" src="/images/menu.png" alt="" />
 </a>
 
 
@@ -165,7 +167,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。</p>
 
 <a href="/blog/images/dhcp.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/dhcp.png" alt="" />
+  <img class="page1 img-thumbnail" src="/images/dhcp.png" alt="" />
 </a>
 
 
@@ -174,14 +176,14 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 <p>さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。</p>
 
 <a href="/blog/images/control_network.PNG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/control_network.PNG" alt="" />
+  <img class="page1 img-thumbnail" src="/images/control_network.PNG" alt="" />
 </a>
 
 
 <p>以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。</p>
 
 <a href="/blog/images/control_network_adapter.PNG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/control_network_adapter.PNG" alt="" />
+  <img class="page1 img-thumbnail" src="/images/control_network_adapter.PNG" alt="" />
 </a>
 
 
@@ -190,7 +192,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 <p>以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&rdquo;255.255.255.0&rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。</p>
 
 <a href="/blog/images/control_network_property.PNG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/control_network_property.PNG" alt="" />
+  <img class="page1 img-thumbnail" src="/images/control_network_property.PNG" alt="" />
 </a>
 
 
@@ -199,7 +201,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 <p>さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。</p>
 
 <a href="/blog/images/port_open.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/port_open.png" alt="" />
+  <img class="page1 img-thumbnail" src="/images/port_open.png" alt="" />
 </a>
 
 
@@ -209,6 +211,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 <p>ポート開放は以上の設定で終了です。
 当然ですが、ポート開放によって初出がLAN内でない通信が内部に中継されることになるので、セキュリティは低下します。転送先のマシンにウイルス対策ソフトを導入するのはもちろん、必要のないポート転送の設定は無効にしておくなど、注意しましょう。</p>
+
             </div>
 
 
@@ -236,279 +239,6 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
                 </ul>
 
                 
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/dynamic_router/">ルータのダイナミックDNS対応</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/interlink/">インターリンクの回線速度</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/dns_centos7/">unboundとbind9の違い</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/router_nat/">ひかり回線が繋がらなくなる問題</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/iijhikari/">ビック光 フレッツ光から乗り換えました！</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/push/">Wifi環境でPUSH通知が届かない</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-
-            
             
             </aside>
 
@@ -658,7 +388,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 <hr>
 
 <footer class="container copy">
-    <p>&copy; 2018  Make &amp; Review </p>
+    <p>&copy; 2018  Y.K. </p>
 
 </footer>
 <link rel="stylesheet" href="https://blog.yyyak.com/css/lightbox.css"  />

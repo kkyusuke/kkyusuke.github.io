@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yyyak.com/</loc>
+    <lastmod>2018-05-14T14:06:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yyyak.com/post/vslinux/</loc>
     <lastmod>2018-05-14T14:06:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -289,7 +296,7 @@
   </url>
   
   <url>
-    <loc>https://blog.yyyak.com/post/router_nat/</loc>
+    <loc>https://blog.yyyak.com/post/Router_NAT/</loc>
     <lastmod>2015-10-11T08:30:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -303,7 +310,7 @@
   </url>
   
   <url>
-    <loc>https://blog.yyyak.com/post/iijhikari/</loc>
+    <loc>https://blog.yyyak.com/post/IIJHikari/</loc>
     <lastmod>2015-09-23T11:02:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -342,104 +349,6 @@
     <lastmod>2015-07-18T11:31:11+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/android/</loc>
-    <lastmod>2018-02-25T05:25:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/ebook/</loc>
-    <lastmod>2016-08-15T06:36:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/howto/</loc>
-    <lastmod>2017-09-24T06:20:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/linux/</loc>
-    <lastmod>2017-09-24T06:20:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/make/</loc>
-    <lastmod>2018-05-14T14:06:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/</loc>
-    <lastmod>2018-05-14T14:06:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/money/</loc>
-    <lastmod>2015-12-13T10:38:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/movie/</loc>
-    <lastmod>2015-10-08T01:10:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/network/</loc>
-    <lastmod>2016-04-20T00:38:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/post/</loc>
-    <lastmod>2018-05-14T14:06:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/research/</loc>
-    <lastmod>2015-12-17T00:08:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/review/</loc>
-    <lastmod>2018-02-25T05:25:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/</loc>
-    <lastmod>2018-02-25T05:25:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yyyak.com/tags/windows/</loc>
-    <lastmod>2018-05-14T14:06:00+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
   </url>
   
 </urlset>

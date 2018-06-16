@@ -1,65 +1,737 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ebook on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/ebook/</link>
-    <description>Recent content in Ebook on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 15 Aug 2016 06:36:00 +0900</lastBuildDate>
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2016-08-15 06:36:00 &#43;0900 JST</updated>
+
     
-	<atom:link href="https://blog.yyyak.com/tags/ebook/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>電子書籍サービス徹底比較！2016</title>
-      <link>https://blog.yyyak.com/post/ebook2016/</link>
-      <pubDate>Mon, 15 Aug 2016 06:36:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/ebook2016/</guid>
-      <description>2016年版、電子書籍リーダ比較です。 新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。
-2015年版はこちら。
-電子書籍ストア 書籍数 まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2016年8月15日現在の書籍数をまとめました。 括弧内の数字は昨年との比較です。
-書籍数ですが、依然Kindleが最強です。ただしAmazonが個人出版に力を注いでいることは無視できないでしょう。 なぜかKindleストアからライトノベルが大幅減していますが、これは何かあったのでしょうか。
-実は各社とも増加率は大して変わりません。Reader Storeはとりあえずのところちゃんと他社に追随できていると言えるので、いますぐ撤退することはなさそうです。 ただ端末がいつまでもアップデートされないので、先細りするのは確かでしょう。
-   ()は昨年比 Kindle Kobo Reader     コミック・ゲーム攻略 163,111
-(+31%) 128,093
-(+33%) 129,767 (+35%)   雑誌 13,205
-(+97%) 14,563
-(+86%) 13,149
-(+63%)   文学・新書 86,642
-(+23%) 76,384
-(+24%) 57,811
-(+20%)   ライトノベル 22,130
-(-28%) 16,480
-(+31%) 21,055
-(+37%)   ビジネス・経済 19,506
-(+5%) 21,264
-(+28%) 16,647</description>
-    </item>
-    
-    <item>
-      <title>電子書籍サービス徹底比較！2015</title>
-      <link>https://blog.yyyak.com/post/ebook2015/</link>
-      <pubDate>Sat, 25 Jul 2015 10:50:00 +0900</pubDate>
+        <item>
+          <title>電子書籍サービス徹底比較！2016</title>
+          <link>https://blog.yyyak.com/post/ebook2016/</link>
+          <pubDate>Mon, 15 Aug 2016 06:36:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/ebook2016/</guid>
+          <description>
+
+&lt;p&gt;2016年版、電子書籍リーダ比較です。&lt;/p&gt;
+
+&lt;p&gt;新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
+現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;../ebook2015/&#34;&gt;2015年版はこちら。&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;電子書籍ストア&#34;&gt;電子書籍ストア&lt;/h2&gt;
+
+&lt;h3 id=&#34;書籍数&#34;&gt;書籍数&lt;/h3&gt;
+
+&lt;p&gt;まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2016年8月15日現在の書籍数をまとめました。
+括弧内の数字は昨年との比較です。&lt;/p&gt;
+
+&lt;p&gt;書籍数ですが、依然Kindleが最強です。ただしAmazonが個人出版に力を注いでいることは無視できないでしょう。
+なぜかKindleストアからライトノベルが大幅減していますが、これは何かあったのでしょうか。&lt;/p&gt;
+
+&lt;p&gt;実は各社とも増加率は大して変わりません。Reader Storeはとりあえずのところちゃんと他社に追随できていると言えるので、いますぐ撤退することはなさそうです。
+ただ端末がいつまでもアップデートされないので、先細りするのは確かでしょう。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;()は昨年比&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Reader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;コミック・ゲーム攻略&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;163,111&lt;br&gt;(+31%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;128,093&lt;br&gt;(+33%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;129,767 &lt;br&gt;(+35%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;雑誌&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13,205&lt;br&gt; (+97%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14,563&lt;br&gt; (+86%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13,149&lt;br&gt; (+63%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;文学・新書&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;86,642&lt;br&gt; (+23%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;76,384&lt;br&gt; (+24%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;57,811&lt;br&gt; (+20%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ライトノベル&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;22,130&lt;br&gt; (-28%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;16,480&lt;br&gt; (+31%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;21,055&lt;br&gt; (+37%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ビジネス・経済&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;19,506&lt;br&gt; (+5%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;21,264&lt;br&gt; (+28%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;16,647&lt;br&gt; (+33%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;人文・思想・歴史&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;36,973 &lt;br&gt;(+15%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;41,440 &lt;br&gt;(+72%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8,141 &lt;br&gt;(+23%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;PC・情報&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7,084&lt;br&gt; (+38%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5,018&lt;br&gt; (+32%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3,478 &lt;br&gt;(+65%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;サイエンス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15,750&lt;br&gt; (+13%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7,842 &lt;br&gt;(+20%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3,250&lt;br&gt; (+25%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ノンフィクション&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5,565 &lt;br&gt;(+79%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10,357 &lt;br&gt;(+45%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4,846&lt;br&gt; (+20%)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;1-2-書店の特徴&#34;&gt;1.2 書店の特徴&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;ここは2015年版と全く同じです&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;各書店とも独自のDRMを採用しています。そのためどこの書店を利用するかは結構重要な問題になるわけです。&lt;/p&gt;
+
+&lt;p&gt;ちなみにReaderは、海外ストアが閉店するときに、購入済みの本がKoboストアに移管された例があります。その点Readerストアは閉店しても悪いようにはしないだろうという安心感はありますね。逆に楽天は依然運営していRabooをいい加減に閉店した例がありますので、どうなることやら。やはり初めての方はKindleで買うに限ります！&lt;/p&gt;
+
+&lt;p&gt;ちなみに各書店ごとに価格の設定が違います。Kindleは現金値引きが主であるのに対して、Kobo/Readerはポイント還元を採ることが多いです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Reader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DRM&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;価格&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;安価なKindle版書籍あり、割引あり(~50%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数百円の割引あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;割引は少ない&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ポイント&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ポイント還元は少ない&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;楽天ポイント還元あり(1~30%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ソニーポイント還元あり(1~20%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;利用可能な端末&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Win/Mac/iOS/Android&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Win/Mac/iOS/Android&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ブラウザ/iOS/Android/PSVita&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;利用可能な電子書籍リーダ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kindle&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kobo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Sony Reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;電子書籍端末&#34;&gt;電子書籍端末&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;2016年版ですが、各社の主力製品が更新されていないのでそのままです。&lt;/em&gt;
+&lt;a href=&#34;http://amzn.to/2bh5lkf&#34;&gt;Kindle Paper White (Gen3)&lt;/a&gt;, &lt;a href=&#34;http://books.rakuten.co.jp/event/e-book/ereaders/koboglohd/&#34;&gt;Kobo Glo HD&lt;/a&gt;, &lt;a href=&#34;http://www.sony.jp/reader/&#34;&gt;Sony PRS-T3S&lt;/a&gt;の3機種を比較しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;hw性能&#34;&gt;HW性能&lt;/h3&gt;
+
+&lt;p&gt;重要な違いの1つは、E-inkの種類です。Sonyのものだけは1世代古いE-inkを使っていますので、コントラスト比(白黒の明るさ比)が少し小さいです。薄暗い場所ではすこし読みにくくなります。
+高品位なコピー用紙と再生紙くらいの違いでしょうか。私は電車の往復でPRS-T3Sを使っていますが、特に読みにくさは感じません。&lt;/p&gt;
+
+&lt;p&gt;もう1つ重要なのが、重量です。さすがにSony Readerの160gとKindlePWの205gの差は大きいです。長時間掴んで読むことを考えると、軽さは思ったよりも大切かと思います。&lt;/p&gt;
+
+&lt;p&gt;余談ですが、自炊派の人たちには解像度とmicroSDの有無も重要です。ただ、現実に自炊派ってどれだけいるのだろう・・・？
+とにかくどれも、帯に短したすきに長し、完璧な機種はないですね。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle Paper White 第3世代&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo Glo HD&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Sony Reader PRS-T3S&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;画面サイズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;E-ink性能&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Carta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Carta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Pearl&lt;br&gt;(Cartaより古い)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;バックライト&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;なし&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;解像度&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;300dpi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;300dpi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;214dpi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;サイズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;169/117/9.1mm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;115/157/9.2mm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;107/160/8.8mm&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;重量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi:205g Wifi+3G:217g&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;180g&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;160g&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;容量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4GB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4GB+microSD&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2GB+microSD&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;通信&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi / Wifi+3G&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;保証&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;標準1年&lt;br&gt;延長保証2年:+1,980円&lt;br&gt;延長保証3年:+2,970円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1年&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;標準1年&lt;br&gt;延長保証3年:+514円&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;価格(税込)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14,280円&lt;br&gt;+3G: +5,200円&lt;br&gt;キャンペーン情報付き: -2,000円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13,824円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10,265円&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;なお、Amazonは&lt;a href=&#34;http://amzn.to/2b8qonD&#34;&gt;Kindle Oasis&lt;/a&gt;を&lt;a href=&#34;http://amzn.to/2bh5lkf&#34;&gt;Paper White&lt;/a&gt;の上位機種として、&lt;a href=&#34;http://amzn.to/2b8pS9n&#34;&gt;Kindle&lt;/a&gt;を下位機種として登場させています。他社は特に変わりありません。&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;sw性能&#34;&gt;SW性能&lt;/h3&gt;
+
+&lt;p&gt;各社とも、自社の電子書籍ストアが閲覧できること以外では対応フォーマットに大きな差はありません。
+古いKindleはPDFが読めないなどの不利がありましたが、もう解消されたようですね。地味に便利なのがクラウドサービスとの連携で、
+KoboはPocket、ReaderはEvernoteとそれぞれ連携します。この機能だけで購入を決めてしまう人もいそうですね。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle Paper White 第3世代&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo Glo HD&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Sony Reader PRS-T3S&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;対応フォーマット&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kindle/TXT/PDF/MOBI/PRC/HTML&lt;br&gt;DOC/DOCX/JPEG/GIF/PNG/BMP&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;EPUB/PDF/JPEG/GIF/PNG/BMP&lt;br&gt;TIFF/HTML/CBZ/CBR/MOBI&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;MNH/ZBF/BOOK/EPUB/PDF/TXT&lt;br&gt;JPEG/GIF/PNG/BMP&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;辞書&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大辞林/Oxford Dictionary of English&lt;br&gt;The New Oxford American English Dictionary&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ジーニアス英和辞典&lt;br&gt;プログレッシブ和英中辞典&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大辞林/ジーニアス英和辞典&lt;br&gt;New Oxford Ameican Dictionary&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;SNS&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Facebook/Twitter&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;なし？&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;なし&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;記事共有&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自のクラウドサービス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Pocketと同期&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Evernoteと同期&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;書籍の購入&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kindle&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kobo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Reader Store/紀伊國屋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;SCRIPT charset=&#34;utf-8&#34; type=&#34;text/javascript&#34; src=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Fmakereview-22%2F8001%2F8bb21e5d-8397-48f4-9b3f-1afa43b52853&#34;&gt; &lt;/SCRIPT&gt; &lt;NOSCRIPT&gt;&lt;A rel=&#34;nofollow&#34; HREF=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Fmakereview-22%2F8001%2F8bb21e5d-8397-48f4-9b3f-1afa43b52853&amp;Operation=NoScript&#34;&gt;Amazon.co.jp ウィジェット&lt;/A&gt;&lt;/NOSCRIPT&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2016年-hwレベルで大きな差なし-kindle優勢も他社奮闘&#34;&gt;2016年：HWレベルで大きな差なし。Kindle優勢も他社奮闘。&lt;/h2&gt;
+
+&lt;p&gt;Amazonが上位機種と下位機種をリリースしただけで、HW関連で大きなニュースは1年間ありませんでした。
+Kindle Oasisは良い機種のようですが、価格も考えるとマストバイとは言えません。新機種が出ないのは、E-Inkが1社独占供給状態なので仕方ないですね。&lt;/p&gt;
+
+&lt;p&gt;書籍数はKindleが優勢ですが、他社も諦めずに当分戦いを続けるようです。どこが覇者になるのか、という考え方がもう時代遅れなのかもしれません。電子書籍市場は小康状態に入り、カラー対応端末登場までは当分この状況が続く可能性があります。その後どうなるかは、誰にも分かりません。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/ebook2015/</guid>
-      <description>2015年版、電子書籍リーダ比較です。 新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。
-電子書籍ストア 書籍数 まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2015年7月23日現在の書籍数をまとめました。 書店によっては重複カウントを除去できなかったものもありますが・・・やはりKindle最強ですね。これといって弱い分野が見当たらないです。
-電子書籍リーダで読むのはコミック/文学・新書/ライトノベルあたりかと思いますが、このあたりは多少Kindleが強いくらいで横並びとも言えます。Kindleは自費出版なども販売していますので、そのあたりで書籍数がグンと増えるのでしょうか？
-    Kindle Kobo Reader     コミック・ゲーム攻略 124,060 96,254 96,349   雑誌 6,689 7.814 8,071   文学・新書 70,502 61,597 48,245   ライトノベル 30,634 12,544 15,415   ビジネス・経済 18,545 16,597 12,552   人文・思想・歴史 32,113 24,084 6,640   PC・情報 5,132 3,799 2,113   サイエンス 13,897 6,518 2,609   社会・政治・法律 10,921 8,855 3,059   ノンフィクション 3,112 7,123 4,037    1.</description>
-    </item>
     
-    <item>
-      <title>電子書籍リーダのすすめ</title>
-      <link>https://blog.yyyak.com/post/sonyreader/</link>
-      <pubDate>Thu, 23 Jul 2015 10:48:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/sonyreader/</guid>
-      <description>&lt;p&gt;ソニーの電子書籍リーダ、PRS-T3Sを購入したのですが、便利すぎてびっくりしています。
-なぜ電子書籍リーダが良いのか、説明します！
-&lt;/p&gt;</description>
-    </item>
+        <item>
+          <title>電子書籍サービス徹底比較！2015</title>
+          <link>https://blog.yyyak.com/post/ebook2015/</link>
+          <pubDate>Sat, 25 Jul 2015 10:50:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/ebook2015/</guid>
+          <description>
+
+&lt;p&gt;2015年版、電子書籍リーダ比較です。&lt;/p&gt;
+
+&lt;p&gt;新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
+現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。&lt;/p&gt;
+
+&lt;h2 id=&#34;電子書籍ストア&#34;&gt;電子書籍ストア&lt;/h2&gt;
+
+&lt;h3 id=&#34;書籍数&#34;&gt;書籍数&lt;/h3&gt;
+
+&lt;p&gt;まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2015年7月23日現在の書籍数をまとめました。
+書店によっては重複カウントを除去できなかったものもありますが・・・やはりKindle最強ですね。これといって弱い分野が見当たらないです。&lt;/p&gt;
+
+&lt;p&gt;電子書籍リーダで読むのはコミック/文学・新書/ライトノベルあたりかと思いますが、このあたりは多少Kindleが強いくらいで横並びとも言えます。Kindleは自費出版なども販売していますので、そのあたりで書籍数がグンと増えるのでしょうか？&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Reader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;コミック・ゲーム攻略&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;124,060&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96,254&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96,349&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;雑誌&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6,689&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7.814&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8,071&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;文学・新書&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;70,502&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;61,597&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;48,245&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ライトノベル&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;30,634&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12,544&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15,415&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ビジネス・経済&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;18,545&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;16,597&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;12,552&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;人文・思想・歴史&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32,113&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;24,084&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6,640&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;PC・情報&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5,132&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3,799&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2,113&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;サイエンス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13,897&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6,518&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2,609&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;社会・政治・法律&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10,921&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8,855&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3,059&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ノンフィクション&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3,112&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7,123&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4,037&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;1-2-書店の特徴&#34;&gt;1.2 書店の特徴&lt;/h3&gt;
+
+&lt;p&gt;各書店とも独自のDRMを採用しています。そのためどこの書店を利用するかは結構重要な問題になるわけです。&lt;/p&gt;
+
+&lt;p&gt;ちなみにReaderは、海外ストアが閉店するときに、購入済みの本がKoboストアに移管された例があります。その点Readerストアは閉店しても悪いようにはしないだろうという安心感はありますね。逆に楽天は依然運営していRabooをいい加減に閉店した例がありますので、どうなることやら。やはり初めての方はKindleで買うに限ります！&lt;/p&gt;
+
+&lt;p&gt;ちなみに各書店ごとに価格の設定が違います。Kindleは現金値引きが主であるのに対して、Kobo/Readerはポイント還元を採ることが多いです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Reader&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;DRM&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;価格&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;安価なKindle版書籍あり、割引あり(~50%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;数百円の割引あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;割引は少ない&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ポイント&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ポイント還元は少ない&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;楽天ポイント還元あり(1~30%)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ソニーポイント還元あり(1~20%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;利用可能な端末&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Win/Mac/iOS/Android&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Win/Mac/iOS/Android&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ブラウザ/iOS/Android/PSVita&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;利用可能な電子書籍リーダ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kindle&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kobo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Sony Reader&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;電子書籍端末&#34;&gt;電子書籍端末&lt;/h2&gt;
+
+&lt;h3 id=&#34;hw性能&#34;&gt;HW性能&lt;/h3&gt;
+
+&lt;p&gt;電子書籍リーダの中でE-inkを採用する機種について比較しています。今回は、Kindle Paper White (Gen3), Kobo Glo HD, Sony PRS-T3Sの3機種を比較しました。&lt;/p&gt;
+
+&lt;p&gt;重要な違いの1つは、E-inkの種類です。Sonyのものだけは1世代古いE-inkを使っていますので、コントラスト比(白黒の明るさ比)が少し小さいです。薄暗い場所ではすこし読みにくくなります。
+高品位なコピー用紙と再生紙くらいの違いでしょうか。私は電車の往復でPRS-T3Sを使っていますが、特に読みにくさは感じません。&lt;/p&gt;
+
+&lt;p&gt;もう1つ重要なのが、重量です。さすがにSony Readerの160gとKindlePWの205gの差は大きいです。長時間掴んで読むことを考えると、軽さは思ったよりも大切かと思います。&lt;/p&gt;
+
+&lt;p&gt;余談ですが、自炊派の人たちには解像度とmicroSDの有無も重要です。ただ、現実に自炊派ってどれだけいるのだろう・・・？
+とにかくどれも、帯に短したすきに長し、完璧な機種はないですね。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle Paper White 第3世代&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo Glo HD&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Sony Reader PRS-T3S&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;画面サイズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;E-ink性能&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Carta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Carta&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Pearl&lt;br&gt;(Cartaより古い)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;バックライト&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;なし&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;解像度&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;300dpi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;300dpi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;214dpi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;サイズ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;169/117/9.1mm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;115/157/9.2mm&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;107/160/8.8mm&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;重量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi:205g Wifi+3G:217g&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;180g&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;160g&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;容量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4GB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4GB+microSD&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2GB+microSD&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;通信&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi / Wifi+3G&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wifi&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;保証&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;標準1年&lt;br&gt;延長保証2年:+1,980円&lt;br&gt;延長保証3年:+2,970円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1年&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;標準1年&lt;br&gt;延長保証3年:+514円&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;価格(税込)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;14,280円&lt;br&gt;+3G: +5,200円&lt;br&gt;キャンペーン情報付き: -2,000円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13,824円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10,265円&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;sw性能&#34;&gt;SW性能&lt;/h3&gt;
+
+&lt;p&gt;各社とも、自社の電子書籍ストアが閲覧できること以外では対応フォーマットに大きな差はありません。
+古いKindleはPDFが読めないなどの不利がありましたが、もう解消されたようですね。地味に便利なのがクラウドサービスとの連携で、
+KoboはPocket、ReaderはEvernoteとそれぞれ連携します。この機能だけで購入を決めてしまう人もいそうですね。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kindle Paper White 第3世代&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Kobo Glo HD&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Sony Reader PRS-T3S&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;対応フォーマット&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kindle/TXT/PDF/MOBI/PRC/HTML&lt;br&gt;DOC/DOCX/JPEG/GIF/PNG/BMP&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;EPUB/PDF/JPEG/GIF/PNG/BMP/TIFF&lt;br&gt;HTML/CBZ/CBR/MOBI&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;MNH/ZBF/BOOK/EPUB/PDF/TXT&lt;br&gt;JPEG/GIF/PNG/BMP&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;辞書&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大辞林&lt;br&gt;Oxford Dictionary of English&lt;br&gt;The New Oxford American English Dictionary&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ジーニアス英和辞典&lt;br&gt;プログレッシブ和英中辞典&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;大辞林/ジーニアス英和辞典&lt;br&gt;New Oxford Ameican Dictionary&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;SNS&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Facebook/Twitter&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;なし？&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;なし&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;記事共有&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;独自のクラウドサービス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Pocketと同期&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Evernoteと同期&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;書籍の購入&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kindle&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Kobo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Reader Store/紀伊國屋&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;SCRIPT charset=&#34;utf-8&#34; type=&#34;text/javascript&#34; src=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Fmakereview-22%2F8001%2F8bb21e5d-8397-48f4-9b3f-1afa43b52853&#34;&gt; &lt;/SCRIPT&gt; &lt;NOSCRIPT&gt;&lt;A rel=&#34;nofollow&#34; HREF=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Fmakereview-22%2F8001%2F8bb21e5d-8397-48f4-9b3f-1afa43b52853&amp;Operation=NoScript&#34;&gt;Amazon.co.jp ウィジェット&lt;/A&gt;&lt;/NOSCRIPT&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2015年-電子書籍ストアのチョイス-電子書籍リーダのチョイス-書籍販売はkindleが優勢&#34;&gt;2015年：電子書籍ストアのチョイス＝電子書籍リーダのチョイス、書籍販売はKindleが優勢&lt;/h2&gt;
+
+&lt;p&gt;電子書籍に関して何のしがらみもないならば、Kindle一択でしょう。どうしてもPocket連携が気になる人や楽天ユーザはKoboの選択もあり。
+Readerは撤退に向けた流れがあるので、購入はおすすめできません。端末の出来は良くて安いので、ソニーが好きな人は買っても当分損はしないでしょう。&lt;/p&gt;
+</description>
+        </item>
+      
     
+      
+        <item>
+          <title>電子書籍リーダのすすめ</title>
+          <link>https://blog.yyyak.com/post/sonyreader/</link>
+          <pubDate>Thu, 23 Jul 2015 10:48:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/sonyreader/</guid>
+          <description>
+
+&lt;p&gt;ソニーの電子書籍リーダ、PRS-T3Sを購入したのですが、便利すぎてびっくりしています。
+なぜ電子書籍リーダが良いのか、説明します！&lt;/p&gt;
+
+&lt;p&gt;そもそも、電子書籍リーダの購入を阻む理由は何なのか考えると、以下の3点だと思います。
+* スマホやタブレットを持っているのに、さらに購入する理由が分からない
+* 紙の本の方が良いはずである
+* 電子書籍リーダはまだ技術が成熟していない&lt;/p&gt;
+
+&lt;p&gt;これらの主張には正しいところもあるし、間違っている・勘違いしているものもあります。1つずつ、反論を考えてみましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;スマホやタブレットを持っているのに-さらに購入する理由が分からない&#34;&gt;「スマホやタブレットを持っているのに、さらに購入する理由が分からない」&lt;/h2&gt;
+
+&lt;p&gt;これは完全に間違っています。電子書籍リーダを甘く見ています！電子書籍リーダは読書専用に作られているだけあって、以下のようなメリットがあります。&lt;/p&gt;
+
+&lt;h3 id=&#34;軽い&#34;&gt;軽い&lt;/h3&gt;
+
+&lt;p&gt;これは数十分から数時間持ち続けるデバイスでは重要です。たった数10gで大きな差を感じます。&lt;/p&gt;
+
+&lt;h3 id=&#34;読みやすい&#34;&gt;読みやすい&lt;/h3&gt;
+
+&lt;p&gt;液晶と違って、E-inkは発光しません。普通の紙と同じように読むことができます。かなり重要なポイントです。&lt;/p&gt;
+
+&lt;h3 id=&#34;電池持ちが良い&#34;&gt;電池持ちが良い&lt;/h3&gt;
+
+&lt;p&gt;数週間は持ちます。スマホやタブレットは比べものになりません。たまにPCに接続してデータを転送する時に充電されるので、実際は電池の存在を忘れてしまうかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;紙の本が良いはずである&#34;&gt;「紙の本が良いはずである」&lt;/h2&gt;
+
+&lt;p&gt;これは読む本によって違ってきます。&lt;/p&gt;
+
+&lt;h3 id=&#34;マンガ-小説-新書なら&#34;&gt;マンガ/小説/新書なら・・・&lt;/h3&gt;
+
+&lt;p&gt;ページを短時間で何度もめくらない、1ページに没頭するので電子書籍と紙の本で違いはない！
+書籍の購入の手軽さや場所のとらなさ、持ち運びのしやすさで電子書籍が勝る！&lt;/p&gt;
+
+&lt;h3 id=&#34;技術書-辞書なら&#34;&gt;技術書/辞書なら・・・&lt;/h3&gt;
+
+&lt;p&gt;斜め読み、書き込み、などが多い読み方。これは紙の本の方がよい！
+これらの書籍を読むなら、紙の本をおすすめします。&lt;/p&gt;
+
+&lt;h3 id=&#34;カラーページの多い雑誌なら&#34;&gt;カラーページの多い雑誌なら・・・&lt;/h3&gt;
+
+&lt;p&gt;当然紙の本がおすすめです。カラーが表現できませんから。
+文藝春秋とか、Softwareとか、文字の多い雑誌なら電子書籍でいいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;電子書籍リーダはまだ技術が成熟していない&#34;&gt;「電子書籍リーダはまだ技術が成熟していない」&lt;/h2&gt;
+
+&lt;p&gt;正直、電子書籍リーダは以前ほどの勢いはなくなりまして、撤退が多いです。
+そういう意味で、枯れた技術とも言えるでしょう。小説・マンガを読む分には十分です。
+さらにちょっとした機能が普段の生活を便利に変えてくれるかもしれません。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;紙の本より安い or ポイント還元あり&lt;/li&gt;
+&lt;li&gt;SonyReaderのEvernote連携、KoboのPocket連携　←　これで買う人もいるのでは？&lt;/li&gt;
+&lt;li&gt;辞書機能　←　洋書を楽しみたい人には便利なようです&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;買わない理由はないはずです。充実した読書生活を送るために、ぜひ１台どうぞ。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>

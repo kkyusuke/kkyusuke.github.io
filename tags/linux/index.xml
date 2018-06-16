@@ -1,147 +1,1227 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/linux/</link>
-    <description>Recent content in Linux on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 24 Sep 2017 06:20:00 +0900</lastBuildDate>
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2017-09-24 06:20:00 &#43;0900 JST</updated>
+
     
-	<atom:link href="https://blog.yyyak.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>インターネットに繋がらないときの５つのコマンド（Linux編）</title>
-      <link>https://blog.yyyak.com/post/network_check_linux/</link>
-      <pubDate>Sun, 24 Sep 2017 06:20:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/network_check_linux/</guid>
-      <description>&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Texlipse EclipseでTexを書く</title>
-      <link>https://blog.yyyak.com/post/texlipse/</link>
-      <pubDate>Sun, 29 Jan 2017 04:56:00 +0900</pubDate>
+        <item>
+          <title>インターネットに繋がらないときの５つのコマンド（Linux編）</title>
+          <link>https://blog.yyyak.com/post/network_check_linux/</link>
+          <pubDate>Sun, 24 Sep 2017 06:20:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/network_check_linux/</guid>
+          <description>
+
+&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。&lt;/p&gt;
+
+&lt;h2 id=&#34;ping&#34;&gt;ping&lt;/h2&gt;
+
+&lt;p&gt;pingは指定したアドレスからの応答があるかどうかをチェックできるコマンドです。
+本当にインターネットに繋がっていないのか、特定のソフトウェアの不具合なのかを切り分ける時に使います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ping www.google.co.jp -c 3
+PING www.google.co.jp (216.58.197.227) 56(84) bytes of data.
+64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=1 ttl=54 time=6.15 ms
+64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=2 ttl=54 time=5.94 ms
+64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=3 ttl=54 time=6.34 ms
+
+--- www.google.co.jp ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 5.943/6.148/6.348/0.165 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cオプションで回数を指定できます。指定しない場合はpingを送信し続けるのでCtrl-cで終了する必要があります。
+パケットロス(%で表示されている)が発生している場合、接続出来ていません。&lt;/p&gt;
+
+&lt;p&gt;セキュリティのためにpingに応答しないサーバもあるので、Googleなどの有名どころにPingするのがコツです。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pingが上手く出来ている　→　ネットワークの問題ではない&lt;/li&gt;
+&lt;li&gt;pingが上手く出来ていない　→　ネットワークの問題！次のコマンドに進む。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ifconfig&#34;&gt;ifconfig&lt;/h2&gt;
+
+&lt;p&gt;ネットワークの設定を確認するためのコマンドです。ここではIPアドレスが割り当てられているかを確認しましょう。
+（以下の例では一部がXXXの伏せ字になっています。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ifconfig
+eth0: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt;  mtu 1500
+        inet 192.168.0.4  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 52:54:0e:XX:XX:XX  txqueuelen 1000  (Ethernet)
+        RX packets 284216981  bytes 105292149937 (98.0 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 58073843  bytes 46613813274 (43.4 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;コマンドを実行したときにinetという部分にIPアドレスが表示されていれば、IPアドレスの取得は出来ています。&lt;/p&gt;
+
+&lt;p&gt;新しいOSでは&lt;code&gt;ip -a&lt;/code&gt;コマンドを使う必要があるかも知れません。&lt;/p&gt;
+
+&lt;h3 id=&#34;正しいipアドレス&#34;&gt;正しいIPアドレス&lt;/h3&gt;
+
+&lt;p&gt;普通は、以下のようになっているはずです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;192.168.(0~255).(1~254)&lt;/li&gt;
+&lt;li&gt;172.(16~31).(0~255).(1~254)&lt;/li&gt;
+&lt;li&gt;10.(0~255).(0~255).(1~254)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特殊な場合ですが、もしIPアドレスを取得しているならその値が設定されている必要があります。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ-1&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;正しいIPアドレスが設定されている　→　別のネットワーク設定に問題あり！次のコマンドに進む。&lt;/li&gt;
+&lt;li&gt;正しいIPアドレスが設定されていない　→　別の機器でも確かめてみる&lt;/li&gt;
+&lt;li&gt;やっぱりおかしい　→　IPアドレスを割り当てるDHCPという仕組みがおかしい。普通ルータがする仕事なので、ルータを再起動してみよう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;nslookup&#34;&gt;nslookup&lt;/h2&gt;
+
+&lt;p&gt;IPアドレスが正しく設定されているのにインターネットに接続出来ない時には、DNSの設定間違いを疑います。
+とりあえず以下のコマンドを実行してみましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup www.google.co.jp
+Server:         XXX.XXX.XXX.XXX
+Address:        XXX.XXX.XXX.XXX#53
+
+Non-authoritative answer:
+Name:   www.google.co.jp
+Address: 216.58.196.227
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実行してみて、answerが表示されましたか？もしされなければ、以下のコマンドも試してみて下さい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup www.google.co.jp 8.8.8.8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;まとめ-2&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;どちらの結果もおかしい　→　別のネットワーク設定に問題あり！次のコマンドに進む。&lt;/li&gt;
+&lt;li&gt;２つ目の結果は大丈夫　→　DNSサーバの調子が悪いようです。デフォルトDNSサーバの設定を変更しましょう。(/etc/resolv.confなどを参照)&lt;/li&gt;
+&lt;li&gt;１つ目の結果は大丈夫 or どちらの結果も大丈夫　→　インターネットには接続出来ているはずです。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;routeコマンド&#34;&gt;routeコマンド&lt;/h2&gt;
+
+&lt;p&gt;この辺りまで来ると、このネットワークトラブルは一筋縄では行かないです。とりあえずコマンドだけ紹介しておきましょう。
+OSによっては、&lt;code&gt;ip route show&lt;/code&gt;が代替です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ route
+カーネルIP経路テーブル
+受信先サイト    ゲートウェイ    ネットマスク   フラグ Metric Ref 使用数 インタフェース
+default         192.168.0.1     255.255.255.255 U     0      0        0 eth0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;たくさん出力されるとは思いますが、大事なのは&amp;rdquo;default&amp;rdquo;です。
+この行のゲートウェイにルータのアドレスが設定されているかどうかが重要です。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ-3&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ゲートウェイのアドレスがおかしい　→　ゲートウェイアドレスを設定し直そう！&lt;/li&gt;
+&lt;li&gt;ゲートウェイのアドレスは正しい　→　別のネットワーク設定に問題あり！次のコマンドに進む。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;arpコマンド&#34;&gt;arpコマンド&lt;/h2&gt;
+
+&lt;p&gt;このコマンドはIPアドレスとネットワークポートの対応付けを表示します。
+OSによっては、&lt;code&gt;ip n&lt;/code&gt;が代替です。
+ルータのIPアドレスが、ルータに繋がるポートに対応づけられているか確認しましょう。
+以下の例では192.168.0.1（つまりgateway）がeth0に対応づけられています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.0.1              ether   XX:XX:XX:XX:XX:XX   C                     eth0
+gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;まとめ-4&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;対応付けがおかしい　→　ネットワークサービスやPCそのものを再起動してみましょう&lt;/li&gt;
+&lt;li&gt;対応付けは正しい　→　手詰まりです・・・&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;それでも解決しない時には&#34;&gt;それでも解決しない時には&lt;/h2&gt;
+
+&lt;p&gt;典型的なネットワークトラブルの枠を越えた問題が発生してしまっているようです。
+専門家に見てもらう必要があります。自分で何とかしたいときには&lt;a href=&#34;https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/networking_guide/index&#34;&gt;Redhatのマニュアル&lt;/a&gt;などが役立つでしょう。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/texlipse/</guid>
-      <description>TexlipseというEclipseプラグインの使い方を解説します。 皆さんTexを書く時にはどんな環境を利用していますか。 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。 例えば次のような良い点があります。
- Tex専用の環境を用意する必要がなく、ディスク容量に優しい Gitとの連携が可能 入力のサジェストや段落構成ビューが利用できる  Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。
-Texlipseのインストール インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。 「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。
- 名前：　Texlipse（適当に） サイト：　http://texlipse.sourceforge.net/  Bibsonomy, Pdf4Eclipse, TeXlipseなどが候補に表示されるので、Texlipseを選択してインストールして下さい。 他のプラグインは必須ではありません。
-設定 ビルダー設定 Texlipseの設定をします。 一般的な日本人研究者は「platexでdviを生成してdvipdfmxでPDFを書き出し」という流れでTexを使っている人が多いと（勝手に）思っていますが、どうなのでしょうか。
-何はともあれ、海外製プラグインはその辺りの設定がされてません。やってしまいましょう。 おそらく以下の箇条書き部分を修正すれば大丈夫です。
- Latex program: latexではなく、platexに設定する Bibtex program: bibtexではなく、pbibtexに設定する Dvipdf program: dvipdfmではなく、dvipdfmxに設定する  ビューア設定 いつも使うビューアをトップに設定しておけば良いでしょう。 実行ファイルの場所の指定をしっかりすれば、他のオプションはそのままで良いと思います。
-使い方 Texlipseビューにすると、新規プロジェクト作成時に言語やビルダーの設定などができます。 あまり深く考えず、以下の部分を設定すれば良さそうです。
- Language Code: en/ja 出力ファイル形式： pdf/dvi ビルダー設定: pdflatex/latex+dvipdfm  後はいつも通りにTexを書き進めます。「ビルド」を実行すると自動でdviやPDFが生成されます。 ビューアを新たに起動したときには「Ctrl+4」をしましょう。
-トラブル回避テクニック Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。
-このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。
-みなさんのTexライフが快適なものになりますように！！</description>
-    </item>
     
-    <item>
-      <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
-      <link>https://blog.yyyak.com/post/egit_slow/</link>
-      <pubDate>Sat, 21 Jan 2017 11:27:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/egit_slow/</guid>
-      <description>&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux基礎講座：定期的なプログラムの実行(cron)</title>
-      <link>https://blog.yyyak.com/post/linux_basic_cron/</link>
-      <pubDate>Mon, 21 Mar 2016 10:18:00 +0900</pubDate>
+        <item>
+          <title>Texlipse EclipseでTexを書く</title>
+          <link>https://blog.yyyak.com/post/texlipse/</link>
+          <pubDate>Sun, 29 Jan 2017 04:56:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/texlipse/</guid>
+          <description>
+
+&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。&lt;/p&gt;
+
+&lt;p&gt;皆さんTexを書く時にはどんな環境を利用していますか。
+TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。
+例えば次のような良い点があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tex専用の環境を用意する必要がなく、ディスク容量に優しい&lt;/li&gt;
+&lt;li&gt;Gitとの連携が可能&lt;/li&gt;
+&lt;li&gt;入力のサジェストや段落構成ビューが利用できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Texlipseというプラグインを使うのがおすすめなので、インストール方法・使い方などを紹介します。&lt;/p&gt;
+
+&lt;h2 id=&#34;texlipseのインストール&#34;&gt;Texlipseのインストール&lt;/h2&gt;
+
+&lt;p&gt;インストールは「ヘルプ→新規ソフトウェアのインストール」から簡単に行えます。
+「追加」ボタンをクリックして、以下のダウンロードサイトを追加して下さい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;名前：　Texlipse（適当に）&lt;/li&gt;
+&lt;li&gt;サイト：　&lt;a href=&#34;http://texlipse.sourceforge.net/&#34;&gt;http://texlipse.sourceforge.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bibsonomy, Pdf4Eclipse, TeXlipseなどが候補に表示されるので、Texlipseを選択してインストールして下さい。
+他のプラグインは必須ではありません。&lt;/p&gt;
+
+&lt;h2 id=&#34;設定&#34;&gt;設定&lt;/h2&gt;
+
+&lt;h3 id=&#34;ビルダー設定&#34;&gt;ビルダー設定&lt;/h3&gt;
+
+&lt;p&gt;Texlipseの設定をします。
+一般的な日本人研究者は「platexでdviを生成してdvipdfmxでPDFを書き出し」という流れでTexを使っている人が多いと（勝手に）思っていますが、どうなのでしょうか。&lt;/p&gt;
+
+&lt;p&gt;何はともあれ、海外製プラグインはその辺りの設定がされてません。やってしまいましょう。
+おそらく以下の箇条書き部分を修正すれば大丈夫です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Latex program: latexではなく、platexに設定する&lt;/li&gt;
+&lt;li&gt;Bibtex program: bibtexではなく、pbibtexに設定する&lt;/li&gt;
+&lt;li&gt;Dvipdf program: dvipdfmではなく、dvipdfmxに設定する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ビューア設定&#34;&gt;ビューア設定&lt;/h3&gt;
+
+&lt;p&gt;いつも使うビューアをトップに設定しておけば良いでしょう。
+実行ファイルの場所の指定をしっかりすれば、他のオプションはそのままで良いと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
+
+&lt;p&gt;Texlipseビューにすると、新規プロジェクト作成時に言語やビルダーの設定などができます。
+あまり深く考えず、以下の部分を設定すれば良さそうです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Language Code: en/ja&lt;/li&gt;
+&lt;li&gt;出力ファイル形式： pdf/dvi&lt;/li&gt;
+&lt;li&gt;ビルダー設定: pdflatex/latex+dvipdfm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;後はいつも通りにTexを書き進めます。「ビルド」を実行すると自動でdviやPDFが生成されます。
+ビューアを新たに起動したときには「Ctrl+4」をしましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;トラブル回避テクニック&#34;&gt;トラブル回避テクニック&lt;/h2&gt;
+
+&lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
+
+&lt;p&gt;みなさんのTexライフが快適なものになりますように！！&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/linux_basic_cron/</guid>
-      <description>&lt;p&gt;定期的にプログラムを実行する方法を説明します。
-&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Linux基礎講座：パーミッション</title>
-      <link>https://blog.yyyak.com/post/linux_basic_permission/</link>
-      <pubDate>Sat, 19 Mar 2016 12:05:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/linux_basic_permission/</guid>
-      <description>&lt;p&gt;Linuxでのファイルのアクセス権限について説明します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux基礎講座：アプリケーション管理(yum/aptitude)</title>
-      <link>https://blog.yyyak.com/post/linux_basic_app/</link>
-      <pubDate>Sat, 19 Mar 2016 08:53:00 +0900</pubDate>
+        <item>
+          <title>EGitでCommit/PushするとEclipseがおかしくなる</title>
+          <link>https://blog.yyyak.com/post/egit_slow/</link>
+          <pubDate>Sat, 21 Jan 2017 11:27:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/egit_slow/</guid>
+          <description>
+
+&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;原因はstaging-view&#34;&gt;原因はStaging　View&lt;/h2&gt;
+
+&lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
+もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;解決策-staging-viewを使わない&#34;&gt;解決策：Staging Viewを使わない&lt;/h2&gt;
+
+&lt;p&gt;Staging Viewを使わなければ良いので、他の画面からコミットするようにします。
+「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
+私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;上手くいかなかった解決策&#34;&gt;上手くいかなかった解決策&lt;/h2&gt;
+
+&lt;p&gt;EGitを最新版にする、アンインストールした後に再インストールし直す、など基本的なことは試したのですが問題は解決しませんでした。&lt;/p&gt;
+
+&lt;p&gt;VisualStudioがGitサポートを始めているので、そちらに移るのもありなのかなぁ、とか思ったりもしました。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/linux_basic_app/</guid>
-      <description>&lt;p&gt;アプリケーション管理をCUIで行いましょう。
-&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Linux基礎講座：ユーザの追加(CUI)</title>
-      <link>https://blog.yyyak.com/post/linux_basic_useradd/</link>
-      <pubDate>Sun, 13 Mar 2016 12:07:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/linux_basic_useradd/</guid>
-      <description>&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux基礎講座：SSH(外部サーバへのアクセス)</title>
-      <link>https://blog.yyyak.com/post/linux_basic_ssh/</link>
-      <pubDate>Thu, 10 Mar 2016 04:39:00 +0900</pubDate>
+        <item>
+          <title>Linux基礎講座：定期的なプログラムの実行(cron)</title>
+          <link>https://blog.yyyak.com/post/linux_basic_cron/</link>
+          <pubDate>Mon, 21 Mar 2016 10:18:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_basic_cron/</guid>
+          <description>
+
+&lt;p&gt;定期的にプログラムを実行する方法を説明します。&lt;/p&gt;
+
+&lt;p&gt;Linuxでは&amp;rdquo;cron&amp;rdquo;というソフトウェアが定期実行を管理しています。
+自分で書いたスクリプトなどを定期的に実行させることができるので便利です。
+仕組みと利用法を見てみましょう。
+なお、当ポストはRedHat系の利用を前提としていますが、ディレクトリ構成を除いてDebian系などでも同様に使えます。&lt;/p&gt;
+
+&lt;h2 id=&#34;cronとは&#34;&gt;cronとは&lt;/h2&gt;
+
+&lt;p&gt;cronとは、定期実行を管理するソフトウェアの名前です。
+定期実行したいプログラムの一覧を保持したり、定期的に指定されたプログラムを実行する機能を持っています。&lt;/p&gt;
+
+&lt;p&gt;プログラムを実行する際に問題となるのは、実行権限です。
+cronそのものの実行権限でしかプログラムを動かせないとroot権限下のファイルなどを読み書きできなくなってしまいますが、それでは困ります。
+そこでcronでは実行するプログラム名の他に実行権限などの情報を事前に与えることになっています。
+以下の表にcronに与える必要のある情報をまとめました。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;名前&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;説明&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;分(minute)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;時刻を指定 / 間隔を指定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;20(20分), */20(20分ごと), *(毎分)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;時(hour)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;時刻を指定 / 間隔を指定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3(3時), */2(2時間ごと), *(毎時)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;日付(date)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;日にちを指定 / 間隔を指定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13(13日), */2(2日ごと), *(毎日)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;月(month)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;月を指定 / 間隔を指定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1(1月), */2(2ヶ月ごと), *(毎月)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;曜日(day)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;曜日を指定&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;sun(日曜日),*(毎日)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;実行権限&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ユーザ名を指定する&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;root, apache&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;プログラム名&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;コマンドラインに入力するのと同じ要領で与える&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;rdquo;/usr/local/bin/hoge -c -s&amp;rdquo;など&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;設定ファイル&#34;&gt;設定ファイル&lt;/h3&gt;
+
+&lt;p&gt;定期実行に関するデータは以下の2カ所に保存されています。
+crontabは直接ユーザが編集するタイプの場所ですが、spool下のファイルはcrontabコマンドから編集するものなので一般にはいじらなものです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;/var/spool/cron/(ユーザ名)&lt;/li&gt;
+&lt;li&gt;/etc/crontab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;それでは/etc/crontabファイルを見てみましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat /etc/crontab
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+30 2 * * * root /usr/local/sbin/backup 1&amp;gt;/dev/null
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最後の1行が私が追加しているものです。この場合、「毎日2時30分にroot権限でbackupコマンドを実行」します。&lt;/p&gt;
+
+&lt;h2 id=&#34;cronサービスの起動&#34;&gt;cronサービスの起動&lt;/h2&gt;
+
+&lt;p&gt;cronはサービスなので、起動していることを確認しましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// RHEL7以降
+$ systemctl status cron
+$ systemctl status cron //起動していない場合
+// RHEL6以前
+$ service cron status
+$ service cron status //起動していない場合
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;cronの設定&#34;&gt;cronの設定&lt;/h2&gt;
+
+&lt;p&gt;#＃＃ 編集
+基本的にはすべてcrontabコマンドを利用します。ユーザ&amp;rdquo;hoge&amp;rdquo;のcrontabを編集する場合、以下のコマンドを実行します。vimが起動して編集出来るようになります。終了時には文法チェックが行われるようです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# crontab -e -u hoge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;一覧の表示&#34;&gt;一覧の表示&lt;/h3&gt;
+
+&lt;p&gt;ユーザ&amp;rdquo;hoge&amp;rdquo;のcrontab内容は以下のコマンドで分かります。ユーザを指定していない場合、ログイン中のユーザ情報を表示します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# crontab -u hoge -l
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/linux_basic_ssh/</guid>
-      <description>&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。
-&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Linux基礎講座目次</title>
-      <link>https://blog.yyyak.com/post/linux_basic/</link>
-      <pubDate>Sat, 05 Mar 2016 11:58:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/linux_basic/</guid>
-      <description>&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>unboundとbind9の違い</title>
-      <link>https://blog.yyyak.com/post/dns_centos7/</link>
-      <pubDate>Sun, 25 Oct 2015 12:47:00 +0900</pubDate>
+        <item>
+          <title>Linux基礎講座：パーミッション</title>
+          <link>https://blog.yyyak.com/post/linux_basic_permission/</link>
+          <pubDate>Sat, 19 Mar 2016 12:05:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_basic_permission/</guid>
+          <description>
+
+&lt;p&gt;Linuxでのファイルのアクセス権限について説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;具体例からの解説&#34;&gt;具体例からの解説&lt;/h2&gt;
+
+&lt;p&gt;Linuxではファイル・ディレクトリのアクセス権限を簡単に設定することができます。
+アクセス権限には読み込み・書き込み・実行の3種類があります。更に細かな管理ができるように、所有ユーザ・所有グループ・全ユーザに異なる権限が設定できるようになっています。&lt;/p&gt;
+
+&lt;p&gt;さて、lsコマンドにlオプションをつけてファイルへのアクセス権限を確認してみましょう。
+次のような画面が得られたとします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ls -l
+total 0
+-rwxr-xr-x. 1 root     yusuke 112 Mar 19 20:25 a.out
+-rw-rw-r--. 1 yusuke apache 0 Mar 19 20:25 file1.txt
+-rw-rw-r--. 1 yusuke yusuke 0 Mar 19 20:25 file2.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;読み方は以下の図で解説しています。
+まず始めにアクセス権限が表示されており、rwxで表現されています。次がファイルタイプ・所有ユーザ名・所有グループ名・サイズ・更新日時が続きます。
+この場合、rootユーザには「r(読み込み), w(書き込み), x(実行)」の全権限が、yusukeグループには「r(読み込み), x(実行)」が、その他のユーザには「r(読み込み)」のみが許されている事になります。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ls_intro.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;アクセス権限の表示方法&#34;&gt;アクセス権限の表示方法&lt;/h2&gt;
+
+&lt;p&gt;先に見たように、アクセス権限は&amp;rdquo;r,w,x&amp;rdquo;の3つのローマ字で表現されます。ただ、Linuxのシステム内ではこの3文字を保存しているわけではありません。
+人間に読みやすいようにしているだけで、実は次のように数字を割り当てています。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;文字&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;数値&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;意味&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;r&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;読み込み&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;w&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;書き込み&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;x&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;実行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;これらの数字の組み合わせの和はすべて異なるので、その和もすべてユニークになります。それらを用いると「rwxr-xr-x」は「755」などとも表せます。この表記方法は重要ですので覚えておきましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;アクセス権の設定&#34;&gt;アクセス権の設定&lt;/h2&gt;
+
+&lt;p&gt;アクセス権限は以下のコマンドで設定できます。ここでは、file1.txtが所有ユーザのみ読み書き・それ以外は読み込みのみできるようにしています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ chmod 644 file1.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そもそも所有者を変更したい場合には以下のようにします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ chown user1 file1.txt //file1の所有ユーザをuser1に変更
+$ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グループをgroup2に変更
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;その他、細かな変更方法はmanコマンドなどを当たってみましょう。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
-      <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
-2つの違いを調べました。
-&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>Hugoのセットアップ</title>
-      <link>https://blog.yyyak.com/post/hugo/</link>
-      <pubDate>Tue, 21 Jul 2015 10:30:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/hugo/</guid>
-      <description>&lt;p&gt;HugoはGo言語で作成されたウェブサイト生成ソフトウェアです。Markdown形式で記事を作成することが出来ます。このページではHugoをダウンロードしてからウェブページを公開するまでの流れをなるべく詳細に記述します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>FedoraでNVIDIAの純正ドライバを使う</title>
-      <link>https://blog.yyyak.com/post/nvidia_linux/</link>
-      <pubDate>Sat, 18 Jul 2015 11:31:11 +0900</pubDate>
+        <item>
+          <title>Linux基礎講座：アプリケーション管理(yum/aptitude)</title>
+          <link>https://blog.yyyak.com/post/linux_basic_app/</link>
+          <pubDate>Sat, 19 Mar 2016 08:53:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_basic_app/</guid>
+          <description>
+
+&lt;p&gt;アプリケーション管理をCUIで行いましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;linuxのアプリケーション管理手法&#34;&gt;Linuxのアプリケーション管理手法&lt;/h2&gt;
+
+&lt;p&gt;WindowsのアプリケーションインストールとLinuxとの対応を考えてみましょう。
+同じような概念ですが、一部異なるところがあることが表から分かるはずです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Windows&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Linux(Redhat系)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Linux(Debian系)&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;違い&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ストア&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;yum&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;aptitude&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;これらのツールはネットワークからアプリをインストール出来る。&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ソフトウェアの追加と削除&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;rpmコマンド&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;dpkgコマンド&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Linux系のツールはインストールもできる。&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ソフトウェア固有のインストーラ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;rpmファイル&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;debファイル&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;プログラムや依存関係データがまとめられたもの&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;OSにはアプリケーションの一覧を管理する機能が与えられていることがほとんどです。Windowsの場合はコントロールパネル内の「プログラムの追加と削除」がその役割をしますが、Linuxの場合にはOSによって「rpm」や「dpkg」などがその役割をします。Windowsの場合にはアプリケーションのインストールはできませんが、Linux系ならばインストールファイルを用意するとインストールも行えます。rpmの場合にはrpmファイル、dpkgコマンドの場合にはdebファイルをインストールすることができます。&lt;/p&gt;
+
+&lt;p&gt;最近はアプリストアなどを用意してネットワーク経由でアプリを取得できるようにするOSが増えています。Windowsで言うところのストアアプリがこれですが、Linuxの場合はyumやaptitudeコマンドが行います。さらにディストリビューションごとにGUI画面も用意していることが多いです。なお、yumなどがソフトウェアを探しに行く先を「レポジトリ」と呼び、OS標準のものから個人的なものまで色々用意されています。&lt;/p&gt;
+
+&lt;p&gt;なお、インストールするためのファイルをまとめたものには、rpmやdebファイルがあります。ネットワーク経由でインストールできないものについてはこれらのファイルを直接取得してインストールします。&lt;/p&gt;
+
+&lt;h2 id=&#34;redhat系のアプリケーション管理&#34;&gt;Redhat系のアプリケーション管理&lt;/h2&gt;
+
+&lt;h3 id=&#34;インストール&#34;&gt;インストール&lt;/h3&gt;
+
+&lt;p&gt;yum経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをインストールする場合、以下のようにします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# yum install hoge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;レポジトリに登録されていないソフトウェアをインストールするときは、rpmファイルを用意して以下のコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# rpm -ivh hoge.rpm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;アンインストール&#34;&gt;アンインストール&lt;/h3&gt;
+
+&lt;p&gt;yum経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをアンインストールする場合、以下のようにします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# yum remove hoge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;アップデート&#34;&gt;アップデート&lt;/h3&gt;
+
+&lt;p&gt;レポジトリ内に新しいバージョンが登録された場合、アップデートすることができます。以下のコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# yum update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;一覧の取得&#34;&gt;一覧の取得&lt;/h3&gt;
+
+&lt;p&gt;以下のコマンドを実行すると、インストール済みのアプリケーション一覧が得られます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# yum list installed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インストールしていないアプリを含めてレポジトリ内を検索したい場合、以下のコマンドを実行します。ここではfugaを検索するものとします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# yum search fuga
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;debian系のアプリケーション管理&#34;&gt;Debian系のアプリケーション管理&lt;/h2&gt;
+
+&lt;h3 id=&#34;インストール-1&#34;&gt;インストール&lt;/h3&gt;
+
+&lt;p&gt;aptitude経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをインストールする場合、以下のようにします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# aptitude install hoge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;レポジトリに登録されていないソフトウェアをインストールするときは、debファイルを用意して以下のコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# dpkg -i hoge.deb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;アンインストール-1&#34;&gt;アンインストール&lt;/h3&gt;
+
+&lt;p&gt;aptitude経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをアンインストールする場合、以下のようにします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# aptitude remove hoge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;アップデート-1&#34;&gt;アップデート&lt;/h3&gt;
+
+&lt;p&gt;レポジトリ内に新しいバージョンが登録された場合、アップデートすることができます。以下のコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# aptitude update //レポジトリの情報を新しくする（アップデートはしない）
+# aptitude upgrade //新しくしたレポジトリ情報をもとにアップデート
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;一覧の取得-1&#34;&gt;一覧の取得&lt;/h3&gt;
+
+&lt;p&gt;インストール済みアプリの一覧は以下のコマンドで見られます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# aptitude search ‘~i’
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;インストールしていないアプリを含めてレポジトリ内を検索したい場合、以下のコマンドを実行します。ここではfugaを検索するものとします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# aptitude search fuga
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;注意したいこと&#34;&gt;注意したいこと&lt;/h2&gt;
+
+&lt;p&gt;自分でWEBから取得したrpmファイルやdebファイルを使う場合、ウイルス等には注意しましょう。&lt;/p&gt;
+</description>
+        </item>
       
-      <guid>https://blog.yyyak.com/post/nvidia_linux/</guid>
-      <description>&lt;p&gt;近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
-性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。
-&lt;/p&gt;</description>
-    </item>
     
+      
+        <item>
+          <title>Linux基礎講座：ユーザの追加(CUI)</title>
+          <link>https://blog.yyyak.com/post/linux_basic_useradd/</link>
+          <pubDate>Sun, 13 Mar 2016 12:07:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_basic_useradd/</guid>
+          <description>
+
+&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;linuxのユーザ概念&#34;&gt;Linuxのユーザ概念&lt;/h2&gt;
+
+&lt;p&gt;CUIでの操作を説明する前に、Linuxのユーザ管理手法について簡単に説明します。&lt;/p&gt;
+
+&lt;h3 id=&#34;ユーザとグループ&#34;&gt;ユーザとグループ&lt;/h3&gt;
+
+&lt;p&gt;LinuxにはWindowsと同じように複数ユーザが同じマシンを用いる仕組みが導入されています。
+ユーザの識別は「ユーザ名」で行われていて、各ユーザは「パスワード」を設定することが出来ます。&lt;/p&gt;
+
+&lt;p&gt;Linuxではさらに利便性を向上させるため「グループ」という仕組みも導入しており、各ユーザは好きなグループに入ることができます。
+グループには「グループ名」と「グループパスワード」があり、ユーザは複数のグループに所属することが可能です。
+ファイルのアクセス権をグループに付与することもできるので、簡単に同じPC上の他ユーザとデータを共有することができます。&lt;/p&gt;
+
+&lt;p&gt;Windowsにも複数ユーザのアクセス管理を行う仕組みはありますが、グループはあまり良く登場する概念ではありませんね。&lt;/p&gt;
+
+&lt;h3 id=&#34;ファイル構成&#34;&gt;ファイル構成&lt;/h3&gt;
+
+&lt;p&gt;Linuxではユーザ名やパスワードはテキスト形式のファイルに保存されています。
+それぞれ、以下のファイルを参照してみて下さい。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;ファイル名&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ユーザ名&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;/etc/passwd&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ユーザ名やホームディレクトリが記述されている&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ユーザパスワード&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;/etc/shadow&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ハッシュ化されたパスワードとハッシュアルゴリズムが記載されている&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;グループ名&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;/etc/group&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;グループ名や所属するユーザが記述されている&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;グループパスワード&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;/etc/gshadow&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;グループパスワードが記述されている&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;以前はpasswdファイル中にパスワードもハッシュ化された上で保存されていましたが、最近のディストリビュションではすべて別ファイルに保存されます。また、OSを新しくインストールした場合、これらのファイルをコピーすればユーザ情報を復活することが出来ます。&lt;/p&gt;
+
+&lt;h2 id=&#34;cuiでユーザ追加&#34;&gt;CUIでユーザ追加&lt;/h2&gt;
+
+&lt;p&gt;新たなユーザ&amp;rdquo;newuser&amp;rdquo;を追加するには、以下のようにコマンドラインに入力します。
+これでユーザが追加され、ホームディレクトリなども自動で作成されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# adduser newuser
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ユーザを作成するだけでは、パスワードがありません。パスワードを設定するには、以下のようなコマンドを実行します。
+対話形式でパスワードを2度聞かれますので、同じ文字列を入力してパスワードを設定しましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# passwd newuser
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Linux基礎講座：SSH(外部サーバへのアクセス)</title>
+          <link>https://blog.yyyak.com/post/linux_basic_ssh/</link>
+          <pubDate>Thu, 10 Mar 2016 04:39:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_basic_ssh/</guid>
+          <description>
+
+&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。&lt;/p&gt;
+
+&lt;p&gt;SSH(Secure Shell)とは、外部からシェルを動かすための仕組みです。
+アクセスされる側がSSHサーバ、アクセスする側がSSHクライアントを動作させることによって、マシンに接続されたキーボードとディスプレイを見ることなくCUI操作をすることができます。&lt;/p&gt;
+
+&lt;p&gt;当ポストではすでにサーバ側の設定は済んでいるものとして、どのようにクライアントを使えば良いかを説明します。
+サーバにアクセスするにはパスワードなどの情報を事前に知っておく必要がありますが、それらは自分で用意してください。
+クライアントとなるPCはLinuxの場合とWindowsの場合について説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;認証の種類&#34;&gt;認証の種類&lt;/h2&gt;
+
+&lt;p&gt;SSHで用いられる認証方法は主に以下の2つです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ユーザ名・パスワード認証&lt;/li&gt;
+&lt;li&gt;ユーザ名・公開鍵認証&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;パスワード認証では、ユーザ名とそのパスワードが分かっていればOKです。WEBサイトにログインするのと同じ感覚で利用できます。&lt;/p&gt;
+
+&lt;p&gt;一方公開鍵認証ではログインにパスワードは使わず、代わりに秘密鍵を使います。サーバ管理者から秘密鍵ファイルを渡されるはずなので、クライアントPC内に紛失しないように保管しましょう。
+秘密鍵には念のためにパスフレーズが設定されることが多いです。パスフレーズはサーバにログインするパスワードとは違いますが、こちらも忘れずに覚えておきましょう。ログインの際に使います。&lt;/p&gt;
+
+&lt;h2 id=&#34;linuxクライアントの場合&#34;&gt;Linuxクライアントの場合&lt;/h2&gt;
+
+&lt;h3 id=&#34;パスワード認証&#34;&gt;パスワード認証&lt;/h3&gt;
+
+&lt;p&gt;UbuntuやFedoraなどの多くのLinuxディストリビュションにはSSHクライアントが内蔵されています。
+例えば、www.hoge.com というサーバにユーザ名fugaで接続するには、以下のようにコマンドラインに入力します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;すると、パスワードを聞かれるはずですのでパスワードを入力します。
+なお、始めて接続するサーバの場合、本当に接続するかどうか確認されることがあります。&amp;rdquo;yes&amp;rdquo;と入力すれば良いでしょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;公開鍵認証&#34;&gt;公開鍵認証&lt;/h3&gt;
+
+&lt;p&gt;公開鍵がある場合には、公開鍵ファイルを指定します。以下は、ホームフォルダ下の.sshディレクトリに秘密鍵&amp;rdquo;key&amp;rdquo;が保管されている場合の例です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -i ~/.ssh/key
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;いくつかの重要なオプション&#34;&gt;いくつかの重要なオプション&lt;/h3&gt;
+
+&lt;p&gt;サーバによってはSSHサーバのポート番号が変更されている場合があります。デフォルトは22番ですが、それ以外の場合には明記する必要があります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -p 1022
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;X転送という機能を用いる場合、オプションを追加します。X転送ではGUIを持つエディタ等はGUIで起動することができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -X
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;セキュリティレベルを下げたX転送のため、Yオプションがあります。信頼できるネットワーク内ではこちらを用いた方が動作が速いでしょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -Y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;オプションではありませんが、クライアントのユーザ名とサーバのユーザ名が同じ場合、ユーザー名は省略できます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ssh www.hoge.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;windowsクライアント&#34;&gt;Windowsクライアント&lt;/h2&gt;
+
+&lt;p&gt;Windowsには2016年3月現在ではSSHクライアント機能がありませんので別途ソフトウェアをインストールする必要があります。以下が有名です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;putty&lt;/li&gt;
+&lt;li&gt;TeraTerm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;くれぐれもソフトウェアバグには注意し、アップデートの有無をまめに確認しましょう。
+私の場合にはTeraTermを使うので、そちらで説明します。&lt;/p&gt;
+
+&lt;h3 id=&#34;パスワード認証-1&#34;&gt;パスワード認証&lt;/h3&gt;
+
+&lt;p&gt;TeraTermを起動すると、以下のような画面が表示されます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm1.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ここでサーバアドレスを入力します。ポート番号は必要であれば変更します。
+OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm2.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ここでユーザ名とパスワードを指定します。このとき「プレインパスワードを使う」というラジオボタンを選択しておきましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;公開鍵認証-1&#34;&gt;公開鍵認証&lt;/h3&gt;
+
+&lt;p&gt;公開鍵認証では、途中まで操作は一緒ですが、「RSA&amp;hellip;鍵を使う」というラジオボタンを選択して、さらに秘密鍵を指定しておく必要があります。秘密鍵の指定は「秘密鍵(K):」というボタンを押して行いましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;ssh利用上の注意&#34;&gt;SSH利用上の注意&lt;/h2&gt;
+
+&lt;p&gt;SSHを利用する際はセキュリティに注意しましょう。通信は暗号化されますが、盗聴の危険は0ではありません。
+出所の分からないWifi経由で使わないなどの注意が必要です。&lt;/p&gt;
+
+&lt;p&gt;さらに、パスワード認証よりは公開鍵認証の利用をお勧めします。鍵長を長くすればそれだけ安心です。
+サーバという形式をとっているマシンは、何か問題が起きると多くの人に迷惑をかけてしまうことが多いかと思います。くれぐれも注意深く使いましょう。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Linux基礎講座目次</title>
+          <link>https://blog.yyyak.com/post/linux_basic/</link>
+          <pubDate>Sat, 05 Mar 2016 11:58:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_basic/</guid>
+          <description>
+
+&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。&lt;/p&gt;
+
+&lt;p&gt;この連載記事は「Windowsマシンは使えるけど、Linuxはよく分からない！」という以前の自分を対象にしたものです。
+「よく分からない」とは言っても、実はマウス操作で多くのことが出来ます。
+これは良いことですが、わざわざLinuxを使うのだからより深くまで使い方を知る必要があるケースも多いのではないでしょうか？
+研究に使う、サーバとして使ってウェブサイトを運営する、などなどLinuxは様々な場面で活躍することが出来る優秀なOSです。&lt;/p&gt;
+
+&lt;p&gt;そこで、この連載ではWindowsとLinuxの違いに焦点を置きながら、Linuxが得意とする分野のLinuxらしい使い方を解説しようと思います。
+どうぞよろしくおつきあい下さい。&lt;/p&gt;
+
+&lt;h2 id=&#34;対象とする環境&#34;&gt;対象とする環境&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fedora, UbuntuなどのデスクトップLinux&lt;/li&gt;
+&lt;li&gt;CentOS, DebianなどのサーバLinux（マウス操作が必要な場合、上手く行かないかも）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;目次&#34;&gt;目次&lt;/h2&gt;
+
+&lt;h3 id=&#34;gui編&#34;&gt;GUI編&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PCの起動・終了&lt;/li&gt;
+&lt;li&gt;デスクトップアプリケーションの紹介・利用&lt;/li&gt;
+&lt;li&gt;デスクトップアプリケーションのインストール・アンインストール&lt;/li&gt;
+&lt;li&gt;USBメモリー・DVDドライブ&lt;/li&gt;
+&lt;li&gt;プリンタの設定・印刷&lt;/li&gt;
+&lt;li&gt;VNC(外部サーバへのアクセス)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;cui編&#34;&gt;CUI編&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CUI&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_app&#34;&gt;アプリケーション管理(yum/aptitude)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_useradd&#34;&gt;ユーザの追加・削除&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_permission&#34;&gt;パーミッション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_ssh&#34;&gt;SSH(外部サーバへのアクセス)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_cron&#34;&gt;定期的なプログラムの実行(cron)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ネットワーク関連のコマンド&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;linuxというos&#34;&gt;LinuxというOS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windowsが得意なこと、Linuxが得意なこと&lt;/li&gt;
+&lt;li&gt;Linux的なシステムの作り方&lt;/li&gt;
+&lt;li&gt;LinuxOSの種類&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>unboundとbind9の違い</title>
+          <link>https://blog.yyyak.com/post/dns_centos7/</link>
+          <pubDate>Sun, 25 Oct 2015 12:47:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
+          <description>
+
+&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
+2つの違いを調べました。&lt;/p&gt;
+
+&lt;h2 id=&#34;unboundとは&#34;&gt;Unboundとは？&lt;/h2&gt;
+
+&lt;p&gt;Unboundは主にキャッシュDNSサーバを運用する際に用いられるソフトウェアです。
+アーキテクチャはVerisignなどが開発し、そのC言語版のメンテナンスはNLnet Labsという会社によって行われています（公式ウェブより）。
+OSSですが、有償サポートも行われています。
+&lt;a href=&#34;http://unbound.net/&#34;&gt;http://unbound.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;unboundとbindの違い&#34;&gt;UnboundとBindの違い&lt;/h2&gt;
+
+&lt;p&gt;Redhat系のOSを使用してDNSサーバを設置する場合、bindというOSSを利用することが定石でした。
+なぜUnboundが新たに登場して活躍しているのでしょうか。違いを見てみましょう。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Bind&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Unbound&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;キャッシュサーバ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;コンテンツサーバ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;△&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;権威サーバ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;○&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;×&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;リリース&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2000(Ver.9)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2008(Ver.1)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;ライセンス&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ISC(≑BSD)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;BSD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;bindとUnboundのライセンスは変わりありません。機能はむしろbindの方が多くこちらを使った方が良いように感じます。
+しかしbindは古くから開発された巨大なOSSであり、脆弱性を狙った攻撃が多いように感じます。（名前解決の仕組みそのものが脆弱性の温床であることもありますが。）
+この点、Unboundはまだbindほどメジャーではない上にアーキテクチャが新しいので攻撃される可能性は低いです。
+また、権威DNSサーバを設置する必要のあるユーザはそう多くはないので、多くの人は機能制限版のunboundの方がむしろ安全とも言えます。&lt;/p&gt;
+
+&lt;p&gt;では、unboundの使い方を見てみましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&amp;camp=247&amp;creative=7399&amp;field-keywords=DNS&amp;linkCode=ur2&amp;rh=n%3A465392%2Ck%3ADNS&amp;tag=makereview-22&amp;url=search-alias%3Dstripbooks&#34;&gt;&amp;lt;PR&amp;gt; Amazonで&amp;rdquo;DNS&amp;rdquo;に関する書籍を検索する&lt;/a&gt;&lt;img src=&#34;https://ir-jp.amazon-adsystem.com/e/ir?t=makereview-22&amp;l=ur2&amp;o=9&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;unboundをdnsキャッシュサーバとして利用する&#34;&gt;UnboundをDNSキャッシュサーバとして利用する&lt;/h2&gt;
+
+&lt;p&gt;まずは設定ファイルを編集します。なお、DNSSECの設定はしないものとします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  # comment  unboundのIPアドレスを設定
+  interface: 127.0.0.1
+  interface: 192.168.12.43
+
+  # comment IPv6が不要の場合
+  do-ip6: no
+
+  # comment 応答するIPアドレスを指定
+  access-control: 0.0.0.0/0 refuse
+  access-control: 127.0.0.0/8 allow
+  access-control: 192.168.1.0/24 allow
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;DNSの問い合わせをフォワーディングするには、conf.dディレクトリ内に新たにforward.confを作成すれば良いです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  forward-zone:
+# ドメインに応じて問い合わせ先を変更可能
+    name: &amp;quot;.&amp;quot;
+# 上位のDNSサーバを指定
+    forward-addr: 133.11.58.3
+    forward-addr: 133.11.58.4
+    forward-addr: 133.11.100.151
+    forward-first: yes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;設定し終わったら、サービスを開始します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# systemctl start unbound.service
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;基本はこれだけで動作するはずです。他のマシンからnslookupコマンドで動作を確認してみてください。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup
+# DNSサーバアドレスを指定
+&amp;gt; server 192.168.1.XX
+&amp;gt; www.google.com
+# comment 以下に解決結果が表示されればOK
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Hugoのセットアップ</title>
+          <link>https://blog.yyyak.com/post/hugo/</link>
+          <pubDate>Tue, 21 Jul 2015 10:30:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/hugo/</guid>
+          <description>
+
+&lt;p&gt;HugoはGo言語で作成されたウェブサイト生成ソフトウェアです。Markdown形式で記事を作成することが出来ます。このページではHugoをダウンロードしてからウェブページを公開するまでの流れをなるべく詳細に記述します。&lt;/p&gt;
+
+&lt;h2 id=&#34;1-hugoのダウンロード&#34;&gt;1. Hugoのダウンロード&lt;/h2&gt;
+
+&lt;p&gt;HugoはGo言語で書かれていますが、コンパイラについて心配する必要はありません。以下のウェブページからコンパイル済みのバイナリをダウンロードしましょう。Windowsの人は&amp;rdquo;hugo_x.xx_windows_amd64.zip&amp;rdquo;をダウンロードすればOKです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;https://github.com/spf13/hugo/releases&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-ブログの作成とテーマの設定&#34;&gt;2. ブログの作成とテーマの設定&lt;/h2&gt;
+
+&lt;p&gt;ダウンロードしたzipファイルを任意の場所に解凍します。
+以下のコマンドを実行してブログを作成します。
+すると、指定した名前のフォルダが作成されます。hugo の実行ファイルはこのフォルダ内に移動しておきましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new site [blog_name]
+$ mv hugo [blog_name]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;次に、中に入って、設定ファイル&amp;rdquo;config.toml&amp;rdquo;を編集しましょう。私は以下のように設定しています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd [blog_name]
+$ cat config.toml
+
+baseurl = &amp;quot;http://blog.yyyak.com&amp;quot;
+languageCode = &amp;quot;ja-jp&amp;quot;
+title = &amp;quot;YuNext: Make+&amp;quot;
+theme = &amp;quot;purehugo&amp;quot;
+
+[params]
+  twitterName = &amp;quot;KimurayaNext&amp;quot;
+  description = &amp;quot;********&amp;quot;
+  google_analytics = &amp;quot;UA-********-*&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テーマファイルは以下にまとめられています。丸ごとZIPをダウンロードして、一番上の階層に展開すれば良いでしょう。設定ファイルにある通り、私はpurehugoというテーマを改変して使っています。いろいろなthemeを設定してみて気に入ったものにすればいいでしょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/spf13/hugoThemes/&#34;&gt;https://github.com/spf13/hugoThemes/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;テーマごとに設定ファイルの内容が少しずつ異なります。各テーマファイル内の設定ファイル例を参考にしながら、一番上の階層のconfig.tomlを作成しましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;3-投稿&#34;&gt;3. 投稿&lt;/h2&gt;
+
+&lt;p&gt;さて、それでは早速投稿してみましょう。以下のコマンドを実行します。about.mdがcontentフォルダの中に作成されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;テーマによって初期ファイルは違いますが、大筋は同じはずです。私はこのようにしてみました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat content/first.md
+
++++
+date = &amp;quot;2015-07-17T3:10:16+09:00&amp;quot;
+draft = false
+title = &amp;quot;About This Blog&amp;quot;
+slug = &amp;quot;about&amp;quot;
+
++++
+このブログでは、以下のような内容を扱いたいと思います。
+
+* Linuxサーバに関するTips
+* 情報科学系の研究メモ
+* 日々の生活で気づいたこと、調べてわかったこと
+
+マメに更新して、コンテンツの充実したブログにしたいと思います。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実は &lt;code&gt;hugo new&lt;/code&gt; コマンドを使わなくてもcontentフォルダの中にmdファイルを作成すれば、hugoはちゃんと認識して投稿を生成します。&lt;/p&gt;
+
+&lt;h2 id=&#34;4-公開&#34;&gt;4. 公開&lt;/h2&gt;
+
+&lt;p&gt;さて、それではウェブサイトを生成しましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これで終わりです！新たに作成されたpublicフォルダ内の内容をウェブサーバに移動すれば、そのままブログとして運用できます。&lt;/p&gt;
+
+&lt;p&gt;ただ、作成したmarkdownファイルが正しくウェブページに変換されているか確認したいこともあると思います。その時には以下のコマンドを実行しましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$hugo server --watch -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このコマンドを実行した上で、&amp;rdquo;&lt;a href=&#34;http://localhost:1313&amp;quot;　にアクセスすると、生成されたページが閲覧できます。watchオプションは内容の変更を自動反映するためのもので、DオプションはdraftフラグがTrueの投稿も生成対象にします。&#34;&gt;http://localhost:1313&amp;quot;　にアクセスすると、生成されたページが閲覧できます。watchオプションは内容の変更を自動反映するためのもので、DオプションはdraftフラグがTrueの投稿も生成対象にします。&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;おつかれさまでした-完了です&#34;&gt;おつかれさまでした、完了です&lt;/h2&gt;
+
+&lt;p&gt;なんとこれだけでブログが出来上がります。すごく簡単ですよね！今後は投稿する上でのTipsを紹介したいと思います。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>FedoraでNVIDIAの純正ドライバを使う</title>
+          <link>https://blog.yyyak.com/post/nvidia_linux/</link>
+          <pubDate>Sat, 18 Jul 2015 11:31:11 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/nvidia_linux/</guid>
+          <description>
+
+&lt;p&gt;近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
+性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。&lt;/p&gt;
+
+&lt;p&gt;多くのディストリに搭載されているドライバは、公式ドライバをリバースエンジニアリングしたりNVIDIAから情報を集めて作成されたOSS (Nouveau)です。これそのものは正常に動作しますが、NVIDIAが公式に配布しているプロプライエタリなドライバよりも機能が制限されています。今回は、Fedora22で公式ドライバをインストールする手順を紹介します。&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;1-nouveau関連のパッケージを削除&#34;&gt;1. Nouveau関連のパッケージを削除&lt;/h2&gt;
+
+&lt;p&gt;純正ドライバとnouveauは競合するようなので、nouveauを削除してしまいましょう。実はドライバインストーラにはnouveauを無効にする機能が搭載されているようです。でも、実際には効果がありませんでした。消してしまうのが一番手っ取り早いです。
+OSによっては/etc/sysconfig/grubにblacklistの設定が必要になります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# sudo yum remove *nouveau*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;# nano /etc/sysconfig/grub
+GRUB_CMDLINE_LINUX=&amp;quot;....... rd.driver.blacklist=nouveau&amp;quot;
+# grub2-mkconfig -o /boot/grub2/grub.cfg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-純正ドライバをダウンロード&#34;&gt;2. 純正ドライバをダウンロード&lt;/h2&gt;
+
+&lt;p&gt;このあたりにから、自分のPCにあうドライバを探してください。ホームフォルダに入れてください。&lt;br&gt;
+&lt;a href=&#34;http://www.nvidia.co.jp/Download/index.aspx&#34;&gt;http://www.nvidia.co.jp/Download/index.aspx&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/nvidiadriver.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/nvidiadriver.JPG&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;3-osをランレベル3相当で再起動&#34;&gt;3. OSをランレベル3相当で再起動&lt;/h2&gt;
+
+&lt;p&gt;厳密にはFedora22などの systemd採用環境にランレベルという概念はないですが、各ランレベルに相当するターゲットファイルが用意されています。
+デフォルトではランレベル５で起動するOSがほとんどですが、これを一時的にランレベル３で起動するには、Grub2の起動画面で一手間加えることになります。まず、再起動して以下の画面を表示させましょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/blog/images/GRUB.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/GRUB.png&#34; alt=&#34;&#34; /&gt;
+&lt;/a&gt;
+
+Grub2―enWikipediaより&lt;/p&gt;
+
+&lt;p&gt;まずドライバをインストールしたいカーネルを矢印キーで選び、&lt;code&gt;e&lt;/code&gt;を押します。すると起動のためのコマンドがたくさん現れます。
+さて、ブートオプションの末尾に&amp;rdquo;&lt;code&gt;3&lt;/code&gt;&amp;ldquo;を書き加えて、&lt;code&gt;Ctrl + x&lt;/code&gt;をします。これで、ランレベル３での起動は完了です。CUIでOSが起動しますから、ログインしましょう。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;4-ドライバをインストール&#34;&gt;4. ドライバをインストール&lt;/h2&gt;
+
+&lt;p&gt;ドライバの保存先フォルダに移動し、インストールファイルを実行します。インストール自体はOKボダンを押し続けるだけで終了します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo sh ./driver_file_name.sh
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>

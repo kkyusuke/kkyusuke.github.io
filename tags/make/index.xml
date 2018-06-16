@@ -1,47 +1,397 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Make on Make &amp; Review</title>
+    <title>Make &amp; Review </title>
     <link>https://blog.yyyak.com/tags/make/</link>
-    <description>Recent content in Make on Make &amp; Review</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 14 May 2018 14:06:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://blog.yyyak.com/tags/make/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Visual Studio ver15.7でのLinux開発</title>
-      <link>https://blog.yyyak.com/post/vslinux/</link>
-      <pubDate>Mon, 14 May 2018 14:06:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/vslinux/</guid>
-      <description>&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ブラーバジェットでクイックルワイパーのシートを使う！</title>
-      <link>https://blog.yyyak.com/post/braava/</link>
-      <pubDate>Sat, 23 Dec 2017 04:48:00 +0900</pubDate>
-      
-      <guid>https://blog.yyyak.com/post/braava/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
+    <language>en-us</language>
+    <author>Y.K.</author>
+    <rights>(C) 2018</rights>
+    <updated>2018-05-14 14:06:00 &#43;0900 JST</updated>
 
-&lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。
-&lt;/p&gt;</description>
-    </item>
     
-    <item>
-      <title>DualPDF</title>
-      <link>https://blog.yyyak.com/post/dualpdf/</link>
-      <pubDate>Sun, 05 Jun 2016 07:38:00 +0900</pubDate>
       
-      <guid>https://blog.yyyak.com/post/dualpdf/</guid>
-      <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
-&lt;/p&gt;</description>
-    </item>
+        <item>
+          <title>Visual Studio ver15.7でのLinux開発</title>
+          <link>https://blog.yyyak.com/post/vslinux/</link>
+          <pubDate>Mon, 14 May 2018 14:06:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/vslinux/</guid>
+          <description>
+
+&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。&lt;/p&gt;
+
+&lt;h2 id=&#34;visual-studioでlinux開発&#34;&gt;Visual StudioでLinux開発&lt;/h2&gt;
+
+&lt;p&gt;Visual Studioでは2017版からLinux開発がデフォルト機能として正式サポートされています。
+ちゃんと&lt;a href=&#34;https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/&#34;&gt;ブログ記事&lt;/a&gt;などにも操作方法が紹介されているのですが、問題はこのドキュメントが古いこと！最新のVSではコード補完が上手く動作せず使い物になりません。&lt;/p&gt;
+
+&lt;h2 id=&#34;最新-v15-7-の変更事項1-プロジェクトファイルの内容が変わった&#34;&gt;最新(v15.7)の変更事項1: プロジェクトファイルの内容が変わった！&lt;/h2&gt;
+
+&lt;p&gt;古いプロジェクトファイルは最新のVSでは動きません。
+これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;予想ですが、将来的には一つのプロジェクトでWindowsとLinux開発の両方を行えるようにしているのだと思います。特殊なプロジェクトとして扱われていたLinuxプロジェクトが、変更を経て徐々に普通のプロジェクトファイルに近付きつつあります。期待しましょう！&lt;/p&gt;
+
+&lt;h2 id=&#34;最新-v15-7-の変更事項2-ヘッダーファイルのキャッシュ&#34;&gt;最新(v15.7)の変更事項2: ヘッダーファイルのキャッシュ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blogs.msdn.microsoft.com/vcblog/2018/04/09/intellisense-for-remote-linux-headers/&#34;&gt;最新のブログ記事&lt;/a&gt;によると、このバージョンからはVS付属のヘッダファイルだけでなく、実行先のマシンのヘッダーファイルをキャッシュしてIntellisenseで使えるようになりました。&lt;/p&gt;
+
+&lt;p&gt;ここまでは良いのですが、すべて手動で設定しなくてはいけません。これまでに使えていたデフォルト補完がなくなり、&lt;code&gt;#include &amp;lt;iostream&amp;gt;&lt;/code&gt;などがすべてエラーになります。正しい設定方法は以下の3ステップです。&lt;/p&gt;
+
+&lt;h3 id=&#34;キャッシュを転送&#34;&gt;キャッシュを転送&lt;/h3&gt;
+
+&lt;p&gt;ボタンを辿って、以下のページを表示して下さい。&lt;br /&gt;
+[ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;&lt;code&gt;sudo apt install zip&lt;/code&gt;コマンドの実行がクライアント側で必要になるかもしれません。クライアント側の設定は以前のものにしたがって下さい。&lt;/p&gt;
+
+&lt;p&gt;キャッシュのダウンロードが終わると、内容が閲覧できます。「探索」ボタンで表示してみましょう。以下のようなパスに保存されているはずです。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;C:\Users\NAME\AppData\Local\Microsoft\Linux\Header Cache\1.0\-1204525716&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;デフォルトインクルードパスを取得&#34;&gt;デフォルトインクルードパスを取得&lt;/h3&gt;
+
+&lt;p&gt;クライアントで&lt;code&gt;gcc -xc++ -v -&lt;/code&gt;を実行して下さい。以下のようにデフォルトインクルードパスが表示されるはずです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gcc -xc++ -v -
+...
+#include &amp;lt;...&amp;gt; search starts here:
+ /usr/include/c++/6
+ /usr/include/x86_64-linux-gnu/c++/6
+ /usr/include/c++/6/backward
+ /usr/lib/gcc/x86_64-linux-gnu/6/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/6/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ver15.7ではこれらのパスが自動設定されないので、IntelliSenseに教えてあげる必要があります。
+&lt;code&gt;/usr/include/c++/6&lt;/code&gt;は&lt;code&gt;C:\Users\NAME\AppData\Local\Microsoft\Linux\Header Cache\1.0\-1204525716\user\include\c++\6&lt;/code&gt;にキャッシュされています。すべてWindows側のパスに直してメモ帳にでもまとめて下さい。&lt;/p&gt;
+
+&lt;h3 id=&#34;プロジェクトファイルに設定&#34;&gt;プロジェクトファイルに設定&lt;/h3&gt;
+
+&lt;p&gt;ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
+[C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。&lt;code&gt;;&lt;/code&gt;で区切れます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;これでようやく補完がまともに働きます。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;少しずつ改善が進んでいて喜ばしいのですが、急に仕様を変えてドキュメントも無いのは酷いと思いました。MSにはその辺りも頑張ってほしいものです。&lt;/p&gt;
+</description>
+        </item>
+      
     
+      
+        <item>
+          <title>ブラーバジェットでクイックルワイパーのシートを使う！</title>
+          <link>https://blog.yyyak.com/post/braava/</link>
+          <pubDate>Sat, 23 Dec 2017 04:48:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/braava/</guid>
+          <description>
+
+&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
+
+&lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。&lt;/p&gt;
+
+&lt;h2 id=&#34;ブラーバ&#34;&gt;ブラーバ？&lt;/h2&gt;
+
+&lt;p&gt;ブラーバは、ルンバを作っているiRobot社が販売する拭き掃除ロボット。
+ルンバは掃除機なのでゴミを吸い取る方式なのに対して、ルンバは乾いたパッドや洗剤付きパッドで拭き掃除ができます。&lt;/p&gt;
+
+&lt;p&gt;カーペットや畳の部屋などいろんな場所で使うなら、ルンバがお勧めです。普通の掃除機と同じ感覚で、どこでも掃除できます。
+もしあなたがフローリングだけの部屋に住んでいるなら、私はブラーバをお勧めします。水拭き掃除をしてくれるのはブラーバだけなのです。&lt;/p&gt;
+
+&lt;h3 id=&#34;ブラーバとブラーバジェット&#34;&gt;ブラーバとブラーバジェット&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Braava Jet&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Braava&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;対応床面積&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15畳&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56畳&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;洗濯可能なパッドの使用&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OK(別売り)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;使い捨てパッドの使用&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OK(洗剤入)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OK(市販品)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;清掃中断時の清掃済みエリアの記憶&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OK&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;NorthStarキューブ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;不要(非対応)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;使用を推奨&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;バッテリー&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Li-ion&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Ni-MH&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;2種類のブラーバの違いを大まかに表にまとめました。&lt;/p&gt;
+
+&lt;p&gt;広い部屋を掃除したいなら無印ブラーバ一択のように思われますが、よほど単純な部屋で無い限りは迷ってしまうでしょうから、うまく分割しながらブラーバジェットにやらせても変わらない気がします。&lt;/p&gt;
+
+&lt;p&gt;無印ブラーバはNorthStarという小さなアイテムを机に置いておく必要があります。逆に、ブラーバジェットには不要です。
+電池はジェットのものの方が長持ちだと言われています。&lt;/p&gt;
+
+&lt;h3 id=&#34;ブラーバジェットのランニングコスト問題&#34;&gt;ブラーバジェットのランニングコスト問題&lt;/h3&gt;
+
+&lt;p&gt;さて、問題になってくるのが、ランニングコストです。
+床を拭いた汚いパッドを手洗いしたり洗濯機に入れるのは気が引けてしまうので、使い捨ての方がいいです。
+その点、無印ブラーバはクイックルワイパーを取り付けられるので、とっても経済的です。一方のジェットは、専用パッドを取り付けなくてはいけません。専用パッドは1枚100円で高いです。クイックルワイパーは、純正品を使わなければもっと安いです。どうしよう・・・。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Braava Jet&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Braava&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;対応品&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;専用パッド&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;クイックルワイパー&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;値段&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;900円/10枚&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;600円/40枚&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;単価&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;90円&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;15円&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;クイックルワイパーを使いたい&#34;&gt;クイックルワイパーを使いたい&lt;/h2&gt;
+
+&lt;p&gt;それならば、クイックルワイパーをジェットでも使えるようにすれば良い！ということで、アタッチメントを作ってみることにしました。
+Amazonなどで調べてもそれらしいものが売っていないので、自作する必要がありそうです。&lt;/p&gt;
+
+&lt;p&gt;いろんな形状のものを考えましたが、私の中でのベストを紹介します！&lt;/p&gt;
+
+&lt;h3 id=&#34;東急ハンズに行く&#34;&gt;東急ハンズに行く&lt;/h3&gt;
+
+&lt;p&gt;材料は東急ハンズでそろえました。
+全部で1000円くらいです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ポリセームボード(1mm厚)&lt;/li&gt;
+&lt;li&gt;発泡ボード(7mm厚)&lt;/li&gt;
+&lt;li&gt;マジックテープ（裏にノリがついているもの）&lt;/li&gt;
+&lt;li&gt;カッター/はさみ（必要に応じて）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;サクッと工作&#34;&gt;サクッと工作&lt;/h3&gt;
+
+&lt;p&gt;作ったものは大きく2つのパーツに分かれていて、1つはブラーバ側にくっつけ、もう1つにはクイックルワイパーを巻きます。
+最終的に、2つはマジックテープで貼り付けて掃除させることにします。&lt;/p&gt;
+
+&lt;p&gt;まずはブラーバの形に合うように薄いポリボードをカットします。これはブラーバ側にくっつます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;カチッと音が鳴って固定されるように、ボードには穴を2カ所開けなくてはいけません。これが一番大変でした。
+穴を無事に作れたら、センサーがドライパッドとして認識できるようにサインペンで模様を作ります。他のパッドを参考にして下さい。
+最初は小さめに模様を作って、ブラーバに付けて認識するようになるまで調整を繰り返します。&lt;/p&gt;
+
+&lt;p&gt;次に厚い発泡ボードをパッドと同じ大きさにカットします。マジックテープもサクッと取り付けて、完成です。厚い発泡ボードのほうに固いテープを使った方が良いです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h3 id=&#34;完成&#34;&gt;完成！&lt;/h3&gt;
+
+&lt;p&gt;完成したものをブラーバにとりつけてみます。まずは薄い発泡ボードの方から。
+画像の通り、しっかり穴をあければ落っこちません。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;次に厚めの発泡ボードの方をセットアップします。まずはクイックルワイパーの上に置いて・・・
+それをぐるぐる巻いてマジックテープで固定すれば完成です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ブラーバに取り付けるとこんな感じ。すこし盛り上がってしまっているので、5mm厚の発泡ボードを使っても良かったかも。とにかくコレで動きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;ちなみにちゃんと掃除もできているので「&lt;a href=&#34;https://blog.yyyak.com/blog/images/braava_new_4.jpg&#34;&gt;証拠&lt;/a&gt;」を貼っておきます。（汚い画像が表示されます。）&lt;/p&gt;
+
+&lt;h2 id=&#34;安くて快適なブラーバライフへようこそ&#34;&gt;安くて快適なブラーバライフへようこそ！&lt;/h2&gt;
+
+&lt;p&gt;クイックルワイパーを使えるようになったブラーバジェットは、初期コスト最小・ランニングコスト最小の最強の床拭き掃除器です。
+ぜひ皆さんもトライしてみてくださいね！&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01EBLYFK4&amp;linkId=afebd57d3443f7b1b02a4853d1449412&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00XU0FUAW&amp;linkId=952115070a3c771ad4c7fe936373a5a2&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00EOHQPHC&amp;linkId=44d0082b9c2fa5aad6ff5f7162cc2b5b&#34;&gt;&lt;/iframe&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>DualPDF</title>
+          <link>https://blog.yyyak.com/post/dualpdf/</link>
+          <pubDate>Sun, 05 Jun 2016 07:38:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/dualpdf/</guid>
+          <description>
+
+&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。&lt;/p&gt;
+
+&lt;h2 id=&#34;dualpdf&#34;&gt;DualPDF&lt;/h2&gt;
+
+&lt;p&gt;DualPDFは同時に２つのPDFファイルを閲覧することが出来るAndroidアプリです。
+&lt;a href=&#34;https://play.google.com/store/apps/details?id=jp.kkyusuke.DualPDF&#34;&gt;Google Play Store&lt;/a&gt;からダウンロードして下さい。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;https://play.google.com/store/apps/details?id=jp.kkyusuke.DualPDF&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&#39;&gt;&lt;img alt=&#39;Google Play で手に入れよう&#39; src=&#39;https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png&#39; width=&#34;200&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;更新履歴&#34;&gt;更新履歴&lt;/h2&gt;
+
+&lt;h3 id=&#34;ver-1-10&#34;&gt;Ver 1.10&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改善：　64bitCPUで動作するよう改善&lt;/li&gt;
+&lt;li&gt;お知らせ：　Android2.3以下の端末は今後のアップデート対象外となります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-6&#34;&gt;Ver 1.6&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;追加：　外部アプリから開く&lt;/li&gt;
+&lt;li&gt;追加：　非対称ビュー&lt;/li&gt;
+&lt;li&gt;改善：　縦表示に対応&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-5&#34;&gt;Ver 1.5&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;修正：　一度PDFファイルを読み込むと、ほかのPDFが開けなくなる不具合&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-4&#34;&gt;Ver 1.4&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;修正：　Android4.0-4.3でPDFが開けない問題&lt;/li&gt;
+&lt;li&gt;改善：　不要な権限を削除&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-3&#34;&gt;Ver 1.3&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改善：　安定性の向上&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-2&#34;&gt;Ver 1.2&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;修正：　一部端末でPDFが表示されない問題&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ver-1-1&#34;&gt;Ver 1.1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改善：　新しい端末のUI&lt;/li&gt;
+&lt;li&gt;修正：　ライセンス表記&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;動作検証&#34;&gt;動作検証&lt;/h2&gt;
+
+&lt;p&gt;下記の端末で正常に動作することが確認できています。
+なおAndroid2.x世代の端末では正常に動作しない場合があります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sony Xperia XZ (Android 6.0)&lt;/li&gt;
+&lt;li&gt;ASUS Nexus7 (2013, Android6.0)&lt;/li&gt;
+&lt;li&gt;Sony Xperia Z3 (Android 5.0)&lt;/li&gt;
+&lt;li&gt;Huawei dtab 01 (Android 4.1)&lt;/li&gt;
+&lt;li&gt;Samsung Galaxy S3α (Android 4.3)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ライセンス&#34;&gt;ライセンス&lt;/h2&gt;
+
+&lt;p&gt;このアプリケーションではPDFのレンダリングにpdf.jsが利用されています。pdf.jsはApache License 2.0で公開されているオープンソースソフトウェアです。&lt;/p&gt;
+
+&lt;p&gt;このアプリケーションはXamarinを用いて開発されました。Dream SparkでライセンスされたVisual Studio 2015 Enterpriseでコンパイルされているため、一切の購入・広告料は頂いていません。
+当アプリは、Apache License 2.0の下でソースコードを公開しています。&lt;a href=&#34;https://github.com/kkyusuke/DualPDF&#34;&gt;Githubページを&lt;/a&gt;ご覧下さい。&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>

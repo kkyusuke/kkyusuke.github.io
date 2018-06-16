@@ -106,9 +106,10 @@
             
 
             <div class="post-content">
-                <p>近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
-性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。
-</p>
+                
+
+<p>近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
+性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。</p>
 
 <p>多くのディストリに搭載されているドライバは、公式ドライバをリバースエンジニアリングしたりNVIDIAから情報を集めて作成されたOSS (Nouveau)です。これそのものは正常に動作しますが、NVIDIAが公式に配布しているプロプライエタリなドライバよりも機能が制限されています。今回は、Fedora22で公式ドライバをインストールする手順を紹介します。</p>
 
@@ -135,7 +136,7 @@ GRUB_CMDLINE_LINUX=&quot;....... rd.driver.blacklist=nouveau&quot;
 <a href="http://www.nvidia.co.jp/Download/index.aspx">http://www.nvidia.co.jp/Download/index.aspx</a><br></p>
 
 <a href="/blog/images/nvidiadriver.JPG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/nvidiadriver.JPG" alt="" />
+  <img class="page1 img-thumbnail" src="/images/nvidiadriver.JPG" alt="" />
 </a>
 
 
@@ -145,7 +146,7 @@ GRUB_CMDLINE_LINUX=&quot;....... rd.driver.blacklist=nouveau&quot;
 デフォルトではランレベル５で起動するOSがほとんどですが、これを一時的にランレベル３で起動するには、Grub2の起動画面で一手間加えることになります。まず、再起動して以下の画面を表示させましょう。</p>
 
 <p><a href="/blog/images/GRUB.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/blog/images/GRUB.png" alt="" />
+  <img class="page1 img-thumbnail" src="/images/GRUB.png" alt="" />
 </a>
 
 Grub2―enWikipediaより</p>
@@ -159,6 +160,7 @@ Grub2―enWikipediaより</p>
 
 <pre><code>$ sudo sh ./driver_file_name.sh
 </code></pre>
+
             </div>
 
 
@@ -193,297 +195,6 @@ Grub2―enWikipediaより</p>
                 </ul>
 
                 
-                
-                <h3>Related Post</h3>
-                <ul class="post-rels">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/network_check_linux/">インターネットに繋がらないときの５つのコマンド（Linux編）</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/texlipse/">Texlipse EclipseでTexを書く</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/egit_slow/">EGitでCommit/PushするとEclipseがおかしくなる</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/gmail_pop3/">GmailのPOP3受信をリアルタイムに</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/linux_basic_cron/">Linux基礎講座：定期的なプログラムの実行(cron)</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/linux_basic_permission/">Linux基礎講座：パーミッション</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/linux_basic_app/">Linux基礎講座：アプリケーション管理(yum/aptitude)</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/linux_basic_useradd/">Linux基礎講座：ユーザの追加(CUI)</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/linux_basic_ssh/">Linux基礎講座：SSH(外部サーバへのアクセス)</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/linux_basic/">Linux基礎講座目次</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/smt/">SMT2ファイルの書き方</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/dns_centos7/">unboundとbind9の違い</a></li>
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/router_nat/">ひかり回線が繋がらなくなる問題</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/push/">Wifi環境でPUSH通知が届かない</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <li><a href="https://blog.yyyak.com/post/hugo/">Hugoのセットアップ</a></li>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                </ul>
-
-            
             
             </aside>
 
@@ -633,7 +344,7 @@ Grub2―enWikipediaより</p>
 <hr>
 
 <footer class="container copy">
-    <p>&copy; 2018  Make &amp; Review </p>
+    <p>&copy; 2018  Y.K. </p>
 
 </footer>
 <link rel="stylesheet" href="https://blog.yyyak.com/css/lightbox.css"  />
