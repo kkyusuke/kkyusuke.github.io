@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Make &amp; Review </title>
-    <link>https://blog.yyyak.com/tags/research/</link>
+    <link>https://blog.yyyak.com/tags/research/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2015-12-17 00:08:00 &#43;0900 JST</updated>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
     
       
@@ -16,9 +16,8 @@
           <pubDate>Thu, 17 Dec 2015 00:08:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/smt/</guid>
-          <description>
-
-&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。&lt;/p&gt;
+          <description>&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;smtソルバーとは&#34;&gt;SMTソルバーとは&lt;/h2&gt;
 
@@ -89,8 +88,7 @@ sat
 &lt;p&gt;SMT2式の書き方についてはPDFにまとまっている言語仕様を参照すると良いでしょう。
 &lt;a href=&#34;http://smtlib.cs.uiowa.edu/&#34;&gt;http://smtlib.cs.uiowa.edu/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;SMTソルバによってはPythonAPIなどを提供していることもあるので、それを利用して実装を簡単にすることもできます。&lt;/p&gt;
-</description>
+&lt;p&gt;SMTソルバによってはPythonAPIなどを提供していることもあるので、それを利用して実装を簡単にすることもできます。&lt;/p&gt;</description>
         </item>
       
     

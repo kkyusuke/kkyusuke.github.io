@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Make &amp; Review </title>
-    <link>https://blog.yyyak.com/tags/make/</link>
+    <link>https://blog.yyyak.com/tags/make/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2018-05-14 14:06:00 &#43;0900 JST</updated>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
     
       
@@ -16,9 +16,8 @@
           <pubDate>Mon, 14 May 2018 14:06:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/vslinux/</guid>
-          <description>
-
-&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。&lt;/p&gt;
+          <description>&lt;p&gt;Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;visual-studioでlinux開発&#34;&gt;Visual StudioでLinux開発&lt;/h2&gt;
 
@@ -94,8 +93,7 @@ End of search list.
 
 &lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
 
-&lt;p&gt;少しずつ改善が進んでいて喜ばしいのですが、急に仕様を変えてドキュメントも無いのは酷いと思いました。MSにはその辺りも頑張ってほしいものです。&lt;/p&gt;
-</description>
+&lt;p&gt;少しずつ改善が進んでいて喜ばしいのですが、急に仕様を変えてドキュメントも無いのは酷いと思いました。MSにはその辺りも頑張ってほしいものです。&lt;/p&gt;</description>
         </item>
       
     
@@ -106,11 +104,10 @@ End of search list.
           <pubDate>Sat, 23 Dec 2017 04:48:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/braava/</guid>
-          <description>
+          <description>&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
-
-&lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。&lt;/p&gt;
+&lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;ブラーバ&#34;&gt;ブラーバ？&lt;/h2&gt;
 
@@ -297,8 +294,7 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01EBLYFK4&amp;linkId=afebd57d3443f7b1b02a4853d1449412&#34;&gt;&lt;/iframe&gt;
 &lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00XU0FUAW&amp;linkId=952115070a3c771ad4c7fe936373a5a2&#34;&gt;&lt;/iframe&gt;
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00EOHQPHC&amp;linkId=44d0082b9c2fa5aad6ff5f7162cc2b5b&#34;&gt;&lt;/iframe&gt;
-</description>
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00EOHQPHC&amp;linkId=44d0082b9c2fa5aad6ff5f7162cc2b5b&#34;&gt;&lt;/iframe&gt;</description>
         </item>
       
     
@@ -309,9 +305,8 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
           <pubDate>Sun, 05 Jun 2016 07:38:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/dualpdf/</guid>
-          <description>
-
-&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。&lt;/p&gt;
+          <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;dualpdf&#34;&gt;DualPDF&lt;/h2&gt;
 
@@ -387,8 +382,7 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 &lt;p&gt;このアプリケーションではPDFのレンダリングにpdf.jsが利用されています。pdf.jsはApache License 2.0で公開されているオープンソースソフトウェアです。&lt;/p&gt;
 
 &lt;p&gt;このアプリケーションはXamarinを用いて開発されました。Dream SparkでライセンスされたVisual Studio 2015 Enterpriseでコンパイルされているため、一切の購入・広告料は頂いていません。
-当アプリは、Apache License 2.0の下でソースコードを公開しています。&lt;a href=&#34;https://github.com/kkyusuke/DualPDF&#34;&gt;Githubページを&lt;/a&gt;ご覧下さい。&lt;/p&gt;
-</description>
+当アプリは、Apache License 2.0の下でソースコードを公開しています。&lt;a href=&#34;https://github.com/kkyusuke/DualPDF&#34;&gt;Githubページを&lt;/a&gt;ご覧下さい。&lt;/p&gt;</description>
         </item>
       
     

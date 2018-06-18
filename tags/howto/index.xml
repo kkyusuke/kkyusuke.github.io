@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Make &amp; Review </title>
-    <link>https://blog.yyyak.com/tags/howto/</link>
+    <link>https://blog.yyyak.com/tags/howto/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2017-09-24 06:20:00 &#43;0900 JST</updated>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
     
       
@@ -16,9 +16,8 @@
           <pubDate>Sun, 24 Sep 2017 06:20:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/network_check_linux/</guid>
-          <description>
-
-&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。&lt;/p&gt;
+          <description>&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;ping&#34;&gt;ping&lt;/h2&gt;
 
@@ -158,8 +157,7 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
 &lt;h2 id=&#34;それでも解決しない時には&#34;&gt;それでも解決しない時には&lt;/h2&gt;
 
 &lt;p&gt;典型的なネットワークトラブルの枠を越えた問題が発生してしまっているようです。
-専門家に見てもらう必要があります。自分で何とかしたいときには&lt;a href=&#34;https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/networking_guide/index&#34;&gt;Redhatのマニュアル&lt;/a&gt;などが役立つでしょう。&lt;/p&gt;
-</description>
+専門家に見てもらう必要があります。自分で何とかしたいときには&lt;a href=&#34;https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/networking_guide/index&#34;&gt;Redhatのマニュアル&lt;/a&gt;などが役立つでしょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -170,11 +168,9 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
           <pubDate>Sun, 29 Jan 2017 04:56:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/texlipse/</guid>
-          <description>
+          <description>&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。
 
-&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。&lt;/p&gt;
-
-&lt;p&gt;皆さんTexを書く時にはどんな環境を利用していますか。
+皆さんTexを書く時にはどんな環境を利用していますか。
 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。
 例えば次のような良い点があります。&lt;/p&gt;
 
@@ -245,8 +241,7 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
 
-&lt;p&gt;みなさんのTexライフが快適なものになりますように！！&lt;/p&gt;
-</description>
+&lt;p&gt;みなさんのTexライフが快適なものになりますように！！&lt;/p&gt;</description>
         </item>
       
     
@@ -257,9 +252,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
           <pubDate>Sat, 21 Jan 2017 11:27:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/egit_slow/</guid>
-          <description>
-
-&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。&lt;/p&gt;
+          <description>&lt;p&gt;Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;原因はstaging-view&#34;&gt;原因はStaging　View&lt;/h2&gt;
 
@@ -286,8 +280,7 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;EGitを最新版にする、アンインストールした後に再インストールし直す、など基本的なことは試したのですが問題は解決しませんでした。&lt;/p&gt;
 
-&lt;p&gt;VisualStudioがGitサポートを始めているので、そちらに移るのもありなのかなぁ、とか思ったりもしました。&lt;/p&gt;
-</description>
+&lt;p&gt;VisualStudioがGitサポートを始めているので、そちらに移るのもありなのかなぁ、とか思ったりもしました。&lt;/p&gt;</description>
         </item>
       
     
@@ -298,9 +291,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
           <pubDate>Mon, 15 Aug 2016 00:01:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/gmail_pop3/</guid>
-          <description>
-
-&lt;p&gt;GmailはPOP3のメールサービスにアクセスできますが、メールの更新が数十分遅れるという欠点があります。改善策を紹介します。&lt;/p&gt;
+          <description>&lt;p&gt;GmailはPOP3のメールサービスにアクセスできますが、メールの更新が数十分遅れるという欠点があります。改善策を紹介します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;gmailのpop3は更新が遅い&#34;&gt;GmailのPOP3は更新が遅い！&lt;/h2&gt;
 
@@ -353,8 +345,7 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;li&gt;転送のみ&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;転送のみが最もシンプルです。ただ、スパム判定が多くて困るとか、「赤い鍵マーク」が出てきて嫌な場合には紹介した方法が有効です。興味のある人は試してみて下さい。&lt;/p&gt;
-</description>
+&lt;p&gt;転送のみが最もシンプルです。ただ、スパム判定が多くて困るとか、「赤い鍵マーク」が出てきて嫌な場合には紹介した方法が有効です。興味のある人は試してみて下さい。&lt;/p&gt;</description>
         </item>
       
     
@@ -365,9 +356,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
           <pubDate>Mon, 21 Mar 2016 10:18:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_basic_cron/</guid>
-          <description>
-
-&lt;p&gt;定期的にプログラムを実行する方法を説明します。&lt;/p&gt;
+          <description>&lt;p&gt;定期的にプログラムを実行する方法を説明します。
+&lt;/p&gt;
 
 &lt;p&gt;Linuxでは&amp;rdquo;cron&amp;rdquo;というソフトウェアが定期実行を管理しています。
 自分で書いたスクリプトなどを定期的に実行させることができるので便利です。
@@ -495,8 +485,7 @@ $ service cron status //起動していない場合
 &lt;p&gt;ユーザ&amp;rdquo;hoge&amp;rdquo;のcrontab内容は以下のコマンドで分かります。ユーザを指定していない場合、ログイン中のユーザ情報を表示します。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# crontab -u hoge -l
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
       
     
@@ -507,9 +496,8 @@ $ service cron status //起動していない場合
           <pubDate>Sat, 19 Mar 2016 12:05:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_basic_permission/</guid>
-          <description>
-
-&lt;p&gt;Linuxでのファイルのアクセス権限について説明します。&lt;/p&gt;
+          <description>&lt;p&gt;Linuxでのファイルのアクセス権限について説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;具体例からの解説&#34;&gt;具体例からの解説&lt;/h2&gt;
 
@@ -585,8 +573,7 @@ total 0
 $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グループをgroup2に変更
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;その他、細かな変更方法はmanコマンドなどを当たってみましょう。&lt;/p&gt;
-</description>
+&lt;p&gt;その他、細かな変更方法はmanコマンドなどを当たってみましょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -597,9 +584,8 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
           <pubDate>Sat, 19 Mar 2016 08:53:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_basic_app/</guid>
-          <description>
-
-&lt;p&gt;アプリケーション管理をCUIで行いましょう。&lt;/p&gt;
+          <description>&lt;p&gt;アプリケーション管理をCUIで行いましょう。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;linuxのアプリケーション管理手法&#34;&gt;Linuxのアプリケーション管理手法&lt;/h2&gt;
 
@@ -729,8 +715,7 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
 
 &lt;h2 id=&#34;注意したいこと&#34;&gt;注意したいこと&lt;/h2&gt;
 
-&lt;p&gt;自分でWEBから取得したrpmファイルやdebファイルを使う場合、ウイルス等には注意しましょう。&lt;/p&gt;
-</description>
+&lt;p&gt;自分でWEBから取得したrpmファイルやdebファイルを使う場合、ウイルス等には注意しましょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -741,9 +726,8 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
           <pubDate>Sun, 13 Mar 2016 12:07:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_basic_useradd/</guid>
-          <description>
-
-&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。&lt;/p&gt;
+          <description>&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;linuxのユーザ概念&#34;&gt;Linuxのユーザ概念&lt;/h2&gt;
 
@@ -815,8 +799,7 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
 対話形式でパスワードを2度聞かれますので、同じ文字列を入力してパスワードを設定しましょう。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# passwd newuser
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
       
     
@@ -827,9 +810,8 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
           <pubDate>Thu, 10 Mar 2016 04:39:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_basic_ssh/</guid>
-          <description>
-
-&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。&lt;/p&gt;
+          <description>&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。
+&lt;/p&gt;
 
 &lt;p&gt;SSH(Secure Shell)とは、外部からシェルを動かすための仕組みです。
 アクセスされる側がSSHサーバ、アクセスする側がSSHクライアントを動作させることによって、マシンに接続されたキーボードとディスプレイを見ることなくCUI操作をすることができます。&lt;/p&gt;
@@ -935,8 +917,7 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 出所の分からないWifi経由で使わないなどの注意が必要です。&lt;/p&gt;
 
 &lt;p&gt;さらに、パスワード認証よりは公開鍵認証の利用をお勧めします。鍵長を長くすればそれだけ安心です。
-サーバという形式をとっているマシンは、何か問題が起きると多くの人に迷惑をかけてしまうことが多いかと思います。くれぐれも注意深く使いましょう。&lt;/p&gt;
-</description>
+サーバという形式をとっているマシンは、何か問題が起きると多くの人に迷惑をかけてしまうことが多いかと思います。くれぐれも注意深く使いましょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -947,9 +928,8 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
           <pubDate>Sat, 05 Mar 2016 11:58:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_basic/</guid>
-          <description>
-
-&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。&lt;/p&gt;
+          <description>&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。
+&lt;/p&gt;
 
 &lt;p&gt;この連載記事は「Windowsマシンは使えるけど、Linuxはよく分からない！」という以前の自分を対象にしたものです。
 「よく分からない」とは言っても、実はマウス操作で多くのことが出来ます。
@@ -997,8 +977,7 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 &lt;li&gt;Windowsが得意なこと、Linuxが得意なこと&lt;/li&gt;
 &lt;li&gt;Linux的なシステムの作り方&lt;/li&gt;
 &lt;li&gt;LinuxOSの種類&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
         </item>
       
     
@@ -1009,9 +988,8 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
           <pubDate>Thu, 17 Dec 2015 00:08:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/smt/</guid>
-          <description>
-
-&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。&lt;/p&gt;
+          <description>&lt;p&gt;多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;smtソルバーとは&#34;&gt;SMTソルバーとは&lt;/h2&gt;
 
@@ -1082,8 +1060,7 @@ sat
 &lt;p&gt;SMT2式の書き方についてはPDFにまとまっている言語仕様を参照すると良いでしょう。
 &lt;a href=&#34;http://smtlib.cs.uiowa.edu/&#34;&gt;http://smtlib.cs.uiowa.edu/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;SMTソルバによってはPythonAPIなどを提供していることもあるので、それを利用して実装を簡単にすることもできます。&lt;/p&gt;
-</description>
+&lt;p&gt;SMTソルバによってはPythonAPIなどを提供していることもあるので、それを利用して実装を簡単にすることもできます。&lt;/p&gt;</description>
         </item>
       
     
@@ -1094,10 +1071,9 @@ sat
           <pubDate>Sun, 25 Oct 2015 12:47:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
-          <description>
-
-&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
-2つの違いを調べました。&lt;/p&gt;
+          <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
+2つの違いを調べました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;unboundとは&#34;&gt;Unboundとは？&lt;/h2&gt;
 
@@ -1203,8 +1179,7 @@ OSSですが、有償サポートも行われています。
 &amp;gt; server 192.168.1.XX
 &amp;gt; www.google.com
 # comment 以下に解決結果が表示されればOK
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
       
     
@@ -1215,10 +1190,9 @@ OSSですが、有償サポートも行われています。
           <pubDate>Sun, 11 Oct 2015 08:30:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/Router_NAT/</guid>
-          <description>
-
-&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。&lt;/p&gt;
+          <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
+&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 
@@ -1241,8 +1215,7 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
 
 &lt;p&gt;この設定でも、OCNやInterlinkの時は問題なく通信できていたんですよね・・・。IIJになってからおかしくなってしまいました。
 もしかしたらプロバイダの変更時期がたまたま重複しただけで他の問題が発生しているのかもしれません。
-とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。&lt;/p&gt;
-</description>
+とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。&lt;/p&gt;</description>
         </item>
       
     
@@ -1253,10 +1226,9 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
           <pubDate>Mon, 27 Jul 2015 04:05:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/push/</guid>
-          <description>
-
-&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
-設定を見なおしてみましょう。&lt;/p&gt;
+          <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;準備-pushの仕組み&#34;&gt;準備 ― PUSHの仕組み ―&lt;/h2&gt;
 
@@ -1300,8 +1272,7 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;
-</description>
+&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -1312,9 +1283,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
           <pubDate>Tue, 21 Jul 2015 10:30:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/hugo/</guid>
-          <description>
-
-&lt;p&gt;HugoはGo言語で作成されたウェブサイト生成ソフトウェアです。Markdown形式で記事を作成することが出来ます。このページではHugoをダウンロードしてからウェブページを公開するまでの流れをなるべく詳細に記述します。&lt;/p&gt;
+          <description>&lt;p&gt;HugoはGo言語で作成されたウェブサイト生成ソフトウェアです。Markdown形式で記事を作成することが出来ます。このページではHugoをダウンロードしてからウェブページを公開するまでの流れをなるべく詳細に記述します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;1-hugoのダウンロード&#34;&gt;1. Hugoのダウンロード&lt;/h2&gt;
 
@@ -1401,8 +1371,7 @@ slug = &amp;quot;about&amp;quot;
 
 &lt;h2 id=&#34;おつかれさまでした-完了です&#34;&gt;おつかれさまでした、完了です&lt;/h2&gt;
 
-&lt;p&gt;なんとこれだけでブログが出来上がります。すごく簡単ですよね！今後は投稿する上でのTipsを紹介したいと思います。&lt;/p&gt;
-</description>
+&lt;p&gt;なんとこれだけでブログが出来上がります。すごく簡単ですよね！今後は投稿する上でのTipsを紹介したいと思います。&lt;/p&gt;</description>
         </item>
       
     
@@ -1413,10 +1382,9 @@ slug = &amp;quot;about&amp;quot;
           <pubDate>Sat, 18 Jul 2015 11:31:11 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/nvidia_linux/</guid>
-          <description>
-
-&lt;p&gt;近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
-性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。&lt;/p&gt;
+          <description>&lt;p&gt;近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
+性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。
+&lt;/p&gt;
 
 &lt;p&gt;多くのディストリに搭載されているドライバは、公式ドライバをリバースエンジニアリングしたりNVIDIAから情報を集めて作成されたOSS (Nouveau)です。これそのものは正常に動作しますが、NVIDIAが公式に配布しているプロプライエタリなドライバよりも機能が制限されています。今回は、Fedora22で公式ドライバをインストールする手順を紹介します。&lt;/p&gt;
 
@@ -1466,8 +1434,7 @@ Grub2―enWikipediaより&lt;/p&gt;
 &lt;p&gt;ドライバの保存先フォルダに移動し、インストールファイルを実行します。インストール自体はOKボダンを押し続けるだけで終了します。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ sudo sh ./driver_file_name.sh
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
       
     

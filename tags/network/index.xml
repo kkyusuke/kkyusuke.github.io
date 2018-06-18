@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Make &amp; Review </title>
-    <link>https://blog.yyyak.com/tags/network/</link>
+    <link>https://blog.yyyak.com/tags/network/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2016-04-20 00:38:00 &#43;0900 JST</updated>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
     
       
@@ -16,9 +16,8 @@
           <pubDate>Wed, 20 Apr 2016 00:38:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/public_server/</guid>
-          <description>
-
-&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。&lt;/p&gt;
+          <description>&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;宅内サーバを公開するメリット&#34;&gt;宅内サーバを公開するメリット&lt;/h2&gt;
 
@@ -71,8 +70,7 @@ DMZホストにされるPCは固定IPでなければなりません。適当な�
 &lt;p&gt;IPアドレスは、固定サービスに加入しない限りは変更されますので、その場合にはダイナミックDNSを使いましょう。
 &lt;a href=&#34;www.yyyak.com/blog/post/dynamic_router&#34;&gt;こちらのポスト&lt;/a&gt;を確認して下さい。&lt;/p&gt;
 
-&lt;p&gt;以上です。&lt;/p&gt;
-</description>
+&lt;p&gt;以上です。&lt;/p&gt;</description>
         </item>
       
     
@@ -83,10 +81,9 @@ DMZホストにされるPCは固定IPでなければなりません。適当な�
           <pubDate>Sat, 19 Mar 2016 12:38:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/dynamic_router/</guid>
-          <description>
-
-&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
-無線LANルータの主なメーカがどうのような対応をしているのかまとめました。&lt;/p&gt;
+          <description>&lt;p&gt;自宅のネットワークに外部からアクセスするには、ダイナミックDNSを利用する必要があります。
+無線LANルータの主なメーカがどうのような対応をしているのかまとめました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;ダイナミックdnsとは&#34;&gt;ダイナミックDNSとは？&lt;/h2&gt;
 
@@ -181,8 +178,7 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
 &lt;li&gt;ダイナミックDNSは使うが、VPNを使わない： NEC製、ELECOM製&lt;/li&gt;
 &lt;li&gt;ダイナミックDNS・VPNを使う： Buffalo製、ASUS製、NETGEAR製&lt;/li&gt;
 &lt;li&gt;ダイナミックDNSを使わない： IO-DATAもOK&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
         </item>
       
     
@@ -193,12 +189,10 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
           <pubDate>Tue, 16 Feb 2016 13:00:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/interlink/</guid>
-          <description>
+          <description>&lt;p&gt;ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
+&lt;a href=&#34;http://www.interlink.or.jp/&#34;&gt;インターリンク&lt;/a&gt;という会社です。
 
-&lt;p&gt;ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
-&lt;a href=&#34;http://www.interlink.or.jp/&#34;&gt;インターリンク&lt;/a&gt;という会社です。&lt;/p&gt;
-
-&lt;p&gt;契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
+契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
 測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;ここ&lt;/a&gt;で行っていて、茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
@@ -215,8 +209,7 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         </item>
       
     
@@ -227,12 +220,10 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
           <pubDate>Thu, 04 Feb 2016 12:07:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/port_open/</guid>
-          <description>
+          <description>&lt;p&gt;ポート開放の仕組みを説明した上で、
+Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。
 
-&lt;p&gt;ポート開放の仕組みを説明した上で、
-Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。&lt;/p&gt;
-
-&lt;p&gt;なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
+なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
 ポート開放することが出来るはずです。&lt;/p&gt;
 
 &lt;h2 id=&#34;ポート開放とは&#34;&gt;ポート開放とは&lt;/h2&gt;
@@ -331,8 +322,7 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 &lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
 
 &lt;p&gt;ポート開放は以上の設定で終了です。
-当然ですが、ポート開放によって初出がLAN内でない通信が内部に中継されることになるので、セキュリティは低下します。転送先のマシンにウイルス対策ソフトを導入するのはもちろん、必要のないポート転送の設定は無効にしておくなど、注意しましょう。&lt;/p&gt;
-</description>
+当然ですが、ポート開放によって初出がLAN内でない通信が内部に中継されることになるので、セキュリティは低下します。転送先のマシンにウイルス対策ソフトを導入するのはもちろん、必要のないポート転送の設定は無効にしておくなど、注意しましょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -343,10 +333,9 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
           <pubDate>Sun, 25 Oct 2015 12:47:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/dns_centos7/</guid>
-          <description>
-
-&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
-2つの違いを調べました。&lt;/p&gt;
+          <description>&lt;p&gt;CentOS7ではDNSサーバとして主に2つのパッケージが用意されています。
+2つの違いを調べました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;unboundとは&#34;&gt;Unboundとは？&lt;/h2&gt;
 
@@ -452,8 +441,7 @@ OSSですが、有償サポートも行われています。
 &amp;gt; server 192.168.1.XX
 &amp;gt; www.google.com
 # comment 以下に解決結果が表示されればOK
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
       
     
@@ -464,10 +452,9 @@ OSSですが、有償サポートも行われています。
           <pubDate>Sun, 11 Oct 2015 08:30:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/Router_NAT/</guid>
-          <description>
-
-&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。&lt;/p&gt;
+          <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
+&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
 
@@ -490,8 +477,7 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
 
 &lt;p&gt;この設定でも、OCNやInterlinkの時は問題なく通信できていたんですよね・・・。IIJになってからおかしくなってしまいました。
 もしかしたらプロバイダの変更時期がたまたま重複しただけで他の問題が発生しているのかもしれません。
-とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。&lt;/p&gt;
-</description>
+とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。&lt;/p&gt;</description>
         </item>
       
     
@@ -502,12 +488,10 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
           <pubDate>Wed, 23 Sep 2015 11:02:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/IIJHikari/</guid>
-          <description>
+          <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
+速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
 
-&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
-速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;http://netspeed-tokyo.studio-radish.com&lt;/a&gt;
+&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;http://netspeed-tokyo.studio-radish.com&lt;/a&gt;
 測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;結論としては、大満足です。回線はNTT東日本のままで何も変わりませんが、これまでに契約していたOCN、インターリンクよりも
@@ -568,8 +552,7 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
 
 &lt;p&gt;夕方にしては早いほう？&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed1.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed1.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
         </item>
       
     
@@ -580,10 +563,9 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
           <pubDate>Mon, 27 Jul 2015 04:05:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/push/</guid>
-          <description>
-
-&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
-設定を見なおしてみましょう。&lt;/p&gt;
+          <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;準備-pushの仕組み&#34;&gt;準備 ― PUSHの仕組み ―&lt;/h2&gt;
 
@@ -627,8 +609,7 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;
-</description>
+&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>
       
     

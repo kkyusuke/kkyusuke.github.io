@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Make &amp; Review </title>
-    <link>https://blog.yyyak.com/tags/ebook/</link>
+    <link>https://blog.yyyak.com/tags/ebook/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2016-08-15 06:36:00 &#43;0900 JST</updated>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
     
       
@@ -16,11 +16,9 @@
           <pubDate>Mon, 15 Aug 2016 06:36:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/ebook2016/</guid>
-          <description>
+          <description>&lt;p&gt;2016年版、電子書籍リーダ比較です。
 
-&lt;p&gt;2016年版、電子書籍リーダ比較です。&lt;/p&gt;
-
-&lt;p&gt;新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
+新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;a href=&#34;../ebook2015/&#34;&gt;2015年版はこちら。&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -333,8 +331,7 @@ KoboはPocket、ReaderはEvernoteとそれぞれ連携します。この機能�
 &lt;p&gt;Amazonが上位機種と下位機種をリリースしただけで、HW関連で大きなニュースは1年間ありませんでした。
 Kindle Oasisは良い機種のようですが、価格も考えるとマストバイとは言えません。新機種が出ないのは、E-Inkが1社独占供給状態なので仕方ないですね。&lt;/p&gt;
 
-&lt;p&gt;書籍数はKindleが優勢ですが、他社も諦めずに当分戦いを続けるようです。どこが覇者になるのか、という考え方がもう時代遅れなのかもしれません。電子書籍市場は小康状態に入り、カラー対応端末登場までは当分この状況が続く可能性があります。その後どうなるかは、誰にも分かりません。&lt;/p&gt;
-</description>
+&lt;p&gt;書籍数はKindleが優勢ですが、他社も諦めずに当分戦いを続けるようです。どこが覇者になるのか、という考え方がもう時代遅れなのかもしれません。電子書籍市場は小康状態に入り、カラー対応端末登場までは当分この状況が続く可能性があります。その後どうなるかは、誰にも分かりません。&lt;/p&gt;</description>
         </item>
       
     
@@ -345,11 +342,9 @@ Kindle Oasisは良い機種のようですが、価格も考えるとマスト�
           <pubDate>Sat, 25 Jul 2015 10:50:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/ebook2015/</guid>
-          <description>
+          <description>&lt;p&gt;2015年版、電子書籍リーダ比較です。
 
-&lt;p&gt;2015年版、電子書籍リーダ比較です。&lt;/p&gt;
-
-&lt;p&gt;新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
+新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。&lt;/p&gt;
 
 &lt;h2 id=&#34;電子書籍ストア&#34;&gt;電子書籍ストア&lt;/h2&gt;
@@ -656,8 +651,7 @@ KoboはPocket、ReaderはEvernoteとそれぞれ連携します。この機能�
 &lt;h2 id=&#34;2015年-電子書籍ストアのチョイス-電子書籍リーダのチョイス-書籍販売はkindleが優勢&#34;&gt;2015年：電子書籍ストアのチョイス＝電子書籍リーダのチョイス、書籍販売はKindleが優勢&lt;/h2&gt;
 
 &lt;p&gt;電子書籍に関して何のしがらみもないならば、Kindle一択でしょう。どうしてもPocket連携が気になる人や楽天ユーザはKoboの選択もあり。
-Readerは撤退に向けた流れがあるので、購入はおすすめできません。端末の出来は良くて安いので、ソニーが好きな人は買っても当分損はしないでしょう。&lt;/p&gt;
-</description>
+Readerは撤退に向けた流れがあるので、購入はおすすめできません。端末の出来は良くて安いので、ソニーが好きな人は買っても当分損はしないでしょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -668,10 +662,9 @@ Readerは撤退に向けた流れがあるので、購入はおすすめでき�
           <pubDate>Thu, 23 Jul 2015 10:48:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/sonyreader/</guid>
-          <description>
-
-&lt;p&gt;ソニーの電子書籍リーダ、PRS-T3Sを購入したのですが、便利すぎてびっくりしています。
-なぜ電子書籍リーダが良いのか、説明します！&lt;/p&gt;
+          <description>&lt;p&gt;ソニーの電子書籍リーダ、PRS-T3Sを購入したのですが、便利すぎてびっくりしています。
+なぜ電子書籍リーダが良いのか、説明します！
+&lt;/p&gt;
 
 &lt;p&gt;そもそも、電子書籍リーダの購入を阻む理由は何なのか考えると、以下の3点だと思います。
 * スマホやタブレットを持っているのに、さらに購入する理由が分からない
@@ -727,8 +720,7 @@ Readerは撤退に向けた流れがあるので、購入はおすすめでき�
 &lt;li&gt;辞書機能　←　洋書を楽しみたい人には便利なようです&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;買わない理由はないはずです。充実した読書生活を送るために、ぜひ１台どうぞ。&lt;/p&gt;
-</description>
+&lt;p&gt;買わない理由はないはずです。充実した読書生活を送るために、ぜひ１台どうぞ。&lt;/p&gt;</description>
         </item>
       
     

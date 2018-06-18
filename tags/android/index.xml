@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Make &amp; Review </title>
-    <link>https://blog.yyyak.com/tags/android/</link>
+    <link>https://blog.yyyak.com/tags/android/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2018-02-25 05:25:00 &#43;0900 JST</updated>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
     
       
@@ -16,9 +16,8 @@
           <pubDate>Sun, 25 Feb 2018 05:25:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/huawerwatch/</guid>
-          <description>
-
-&lt;p&gt;Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。&lt;/p&gt;
+          <description>&lt;p&gt;Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;ファーウェイのスマートウォッチ&#34;&gt;ファーウェイのスマートウォッチ&lt;/h2&gt;
 
@@ -109,8 +108,7 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 
 &lt;p&gt;以上、良いところばかりをあげてきました。
 たまに動作がモッサリしたりもしますが、とても便利な製品で、あえて紹介したい不満点はありませんでした。
-ぜひ購入をお勧めします。&lt;/p&gt;
-</description>
+ぜひ購入をお勧めします。&lt;/p&gt;</description>
         </item>
       
     
@@ -121,10 +119,10 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
           <pubDate>Mon, 17 Jul 2017 10:40:50 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
-          <description>
-
-&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
+          <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
 有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
 
@@ -297,8 +295,7 @@ Sonyと比べると日本版のアップデート頻度は悪いです。&lt;/p&
 
 &lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01M1893YL&amp;linkId=5330526d2740fcc4ad424153e815574f&#34;&gt;&lt;/iframe&gt;
 &lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01KGS7GTS&amp;linkId=bd22d6ebb819fa52fc9210fab9e3d702&#34;&gt;&lt;/iframe&gt;
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B006RD7L8I&amp;linkId=a2417b4aa3191df657ef978037e382d5&#34;&gt;&lt;/iframe&gt;
-</description>
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B006RD7L8I&amp;linkId=a2417b4aa3191df657ef978037e382d5&#34;&gt;&lt;/iframe&gt;</description>
         </item>
       
     
@@ -309,11 +306,9 @@ Sonyと比べると日本版のアップデート頻度は悪いです。&lt;/p&
           <pubDate>Sat, 10 Dec 2016 11:23:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
-          <description>
+          <description>&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。
 
-&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。&lt;/p&gt;
-
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルの確認の仕方&#34;&gt;セキュリティパッチレベルの確認の仕方&lt;/h2&gt;
 
@@ -390,8 +385,7 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 
 &lt;p&gt;この例の場合Android6.0.1ならパッチがアップされていますが、おそらくAndroid3.0系ではパッチがありません。（脆弱性そのものに関係ないかもしれません。）&lt;/p&gt;
 
-&lt;p&gt;問題は、メーカがそのアップデートを反映させるかどうかです。こういったセキュリティの心配に対してわかりやすさを提供してくれるのが「セキュリティパッチレベル」と言うことが出来そうです。&lt;/p&gt;
-</description>
+&lt;p&gt;問題は、メーカがそのアップデートを反映させるかどうかです。こういったセキュリティの心配に対してわかりやすさを提供してくれるのが「セキュリティパッチレベル」と言うことが出来そうです。&lt;/p&gt;</description>
         </item>
       
     
@@ -402,9 +396,8 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <pubDate>Tue, 29 Nov 2016 23:39:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/sandisk_wireless/</guid>
-          <description>
-
-&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。&lt;/p&gt;
+          <description>&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;どんなデバイス&#34;&gt;どんなデバイス？&lt;/h2&gt;
 
@@ -508,8 +501,7 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;どうしてもWifi経由でファイルを公開したい人向けのデバイスだと思います。PCで参加する人が多い会議では、そこそこ便利でしょう。いっそ会議室に常駐させておくと良いかもしれません。
-スマホアプリの作りは甘いです。タイムスタンプをチェックする機能が実装されれば使い勝手が急激に改善するはずです。&lt;/p&gt;
-</description>
+スマホアプリの作りは甘いです。タイムスタンプをチェックする機能が実装されれば使い勝手が急激に改善するはずです。&lt;/p&gt;</description>
         </item>
       
     
@@ -520,11 +512,9 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <pubDate>Fri, 18 Nov 2016 03:55:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec/</guid>
-          <description>
+          <description>&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。
 
-&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。&lt;/p&gt;
-
-&lt;p&gt;Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
+Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
 
 &lt;h2 id=&#34;主張その1-絶対にいらない&#34;&gt;主張その1：絶対にいらない。&lt;/h2&gt;
 
@@ -600,8 +590,7 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;li&gt;標準アプリでも、使っていないものは無効化する&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;みなさん、くれぐれもウイルスとマルウェアには注意しましょう。&lt;/p&gt;
-</description>
+&lt;p&gt;みなさん、くれぐれもウイルスとマルウェアには注意しましょう。&lt;/p&gt;</description>
         </item>
       
     
@@ -612,9 +601,8 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <pubDate>Sun, 05 Jun 2016 07:38:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/dualpdf/</guid>
-          <description>
-
-&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。&lt;/p&gt;
+          <description>&lt;p&gt;２つのPDFを同時に表示するAndroidアプリ、DualPDFについて説明します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;dualpdf&#34;&gt;DualPDF&lt;/h2&gt;
 
@@ -690,8 +678,7 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;p&gt;このアプリケーションではPDFのレンダリングにpdf.jsが利用されています。pdf.jsはApache License 2.0で公開されているオープンソースソフトウェアです。&lt;/p&gt;
 
 &lt;p&gt;このアプリケーションはXamarinを用いて開発されました。Dream SparkでライセンスされたVisual Studio 2015 Enterpriseでコンパイルされているため、一切の購入・広告料は頂いていません。
-当アプリは、Apache License 2.0の下でソースコードを公開しています。&lt;a href=&#34;https://github.com/kkyusuke/DualPDF&#34;&gt;Githubページを&lt;/a&gt;ご覧下さい。&lt;/p&gt;
-</description>
+当アプリは、Apache License 2.0の下でソースコードを公開しています。&lt;a href=&#34;https://github.com/kkyusuke/DualPDF&#34;&gt;Githubページを&lt;/a&gt;ご覧下さい。&lt;/p&gt;</description>
         </item>
       
     
@@ -702,10 +689,9 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <pubDate>Mon, 27 Jul 2015 04:05:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/push/</guid>
-          <description>
-
-&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
-設定を見なおしてみましょう。&lt;/p&gt;
+          <description>&lt;p&gt;何故か自宅の無線LAN環境でだけメールやLINEの通知が来ないことはありませんか？もしかしたら、ルータの設定に問題があるかもしれません。
+設定を見なおしてみましょう。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;準備-pushの仕組み&#34;&gt;準備 ― PUSHの仕組み ―&lt;/h2&gt;
 
@@ -749,8 +735,7 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;
-</description>
+&lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>
       
     
