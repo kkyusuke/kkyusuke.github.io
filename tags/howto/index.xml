@@ -963,12 +963,12 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CUI&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_app&#34;&gt;アプリケーション管理(yum/aptitude)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_useradd&#34;&gt;ユーザの追加・削除&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_permission&#34;&gt;パーミッション&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_ssh&#34;&gt;SSH(外部サーバへのアクセス)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_cron&#34;&gt;定期的なプログラムの実行(cron)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ネットワーク関連のコマンド&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_app&#34;&gt;アプリケーション管理(yum/aptitude)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_useradd&#34;&gt;ユーザの追加・削除&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_permission&#34;&gt;パーミッション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_ssh&#34;&gt;SSH(外部サーバへのアクセス)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_cron&#34;&gt;定期的なプログラムの実行(cron)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/network_check_linux/&#34;&gt;ネットワーク関連のコマンド&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;linuxというos&#34;&gt;LinuxというOS&lt;/h3&gt;
@@ -1191,7 +1191,7 @@ OSSですが、有償サポートも行われています。
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/Router_NAT/</guid>
           <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
+&lt;a href=&#34;https://blog.yyyak.com/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
 &lt;/p&gt;
 
 &lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
@@ -1207,7 +1207,7 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
 
 &lt;h2 id=&#34;解決策&#34;&gt;解決策&lt;/h2&gt;
 
-&lt;p&gt;NATのリストを定期的に削除するよう設定してあげれば良いようです。&lt;a href=&#34;https://www.yyyak.com/blog/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;で説明していますが、SPI設定で値を小さくしてあげればOKです。
+&lt;p&gt;NATのリストを定期的に削除するよう設定してあげれば良いようです。&lt;a href=&#34;https://blog.yyyak.com/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;で説明していますが、SPI設定で値を小さくしてあげればOKです。
 たとえば、TCP:2400, UDP:300, ICMP:300などで良いでしょう。（写真の設定では問題が発生するはずです。）
 &lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -1256,21 +1256,30 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;http://www.yyyak.com/blog/post/router_nat&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
+&lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>

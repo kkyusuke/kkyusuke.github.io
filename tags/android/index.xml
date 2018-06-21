@@ -126,7 +126,7 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 
 &lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
 
-&lt;p&gt;異なる機種のアップデート状況を比較するのには、&lt;a href=&#34;www.yyyak.com/blog/post/android_secutiry/&#34;&gt;セキュリティパッチレベル&lt;/a&gt;という仕組みを使いました。Androidのバージョン情報だけでは大雑把すぎるので、もっと細かくて統一的なナンバリング、ということで白羽の矢が立ちました。&lt;/p&gt;
+&lt;p&gt;異なる機種のアップデート状況を比較するのには、&lt;a href=&#34;https://blog.yyyak.com/post/android_secutiry/&#34;&gt;セキュリティパッチレベル&lt;/a&gt;という仕組みを使いました。Androidのバージョン情報だけでは大雑把すぎるので、もっと細かくて統一的なナンバリング、ということで白羽の矢が立ちました。&lt;/p&gt;
 
 &lt;p&gt;パッチレベルは日付で表されていて、日付が後になる方が新しいことになります。なるべく新しいパッチレベルがすぐに配信される端末を使うのには、どのメーカを使えば良いのでしょうか？？&lt;/p&gt;
 
@@ -719,21 +719,30 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;ul&gt;
 &lt;li&gt;TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;http://www.yyyak.com/blog/post/router_nat&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
+&lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>

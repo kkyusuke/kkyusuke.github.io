@@ -289,7 +289,7 @@ WF-1000Xを外出時にまともに使いたいなら接続優先モードにす
 
 &lt;h2 id=&#34;webページがおかしい&#34;&gt;WEBページがおかしい&lt;/h2&gt;
 
-&lt;p&gt;当ブログで「&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos/&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;」や「&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos2016/&#34;&gt;Kairos Watch現状報告2016&lt;/a&gt;」で紹介してきていたKairos Watchの製造元が遂に倒産したようです。&lt;/p&gt;
+&lt;p&gt;当ブログで「&lt;a href=&#34;https://blog.yyyak.com/blog/post/kairos/&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;」や「&lt;a href=&#34;https://blog.yyyak.com/blog/post/kairos2016/&#34;&gt;Kairos Watch現状報告2016&lt;/a&gt;」で紹介してきていたKairos Watchの製造元が遂に倒産したようです。&lt;/p&gt;
 
 &lt;p&gt;調べたわけではありませんが、WEBサイトのSSL証明書が更新されずに放置されていることから、おそらく本当です。
 WEBサイトしか購入先がないのに、証明書切れてたら商売になりません。Facebookページに質問もしてみましたが、数ヶ月間音沙汰なし。もうダメでしょう。&lt;/p&gt;
@@ -303,10 +303,10 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 
 &lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/ndycU_dUHNQ&#34; frameborder=&#34;0&#34; allowfullscreen &gt;&lt;/iframe&gt;
 
-&lt;p&gt;残念ながらKairos Watchの出荷は順調にはいかず、&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos/&#34;&gt;私の手元には2015年冬に届きました&lt;/a&gt;。2014年冬に出荷予定だったことを考えると、1年遅れです。
+&lt;p&gt;残念ながらKairos Watchの出荷は順調にはいかず、&lt;a href=&#34;https://blog.yyyak.com/blog/post/kairos/&#34;&gt;私の手元には2015年冬に届きました&lt;/a&gt;。2014年冬に出荷予定だったことを考えると、1年遅れです。
 この間にはApple Watchの出荷が開始されたりAndroid Wearが発表されたりしていました。一時期Android Wear搭載予定との記載がKairosにもありましたが、断念したようです。&lt;/p&gt;
 
-&lt;p&gt;誤解の無いように行っておくと、&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos2016/&#34;&gt;当時はこの会社にはまだ希望がありました&lt;/a&gt;。ソフトウェアの出来は余り良くはなかったのですが、何度かFWアップデートが行われていろんな部分が改善されていきました。&lt;/p&gt;
+&lt;p&gt;誤解の無いように行っておくと、&lt;a href=&#34;https://blog.yyyak.com/post/kairos2016/&#34;&gt;当時はこの会社にはまだ希望がありました&lt;/a&gt;。ソフトウェアの出来は余り良くはなかったのですが、何度かFWアップデートが行われていろんな部分が改善されていきました。&lt;/p&gt;
 
 &lt;h3 id=&#34;唐突な新アプリリリース&#34;&gt;唐突な新アプリリリース&lt;/h3&gt;
 
@@ -655,7 +655,7 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 
 &lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
 
-&lt;p&gt;異なる機種のアップデート状況を比較するのには、&lt;a href=&#34;www.yyyak.com/blog/post/android_secutiry/&#34;&gt;セキュリティパッチレベル&lt;/a&gt;という仕組みを使いました。Androidのバージョン情報だけでは大雑把すぎるので、もっと細かくて統一的なナンバリング、ということで白羽の矢が立ちました。&lt;/p&gt;
+&lt;p&gt;異なる機種のアップデート状況を比較するのには、&lt;a href=&#34;https://blog.yyyak.com/post/android_secutiry/&#34;&gt;セキュリティパッチレベル&lt;/a&gt;という仕組みを使いました。Androidのバージョン情報だけでは大雑把すぎるので、もっと細かくて統一的なナンバリング、ということで白羽の矢が立ちました。&lt;/p&gt;
 
 &lt;p&gt;パッチレベルは日付で表されていて、日付が後になる方が新しいことになります。なるべく新しいパッチレベルがすぐに配信される端末を使うのには、どのメーカを使えば良いのでしょうか？？&lt;/p&gt;
 
@@ -1544,14 +1544,14 @@ BatteryMixなどはインストールしていないので、設定画面から�
           <guid>https://blog.yyyak.com/post/kairos2016/</guid>
           <description>&lt;p&gt;KairosWatchの購入を考えている人のために、現状をお伝えします。
 
-続編記事は「&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
+続編記事は「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
 
 &lt;h2 id=&#34;kairoswathcとは&#34;&gt;KairosWathcとは&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos/&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;というポストを見てください。
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/post/kairos/&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;というポストを見てください。
 この記事は、KairosWatchを購入してみたいけど迷っている人に、せめて待つよう買い留まらせる記事です。&lt;/p&gt;
 
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fwww.yyyak.com%2Fblog%2Fpost%2Fkairos%2F&#34; title=&#34;スマートウォッチ Kairos Watchを1週間使って&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos/&#34; target=&#34;\_blank&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;&lt;/iframe&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fwww.yyyak.com%2Fblog%2Fpost%2Fkairos%2F&#34; title=&#34;スマートウォッチ Kairos Watchを1週間使って&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/kairos/&#34; target=&#34;\_blank&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&#34;2016年1月からの進展&#34;&gt;2016年1月からの進展&lt;/h2&gt;
 
@@ -1688,19 +1688,30 @@ BatteryMixなどはインストールしていないので、設定画面から�
 
 &lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;h2 id=&#34;2016-03-04-22-10&#34;&gt;2016/03/04 22:10&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;h2 id=&#34;2016-02-16-22-00&#34;&gt;2016/02/16 22:00&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;/a&gt;</description>
         </item>
       
     
@@ -1715,7 +1726,7 @@ BatteryMixなどはインストールしていないので、設定画面から�
 1週間使った感想です。
 &lt;/p&gt;
 
-&lt;p&gt;続編記事は「&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos2016/&#34;&gt;Kairos Watch現状報告2016&lt;/a&gt;」と「&lt;a href=&#34;https://www.yyyak.com/blog/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
+&lt;p&gt;続編記事は「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2016/&#34;&gt;Kairos Watch現状報告2016&lt;/a&gt;」と「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
 
 &lt;h2 id=&#34;kairos-watchとは&#34;&gt;Kairos Watchとは？&lt;/h2&gt;
 

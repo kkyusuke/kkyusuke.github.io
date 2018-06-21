@@ -898,12 +898,12 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CUI&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_app&#34;&gt;アプリケーション管理(yum/aptitude)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_useradd&#34;&gt;ユーザの追加・削除&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_permission&#34;&gt;パーミッション&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_ssh&#34;&gt;SSH(外部サーバへのアクセス)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.yyyak.com/blog/post/linux_basic_cron&#34;&gt;定期的なプログラムの実行(cron)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;ネットワーク関連のコマンド&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_app&#34;&gt;アプリケーション管理(yum/aptitude)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_useradd&#34;&gt;ユーザの追加・削除&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_permission&#34;&gt;パーミッション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_ssh&#34;&gt;SSH(外部サーバへのアクセス)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_cron&#34;&gt;定期的なプログラムの実行(cron)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/network_check_linux/&#34;&gt;ネットワーク関連のコマンド&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;linuxというos&#34;&gt;LinuxというOS&lt;/h3&gt;
