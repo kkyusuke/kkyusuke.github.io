@@ -21,13 +21,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="ビック光 フレッツ光から乗り換えました！ &middot; Make &amp; Review">
+<meta property="og:title" content="Chocolateyを使ってWindowsのプログラムを管理 &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    ビック光 フレッツ光から乗り換えました！
+    Chocolateyを使ってWindowsのプログラムを管理
     
 </title>
 
@@ -94,83 +94,97 @@
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2015-09-23T11:02+09:00">
-                        2015.9.23 11:02
+                    <time datetime="2018-07-06T11:48+09:00">
+                        2018.7.06 11:48
                     </time>
                 </div>
                 <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/IIJHikari/">ビック光 フレッツ光から乗り換えました！</a>
+                    <a href="https://blog.yyyak.com/post/choco/">Chocolateyを使ってWindowsのプログラムを管理</a>
                 </h1>
             </header>
 
             
 
             <div class="post-content">
-                <p>これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
-速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
+                <img src="/images/choco3.png" alt="" width="400"/>
 
-<a href="http://netspeed-tokyo.studio-radish.com">http://netspeed-tokyo.studio-radish.com</a>
-測定地は茨城県南、精度高、圧縮率普通で計測しています。</p>
+<p><a href="https://chocolatey.org/">Chocolatey</a>というパッケージ管理ソフトの使い方を解説します。
+</p>
 
-<p><del>結論としては、大満足です。回線はNTT東日本のままで何も変わりませんが、これまでに契約していたOCN、インターリンクよりも
-速度が速いです。地域や回線種別にも依るでしょうが、IIJは概ね品質は良いですね。</del>
-近頃速度がかなり遅くなってきました。普通に使っていても明らかに遅いと感じるほどです。動画の閲覧は厳しいです。
-ビック光はユーザが急激に増えていて速度が低下しているようなので、転用は当分控えることをおすすめします。（2015/11/02）</p>
+<h2 id="chocolateyを使うメリット">Chocolateyを使うメリット</h2>
 
-<h2 id="2016-02-15-20-00">2016/02/15 20:00</h2>
+<p>Windowsでのプログラムの管理はコントロールパネルの「プログラムの追加と削除」を使うのが一般的でした。
+名前の通り追加・削除は簡単なのですが、更新する機能が無いのが欠点です。</p>
 
-<p>近頃あまりに速度が遅いので、プロバイダだけ他社も契約してみました。インターリンクという会社です。結果は以下の通り。</p>
+<p>Windows8からはユニバーサルアプリという新しい仕組みが導入され「Microsoft Store」からアプリの追加・削除・更新ができるようになりました。
+問題は解決したかに思われましたが、ユニバーサルアプリの導入は思ったよりも進まず、多くのアプリは依然として古いタイプのままです。</p>
 
-<p><img src="/images/iij_speed10_interlink.PNG" alt="" /></p>
+<p>「何とかしてすべてのアプリを上手に管理したい！」、そんな要望を叶えてくれるのが「<a href="https://chocolatey.org/">Chocolatey</a>」です。</p>
 
-<p>同じ時間のビック光は以下の通り。下りの違いは歴然です。ビック光に関しては、契約して失敗したと思います。
-大幅な設備増強がない限り、使い物にならないプロバイダでしょう。</p>
+<h2 id="使ってみる">使ってみる</h2>
 
-<p><img src="/images/iij_speed10.PNG" alt="" /></p>
+<p><a href="https://chocolatey.org/">Chocolatey</a>はコマンドラインからの利用が前提のシステムです。
+そのままだと操作が面倒なので、はじめだけコマンドラインを使って、GUIをインストールします。</p>
 
-<h2 id="2016-02-06-12-00">2016/02/06 12:00</h2>
+<h4 id="まずはpowershellを管理者権限で起動">まずはPowershellを管理者権限で起動</h4>
 
-<p>いまいちです。</p>
+<a href="/images/choco0.png" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/images/choco0.png" alt="" width="100"/>
+</a>
 
-<p><img src="/images/iij_speed9.PNG" alt="" /></p>
 
-<h2 id="2016-02-03-19-40">2016/02/03 19:40</h2>
+<p>スタート画面などでPowershellを検索しましょう。右クリックをすると、「管理者として実行」が現れます。
+コマンドラインが現れたら、以下のコマンドを入力して実行してください。インストールが開始されます。
+適宜&rdquo;Y&rdquo;(yes)を入力します。</p>
 
-<p>いまいちです。</p>
+<pre><code>Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+</code></pre>
 
-<p><img src="/images/iij_speed8.PNG" alt="" /></p>
+<h4 id="次にguiをインストール">次にGUIをインストール</h4>
 
-<h2 id="2016-01-06-22-00">2016/01/06 22:00</h2>
+<p>以下のコマンドを入力して、ChocolateyのGUIをインストールします。適宜&rdquo;Y&rdquo;(yes)を入力します。</p>
 
-<p><img src="/images/iij_speed7.PNG" alt="" /></p>
+<pre><code>choco install chocolateygui
+</code></pre>
 
-<h2 id="2015-11-02-22-10">2015/11/02 22:10</h2>
+<h4 id="使い方">使い方</h4>
 
-<p><img src="/images/iij_speed6.PNG" alt="" /></p>
+<p>GUIをインストールしたので、もうコマンドラインを使う必要はありません。スタート画面から「Chocolatey GUI」を探して起動してください。</p>
 
-<h2 id="2015-11-01-17-50">2015/11/01 17:50</h2>
+<p>ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。</p>
 
-<p><img src="/images/iij_speed5.PNG" alt="" /></p>
+<p><a href="/images/choco1.png" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/images/choco1.png" alt="" width="200"/>
+</a>
 
-<h2 id="2015-9-28-22-00">2015/9/28 22:00</h2>
+<a href="/images/choco2.png" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/images/choco2.png" alt="" width="200"/>
+</a>
+</p>
 
-<p><img src="/images/iij_speed4.PNG" alt="" /></p>
+<h4 id="インストールについて">インストールについて</h4>
 
-<h2 id="2015-9-24-21-00">2015/9/24 21:00</h2>
+<p>インストールは、Chocolateyタブからします。</p>
 
-<p><img src="/images/iij_speed3.PNG" alt="" /></p>
+<p>大事なのは、Chocolateyからインストールしたものでも、コントロールパネルの表示されることです。
+ただし逆はだめで、普通にインストールしたものはChocolateyリストには入りません。</p>
 
-<h2 id="2015-9-23-22-25">2015/ <sup>9</sup>&frasl;<sub>23</sub> 22:25</h2>
+<h4 id="アンインストールについて">アンインストールについて</h4>
 
-<p>予想以上の早さ</p>
+<p>Chocoを使ってインストールしたものは、Chocoからアンインストールしましょう。
+もし「プログラムの追加と削除」を使うと、Chocoのリストには残ってしまいます。もう一度アンインストールしましょう。</p>
 
-<p><img src="/images/iij_speed2.PNG" alt="" /></p>
+<p>普通にインストールしたものは、「プログラムの追加と削除」からしか消せません。</p>
 
-<h2 id="2015-9-23-20-15">2015/9/23 20:15</h2>
+<h2 id="chocolateyをやめたい時には">Chocolateyをやめたい時には</h2>
 
-<p>夕方にしては早いほう？</p>
+<p>Chocoを使ってインストールしたものはプログラムの追加と削除にも残るので、問題ありません。
+Choco自体のアンインストールはフォルダを消せばOKです。<a href="https://chocolatey.org/docs/uninstallation">公式ドキュメント</a>を参照して下さい。</p>
 
-<p><img src="/images/iij_speed1.PNG" alt="" /></p>
+<h2 id="最後に">最後に</h2>
+
+<p>ChocoはWindowsには珍しいパッケージ管理ソフトです。かなり便利ですので、ぜひ使ってみて下さい。
+とくに自動更新機能のないアプリにはオススメです。</p>
             </div>
 
 
@@ -189,16 +203,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/network">
+                        <a href="https://blog.yyyak.com/tags/windows">
                             <i class="fa fa-tags"></i>
-                            Network
+                            Windows
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/review">
+                        <a href="https://blog.yyyak.com/tags/howto">
                             <i class="fa fa-tags"></i>
-                            review
+                            HowTo
                         </a>
                     </li>
                     
@@ -214,13 +228,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/netflix/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/push/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/vslinux/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
@@ -250,6 +264,8 @@
                 </div>
                 <div class="list-group">
                     
+                    <a href="/post/choco/" class="list-group-item">Chocolateyを使ってWindowsのプログラムを管理</a>
+                    
                     <a href="/post/vslinux/" class="list-group-item">Visual Studio ver15.7でのLinux開発</a>
                     
                     <a href="/post/huawerwatch/" class="list-group-item">Huawei Watch2 Classic</a>
@@ -267,8 +283,6 @@
                     <a href="/post/firefox55/" class="list-group-item">Firefox55はどれくらい速くなった？</a>
                     
                     <a href="/post/android_sec_compare/" class="list-group-item">Android各機種のアップデート頻度比較！</a>
-                    
-                    <a href="/post/wnax1167gr/" class="list-group-item">WN-AX1167GRでv6プラスをやってみた</a>
                     
                 </div>
             </div>
@@ -296,7 +310,7 @@
                     
                     
                     <a href="https://blog.yyyak.com/tags/howto" class="list-group-item">
-                        <span class="badge">16</span>
+                        <span class="badge">17</span>
                         howto
                     </a>
                     
@@ -344,7 +358,7 @@
                     
                     
                     <a href="https://blog.yyyak.com/tags/windows" class="list-group-item">
-                        <span class="badge">7</span>
+                        <span class="badge">8</span>
                         windows
                     </a>
                     
