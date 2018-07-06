@@ -6,8 +6,97 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2018-05-14 14:06:00 &#43;0900 JST</updated>
+    <updated>2018-07-06 11:48:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Chocolateyを使ってWindowsのプログラムを管理</title>
+          <link>https://blog.yyyak.com/post/choco/</link>
+          <pubDate>Fri, 06 Jul 2018 11:48:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/choco/</guid>
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;というパッケージ管理ソフトの使い方を解説します。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolateyを使うメリット&#34;&gt;Chocolateyを使うメリット&lt;/h2&gt;
+
+&lt;p&gt;Windowsでのプログラムの管理はコントロールパネルの「プログラムの追加と削除」を使うのが一般的でした。
+名前の通り追加・削除は簡単なのですが、更新する機能が無いのが欠点です。&lt;/p&gt;
+
+&lt;p&gt;Windows8からはユニバーサルアプリという新しい仕組みが導入され「Microsoft Store」からアプリの追加・削除・更新ができるようになりました。
+問題は解決したかに思われましたが、ユニバーサルアプリの導入は思ったよりも進まず、多くのアプリは依然として古いタイプのままです。&lt;/p&gt;
+
+&lt;p&gt;「何とかしてすべてのアプリを上手に管理したい！」、そんな要望を叶えてくれるのが「&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;」です。&lt;/p&gt;
+
+&lt;h2 id=&#34;使ってみる&#34;&gt;使ってみる&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;はコマンドラインからの利用が前提のシステムです。
+そのままだと操作が面倒なので、はじめだけコマンドラインを使って、GUIをインストールします。&lt;/p&gt;
+
+&lt;h4 id=&#34;まずはpowershellを管理者権限で起動&#34;&gt;まずはPowershellを管理者権限で起動&lt;/h4&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;スタート画面などでPowershellを検索しましょう。右クリックをすると、「管理者として実行」が現れます。
+コマンドラインが現れたら、以下のコマンドを入力して実行してください。インストールが開始されます。
+適宜&amp;rdquo;Y&amp;rdquo;(yes)を入力します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;次にguiをインストール&#34;&gt;次にGUIをインストール&lt;/h4&gt;
+
+&lt;p&gt;以下のコマンドを入力して、ChocolateyのGUIをインストールします。適宜&amp;rdquo;Y&amp;rdquo;(yes)を入力します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;choco install chocolateygui
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;使い方&#34;&gt;使い方&lt;/h4&gt;
+
+&lt;p&gt;GUIをインストールしたので、もうコマンドラインを使う必要はありません。スタート画面から「Chocolatey GUI」を探して起動してください。&lt;/p&gt;
+
+&lt;p&gt;ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&#34;インストールについて&#34;&gt;インストールについて&lt;/h4&gt;
+
+&lt;p&gt;インストールは、Chocolateyタブからします。&lt;/p&gt;
+
+&lt;p&gt;大事なのは、Chocolateyからインストールしたものでも、コントロールパネルの表示されることです。
+ただし逆はだめで、普通にインストールしたものはChocolateyリストには入りません。&lt;/p&gt;
+
+&lt;h4 id=&#34;アンインストールについて&#34;&gt;アンインストールについて&lt;/h4&gt;
+
+&lt;p&gt;Chocoを使ってインストールしたものは、Chocoからアンインストールしましょう。
+もし「プログラムの追加と削除」を使うと、Chocoのリストには残ってしまいます。もう一度アンインストールしましょう。&lt;/p&gt;
+
+&lt;p&gt;普通にインストールしたものは、「プログラムの追加と削除」からしか消せません。&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolateyをやめたい時には&#34;&gt;Chocolateyをやめたい時には&lt;/h2&gt;
+
+&lt;p&gt;Chocoを使ってインストールしたものはプログラムの追加と削除にも残るので、問題ありません。
+Choco自体のアンインストールはフォルダを消せばOKです。&lt;a href=&#34;https://chocolatey.org/docs/uninstallation&#34;&gt;公式ドキュメント&lt;/a&gt;を参照して下さい。&lt;/p&gt;
+
+&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;ChocoはWindowsには珍しいパッケージ管理ソフトです。かなり便利ですので、ぜひ使ってみて下さい。
+とくに自動更新機能のないアプリにはオススメです。&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>
