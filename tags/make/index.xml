@@ -104,7 +104,7 @@ End of search list.
           <pubDate>Sat, 23 Dec 2017 04:48:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/braava/</guid>
-          <description>&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; width=300/&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;img src=&#34;https://www.irobot-jp.com/braava/img/top_kv_01.jpg&#34; alt=&#34;Braava&#34; style=&#34;max-width:100%&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;ブラーバジェット(Braava Jet)でクイックルワイパーのシートを使う方法についてまとめました。
 &lt;/p&gt;

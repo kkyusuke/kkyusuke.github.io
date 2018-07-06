@@ -119,7 +119,7 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
           <pubDate>Mon, 12 Feb 2018 11:31:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/wf100x/</guid>
-          <description>&lt;p&gt;&lt;img src=&#34;http://www.sony.jp/products/picture/WF-1000X_B_03.jpg&#34; alt=&#34;WF-1000X&#34; width=300/&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;img src=&#34;http://www.sony.jp/products/picture/WF-1000X_B_03.jpg&#34; alt=&#34;WF-1000X&#34; style=&#34;max-width:100%&#34;/&gt;&lt;/p&gt;
 
 &lt;p&gt;ソニーのフルワイヤレスイヤホン&lt;a href=&#34;http://amzn.to/2BTYiM1&#34;&gt;WF1000-X&lt;/a&gt;を購入したのでレビューします！
 &lt;/p&gt;
@@ -289,7 +289,7 @@ WF-1000Xを外出時にまともに使いたいなら接続優先モードにす
 
 &lt;h2 id=&#34;webページがおかしい&#34;&gt;WEBページがおかしい&lt;/h2&gt;
 
-&lt;p&gt;当ブログで「&lt;a href=&#34;https://blog.yyyak.com/blog/post/kairos/&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;」や「&lt;a href=&#34;https://blog.yyyak.com/blog/post/kairos2016/&#34;&gt;Kairos Watch現状報告2016&lt;/a&gt;」で紹介してきていたKairos Watchの製造元が遂に倒産したようです。&lt;/p&gt;
+&lt;p&gt;当ブログで「&lt;a href=&#34;https://blog.yyyak.com/post/kairos/&#34;&gt;スマートウォッチ Kairos Watchを1週間使って&lt;/a&gt;」や「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2016/&#34;&gt;Kairos Watch現状報告2016&lt;/a&gt;」で紹介してきていたKairos Watchの製造元が遂に倒産したようです。&lt;/p&gt;
 
 &lt;p&gt;調べたわけではありませんが、WEBサイトのSSL証明書が更新されずに放置されていることから、おそらく本当です。
 WEBサイトしか購入先がないのに、証明書切れてたら商売になりません。Facebookページに質問もしてみましたが、数ヶ月間音沙汰なし。もうダメでしょう。&lt;/p&gt;
@@ -303,7 +303,7 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 
 &lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/ndycU_dUHNQ&#34; frameborder=&#34;0&#34; allowfullscreen &gt;&lt;/iframe&gt;
 
-&lt;p&gt;残念ながらKairos Watchの出荷は順調にはいかず、&lt;a href=&#34;https://blog.yyyak.com/blog/post/kairos/&#34;&gt;私の手元には2015年冬に届きました&lt;/a&gt;。2014年冬に出荷予定だったことを考えると、1年遅れです。
+&lt;p&gt;残念ながらKairos Watchの出荷は順調にはいかず、&lt;a href=&#34;https://blog.yyyak.com/post/kairos/&#34;&gt;私の手元には2015年冬に届きました&lt;/a&gt;。2014年冬に出荷予定だったことを考えると、1年遅れです。
 この間にはApple Watchの出荷が開始されたりAndroid Wearが発表されたりしていました。一時期Android Wear搭載予定との記載がKairosにもありましたが、断念したようです。&lt;/p&gt;
 
 &lt;p&gt;誤解の無いように行っておくと、&lt;a href=&#34;https://blog.yyyak.com/post/kairos2016/&#34;&gt;当時はこの会社にはまだ希望がありました&lt;/a&gt;。ソフトウェアの出来は余り良くはなかったのですが、何度かFWアップデートが行われていろんな部分が改善されていきました。&lt;/p&gt;
@@ -541,7 +541,7 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
           <pubDate>Mon, 14 Aug 2017 00:03:41 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/firefox55/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
 改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;

@@ -16,7 +16,7 @@
           <pubDate>Fri, 06 Jul 2018 11:48:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/choco/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;というパッケージ管理ソフトの使い方を解説します。
 &lt;/p&gt;
