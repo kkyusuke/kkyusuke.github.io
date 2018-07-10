@@ -21,13 +21,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Huawei Watch2 Classic &middot; Make &amp; Review">
+<meta property="og:title" content="WSLConfigの使い方 &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Huawei Watch2 Classic
+    WSLConfigの使い方
     
 </title>
 
@@ -94,111 +94,97 @@
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2018-02-25T05:25+09:00">
-                        2018.2.25 05:25
+                    <time datetime="2018-07-10T01:40+09:00">
+                        2018.7.10 01:40
                     </time>
                 </div>
                 <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/huawerwatch/">Huawei Watch2 Classic</a>
+                    <a href="https://blog.yyyak.com/post/wslconfig/">WSLConfigの使い方</a>
                 </h1>
             </header>
 
             
 
             <div class="post-content">
-                <p>Huawer Watch2 Classicをアメリカで買ってきたのでレビューします。
+                <img src="/images/wsl.png" alt="" style="max-width: 100%;"/>
+
+<p>Windows上でLinuxを動作させるWSLの設定方法について解説します。WLSConfigという標準コマンドを使用します。
 </p>
 
-<h2 id="ファーウェイのスマートウォッチ">ファーウェイのスマートウォッチ</h2>
+<h2 id="最新のwslは複数のlinux環境が使える">最新のWSLは複数のLinux環境が使える</h2>
 
-<p>ファーウェイは最近勢いのある中国の電気機器メーカです。
-格安SIMとセット販売されている機種などで有名ですが、スマートウォッチも販売しています。</p>
+<p>Windows上でLinuxを簡単に動作させることができるWindows Subsystem on Linux (WSL)、皆さんは使っていますか？
+仮想マシンをインストールする手間なくLinuxのコマンドが使えて便利です。</p>
 
-<p>Huawei Watch2は日本でも売っているのですが、私はClassicバージョンを購入してみました。
-Classicと無印の違いは、デザインだけです。無印はスポーツ向けでプラスチック外装ですが、Classicは少し高級な感じになっています。ソフトウェア上の違いは全くないようで、技適番号は無印と全く同じようです。単なる「色違い」として扱われているんですね！</p>
+<p>発表当初はUbuntuしか使えませんでしたが、今では色々なディストロが用意されています。
+Windows Storeから簡単にインストールすることができますが、なんと複数同時に使えます。</p>
 
-<iframe style="width:120px;height:240px;" marginwidth=
-"0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B06XDP223X&linkId=1f715984a89973542fc44817dc3c45dc"></iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B072J572MP&linkId=3cc8343033f8c2c95c1f68fcbb9550fc"></iframe>
-
-<h2 id="デザイン">デザイン</h2>
-
-<p>スポーツデザインの方はおもちゃみたいな見た目なので、会社に着けていくのは厳しい感じに見えました。
-そのせいでClassicを買ってみたのですが、今のところ良い感じです。</p>
-
-<p>さすがに高級時計と比べるとチープ感がありますが、他のどのスマートウォッチよりも高級感を醸し出せていると思います。
-金属ですが軽いので、付けていて疲れたりはしていません。</p>
-
-<h2 id="電池持ち">電池持ち</h2>
-
-<p>結論から言うと、2日間はたっぷり持ちます。3日目に突入すると、日中にバッテリーが切れてしまうかもしれないので、使い方次第です。</p>
-
-<a href="/images/huawei_watch2_battery.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_battery.png" alt="" width="300"/>
+<a href="/images/wsl_multi.png" data-lightbox="page1">
+  <img class="page1 img-thumbnail" src="/images/wsl_multi.png" alt="" width="400"/>
 </a>
 
 
-<p>使い方には工夫が必要で、いつでも明るく光らせておくとすぐに電池がなくなっていまいます。
-例えば、しっかり見るときは左の画像のように明るく表示すればよいのですが、見ていないときやチラ見するだけの時は右の画像のように極力光らせないモードにする設定があります。こういうのを使っていると、しっかり2日持つようになります。</p>
+<p>1つのディストロで十分な気もしますが、出来るか出来ないかは重要です・・・。</p>
 
-<p><a href="/images/huawei_watch2_clock.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_clock.png" alt="" width="200"/>
-</a>
+<h2 id="複数のwsl環境を管理する-wslconfig-コマンド">複数のWSL環境を管理する&rdquo;wslconfig&rdquo;コマンド</h2>
 
-<a href="/images/huawei_watch2_clock2.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_clock2.png" alt="" width="200"/>
-</a>
-</p>
+<p>WSLはPowershllなどから<code>bash</code>と入力しても起動できます。カレントディレクトリが継承されるので便利ですが、複数WSL環境があるときは、どれが起動されるのでしょうか？？</p>
 
-<h2 id="ランニングに最適">ランニングに最適</h2>
+<p>こんなとき、wslconfigが役立ちます。</p>
 
-<p>GPSが搭載されているので、Runtasticなどを使ってスマホなしでランニングに出かけられます。
-下の画像のように、スタートボタンを押すだけでワークアウトの記録が行われます。</p>
+<pre><code>PS C:\Users\yusuke&gt; wslconfig
+Linux 用 Windows サブシステムの管理操作を実行します
 
-<a href="/images/huawei_watch2_runtastic_app.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_runtastic_app.png" alt="" width="200"/>
-</a>
+使用法:
+    /l、/list [/all] - 登録されたディストリビューションを一覧表示します。
+        /all - すべてのディストリビューションを一覧表示します (オプション)。
+               現在インストールまたはアンインストール中のものも含まれます。
+    /s、/setdefault &lt;DistributionName&gt; - 指定のディストリビューションを既定として設定します。
+    /u、/unregister &lt;DistributionName&gt; - ディストリビューションの登録を解除します。
+</code></pre>
 
+<h2 id="wslには-デフォルト-あり">WSLには「デフォルト」あり</h2>
 
-<p>自宅に到着するとバックグラウンドでデータがサーバに自動送信されます。
-WEBで見てみると、GPSと心拍がしっかり記録されているのが分かります。</p>
+<p>bashやWSLなどと入力された時には、デフォルトのWSL環境が起動されます。
+デフォルトは<code>/l</code>オプションで確認できます。以下の場合はDebianが利用されます。</p>
 
-<a href="/images/huawei_watch2_runtastic.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_runtastic.png" alt="" width="400"/>
-</a>
+<pre><code>PS C:\Users\yusuke&gt; wslconfig /l
+Windows Subsystem for Linux ディストリビューション:
+Debian (既定)
+Ubuntu
+</code></pre>
 
+<p>デフォルトを変更したいときには、以下のように<code>\s</code>オプションを使いましょう。
+ちゃんと変更されているのが確認できます。</p>
 
-<h2 id="単体で音楽が聴ける">単体で音楽が聴ける</h2>
+<pre><code>PS C:\Users\yusuke&gt; wslconfig /s Ubuntu
+PS C:\Users\yusuke&gt; wslconfig /l
+Windows Subsystem for Linux ディストリビューション:
+Ubuntu (既定)
+Debian
+</code></pre>
 
-<p>Google Play Music を使っている人は、プレイリストや楽曲単位でスマートウォッチに曲を保存して、外部スピーカやBluetoothを使って聞くことができます。
-ランニングに出るときや、スマホの電池が無くなってしまったときに便利です。</p>
+<p>ぶっちゃけ複数環境はいらない人が多いと思います。今回は、Ubuntuを消してしまいましょう。</p>
 
-<a href="/images/huawei_watch2_music.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_music.png" alt="" width="200"/>
-</a>
+<pre><code>PS C:\Users\yusuke&gt; wslconfig /u Ubuntu
+登録を解除しています...
+PS C:\Users\yusuke&gt; wslconfig /l
+Windows Subsystem for Linux ディストリビューション:
+Debian (既定)
+</code></pre>
 
+<p>一覧から消えました。ただ、これだけでは削除したことにはならないようです。プログラムの追加と削除から、Ubuntuアプリも消しましょう。</p>
 
-<h2 id="簡単な返信ならスマホを取り出さずにok">簡単な返信ならスマホを取り出さずにOK</h2>
+<h2 id="最期に">最期に</h2>
 
-<p>スマホに来ているLINEやAlloの通知は、取り出さなくても時計から閲覧して返信までできます。
-日本語に対応した手書きキーボードや音声入力があるので、定型文に限らず好きな文章を入力できます。これも便利です。</p>
+<p>wslconfigコマンドについて解説しました。
+WidonwsとLinuxライフを満喫しましょう。</p>
 
-<a href="/images/huawei_watch2_keyboard.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/huawei_watch2_keyboard.png" alt="" width="200"/>
-</a>
-
-
-<h2 id="通知の取得の仕方が頭良い">通知の取得の仕方が頭良い</h2>
-
-<p>基本的にこの時計はスマホとの連携を前提に作られています。アプリを入れればスマホと独立して色々できますが、スペックを考えると快適とは言えないでしょう。</p>
-
-<p>しかし、Androidとの連携ならあの手この手で通信を試みようとするのが面白いです。例えば、普段はBluetoothで通信するのですが、途切れた時にはWifiに接続してくれます。もし同じアクセスポイントに接続している場合、Wifi経由でスマホの通知が送られてきます。「うっかりデスクにスマホ忘れてきた！」となっても、会議室から大事な通知を受け取ることができるのはスゴいと思いました。</p>
-
-<h2 id="まとめ">まとめ</h2>
-
-<p>以上、良いところばかりをあげてきました。
-たまに動作がモッサリしたりもしますが、とても便利な製品で、あえて紹介したい不満点はありませんでした。
-ぜひ購入をお勧めします。</p>
+<ul>
+<li>wslconfigはデフォルトの確認/変更・既存環境の登録解除が出来る</li>
+<li>本当に環境を削除するにはアプリの削除も必要</li>
+<li>BashコマンドでWSLを呼び出すと、カレントディレクトリが継承されて便利</li>
+</ul>
             </div>
 
 
@@ -217,16 +203,16 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/review">
+                        <a href="https://blog.yyyak.com/tags/windows">
                             <i class="fa fa-tags"></i>
-                            review
+                            windows
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/android">
+                        <a href="https://blog.yyyak.com/tags/howto">
                             <i class="fa fa-tags"></i>
-                            android
+                            howto
                         </a>
                     </li>
                     
@@ -242,13 +228,13 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/vslinux/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/wf100x/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/choco/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
