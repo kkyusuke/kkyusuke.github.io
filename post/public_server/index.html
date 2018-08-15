@@ -89,23 +89,23 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope="itemscope" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2016-04-20T00:38+09:00">
+                    <time itemprop="datePublished" datetime="2016-04-20T00:38+09:00">
                         2016.4.20 00:38
                     </time>
                 </div>
-                <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/public_server/">宅内サーバを外部に公開する</a>
+                <h1 class="post-title" itemprop="name headline">
+                    <a href="https://blog.yyyak.com/post/public_server/" itemprop="url">宅内サーバを外部に公開する</a>
                 </h1>
             </header>
 
             
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
                 <p>宅内に設置したサーバに外部からアクセスする方法について説明します。
 </p>
 
@@ -144,8 +144,8 @@
 <p>詳細設定-&gt;高度な設定から「DMZホスト」を見つけて下さい。DMZホストの設置場所はLAN側にするのが都合が良いでしょう。これでDMZホストに設定されたPCはLANにアクセスしながら外部へも公開が可能になります。
 DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&rdquo;192.168.1.10&rdquo;をホストに設定しています。</p>
 
-<a href="/blog/images/DMZ.PNG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/DMZ.PNG" alt="" />
+<a href="/blog/images/DMZ.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/DMZ.PNG" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -179,7 +179,7 @@ DMZホストにされるPCは固定IPでなければなりません。適当な�
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/network">
+                        <a href="https://blog.yyyak.com/tags/network" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             network
                         </a>

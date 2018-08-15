@@ -89,23 +89,23 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope="itemscope" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2017-01-21T11:27+09:00">
+                    <time itemprop="datePublished" datetime="2017-01-21T11:27+09:00">
                         2017.1.21 11:27
                     </time>
                 </div>
-                <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/egit_slow/">EGitでCommit/PushするとEclipseがおかしくなる</a>
+                <h1 class="post-title" itemprop="name headline">
+                    <a href="https://blog.yyyak.com/post/egit_slow/" itemprop="url">EGitでCommit/PushするとEclipseがおかしくなる</a>
                 </h1>
             </header>
 
             
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
                 <p>Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
 </p>
 
@@ -114,8 +114,8 @@
 <p>標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。</p>
 
-<a href="/images/egit_staging.JPG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/egit_staging.JPG" alt="" width="200"/>
+<a href="/images/egit_staging.JPG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/egit_staging.JPG" alt="" width="200" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -125,8 +125,8 @@
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。</p>
 
-<a href="/images/egit_config.jpg" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/egit_config.jpg" alt="" width="200"/>
+<a href="/images/egit_config.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/egit_config.jpg" alt="" width="200" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -153,21 +153,21 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/howto">
+                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             HowTo
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/windows">
+                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             windows
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/linux">
+                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             linux
                         </a>

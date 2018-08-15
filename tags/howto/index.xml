@@ -16,7 +16,7 @@
           <pubDate>Tue, 10 Jul 2018 01:40:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/wslconfig/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/wsl.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/wsl.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;Windows上でLinuxを動作させるWSLの設定方法について解説します。WLSConfigという標準コマンドを使用します。
 &lt;/p&gt;
@@ -29,8 +29,8 @@
 &lt;p&gt;発表当初はUbuntuしか使えませんでしたが、今では色々なディストロが用意されています。
 Windows Storeから簡単にインストールすることができますが、なんと複数同時に使えます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -105,7 +105,7 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
           <pubDate>Fri, 06 Jul 2018 11:48:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/choco/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;というパッケージ管理ソフトの使い方を解説します。
 &lt;/p&gt;
@@ -127,8 +127,8 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;h4 id=&#34;まずはpowershellを管理者権限で起動&#34;&gt;まずはPowershellを管理者権限で起動&lt;/h4&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -152,12 +152,12 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;p&gt;ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -412,8 +412,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -438,8 +438,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -449,8 +449,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -474,8 +474,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;h2 id=&#34;gmailのpop3は更新が遅い&#34;&gt;GmailのPOP3は更新が遅い！&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/gmail.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/gmail.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -696,8 +696,8 @@ total 0
 まず始めにアクセス権限が表示されており、rwxで表現されています。次がファイルタイプ・所有ユーザ名・所有グループ名・サイズ・更新日時が続きます。
 この場合、rootユーザには「r(読み込み), w(書き込み), x(実行)」の全権限が、yusukeグループには「r(読み込み), x(実行)」が、その他のユーザには「r(読み込み)」のみが許されている事になります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ls_intro.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ls_intro.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1070,16 +1070,16 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
 
 &lt;p&gt;TeraTermを起動すると、以下のような画面が表示されます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm1.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm1.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;ここでサーバアドレスを入力します。ポート番号は必要であれば変更します。
 OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm2.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm2.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1434,8 +1434,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1443,8 +1443,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1454,8 +1454,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1597,8 +1597,8 @@ GRUB_CMDLINE_LINUX=&amp;quot;....... rd.driver.blacklist=nouveau&amp;quot;
 &lt;p&gt;このあたりにから、自分のPCにあうドライバを探してください。ホームフォルダに入れてください。&lt;br&gt;
 &lt;a href=&#34;http://www.nvidia.co.jp/Download/index.aspx&#34;&gt;http://www.nvidia.co.jp/Download/index.aspx&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/nvidiadriver.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/nvidiadriver.JPG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/nvidiadriver.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/nvidiadriver.JPG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1607,8 +1607,8 @@ GRUB_CMDLINE_LINUX=&amp;quot;....... rd.driver.blacklist=nouveau&amp;quot;
 &lt;p&gt;厳密にはFedora22などの systemd採用環境にランレベルという概念はないですが、各ランレベルに相当するターゲットファイルが用意されています。
 デフォルトではランレベル５で起動するOSがほとんどですが、これを一時的にランレベル３で起動するには、Grub2の起動画面で一手間加えることになります。まず、再起動して以下の画面を表示させましょう。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/blog/images/GRUB.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/GRUB.png&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/blog/images/GRUB.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/GRUB.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 Grub2―enWikipediaより&lt;/p&gt;

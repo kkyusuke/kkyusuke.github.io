@@ -54,8 +54,8 @@
 &lt;p&gt;詳細設定-&amp;gt;高度な設定から「DMZホスト」を見つけて下さい。DMZホストの設置場所はLAN側にするのが都合が良いでしょう。これでDMZホストに設定されたPCはLANにアクセスしながら外部へも公開が可能になります。
 DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&amp;rdquo;192.168.1.10&amp;rdquo;をホストに設定しています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -197,29 +197,29 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;h2 id=&#34;2016-03-04-22-10&#34;&gt;2016/03/04 22:10&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;h2 id=&#34;2016-02-16-22-00&#34;&gt;2016/02/16 22:00&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;</description>
         </item>
       
@@ -250,8 +250,8 @@ Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放�
 だから、これまでの通信履歴から「外からの通信をどの内部端末に転送すれば良いか」が分かります。
 （一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/NAT.svg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/NAT.svg&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/NAT.svg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/NAT.svg&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -281,16 +281,16 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
  ntt.setup
 ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/menu.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/menu.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/menu.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/menu.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;DHCPサーバこそがIPアドレスの自動割り当てを行っています。たとえば以下のように設定すると、自動割り当て区間が192.168.1.2~192.168.1.81になります。
 「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/dhcp.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/dhcp.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/dhcp.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/dhcp.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -298,15 +298,15 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 &lt;p&gt;さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_adapter.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_adapter.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_adapter.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_adapter.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -314,8 +314,8 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 &lt;p&gt;以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&amp;rdquo;255.255.255.0&amp;rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_property.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_property.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_property.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_property.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -323,8 +323,8 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 &lt;p&gt;さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/port_open.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/port_open.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/port_open.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/port_open.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -604,8 +604,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -613,8 +613,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -624,8 +624,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 

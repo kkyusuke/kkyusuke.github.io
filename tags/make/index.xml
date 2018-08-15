@@ -29,8 +29,8 @@
 &lt;p&gt;古いプロジェクトファイルは最新のVSでは動きません。
 これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -47,8 +47,8 @@
 &lt;p&gt;ボタンを辿って、以下のページを表示して下さい。&lt;br /&gt;
 [ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -84,8 +84,8 @@ End of search list.
 &lt;p&gt;ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
 [C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。&lt;code&gt;;&lt;/code&gt;で区切れます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -236,8 +236,8 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;p&gt;まずはブラーバの形に合うように薄いポリボードをカットします。これはブラーバ側にくっつます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -247,8 +247,8 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;p&gt;次に厚い発泡ボードをパッドと同じ大きさにカットします。マジックテープもサクッと取り付けて、完成です。厚い発泡ボードのほうに固いテープを使った方が良いです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -257,31 +257,31 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 &lt;p&gt;完成したものをブラーバにとりつけてみます。まずは薄い発泡ボードの方から。
 画像の通り、しっかり穴をあければ落っこちません。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;次に厚めの発泡ボードの方をセットアップします。まずはクイックルワイパーの上に置いて・・・
 それをぐるぐる巻いてマジックテープで固定すれば完成です。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;ブラーバに取り付けるとこんな感じ。すこし盛り上がってしまっているので、5mm厚の発泡ボードを使っても良かったかも。とにかくコレで動きます。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 

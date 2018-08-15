@@ -89,23 +89,23 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope="itemscope" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2016-03-19T12:05+09:00">
+                    <time itemprop="datePublished" datetime="2016-03-19T12:05+09:00">
                         2016.3.19 12:05
                     </time>
                 </div>
-                <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/linux_basic_permission/">Linux基礎講座：パーミッション</a>
+                <h1 class="post-title" itemprop="name headline">
+                    <a href="https://blog.yyyak.com/post/linux_basic_permission/" itemprop="url">Linux基礎講座：パーミッション</a>
                 </h1>
             </header>
 
             
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
                 <p>Linuxでのファイルのアクセス権限について説明します。
 </p>
 
@@ -128,8 +128,8 @@ total 0
 まず始めにアクセス権限が表示されており、rwxで表現されています。次がファイルタイプ・所有ユーザ名・所有グループ名・サイズ・更新日時が続きます。
 この場合、rootユーザには「r(読み込み), w(書き込み), x(実行)」の全権限が、yusukeグループには「r(読み込み), x(実行)」が、その他のユーザには「r(読み込み)」のみが許されている事になります。</p>
 
-<a href="/blog/images/ls_intro.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/ls_intro.png" alt="" />
+<a href="/blog/images/ls_intro.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/ls_intro.png" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -202,14 +202,14 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/linux">
+                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             Linux
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/howto">
+                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             HowTo
                         </a>

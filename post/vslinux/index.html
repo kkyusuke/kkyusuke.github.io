@@ -89,23 +89,23 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope="itemscope" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2018-05-14T14:06+09:00">
+                    <time itemprop="datePublished" datetime="2018-05-14T14:06+09:00">
                         2018.5.14 14:06
                     </time>
                 </div>
-                <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/vslinux/">Visual Studio ver15.7でのLinux開発</a>
+                <h1 class="post-title" itemprop="name headline">
+                    <a href="https://blog.yyyak.com/post/vslinux/" itemprop="url">Visual Studio ver15.7でのLinux開発</a>
                 </h1>
             </header>
 
             
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
                 <p>Visual Studioを最新にアップデートしたところ、Linux開発がうまく出来なくなってしまいました。解決策を発見しましたので一から解説します。
 </p>
 
@@ -119,8 +119,8 @@
 <p>古いプロジェクトファイルは最新のVSでは動きません。
 これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。</p>
 
-<a href="/images/vslinux0.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/vslinux0.png" alt="" width="300"/>
+<a href="/images/vslinux0.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/vslinux0.png" alt="" width="300" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -137,8 +137,8 @@
 <p>ボタンを辿って、以下のページを表示して下さい。<br />
 [ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]</p>
 
-<a href="/images/vslinux1.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/vslinux1.png" alt="" width="300"/>
+<a href="/images/vslinux1.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/vslinux1.png" alt="" width="300" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -174,8 +174,8 @@ End of search list.
 <p>ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
 [C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。<code>;</code>で区切れます。</p>
 
-<a href="/images/vslinux2.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/vslinux2.png" alt="" width="300"/>
+<a href="/images/vslinux2.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/vslinux2.png" alt="" width="300" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -202,14 +202,14 @@ End of search list.
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/windows">
+                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             windows
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/make">
+                        <a href="https://blog.yyyak.com/tags/make" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             make
                         </a>

@@ -16,7 +16,7 @@
           <pubDate>Mon, 13 Aug 2018 12:35:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/ecodrypad/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/ecodrypad_top.svg&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/ecodrypad_top.svg&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;ブラーバジェットにクイックルワイパーのシートを付けられる商品を使ってみました。
 &lt;/p&gt;
@@ -29,16 +29,16 @@
 
 &lt;p&gt;ヘッダー画像は設計図を3D化したモノですが、実際には下の写真見たいになっています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ecodrypad_sample3.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ecodrypad_sample3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ecodrypad_sample3.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ecodrypad_sample3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;#＃ 使い方
 GIF動画を作ったのでそれを参考にして下さい。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ecodrypad_usage.gif&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ecodrypad_usage.gif&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ecodrypad_usage.gif&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ecodrypad_usage.gif&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -53,8 +53,8 @@ GIF動画を作ったのでそれを参考にして下さい。&lt;/p&gt;
 &lt;p&gt;実際に装着するとこんな感じになります。
 少し浮き上がった感じになりますが、ブラーバの重さのお陰で外れたりしなくなります！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ecodrypad_view.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ecodrypad_view.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ecodrypad_view.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ecodrypad_view.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -112,7 +112,7 @@ GIF動画を作ったのでそれを参考にして下さい。&lt;/p&gt;
           <pubDate>Tue, 10 Jul 2018 01:40:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/wslconfig/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/wsl.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/wsl.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;Windows上でLinuxを動作させるWSLの設定方法について解説します。WLSConfigという標準コマンドを使用します。
 &lt;/p&gt;
@@ -125,8 +125,8 @@ GIF動画を作ったのでそれを参考にして下さい。&lt;/p&gt;
 &lt;p&gt;発表当初はUbuntuしか使えませんでしたが、今では色々なディストロが用意されています。
 Windows Storeから簡単にインストールすることができますが、なんと複数同時に使えます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -201,7 +201,7 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
           <pubDate>Fri, 06 Jul 2018 11:48:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/choco/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/choco3.png&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;というパッケージ管理ソフトの使い方を解説します。
 &lt;/p&gt;
@@ -223,8 +223,8 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;h4 id=&#34;まずはpowershellを管理者権限で起動&#34;&gt;まずはPowershellを管理者権限で起動&lt;/h4&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -248,12 +248,12 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;p&gt;ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -303,8 +303,8 @@ Choco自体のアンインストールはフォルダを消せばOKです。&lt;
 &lt;p&gt;古いプロジェクトファイルは最新のVSでは動きません。
 これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -321,8 +321,8 @@ Choco自体のアンインストールはフォルダを消せばOKです。&lt;
 &lt;p&gt;ボタンを辿って、以下のページを表示して下さい。&lt;br /&gt;
 [ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -358,8 +358,8 @@ End of search list.
 &lt;p&gt;ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
 [C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。&lt;code&gt;;&lt;/code&gt;で区切れます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -405,20 +405,20 @@ Classicと無印の違いは、デザインだけです。無印はスポーツ�
 
 &lt;p&gt;結論から言うと、2日間はたっぷり持ちます。3日目に突入すると、日中にバッテリーが切れてしまうかもしれないので、使い方次第です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;使い方には工夫が必要で、いつでも明るく光らせておくとすぐに電池がなくなっていまいます。
 例えば、しっかり見るときは左の画像のように明るく表示すればよいのですが、見ていないときやチラ見するだけの時は右の画像のように極力光らせないモードにする設定があります。こういうのを使っていると、しっかり2日持つようになります。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -427,16 +427,16 @@ Classicと無印の違いは、デザインだけです。無印はスポーツ�
 &lt;p&gt;GPSが搭載されているので、Runtasticなどを使ってスマホなしでランニングに出かけられます。
 下の画像のように、スタートボタンを押すだけでワークアウトの記録が行われます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;自宅に到着するとバックグラウンドでデータがサーバに自動送信されます。
 WEBで見てみると、GPSと心拍がしっかり記録されているのが分かります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -445,8 +445,8 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 &lt;p&gt;Google Play Music を使っている人は、プレイリストや楽曲単位でスマートウォッチに曲を保存して、外部スピーカやBluetoothを使って聞くことができます。
 ランニングに出るときや、スマホの電池が無くなってしまったときに便利です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -455,8 +455,8 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 &lt;p&gt;スマホに来ているLINEやAlloの通知は、取り出さなくても時計から閲覧して返信までできます。
 日本語に対応した手書きキーボードや音声入力があるので、定型文に限らず好きな文章を入力できます。これも便利です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -491,8 +491,8 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 &lt;p&gt;アップルがAirPodsを発表してから、左右独立型のBluetoothイヤホンが流行り始めています。
 Bluetoothイヤホンは左右がワイヤで繋がっているのが普通でしたが、フルワイヤレスではどちらか一方がスマホと接続してもう一方に転送する仕組みとなっています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -778,8 +778,8 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;p&gt;まずはブラーバの形に合うように薄いポリボードをカットします。これはブラーバ側にくっつます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -789,8 +789,8 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;p&gt;次に厚い発泡ボードをパッドと同じ大きさにカットします。マジックテープもサクッと取り付けて、完成です。厚い発泡ボードのほうに固いテープを使った方が良いです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -799,31 +799,31 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 &lt;p&gt;完成したものをブラーバにとりつけてみます。まずは薄い発泡ボードの方から。
 画像の通り、しっかり穴をあければ落っこちません。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;次に厚めの発泡ボードの方をセットアップします。まずはクイックルワイパーの上に置いて・・・
 それをぐるぐる巻いてマジックテープで固定すれば完成です。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;ブラーバに取り付けるとこんな感じ。すこし盛り上がってしまっているので、5mm厚の発泡ボードを使っても良かったかも。とにかくコレで動きます。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -1028,8 +1028,8 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 &lt;p&gt;Photoという名前のソフトウェアがインストールされるので、起動してみましょう。&lt;/p&gt;
 
 &lt;p&gt;アプリを起動します。ディスプレイの設定だけをすればよいので、２つめの選択肢を選びます。
-&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color01.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color01.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -1044,43 +1044,43 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 &lt;li&gt;輝度：120cd/m2&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color02.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color02.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color03.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color03.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;設定が終わったら、センサーのキャリブレーションをしてディスプレイに設定します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color04.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color04.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color05.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color05.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;キャリブレーション中にやるべきことは、輝度とコントラストを調整することだけです。
 インジケーターが中央に来るように、輝度とコントラストを動かしましょう。ディスプレイ本体の設定画面を使います。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color06.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color06.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color07.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color07.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
 &lt;p&gt;あとはやることはありません。5分間、いろいろな色が表示されます。
 キャリブレーション結果はカラープロファイルとして登録されます。コントロールパネルから「色の管理」を見ると、確かに登録されていることがわかるはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color08.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color08.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1256,7 +1256,7 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
           <pubDate>Mon, 14 Aug 2017 00:03:41 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/firefox55/</guid>
-          <description>&lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34;/&gt;
+          <description>&lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
 改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;
@@ -1347,8 +1347,8 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
 
 &lt;h3 id=&#34;追記&#34;&gt;追記&lt;/h3&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1571,16 +1571,16 @@ WN-AX1167GRを使ってどのようにこの機能を使うか解説します。
 &lt;p&gt;192.168.0.1にブラウザでアクセスすると、下の画像のような設定画面が出てきます。
 ここでv6プラスを選択すれば、それで終わりです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;プロバイダ側でv6プラスの設定が済んでいれば、下の画像のようなステータス表示が出てくるはずです。
 （私の場合、プロバイダの設定が終わるまでに1週間くらいかかりました。）&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1589,8 +1589,8 @@ WN-AX1167GRを使ってどのようにこの機能を使うか解説します。
 &lt;p&gt;v6プラス設定後の速度は常に100Mbps弱で安定しています。最大速度が100Mbpsの回線を契約しているので、かなり良い成績だと言えるでしょう。
 このルータを使えば安くて高速な回線が得られます。ぜひ購入して試してみてください！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;</description>
         </item>
       
@@ -1707,8 +1707,8 @@ Tmobile純正機種以外はTmobileアプリが必要なので、予めダウン
 
 &lt;p&gt;ムンバイの空港は空港内撮影禁止なので写真はアップできませんが、受託手荷物受け取り所を出るとすぐに正面に見えます。Airtelのマークが大きく看板にあるので、見逃すことはありません。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.ana.co.jp/wws/cn/j/asw_common/departure/airport/map.html?c=bom&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ana.co.jp/wws/cn/j/asw_common/departure/airport/map.html?c=bom&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/a&gt;&lt;/p&gt;
 
@@ -1827,8 +1827,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1853,8 +1853,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1864,8 +1864,8 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -1895,8 +1895,8 @@ KitkatとかMarshmallowとかのあれです。&lt;/p&gt;
 
 &lt;p&gt;お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -2017,8 +2017,8 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;p&gt;メディアドライブの電源ボタンを長押ししてLEDが点滅し始めたら、アプリを起動します。デバイスを選択する画面が表されるはずなので、&amp;rdquo;Sandisk Media ****&amp;ldquo;というものを選択します。初期のパスワードは&amp;rdquo;admin&amp;rdquo;です。
 すると、メモリー内の内容が表示されるようになります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -2027,8 +2027,8 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;p&gt;設定ボタンを押すと、様々な設定を行えます。ワイヤレスドライブの無線LANのパスワード変更は必ずしておきましょう。
 既存のWifiネットワークに接続して、LAN内のすべてのマシンから閲覧できるようにもできます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -2581,8 +2581,8 @@ Kindle Oasisは良い機種のようですが、価格も考えるとマスト�
 
 &lt;h2 id=&#34;gmailのpop3は更新が遅い&#34;&gt;GmailのPOP3は更新が遅い！&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/gmail.png&#34; alt=&#34;&#34; width=&#34;400&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/gmail.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -2746,8 +2746,8 @@ Kindle Oasisは良い機種のようですが、価格も考えるとマスト�
 BatteryMixなどはインストールしていないので、設定画面から得られるグラフをキャプチャして時間軸を調整した上で重ねています。
 グレーの方がAndroid5.0の時のバッテリーの減り、オレンジの方がAndroid6.0の時のバッテリーの減りです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; alt=&#34;&#34; width=&#34;600&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; alt=&#34;&#34; width=&#34;600&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -2958,16 +2958,16 @@ BatteryMixなどはインストールしていないので、設定画面から�
 &lt;p&gt;my docomoなどで契約すると自動でインストールが開始されます。常駐するので特別な設定は必要ありません。とりあえずメインの画面を以下で見てみましょう。
 とてもシンプルで、歩数が表示されているのが分かるかと思います。観光地を散歩するゲームになっていて、歩数に応じて途中途中でポイントがもらえるようになっています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;コースの最後でポイントをもらえる仕組みで、途中途中でもらえるのは実はプレゼントボックスです。コースの最後で一気に中身を見てポイントが付与されます。
 注意して欲しいのは、プレゼントを確認しないまま次のチェックポイントに進んでしまうと、その前のプレゼントが流れてしまうことです。私はそのせいで2回ほどプレゼントをムダにしてしまいました。広告が出るわけではないので何故それほど頻繁にアプリにアクセスさせたがるのか謎で、改善してもらいたい点ではあります・・・。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -2976,8 +2976,8 @@ BatteryMixなどはインストールしていないので、設定画面から�
 &lt;p&gt;クリップ画像から分かると思いますが、コースごとに50pt~100ptが貯まるようです。まだ私は初めて間もないですが、1週間で3コース目に突入しています。
 このままだと月に600ptとかが貯まってしまう計算になってしまいます。もしこれが本当ならばスゴいことです、何てったって月300円払って600円もらえることになります！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3035,8 +3035,8 @@ BatteryMixなどはインストールしていないので、設定画面から�
 &lt;p&gt;詳細設定-&amp;gt;高度な設定から「DMZホスト」を見つけて下さい。DMZホストの設置場所はLAN側にするのが都合が良いでしょう。これでDMZホストに設定されたPCはLANにアクセスしながら外部へも公開が可能になります。
 DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&amp;rdquo;192.168.1.10&amp;rdquo;をホストに設定しています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3332,8 +3332,8 @@ total 0
 まず始めにアクセス権限が表示されており、rwxで表現されています。次がファイルタイプ・所有ユーザ名・所有グループ名・サイズ・更新日時が続きます。
 この場合、rootユーザには「r(読み込み), w(書き込み), x(実行)」の全権限が、yusukeグループには「r(読み込み), x(実行)」が、その他のユーザには「r(読み込み)」のみが許されている事になります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ls_intro.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ls_intro.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3706,16 +3706,16 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
 
 &lt;p&gt;TeraTermを起動すると、以下のような画面が表示されます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm1.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm1.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;ここでサーバアドレスを入力します。ポート番号は必要であれば変更します。
 OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm2.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm2.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3810,29 +3810,29 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;h2 id=&#34;2016-03-04-22-10&#34;&gt;2016/03/04 22:10&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;h2 id=&#34;2016-02-16-22-00&#34;&gt;2016/02/16 22:00&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;</description>
         </item>
       
@@ -3863,8 +3863,8 @@ Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放�
 だから、これまでの通信履歴から「外からの通信をどの内部端末に転送すれば良いか」が分かります。
 （一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/NAT.svg&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/NAT.svg&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/NAT.svg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/NAT.svg&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3894,16 +3894,16 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
  ntt.setup
 ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/menu.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/menu.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/menu.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/menu.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;DHCPサーバこそがIPアドレスの自動割り当てを行っています。たとえば以下のように設定すると、自動割り当て区間が192.168.1.2~192.168.1.81になります。
 「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/dhcp.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/dhcp.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/dhcp.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/dhcp.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3911,15 +3911,15 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 &lt;p&gt;さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_adapter.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_adapter.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_adapter.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_adapter.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3927,8 +3927,8 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 &lt;p&gt;以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&amp;rdquo;255.255.255.0&amp;rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_property.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_property.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/control_network_property.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/control_network_property.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3936,8 +3936,8 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 &lt;p&gt;さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/port_open.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/port_open.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/port_open.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/port_open.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3975,8 +3975,8 @@ Kairosは時計の機能はピュアな機械式時計が担っているので�
 
 &lt;p&gt;しかし、実際にはこれほど格好良くて何でもアリな時計を作るのはムリだったみたいで、今の形に至ります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/kairos1.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos1.JPG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/kairos1.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos1.JPG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3984,8 +3984,8 @@ Kairosは時計の機能はピュアな機械式時計が担っているので�
 
 &lt;p&gt;ちなみに裏面には糖度センサーが搭載されているそうですが、今のファームウェアでは動作しないようです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/kairos2.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos2.JPG&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/kairos2.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos2.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -3995,16 +3995,16 @@ Kairosは時計の機能はピュアな機械式時計が担っているので�
 
 &lt;p&gt;スマートフォンを取り出さずに手元で情報が確認できるのは便利です。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/kairos4.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos4.JPG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/kairos4.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos4.JPG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/kairos5.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos5.JPG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/kairos5.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos5.JPG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/kairos6.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos6.JPG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/kairos6.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos6.JPG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -4012,12 +4012,12 @@ Kairosは時計の機能はピュアな機械式時計が担っているので�
 さらに、「Musicアプリの戻る・進む」などには対応していません。そのせいで、音楽を聞いていて次の曲に移るたびに通知されるのはウザいです。
 正直言って、まだまだ問題が多く実用に耐える物だとは思えません。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/kairos7.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos7.png&#34; alt=&#34;&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/kairos7.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos7.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/kairos8.JPG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos8.JPG&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/kairos8.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/kairos8.JPG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 &lt;/p&gt;
 
@@ -4143,8 +4143,8 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
 &lt;p&gt;Windows10には常駐ソフトウェアのON/OFFを設定する画面があります。
 「スタートボタン → 設定 → プライバシー → バックグラウンドアプリ」を開いてみましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/background.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/background.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/background.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/background.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -4157,15 +4157,15 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
 &lt;p&gt;ウィンドウズボダンを右クリックして「コントロールパネル」を起動しましょう。
 検索バーで&amp;rdquo;service&amp;rdquo;を検索すると、以下のような画面になるはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/services.PNG&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/services.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/services.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/services.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
 &lt;p&gt;ここで、「ローカルサービスの表示」をクリックします。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/local_services.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/local_services.png&#34; alt=&#34;&#34; /&gt;
+&lt;a href=&#34;https://blog.yyyak.com/blog/images/local_services.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/local_services.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -4733,8 +4733,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -4742,8 +4742,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -4753,8 +4753,8 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 

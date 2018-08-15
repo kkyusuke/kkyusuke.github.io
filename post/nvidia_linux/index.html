@@ -89,23 +89,23 @@
 
 <div class="row">
     <div class="col-md-8">
-        <article class="post">
+        <article class="post" itemscope="itemscope" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
             <header>
                 <div class="post-date">
                     
-                    <time datetime="2015-07-18T11:31+09:00">
+                    <time itemprop="datePublished" datetime="2015-07-18T11:31+09:00">
                         2015.7.18 11:31
                     </time>
                 </div>
-                <h1 class="post-title">
-                    <a href="https://blog.yyyak.com/post/nvidia_linux/">FedoraでNVIDIAの純正ドライバを使う</a>
+                <h1 class="post-title" itemprop="name headline">
+                    <a href="https://blog.yyyak.com/post/nvidia_linux/" itemprop="url">FedoraでNVIDIAの純正ドライバを使う</a>
                 </h1>
             </header>
 
             
 
-            <div class="post-content">
+            <div class="post-content" itemprop="articleBody">
                 <p>近頃のLinuxディストリはデザインが洗練されていて動作も安定していますが、OSSの採用が重視されているためマシンの
 性能を活かしきれていない場合があります。NVIDIAのグラフィックドライバを純正のものに入れ替える方法を見てみましょう。
 </p>
@@ -134,8 +134,8 @@ GRUB_CMDLINE_LINUX=&quot;....... rd.driver.blacklist=nouveau&quot;
 <p>このあたりにから、自分のPCにあうドライバを探してください。ホームフォルダに入れてください。<br>
 <a href="http://www.nvidia.co.jp/Download/index.aspx">http://www.nvidia.co.jp/Download/index.aspx</a><br></p>
 
-<a href="/blog/images/nvidiadriver.JPG" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/nvidiadriver.JPG" alt="" />
+<a href="/blog/images/nvidiadriver.JPG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/nvidiadriver.JPG" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -144,8 +144,8 @@ GRUB_CMDLINE_LINUX=&quot;....... rd.driver.blacklist=nouveau&quot;
 <p>厳密にはFedora22などの systemd採用環境にランレベルという概念はないですが、各ランレベルに相当するターゲットファイルが用意されています。
 デフォルトではランレベル５で起動するOSがほとんどですが、これを一時的にランレベル３で起動するには、Grub2の起動画面で一手間加えることになります。まず、再起動して以下の画面を表示させましょう。</p>
 
-<p><a href="/blog/images/GRUB.png" data-lightbox="page1">
-  <img class="page1 img-thumbnail" src="/images/GRUB.png" alt="" />
+<p><a href="/blog/images/GRUB.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/GRUB.png" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 Grub2―enWikipediaより</p>
@@ -177,14 +177,14 @@ Grub2―enWikipediaより</p>
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/linux">
+                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             Linux
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/howto">
+                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
                             <i class="fa fa-tags"></i>
                             HowTo
                         </a>
