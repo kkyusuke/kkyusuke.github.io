@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yyyak.com/post/huaweiwatch2/</loc>
+    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yyyak.com/post/anawifi/</loc>
     <lastmod>2018-10-23T11:40:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -367,7 +374,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/android/</loc>
-    <lastmod>2018-02-25T05:25:00+09:00</lastmod>
+    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -402,7 +409,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/</loc>
-    <lastmod>2018-10-23T11:40:00+09:00</lastmod>
+    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -430,7 +437,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/post/</loc>
-    <lastmod>2018-10-23T11:40:00+09:00</lastmod>
+    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -444,7 +451,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/review/</loc>
-    <lastmod>2018-10-23T11:40:00+09:00</lastmod>
+    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

@@ -21,13 +21,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="EGitでCommit/PushするとEclipseがおかしくなる &middot; Make &amp; Review">
+<meta property="og:title" content="Huawei Watch2にアップデートが来た！ &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    EGitでCommit/PushするとEclipseがおかしくなる
+    Huawei Watch2にアップデートが来た！
     
 </title>
 
@@ -94,47 +94,76 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2017-01-21T11:27+09:00">
-                        2017.1.21 11:27
+                    <time itemprop="datePublished" datetime="2018-11-02T11:16+09:00">
+                        2018.11.02 11:16
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/egit_slow/" itemprop="url">EGitでCommit/PushするとEclipseがおかしくなる</a>
+                    <a href="https://blog.yyyak.com/post/huaweiwatch2/" itemprop="url">Huawei Watch2にアップデートが来た！</a>
                 </h1>
             </header>
 
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>Eclipse Neonになったあたりから、EGitを使ってPushした後Eclipseを終了させようとするとハングアップするようになりました。
+                <p>Huawei Watch2にアップデートが来たので、レビューします！
 </p>
 
-<h2 id="原因はstaging-view">原因はStaging　View</h2>
+<h2 id="wear-osのアップデート">Wear OSのアップデート</h2>
 
-<p>標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
-もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。</p>
+<p>勢いを失いつつあるGoogleのスマートウォッチですが、アップデートは続いています。
+LG,Huaweiなどの電機メーカーが撤退する一方で、TAG Heuer, Fossilなどの時計メーカーが参入しはじめているのが最近の特徴です。</p>
 
-<a href="/images/egit_staging.JPG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/egit_staging.JPG" alt="" width="200" itemprop="thumbnailUrl"/>
+<p>老舗の時計メーカーは、ソフトウェアはそこそこにハードウェアで勝負している傾向にあるので、ソフトウェアはGoogleがしっかりサポートしていかなくはなりません。
+Ver2.1のアップデートがなかなか良かったので紹介したいと思います。</p>
+
+<iframe class="hatenablogcard" style="width:100%;height:175px;margin:15px 0;max-width:680px;" title="新しいWear OSがスマートウォッチへの展開を開始 | TechCrunch Japan" src="https://hatenablog-parts.com/embed?url=https://jp.techcrunch.com/2018/09/29/2018-09-28-the-new-wear-os-starts-hitting-smartwatches/" frameborder="0" scrolling="no"></iframe>
+
+<h2 id="新しくなったデザイン">新しくなったデザイン</h2>
+
+<p>アップデートで一番目を引くのは、デザインです。
+これまでとは大きく代わり、ウォッチーフェイスからアクセス出来る情報が格段にふえました。</p>
+
+<ul>
+<li>左スワイプ：Google Assistant</li>
+<li>右スワイプ：Google Fit</li>
+<li>上スワイプ：設定（これまで通り）</li>
+<li>下スワイプ：通知（コレまで通り）</li>
+</ul>
+
+<p>ウォッチフェイスの変更はしにくくなりましたが、むしろ滅多に変更しないので私としては問題ないです。</p>
+
+<a href="/images/huawei_watch2_update.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/huawei_watch2_update.jpg" alt="" width="300" itemprop="thumbnailUrl"/>
 </a>
 
 
-<h2 id="解決策-staging-viewを使わない">解決策：Staging Viewを使わない</h2>
+<h2 id="電池持ちが向上">電池持ちが向上</h2>
 
-<p>Staging Viewを使わなければ良いので、他の画面からコミットするようにします。
-「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
-私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。</p>
+<p>これまでは「2日持つかギリギリ」といった感じだったので、夜に充電し忘れると夕方ごろから時間が分からなくなるという問題が良く発生していました。
+v2.1以降、余裕で2日持っている気がします。</p>
 
-<a href="/images/egit_config.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/egit_config.jpg" alt="" width="200" itemprop="thumbnailUrl"/>
+<h2 id="google-fitの改善">Google Fitの改善</h2>
+
+<p>少しデザインが良くなりましたが、一番気に入っているのは心拍数センサー周りです。
+これまでは、センサーは常時起動しており、ストップさせられない仕様でした。</p>
+
+<p>v2.1が配信された頃から、バックグラウンドでの心拍計測をOFFに出来るようになっています。
+OFFにすると、余裕で3日は持つ印象です。私は結局ONにしたままですが、電池持ちを追求したい人にはカスタマイズ必須です。</p>
+
+<p><a href="/images/huawei_watch2_update_version.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/huawei_watch2_update_version.jpg" alt="" width="150" itemprop="thumbnailUrl"/>
 </a>
 
+<a href="/images/huawei_watch2_fit.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/huawei_watch2_fit.jpg" alt="" width="150" itemprop="thumbnailUrl"/>
+</a>
+</p>
 
-<h2 id="上手くいかなかった解決策">上手くいかなかった解決策</h2>
+<h2 id="今後の展開に期待">今後の展開に期待</h2>
 
-<p>EGitを最新版にする、アンインストールした後に再インストールし直す、など基本的なことは試したのですが問題は解決しませんでした。</p>
-
-<p>VisualStudioがGitサポートを始めているので、そちらに移るのもありなのかなぁ、とか思ったりもしました。</p>
+<p>大手メーカーは撤退や独自OSに動いてしまいましたが、時計メーカーが続々参入しているのは良い傾向だと思っています。
+ソフトウェアをカスタマイズしすぎないお陰で、Googleのアップデートが届きやすいという好循環も始まっていますので、ぜひGoogleにはアップデートを頑張って欲しいですね！</p>
             </div>
 
 
@@ -153,23 +182,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            HowTo
+                            review
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/android" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            windows
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            linux
+                            android
                         </a>
                     </li>
                     
@@ -185,13 +207,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/texlipse/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/android_secutiry/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/anawifi/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>

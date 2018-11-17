@@ -6,8 +6,76 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2018</rights>
-    <updated>2018-10-23 11:40:00 &#43;0900 JST</updated>
+    <updated>2018-11-02 11:16:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Huawei Watch2にアップデートが来た！</title>
+          <link>https://blog.yyyak.com/post/huaweiwatch2/</link>
+          <pubDate>Fri, 02 Nov 2018 11:16:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/huaweiwatch2/</guid>
+          <description>&lt;p&gt;Huawei Watch2にアップデートが来たので、レビューします！
+&lt;/p&gt;
+
+&lt;h2 id=&#34;wear-osのアップデート&#34;&gt;Wear OSのアップデート&lt;/h2&gt;
+
+&lt;p&gt;勢いを失いつつあるGoogleのスマートウォッチですが、アップデートは続いています。
+LG,Huaweiなどの電機メーカーが撤退する一方で、TAG Heuer, Fossilなどの時計メーカーが参入しはじめているのが最近の特徴です。&lt;/p&gt;
+
+&lt;p&gt;老舗の時計メーカーは、ソフトウェアはそこそこにハードウェアで勝負している傾向にあるので、ソフトウェアはGoogleがしっかりサポートしていかなくはなりません。
+Ver2.1のアップデートがなかなか良かったので紹介したいと思います。&lt;/p&gt;
+
+&lt;iframe class=&#34;hatenablogcard&#34; style=&#34;width:100%;height:175px;margin:15px 0;max-width:680px;&#34; title=&#34;新しいWear OSがスマートウォッチへの展開を開始 | TechCrunch Japan&#34; src=&#34;https://hatenablog-parts.com/embed?url=https://jp.techcrunch.com/2018/09/29/2018-09-28-the-new-wear-os-starts-hitting-smartwatches/&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;新しくなったデザイン&#34;&gt;新しくなったデザイン&lt;/h2&gt;
+
+&lt;p&gt;アップデートで一番目を引くのは、デザインです。
+これまでとは大きく代わり、ウォッチーフェイスからアクセス出来る情報が格段にふえました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;左スワイプ：Google Assistant&lt;/li&gt;
+&lt;li&gt;右スワイプ：Google Fit&lt;/li&gt;
+&lt;li&gt;上スワイプ：設定（これまで通り）&lt;/li&gt;
+&lt;li&gt;下スワイプ：通知（コレまで通り）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ウォッチフェイスの変更はしにくくなりましたが、むしろ滅多に変更しないので私としては問題ないです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;電池持ちが向上&#34;&gt;電池持ちが向上&lt;/h2&gt;
+
+&lt;p&gt;これまでは「2日持つかギリギリ」といった感じだったので、夜に充電し忘れると夕方ごろから時間が分からなくなるという問題が良く発生していました。
+v2.1以降、余裕で2日持っている気がします。&lt;/p&gt;
+
+&lt;h2 id=&#34;google-fitの改善&#34;&gt;Google Fitの改善&lt;/h2&gt;
+
+&lt;p&gt;少しデザインが良くなりましたが、一番気に入っているのは心拍数センサー周りです。
+これまでは、センサーは常時起動しており、ストップさせられない仕様でした。&lt;/p&gt;
+
+&lt;p&gt;v2.1が配信された頃から、バックグラウンドでの心拍計測をOFFに出来るようになっています。
+OFFにすると、余裕で3日は持つ印象です。私は結局ONにしたままですが、電池持ちを追求したい人にはカスタマイズ必須です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;今後の展開に期待&#34;&gt;今後の展開に期待&lt;/h2&gt;
+
+&lt;p&gt;大手メーカーは撤退や独自OSに動いてしまいましたが、時計メーカーが続々参入しているのは良い傾向だと思っています。
+ソフトウェアをカスタマイズしすぎないお陰で、Googleのアップデートが届きやすいという好循環も始まっていますので、ぜひGoogleにはアップデートを頑張って欲しいですね！&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -468,7 +536,10 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 
 &lt;p&gt;以上、良いところばかりをあげてきました。
 たまに動作がモッサリしたりもしますが、とても便利な製品で、あえて紹介したい不満点はありませんでした。
-ぜひ購入をお勧めします。&lt;/p&gt;</description>
+ぜひ購入をお勧めします。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.amazon.co.jp/HUAWEI-WATCH-Sport-LEO-B09-Carbon/dp/B072J572MP/ref=as_li_ss_il?ie=UTF8&amp;qid=1542463252&amp;sr=8-3&amp;keywords=huawei+watch+2&amp;linkCode=li2&amp;tag=makereview-22&amp;linkId=ce6714a4e288dfd46c72cd30388aaf51&amp;language=ja_JP&#34; target=&#34;_blank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B072J572MP&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=makereview-22&amp;language=ja_JP&#34; &gt;&lt;/a&gt;&lt;img src=&#34;https://ir-jp.amazon-adsystem.com/e/ir?t=makereview-22&amp;language=ja_JP&amp;l=li2&amp;o=9&amp;a=B072J572MP&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+&lt;a href=&#34;https://www.amazon.co.jp/Ticwatch-Smartwatch-Shadow-1-4%E3%82%A4%E3%83%B3%E3%83%81OLED%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3-iOS%E3%81%A8Android%E5%AF%BE%E5%BF%9C-Google%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88%E6%90%AD%E8%BD%BD/dp/B079RCK64S/ref=as_li_ss_il?ie=UTF8&amp;qid=1542463252&amp;sr=8-1-spons&amp;keywords=huawei+watch+2&amp;psc=1&amp;linkCode=li2&amp;tag=makereview-22&amp;linkId=841e1e3abfd53b7bbab5de231461dfb2&amp;language=ja_JP&#34; target=&#34;_blank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B079RCK64S&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=makereview-22&amp;language=ja_JP&#34; &gt;&lt;/a&gt;&lt;img src=&#34;https://ir-jp.amazon-adsystem.com/e/ir?t=makereview-22&amp;language=ja_JP&amp;l=li2&amp;o=9&amp;a=B079RCK64S&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/p&gt;</description>
         </item>
       
     
@@ -5077,75 +5148,6 @@ KoboはPocket、ReaderはEvernoteとそれぞれ連携します。この機能�
 
 &lt;p&gt;電子書籍に関して何のしがらみもないならば、Kindle一択でしょう。どうしてもPocket連携が気になる人や楽天ユーザはKoboの選択もあり。
 Readerは撤退に向けた流れがあるので、購入はおすすめできません。端末の出来は良くて安いので、ソニーが好きな人は買っても当分損はしないでしょう。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>電子書籍リーダのすすめ</title>
-          <link>https://blog.yyyak.com/post/sonyreader/</link>
-          <pubDate>Thu, 23 Jul 2015 10:48:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/sonyreader/</guid>
-          <description>&lt;p&gt;ソニーの電子書籍リーダ、PRS-T3Sを購入したのですが、便利すぎてびっくりしています。
-なぜ電子書籍リーダが良いのか、説明します！
-&lt;/p&gt;
-
-&lt;p&gt;そもそも、電子書籍リーダの購入を阻む理由は何なのか考えると、以下の3点だと思います。
-* スマホやタブレットを持っているのに、さらに購入する理由が分からない
-* 紙の本の方が良いはずである
-* 電子書籍リーダはまだ技術が成熟していない&lt;/p&gt;
-
-&lt;p&gt;これらの主張には正しいところもあるし、間違っている・勘違いしているものもあります。1つずつ、反論を考えてみましょう。&lt;/p&gt;
-
-&lt;h2 id=&#34;スマホやタブレットを持っているのに-さらに購入する理由が分からない&#34;&gt;「スマホやタブレットを持っているのに、さらに購入する理由が分からない」&lt;/h2&gt;
-
-&lt;p&gt;これは完全に間違っています。電子書籍リーダを甘く見ています！電子書籍リーダは読書専用に作られているだけあって、以下のようなメリットがあります。&lt;/p&gt;
-
-&lt;h3 id=&#34;軽い&#34;&gt;軽い&lt;/h3&gt;
-
-&lt;p&gt;これは数十分から数時間持ち続けるデバイスでは重要です。たった数10gで大きな差を感じます。&lt;/p&gt;
-
-&lt;h3 id=&#34;読みやすい&#34;&gt;読みやすい&lt;/h3&gt;
-
-&lt;p&gt;液晶と違って、E-inkは発光しません。普通の紙と同じように読むことができます。かなり重要なポイントです。&lt;/p&gt;
-
-&lt;h3 id=&#34;電池持ちが良い&#34;&gt;電池持ちが良い&lt;/h3&gt;
-
-&lt;p&gt;数週間は持ちます。スマホやタブレットは比べものになりません。たまにPCに接続してデータを転送する時に充電されるので、実際は電池の存在を忘れてしまうかもしれません。&lt;/p&gt;
-
-&lt;h2 id=&#34;紙の本が良いはずである&#34;&gt;「紙の本が良いはずである」&lt;/h2&gt;
-
-&lt;p&gt;これは読む本によって違ってきます。&lt;/p&gt;
-
-&lt;h3 id=&#34;マンガ-小説-新書なら&#34;&gt;マンガ/小説/新書なら・・・&lt;/h3&gt;
-
-&lt;p&gt;ページを短時間で何度もめくらない、1ページに没頭するので電子書籍と紙の本で違いはない！
-書籍の購入の手軽さや場所のとらなさ、持ち運びのしやすさで電子書籍が勝る！&lt;/p&gt;
-
-&lt;h3 id=&#34;技術書-辞書なら&#34;&gt;技術書/辞書なら・・・&lt;/h3&gt;
-
-&lt;p&gt;斜め読み、書き込み、などが多い読み方。これは紙の本の方がよい！
-これらの書籍を読むなら、紙の本をおすすめします。&lt;/p&gt;
-
-&lt;h3 id=&#34;カラーページの多い雑誌なら&#34;&gt;カラーページの多い雑誌なら・・・&lt;/h3&gt;
-
-&lt;p&gt;当然紙の本がおすすめです。カラーが表現できませんから。
-文藝春秋とか、Softwareとか、文字の多い雑誌なら電子書籍でいいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;電子書籍リーダはまだ技術が成熟していない&#34;&gt;「電子書籍リーダはまだ技術が成熟していない」&lt;/h2&gt;
-
-&lt;p&gt;正直、電子書籍リーダは以前ほどの勢いはなくなりまして、撤退が多いです。
-そういう意味で、枯れた技術とも言えるでしょう。小説・マンガを読む分には十分です。
-さらにちょっとした機能が普段の生活を便利に変えてくれるかもしれません。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;紙の本より安い or ポイント還元あり&lt;/li&gt;
-&lt;li&gt;SonyReaderのEvernote連携、KoboのPocket連携　←　これで買う人もいるのでは？&lt;/li&gt;
-&lt;li&gt;辞書機能　←　洋書を楽しみたい人には便利なようです&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;買わない理由はないはずです。充実した読書生活を送るために、ぜひ１台どうぞ。&lt;/p&gt;</description>
         </item>
       
     
