@@ -5,9 +5,87 @@
     <link>https://blog.yyyak.com/tags/linux/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
-    <rights>(C) 2018</rights>
+    <rights>(C) 2019</rights>
     <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>Teratermから日本語が入力できない</title>
+          <link>https://blog.yyyak.com/post/teraterm/</link>
+          <pubDate>Mon, 21 Jan 2019 13:19:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/teraterm/</guid>
+          <description>&lt;p&gt;TeraTermでのトラブルについてです。
+
+この記事は&lt;a href=&#34;https://qiita.com/kkyusuke/items/72d28d42f72a6cab5f9d&#34;&gt;Qiita&lt;/a&gt;にも転載しています。&lt;/p&gt;
+
+&lt;h1 id=&#34;問題の概要&#34;&gt;問題の概要&lt;/h1&gt;
+
+&lt;p&gt;WSLを操作する際にTeraTermを使っていたのですが、ある時期から日本語がEmacs上で表示されないことに気付きました。&lt;/p&gt;
+
+&lt;p&gt;Windows標準のShellでは表示されているのにおかしい。
+最終的にいくつかの問題を発見しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windows標準Shellでは、日本語周りの問題なし&lt;/li&gt;
+&lt;li&gt;catすると、どちらもちゃんと日本語が表示される&lt;/li&gt;
+&lt;li&gt;Emacsだと、TeraTermだけ日本語出てこない&lt;/li&gt;
+&lt;li&gt;コマンドライン上でも、TeraTermでだけ日本語が入力できない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img width=&#34;749&#34; alt=&#34;キャプチャ.PNG&#34; src=&#34;https://qiita-image-store.s3.amazonaws.com/0/347148/fc15bced-f4d8-6eda-cd42-090dbbe41e9e.png&#34;&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;原因&#34;&gt;原因&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;LC_***&lt;/code&gt;という環境変数がダメだったようです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell:TeraTerm&#34;&gt;$ locale
+LANG=ja_JP.UTF-8
+LANGUAGE=
+LC_CTYPE=C
+LC_NUMERIC=C
+LC_TIME=C
+LC_COLLATE=C
+LC_MONETARY=C
+LC_MESSAGES=C
+LC_PAPER=C
+LC_NAME=C
+LC_ADDRESS=C
+LC_TELEPHONE=C
+LC_MEASUREMENT=C
+LC_IDENTIFICATION=C
+LC_ALL=
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell:標準Shell&#34;&gt;$ locale
+LANG=ja_JP.UTF-8
+LANGUAGE=
+LC_CTYPE=ja_JP.UTF-8
+LC_NUMERIC=ja_JP.UTF-8
+LC_TIME=ja_JP.UTF-8
+LC_COLLATE=ja_JP.UTF-8
+LC_MONETARY=ja_JP.UTF-8
+LC_MESSAGES=ja_JP.UTF-8
+LC_PAPER=ja_JP.UTF-8
+LC_NAME=ja_JP.UTF-8
+LC_ADDRESS=ja_JP.UTF-8
+LC_TELEPHONE=ja_JP.UTF-8
+LC_MEASUREMENT=ja_JP.UTF-8
+LC_IDENTIFICATION=ja_JP.UTF-8
+LC_ALL=
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;解決&#34;&gt;解決&lt;/h1&gt;
+
+&lt;p&gt;以下のコマンドを入力すると解決しました。&lt;code&gt;.bashrc&lt;/code&gt;にでも書いておくと良いでしょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell:TeraTerm&#34;&gt;$ export LC_ALL=ja_JP.UTF-8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;LC_系の環境変数ってシェル側から自動設定されたりするのかな・・・？&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>

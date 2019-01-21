@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yyyak.com/post/teraterm/</loc>
+    <lastmod>2019-01-21T13:19:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yyyak.com/post/huaweiwatch2/</loc>
     <lastmod>2018-11-02T11:16:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -395,7 +402,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/linux/</loc>
-    <lastmod>2017-09-24T06:20:00+09:00</lastmod>
+    <lastmod>2019-01-21T13:19:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -409,7 +416,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/</loc>
-    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
+    <lastmod>2019-01-21T13:19:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -437,7 +444,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/post/</loc>
-    <lastmod>2018-11-02T11:16:00+09:00</lastmod>
+    <lastmod>2019-01-21T13:19:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
