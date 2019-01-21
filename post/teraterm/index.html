@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="gXQoBSKaki727pLqAXFBzBCg3NMxB05wy5QHZGJhKCY" />
+<meta charset="utf-8">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//tpc.googlesyndication.com">
+<link rel="dns-prefetch" href="//www.gstatic.com">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta property="og:url" content="https://blog.yyyak.com">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Teratermから日本語が入力できない &middot; Make &amp; Review">
+
+<meta property="og:site_name" content="Make &amp; Review">
+
+<title>
+    
+    Teratermから日本語が入力できない
+    
+</title>
+
+
+
+
+
+<link rel="shortcut icon" href="https://blog.yyyak.com/assets/favicon.ico">
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://blog.yyyak.com/index.xml">
+
+</head>
+<body>
+<div id="fb-root"></div>
+<div class="container">
+    <header class="nav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://blog.yyyak.com">Make &amp; Review</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
+                        <li><a href="https://blog.yyyak.com/tags">Tags</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">	
+                        <li>
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                                Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                                Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kkyusuke" target="_blank">
+                                <i class="fa fa-github-square"></i>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	
+    </header>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <article class="post" itemscope="itemscope" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <header>
+                <div class="post-date">
+                    
+                    <time itemprop="datePublished" datetime="2019-01-21T13:19+09:00">
+                        2019.1.21 13:19
+                    </time>
+                </div>
+                <h1 class="post-title" itemprop="name headline">
+                    <a href="https://blog.yyyak.com/post/teraterm/" itemprop="url">Teratermから日本語が入力できない</a>
+                </h1>
+            </header>
+		  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9557285789637667" data-ad-slot="6812209801" data-ad-format="auto" data-full-width-responsive="true"></ins>
+		  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            
+
+            <div class="post-content" itemprop="articleBody">
+                <p>TeraTermでのトラブルについてです。
+
+この記事は<a href="https://qiita.com/kkyusuke/items/72d28d42f72a6cab5f9d">Qiita</a>にも転載しています。</p>
+
+<h1 id="問題の概要">問題の概要</h1>
+
+<p>WSLを操作する際にTeraTermを使っていたのですが、ある時期から日本語がEmacs上で表示されないことに気付きました。</p>
+
+<p>Windows標準のShellでは表示されているのにおかしい。
+最終的にいくつかの問題を発見しました。</p>
+
+<ul>
+<li>Windows標準Shellでは、日本語周りの問題なし</li>
+<li>catすると、どちらもちゃんと日本語が表示される</li>
+<li>Emacsだと、TeraTermだけ日本語出てこない</li>
+<li>コマンドライン上でも、TeraTermでだけ日本語が入力できない</li>
+</ul>
+
+<p><img width="749" alt="キャプチャ.PNG" src="https://qiita-image-store.s3.amazonaws.com/0/347148/fc15bced-f4d8-6eda-cd42-090dbbe41e9e.png"></p>
+
+<h1 id="原因">原因</h1>
+
+<p><code>LC_***</code>という環境変数がダメだったようです。</p>
+
+<pre><code class="language-shell:TeraTerm">$ locale
+LANG=ja_JP.UTF-8
+LANGUAGE=
+LC_CTYPE=C
+LC_NUMERIC=C
+LC_TIME=C
+LC_COLLATE=C
+LC_MONETARY=C
+LC_MESSAGES=C
+LC_PAPER=C
+LC_NAME=C
+LC_ADDRESS=C
+LC_TELEPHONE=C
+LC_MEASUREMENT=C
+LC_IDENTIFICATION=C
+LC_ALL=
+</code></pre>
+
+<pre><code class="language-shell:標準Shell">$ locale
+LANG=ja_JP.UTF-8
+LANGUAGE=
+LC_CTYPE=ja_JP.UTF-8
+LC_NUMERIC=ja_JP.UTF-8
+LC_TIME=ja_JP.UTF-8
+LC_COLLATE=ja_JP.UTF-8
+LC_MONETARY=ja_JP.UTF-8
+LC_MESSAGES=ja_JP.UTF-8
+LC_PAPER=ja_JP.UTF-8
+LC_NAME=ja_JP.UTF-8
+LC_ADDRESS=ja_JP.UTF-8
+LC_TELEPHONE=ja_JP.UTF-8
+LC_MEASUREMENT=ja_JP.UTF-8
+LC_IDENTIFICATION=ja_JP.UTF-8
+LC_ALL=
+</code></pre>
+
+<h1 id="解決">解決</h1>
+
+<p>以下のコマンドを入力すると解決しました。<code>.bashrc</code>にでも書いておくと良いでしょう。</p>
+
+<pre><code class="language-shell:TeraTerm">$ export LC_ALL=ja_JP.UTF-8
+</code></pre>
+
+<p>LC_系の環境変数ってシェル側から自動設定されたりするのかな・・・？</p>
+            </div>
+			
+		  <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9557285789637667" data-ad-slot="5506156558"></ins>
+		  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+	    <script type="text/javascript">
+	      window.___gcfg = {lang: 'ja'};
+	      (function() {
+	      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	      po.src = 'https://apis.google.com/js/platform.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	      })();
+	    </script>
+	    <br>
+
+            <aside>
+                
+                <ul class="list-inline post-tags">
+                    
+                    <li>
+                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
+                            <i class="fa fa-tags"></i>
+                            linux
+                        </a>
+                    </li>
+                    
+                </ul>
+
+                
+            
+            </aside>
+
+            <footer>
+
+                <nav>
+                    <ul class="pager">
+
+                        
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        
+
+                        <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
+
+                        
+                        <li class="next"><a href="https://blog.yyyak.com/post/huaweiwatch2/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        
+
+                    </ul>
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </div>
+    <div class="col-md-4">
+        
+<aside>
+    <div class="row">
+	  
+		<div class="col-xs-12 col-sm-4 col-md-12">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9557285789637667" data-ad-slot="2229256520" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+		</div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Recent Posts</h2>
+                </div>
+                <div class="list-group">
+                    
+                    <a href="/post/teraterm/" class="list-group-item">Teratermから日本語が入力できない</a>
+                    
+                    <a href="/post/huaweiwatch2/" class="list-group-item">Huawei Watch2にアップデートが来た！</a>
+                    
+                    <a href="/post/anawifi/" class="list-group-item">ANA国内線の無料Wifiを使ってみた</a>
+                    
+                    <a href="/post/wslconfig/" class="list-group-item">WSLConfigの使い方</a>
+                    
+                    <a href="/post/choco/" class="list-group-item">Chocolateyを使ってWindowsのプログラムを管理</a>
+                    
+                    <a href="/post/vslinux/" class="list-group-item">Visual Studio ver15.7でのLinux開発</a>
+                    
+                    <a href="/post/huawerwatch/" class="list-group-item">Huawei Watch2 Classic</a>
+                    
+                    <a href="/post/wf100x/" class="list-group-item">WF-1000Xレビュー</a>
+                    
+                    <a href="/post/braava/" class="list-group-item">ブラーバジェットでクイックルワイパーのシートを使う！</a>
+                    
+                    <a href="/post/kairos2017/" class="list-group-item">Kairos Watch倒産したみたい</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tags</h2>
+                </div>
+                <div class="list-group">
+                    
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/android" class="list-group-item">
+                        <span class="badge">8</span>
+                        android
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/ebook" class="list-group-item">
+                        <span class="badge">3</span>
+                        ebook
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/howto" class="list-group-item">
+                        <span class="badge">18</span>
+                        howto
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/linux" class="list-group-item">
+                        <span class="badge">13</span>
+                        linux
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/make" class="list-group-item">
+                        <span class="badge">3</span>
+                        make
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/money" class="list-group-item">
+                        <span class="badge">1</span>
+                        money
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/movie" class="list-group-item">
+                        <span class="badge">1</span>
+                        movie
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/network" class="list-group-item">
+                        <span class="badge">8</span>
+                        network
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/research" class="list-group-item">
+                        <span class="badge">1</span>
+                        research
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/review" class="list-group-item">
+                        <span class="badge">25</span>
+                        review
+                    </a>
+                    
+                    
+                    <a href="https://blog.yyyak.com/tags/windows" class="list-group-item">
+                        <span class="badge">9</span>
+                        windows
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+    </div>
+</div>
+
+</div>
+<hr>
+
+<footer class="container copy">
+    <p>&copy; 2019  Make &amp; Review </p>
+
+</footer>
+<link rel="stylesheet" href="https://blog.yyyak.com/css/lightbox.css"  />
+<link rel="stylesheet" href="https://blog.yyyak.com/css/highlight.css" />
+<link rel="stylesheet" href="https://blog.yyyak.com/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://blog.yyyak.com/css/styles.css" />
+<script src="https://blog.yyyak.com/js/jquery-2.1.3.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://blog.yyyak.com/js/highlight-9.4.0.min.js"></script>
+<script async src="https://blog.yyyak.com/js/lightbox.js"></script>
+<script async src="https://blog.yyyak.com/js/bootstrap-3.3.1.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-65248081-1', 'auto');
+ga('send', 'pageview');</script>
+</body>
+</html>
+
