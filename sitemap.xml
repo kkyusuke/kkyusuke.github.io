@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yyyak.com/post/kaspersky/</loc>
+    <lastmod>2019-01-22T13:23:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yyyak.com/post/teraterm/</loc>
     <lastmod>2019-01-21T13:19:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -395,7 +402,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/howto/</loc>
-    <lastmod>2018-07-10T01:40:00+09:00</lastmod>
+    <lastmod>2019-01-22T13:23:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -416,7 +423,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/</loc>
-    <lastmod>2019-01-21T13:19:00+09:00</lastmod>
+    <lastmod>2019-01-22T13:23:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -444,7 +451,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/post/</loc>
-    <lastmod>2019-01-21T13:19:00+09:00</lastmod>
+    <lastmod>2019-01-22T13:23:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -472,7 +479,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/windows/</loc>
-    <lastmod>2018-07-10T01:40:00+09:00</lastmod>
+    <lastmod>2019-01-22T13:23:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

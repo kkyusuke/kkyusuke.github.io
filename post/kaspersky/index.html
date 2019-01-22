@@ -17,13 +17,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Security Bulletinsについて &middot; Make &amp; Review">
+<meta property="og:title" content="カスペルスキーとエンジニアの程よい関係 &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Android Security Bulletinsについて
+    カスペルスキーとエンジニアの程よい関係
     
 </title>
 
@@ -91,12 +91,12 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2016-12-10T11:23+09:00">
-                        2016.12.10 11:23
+                    <time itemprop="datePublished" datetime="2019-01-22T13:23+09:00">
+                        2019.1.22 13:23
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/android_secutiry/" itemprop="url">Android Security Bulletinsについて</a>
+                    <a href="https://blog.yyyak.com/post/kaspersky/" itemprop="url">カスペルスキーとエンジニアの程よい関係</a>
                 </h1>
             </header>
 		  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9557285789637667" data-ad-slot="6812209801" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -104,86 +104,61 @@
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>Androidの「セキュリティパッチレベル」について説明します。
+                <p>Kasperskyのネットワーク設定を提案します。
+</p>
 
-<iframe class="bookmarklet hatena-embed" src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html" title="Android Security Bulletins | Android Open Source Project" style="border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;"><a href="https://source.android.com/security/bulletin/index.html" target="\_blank">Android Security Bulletins | Android Open Source Project</a></iframe></p>
+<h1 id="ネットワーク設定は諸刃の剣">ネットワーク設定は諸刃の剣</h1>
 
-<h2 id="セキュリティパッチレベルの確認の仕方">セキュリティパッチレベルの確認の仕方</h2>
+<p>Kasperskyは有名なウイルス対策ソフトですが、ネットワーク保護に関しては「やりすぎ」だと思います。変更すべき設定とその根拠を並べます。</p>
 
-<p>Android端末を購入するとき、Androidのバージョンを調べる人は多いと思います。だいたい年1回ごとにアップデートされ、開発コード名はアルファベット順にお菓子の名前が割り当てられます。
-KitkatとかMarshmallowとかのあれです。</p>
+<p>まずはは左下の設定マークから「詳細→ネットワーク」と進んで以下の画面を出して下さい。</p>
 
-<p>お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。</p>
+<p><img width="579" alt="2019-01-22.png" src="https://qiita-image-store.s3.amazonaws.com/0/347148/83ba718b-d155-e4b3-7528-c46fbe5b8dfe.png"></p>
 
-<a href="/images/android_sec_level.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/android_sec_level.png" alt="" width="200" itemprop="thumbnailUrl"/>
-</a>
+<h1 id="トラフィック処理">トラフィック処理</h1>
 
+<h3 id="お勧めする設定-無効">お勧めする設定：無効</h3>
 
-<p>なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。</p>
+<p>チェックを外して下さい</p>
 
-<h2 id="セキュリティパッチレベルとは">セキュリティパッチレベルとは？</h2>
+<h3 id="理由">理由</h3>
 
-<p>セキュリティパッチレベルは基準となる日付で表記されており、その一覧は<a href="https://source.android.com/security/bulletin/index.html">Android Security Bulletins</a>から確認できます。日付が後の方が、セキュリティがしっかりしているという事になります。</p>
+<p>WEBサイトを閲覧すると、そのサイトのHTMLファイルに無条件にKasperskyのJavaScriptが埋め込まれます。WEBサイトの挙動を監視するスクリプトですが、WEB開発中にデバッグし難くなるなどの弊害があります。</p>
 
-<p>例えば2016年11月では、1日・5日・6日の3種類が用意されています。
-2016/11/01では、主に以下の脆弱性に対処する必要があります。</p>
+<h1 id="ネットワークポート">ネットワークポート</h1>
+
+<h3 id="お勧めする設定-設定したネットワークポートのみを監視">お勧めする設定：設定したネットワークポートのみを監視</h3>
+
+<p>いくつかのポートだけ監視して下さい。
+更に、80,443番ポートの監視は無効化してきましょう。
+<img width="343" alt="2019-01-22 (1).png" src="https://qiita-image-store.s3.amazonaws.com/0/347148/606445ac-68bf-5775-1993-e08662c9bcec.png"></p>
+
+<h3 id="理由-1">理由</h3>
+
+<p>すべて監視するのはPCへの負荷が高いです。一部だけで十分でしょう。</p>
+
+<p>私はWSL(Windows Subsystem for Linux)を使っていますが、80,443番ポートを監視していると<code>apt</code>,<code>wget</code>,<code>git</code>辺りが全部使えなくなりました。
+「監視」と言っている割に、中身も変わっているようです・・・</p>
+
+<h1 id="暗号化された接続のスキャン">暗号化された接続のスキャン</h1>
+
+<h3 id="お勧めする設定-暗号化された接続をスキャンしない">お勧めする設定：「暗号化された接続をスキャンしない」</h3>
+
+<h3 id="理由-2">理由</h3>
+
+<p>悪名高いKasperskyの独自機能ですね。暗号化された通信ですら、Kasperskyの前では丸裸になり、ネットバンキングのパスワードもクレジットカード番号もすべてKasperskyに把握されます。オレオレSSL証明書をインストールして動作しているようです。
+Kasperskyをそこまで無条件に信頼出来ないので、私は無効にしています。</p>
+
+<p>この設定を無効にした直後は、ブラウザのキャッシュ等を削除しましょう。キャッシュ削除前には繋がらなくなるサイト(Gmail等)がありました。</p>
+
+<h1 id="その他">その他</h1>
 
 <ul>
-<li>CVE-2016-6699</li>
-<li>CVE-2016-6700</li>
-<li>他</li>
+<li>「Mozilla FirefoxおよびThunderbird」という設定も、前節同様の理由で無効化した方が良いです。</li>
+<li>上述の設定をすると、ChromeのKaspersky拡張機能は動作しなくなりました。削除しましょう。</li>
 </ul>
 
-<p>2016/11/05では、2016/11/01で対応される脆弱性に加えて主に以下に対処する必要があります。</p>
-
-<ul>
-<li>CVE-2016-6725</li>
-<li>CVE-2016-6828</li>
-<li>他</li>
-</ul>
-
-<p>2016/11/06では、2016/11/05に加えて以下に対処します。</p>
-
-<ul>
-<li>CVE-2016-5195</li>
-</ul>
-
-<p>このように、各セキュリティレベルには「対処すべき脆弱性」が定められており、それらにすべて対応出来た端末だけが当該パッチレベルを表示できます。
-Androidはセキュリティの対応がグダグダであることが問題となっていますが、Googleもその現状を何とかしたいと考えているようです。セキュリティパッチレベルは2015年10月から始まっています。</p>
-
-<h2 id="androidのバージョンとセキュリティパッチレベルについて">Androidのバージョンとセキュリティパッチレベルについて</h2>
-
-<p><a href="https://source.android.com/security/bulletin/index.html">Android Security Bulletins</a>では、各脆弱性がAndroidのどのバージョンで改修されるかが分かります。
-例えばCVE-2016-6703では以下のように示されます。</p>
-
-<table>
-<thead>
-<tr>
-<th>CVE</th>
-<th>参照</th>
-<th>重大度</th>
-<th>更新対象のGoogle端末</th>
-<th>更新対象のAOSPバージョン</th>
-<th>報告日</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>CVE-2016-6703</td>
-<td>A-30765246</td>
-<td>高</td>
-<td>なし</td>
-<td>4.4.4, 5.0.2, 5.1.1<br>6.0, 6.0.1</td>
-<td>Google 社内</td>
-</tr>
-</tbody>
-</table>
-
-<p>この例の場合Android6.0.1ならパッチがアップされていますが、おそらくAndroid3.0系ではパッチがありません。（脆弱性そのものに関係ないかもしれません。）</p>
-
-<p>問題は、メーカがそのアップデートを反映させるかどうかです。こういったセキュリティの心配に対してわかりやすさを提供してくれるのが「セキュリティパッチレベル」と言うことが出来そうです。</p>
+<p>NortonからKasperskyに乗り換えた際には、Kaspersky由来のトラブルに苦労させられました。設計思想が違うのだとは思いますが、私にとっての良い塩梅を示しました。KasperskyはPremiumライセンス（台数無制限）があるので、うまく活用したいですね。</p>
             </div>
 			
 		  <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9557285789637667" data-ad-slot="5506156558"></ins>
@@ -204,16 +179,16 @@ Androidはセキュリティの対応がグダグダであることが問題と�
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            review
+                            howto
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/android" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            android
+                            windows
                         </a>
                     </li>
                     
@@ -229,13 +204,13 @@ Androidはセキュリティの対応がグダグダであることが問題と�
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/egit_slow/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/sandisk_wireless/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/teraterm/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
