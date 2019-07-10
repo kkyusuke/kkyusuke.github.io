@@ -6,8 +6,82 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2019</rights>
-    <updated>2019-07-10 04:24:00 &#43;0900 JST</updated>
+    <updated>2019-07-10 13:38:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>古いGeforceのHDR対応</title>
+          <link>https://blog.yyyak.com/post/hdr/</link>
+          <pubDate>Wed, 10 Jul 2019 13:38:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/hdr/</guid>
+          <description>&lt;p&gt;色々な言説が溢れていて困ったので、HDRに対応しているかどうかの議論をまとめました。
+&lt;/p&gt;
+
+&lt;h1 id=&#34;hdrとは&#34;&gt;HDRとは&lt;/h1&gt;
+
+&lt;p&gt;そもそもHDRとは何なのでしょう。このページに辿り着いたあなたは、輝度が重要ということは知っているかもしれません。
+色域や出力ビット数について気にしている人もいるようです。&lt;/p&gt;
+
+&lt;p&gt;端的に言うと、より明るいディスプレイを取り扱うための規格です。
+今日の一般的なディスプレイは、せいぜい250cd/m2程度の明るさが出せる程度だそうです。一方、HDR映像制作の統一規格HDR10では1000cd/m2が想定されています。
+HDR10対応のディスプレイにそのままこれまでの信号を入力すると、明るい色はでるかもしれませんが、暗めのディスプレイで表現出来ていた微妙な色合いが表現出来なくなってしまいます。
+それに対応するために現れたのが、各種HDR規格であり、HDR対応製品なのです。&lt;/p&gt;
+
+&lt;h1 id=&#34;こみ上げる疑問たち&#34;&gt;こみ上げる疑問たち&lt;/h1&gt;
+
+&lt;h2 id=&#34;hdr信号を出力するには最新のインターフェースが必要&#34;&gt;HDR信号を出力するには最新のインターフェースが必要？&lt;/h2&gt;
+
+&lt;p&gt;必要です。HDRは輝度の幅広さから、これまでの各色8bit出力の信号では表現力が足りません。
+DisplayHDR規格では、信号は10bit以上であるべし、とされています。&lt;/p&gt;
+
+&lt;p&gt;Displayportの場合、2K出力ならば多くの場合問題ありません。4K60Hzで出力するなら、DP1.2以上への対応が必須です。4K144Hzで出力するなら、DP1.4以上が必須です。&lt;/p&gt;
+
+&lt;h2 id=&#34;quadroは10bit出力できるからhdr対応&#34;&gt;Quadroは10bit出力できるからHDR対応？&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://amzn.to/2XIWLE5&#34;&gt;Quadro&lt;/a&gt;は古くからデザイナー向けに用いられてきていて、10bit出力に対応しています。Photoshopなどで画像を除くと、階調表現に優れるそうです。&lt;a href=&#34;https://amzn.to/2JrpOmv&#34;&gt;Geforce&lt;/a&gt;の10bit出力は限定されており、DirectXを用いた描画でしか使えません。&lt;/p&gt;
+
+&lt;p&gt;とにかく、Geforceは10bit限定サポート、Quadroはフルサポート。sRGBの8bitよりは進化していて、実際のところDisplayHDR規格は10bit以上での出力で認証をもらえます。じゃあ、どんなグラボでもHDRはOKなのでは・・・？&lt;/p&gt;
+
+&lt;p&gt;違います。GeforceならばGTX10xx世代からしかHDRは扱えません。
+そもそもHDRに10bit出力が必須なだけで、10bit出力は必ずしもHDR対応ではないのです。
+古くからあるsRGBは等間隔に輝度を割り当てられていましたが、HDR10ではそういうことはありません。図を描くと曲線になるように色の割り当てが行われているので、それに対応しないといけないのです。&lt;/p&gt;
+
+&lt;h2 id=&#34;1000cd-m2ほど明るくないディスプレイなのにhdr認証されているのはなぜ&#34;&gt;1000cd/m2ほど明るくないディスプレイなのにHDR認証されているのはなぜ？&lt;/h2&gt;
+
+&lt;p&gt;要は、HDR10特有の色表現に対応していればOKなのです。&lt;/p&gt;
+
+&lt;p&gt;古くから存在するsRGBの想定輝度が80cd/m2だった事を考えると、基準となる輝度と実際のディスプレイの輝度というものは、どうでも良いみたいです。みんなが1,000cd/m2のディスプレイを用意するなんて現実的じゃないですしね。&lt;/p&gt;
+
+&lt;h2 id=&#34;結局のところ-このグラボは対応しているのだろうか&#34;&gt;結局のところ、このグラボは対応しているのだろうか？&lt;/h2&gt;
+
+&lt;p&gt;HDR対応のディスプレイに接続しているのに、Windows10の設定画面でHDRに設定できなければ、おそらく対応していません。HDR対応直後には形だけ設定できていたりしたのですが、誤りだったようです。&lt;/p&gt;
+
+&lt;p&gt;HDRディスプレイがないけれど気になる、という場合には、&lt;a href=&#34;https://support.microsoft.com/ja-jp/help/4040263/windows-10-hdr-advanced-color-settings&#34;&gt;マイクロソフトのヘルプページ&lt;/a&gt;に良くまとまっています。
+この手順を踏んでNGならば対応していません。&lt;/p&gt;
+
+&lt;p&gt;ちなみにNvidiaのコントロールパネルからもHDR関連の設定が行えるようです。私のマシンの場合、どう頑張っても&amp;rdquo;HDR(64bit)&amp;ldquo;が選択できないので、やはり対応していないのでしょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/hdr0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/hdr0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h1 id=&#34;まとめ&#34;&gt;まとめ&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Geforceなら10xx世代以上がHDR対応&lt;/li&gt;
+&lt;li&gt;HDRは輝度だけでなく、各色10bit表現が大事。ただし10bitだからHDRではない&lt;/li&gt;
+&lt;li&gt;民生品では、輝度は実は重視されていない。400cd/m2程度でもDisplayHDR認証はもらえる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;自分なりに調べた事をまとめました。EW-3270というHDR対応ディスプレイを購入したのがきっかけですが、グラボは古いのでHDRでは使えていません。使ってみたいですね。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=FFFFFF&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07BQWD83J&amp;linkId=f46af250487b706dbcc1151ece6a353b&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=FFFFFF&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07HRZ7LFB&amp;linkId=23ec27b6ed1a76f767c7b2cd95eb89c4&#34;&gt;&lt;/iframe&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -4942,42 +5016,6 @@ OSSですが、有償サポートも行われています。
 &amp;gt; www.google.com
 # comment 以下に解決結果が表示されればOK
 &lt;/code&gt;&lt;/pre&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>ひかり回線が繋がらなくなる問題</title>
-          <link>https://blog.yyyak.com/post/Router_NAT/</link>
-          <pubDate>Sun, 11 Oct 2015 08:30:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/Router_NAT/</guid>
-          <description>&lt;p&gt;光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-&lt;a href=&#34;https://blog.yyyak.com/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;も関係しています。
-&lt;/p&gt;
-
-&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-
-&lt;p&gt;自宅の光回線が、プロバイダを変更してから定期的に繋がらなくなる問題がありました。
-光終端装置（ルータ機能付き, PR-400NE）を再起動すると解決しますが、数日するとまた繋がらなくなっていまいます。&lt;/p&gt;
-
-&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
-
-&lt;p&gt;「NAT溢れ」が原因のようです。NATは内容に応じて各端末に通信の振り分けを行う機能です。
-NATはどの通信をどこに転送するかをリストにして覚えているのですが、このリストが長くなりすぎるとハングアップしてしまうルータがあるようです。
-PR-400NEなどのルータはこの問題が起こることで有名らしいです。&lt;/p&gt;
-
-&lt;h2 id=&#34;解決策&#34;&gt;解決策&lt;/h2&gt;
-
-&lt;p&gt;NATのリストを定期的に削除するよう設定してあげれば良いようです。&lt;a href=&#34;https://blog.yyyak.com/post/push/&#34;&gt;こちらの投稿&lt;/a&gt;で説明していますが、SPI設定で値を小さくしてあげればOKです。
-たとえば、TCP:2400, UDP:300, ICMP:300などで良いでしょう。（写真の設定では問題が発生するはずです。）
-&lt;img src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;でも&#34;&gt;でも・・・&lt;/h2&gt;
-
-&lt;p&gt;この設定でも、OCNやInterlinkの時は問題なく通信できていたんですよね・・・。IIJになってからおかしくなってしまいました。
-もしかしたらプロバイダの変更時期がたまたま重複しただけで他の問題が発生しているのかもしれません。
-とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。&lt;/p&gt;</description>
         </item>
       
     

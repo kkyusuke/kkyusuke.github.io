@@ -17,13 +17,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="インターネットに繋がらないときの５つのコマンド（Linux編） &middot; Make &amp; Review">
+<meta property="og:title" content="古いGeforceのHDR対応 &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    インターネットに繋がらないときの５つのコマンド（Linux編）
+    古いGeforceのHDR対応
     
 </title>
 
@@ -91,12 +91,12 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2017-09-24T06:20+09:00">
-                        2017.9.24 06:20
+                    <time itemprop="datePublished" datetime="2019-07-10T13:38+09:00">
+                        2019.7.10 13:38
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/network_check_linux/" itemprop="url">インターネットに繋がらないときの５つのコマンド（Linux編）</a>
+                    <a href="https://blog.yyyak.com/post/hdr/" itemprop="url">古いGeforceのHDR対応</a>
                 </h1>
             </header>
 		  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9557285789637667" data-ad-slot="6812209801" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
@@ -104,148 +104,70 @@
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。
+                <p>色々な言説が溢れていて困ったので、HDRに対応しているかどうかの議論をまとめました。
 </p>
 
-<h2 id="ping">ping</h2>
+<h1 id="hdrとは">HDRとは</h1>
 
-<p>pingは指定したアドレスからの応答があるかどうかをチェックできるコマンドです。
-本当にインターネットに繋がっていないのか、特定のソフトウェアの不具合なのかを切り分ける時に使います。</p>
+<p>そもそもHDRとは何なのでしょう。このページに辿り着いたあなたは、輝度が重要ということは知っているかもしれません。
+色域や出力ビット数について気にしている人もいるようです。</p>
 
-<pre><code>$ ping www.google.co.jp -c 3
-PING www.google.co.jp (216.58.197.227) 56(84) bytes of data.
-64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=1 ttl=54 time=6.15 ms
-64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=2 ttl=54 time=5.94 ms
-64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=3 ttl=54 time=6.34 ms
+<p>端的に言うと、より明るいディスプレイを取り扱うための規格です。
+今日の一般的なディスプレイは、せいぜい250cd/m2程度の明るさが出せる程度だそうです。一方、HDR映像制作の統一規格HDR10では1000cd/m2が想定されています。
+HDR10対応のディスプレイにそのままこれまでの信号を入力すると、明るい色はでるかもしれませんが、暗めのディスプレイで表現出来ていた微妙な色合いが表現出来なくなってしまいます。
+それに対応するために現れたのが、各種HDR規格であり、HDR対応製品なのです。</p>
 
---- www.google.co.jp ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2001ms
-rtt min/avg/max/mdev = 5.943/6.148/6.348/0.165 ms
-</code></pre>
+<h1 id="こみ上げる疑問たち">こみ上げる疑問たち</h1>
 
-<p>cオプションで回数を指定できます。指定しない場合はpingを送信し続けるのでCtrl-cで終了する必要があります。
-パケットロス(%で表示されている)が発生している場合、接続出来ていません。</p>
+<h2 id="hdr信号を出力するには最新のインターフェースが必要">HDR信号を出力するには最新のインターフェースが必要？</h2>
 
-<p>セキュリティのためにpingに応答しないサーバもあるので、Googleなどの有名どころにPingするのがコツです。</p>
+<p>必要です。HDRは輝度の幅広さから、これまでの各色8bit出力の信号では表現力が足りません。
+DisplayHDR規格では、信号は10bit以上であるべし、とされています。</p>
 
-<h3 id="まとめ">まとめ</h3>
+<p>Displayportの場合、2K出力ならば多くの場合問題ありません。4K60Hzで出力するなら、DP1.2以上への対応が必須です。4K144Hzで出力するなら、DP1.4以上が必須です。</p>
 
-<ul>
-<li>pingが上手く出来ている　→　ネットワークの問題ではない</li>
-<li>pingが上手く出来ていない　→　ネットワークの問題！次のコマンドに進む。</li>
-</ul>
+<h2 id="quadroは10bit出力できるからhdr対応">Quadroは10bit出力できるからHDR対応？</h2>
 
-<h2 id="ifconfig">ifconfig</h2>
+<p><a href="https://amzn.to/2XIWLE5">Quadro</a>は古くからデザイナー向けに用いられてきていて、10bit出力に対応しています。Photoshopなどで画像を除くと、階調表現に優れるそうです。<a href="https://amzn.to/2JrpOmv">Geforce</a>の10bit出力は限定されており、DirectXを用いた描画でしか使えません。</p>
 
-<p>ネットワークの設定を確認するためのコマンドです。ここではIPアドレスが割り当てられているかを確認しましょう。
-（以下の例では一部がXXXの伏せ字になっています。）</p>
+<p>とにかく、Geforceは10bit限定サポート、Quadroはフルサポート。sRGBの8bitよりは進化していて、実際のところDisplayHDR規格は10bit以上での出力で認証をもらえます。じゃあ、どんなグラボでもHDRはOKなのでは・・・？</p>
 
-<pre><code>$ ifconfig
-eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
-        inet 192.168.0.4  netmask 255.255.255.0  broadcast 192.168.0.255
-        ether 52:54:0e:XX:XX:XX  txqueuelen 1000  (Ethernet)
-        RX packets 284216981  bytes 105292149937 (98.0 GiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 58073843  bytes 46613813274 (43.4 GiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-</code></pre>
+<p>違います。GeforceならばGTX10xx世代からしかHDRは扱えません。
+そもそもHDRに10bit出力が必須なだけで、10bit出力は必ずしもHDR対応ではないのです。
+古くからあるsRGBは等間隔に輝度を割り当てられていましたが、HDR10ではそういうことはありません。図を描くと曲線になるように色の割り当てが行われているので、それに対応しないといけないのです。</p>
 
-<p>コマンドを実行したときにinetという部分にIPアドレスが表示されていれば、IPアドレスの取得は出来ています。</p>
+<h2 id="1000cd-m2ほど明るくないディスプレイなのにhdr認証されているのはなぜ">1000cd/m2ほど明るくないディスプレイなのにHDR認証されているのはなぜ？</h2>
 
-<p>新しいOSでは<code>ip -a</code>コマンドを使う必要があるかも知れません。</p>
+<p>要は、HDR10特有の色表現に対応していればOKなのです。</p>
 
-<h3 id="正しいipアドレス">正しいIPアドレス</h3>
+<p>古くから存在するsRGBの想定輝度が80cd/m2だった事を考えると、基準となる輝度と実際のディスプレイの輝度というものは、どうでも良いみたいです。みんなが1,000cd/m2のディスプレイを用意するなんて現実的じゃないですしね。</p>
 
-<p>普通は、以下のようになっているはずです。</p>
+<h2 id="結局のところ-このグラボは対応しているのだろうか">結局のところ、このグラボは対応しているのだろうか？</h2>
 
-<ul>
-<li>192.168.(0~255).(1~254)</li>
-<li>172.(16~31).(0~255).(1~254)</li>
-<li>10.(0~255).(0~255).(1~254)</li>
-</ul>
+<p>HDR対応のディスプレイに接続しているのに、Windows10の設定画面でHDRに設定できなければ、おそらく対応していません。HDR対応直後には形だけ設定できていたりしたのですが、誤りだったようです。</p>
 
-<p>特殊な場合ですが、もしIPアドレスを取得しているならその値が設定されている必要があります。</p>
+<p>HDRディスプレイがないけれど気になる、という場合には、<a href="https://support.microsoft.com/ja-jp/help/4040263/windows-10-hdr-advanced-color-settings">マイクロソフトのヘルプページ</a>に良くまとまっています。
+この手順を踏んでNGならば対応していません。</p>
 
-<h3 id="まとめ-1">まとめ</h3>
+<p>ちなみにNvidiaのコントロールパネルからもHDR関連の設定が行えるようです。私のマシンの場合、どう頑張っても&rdquo;HDR(64bit)&ldquo;が選択できないので、やはり対応していないのでしょう。</p>
+
+<a href="/images/hdr0.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/hdr0.png" alt="" width="300" itemprop="thumbnailUrl"/>
+</a>
+
+
+<h1 id="まとめ">まとめ</h1>
 
 <ul>
-<li>正しいIPアドレスが設定されている　→　別のネットワーク設定に問題あり！次のコマンドに進む。</li>
-<li>正しいIPアドレスが設定されていない　→　別の機器でも確かめてみる</li>
-<li>やっぱりおかしい　→　IPアドレスを割り当てるDHCPという仕組みがおかしい。普通ルータがする仕事なので、ルータを再起動してみよう。</li>
+<li>Geforceなら10xx世代以上がHDR対応</li>
+<li>HDRは輝度だけでなく、各色10bit表現が大事。ただし10bitだからHDRではない</li>
+<li>民生品では、輝度は実は重視されていない。400cd/m2程度でもDisplayHDR認証はもらえる</li>
 </ul>
 
-<h2 id="nslookup">nslookup</h2>
+<p>自分なりに調べた事をまとめました。EW-3270というHDR対応ディスプレイを購入したのがきっかけですが、グラボは古いのでHDRでは使えていません。使ってみたいですね。</p>
 
-<p>IPアドレスが正しく設定されているのにインターネットに接続出来ない時には、DNSの設定間違いを疑います。
-とりあえず以下のコマンドを実行してみましょう。</p>
-
-<pre><code>$ nslookup www.google.co.jp
-Server:         XXX.XXX.XXX.XXX
-Address:        XXX.XXX.XXX.XXX#53
-
-Non-authoritative answer:
-Name:   www.google.co.jp
-Address: 216.58.196.227
-</code></pre>
-
-<p>実行してみて、answerが表示されましたか？もしされなければ、以下のコマンドも試してみて下さい。</p>
-
-<pre><code>$ nslookup www.google.co.jp 8.8.8.8
-</code></pre>
-
-<h3 id="まとめ-2">まとめ</h3>
-
-<ul>
-<li>どちらの結果もおかしい　→　別のネットワーク設定に問題あり！次のコマンドに進む。</li>
-<li>２つ目の結果は大丈夫　→　DNSサーバの調子が悪いようです。デフォルトDNSサーバの設定を変更しましょう。(/etc/resolv.confなどを参照)</li>
-<li>１つ目の結果は大丈夫 or どちらの結果も大丈夫　→　インターネットには接続出来ているはずです。</li>
-</ul>
-
-<h2 id="routeコマンド">routeコマンド</h2>
-
-<p>この辺りまで来ると、このネットワークトラブルは一筋縄では行かないです。とりあえずコマンドだけ紹介しておきましょう。
-OSによっては、<code>ip route show</code>が代替です。</p>
-
-<pre><code>$ route
-カーネルIP経路テーブル
-受信先サイト    ゲートウェイ    ネットマスク   フラグ Metric Ref 使用数 インタフェース
-default         192.168.0.1     255.255.255.255 U     0      0        0 eth0
-</code></pre>
-
-<p>たくさん出力されるとは思いますが、大事なのは&rdquo;default&rdquo;です。
-この行のゲートウェイにルータのアドレスが設定されているかどうかが重要です。</p>
-
-<h3 id="まとめ-3">まとめ</h3>
-
-<ul>
-<li>ゲートウェイのアドレスがおかしい　→　ゲートウェイアドレスを設定し直そう！</li>
-<li>ゲートウェイのアドレスは正しい　→　別のネットワーク設定に問題あり！次のコマンドに進む。</li>
-</ul>
-
-<h2 id="arpコマンド">arpコマンド</h2>
-
-<p>このコマンドはIPアドレスとネットワークポートの対応付けを表示します。
-OSによっては、<code>ip n</code>が代替です。
-ルータのIPアドレスが、ルータに繋がるポートに対応づけられているか確認しましょう。
-以下の例では192.168.0.1（つまりgateway）がeth0に対応づけられています。</p>
-
-<pre><code>$ arp
-Address                  HWtype  HWaddress           Flags Mask            Iface
-192.168.0.1              ether   XX:XX:XX:XX:XX:XX   C                     eth0
-gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
-</code></pre>
-
-<h3 id="まとめ-4">まとめ</h3>
-
-<ul>
-<li>対応付けがおかしい　→　ネットワークサービスやPCそのものを再起動してみましょう</li>
-<li>対応付けは正しい　→　手詰まりです・・・</li>
-</ul>
-
-<h2 id="それでも解決しない時には">それでも解決しない時には</h2>
-
-<p>典型的なネットワークトラブルの枠を越えた問題が発生してしまっているようです。
-専門家に見てもらう必要があります。自分で何とかしたいときには<a href="https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/networking_guide/index">Redhatのマニュアル</a>などが役立つでしょう。</p>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07BQWD83J&linkId=f46af250487b706dbcc1151ece6a353b"></iframe>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07HRZ7LFB&linkId=23ec27b6ed1a76f767c7b2cd95eb89c4"></iframe>
             </div>
 			
 		  <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9557285789637667" data-ad-slot="5506156558"></ins>
@@ -266,16 +188,16 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            HowTo
+                            review
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            Linux
+                            windows
                         </a>
                     </li>
                     
@@ -291,13 +213,13 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/colormunki/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/firefox55/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/fossilsport/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
