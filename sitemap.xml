@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yyyak.com/post/fossilsport/</loc>
+    <lastmod>2019-07-10T04:24:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yyyak.com/post/android_maker/</loc>
     <lastmod>2019-02-26T11:44:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -395,7 +402,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/android/</loc>
-    <lastmod>2019-02-26T11:44:00+09:00</lastmod>
+    <lastmod>2019-07-10T04:24:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -430,7 +437,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/</loc>
-    <lastmod>2019-02-26T11:44:00+09:00</lastmod>
+    <lastmod>2019-07-10T04:24:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -458,7 +465,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/post/</loc>
-    <lastmod>2019-02-26T11:44:00+09:00</lastmod>
+    <lastmod>2019-07-10T04:24:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -472,7 +479,7 @@
   
   <url>
     <loc>https://blog.yyyak.com/tags/review/</loc>
-    <lastmod>2019-02-26T11:44:00+09:00</lastmod>
+    <lastmod>2019-07-10T04:24:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
