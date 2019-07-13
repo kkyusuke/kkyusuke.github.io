@@ -36,7 +36,8 @@ HDR10対応のディスプレイにそのままこれまでの信号を入力す
 &lt;p&gt;必要です。HDRは輝度の幅広さから、これまでの各色8bit出力の信号では表現力が足りません。
 DisplayHDR規格では、信号は10bit以上であるべし、とされています。&lt;/p&gt;
 
-&lt;p&gt;Displayportの場合、2K出力ならば多くの場合問題ありません。4K60Hzで出力するなら、DP1.2以上への対応が必須です。4K144Hzで出力するなら、DP1.4以上が必須です。&lt;/p&gt;
+&lt;p&gt;Displayportの場合、2K出力ならば多くの場合問題ありません。4K60Hzで出力するなら、DP1.2以上への対応が必須です。4K144Hzで出力するなら、DP1.4以上が必須です。
+ただしHDRは色空間が違ってくるので、単に10bitあるだけでは足りません。実際にはDP1.4が必要です。&lt;/p&gt;
 
 &lt;h3 id=&#34;quadroは10bit出力できるからhdr対応&#34;&gt;Quadroは10bit出力できるからHDR対応？&lt;/h3&gt;
 
@@ -44,9 +45,10 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 
 &lt;p&gt;とにかく、Geforceは10bit限定サポート、Quadroはフルサポート。sRGBの8bitよりは進化していて、実際のところDisplayHDR規格は10bit以上での出力で認証をもらえます。じゃあ、どんなグラボでもHDRはOKなのでは・・・？&lt;/p&gt;
 
-&lt;p&gt;違います。GeforceならばGTX10xx世代からしかHDRは扱えません。
+&lt;p&gt;違います。Geforceならば&lt;del&gt;GTX10xx&lt;/del&gt;GTX9xx世代からしかHDRは扱えません。
 そもそもHDRに10bit出力が必須なだけで、10bit出力は必ずしもHDR対応ではないのです。
-古くからあるsRGBは等間隔に輝度を割り当てられていましたが、HDR10ではそういうことはありません。図を描くと曲線になるように色の割り当てが行われているので、それに対応しないといけないのです。&lt;/p&gt;
+&lt;del&gt;古くからあるsRGBは等間隔に輝度を割り当てられていましたが、HDR10ではそういうことはありません。図を描くと曲線になるように色の割り当てが行われているので、それに対応しないといけないのです。&lt;/del&gt;
+10bitかつHDR特有の色空間などを扱うためには、HDMI2.0/DP1.4が必要となり、結果的にGTX9xx世代が必要となるのです。&lt;/p&gt;
 
 &lt;h3 id=&#34;1000cd-m2ほど明るくないディスプレイなのにhdr認証されているのはなぜ&#34;&gt;1000cd/m2ほど明るくないディスプレイなのにHDR認証されているのはなぜ？&lt;/h3&gt;
 
@@ -71,7 +73,8 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Geforceなら10xx世代以上がHDR対応&lt;/li&gt;
+&lt;li&gt;Geforceなら&lt;del&gt;GTX10xx&lt;/del&gt;9xx世代以上がHDR対応&lt;/li&gt;
+&lt;li&gt;DP1.4/HDMI2.0対応が必要&lt;/li&gt;
 &lt;li&gt;HDRは輝度だけでなく、各色10bit表現が大事。ただし10bitだからHDRではない&lt;/li&gt;
 &lt;li&gt;民生品では、輝度は実は重視されていない。400cd/m2程度でもDisplayHDR認証はもらえる&lt;/li&gt;
 &lt;/ul&gt;
