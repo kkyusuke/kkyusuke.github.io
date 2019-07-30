@@ -45,10 +45,11 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 
 &lt;p&gt;とにかく、Geforceは10bit限定サポート、Quadroはフルサポート。sRGBの8bitよりは進化していて、実際のところDisplayHDR規格は10bit以上での出力で認証をもらえます。じゃあ、どんなグラボでもHDRはOKなのでは・・・？&lt;/p&gt;
 
-&lt;p&gt;違います。Geforceならば&lt;del&gt;GTX10xx&lt;/del&gt;GTX9xx世代からしかHDRは扱えません。
+&lt;p&gt;違います。Geforceならば&lt;del&gt;GTX10xx&lt;/del&gt; (訂正)GTX9xx世代からしかHDRは扱えません。
 そもそもHDRに10bit出力が必須なだけで、10bit出力は必ずしもHDR対応ではないのです。
-&lt;del&gt;古くからあるsRGBは等間隔に輝度を割り当てられていましたが、HDR10ではそういうことはありません。図を描くと曲線になるように色の割り当てが行われているので、それに対応しないといけないのです。&lt;/del&gt;
-10bitかつHDR特有の色空間などを扱うためには、HDMI2.0/DP1.4が必要となり、結果的にGTX9xx世代が必要となるのです。&lt;/p&gt;
+&lt;del&gt;古くからあるsRGBは等間隔に輝度を割り当てられていましたが、HDR10ではそういうことはありません。図を描くと曲線になるように色の割り当てが行われているので、それに対応しないといけないのです。&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;10bitかつHDR特有の色空間などを扱うためには、HDMI2.0/DP1.4が必要となり、結果的にGTX9xx世代が必要となるのです。&lt;/p&gt;
 
 &lt;h3 id=&#34;1000cd-m2ほど明るくないディスプレイなのにhdr認証されているのはなぜ&#34;&gt;1000cd/m2ほど明るくないディスプレイなのにHDR認証されているのはなぜ？&lt;/h3&gt;
 
@@ -73,7 +74,7 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Geforceなら&lt;del&gt;GTX10xx&lt;/del&gt;9xx世代以上がHDR対応&lt;/li&gt;
+&lt;li&gt;Geforceなら9xx世代以上がHDR対応&lt;/li&gt;
 &lt;li&gt;DP1.4/HDMI2.0対応が必要&lt;/li&gt;
 &lt;li&gt;HDRは輝度だけでなく、各色10bit表現が大事。ただし10bitだからHDRではない&lt;/li&gt;
 &lt;li&gt;民生品では、輝度は実は重視されていない。400cd/m2程度でもDisplayHDR認証はもらえる&lt;/li&gt;
