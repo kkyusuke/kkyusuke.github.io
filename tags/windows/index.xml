@@ -11,6 +11,163 @@
     
       
         <item>
+          <title>Windows10でHDRを試す</title>
+          <link>https://blog.yyyak.com/post/hdr2/</link>
+          <pubDate>Mon, 12 Aug 2019 13:31:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/hdr2/</guid>
+          <description>&lt;p&gt;HDR環境を構築したので、ポイントを解説します。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;windows10で-hdr-https-amzn-to-2h0w2ug-する難しさ&#34;&gt;Windows10で&lt;a href=&#34;https://amzn.to/2H0W2Ug&#34;&gt;HDR&lt;/a&gt;する難しさ&lt;/h2&gt;
+
+&lt;p&gt;HDR対応ディスプレイやTVが増えていますが、多くのレビュー記事ではPS4での検証しか済ませていないものが多い気がします。
+Windows10では様々な条件を満たさなくてはいけないせいで、多くのレビューはそこまですることを諦めてしまっているようです。&lt;/p&gt;
+
+&lt;iframe class=&#34;hatenablogcard&#34; style=&#34;width:100%;height:175px;margin:15px 0;max-width:680px;&#34; title=&#34;【PR】PS4 Proで徹底検証!!違いのわかるゲーミングモニター「BenQ EW3270U」レビュー - GAME Watch&#34; src=&#34;https://hatenablog-parts.com/embed?url=https://game.watch.impress.co.jp/docs/topic/special/1158694.html&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;しかしTVではなくディスプレイを買う以上、多くのユーザーはPCでHDR映像を見ようと思っているはずです。ここではWindows10でどのようにHDR映像を表示するかを解説します。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07C9FFCF3&amp;linkId=44988066e175cd8860f1e05b3afdd4a3&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07NH8S9JL&amp;linkId=81e05859921fa090216460b6ab0ba93e&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07GSMZKS1&amp;linkId=3d16121405e454badf5de88c45919dc4&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07LC3L6JG&amp;linkId=ddff11b4e8b3806bfc53c7873323a31e&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;動作を確認した環境&#34;&gt;動作を確認した環境&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Geforce GTX1660&lt;/li&gt;
+&lt;li&gt;EW-3270U (31.5型4K HDRディスプレイ)&lt;/li&gt;
+&lt;li&gt;DisplayPort1.4 ケーブル&lt;/li&gt;
+&lt;li&gt;Windows10 1903&lt;/li&gt;
+&lt;li&gt;Nvidia Driver 431.60&lt;/li&gt;
+&lt;li&gt;Google Chrome 76&lt;/li&gt;
+&lt;li&gt;Netflixアプリ 6.93.478&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;HDRを使用するためには、多くの場合Intelの内蔵GPUかNvidiaのビデオカードが必要です。
+私の場合には、GeforceのGPUを使いました。&lt;/p&gt;
+
+&lt;p&gt;HDRのコンテンツの再生には、Youtube（Google Chrome）とNetflix（ストアアプリ版）を使いました。ゲーマーではないのでゲームでの確認はしていません。
+Blu-ray UHDでも4K/HDR映像が楽しめますが、最新のCPUが必要なので私の環境ではテスト出来ませんでした。&lt;/p&gt;
+
+&lt;h3 id=&#34;ポイント１-ハードウェアを揃える&#34;&gt;ポイント１： ハードウェアを揃える&lt;/h3&gt;
+
+&lt;p&gt;とにかく、対応ハードが必要です。ディスプレイはもちろんのこと、GPU・ケーブルもしっかり揃えましょう。対応環境は利用したいソースに応じて変わります。&lt;/p&gt;
+
+&lt;p&gt;最も簡単に用意できるのはYoutubeで、CPUかGPUを対応機種にすればOKです。ゲームも条件は変わりませんが、相応のレンダリング性能が必要になるので10万円以上のものが必須と思われます。Ultra HDブルーレイの再生には、最新のCPUが必要という点が特殊です。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;サービス&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;備考&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;リンク&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Youtube&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;おそらく最も整備しやすいHDR&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://support.google.com/youtube/answer/3306741?hl=en&#34;&gt;公式ヘルプ&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Netflix&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Youtubeとほぼ同様だが、マルチディスプレイで要注意&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://help.netflix.com/ja/node/23931&#34;&gt;公式ヘルプ&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;アサシンクリード Origins&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;条件としては上と変わらないが、4K/HDRには相応のGPUが必須&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://support.ubi.com/pt-BR/faqs/000032589/Setting-up-HDR-on-PC-Beta-ACO&#34;&gt;公式QA&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;PowerDVD UHD&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;CPU条件が最も厳しい&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://jp.cyberlink.com/stat/bd-support/jpn/index.jsp&#34;&gt;公式ツール&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;ポイント２-ソフトウェアを整備する&#34;&gt;ポイント２：ソフトウェアを整備する&lt;/h3&gt;
+
+&lt;p&gt;OSは最新ビルドのWindows10を用意しましょう。設定画面からHDRを有効にします。
+「HDRのゲームとアプリを使用する」をONにしましょう。
+このトグルスイッチが表示されない場合、HDRに対応出来ていません。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ちなみに詳細設定は「Windows HD Color 設定」から行えます。私のディスプレイは「HDRビデオのストリーミング」という部分がONに出来ませんが、特に問題なく使えています。&lt;/p&gt;
+
+&lt;p&gt;古いWindows10だと、SDRアプリの色が薄くなるという問題がありました。この問題は解決しているようです。誤ったHDR対応をしたアプリ(VS Code 1.36など)は表示が変になるので注意しましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;ポイント３-hdcp2-2に留意する&#34;&gt;ポイント３：HDCP2.2に留意する&lt;/h3&gt;
+
+&lt;p&gt;HDCPは著作権保護された映像をセキュアに出力するための規格です。
+HDR対応したディスプレイは最新のHDCP2.2に対応していますが、古いディスプレイはHDCP1.4などにしか対応出来ていません。&lt;/p&gt;
+
+&lt;p&gt;マルチディスプレイ環境の場合、HDCP1.4のディスプレイがあるとHDRコンテンツが再生出来ない可能性があるので注意しましょう。Google Chromeは大丈夫でしたが、Netflixはダメでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;実際に鑑賞しよう&#34;&gt;実際に鑑賞しよう！&lt;/h2&gt;
+
+&lt;h3 id=&#34;youtube&#34;&gt;Youtube&lt;/h3&gt;
+
+&lt;p&gt;HDRが再生出来る場合、HDRアイコンが表示されます。
+分かりやすいものとしては、&lt;a href=&#34;https://www.youtube.com/watch?v=9uyyOHIidMA&amp;amp;t=63s&#34;&gt;こちらの動画&lt;/a&gt;がお勧めです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; alt=&#34;&#34; width=&#34;600&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;ちなみに、&lt;a href=&#34;https://www.youtube.com/watch?time_continue=2&amp;amp;v=mkggXE5e2yk&#34;&gt;こちらのHDR動画&lt;/a&gt;はHDRに出来ませんでした。
+HDRには二種類のガンマカーブ(PQ, HLG)というものがあるそうです。PCディスプレイの場合はPQのみの対応が多いようです。HLGは互換性を重視したテレビ放送向けだそうです。
+Youtube上でHDR再生できないものは、おそらくこの辺りが原因です。&lt;/p&gt;
+
+&lt;h3 id=&#34;netflix&#34;&gt;Netflix&lt;/h3&gt;
+
+&lt;p&gt;Netflixは必要な動作環境をしっかり提示してくれているので、その通りに用意すれば問題ないはずです。
+HDR対応の動画では「ULTRA HD 4K」などと表示されます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; alt=&#34;&#34; width=&#34;350&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;私は当初HDCP1.4ディスプレイ混在のマルチディスプレイだったのですが、この状態だと上のロゴは表示されずにHDでした。
+ご注意下さい。&lt;/p&gt;
+
+&lt;h3 id=&#34;本当にhdrなのか&#34;&gt;本当にHDRなのか？？？&lt;/h3&gt;
+
+&lt;p&gt;Youtubeのサンプル動画はかなり鮮やかなので分かりやすいですが、Netflixなどでは本当にHDRなのか心配になります。
+その時に役立つ2つの方法を書いておきます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ctrl+Shift+Alt+D&lt;/li&gt;
+&lt;li&gt;Xperia XZ2などで同じ動画を再生&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Netflixで一つ目のショートカットを実行すると、解像度などが表示されます。少なくとも4Kであることは分かるはずですし、ビットレート(16Mbps)からHDR動画であることが予想できます。&lt;/p&gt;
+
+&lt;p&gt;HDR対応スマホとの比較も役立ちます。ただし、Xperia XZ2 Compactで見るNetflixのUHD動画は鮮やかに表示される印象でした。あまり主観に頼っても良くないですね。
+むしろ薄暗い映像が分かりやすくなるのがHDRなので、その辺りを実感できると良いですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;HDRをWindows10で見るのは難しいですが、Netflixが比較的分かりやすく条件を提示してくれているので、それを目標に環境を整備してみてはいかがでしょうか。
+実際のHDRコンテンツは鮮やかさよりも薄暗いシーンに強いわけなので、なかなか実感は難しいかもしれません。それでも、ダイナミックなコントラストの映像美には圧巻です。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>古いGeforceのHDR対応</title>
           <link>https://blog.yyyak.com/post/hdr/</link>
           <pubDate>Wed, 10 Jul 2019 13:38:00 JST</pubDate>
