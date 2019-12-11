@@ -11,6 +11,131 @@
     
       
         <item>
+          <title>2019年版！古いタブレットをサブディスプレイ化</title>
+          <link>https://blog.yyyak.com/post/spacedesk/</link>
+          <pubDate>Wed, 11 Dec 2019 05:29:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/spacedesk/</guid>
+          <description>&lt;p&gt;古くて動作の遅いタブレットがサブディスプレイとして使えるか検証してみました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;動作の遅いタブレットをどうするか&#34;&gt;動作の遅いタブレットをどうするか&lt;/h2&gt;
+
+&lt;p&gt;2019年現在、タブレット市場は小康状態に突入したようで、iPad一強状態がデフォルトになってきた感があります。
+次はiPadを購入するとすると、いらなくなった古いAndroidタブレットをどうするかが問題になります。&lt;/p&gt;
+
+&lt;p&gt;この記事では、動作がもっさりとした古いAndroidタブレットをWindowsマシンのサブディスプレイとして使ってみることにしましょう。ちなみに、ディスプレイの内容を転送するだけでなく、タップがちゃんとクリックとして認識されるアプリだけを調べました！&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07PQRFYLF&amp;linkId=7efc27bb8e1161267dd632201bdda113&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B077B919QM&amp;linkId=12881adb8a9b24d9a0c094640d860899&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B0794PLC5W&amp;linkId=b413ab66543932a30f36a85addd6159d&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;spacedeskアプリをインストール&#34;&gt;Spacedeskアプリをインストール&lt;/h2&gt;
+
+&lt;p&gt;過去様々な有料アプリがあったようですが、2019年現在でもコンスタントに更新されているサブディスプレイ化アプリは無償のSpacedeskだけです。今日では、このアプリを使うしかないでしょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;android側にクライアントをインストール&#34;&gt;Android側にクライアントをインストール&lt;/h3&gt;
+
+&lt;p&gt;サブディスプレイ化したい端末にアプリをインストールします。Androidだけでなく、iPadやWinタブ、さらにはブラウザも使えるみたいです。詳しいことは&lt;a href=&#34;https://spacedesk.net/&#34;&gt;公式サイト&lt;/a&gt;を見て下さい。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;https://play.google.com/store/apps/details?id=ph.spacedesk.beta&amp;hl=ja&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&#39;&gt;&lt;img alt=&#39;Google Play で手に入れよう&#39; src=&#39;https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png&#39; style=&#39;max-width:150px;&#39;/&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;pcにサーバアプリをインストール&#34;&gt;PCにサーバアプリをインストール&lt;/h3&gt;
+
+&lt;p&gt;接続元はWindowsアプリしかありません。こちらは&lt;a href=&#34;https://spacedesk.net/&#34;&gt;公式サイト&lt;/a&gt;からDownloadタブをたどって下さい。Windowsアプリが見つかるはずです。&lt;/p&gt;
+
+&lt;h2 id=&#34;接続する&#34;&gt;接続する&lt;/h2&gt;
+
+&lt;h3 id=&#34;同じwifiネットワークに無線で接続&#34;&gt;同じWifiネットワークに無線で接続&lt;/h3&gt;
+
+&lt;p&gt;まずはPC側のアプリを起動してみます。特段の設定は必要ありませんが、「&amp;hellip;」ボタンから機能のON/OFFが設定できます。サブディスプレイを使わないときはOFFにしておくと良いでしょう。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;Androidタブレットは、PCと同じネットワーク内に接続するようにして下さい。外出先から自分のPCにアクセスしたりは出来ません。
+サーバが稼働した状態でAndroidアプリを起動すると、一覧に自分のPCのIPアドレスが表示されます。タップすればPC側の内容が表示されるはずです。タブレット上をタップすると、ちゃんとクリックしたものとして動作させられますよ！！&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect1.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h3 id=&#34;上級編-有線接続&#34;&gt;（上級編）有線接続&lt;/h3&gt;
+
+&lt;p&gt;無線経由だと遅そうなので、有線で接続してみます。今回はタブレットのUSBテザリング機能を使うことにしました。USBテザリング機能をONにしてPCにUSB接続すれば、お互いのUSBケーブル越しに通信出来るようになります。IPアドレスが割り当てあられるので、接続方法は無線の時と同じです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_wired.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;h2 id=&#34;使い物になるのか-チェック&#34;&gt;使い物になるのか？？チェック&lt;/h2&gt;
+
+&lt;p&gt;「使えるのは分かったけど、遅延が結構大きいんじゃないの？」と思う方が多そうなので、実験してみました。&lt;/p&gt;
+
+&lt;p&gt;今回つかった測定ツールは&lt;a href=&#34;https://www.humanbenchmark.com/&#34;&gt;Human Benchmark&lt;/a&gt;です。もとは人間の反射神経を調べるためのものですが、逆に反射速度は同時間帯では対して変わらないだろう、という仮定のもと、タップから時間測定までに掛かる遅延を計測してみます。&lt;/p&gt;
+
+&lt;p&gt;４つの測定パターンを用意しました。PC単体が早いはずなのは当然ですが、その他がどうなるのか気になります。
+* PC上でそのまま実行
+* タブレット上でそのまま実行
+* サブディスプレイ化したタブレット（無線）
+* サブディスプレイ化したタブレット（有線）&lt;/p&gt;
+
+&lt;p&gt;実験結果は以下の通り。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;遅延(ms)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;PC単体&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;260&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;タブ単体&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;750&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;サブディスプレイ化（無線）&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;450&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;サブディスプレイ化（有線）&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;なんと、普通にタブレットとして使うよりも、サブディスプレイ化した方が良いという結果が得られました。
+有線と無線の結果はあまり大きくはありませんでしたが、少しでも快適に使いたいなら有線にした方が良いでしょう。タブレットの充電を気にしなくても良い点がメリットです。&lt;/p&gt;
+
+&lt;p&gt;ネットワーク設定は面倒なので、無線でも問題ない気はします。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Androidタブレットをサブディスプレイ化してみた&lt;/li&gt;
+&lt;li&gt;工夫すれば有線でも使える&lt;/li&gt;
+&lt;li&gt;遅延は思ったよりも小さい。もっさりタブレットをそのまま使うより早い！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;皆さんの参考になれば幸いです。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Fossilスポーツスマートウォッチ</title>
           <link>https://blog.yyyak.com/post/fossilsport/</link>
           <pubDate>Wed, 10 Jul 2019 04:24:00 JST</pubDate>
