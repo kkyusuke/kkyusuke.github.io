@@ -58,8 +58,8 @@
 &lt;p&gt;Androidタブレットは、PCと同じネットワーク内に接続するようにして下さい。外出先から自分のPCにアクセスしたりは出来ません。
 サーバが稼働した状態でAndroidアプリを起動すると、一覧に自分のPCのIPアドレスが表示されます。タップすればPC側の内容が表示されるはずです。タブレット上をタップすると、ちゃんとクリックしたものとして動作させられますよ！！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect1.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -67,8 +67,8 @@
 
 &lt;p&gt;無線経由だと遅そうなので、有線で接続してみます。今回はタブレットのUSBテザリング機能を使うことにしました。USBテザリング機能をONにしてPCにUSB接続すれば、お互いのUSBケーブル越しに通信出来るようになります。IPアドレスが割り当てあられるので、接続方法は無線の時と同じです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_wired.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -77,6 +77,11 @@
 &lt;p&gt;「使えるのは分かったけど、遅延が結構大きいんじゃないの？」と思う方が多そうなので、実験してみました。&lt;/p&gt;
 
 &lt;p&gt;今回つかった測定ツールは&lt;a href=&#34;https://www.humanbenchmark.com/&#34;&gt;Human Benchmark&lt;/a&gt;です。もとは人間の反射神経を調べるためのものですが、逆に反射速度は同時間帯では対して変わらないだろう、という仮定のもと、タップから時間測定までに掛かる遅延を計測してみます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
 
 &lt;p&gt;４つの測定パターンを用意しました。PC単体が早いはずなのは当然ですが、その他がどうなるのか気になります。
 * PC上でそのまま実行
