@@ -18,13 +18,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Firefox55はどれくらい速くなった？ &middot; Make &amp; Review">
+<meta property="og:title" content="古いマシンをUEFI化する &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Firefox55はどれくらい速くなった？
+    古いマシンをUEFI化する
     
 </title>
 
@@ -92,114 +92,84 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2017-08-14T00:03+09:00">
-                        2017.8.14 00:03
+                    <time itemprop="datePublished" datetime="2019-12-12T05:30+09:00">
+                        2019.12.12 05:30
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/firefox55/" itemprop="url">Firefox55はどれくらい速くなった？</a>
+                    <a href="https://blog.yyyak.com/post/uefi/" itemprop="url">古いマシンをUEFI化する</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <img src="/images/firefox55.JPG" alt="" style="max-width: 100%;" itemprop="thumbnailUrl"/>
+                <p>古いBIOS方式のマシンをUEFIに変更します。
+</p>
 
-<p><a href="https://www.mozilla.org/ja/firefox/">Firefox</a>55がついにリリースされました。
-改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？</p>
+<h2 id="uefiのメリット">UEFIのメリット</h2>
 
-<p></p>
+<p>UEFIのマシンが普及して久しいですが、依然としてBIOSブートをしている環境が多いかと思います。
+UEFIに対応したマシンでも、安全のためか古いBIOS方式のままOSがインストールされて出荷されており、そのまま使っている方も多いでしょう。
+（私の5年前のDELLのPCはそうでした。同時期に買ったLet&rsquo;s NoteはUEFIで設定されていました。）</p>
 
-<h2 id="firefox55のポイント">Firefox55のポイント</h2>
+<p>UEFIのメリットは「起動の速さ」です。逆に言うと、起動さえしてしまえば大差はありません。
+どうしても起動を早くしたいという方のために、UEFI化の方法を紹介します。</p>
 
-<p>Firefox55の<a href="https://www.mozilla.org/en-US/firefox/55.0/releasenotes/">リリースノート</a>によると、主に以下のような変更点が挙げられています。速度面では、大量のタブを扱う際の挙動が改善したようです。</p>
+<h2 id="uefiブートかどうかの確認">UEFIブートかどうかの確認</h2>
 
-<ul>
-<li>WebVRのサポート</li>
-<li>インストーラの改善、Windowsでの64bit版デフォルト化</li>
-<li>大量のタブを復元するのが高速に</li>
-<li>アドレスバー等のデザイン変更</li>
-</ul>
+<p>本当はBIOSの設定を覗いてもらいたのですが、簡単なチェック方法として起動画面があります。
+メーカーのロゴのまま「待機の丸いサイン」がでていれば、UEFI化済みと思われます。</p>
 
-<h2 id="firefox54との速度比較">Firefox54との速度比較</h2>
+<p>メーカーロゴが消えてWindowsロゴになってから「待機の丸いサイン」が表示される場合、BIOSブートかもしれません。以下の動画はWindowsロゴが出てきてしまっています。</p>
 
-<h3 id="実験環境">実験環境</h3>
+<video autoplay loop playsinline width="240px" src="/images/uefi_old.mp4">
+<p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+</video>
 
-<p>Let&rsquo;s Note RZ4で実験しました。CoreM-5Y71,8GBメモリ,512GBSSD(SATA接続)搭載モデルです。Creator&rsquo;s Update適用済みWindows10を使用しています。Firefox64bit版での実験結果です。</p>
+<h2 id="uefi化">UEFI化</h2>
 
-<h3 id="起動時間とメモリ">起動時間とメモリ</h3>
+<p>BIOSブートの場合には、HDDは&rdquo;MBR&rdquo;という情報が必要です。一方でUEFIブートの場合には&rdquo;GPT&rdquo;という情報が必要です。
+WindowsにはこのMBRをGPTに変換するツールが付属されているので、使ってみましょう。</p>
 
-<p>結果を表に示しましたが、あまり速くなっていないですね…。体感では違いがありません。少しメモリ消費量が少なくなっている気がします。</p>
+<p>管理者モードでPowerShellを起動します。</p>
 
-<table>
-<thead>
-<tr>
-<th align="center">Ver</th>
-<th align="right">起動時間</th>
-<th align="right">メモリー消費量</th>
-</tr>
-</thead>
+<h3 id="コマンドを実行">コマンドを実行</h3>
 
-<tbody>
-<tr>
-<td align="center">Firefox 54</td>
-<td align="right">6.2秒</td>
-<td align="right">212MB</td>
-</tr>
+<p>複数OSインストールしていなければ、以下のコマンドで行けるはずです。</p>
 
-<tr>
-<td align="center">Firefox 55</td>
-<td align="right">6.5秒</td>
-<td align="right">202MB</td>
-</tr>
-</tbody>
-</table>
+<pre><code>XXX&gt; mbr2gpt /convert /disk:0 /allowFullOS
+</code></pre>
 
-<h3 id="webサイトの読み込み時間">WEBサイトの読み込み時間</h3>
+<p>ただし、メーカ固有の回復パーティションなどが設定されている場合、変換出来ない場合があります。
+以下のYoutube動画が参考になったので貼っておきます。ポイントはmapオプションを使うことです。</p>
 
-<p>私個人の私的な経験から、読み込みに時間がかかると感じられる２つのウェブページ(<a href="https://www.youtube.com/?hl=ja&amp;gl=JP">Youtube</a>と<a href="http://www.wacom.com/ja-jp">Wacom</a>の公式ページ)を使って読み込み時間を計測しました。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V_Duvy8aI1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<table>
-<thead>
-<tr>
-<th align="center">Ver</th>
-<th align="right">Youtube</th>
-<th align="right">Wacom</th>
-</tr>
-</thead>
+<p>話を吹っ飛ばすと、C:\Windows\setuperrに書かれているログを読み、以下のような文を探します。この場合、18というタイプが変換出来なかったので、何か指定してあげる必要があります。</p>
 
-<tbody>
-<tr>
-<td align="center">Firefox 54</td>
-<td align="right">3.5秒</td>
-<td align="right">3.8秒</td>
-</tr>
+<pre><code>日付　Error　ValidateLayout: Cannot map MBR partition type 18. Please .......
+</code></pre>
 
-<tr>
-<td align="center">Firefox 55</td>
-<td align="right">4.0秒</td>
-<td align="right">7.3秒</td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://en.wikipedia.org/wiki/GUID_Partition_Table">このページ</a>で変換先のGUIDを探します。よく分からなければ、Basic data partition (EBD0A0A2-B9E5-4433-87C0-68B6B72699C7)でいいでしょう。従って、実行すべきコマンドは以下のようになります。</p>
 
-<p>あれ？むしろ遅くなってる…。アップデート直後だから調子が悪いのかもしれません。</p>
+<pre><code>XXX&gt; mbr2gpt /convert /disk:0 /allowFullOS /map:18=EBD0A0A2-B9E5-4433-87C0-68B6B72699C7
+</code></pre>
+
+<h3 id="uefiに変更">UEFIに変更</h3>
+
+<p>コマンドが終了したら、PCを再起動します。DELキーやF11キーなどでBIOS画面に入り、ブートモードを変更します。古いモードのままだと起動しません。</p>
 
 <h2 id="まとめ">まとめ</h2>
 
+<p>起動を速くするためのUEFI化の方法を説明しました。</p>
+
 <ul>
-<li>Firefox55は54と比べて普段使いで大きな違いはなし！</li>
-<li>普段からたくさんのタブを使う人は違いが実感できる？</li>
+<li>Windows付属のmbr2gptを使えば良い</li>
+<li>回復(OEM)パーティションにはmapオプションが必要</li>
+<li>UEFIに対応したマシンでしか使えないテクニックなので注意</li>
 </ul>
 
-<h3 id="追記">追記</h3>
-
-<a href="/images/firefox55_threads.JPG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/firefox55_threads.JPG" alt="" width="400" itemprop="thumbnailUrl"/>
-</a>
-
-
-<p>Firefox55からはパフォーマンス調整のためのオプションが追加されて、PCの性能によってはあえて性能が制限されることもあるようです。私の場合は、スレッド数1が既定の設定となっていました。サイトの表示が遅かったのはこのせいかもしれないです。メモリ消費量が微減したのも納得です。</p>
+<p>以上でした。</p>
             </div>
 
 	    <script type="text/javascript">
@@ -217,16 +187,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/make" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            review
+                            make
                         </a>
                     </li>
                     
                     <li>
                         <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            Windows
+                            windows
                         </a>
                     </li>
                     
@@ -242,13 +212,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/network_check_linux/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous"><a href="https://blog.yyyak.com/post/stripe_live/"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/android_sec_compare/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/filterless/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>

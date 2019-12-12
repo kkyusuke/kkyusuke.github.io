@@ -11,6 +11,178 @@
     
       
         <item>
+          <title>Stripeの本人確認</title>
+          <link>https://blog.yyyak.com/post/stripe_live/</link>
+          <pubDate>Thu, 12 Dec 2019 06:00:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/stripe_live/</guid>
+          <description>&lt;p&gt;クレジットカード決済Stripeの本人確認に関する情報が少なかったのでまとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;本番環境移行後の手続き&#34;&gt;本番環境移行後の手続き&lt;/h2&gt;
+
+&lt;h3 id=&#34;流れ&#34;&gt;流れ&lt;/h3&gt;
+
+&lt;p&gt;Stripeは本番環境には簡単に移行できますが、まだ書類仕事が残っています。
+一般に、次のような順を踏みます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;本番環境に移行する。その際、会社情報・個人情報などを入力する&lt;/li&gt;
+&lt;li&gt;実際のカードを使って決済できるようになる。&lt;/li&gt;
+&lt;li&gt;誰かがカード決済する&lt;/li&gt;
+&lt;li&gt;本人確認をするようにメールが来る。運転免許証などをアップする&lt;/li&gt;
+&lt;li&gt;初めて口座にお金が振り込まれる！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stripeの面白いところは、実際に決済が行われないと本人確認フェーズに進めない点です。
+このあたりをしっかり書いて欲しいのですが、国別に違うのか公式ドキュメントには言及がありません。&lt;/p&gt;
+
+&lt;h3 id=&#34;本番環境移行後でもテスト環境に戻れるの&#34;&gt;本番環境移行後でもテスト環境に戻れるの？&lt;/h3&gt;
+
+&lt;p&gt;戻れます。本番移行後もテスト時のデータが残っているので、両刀使いできます。&lt;/p&gt;
+
+&lt;h3 id=&#34;本人確認にパスできなかったらどうなるの&#34;&gt;本人確認にパスできなかったらどうなるの？&lt;/h3&gt;
+
+&lt;p&gt;誰かが決済しないと身分証アップロードのフェーズに入れないので、その決済分がどうなるかは気になるところです。
+残念ながら、分かりません。私は一発で通ってしまいました。ドキュメントもありません。&lt;/p&gt;
+
+&lt;h2 id=&#34;口座の名義と管理人の名義は違っても良い&#34;&gt;口座の名義と管理人の名義は違っても良い？&lt;/h2&gt;
+
+&lt;p&gt;Stripeには、いくつかの異なる情報を載せられます。個人の場合、以下のような感じです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;項目&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;アカウント情報&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;住所・電話番号のみ&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;公開ビジネス情報&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;顧客の明細やメールに表示される情報&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;事業情報&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;氏名と、登記番号や納税番号など（ただし納税番号は空欄でも良い）&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;銀行口座&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;振込先&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;私の場合、自分の名前を事業情報に設定しましたが、それ以外の情報は知人と運営している団体のものにしました。
+ゆうちょなら任意団体名義で口座が作れるので、口座情報もその通りです。これで審査に通りました。&lt;/p&gt;
+
+&lt;h3 id=&#34;任意団体でも使える&#34;&gt;任意団体でも使える？&lt;/h3&gt;
+
+&lt;p&gt;PTAや同窓会で使いたいというニーズがありそうですが、Stripeは使えるのでしょうか。&lt;/p&gt;
+
+&lt;p&gt;結論から言うと、代表者を立てて事業情報に登録すれば使えます。アカウントは個人アカウントになってしまいますが、明細やメールは団体の名前にすることが出来ます。「個人アカウント」という部分が構成員的にOKなら導入できます。&lt;/p&gt;
+
+&lt;h2 id=&#34;口座は簡単に変えられる&#34;&gt;口座は簡単に変えられる？&lt;/h2&gt;
+
+&lt;p&gt;口座が変わるとお金がすべて別の場所に流れてしまうので、セキュリティ的にもマネロン的にも重要です。&lt;/p&gt;
+
+&lt;p&gt;StripeのAPIには口座変更コマンドがありませんので、管理者がWEBコンソールから変更することになります。アカウントが乗っ取られた場合には売り上げを失う恐れがあるので、十分に注意しましょう。&lt;/p&gt;
+
+&lt;p&gt;なお、全く異なる名義の口座が設定された際にアラートが飛ぶかどうかはドキュメントには書かれていませんし、変更がどれくらいの時間で反映されるかも分かりません。もっとはっきりしてもらいたい部分です。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;Stripeで疑問になりそうなことをまとめました。任意団体関連の内容は、今のStripeの運用で確認しただけなので、今後変わるかもしれません。とにかくカード決済は危険な側面もありますので、慎重に導入を進めてください。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>古いマシンをUEFI化する</title>
+          <link>https://blog.yyyak.com/post/uefi/</link>
+          <pubDate>Thu, 12 Dec 2019 05:30:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/uefi/</guid>
+          <description>&lt;p&gt;古いBIOS方式のマシンをUEFIに変更します。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;uefiのメリット&#34;&gt;UEFIのメリット&lt;/h2&gt;
+
+&lt;p&gt;UEFIのマシンが普及して久しいですが、依然としてBIOSブートをしている環境が多いかと思います。
+UEFIに対応したマシンでも、安全のためか古いBIOS方式のままOSがインストールされて出荷されており、そのまま使っている方も多いでしょう。
+（私の5年前のDELLのPCはそうでした。同時期に買ったLet&amp;rsquo;s NoteはUEFIで設定されていました。）&lt;/p&gt;
+
+&lt;p&gt;UEFIのメリットは「起動の速さ」です。逆に言うと、起動さえしてしまえば大差はありません。
+どうしても起動を早くしたいという方のために、UEFI化の方法を紹介します。&lt;/p&gt;
+
+&lt;h2 id=&#34;uefiブートかどうかの確認&#34;&gt;UEFIブートかどうかの確認&lt;/h2&gt;
+
+&lt;p&gt;本当はBIOSの設定を覗いてもらいたのですが、簡単なチェック方法として起動画面があります。
+メーカーのロゴのまま「待機の丸いサイン」がでていれば、UEFI化済みと思われます。&lt;/p&gt;
+
+&lt;p&gt;メーカーロゴが消えてWindowsロゴになってから「待機の丸いサイン」が表示される場合、BIOSブートかもしれません。以下の動画はWindowsロゴが出てきてしまっています。&lt;/p&gt;
+
+&lt;video autoplay loop playsinline width=&#34;240px&#34; src=&#34;https://blog.yyyak.com/images/uefi_old.mp4&#34;&gt;
+&lt;p&gt;動画を再生するにはvideoタグをサポートしたブラウザが必要です。&lt;/p&gt;
+&lt;/video&gt;
+
+&lt;h2 id=&#34;uefi化&#34;&gt;UEFI化&lt;/h2&gt;
+
+&lt;p&gt;BIOSブートの場合には、HDDは&amp;rdquo;MBR&amp;rdquo;という情報が必要です。一方でUEFIブートの場合には&amp;rdquo;GPT&amp;rdquo;という情報が必要です。
+WindowsにはこのMBRをGPTに変換するツールが付属されているので、使ってみましょう。&lt;/p&gt;
+
+&lt;p&gt;管理者モードでPowerShellを起動します。&lt;/p&gt;
+
+&lt;h3 id=&#34;コマンドを実行&#34;&gt;コマンドを実行&lt;/h3&gt;
+
+&lt;p&gt;複数OSインストールしていなければ、以下のコマンドで行けるはずです。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;XXX&amp;gt; mbr2gpt /convert /disk:0 /allowFullOS
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ただし、メーカ固有の回復パーティションなどが設定されている場合、変換出来ない場合があります。
+以下のYoutube動画が参考になったので貼っておきます。ポイントはmapオプションを使うことです。&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/V_Duvy8aI1s&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;話を吹っ飛ばすと、C:\Windows\setuperrに書かれているログを読み、以下のような文を探します。この場合、18というタイプが変換出来なかったので、何か指定してあげる必要があります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;日付　Error　ValidateLayout: Cannot map MBR partition type 18. Please .......
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/GUID_Partition_Table&#34;&gt;このページ&lt;/a&gt;で変換先のGUIDを探します。よく分からなければ、Basic data partition (EBD0A0A2-B9E5-4433-87C0-68B6B72699C7)でいいでしょう。従って、実行すべきコマンドは以下のようになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;XXX&amp;gt; mbr2gpt /convert /disk:0 /allowFullOS /map:18=EBD0A0A2-B9E5-4433-87C0-68B6B72699C7
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;uefiに変更&#34;&gt;UEFIに変更&lt;/h3&gt;
+
+&lt;p&gt;コマンドが終了したら、PCを再起動します。DELキーやF11キーなどでBIOS画面に入り、ブートモードを変更します。古いモードのままだと起動しません。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;起動を速くするためのUEFI化の方法を説明しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windows付属のmbr2gptを使えば良い&lt;/li&gt;
+&lt;li&gt;回復(OEM)パーティションにはmapオプションが必要&lt;/li&gt;
+&lt;li&gt;UEFIに対応したマシンでしか使えないテクニックなので注意&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;以上でした。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Visual Studio ver15.7でのLinux開発</title>
           <link>https://blog.yyyak.com/post/vslinux/</link>
           <pubDate>Mon, 14 May 2018 14:06:00 JST</pubDate>

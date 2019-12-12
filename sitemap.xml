@@ -3,6 +3,33 @@
   
   
   <url>
+    <loc>https://blog.yyyak.com/post/stripe_live/</loc>
+    <lastmod>2019-12-12T06:00:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://blog.yyyak.com/post/uefi/</loc>
+    <lastmod>2019-12-12T05:30:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://blog.yyyak.com/post/filterless/</loc>
+    <lastmod>2019-12-12T04:34:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://blog.yyyak.com/post/spacedesk/</loc>
     <lastmod>2019-12-11T05:29:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
