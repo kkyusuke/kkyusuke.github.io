@@ -11,6 +11,158 @@
     
       
         <item>
+          <title>インターネットに繋がらないときの５つのコマンド（Linux編）</title>
+          <link>https://blog.yyyak.com/post/network_check_linux/</link>
+          <pubDate>Sun, 24 Sep 2017 06:20:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/network_check_linux/</guid>
+          <description>&lt;p&gt;「なぜかインターネットに繋がらない！」という時に便利なコマンドを紹介します。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ping&#34;&gt;ping&lt;/h2&gt;
+
+&lt;p&gt;pingは指定したアドレスからの応答があるかどうかをチェックできるコマンドです。
+本当にインターネットに繋がっていないのか、特定のソフトウェアの不具合なのかを切り分ける時に使います。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ping www.google.co.jp -c 3
+PING www.google.co.jp (216.58.197.227) 56(84) bytes of data.
+64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=1 ttl=54 time=6.15 ms
+64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=2 ttl=54 time=5.94 ms
+64 bytes from nrt13s49-in-f227.1e100.net (216.58.197.227): icmp_seq=3 ttl=54 time=6.34 ms
+
+--- www.google.co.jp ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 5.943/6.148/6.348/0.165 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;cオプションで回数を指定できます。指定しない場合はpingを送信し続けるのでCtrl-cで終了する必要があります。
+パケットロス(%で表示されている)が発生している場合、接続出来ていません。&lt;/p&gt;
+
+&lt;p&gt;セキュリティのためにpingに応答しないサーバもあるので、Googleなどの有名どころにPingするのがコツです。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pingが上手く出来ている　→　ネットワークの問題ではない&lt;/li&gt;
+&lt;li&gt;pingが上手く出来ていない　→　ネットワークの問題！次のコマンドに進む。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;ifconfig&#34;&gt;ifconfig&lt;/h2&gt;
+
+&lt;p&gt;ネットワークの設定を確認するためのコマンドです。ここではIPアドレスが割り当てられているかを確認しましょう。
+（以下の例では一部がXXXの伏せ字になっています。）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ifconfig
+eth0: flags=4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt;  mtu 1500
+        inet 192.168.0.4  netmask 255.255.255.0  broadcast 192.168.0.255
+        ether 52:54:0e:XX:XX:XX  txqueuelen 1000  (Ethernet)
+        RX packets 284216981  bytes 105292149937 (98.0 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 58073843  bytes 46613813274 (43.4 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;コマンドを実行したときにinetという部分にIPアドレスが表示されていれば、IPアドレスの取得は出来ています。&lt;/p&gt;
+
+&lt;p&gt;新しいOSでは&lt;code&gt;ip -a&lt;/code&gt;コマンドを使う必要があるかも知れません。&lt;/p&gt;
+
+&lt;h3 id=&#34;正しいipアドレス&#34;&gt;正しいIPアドレス&lt;/h3&gt;
+
+&lt;p&gt;普通は、以下のようになっているはずです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;192.168.(0~255).(1~254)&lt;/li&gt;
+&lt;li&gt;172.(16~31).(0~255).(1~254)&lt;/li&gt;
+&lt;li&gt;10.(0~255).(0~255).(1~254)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特殊な場合ですが、もしIPアドレスを取得しているならその値が設定されている必要があります。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ-1&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;正しいIPアドレスが設定されている　→　別のネットワーク設定に問題あり！次のコマンドに進む。&lt;/li&gt;
+&lt;li&gt;正しいIPアドレスが設定されていない　→　別の機器でも確かめてみる&lt;/li&gt;
+&lt;li&gt;やっぱりおかしい　→　IPアドレスを割り当てるDHCPという仕組みがおかしい。普通ルータがする仕事なので、ルータを再起動してみよう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;nslookup&#34;&gt;nslookup&lt;/h2&gt;
+
+&lt;p&gt;IPアドレスが正しく設定されているのにインターネットに接続出来ない時には、DNSの設定間違いを疑います。
+とりあえず以下のコマンドを実行してみましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup www.google.co.jp
+Server:         XXX.XXX.XXX.XXX
+Address:        XXX.XXX.XXX.XXX#53
+
+Non-authoritative answer:
+Name:   www.google.co.jp
+Address: 216.58.196.227
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;実行してみて、answerが表示されましたか？もしされなければ、以下のコマンドも試してみて下さい。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ nslookup www.google.co.jp 8.8.8.8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;まとめ-2&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;どちらの結果もおかしい　→　別のネットワーク設定に問題あり！次のコマンドに進む。&lt;/li&gt;
+&lt;li&gt;２つ目の結果は大丈夫　→　DNSサーバの調子が悪いようです。デフォルトDNSサーバの設定を変更しましょう。(/etc/resolv.confなどを参照)&lt;/li&gt;
+&lt;li&gt;１つ目の結果は大丈夫 or どちらの結果も大丈夫　→　インターネットには接続出来ているはずです。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;routeコマンド&#34;&gt;routeコマンド&lt;/h2&gt;
+
+&lt;p&gt;この辺りまで来ると、このネットワークトラブルは一筋縄では行かないです。とりあえずコマンドだけ紹介しておきましょう。
+OSによっては、&lt;code&gt;ip route show&lt;/code&gt;が代替です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ route
+カーネルIP経路テーブル
+受信先サイト    ゲートウェイ    ネットマスク   フラグ Metric Ref 使用数 インタフェース
+default         192.168.0.1     255.255.255.255 U     0      0        0 eth0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;たくさん出力されるとは思いますが、大事なのは&amp;rdquo;default&amp;rdquo;です。
+この行のゲートウェイにルータのアドレスが設定されているかどうかが重要です。&lt;/p&gt;
+
+&lt;h3 id=&#34;まとめ-3&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ゲートウェイのアドレスがおかしい　→　ゲートウェイアドレスを設定し直そう！&lt;/li&gt;
+&lt;li&gt;ゲートウェイのアドレスは正しい　→　別のネットワーク設定に問題あり！次のコマンドに進む。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;arpコマンド&#34;&gt;arpコマンド&lt;/h2&gt;
+
+&lt;p&gt;このコマンドはIPアドレスとネットワークポートの対応付けを表示します。
+OSによっては、&lt;code&gt;ip n&lt;/code&gt;が代替です。
+ルータのIPアドレスが、ルータに繋がるポートに対応づけられているか確認しましょう。
+以下の例では192.168.0.1（つまりgateway）がeth0に対応づけられています。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.0.1              ether   XX:XX:XX:XX:XX:XX   C                     eth0
+gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;まとめ-4&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;対応付けがおかしい　→　ネットワークサービスやPCそのものを再起動してみましょう&lt;/li&gt;
+&lt;li&gt;対応付けは正しい　→　手詰まりです・・・&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;それでも解決しない時には&#34;&gt;それでも解決しない時には&lt;/h2&gt;
+
+&lt;p&gt;典型的なネットワークトラブルの枠を越えた問題が発生してしまっているようです。
+専門家に見てもらう必要があります。自分で何とかしたいときには&lt;a href=&#34;https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/7/html/networking_guide/index&#34;&gt;Redhatのマニュアル&lt;/a&gt;などが役立つでしょう。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>宅内サーバを外部に公開する</title>
           <link>https://blog.yyyak.com/post/public_server/</link>
           <pubDate>Wed, 20 Apr 2016 00:38:00 JST</pubDate>
