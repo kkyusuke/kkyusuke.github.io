@@ -11,6 +11,156 @@
     
       
         <item>
+          <title>RHEL/CentOS8のAppStream 知識整理</title>
+          <link>https://blog.yyyak.com/post/cappstream/</link>
+          <pubDate>Fri, 20 Dec 2019 01:45:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/cappstream/</guid>
+          <description>&lt;p&gt;RHEL/CentOS8で導入されたAppStreamの仕組みが分かりにくかったので、調べたことをまとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;rhelのソフトウェアサポートポリシー&#34;&gt;RHELのソフトウェアサポートポリシー&lt;/h2&gt;
+
+&lt;p&gt;RHELやCentOSはインフラでも利用されている安定性重視のLinuxディストリビュションで、その評判に違わず10年間のセキュリティアップデートが受けられる最強のOSです。Windowsも同等程度のサポート期間を設けていますが、開発者に分かりやすいアーキテクチャを提供しているという点では一歩進んでいると言えるでしょう。&lt;/p&gt;
+
+&lt;p&gt;しかし、最新技術が好きな開発者からは嫌われてしまっているOSの一つでもあります。例えば、以下のような感じです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;パッケージが古すぎて、最新の機能が使えない（PHPやSQL,Apache WEBサーバのバージョンが古いなど）&lt;/li&gt;
+&lt;li&gt;ニューラルネットワーク関連のツールはUbuntuでテストされていることが多い（古いバージョンのパッケージしかないから）&lt;/li&gt;
+&lt;li&gt;Macと比べるとUIが貧弱&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;アップストリームの開発が終了した後も10年間セキュリティパッチをポートし続けてきたRedhatとコミュニティには頭が上がりませんが、彼らにとっても古いソフトウェアをサポートし続けるのは大変なことだったようです。RHEL8からは、モジュール(module)という概念が導入され、ソフトウェアのサポートポリシーが変更されました。彼らはこの仕組みをAppStreamと名付けています。&lt;/p&gt;
+
+&lt;h2 id=&#34;appstreamとは&#34;&gt;AppStreamとは&lt;/h2&gt;
+
+&lt;p&gt;AppStreamとは、RHEL8で発表された新しい概念です。
+ソフトウェアは以下の２つに分けられて配信されることになります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BaseOS: OSの動作に不可欠なパッケージ群。安定性が重視される&lt;/li&gt;
+&lt;li&gt;AppStream: 開発者が用いるパッケージ群。定期的にバージョンアップされる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;多くのパッケージはどちらかに属することになります。
+メリットとデメリットをまとめておきます。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;RHEL7&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;RHEL8 Base&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;RHEL8 Appstream&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;メリット&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;10年間のサポート&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;10年間のサポート&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;最新のパッケージ&lt;br&gt;複数のバージョンサポート&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;デメリット&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;・陳腐化しやすい&lt;br&gt;・Redhatが大変&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Redhatが大変だが、対象は少なめ&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;・10年間のサポートは受けられない&lt;br&gt;・異なるバージョンは共存出来ない&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;これまでのRHELではPHPやApacheなどのすべてのパッケージで10年間のサポートがありましたが、近頃のプロジェクトでは古すぎるパッケージはむしろ使われない事もありました。そこで、Redhatは思い切って10年サポートを辞めました。一方で、AppStreamを用いることで異なるバージョンを簡単に扱えるようにしました。注意したいのは、複数バージョンが同時に存在できるわけではないことです。アップグレード・ダウングレードが簡単にできるようになっています。&lt;/p&gt;
+
+&lt;h2 id=&#34;各ソフトウェアの状況&#34;&gt;各ソフトウェアの状況&lt;/h2&gt;
+
+&lt;h3 id=&#34;kernel-glibc-firewalldの場合&#34;&gt;kernel, glibc, firewalldの場合&lt;/h3&gt;
+
+&lt;p&gt;これらのソフトウェアはすべてBaseOSに収録されており、AppStreamには入っていません。従って、10年間大きな機能追加なく終わると思います。&lt;/p&gt;
+
+&lt;h3 id=&#34;postgresqlの場合&#34;&gt;PostgreSQLの場合&lt;/h3&gt;
+
+&lt;p&gt;このパッケージはAppStreamにのみ収録されています。
+どのバージョンが配信されているかは以下のように確認できます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo dnf module list postgresql
+CentOS-8 - AppStream
+Name                   Stream             Profiles
+postgresql             10 [d]             client, server [d]
+postgresql             9.6                client, server [d]
+
+Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以下のように普通にインストールすると、デフォルトのver.10がインストールされます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo dnf install postgresql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;デフォルトバージョン以外をインストールしたい場合には、以下のコマンドを入力します。すでに他のバージョンが入っている場合、ダウン・アップグレードが提案されます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo dnf install @postgresql:9.6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;pythonの場合&#34;&gt;Pythonの場合&lt;/h3&gt;
+
+&lt;p&gt;Pythonは人気のプログラミング言語ですが、RHEL系ではパッケージ管理などでも用いられています。RHEL8では以下の3つが用意されています。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;名前&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;レポジトリ&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;補足&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;platform-python&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;BaseOS&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;デバッグ用パッケージはAppStreamに収録&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;python36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;AppStream&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;これで1つのmodule&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;python27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Appstream&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;これで1つのmodule。2.7.15-22,2.7.15-24など複数バージョンあり&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;このうち、platform版は更新の少ないもので、開発者は原則利用しないことになります。pythonの場合はpython36で１つのmoduleにするようなので、今後python37という別のモジュールが登場する可能性もあります。この場合、２つのバージョンは共存出来るようになると思われます。追加のパッケージはPython3-numpyなどとなっているので、これは可能だと思われます。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、RHEL/CentOS8にはデフォルトではpythonコマンドは存在しません。以下のようなコマンドで手動で設定することになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;alternatives --set python /usr/bin/python3
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;AppStreamの知識整理をしました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;開発者は今後はAppStreamを用いることになる&lt;/li&gt;
+&lt;li&gt;AppStreamのパッケージは10年サポートされない&lt;/li&gt;
+&lt;li&gt;AppStreamでは単一モジュール内で複数バージョンが配信されるが、共存は出来ない&lt;/li&gt;
+&lt;li&gt;モジュール名が異なれば共存は可能。(Python27, Python36などの例)&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>2019年版・フィルターレス・スティック型掃除機</title>
           <link>https://blog.yyyak.com/post/filterless/</link>
           <pubDate>Thu, 12 Dec 2019 04:34:00 JST</pubDate>
@@ -2865,13 +3015,16 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
           <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
 速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
 
-&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;http://netspeed-tokyo.studio-radish.com&lt;/a&gt;
+測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;Radish&lt;/a&gt;を使いました。
 測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;結論としては、大満足です。回線はNTT東日本のままで何も変わりませんが、これまでに契約していたOCN、インターリンクよりも
-速度が速いです。地域や回線種別にも依るでしょうが、IIJは概ね品質は良いですね。&lt;/del&gt;
-近頃速度がかなり遅くなってきました。普通に使っていても明らかに遅いと感じるほどです。動画の閲覧は厳しいです。
+速度が速いです。地域や回線種別にも依るでしょうが、IIJは概ね品質は良いですね。&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;近頃速度がかなり遅くなってきました。普通に使っていても明らかに遅いと感じるほどです。動画の閲覧は厳しいです。
 ビック光はユーザが急激に増えていて速度が低下しているようなので、転用は当分控えることをおすすめします。（2015/11/02）&lt;/p&gt;
+
+&lt;p&gt;古い記事ですので、あまり参考にされないことをお勧めします。近年はIPv6を用いた高速接続が普及し始めており、そちらの使用を考えて下さい。（2019/12/20）&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
 

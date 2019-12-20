@@ -3,6 +3,15 @@
   
   
   <url>
+    <loc>https://blog.yyyak.com/post/cappstream/</loc>
+    <lastmod>2019-12-20T01:45:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://blog.yyyak.com/post/stripe_live/</loc>
     <lastmod>2019-12-12T06:00:00+09:00</lastmod>
     <changefreq>monthly</changefreq>

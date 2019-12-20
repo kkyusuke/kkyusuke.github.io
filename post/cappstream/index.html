@@ -17,13 +17,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux基礎講座：アプリケーション管理(yum/aptitude) &middot; Make &amp; Review">
+<meta property="og:title" content="RHEL/CentOS8のAppStream 知識整理 &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Linux基礎講座：アプリケーション管理(yum/aptitude)
+    RHEL/CentOS8のAppStream 知識整理
     
 </title>
 
@@ -91,149 +91,157 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2016-03-19T08:53+09:00">
-                        2016.3.19 08:53
+                    <time itemprop="datePublished" datetime="2019-12-20T01:45+09:00">
+                        2019.12.20 01:45
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/linux_basic_app/" itemprop="url">Linux基礎講座：アプリケーション管理(yum/aptitude)</a>
+                    <a href="https://blog.yyyak.com/post/cappstream/" itemprop="url">RHEL/CentOS8のAppStream 知識整理</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>アプリケーション管理をCUIで行いましょう。
+                <p>RHEL/CentOS8で導入されたAppStreamの仕組みが分かりにくかったので、調べたことをまとめました。
 </p>
 
-<h2 id="linuxのアプリケーション管理手法">Linuxのアプリケーション管理手法</h2>
+<h2 id="rhelのソフトウェアサポートポリシー">RHELのソフトウェアサポートポリシー</h2>
 
-<p>WindowsのアプリケーションインストールとLinuxとの対応を考えてみましょう。
-同じような概念ですが、一部異なるところがあることが表から分かるはずです。</p>
+<p>RHELやCentOSはインフラでも利用されている安定性重視のLinuxディストリビュションで、その評判に違わず10年間のセキュリティアップデートが受けられる最強のOSです。Windowsも同等程度のサポート期間を設けていますが、開発者に分かりやすいアーキテクチャを提供しているという点では一歩進んでいると言えるでしょう。</p>
+
+<p>しかし、最新技術が好きな開発者からは嫌われてしまっているOSの一つでもあります。例えば、以下のような感じです。</p>
+
+<ul>
+<li>パッケージが古すぎて、最新の機能が使えない（PHPやSQL,Apache WEBサーバのバージョンが古いなど）</li>
+<li>ニューラルネットワーク関連のツールはUbuntuでテストされていることが多い（古いバージョンのパッケージしかないから）</li>
+<li>Macと比べるとUIが貧弱</li>
+</ul>
+
+<p>アップストリームの開発が終了した後も10年間セキュリティパッチをポートし続けてきたRedhatとコミュニティには頭が上がりませんが、彼らにとっても古いソフトウェアをサポートし続けるのは大変なことだったようです。RHEL8からは、モジュール(module)という概念が導入され、ソフトウェアのサポートポリシーが変更されました。彼らはこの仕組みをAppStreamと名付けています。</p>
+
+<h2 id="appstreamとは">AppStreamとは</h2>
+
+<p>AppStreamとは、RHEL8で発表された新しい概念です。
+ソフトウェアは以下の２つに分けられて配信されることになります。</p>
+
+<ul>
+<li>BaseOS: OSの動作に不可欠なパッケージ群。安定性が重視される</li>
+<li>AppStream: 開発者が用いるパッケージ群。定期的にバージョンアップされる</li>
+</ul>
+
+<p>多くのパッケージはどちらかに属することになります。
+メリットとデメリットをまとめておきます。</p>
 
 <table>
 <thead>
 <tr>
-<th align="center">Windows</th>
-<th align="center">Linux(Redhat系)</th>
-<th align="center">Linux(Debian系)</th>
-<th align="left">違い</th>
+<th align="center"></th>
+<th align="left">RHEL7</th>
+<th align="left">RHEL8 Base</th>
+<th align="left">RHEL8 Appstream</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">ストア</td>
-<td align="center">yum</td>
-<td align="center">aptitude</td>
-<td align="left">これらのツールはネットワークからアプリをインストール出来る。</td>
+<td align="center">メリット</td>
+<td align="left">10年間のサポート</td>
+<td align="left">10年間のサポート</td>
+<td align="left">最新のパッケージ<br>複数のバージョンサポート</td>
 </tr>
 
 <tr>
-<td align="center">ソフトウェアの追加と削除</td>
-<td align="center">rpmコマンド</td>
-<td align="center">dpkgコマンド</td>
-<td align="left">Linux系のツールはインストールもできる。</td>
-</tr>
-
-<tr>
-<td align="center">ソフトウェア固有のインストーラ</td>
-<td align="center">rpmファイル</td>
-<td align="center">debファイル</td>
-<td align="left">プログラムや依存関係データがまとめられたもの</td>
+<td align="center">デメリット</td>
+<td align="left">・陳腐化しやすい<br>・Redhatが大変</td>
+<td align="left">Redhatが大変だが、対象は少なめ</td>
+<td align="left">・10年間のサポートは受けられない<br>・異なるバージョンは共存出来ない</td>
 </tr>
 </tbody>
 </table>
 
-<p>OSにはアプリケーションの一覧を管理する機能が与えられていることがほとんどです。Windowsの場合はコントロールパネル内の「プログラムの追加と削除」がその役割をしますが、Linuxの場合にはOSによって「rpm」や「dpkg」などがその役割をします。Windowsの場合にはアプリケーションのインストールはできませんが、Linux系ならばインストールファイルを用意するとインストールも行えます。rpmの場合にはrpmファイル、dpkgコマンドの場合にはdebファイルをインストールすることができます。</p>
+<p>これまでのRHELではPHPやApacheなどのすべてのパッケージで10年間のサポートがありましたが、近頃のプロジェクトでは古すぎるパッケージはむしろ使われない事もありました。そこで、Redhatは思い切って10年サポートを辞めました。一方で、AppStreamを用いることで異なるバージョンを簡単に扱えるようにしました。注意したいのは、複数バージョンが同時に存在できるわけではないことです。アップグレード・ダウングレードが簡単にできるようになっています。</p>
 
-<p>最近はアプリストアなどを用意してネットワーク経由でアプリを取得できるようにするOSが増えています。Windowsで言うところのストアアプリがこれですが、Linuxの場合はyumやaptitudeコマンドが行います。さらにディストリビューションごとにGUI画面も用意していることが多いです。なお、yumなどがソフトウェアを探しに行く先を「レポジトリ」と呼び、OS標準のものから個人的なものまで色々用意されています。</p>
+<h2 id="各ソフトウェアの状況">各ソフトウェアの状況</h2>
 
-<p>なお、インストールするためのファイルをまとめたものには、rpmやdebファイルがあります。ネットワーク経由でインストールできないものについてはこれらのファイルを直接取得してインストールします。</p>
+<h3 id="kernel-glibc-firewalldの場合">kernel, glibc, firewalldの場合</h3>
 
-<h2 id="redhat系のアプリケーション管理">Redhat系のアプリケーション管理</h2>
+<p>これらのソフトウェアはすべてBaseOSに収録されており、AppStreamには入っていません。従って、10年間大きな機能追加なく終わると思います。</p>
 
-<h3 id="インストール">インストール</h3>
+<h3 id="postgresqlの場合">PostgreSQLの場合</h3>
 
-<p>yum経由で&rdquo;hoge&rdquo;というソフトウェアをインストールする場合、以下のようにします。</p>
+<p>このパッケージはAppStreamにのみ収録されています。
+どのバージョンが配信されているかは以下のように確認できます。</p>
 
-<pre><code># yum install hoge
+<pre><code>$ sudo dnf module list postgresql
+CentOS-8 - AppStream
+Name                   Stream             Profiles
+postgresql             10 [d]             client, server [d]
+postgresql             9.6                client, server [d]
+
+Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
 </code></pre>
 
-<p>レポジトリに登録されていないソフトウェアをインストールするときは、rpmファイルを用意して以下のコマンドを実行します。</p>
+<p>以下のように普通にインストールすると、デフォルトのver.10がインストールされます。</p>
 
-<pre><code># rpm -ivh hoge.rpm
+<pre><code>$ sudo dnf install postgresql
 </code></pre>
 
-<h3 id="アンインストール">アンインストール</h3>
+<p>デフォルトバージョン以外をインストールしたい場合には、以下のコマンドを入力します。すでに他のバージョンが入っている場合、ダウン・アップグレードが提案されます。</p>
 
-<p>yum経由で&rdquo;hoge&rdquo;というソフトウェアをアンインストールする場合、以下のようにします。</p>
-
-<pre><code># yum remove hoge
+<pre><code>$ sudo dnf install @postgresql:9.6
 </code></pre>
 
-<h3 id="アップデート">アップデート</h3>
+<h3 id="pythonの場合">Pythonの場合</h3>
 
-<p>レポジトリ内に新しいバージョンが登録された場合、アップデートすることができます。以下のコマンドを実行します。</p>
+<p>Pythonは人気のプログラミング言語ですが、RHEL系ではパッケージ管理などでも用いられています。RHEL8では以下の3つが用意されています。</p>
 
-<pre><code># yum update
+<table>
+<thead>
+<tr>
+<th align="center">名前</th>
+<th align="center">レポジトリ</th>
+<th align="left">補足</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">platform-python</td>
+<td align="center">BaseOS</td>
+<td align="left">デバッグ用パッケージはAppStreamに収録</td>
+</tr>
+
+<tr>
+<td align="center">python36</td>
+<td align="center">AppStream</td>
+<td align="left">これで1つのmodule</td>
+</tr>
+
+<tr>
+<td align="center">python27</td>
+<td align="center">Appstream</td>
+<td align="left">これで1つのmodule。2.7.15-22,2.7.15-24など複数バージョンあり</td>
+</tr>
+</tbody>
+</table>
+
+<p>このうち、platform版は更新の少ないもので、開発者は原則利用しないことになります。pythonの場合はpython36で１つのmoduleにするようなので、今後python37という別のモジュールが登場する可能性もあります。この場合、２つのバージョンは共存出来るようになると思われます。追加のパッケージはPython3-numpyなどとなっているので、これは可能だと思われます。</p>
+
+<p>ちなみに、RHEL/CentOS8にはデフォルトではpythonコマンドは存在しません。以下のようなコマンドで手動で設定することになります。</p>
+
+<pre><code>alternatives --set python /usr/bin/python3
 </code></pre>
 
-<h3 id="一覧の取得">一覧の取得</h3>
+<h2 id="まとめ">まとめ</h2>
 
-<p>以下のコマンドを実行すると、インストール済みのアプリケーション一覧が得られます。</p>
+<p>AppStreamの知識整理をしました。</p>
 
-<pre><code># yum list installed
-</code></pre>
-
-<p>インストールしていないアプリを含めてレポジトリ内を検索したい場合、以下のコマンドを実行します。ここではfugaを検索するものとします。</p>
-
-<pre><code># yum search fuga
-</code></pre>
-
-<h2 id="debian系のアプリケーション管理">Debian系のアプリケーション管理</h2>
-
-<h3 id="インストール-1">インストール</h3>
-
-<p>aptitude経由で&rdquo;hoge&rdquo;というソフトウェアをインストールする場合、以下のようにします。</p>
-
-<pre><code># aptitude install hoge
-</code></pre>
-
-<p>レポジトリに登録されていないソフトウェアをインストールするときは、debファイルを用意して以下のコマンドを実行します。</p>
-
-<pre><code># dpkg -i hoge.deb
-</code></pre>
-
-<h3 id="アンインストール-1">アンインストール</h3>
-
-<p>aptitude経由で&rdquo;hoge&rdquo;というソフトウェアをアンインストールする場合、以下のようにします。</p>
-
-<pre><code># aptitude remove hoge
-</code></pre>
-
-<h3 id="アップデート-1">アップデート</h3>
-
-<p>レポジトリ内に新しいバージョンが登録された場合、アップデートすることができます。以下のコマンドを実行します。</p>
-
-<pre><code># aptitude update //レポジトリの情報を新しくする（アップデートはしない）
-# aptitude upgrade //新しくしたレポジトリ情報をもとにアップデート
-</code></pre>
-
-<h3 id="一覧の取得-1">一覧の取得</h3>
-
-<p>インストール済みアプリの一覧は以下のコマンドで見られます。</p>
-
-<pre><code># aptitude search ‘~i’
-</code></pre>
-
-<p>インストールしていないアプリを含めてレポジトリ内を検索したい場合、以下のコマンドを実行します。ここではfugaを検索するものとします。</p>
-
-<pre><code># aptitude search fuga
-</code></pre>
-
-<h2 id="注意したいこと">注意したいこと</h2>
-
-<p>自分でWEBから取得したrpmファイルやdebファイルを使う場合、ウイルス等には注意しましょう。</p>
+<ul>
+<li>開発者は今後はAppStreamを用いることになる</li>
+<li>AppStreamのパッケージは10年サポートされない</li>
+<li>AppStreamでは単一モジュール内で複数バージョンが配信されるが、共存は出来ない</li>
+<li>モジュール名が異なれば共存は可能。(Python27, Python36などの例)</li>
+</ul>
             </div>
 
 	    <script type="text/javascript">
@@ -251,16 +259,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            Linux
+                            review
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            HowTo
+                            linux
                         </a>
                     </li>
                     
@@ -276,13 +284,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/linux_basic_permission/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/linux_basic_useradd/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/stripe_live/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
