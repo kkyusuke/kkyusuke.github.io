@@ -17,13 +17,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android各機種のアップデート頻度比較！ &middot; Make &amp; Review">
+<meta property="og:title" content="GMOのv6プラスは特殊なので注意！ &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Android各機種のアップデート頻度比較！
+    GMOのv6プラスは特殊なので注意！
     
 </title>
 
@@ -91,194 +91,68 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2017-07-17T10:40+09:00">
-                        2017.7.17 10:40
+                    <time itemprop="datePublished" datetime="2020-02-04T05:27+09:00">
+                        2020.2.04 05:27
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/android_sec_compare/" itemprop="url">Android各機種のアップデート頻度比較！</a>
+                    <a href="https://blog.yyyak.com/post/gmov6/" itemprop="url">GMOのv6プラスは特殊なので注意！</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
-有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。</p>
+                <p>GMOのv6プラスが期待通り動いてくれない理由を考察します。
+</p>
 
-<p></p>
+<h2 id="gmoはv6プラス回りの仕様が他と違う">GMOはv6プラス回りの仕様が他と違う</h2>
 
-<h2 id="セキュリティパッチレベルについて">セキュリティパッチレベルについて</h2>
+<p>IPv4通信を高速にすることができる<a href="https://www.jpne.co.jp/service/v6plus/">v6プラス</a>という仕組みがあり、様々なプロバイダが対応をアピールしています。</p>
 
-<p>異なる機種のアップデート状況を比較するのには、<a href="/post/android_secutiry/">セキュリティパッチレベル</a>という仕組みを使いました。Androidのバージョン情報だけでは大雑把すぎるので、もっと細かくて統一的なナンバリング、ということで白羽の矢が立ちました。</p>
+<p>GMOはドコモ光の登場と合わせてたくさんのユーザを抱えるプロバイダの1つなのですが、どうやら他のv6プラス対応プロバイダとは微妙に仕組みが異なるようです。
+セットアップで混乱したので、まとめます。</p>
 
-<p>パッチレベルは日付で表されていて、日付が後になる方が新しいことになります。なるべく新しいパッチレベルがすぐに配信される端末を使うのには、どのメーカを使えば良いのでしょうか？？</p>
+<h2 id="混乱の原因">混乱の原因</h2>
 
-<h2 id="xperia-xz">Xperia XZ</h2>
+<p><a href="https://ja.wikipedia.org/wiki/V6%E3%83%97%E3%83%A9%E3%82%B9">Wikipedia</a>の以下の記述を信用したのが原因です。</p>
 
-<p>携帯3社（ドコモ,au,Softbank）の調査結果を下表に示します。
-驚くべき事に、キャリアに関係なく2ヶ月に1回セキュリティアップデートが配信されています。
-配信開始はドコモが速い印象ですが、他社も2週間遅れ以内には必ず配信されているようです。
-数年前までの、「日本のキャリア端末はアップデートが遅い」という常識を打ち破るほど迅速だと言えます。</p>
+<blockquote>
+<p>ひかり電話対応ホームゲートウェイ（ルータ機能内蔵）利用ユーザーにおいては、NTT東西が事業者向けに提供しているソフトウェア配信サービス「フレッツ・ジョイント」を使用して、対応ホームゲートウェイ(HGW)上のソフトウェア（ファームウェアの一種）をリモートアップデートし、これによりHGWがMAP-E対応CPEとして機能するようにしている。</p>
+</blockquote>
 
-<table>
-<thead>
-<tr>
-<th align="right">レベル</th>
-<th align="right">ドコモ</th>
-<th align="right">au</th>
-<th align="right">Softbank</th>
-</tr>
-</thead>
+<p>これ、フレッツ回線でGMO以外のプロバイダを使っている人にとっては正しいのですが、GMOユーザに限っては誤りでした。GMOユーザは「フレッツ・ジョイント」を基本は使いません。
+フレッツ・ジョイントを使うには、特別にメールや電話でお願いしないといけないそうです。</p>
 
-<tbody>
-<tr>
-<td align="right">2017年6月</td>
-<td align="right">2017/6/21</td>
-<td align="right">2017/6/22</td>
-<td align="right">2017/6/20</td>
-</tr>
+<h2 id="gmoユーザは-レンタルルータを-ルータ-として使うことが必須">GMOユーザは、レンタルルータを「ルータ」として使うことが必須</h2>
 
-<tr>
-<td align="right">2017年4月</td>
-<td align="right">2017/4/6</td>
-<td align="right">2017/4/11</td>
-<td align="right">2017/4/6</td>
-</tr>
+<p>最近のプロバイダ契約では無線LANルータを無償レンタルしてくれるところがほとんどですが、ルータとしては使わず単なるアクセスポイントとして運用したい人が多いと思います。
+ひかり電話を契約しているとHGWが配られますが、HGWにルータ機能は任せれば、HGWとWifiルータ両方の有線LANポートが使えます。
+また、HGWは伝統的にNEC系の機器で、Buffaloなどに比べて通信が安定する傾向にあります。
+HGWにv6プラスの機能は組み込まれていないのですが、フレッツ・ジョイントを使うとアドオンとして機能を追加することができ、あとからv6プラス対応できます。</p>
 
-<tr>
-<td align="right">2017年2月</td>
-<td align="right">2017/3/2</td>
-<td align="right">2017/3/14</td>
-<td align="right">2017/3/3</td>
-</tr>
+<p>GMOユーザの場合、v6プラスを使うならフレッツ・ジョイントをわざわざ申請しなくてはいけないので、普通はHGWをルータとしては使えません。
+また、「フレッツ・ジョイントを使うとWifiルータ向けのマップルール配信が停止する」と案内されるそうです。そんなことを出来るのか分かりませんが、GMOのv6プラスは一筋縄ではいかないようです。</p>
 
-<tr>
-<td align="right">Android7.0</td>
-<td align="right">2017/1/21</td>
-<td align="right">2017/1/18</td>
-<td align="right">2017/1/27</td>
-</tr>
+<h2 id="v6プラスの仕様が分からない">v6プラスの仕様が分からない</h2>
 
-<tr>
-<td align="right">2016年12月</td>
-<td align="right">2016/12/8</td>
-<td align="right">2016/12/13</td>
-<td align="right">2016/12/16</td>
-</tr>
-</tbody>
-</table>
+<p>マップルールの配信停止はv6プラスの仕様上ありなのだろうか？という疑問を解決するために規格書を読もうとしたのですが、そもそもありませんでした。
+<a href="https://www.jpne.co.jp/technical/for_developer/">v6プラスの技術資料</a>は、ほんの一部の模式図しか公開されておらず、詳細はJPNEに問い合わせをしなくてはいけません。<a href="https://tools.ietf.org/html/draft-ietf-softwire-map-03">MAP-E</a>に基づいているとのことですが、最新のMAP-E規格ではなくドラフト段階の仕様を採用しているようです。</p>
 
-<h2 id="galaxy-s6-edge">Galaxy S6 edge</h2>
+<p>数ページの資料にも問題が多く、IPv4通信時に対応しているアプリケーション層のプロトコルは以下の３つだけです。</p>
 
-<p>少し古めの機種ですが、全キャリアが扱っているGalaxy端末ということでチョイスしました。
-結果はイマイチで、au,Softbankはメジャーバージョンアップ間で1回だけアップデートがかかっています。
-ドコモについてはまあまあで、2016年後半から2017年にかけて頻繁にアップデートを行っています。
-Sonyと比べると日本版のアップデート頻度は悪いです。</p>
+<ul>
+<li>DHCP</li>
+<li>DNS</li>
+<li>HTTP</li>
+</ul>
 
-<table>
-<thead>
-<tr>
-<th align="right">レベル</th>
-<th align="right">ドコモ</th>
-<th align="right">au</th>
-<th align="right">Softbank</th>
-</tr>
-</thead>
+<p>v6通信時にHTTPSが別書きされている点を考えると、本来HTTPS通信は出来ない仕様のようです。メールが送れなくても、仕様通りです。こんなの本当にいいのだろうか。</p>
 
-<tbody>
-<tr>
-<td align="right">2017年4月(Android7.0)</td>
-<td align="right">2017/6/5</td>
-<td align="right">2017/4/13</td>
-<td align="right">2017/5/10</td>
-</tr>
+<h2 id="さいごに">さいごに</h2>
 
-<tr>
-<td align="right">2017年1月</td>
-<td align="right">2017/1/31</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-
-<tr>
-<td align="right">2016年11月</td>
-<td align="right">-</td>
-<td align="right">2016/11/17</td>
-<td align="right">2016/12/6</td>
-</tr>
-
-<tr>
-<td align="right">2016年10月</td>
-<td align="right">2016/10/27</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-
-<tr>
-<td align="right">2016年6月</td>
-<td align="right">2016/6/20</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-
-<tr>
-<td align="right">Android 6.0</td>
-<td align="right">2016/3/17</td>
-<td align="right">2016/5/19</td>
-<td align="right">2016/4/5</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="asus-zenfone-3-ze552kl-jp">Asus Zenfone 3 (ZE552KL-JP)</h2>
-
-<p>SIMフリー端末としては有名なAsus社の代表として<a href="http://amzn.to/2vlGYvT">Zenfone3</a>が登場です。
-国際版・台湾版・中国版・日本版の4種が主流のようですが、今回は日本版について調べました。
-発売当初のパッチレベルから、3ヶ月ごとにアップデートがかかっているようです。ただ、2ヶ月遅れなのが痛い。
-この調子で毎3ヶ月アップデートがかかれば、無難な端末と呼べそうですが、調査時点の2017年7月時点では新パッチは登場していません。
-もはやキャリア機種の方がアップデート頻度は良いみたいですね。</p>
-
-<table>
-<thead>
-<tr>
-<th align="right">レベル</th>
-<th align="right">日付</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="right">2017年3月(Android7.0)</td>
-<td align="right">2017/5/17</td>
-</tr>
-
-<tr>
-<td align="right">2016年12月</td>
-<td align="right">2017/2/24</td>
-</tr>
-
-<tr>
-<td align="right">2016年9月</td>
-<td align="right">発売当初</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="まとめ-各キャリア健闘も-ドコモのxperiaが最強か-simフリー系は良くない">まとめ：各キャリア健闘も、ドコモのXperiaが最強か。SIMフリー系は良くない</h2>
-
-<p>やはり、まめにSecurity系のアップデートが配信されるドコモは頑張っていると思います。
-メーカにもよりますが、Xperiaを買っておくのが一番安心です。</p>
-
-<p>SIMフリー系としてASUSを調査しましたが、頻度は低いようでした。購入前には要検討です。</p>
-
-<p>今回はSony以外の国産メーカは調査対象外にしましたが、アップデート頻度は少ないです。
-この場合、ドコモの端末を購入しておくのが無難でしょう。</p>
-
-<p>なお、セキュリティパッチの配信が遅い端末は、ウイルス対策ソフトを入れて怪しいアプリをシャットアウトできるようにするのも大切です。</p>
-
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01M1893YL&linkId=5330526d2740fcc4ad424153e815574f"></iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01KGS7GTS&linkId=bd22d6ebb819fa52fc9210fab9e3d702"></iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B006RD7L8I&linkId=a2417b4aa3191df657ef978037e382d5"></iframe>
+<p>GMOを責めるつもりで書き始めた記事でしたが、思ったよりもv6プラスがクローズドな仕組みとなっていて、何が正しいv6プラスなのか分かりませんでした。
+NTT系プロバイダも似たような別サービスを提供し始めたようですが、「オープンな仕様かどうか」は重要な指標だと実感しました。
+IIJのv4 over v6では、<a href="https://www.seil.jp/blog/ds-lite.html">詳細なセットアップ手順</a>が公表されています。検討の価値があると感じました。</p>
             </div>
 
 	    <script type="text/javascript">
@@ -296,16 +170,16 @@ Sonyと比べると日本版のアップデート頻度は悪いです。</p>
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/android" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            android
+                            review
                         </a>
                     </li>
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/network" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            review
+                            network
                         </a>
                     </li>
                     
@@ -321,13 +195,13 @@ Sonyと比べると日本版のアップデート頻度は悪いです。</p>
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/firefox55/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/wnax1167gr/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/cappstream/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>

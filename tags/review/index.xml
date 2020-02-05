@@ -5,9 +5,70 @@
     <link>https://blog.yyyak.com/tags/review/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
-    <rights>(C) 2019</rights>
+    <rights>(C) 2020</rights>
     <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>GMOのv6プラスは特殊なので注意！</title>
+          <link>https://blog.yyyak.com/post/gmov6/</link>
+          <pubDate>Tue, 04 Feb 2020 05:27:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/gmov6/</guid>
+          <description>&lt;p&gt;GMOのv6プラスが期待通り動いてくれない理由を考察します。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;gmoはv6プラス回りの仕様が他と違う&#34;&gt;GMOはv6プラス回りの仕様が他と違う&lt;/h2&gt;
+
+&lt;p&gt;IPv4通信を高速にすることができる&lt;a href=&#34;https://www.jpne.co.jp/service/v6plus/&#34;&gt;v6プラス&lt;/a&gt;という仕組みがあり、様々なプロバイダが対応をアピールしています。&lt;/p&gt;
+
+&lt;p&gt;GMOはドコモ光の登場と合わせてたくさんのユーザを抱えるプロバイダの1つなのですが、どうやら他のv6プラス対応プロバイダとは微妙に仕組みが異なるようです。
+セットアップで混乱したので、まとめます。&lt;/p&gt;
+
+&lt;h2 id=&#34;混乱の原因&#34;&gt;混乱の原因&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/V6%E3%83%97%E3%83%A9%E3%82%B9&#34;&gt;Wikipedia&lt;/a&gt;の以下の記述を信用したのが原因です。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ひかり電話対応ホームゲートウェイ（ルータ機能内蔵）利用ユーザーにおいては、NTT東西が事業者向けに提供しているソフトウェア配信サービス「フレッツ・ジョイント」を使用して、対応ホームゲートウェイ(HGW)上のソフトウェア（ファームウェアの一種）をリモートアップデートし、これによりHGWがMAP-E対応CPEとして機能するようにしている。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;これ、フレッツ回線でGMO以外のプロバイダを使っている人にとっては正しいのですが、GMOユーザに限っては誤りでした。GMOユーザは「フレッツ・ジョイント」を基本は使いません。
+フレッツ・ジョイントを使うには、特別にメールや電話でお願いしないといけないそうです。&lt;/p&gt;
+
+&lt;h2 id=&#34;gmoユーザは-レンタルルータを-ルータ-として使うことが必須&#34;&gt;GMOユーザは、レンタルルータを「ルータ」として使うことが必須&lt;/h2&gt;
+
+&lt;p&gt;最近のプロバイダ契約では無線LANルータを無償レンタルしてくれるところがほとんどですが、ルータとしては使わず単なるアクセスポイントとして運用したい人が多いと思います。
+ひかり電話を契約しているとHGWが配られますが、HGWにルータ機能は任せれば、HGWとWifiルータ両方の有線LANポートが使えます。
+また、HGWは伝統的にNEC系の機器で、Buffaloなどに比べて通信が安定する傾向にあります。
+HGWにv6プラスの機能は組み込まれていないのですが、フレッツ・ジョイントを使うとアドオンとして機能を追加することができ、あとからv6プラス対応できます。&lt;/p&gt;
+
+&lt;p&gt;GMOユーザの場合、v6プラスを使うならフレッツ・ジョイントをわざわざ申請しなくてはいけないので、普通はHGWをルータとしては使えません。
+また、「フレッツ・ジョイントを使うとWifiルータ向けのマップルール配信が停止する」と案内されるそうです。そんなことを出来るのか分かりませんが、GMOのv6プラスは一筋縄ではいかないようです。&lt;/p&gt;
+
+&lt;h2 id=&#34;v6プラスの仕様が分からない&#34;&gt;v6プラスの仕様が分からない&lt;/h2&gt;
+
+&lt;p&gt;マップルールの配信停止はv6プラスの仕様上ありなのだろうか？という疑問を解決するために規格書を読もうとしたのですが、そもそもありませんでした。
+&lt;a href=&#34;https://www.jpne.co.jp/technical/for_developer/&#34;&gt;v6プラスの技術資料&lt;/a&gt;は、ほんの一部の模式図しか公開されておらず、詳細はJPNEに問い合わせをしなくてはいけません。&lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-softwire-map-03&#34;&gt;MAP-E&lt;/a&gt;に基づいているとのことですが、最新のMAP-E規格ではなくドラフト段階の仕様を採用しているようです。&lt;/p&gt;
+
+&lt;p&gt;数ページの資料にも問題が多く、IPv4通信時に対応しているアプリケーション層のプロトコルは以下の３つだけです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DHCP&lt;/li&gt;
+&lt;li&gt;DNS&lt;/li&gt;
+&lt;li&gt;HTTP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;v6通信時にHTTPSが別書きされている点を考えると、本来HTTPS通信は出来ない仕様のようです。メールが送れなくても、仕様通りです。こんなの本当にいいのだろうか。&lt;/p&gt;
+
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに&lt;/h2&gt;
+
+&lt;p&gt;GMOを責めるつもりで書き始めた記事でしたが、思ったよりもv6プラスがクローズドな仕組みとなっていて、何が正しいv6プラスなのか分かりませんでした。
+NTT系プロバイダも似たような別サービスを提供し始めたようですが、「オープンな仕様かどうか」は重要な指標だと実感しました。
+IIJのv4 over v6では、&lt;a href=&#34;https://www.seil.jp/blog/ds-lite.html&#34;&gt;詳細なセットアップ手順&lt;/a&gt;が公表されています。検討の価値があると感じました。&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>
