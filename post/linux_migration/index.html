@@ -17,13 +17,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019年版・フィルターレス・スティック型掃除機 &middot; Make &amp; Review">
+<meta property="og:title" content="設定を維持してCentOSクリーンインストール &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    2019年版・フィルターレス・スティック型掃除機
+    設定を維持してCentOSクリーンインストール
     
 </title>
 
@@ -91,206 +91,164 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2019-12-12T04:34+09:00">
-                        2019.12.12 04:34
+                    <time itemprop="datePublished" datetime="2020-02-16T08:47+09:00">
+                        2020.2.16 08:47
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/filterless/" itemprop="url">2019年版・フィルターレス・スティック型掃除機</a>
+                    <a href="https://blog.yyyak.com/post/linux_migration/" itemprop="url">設定を維持してCentOSクリーンインストール</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>真のサイクロン、フィルターレス掃除機をまとめます。
-</p>
+                <p>CentOS6からメジャーバージョンアップ出来なくて困っている方へ</p>
 
-<h2 id="フィルターレスとは">フィルターレスとは</h2>
+<p></p>
 
-<p>サイクロン掃除機には、フィルター有無で2種類のタイプがあります。
-フィルター有りは完璧なサイクロン方式ではないので、小さなゴミはフィルターを通すことによって除去します。</p>
+<h2 id="centosはメジャーバージョンアップ出来ない">CentOSはメジャーバージョンアップ出来ない</h2>
+
+<p>現在サポート期間中のCentOSはバージョン6,7,8ですが、メジャーバージョンアップが出来なくなっています。（RHELは出来ます）</p>
 
 <table>
 <thead>
 <tr>
-<th align="center"></th>
-<th align="center">フィルターあり</th>
-<th align="center">フィルターなし</th>
+<th align="center">アップグレード内容</th>
+<th align="left">対応・非対応</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">大きなゴミ</td>
-<td align="center">遠心分離</td>
-<td align="center">遠心分離</td>
+<td align="center">6-&gt;7</td>
+<td align="left">CentOS6.7以降はアップグレードツールが非対応</td>
 </tr>
 
 <tr>
-<td align="center">小さなゴミ</td>
-<td align="center">遠心分離</td>
-<td align="center">フィルター</td>
-</tr>
-
-<tr>
-<td align="center">手入れの場所</td>
-<td align="center">ゴミ受けのみ（捨てるだけ）</td>
-<td align="center">ゴミ受けとフィルター（水洗い）</td>
-</tr>
-
-<tr>
-<td align="center">吸引力の低下</td>
-<td align="center">少ない</td>
-<td align="center">フィルターの目詰まり</td>
+<td align="center">7-&gt;8</td>
+<td align="left">非対応・開発チームにツール提供の意思なし</td>
 </tr>
 </tbody>
 </table>
 
-<p>サイクロン掃除機の手入れで最も面倒なのはフィルターの掃除です。フィルターは紙や布のようなもので出来ており、1週間に1度程度水洗いしなくてはいけません。</p>
+<p>ちまちまと依存関係を解決しながら問題を取り除ける自身がある人以外は、素直にクリーンインストールするしかないでしょう。</p>
 
-<p>フィルターなしのサイクロン掃除機はゴミがすべてゴミ受けに貯まるので、ゴミを捨てるだけで手入れが殆ど必要なくストレスレスに使えます。今回は2019年現在で購入できるスティック型掃除機をまとめます。</p>
+<h2 id="debian系のアップグレード">Debian系のアップグレード</h2>
 
-<h2 id="dyson">Dyson</h2>
+<p>Debianにはアップグレードのためのドキュメントが用意されているので、CentOS系よりはアップグレードが簡単だと思います。</p>
 
-<p>掃除機といえばDysonです。フィルターレスをヒットさせた最初のメーカーといえるでしょう。</p>
+<p>しかしデスクトップ環境などがアップグレード後に動かなくなることは良くあり、自分で解決する必要があります。</p>
 
-<p>現在販売されている掃除機は表の通り。Dyson唯一の弱点は重量ですが、Slimラインの登場によって克服されつつあります。Dysonは様々なヘッドを用意しているのに対して、国産メーカーは様々な状況に対処できるヘッドを作る傾向にあります。
-フローリングだけならDysonが良いようです。</p>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07DWM3YJ8&linkId=0f6ce8a5c52eb416cf2c9a76470a1d56"></iframe>
 
-<table>
-<thead>
-<tr>
-<th align="center">シリーズ</th>
-<th align="left">特徴</th>
-<th align="right">稼働時間</th>
-<th align="right">重量</th>
-</tr>
-</thead>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07SS9DR2M&linkId=6a3b1a266047a87d1a58c2de91775bb4"></iframe>
 
-<tbody>
-<tr>
-<td align="center">v7</td>
-<td align="left">最も安価な製品</td>
-<td align="right">30m</td>
-<td align="right">2.4kg</td>
-</tr>
+<h2 id="最低限の情報だけダンプして-クリーンインストールしよう">最低限の情報だけダンプして、クリーンインストールしよう！</h2>
 
-<tr>
-<td align="center">v8</td>
-<td align="left">v7よりも強力な吸引力</td>
-<td align="right">40m</td>
-<td align="right">2.6kg</td>
-</tr>
+<h3 id="データ領域">データ領域</h3>
 
-<tr>
-<td align="center">v10</td>
-<td align="left">v8よりも強力な吸引力</td>
-<td align="right">1h</td>
-<td align="right">2.6kg</td>
-</tr>
+<p>ユーザディレクトリ(<code>/home/</code>)やWEBサイト(<code>/var/www/</code>)はバージョンアップ後にも必要だと思うので、どこかにバックアップを取っておきます。</p>
 
-<tr>
-<td align="center">v11</td>
-<td align="left">v10よりも強力な吸引力</td>
-<td align="right">1h</td>
-<td align="right">2.7kg</td>
-</tr>
+<h3 id="ユーザ-グループ">ユーザ・グループ</h3>
 
-<tr>
-<td align="center">v7 slim</td>
-<td align="left">v7の軽量版。日本での売れ筋</td>
-<td align="right">30m</td>
-<td align="right">2.2kg</td>
-</tr>
-
-<tr>
-<td align="center">v8 slim</td>
-<td align="left">v8の軽量版。日本での売れ筋</td>
-<td align="right">40m</td>
-<td align="right">2.2kg</td>
-</tr>
-</tbody>
-</table>
-
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07BQXJDD9&linkId=7db58e1f0b540d319eb864e39db58141"></iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07PLYJ77V&linkId=a236c7f4d9798f7bb99160ef5f5f1ef7"></iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07PLQ9VZP&linkId=2a5ca0cbe2a633cd3143ea111eb7cd4f"></iframe>
-
-<h2 id="panasonic">Panasonic</h2>
-
-<p>パナソニックのラインナップはフィルターレスとフィルター有りが入り乱れているので注意しましょう。
-今のところ1機種だけフィルターレスです。吸引力はv11と良い勝負のようです。カーペットとフローリングが混ざった部屋ならDysonよりも良い仕事をするようです。</p>
-
-<table>
-<thead>
-<tr>
-<th align="center">シリーズ</th>
-<th align="left">特徴</th>
-<th align="right">稼働時間</th>
-<th align="right">重量</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">MC-SBU530J/SBU430J</td>
-<td align="left">Dyson上位機種並みの稼働時間、吸引力</td>
-<td align="right">1h</td>
-<td align="right">2.4kg</td>
-</tr>
-</tbody>
-</table>
-
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07SB5XV6B&linkId=716e06ef6e2fc95bf60bef16b4b558e4"></iframe>
-
-<h2 id="東芝">東芝</h2>
-
-<p>近年は全機種がフィルターレスの東芝です。
-他社と比較すると稼働時間が短く吸引力が弱いですが、圧倒的に軽いです。手元の500gは案外大きいので、特に女性にお勧めのメーカーです。</p>
-
-<p>私はCL410を使用していますが、1人暮らしの掃除には吸引力・稼働時間ともに問題ないレベルでした。</p>
-
-<table>
-<thead>
-<tr>
-<th align="center">シリーズ</th>
-<th align="left">特徴</th>
-<th align="right">稼働時間</th>
-<th align="right">重量</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">VC-CL1600/600</td>
-<td align="left">他社と比べて軽い。ブロワー機能あり</td>
-<td align="right">35m</td>
-<td align="right">1.8kg</td>
-</tr>
-
-<tr>
-<td align="center">VC-CL410</td>
-<td align="left">廉価版モデル。公式サイトには掲載なし</td>
-<td align="right">20m</td>
-<td align="right">1.9kg</td>
-</tr>
-</tbody>
-</table>
-
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B081YHGVQF&linkId=7eeeb9df58db636b9a808eca6cd7d868"></iframe>
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07F2YNJVM&linkId=bc7f4e9ce921e2c3bfc956b9ba3ad2ad"></iframe>
-
-<h2 id="まとめ">まとめ</h2>
-
-<p>フィルターレスのスティック型掃除機は、国内では3社しか販売していないことが分かりました。</p>
+<p>ユーザやグループの情報は残しておきたいものです。
+以下の4ファイルをバックアップしておきましょう。</p>
 
 <ul>
-<li>Dyson: フィルターレスの一大ブランド。バランスの取れた製品ラインナップだが、少し重いか</li>
-<li>Panasonic: ラインナップの一部にフィルターレス。吸引力はDyson並か</li>
-<li>東芝: 全機種フィルターレス。吸引力が弱いが軽い製品が多い。</li>
+<li><code>/etc/password</code></li>
+<li><code>/etc/shadow</code></li>
+<li><code>/etc/group</code></li>
+<li><code>/etc/gshadow</code></li>
 </ul>
 
-<p>皆様のお役に立てますように。</p>
+<p>ホームディレクトリに設定された権限をそのまま使うには、ユーザ名ではなくuIDを揃える必要があるので、ファイルごとバックアップしましょう。</p>
+
+<p>パスワードはハッシュ化されていますが、アルゴリズムがハッシュ化後の文字列に指定されています。なので、OSを変えてもそのまま使えます。</p>
+
+<h3 id="ネットワーク">ネットワーク</h3>
+
+<p>前の環境の情報をメモしておきましょう。</p>
+
+<pre><code>$ hostname
+</code></pre>
+
+<p>ネットワーク構成にもよりますが、固定IPがある場合にはそれもメモします。</p>
+
+<pre><code>$ ifconfig
+</code></pre>
+
+<p>DHCPサーバやDNSを運用している場合には、その情報もダンプします。</p>
+
+<ul>
+<li>/etc/dhcpd.conf</li>
+<li>/etc/named.conf</li>
+<li>/var/named/</li>
+</ul>
+
+<h3 id="セキュリティ">セキュリティ</h3>
+
+<p>CentOS6ではiptablesを使いますが、CentOS7以降はfirewalldを使います。設定コピーというよりは、設定内容を理解して再設定することになるでしょう。</p>
+
+<p>firewalldを使っている環境間で移行するなら、<code>/etc/firewalld</code>内の必要なファイルをダンプしましょう。特に<code>zones/</code>,<code>services/</code>ディレクトリは必要な方が多いでしょう。</p>
+
+<p>SELinuxを使っている場合、その設定もバックアップが必要です。
+例えば、ブール値は以下のコマンドでリストアップ出来ます。初期値と現在値が違う設定に注意しておけば良いでしょう。</p>
+
+<pre><code># semanage boolean -l
+</code></pre>
+
+<h3 id="sql">SQL</h3>
+
+<p>SQLサーバを使用している場合はダンプファイルを作成しておきます。MySQL(MariaDB)の場合には以下のコマンドで十分です。</p>
+
+<pre><code>$ mysqldump -u [username] -p [password] [DB name] &gt; db1.dumpl
+</code></pre>
+
+<p>ちなみに、mysqlというDBもダンプしておけば、復旧が楽です。</p>
+
+<pre><code>$ mysqldump -u [username] -p [password] mysql &gt; mysql.dumpl
+</code></pre>
+
+<h2 id="クリーンインストール後">クリーンインストール後</h2>
+
+<p>基本的に、ダンプした内容を設定ファイルにコピペしていけばOKです。</p>
+
+<p>設定ファイルをそのまま置き換えるのはお勧めしません。パッケージもバージョンアップされています。古いファイルを使い回さず、必要部分だけ書き加えるようにしましょう。</p>
+
+<h3 id="ユーザ-グループ-1">ユーザ・グループ</h3>
+
+<p>元のファイルにはすべてのユーザ・グループ情報が記述されていますが、一般的なユーザーはuID100番台からです。その部分をすべてコピーしましょう。</p>
+
+<p>uID 1,2桁のものは、特にパスワードをせっていしていなければ、クリーンインストール後は弄らないことをお勧めします。rootパスワードは古いものと置き換えてもいいです。</p>
+
+<h3 id="ネットワーク-1">ネットワーク</h3>
+
+<p>CentOS7以降は、設定ファイルを編集するのではなく、ツールを使うことが推奨されています。</p>
+
+<p>CUIでは<code>nmcli</code>コマンドを、GUIでは<code>Network Manager</code>を使って古い設定を反映させて下さい。</p>
+
+<h3 id="セキュリティ-1">セキュリティ</h3>
+
+<p>iptablesを使っていた場合、対応する設定をfirewalldに反映し直します。これは手作業になるでしょう。</p>
+
+<p>以前からfirewalldを使っていたなら、設定ファイルを同じディレクトリに戻せば細かな設定が復元できます。
+Ethernetポートごとのデフォルトzone設定は手動でし直すのが早いと思われます。</p>
+
+<p>SELinuxも、<code>setsebool</code>コマンドを使って設定を戻しましょう。多くの場合はデフォルト値で良いはずです。</p>
+
+<h3 id="sql-1">SQL</h3>
+
+<p>SQLはダンプファイルを<code>mysql</code>コマンドに与えれば戻ります。</p>
+
+<pre><code>$ mysql -u [username] -p [password] &lt; mysql.dump
+$ mysql -u [username] -p [password] &lt; db1.dump
+</code></pre>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>クリーンインストールしたOSに、古いサーバの情報を反映させるためのやることリストを作りました。</p>
+
+<p>心配ならば、ディスク全体をどこかにバックアップしておけば漏れがあっても安心です。</p>
             </div>
 
 	    <script type="text/javascript">
@@ -308,9 +266,16 @@
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/make" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            review
+                            make
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://blog.yyyak.com/tags/linux" itemprop="keywords">
+                            <i class="fa fa-tags"></i>
+                            linux
                         </a>
                     </li>
                     
@@ -326,13 +291,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/uefi/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/spacedesk/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/galaxy_tab_a/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>

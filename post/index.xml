@@ -6,8 +6,225 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2020</rights>
-    <updated>2020-02-04 05:27:00 &#43;0900 JST</updated>
+    <updated>2020-02-16 08:47:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>設定を維持してCentOSクリーンインストール</title>
+          <link>https://blog.yyyak.com/post/linux_migration/</link>
+          <pubDate>Sun, 16 Feb 2020 08:47:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/linux_migration/</guid>
+          <description>&lt;p&gt;CentOS6からメジャーバージョンアップ出来なくて困っている方へ&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;centosはメジャーバージョンアップ出来ない&#34;&gt;CentOSはメジャーバージョンアップ出来ない&lt;/h2&gt;
+
+&lt;p&gt;現在サポート期間中のCentOSはバージョン6,7,8ですが、メジャーバージョンアップが出来なくなっています。（RHELは出来ます）&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;アップグレード内容&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;対応・非対応&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;6-&amp;gt;7&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;CentOS6.7以降はアップグレードツールが非対応&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;7-&amp;gt;8&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;非対応・開発チームにツール提供の意思なし&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;ちまちまと依存関係を解決しながら問題を取り除ける自身がある人以外は、素直にクリーンインストールするしかないでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;debian系のアップグレード&#34;&gt;Debian系のアップグレード&lt;/h2&gt;
+
+&lt;p&gt;Debianにはアップグレードのためのドキュメントが用意されているので、CentOS系よりはアップグレードが簡単だと思います。&lt;/p&gt;
+
+&lt;p&gt;しかしデスクトップ環境などがアップグレード後に動かなくなることは良くあり、自分で解決する必要があります。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07DWM3YJ8&amp;linkId=0f6ce8a5c52eb416cf2c9a76470a1d56&#34;&gt;&lt;/iframe&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07SS9DR2M&amp;linkId=6a3b1a266047a87d1a58c2de91775bb4&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;最低限の情報だけダンプして-クリーンインストールしよう&#34;&gt;最低限の情報だけダンプして、クリーンインストールしよう！&lt;/h2&gt;
+
+&lt;h3 id=&#34;データ領域&#34;&gt;データ領域&lt;/h3&gt;
+
+&lt;p&gt;ユーザディレクトリ(&lt;code&gt;/home/&lt;/code&gt;)やWEBサイト(&lt;code&gt;/var/www/&lt;/code&gt;)はバージョンアップ後にも必要だと思うので、どこかにバックアップを取っておきます。&lt;/p&gt;
+
+&lt;h3 id=&#34;ユーザ-グループ&#34;&gt;ユーザ・グループ&lt;/h3&gt;
+
+&lt;p&gt;ユーザやグループの情報は残しておきたいものです。
+以下の4ファイルをバックアップしておきましょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/etc/password&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/shadow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/group&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/gshadow&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ホームディレクトリに設定された権限をそのまま使うには、ユーザ名ではなくuIDを揃える必要があるので、ファイルごとバックアップしましょう。&lt;/p&gt;
+
+&lt;p&gt;パスワードはハッシュ化されていますが、アルゴリズムがハッシュ化後の文字列に指定されています。なので、OSを変えてもそのまま使えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;ネットワーク&#34;&gt;ネットワーク&lt;/h3&gt;
+
+&lt;p&gt;前の環境の情報をメモしておきましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hostname
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ネットワーク構成にもよりますが、固定IPがある場合にはそれもメモします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ifconfig
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;DHCPサーバやDNSを運用している場合には、その情報もダンプします。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;/etc/dhcpd.conf&lt;/li&gt;
+&lt;li&gt;/etc/named.conf&lt;/li&gt;
+&lt;li&gt;/var/named/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;セキュリティ&#34;&gt;セキュリティ&lt;/h3&gt;
+
+&lt;p&gt;CentOS6ではiptablesを使いますが、CentOS7以降はfirewalldを使います。設定コピーというよりは、設定内容を理解して再設定することになるでしょう。&lt;/p&gt;
+
+&lt;p&gt;firewalldを使っている環境間で移行するなら、&lt;code&gt;/etc/firewalld&lt;/code&gt;内の必要なファイルをダンプしましょう。特に&lt;code&gt;zones/&lt;/code&gt;,&lt;code&gt;services/&lt;/code&gt;ディレクトリは必要な方が多いでしょう。&lt;/p&gt;
+
+&lt;p&gt;SELinuxを使っている場合、その設定もバックアップが必要です。
+例えば、ブール値は以下のコマンドでリストアップ出来ます。初期値と現在値が違う設定に注意しておけば良いでしょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# semanage boolean -l
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;sql&#34;&gt;SQL&lt;/h3&gt;
+
+&lt;p&gt;SQLサーバを使用している場合はダンプファイルを作成しておきます。MySQL(MariaDB)の場合には以下のコマンドで十分です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mysqldump -u [username] -p [password] [DB name] &amp;gt; db1.dumpl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ちなみに、mysqlというDBもダンプしておけば、復旧が楽です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mysqldump -u [username] -p [password] mysql &amp;gt; mysql.dumpl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;クリーンインストール後&#34;&gt;クリーンインストール後&lt;/h2&gt;
+
+&lt;p&gt;基本的に、ダンプした内容を設定ファイルにコピペしていけばOKです。&lt;/p&gt;
+
+&lt;p&gt;設定ファイルをそのまま置き換えるのはお勧めしません。パッケージもバージョンアップされています。古いファイルを使い回さず、必要部分だけ書き加えるようにしましょう。&lt;/p&gt;
+
+&lt;h3 id=&#34;ユーザ-グループ-1&#34;&gt;ユーザ・グループ&lt;/h3&gt;
+
+&lt;p&gt;元のファイルにはすべてのユーザ・グループ情報が記述されていますが、一般的なユーザーはuID100番台からです。その部分をすべてコピーしましょう。&lt;/p&gt;
+
+&lt;p&gt;uID 1,2桁のものは、特にパスワードをせっていしていなければ、クリーンインストール後は弄らないことをお勧めします。rootパスワードは古いものと置き換えてもいいです。&lt;/p&gt;
+
+&lt;h3 id=&#34;ネットワーク-1&#34;&gt;ネットワーク&lt;/h3&gt;
+
+&lt;p&gt;CentOS7以降は、設定ファイルを編集するのではなく、ツールを使うことが推奨されています。&lt;/p&gt;
+
+&lt;p&gt;CUIでは&lt;code&gt;nmcli&lt;/code&gt;コマンドを、GUIでは&lt;code&gt;Network Manager&lt;/code&gt;を使って古い設定を反映させて下さい。&lt;/p&gt;
+
+&lt;h3 id=&#34;セキュリティ-1&#34;&gt;セキュリティ&lt;/h3&gt;
+
+&lt;p&gt;iptablesを使っていた場合、対応する設定をfirewalldに反映し直します。これは手作業になるでしょう。&lt;/p&gt;
+
+&lt;p&gt;以前からfirewalldを使っていたなら、設定ファイルを同じディレクトリに戻せば細かな設定が復元できます。
+Ethernetポートごとのデフォルトzone設定は手動でし直すのが早いと思われます。&lt;/p&gt;
+
+&lt;p&gt;SELinuxも、&lt;code&gt;setsebool&lt;/code&gt;コマンドを使って設定を戻しましょう。多くの場合はデフォルト値で良いはずです。&lt;/p&gt;
+
+&lt;h3 id=&#34;sql-1&#34;&gt;SQL&lt;/h3&gt;
+
+&lt;p&gt;SQLはダンプファイルを&lt;code&gt;mysql&lt;/code&gt;コマンドに与えれば戻ります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mysql -u [username] -p [password] &amp;lt; mysql.dump
+$ mysql -u [username] -p [password] &amp;lt; db1.dump
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;クリーンインストールしたOSに、古いサーバの情報を反映させるためのやることリストを作りました。&lt;/p&gt;
+
+&lt;p&gt;心配ならば、ディスク全体をどこかにバックアップしておけば漏れがあっても安心です。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Galaxy Tab A (2019) の惜しいところ</title>
+          <link>https://blog.yyyak.com/post/galaxy_tab_a/</link>
+          <pubDate>Sun, 16 Feb 2020 08:19:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/galaxy_tab_a/</guid>
+          <description>&lt;p&gt;Samsungのエントリータブレットをレビューします。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;galaxy-tabという選択肢&#34;&gt;Galaxy Tabという選択肢&lt;/h2&gt;
+
+&lt;p&gt;日本では、タブレット市場は完全にHuawei一強になってしまいました。
+以前はGalaxy, ASUS, Acer, Lenovoなどが新機種を投入していましたが、ここ数年新機種を出していません。&lt;/p&gt;
+
+&lt;p&gt;海外に目を向けると、特にアメリカはHuaweiが締め出されているので、他メーカを見ることが出来ます。セキュリティに不安を覚える方、Googleサービスが使えなくなるのは困るという方は&lt;a href=&#34;https://www.amazon.com&#34;&gt;アメリカのAmazon&lt;/a&gt;がお勧めです。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07HCM2VGS&amp;linkId=8f088273ca901a578d976ba435270412&#34;&gt;&lt;/iframe&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07NFZX4LQ&amp;linkId=df7f2327e9de1c032ea1fe5a509ade44&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;galaxy-tab-a-2019-を買ってみた&#34;&gt;Galaxy Tab A (2019) を買ってみた&lt;/h2&gt;
+
+&lt;p&gt;Amazon USからGalaxy Tab Aを輸入したのでレビューします。&lt;/p&gt;
+
+&lt;p&gt;2台まとめて注文して380ドルでした。2ヶ月後には、取り過ぎた関税分13ドルが返ってきました。一台およそ2万円の計算です。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+
+&lt;p&gt;注意していただきたいのは、技適が表示されなかった点です。同じ名前の機種がJCOM専売で日本市場にも上陸していますが、違う製品のようです。&lt;/p&gt;
+
+&lt;h2 id=&#34;基本的には快適&#34;&gt;基本的には快適&lt;/h2&gt;
+
+&lt;p&gt;2万円ほどのタブレットとは思えない快適さで、Youtubeを見たりブラウジングをするには何の問題もありません。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sammobile.com/samsung/galaxy-tab-a-101/firmware/#SM-T510&#34;&gt;定期的にアップデート&lt;/a&gt;されており、およそ3ヶ月ごとのセキュリティアップデートが受け取れるようなので、Huawei製品を使うよりは安心でしょう。&lt;/p&gt;
+
+&lt;p&gt;独自アプリは最低限しか入っておらず、ランチャーは非常にシンプルです。独自AIなどの主張もないため、買ってすぐ使えました。&lt;/p&gt;
+
+&lt;h2 id=&#34;不満点&#34;&gt;不満点&lt;/h2&gt;
+
+&lt;p&gt;一番の不満点は、画面の自動調光がない点です。日本で販売されているスマホの多くは外光の強さに応じて画面の明るさが自動変化しますが、このタブレットは自分でやります。&lt;/p&gt;
+
+&lt;p&gt;スピーカーも非常に貧弱でした。横置きした際に片側からしか音が出ない上、くぐもっています。画面は綺麗なので映画を見たりするのに良いのですが、モバイルスピーカーが必要でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;不満点が我慢できそうなら、ぜひ選択肢に入れてみて下さい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;値段の割に高性能。変なアプリも少ない&lt;/li&gt;
+&lt;li&gt;自動調光できない点は残念&lt;/li&gt;
+&lt;li&gt;スピーカーは貧弱だから、Bluetoothスピーカーと一緒に使うと良い&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -40,9 +257,7 @@
 &lt;h2 id=&#34;gmoユーザは-レンタルルータを-ルータ-として使うことが必須&#34;&gt;GMOユーザは、レンタルルータを「ルータ」として使うことが必須&lt;/h2&gt;
 
 &lt;p&gt;最近のプロバイダ契約では無線LANルータを無償レンタルしてくれるところがほとんどですが、ルータとしては使わず単なるアクセスポイントとして運用したい人が多いと思います。
-ひかり電話を契約しているとHGWが配られますが、HGWにルータ機能は任せれば、HGWとWifiルータ両方の有線LANポートが使えます。
-また、HGWは伝統的にNEC系の機器で、Buffaloなどに比べて通信が安定する傾向にあります。
-HGWにv6プラスの機能は組み込まれていないのですが、フレッツ・ジョイントを使うとアドオンとして機能を追加することができ、あとからv6プラス対応できます。&lt;/p&gt;
+ひかり電話を契約しているとHGWが配られ、フレッツ・ジョイントを使うとv6プラスに対応できます。&lt;/p&gt;
 
 &lt;p&gt;GMOユーザの場合、v6プラスを使うならフレッツ・ジョイントをわざわざ申請しなくてはいけないので、普通はHGWをルータとしては使えません。
 また、「フレッツ・ジョイントを使うとWifiルータ向けのマップルール配信が停止する」と案内されるそうです。そんなことを出来るのか分かりませんが、GMOのv6プラスは一筋縄ではいかないようです。&lt;/p&gt;
@@ -5098,108 +5313,6 @@ OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
 
 &lt;p&gt;さらに、パスワード認証よりは公開鍵認証の利用をお勧めします。鍵長を長くすればそれだけ安心です。
 サーバという形式をとっているマシンは、何か問題が起きると多くの人に迷惑をかけてしまうことが多いかと思います。くれぐれも注意深く使いましょう。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Linux基礎講座目次</title>
-          <link>https://blog.yyyak.com/post/linux_basic/</link>
-          <pubDate>Sat, 05 Mar 2016 11:58:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/linux_basic/</guid>
-          <description>&lt;p&gt;Linuxを初めて使う人を対象に、Windowsとの違いを考えながら説明します。
-&lt;/p&gt;
-
-&lt;p&gt;この連載記事は「Windowsマシンは使えるけど、Linuxはよく分からない！」という以前の自分を対象にしたものです。
-「よく分からない」とは言っても、実はマウス操作で多くのことが出来ます。
-これは良いことですが、わざわざLinuxを使うのだからより深くまで使い方を知る必要があるケースも多いのではないでしょうか？
-研究に使う、サーバとして使ってウェブサイトを運営する、などなどLinuxは様々な場面で活躍することが出来る優秀なOSです。&lt;/p&gt;
-
-&lt;p&gt;そこで、この連載ではWindowsとLinuxの違いに焦点を置きながら、Linuxが得意とする分野のLinuxらしい使い方を解説しようと思います。
-どうぞよろしくおつきあい下さい。&lt;/p&gt;
-
-&lt;h2 id=&#34;対象とする環境&#34;&gt;対象とする環境&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fedora, UbuntuなどのデスクトップLinux&lt;/li&gt;
-&lt;li&gt;CentOS, DebianなどのサーバLinux（マウス操作が必要な場合、上手く行かないかも）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;目次&#34;&gt;目次&lt;/h2&gt;
-
-&lt;h3 id=&#34;gui編&#34;&gt;GUI編&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;PCの起動・終了&lt;/li&gt;
-&lt;li&gt;デスクトップアプリケーションの紹介・利用&lt;/li&gt;
-&lt;li&gt;デスクトップアプリケーションのインストール・アンインストール&lt;/li&gt;
-&lt;li&gt;USBメモリー・DVDドライブ&lt;/li&gt;
-&lt;li&gt;プリンタの設定・印刷&lt;/li&gt;
-&lt;li&gt;VNC(外部サーバへのアクセス)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;cui編&#34;&gt;CUI編&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CUI&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_app&#34;&gt;アプリケーション管理(yum/aptitude)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_useradd&#34;&gt;ユーザの追加・削除&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_permission&#34;&gt;パーミッション&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_ssh&#34;&gt;SSH(外部サーバへのアクセス)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/linux_basic_cron&#34;&gt;定期的なプログラムの実行(cron)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.yyyak.com/post/network_check_linux/&#34;&gt;ネットワーク関連のコマンド&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;linuxというos&#34;&gt;LinuxというOS&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Windowsが得意なこと、Linuxが得意なこと&lt;/li&gt;
-&lt;li&gt;Linux的なシステムの作り方&lt;/li&gt;
-&lt;li&gt;LinuxOSの種類&lt;/li&gt;
-&lt;/ul&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>インターリンクの回線速度</title>
-          <link>https://blog.yyyak.com/post/interlink/</link>
-          <pubDate>Tue, 16 Feb 2016 13:00:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/interlink/</guid>
-          <description>&lt;p&gt;ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
-&lt;a href=&#34;http://www.interlink.or.jp/&#34;&gt;インターリンク&lt;/a&gt;という会社です。
-
-契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
-測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;ここ&lt;/a&gt;で行っていて、茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
-
-&lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed13_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-
-&lt;h2 id=&#34;2016-03-04-22-10&#34;&gt;2016/03/04 22:10&lt;/h2&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed12_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-
-&lt;h2 id=&#34;2016-02-16-22-00&#34;&gt;2016/02/16 22:00&lt;/h2&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed11_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-
-&lt;h2 id=&#34;2016-02-15-20-00&#34;&gt;2016/02/15 20:00&lt;/h2&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/iij_speed10_interlink.PNG&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;</description>
         </item>
       
     
