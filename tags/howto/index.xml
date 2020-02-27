@@ -94,10 +94,9 @@ Kasperskyをそこまで無条件に信頼出来ないので、私は無効に�
 &lt;p&gt;発表当初はUbuntuしか使えませんでしたが、今では色々なディストロが用意されています。
 Windows Storeから簡単にインストールすることができますが、なんと複数同時に使えます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;1つのディストロで十分な気もしますが、出来るか出来ないかは重要です・・・。&lt;/p&gt;
 
@@ -192,10 +191,9 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;h4 id=&#34;まずはpowershellを管理者権限で起動&#34;&gt;まずはPowershellを管理者権限で起動&lt;/h4&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;スタート画面などでPowershellを検索しましょう。右クリックをすると、「管理者として実行」が現れます。
 コマンドラインが現れたら、以下のコマンドを入力して実行してください。インストールが開始されます。
@@ -217,14 +215,12 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;p&gt;ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;インストールについて&#34;&gt;インストールについて&lt;/h4&gt;
 
@@ -477,10 +473,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
 
@@ -503,10 +498,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;解決策-staging-viewを使わない&#34;&gt;解決策：Staging Viewを使わない&lt;/h2&gt;
 
@@ -514,10 +508,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;上手くいかなかった解決策&#34;&gt;上手くいかなかった解決策&lt;/h2&gt;
 
@@ -539,10 +532,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;h2 id=&#34;gmailのpop3は更新が遅い&#34;&gt;GmailのPOP3は更新が遅い！&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/gmail.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Gmailには外部のPOP3メールサーバのメールを読み込む機能があります。IMAPを使えないとか欠点はありますが、使っている人も多いはずです。&lt;/p&gt;
 
@@ -1499,19 +1491,17 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;ul&gt;
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;ul&gt;
 &lt;li&gt;TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。&lt;/li&gt;
@@ -1519,10 +1509,9 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>

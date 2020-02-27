@@ -3,6 +3,24 @@
   
   
   <url>
+    <loc>https://blog.yyyak.com/post/auction_pc/</loc>
+    <lastmod>2020-02-27T06:44:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://blog.yyyak.com/post/zheino_ssd/</loc>
+    <lastmod>2020-02-18T05:51:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://blog.yyyak.com/post/linux_migration/</loc>
     <lastmod>2020-02-16T08:47:00+09:00</lastmod>
     <changefreq>monthly</changefreq>

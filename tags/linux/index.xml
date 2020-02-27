@@ -619,10 +619,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
 
@@ -645,10 +644,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;解決策-staging-viewを使わない&#34;&gt;解決策：Staging Viewを使わない&lt;/h2&gt;
 
@@ -656,10 +654,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;上手くいかなかった解決策&#34;&gt;上手くいかなかった解決策&lt;/h2&gt;
 

@@ -11,6 +11,87 @@
     
       
         <item>
+          <title>PCオークションで注意すること</title>
+          <link>https://blog.yyyak.com/post/auction_pc/</link>
+          <pubDate>Thu, 27 Feb 2020 06:44:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/auction_pc/</guid>
+          <description>&lt;p&gt;ヤフオクでPCを落札する際に注意すべきことをまとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ヤフオク業者にカモられないために&#34;&gt;ヤフオク業者にカモられないために&lt;/h2&gt;
+
+&lt;p&gt;最近のPCは性能向上が緩やかになってきているので、4-5年前のPCでも十分実用的に使用することが出来ます。
+新品にこだわりがなければ良いのでおすすめです。&lt;/p&gt;
+
+&lt;p&gt;しかし、買い取ったPCをなるべく高く売るために卑怯なことをする業者も多いので、注意が必要です。
+心配な方は大手の中古業者を使うことがおすすめですが、ここではヤフオク業者と付き合う際の注意点を挙げます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/pc_auction.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=SSDやOfficeに注意&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pc_auction.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;メモリー-ssdの換装&#34;&gt;メモリー・SSDの換装&lt;/h2&gt;
+
+&lt;p&gt;中古業者は、PCの中に入っているPCパーツのうち、高く売れる商品は取り出して単品販売する傾向にあります。
+取り出された元のPCには代替パーツを入れるのですが、似たような仕様の怪しい格安中華メーカがあると、十中八九この手のメーカに換装されます。&lt;/p&gt;
+
+&lt;p&gt;メモリー・SSDは特に注意が必要です。どちらも格安中華製品がAmazonなどで出回っています。
+「新品SSDに換装済！」などと売り文句にしている場合がありますが、むしろマイナスポイントと捉えましょう。&lt;/p&gt;
+
+&lt;p&gt;PCの中には、基板にメモリが直にハンダ付けされている場合があり、その場合は安心です。&lt;/p&gt;
+
+&lt;h3 id=&#34;解決策&#34;&gt;解決策&lt;/h3&gt;
+
+&lt;p&gt;元の型番と記載スペックを比べて、異なる場合には換装されています。同じスペックである場合でも、換装の可能性はあります。同スペック表記で「換装済み」と書かれていなければ、もし換装されていれば返品できる可能性はありますが、相手は悪徳業者なので期待はしないようにしましょう。&lt;/p&gt;
+
+&lt;p&gt;業者が換装出来るくらいなので、自分でも簡単に換装出来ます。安く手にいれて、問題点は自分でなんとかする姿勢も時には必要です。&lt;/p&gt;
+
+&lt;h2 id=&#34;型番&#34;&gt;型番&lt;/h2&gt;
+
+&lt;p&gt;有名メーカのPCなのに型番が書いていない場合には、内部のパーツが相当入れ替えられていると考えてください。&lt;/p&gt;
+
+&lt;p&gt;シリーズ名だけの表記で、詳細な型番が書かれていない場合には、注意深く商品説明を読みましょう。
+特段の説明がなければ、その業者は使わないのが無難です。&lt;/p&gt;
+
+&lt;h2 id=&#34;office-adobe&#34;&gt;Office, Adobe&lt;/h2&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/pc_auction_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=Adobe製品に注意&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pc_auction_2.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;MicrosoftのOfficeは高価な製品なので、数万円で落札できるPCについてくることはまずありません。
+PC購入時に付属したライセンスキー付きのオフィスを付属させて出品してくれる業者はないと思いましょう。（新品除く）&lt;/p&gt;
+
+&lt;p&gt;「Office付き」となっている製品のほとんどは、企業向けOffice365にインストール数制限がないことを悪用した、ライセンス違反商品です。アンインストールし、自分のOfficeをインストールしましょう。今は、月額1,000円程度で個人向けOffice365が契約できます。&lt;/p&gt;
+
+&lt;p&gt;「Office Onlineが使えます」となっている商品があります。Office Onlineは無料サービスなので、誤りではありません。デスクトップ版のOfficeアプリは付属しませんので注意してください。この表記をしている業者はむしろライセンス違反をしていないので、信用できそうです。&lt;/p&gt;
+
+&lt;p&gt;Adobe CS6インストール済みのPCなども出品されています。海賊版ソフトがインストールされているので、すぐにアンインストールしましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;出品写真の生活感&#34;&gt;出品写真の生活感&lt;/h2&gt;
+
+&lt;p&gt;これまでの記事を見ると、悪徳業者怖い！と思うことでしょう。
+ヤフオクには個人出品者だけを表示するフィルタがありますが、業者の中には個人アカウントを使っているものもあります。&lt;/p&gt;
+
+&lt;p&gt;そういう業者は、わざわざ生活感のある写真をアップしているのですが、実際には業者です。&lt;/p&gt;
+
+&lt;p&gt;また、「写真はイメージです」となっており、実際の傷の状態がわからない業者もあります。注意してください。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;PC落札の際に注意すべきことをまとめました。ある程度知識を持って当たれば、良い製品に巡り会えるはずです！&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ハードウェアの変更には注意。基板直付け率の高い製品を選ぶ・自分で直すなどの回避策あり&lt;/li&gt;
+&lt;li&gt;Office,Adobe系の付属ソフトには期待しない&lt;/li&gt;
+&lt;li&gt;悪徳出品者を避けて快適なオークションライフを！&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>古いマシンをUEFI化する</title>
           <link>https://blog.yyyak.com/post/uefi/</link>
           <pubDate>Thu, 12 Dec 2019 05:30:00 JST</pubDate>
@@ -127,27 +208,24 @@ WindowsにはこのMBRをGPTに変換するツールが付属されているの�
 
 &lt;p&gt;まずはPC側のアプリを起動してみます。特段の設定は必要ありませんが、「&amp;hellip;」ボタンから機能のON/OFFが設定できます。サブディスプレイを使わないときはOFFにしておくと良いでしょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Androidタブレットは、PCと同じネットワーク内に接続するようにして下さい。外出先から自分のPCにアクセスしたりは出来ません。
 サーバが稼働した状態でAndroidアプリを起動すると、一覧に自分のPCのIPアドレスが表示されます。タップすればPC側の内容が表示されるはずです。タブレット上をタップすると、ちゃんとクリックしたものとして動作させられますよ！！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;上級編-有線接続&#34;&gt;（上級編）有線接続&lt;/h3&gt;
 
 &lt;p&gt;無線経由だと遅そうなので、有線で接続してみます。今回はタブレットのUSBテザリング機能を使うことにしました。USBテザリング機能をONにしてPCにUSB接続すれば、お互いのUSBケーブル越しに通信出来るようになります。IPアドレスが割り当てあられるので、接続方法は無線の時と同じです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;使い物になるのか-チェック&#34;&gt;使い物になるのか？？チェック&lt;/h2&gt;
 
@@ -155,10 +233,9 @@ WindowsにはこのMBRをGPTに変換するツールが付属されているの�
 
 &lt;p&gt;今回つかった測定ツールは&lt;a href=&#34;https://www.humanbenchmark.com/&#34;&gt;Human Benchmark&lt;/a&gt;です。もとは人間の反射神経を調べるためのものですが、逆に反射速度は同時間帯では対して変わらないだろう、という仮定のもと、タップから時間測定までに掛かる遅延を計測してみます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;４つの測定パターンを用意しました。PC単体が早いはずなのは当然ですが、その他がどうなるのか気になります。&lt;/p&gt;
 
@@ -309,10 +386,9 @@ Blu-ray UHDでも4K/HDR映像が楽しめますが、最新のCPUが必要なの
 「HDRのゲームとアプリを使用する」をONにしましょう。
 このトグルスイッチが表示されない場合、HDRに対応出来ていません。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;ちなみに詳細設定は「Windows HD Color 設定」から行えます。私のディスプレイは「HDRビデオのストリーミング」という部分がONに出来ませんが、特に問題なく使えています。&lt;/p&gt;
 
@@ -332,10 +408,9 @@ HDR対応したディスプレイは最新のHDCP2.2に対応していますが�
 &lt;p&gt;HDRが再生出来る場合、HDRアイコンが表示されます。
 分かりやすいものとしては、&lt;a href=&#34;https://www.youtube.com/watch?v=9uyyOHIidMA&amp;amp;t=63s&#34;&gt;こちらの動画&lt;/a&gt;がお勧めです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; alt=&#34;&#34; width=&#34;600&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;ちなみに、&lt;a href=&#34;https://www.youtube.com/watch?time_continue=2&amp;amp;v=mkggXE5e2yk&#34;&gt;こちらのHDR動画&lt;/a&gt;はHDRに出来ませんでした。
 HDRには二種類のガンマカーブ(PQ, HLG)というものがあるそうです。PCディスプレイの場合はPQのみの対応が多いようです。HLGは互換性を重視したテレビ放送向けだそうです。
@@ -346,10 +421,9 @@ Youtube上でHDR再生できないものは、おそらくこの辺りが原因�
 &lt;p&gt;Netflixは必要な動作環境をしっかり提示してくれているので、その通りに用意すれば問題ないはずです。
 HDR対応の動画では「ULTRA HD 4K」などと表示されます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; alt=&#34;&#34; width=&#34;350&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;私は当初HDCP1.4ディスプレイ混在のマルチディスプレイだったのですが、この状態だと上のロゴは表示されずにHDでした。
 ご注意下さい。&lt;/p&gt;
@@ -433,10 +507,9 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 
 &lt;p&gt;ちなみにNvidiaのコントロールパネルからもHDR関連の設定が行えるようです。私のマシンの場合、どう頑張っても&amp;rdquo;HDR(64bit)&amp;ldquo;が選択できないので、やはり対応していないのでしょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/hdr0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/hdr0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/hdr0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
@@ -539,10 +612,9 @@ Kasperskyをそこまで無条件に信頼出来ないので、私は無効に�
 &lt;p&gt;発表当初はUbuntuしか使えませんでしたが、今では色々なディストロが用意されています。
 Windows Storeから簡単にインストールすることができますが、なんと複数同時に使えます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;1つのディストロで十分な気もしますが、出来るか出来ないかは重要です・・・。&lt;/p&gt;
 
@@ -637,10 +709,9 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;h4 id=&#34;まずはpowershellを管理者権限で起動&#34;&gt;まずはPowershellを管理者権限で起動&lt;/h4&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;スタート画面などでPowershellを検索しましょう。右クリックをすると、「管理者として実行」が現れます。
 コマンドラインが現れたら、以下のコマンドを入力して実行してください。インストールが開始されます。
@@ -662,14 +733,12 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;p&gt;ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;インストールについて&#34;&gt;インストールについて&lt;/h4&gt;
 
@@ -717,10 +786,9 @@ Choco自体のアンインストールはフォルダを消せばOKです。&lt;
 &lt;p&gt;古いプロジェクトファイルは最新のVSでは動きません。
 これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;予想ですが、将来的には一つのプロジェクトでWindowsとLinux開発の両方を行えるようにしているのだと思います。特殊なプロジェクトとして扱われていたLinuxプロジェクトが、変更を経て徐々に普通のプロジェクトファイルに近付きつつあります。期待しましょう！&lt;/p&gt;
 
@@ -735,10 +803,9 @@ Choco自体のアンインストールはフォルダを消せばOKです。&lt;
 &lt;p&gt;ボタンを辿って、以下のページを表示して下さい。&lt;br /&gt;
 [ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;&lt;code&gt;sudo apt install zip&lt;/code&gt;コマンドの実行がクライアント側で必要になるかもしれません。クライアント側の設定は以前のものにしたがって下さい。&lt;/p&gt;
 
@@ -772,10 +839,9 @@ End of search list.
 &lt;p&gt;ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
 [C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。&lt;code&gt;;&lt;/code&gt;で区切れます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;これでようやく補完がまともに働きます。&lt;/p&gt;
 
@@ -899,10 +965,9 @@ End of search list.
 &lt;p&gt;Photoという名前のソフトウェアがインストールされるので、起動してみましょう。&lt;/p&gt;
 
 &lt;p&gt;アプリを起動します。ディスプレイの設定だけをすればよいので、２つめの選択肢を選びます。
-&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color01.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;設定したいディスプレイを選びます。複数ディスプレイを使っている場合には、１つずつ設定します。ディスプレイによって色合いが違うので、当然両方やらないとダメです。&lt;/p&gt;
 
@@ -915,45 +980,38 @@ End of search list.
 &lt;li&gt;輝度：120cd/m2&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color02.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color03.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;設定が終わったら、センサーのキャリブレーションをしてディスプレイに設定します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color04.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color05.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;キャリブレーション中にやるべきことは、輝度とコントラストを調整することだけです。
 インジケーターが中央に来るように、輝度とコントラストを動かしましょう。ディスプレイ本体の設定画面を使います。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color06.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color07.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;あとはやることはありません。5分間、いろいろな色が表示されます。
 キャリブレーション結果はカラープロファイルとして登録されます。コントロールパネルから「色の管理」を見ると、確かに登録されていることがわかるはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color08.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
@@ -1066,10 +1124,9 @@ End of search list.
 
 &lt;h3 id=&#34;追記&#34;&gt;追記&lt;/h3&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Firefox55からはパフォーマンス調整のためのオプションが追加されて、PCの性能によってはあえて性能が制限されることもあるようです。私の場合は、スレッド数1が既定の設定となっていました。サイトの表示が遅かったのはこのせいかもしれないです。メモリ消費量が微減したのも納得です。&lt;/p&gt;</description>
         </item>
@@ -1148,10 +1205,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
 
@@ -1174,10 +1230,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;解決策-staging-viewを使わない&#34;&gt;解決策：Staging Viewを使わない&lt;/h2&gt;
 
@@ -1185,10 +1240,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;上手くいかなかった解決策&#34;&gt;上手くいかなかった解決策&lt;/h2&gt;
 

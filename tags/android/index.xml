@@ -36,10 +36,9 @@
 
 &lt;p&gt;2台まとめて注文して380ドルでした。2ヶ月後には、取り過ぎた関税分13ドルが返ってきました。一台およそ2万円の計算です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;注意していただきたいのは、技適が表示されなかった点です。同じ名前の機種がJCOM専売で日本市場にも上陸していますが、違う製品のようです。&lt;/p&gt;
 
@@ -110,27 +109,24 @@
 
 &lt;p&gt;まずはPC側のアプリを起動してみます。特段の設定は必要ありませんが、「&amp;hellip;」ボタンから機能のON/OFFが設定できます。サブディスプレイを使わないときはOFFにしておくと良いでしょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Androidタブレットは、PCと同じネットワーク内に接続するようにして下さい。外出先から自分のPCにアクセスしたりは出来ません。
 サーバが稼働した状態でAndroidアプリを起動すると、一覧に自分のPCのIPアドレスが表示されます。タップすればPC側の内容が表示されるはずです。タブレット上をタップすると、ちゃんとクリックしたものとして動作させられますよ！！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;上級編-有線接続&#34;&gt;（上級編）有線接続&lt;/h3&gt;
 
 &lt;p&gt;無線経由だと遅そうなので、有線で接続してみます。今回はタブレットのUSBテザリング機能を使うことにしました。USBテザリング機能をONにしてPCにUSB接続すれば、お互いのUSBケーブル越しに通信出来るようになります。IPアドレスが割り当てあられるので、接続方法は無線の時と同じです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;使い物になるのか-チェック&#34;&gt;使い物になるのか？？チェック&lt;/h2&gt;
 
@@ -138,10 +134,9 @@
 
 &lt;p&gt;今回つかった測定ツールは&lt;a href=&#34;https://www.humanbenchmark.com/&#34;&gt;Human Benchmark&lt;/a&gt;です。もとは人間の反射神経を調べるためのものですが、逆に反射速度は同時間帯では対して変わらないだろう、という仮定のもと、タップから時間測定までに掛かる遅延を計測してみます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;４つの測定パターンを用意しました。PC単体が早いはずなのは当然ですが、その他がどうなるのか気になります。&lt;/p&gt;
 
@@ -217,10 +212,9 @@
 &lt;p&gt;これまでHuawei Watch2を使っていたのですが、ボタンが取れてしまったり充電端子の接触が悪かったりと不満が貯まっていました。
 安く手に入れたので、レビューします。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fossilsport0.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;メリットその１-wearos&#34;&gt;メリットその１：WearOS&lt;/h2&gt;
 
@@ -244,10 +238,9 @@ Fossilのスマートウォッチ部門は最近Googleに買収されていま�
 &lt;p&gt;電池を長持ちさせるために心拍数系をOFFにして使っていますが、HuaweiWatch2が２日持ったところ、こちらは１日半といった感じです。
 どうもアイドル時の消費電力が多いようで、何もしていなくても電池がかなり減ってしまっている印象です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fossilsport1.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;微妙な点２-日本での販売価格が高い&#34;&gt;微妙な点２：日本での販売価格が高い&lt;/h2&gt;
 
@@ -440,10 +433,9 @@ Ver2.1のアップデートがなかなか良かったので紹介したいと�
 
 &lt;p&gt;ウォッチフェイスの変更はしにくくなりましたが、むしろ滅多に変更しないので私としては問題ないです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;電池持ちが向上&#34;&gt;電池持ちが向上&lt;/h2&gt;
 
@@ -458,14 +450,12 @@ v2.1以降、余裕で2日持っている気がします。&lt;/p&gt;
 &lt;p&gt;v2.1が配信された頃から、バックグラウンドでの心拍計測をOFFに出来るようになっています。
 OFFにすると、余裕で3日は持つ印象です。私は結局ONにしたままですが、電池持ちを追求したい人にはカスタマイズ必須です。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;今後の展開に期待&#34;&gt;今後の展開に期待&lt;/h2&gt;
 
@@ -508,60 +498,53 @@ Classicと無印の違いは、デザインだけです。無印はスポーツ�
 
 &lt;p&gt;結論から言うと、2日間はたっぷり持ちます。3日目に突入すると、日中にバッテリーが切れてしまうかもしれないので、使い方次第です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;使い方には工夫が必要で、いつでも明るく光らせておくとすぐに電池がなくなっていまいます。
 例えば、しっかり見るときは左の画像のように明るく表示すればよいのですが、見ていないときやチラ見するだけの時は右の画像のように極力光らせないモードにする設定があります。こういうのを使っていると、しっかり2日持つようになります。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ランニングに最適&#34;&gt;ランニングに最適&lt;/h2&gt;
 
 &lt;p&gt;GPSが搭載されているので、Runtasticなどを使ってスマホなしでランニングに出かけられます。
 下の画像のように、スタートボタンを押すだけでワークアウトの記録が行われます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;自宅に到着するとバックグラウンドでデータがサーバに自動送信されます。
 WEBで見てみると、GPSと心拍がしっかり記録されているのが分かります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;単体で音楽が聴ける&#34;&gt;単体で音楽が聴ける&lt;/h2&gt;
 
 &lt;p&gt;Google Play Music を使っている人は、プレイリストや楽曲単位でスマートウォッチに曲を保存して、外部スピーカやBluetoothを使って聞くことができます。
 ランニングに出るときや、スマホの電池が無くなってしまったときに便利です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;簡単な返信ならスマホを取り出さずにok&#34;&gt;簡単な返信ならスマホを取り出さずにOK&lt;/h2&gt;
 
 &lt;p&gt;スマホに来ているLINEやAlloの通知は、取り出さなくても時計から閲覧して返信までできます。
 日本語に対応した手書きキーボードや音声入力があるので、定型文に限らず好きな文章を入力できます。これも便利です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;通知の取得の仕方が頭良い&#34;&gt;通知の取得の仕方が頭良い&lt;/h2&gt;
 
@@ -785,10 +768,9 @@ KitkatとかMarshmallowとかのあれです。&lt;/p&gt;
 
 &lt;p&gt;お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。&lt;/p&gt;
 
@@ -907,20 +889,18 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;p&gt;メディアドライブの電源ボタンを長押ししてLEDが点滅し始めたら、アプリを起動します。デバイスを選択する画面が表されるはずなので、&amp;rdquo;Sandisk Media ****&amp;ldquo;というものを選択します。初期のパスワードは&amp;rdquo;admin&amp;rdquo;です。
 すると、メモリー内の内容が表示されるようになります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;設定&#34;&gt;設定&lt;/h3&gt;
 
 &lt;p&gt;設定ボタンを押すと、様々な設定を行えます。ワイヤレスドライブの無線LANのパスワード変更は必ずしておきましょう。
 既存のWifiネットワークに接続して、LAN内のすべてのマシンから閲覧できるようにもできます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;ブラウザから接続する&#34;&gt;ブラウザから接続する&lt;/h3&gt;
 
@@ -1187,19 +1167,17 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 &lt;li&gt;まずは設定画面にアクセスです。&lt;a href=&#34;http://192.168.0.1&#34;&gt;http://192.168.0.1&lt;/a&gt; などにアクセスしましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;ul&gt;
 &lt;li&gt;SPI設定を探します。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;ul&gt;
 &lt;li&gt;TCP、UDP、ICMPごとの時間設定があります。~~とりあえず3600秒に全部変えてしまいましょう。&lt;/li&gt;
@@ -1207,10 +1185,9 @@ Aug  7 16:29:39 IPTABLES:IN=eth1 OUT=eth0 SRC=192.168.12.111 DST=64.233.187.188 
 
 &lt;p&gt;~~&lt;br&gt;[追記]TCP:2100, UDP,ICMP:300などに設定しましょう。&lt;a href=&#34;https://blog.yyyak.com/post/router_nat/&#34;&gt;こちらの投稿&lt;/a&gt;を参考にどうぞ。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pr400ne_3.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;以上です。これでPUSH通知が来るはずです。でも、時間設定が長いとセキュリティ的にはあまり良くないので気をつけましょう。&lt;/p&gt;</description>
         </item>

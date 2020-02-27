@@ -6,8 +6,159 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2020</rights>
-    <updated>2020-02-16 08:47:00 &#43;0900 JST</updated>
+    <updated>2020-02-27 06:44:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>PCオークションで注意すること</title>
+          <link>https://blog.yyyak.com/post/auction_pc/</link>
+          <pubDate>Thu, 27 Feb 2020 06:44:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/auction_pc/</guid>
+          <description>&lt;p&gt;ヤフオクでPCを落札する際に注意すべきことをまとめました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ヤフオク業者にカモられないために&#34;&gt;ヤフオク業者にカモられないために&lt;/h2&gt;
+
+&lt;p&gt;最近のPCは性能向上が緩やかになってきているので、4-5年前のPCでも十分実用的に使用することが出来ます。
+新品にこだわりがなければ良いのでおすすめです。&lt;/p&gt;
+
+&lt;p&gt;しかし、買い取ったPCをなるべく高く売るために卑怯なことをする業者も多いので、注意が必要です。
+心配な方は大手の中古業者を使うことがおすすめですが、ここではヤフオク業者と付き合う際の注意点を挙げます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/pc_auction.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=SSDやOfficeに注意&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pc_auction.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;メモリー-ssdの換装&#34;&gt;メモリー・SSDの換装&lt;/h2&gt;
+
+&lt;p&gt;中古業者は、PCの中に入っているPCパーツのうち、高く売れる商品は取り出して単品販売する傾向にあります。
+取り出された元のPCには代替パーツを入れるのですが、似たような仕様の怪しい格安中華メーカがあると、十中八九この手のメーカに換装されます。&lt;/p&gt;
+
+&lt;p&gt;メモリー・SSDは特に注意が必要です。どちらも格安中華製品がAmazonなどで出回っています。
+「新品SSDに換装済！」などと売り文句にしている場合がありますが、むしろマイナスポイントと捉えましょう。&lt;/p&gt;
+
+&lt;p&gt;PCの中には、基板にメモリが直にハンダ付けされている場合があり、その場合は安心です。&lt;/p&gt;
+
+&lt;h3 id=&#34;解決策&#34;&gt;解決策&lt;/h3&gt;
+
+&lt;p&gt;元の型番と記載スペックを比べて、異なる場合には換装されています。同じスペックである場合でも、換装の可能性はあります。同スペック表記で「換装済み」と書かれていなければ、もし換装されていれば返品できる可能性はありますが、相手は悪徳業者なので期待はしないようにしましょう。&lt;/p&gt;
+
+&lt;p&gt;業者が換装出来るくらいなので、自分でも簡単に換装出来ます。安く手にいれて、問題点は自分でなんとかする姿勢も時には必要です。&lt;/p&gt;
+
+&lt;h2 id=&#34;型番&#34;&gt;型番&lt;/h2&gt;
+
+&lt;p&gt;有名メーカのPCなのに型番が書いていない場合には、内部のパーツが相当入れ替えられていると考えてください。&lt;/p&gt;
+
+&lt;p&gt;シリーズ名だけの表記で、詳細な型番が書かれていない場合には、注意深く商品説明を読みましょう。
+特段の説明がなければ、その業者は使わないのが無難です。&lt;/p&gt;
+
+&lt;h2 id=&#34;office-adobe&#34;&gt;Office, Adobe&lt;/h2&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/pc_auction_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=Adobe製品に注意&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/pc_auction_2.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;MicrosoftのOfficeは高価な製品なので、数万円で落札できるPCについてくることはまずありません。
+PC購入時に付属したライセンスキー付きのオフィスを付属させて出品してくれる業者はないと思いましょう。（新品除く）&lt;/p&gt;
+
+&lt;p&gt;「Office付き」となっている製品のほとんどは、企業向けOffice365にインストール数制限がないことを悪用した、ライセンス違反商品です。アンインストールし、自分のOfficeをインストールしましょう。今は、月額1,000円程度で個人向けOffice365が契約できます。&lt;/p&gt;
+
+&lt;p&gt;「Office Onlineが使えます」となっている商品があります。Office Onlineは無料サービスなので、誤りではありません。デスクトップ版のOfficeアプリは付属しませんので注意してください。この表記をしている業者はむしろライセンス違反をしていないので、信用できそうです。&lt;/p&gt;
+
+&lt;p&gt;Adobe CS6インストール済みのPCなども出品されています。海賊版ソフトがインストールされているので、すぐにアンインストールしましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;出品写真の生活感&#34;&gt;出品写真の生活感&lt;/h2&gt;
+
+&lt;p&gt;これまでの記事を見ると、悪徳業者怖い！と思うことでしょう。
+ヤフオクには個人出品者だけを表示するフィルタがありますが、業者の中には個人アカウントを使っているものもあります。&lt;/p&gt;
+
+&lt;p&gt;そういう業者は、わざわざ生活感のある写真をアップしているのですが、実際には業者です。&lt;/p&gt;
+
+&lt;p&gt;また、「写真はイメージです」となっており、実際の傷の状態がわからない業者もあります。注意してください。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;PC落札の際に注意すべきことをまとめました。ある程度知識を持って当たれば、良い製品に巡り会えるはずです！&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ハードウェアの変更には注意。基板直付け率の高い製品を選ぶ・自分で直すなどの回避策あり&lt;/li&gt;
+&lt;li&gt;Office,Adobe系の付属ソフトには期待しない&lt;/li&gt;
+&lt;li&gt;悪徳出品者を避けて快適なオークションライフを！&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Zheino製SSDのアクセス速度</title>
+          <link>https://blog.yyyak.com/post/zheino_ssd/</link>
+          <pubDate>Tue, 18 Feb 2020 05:51:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/zheino_ssd/</guid>
+          <description>&lt;p&gt;ZheinoというメーカのSSDを評価する機会があったので、速度を測定してみました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;悪質なssdメーカの存在&#34;&gt;悪質なSSDメーカの存在&lt;/h2&gt;
+
+&lt;p&gt;SSDはHDDと違って小さなメーカでも製造が簡単という事情があり、有名メーカ以外の製品が広く出回っています。&lt;/p&gt;
+
+&lt;p&gt;SSDにデータを記録するフラッシュメモリチップは大きなメーカしか作れませんが、それらのメーカで作られたものの検査落ちしたB級品を組み入れるメーカがあります。
+それ自体はいいのですが、B級品であること隠して販売するメーカもあるようです。Zheinoはその件で炎上しています。&lt;/p&gt;
+
+&lt;div class=&#34;blog-card&#34; style=&#34;padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;&#34;&gt;&lt;div class=&#34;blog-card-thumbnail&#34; style=&#34;float:left;&#34;&gt;&lt;a href=&#34;http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/&#34; class=&#34;blog-card-thumbnail-link&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://capture.heartrails.com/120x120/shorten?http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/&#34; class=&#34;blog-card-thumb-image wp-post-image&#34; alt=&#34;12436288584_94d6bc46d2_b.jpg&#34; style=&#34;width:100px;height:100px;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-content&#34; style=&#34;margin-left:110px;line-height:120%;&#34;&gt;&lt;div class=&#34;blog-card-title&#34; style=&#34;margin-bottom:5px;&#34;&gt;&lt;a href=&#34;http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/&#34; class=&#34;blog-card-title-link&#34; style=&#34;font-weight:bold;text-decoration:none;color:#111;&#34; target=&#34;_blank&#34;&gt;中華 SSD分解祭りの中で、Zheino製の SSDにヤバイのがあったので問い合わせてみた (「検査不合格」の「不良品」「廃棄物」のメモリチップを使用したインチキ SSDか？)&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-excerpt&#34; style=&#34;color:#333;font-size:90%;&#34;&gt;xxxxxxxxxx&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-footer&#34; style=&#34;font-size:70%;color:#777;margin-top:10px;clear:both;&#34;&gt;&lt;span class=&#34;blog-card-hatena&#34;&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/&#34; target=&#34;_blank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://b.hatena.ne.jp/entry/image/http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/&#34; border=&#34;0&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;zheinoのssdをテストする&#34;&gt;ZheinoのSSDをテストする&lt;/h2&gt;
+
+&lt;p&gt;ヤフオクで中古PCを落札した際、SSDがZheino製に入れ替えられていました。
+すぐにWD製に入れ替えたのですが、速度テストをしたので結果を張ります。
+どちらもM.2コネクタ接続のSATA-SSD(500GB)です。&lt;/p&gt;
+
+&lt;p&gt;あらかじめ総括してしまうと、2社に大きな差はなくコントローラとしては良い仕事をしていることがわかりました。&lt;/p&gt;
+
+&lt;h3 id=&#34;crystal-diskmark-v6でのテスト&#34;&gt;Crystal Diskmark v6でのテスト&lt;/h3&gt;
+
+&lt;p&gt;1つめがZheino、2つめがWDの結果です。驚くべきことに、Zheinoはマルチスレッドでの読み込み性能が劣るだけで、WDと大差のない結果を出しています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/speed_6_zheino.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=Zheino&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_6_zheino.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/speed_6_wd.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=WD&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_6_wd.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;crystal-diskmark-v7でのテスト&#34;&gt;Crystal Diskmark v7でのテスト&lt;/h3&gt;
+
+&lt;p&gt;1つめがZheino、2つめがWDの結果です。v6でのテストと同様に、マルチスレッドでの読み込み性能が伸び悩んでいますが、ほかはWDとほぼ同じ結果となっています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/speed_7_zheino.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=Zheino&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_7_zheino.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/speed_7_wd.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=WD&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_7_wd.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;crystal-disk-infoで気になったこと&#34;&gt;Crystal Disk Infoで気になったこと&lt;/h3&gt;
+
+&lt;p&gt;Zheino製はだいたいいつも45度、WD製は37度の温度を指していました。
+高い温度で動いているだけ消耗が激しいですし、検査落ちしたチップを動かすために電圧を高めに与えているのかもしれません。信頼性という意味では、WDが良さそうです。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;ちょっと予想とは異なる結果となりましたが、自己責任で使う分にはZheinoは悪くないのかもしれません。
+ただし、価格差も大したことなくなりつつあります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Zheino製SSDは、アクセス性能は悪くない&lt;/li&gt;
+&lt;li&gt;動作温度や信頼性はWDのほうが良いと思われる&lt;/li&gt;
+&lt;li&gt;価格対性能比を考えて、自己責任で使う分にはZheinoも良いかも&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07JG3VJVY&amp;linkId=e6bce966c6710c6d839c07689a580b4b&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B082VZKK3L&amp;linkId=f9b737b7717fb68aa13b5a1527143b6f&#34;&gt;&lt;/iframe&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -193,10 +344,9 @@ $ mysql -u [username] -p [password] &amp;lt; db1.dump
 
 &lt;p&gt;2台まとめて注文して380ドルでした。2ヶ月後には、取り過ぎた関税分13ドルが返ってきました。一台およそ2万円の計算です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/galaxytaba_order.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;注意していただきたいのは、技適が表示されなかった点です。同じ名前の機種がJCOM専売で日本市場にも上陸していますが、違う製品のようです。&lt;/p&gt;
 
@@ -847,27 +997,24 @@ WindowsにはこのMBRをGPTに変換するツールが付属されているの�
 
 &lt;p&gt;まずはPC側のアプリを起動してみます。特段の設定は必要ありませんが、「&amp;hellip;」ボタンから機能のON/OFFが設定できます。サブディスプレイを使わないときはOFFにしておくと良いでしょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Androidタブレットは、PCと同じネットワーク内に接続するようにして下さい。外出先から自分のPCにアクセスしたりは出来ません。
 サーバが稼働した状態でAndroidアプリを起動すると、一覧に自分のPCのIPアドレスが表示されます。タップすればPC側の内容が表示されるはずです。タブレット上をタップすると、ちゃんとクリックしたものとして動作させられますよ！！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_connect1.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;上級編-有線接続&#34;&gt;（上級編）有線接続&lt;/h3&gt;
 
 &lt;p&gt;無線経由だと遅そうなので、有線で接続してみます。今回はタブレットのUSBテザリング機能を使うことにしました。USBテザリング機能をONにしてPCにUSB接続すれば、お互いのUSBケーブル越しに通信出来るようになります。IPアドレスが割り当てあられるので、接続方法は無線の時と同じです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_wired.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;使い物になるのか-チェック&#34;&gt;使い物になるのか？？チェック&lt;/h2&gt;
 
@@ -875,10 +1022,9 @@ WindowsにはこのMBRをGPTに変換するツールが付属されているの�
 
 &lt;p&gt;今回つかった測定ツールは&lt;a href=&#34;https://www.humanbenchmark.com/&#34;&gt;Human Benchmark&lt;/a&gt;です。もとは人間の反射神経を調べるためのものですが、逆に反射速度は同時間帯では対して変わらないだろう、という仮定のもと、タップから時間測定までに掛かる遅延を計測してみます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/spacedesk_measure.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;４つの測定パターンを用意しました。PC単体が早いはずなのは当然ですが、その他がどうなるのか気になります。&lt;/p&gt;
 
@@ -1029,10 +1175,9 @@ Blu-ray UHDでも4K/HDR映像が楽しめますが、最新のCPUが必要なの
 「HDRのゲームとアプリを使用する」をONにしましょう。
 このトグルスイッチが表示されない場合、HDRに対応出来ていません。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/hdr_win.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;ちなみに詳細設定は「Windows HD Color 設定」から行えます。私のディスプレイは「HDRビデオのストリーミング」という部分がONに出来ませんが、特に問題なく使えています。&lt;/p&gt;
 
@@ -1052,10 +1197,9 @@ HDR対応したディスプレイは最新のHDCP2.2に対応していますが�
 &lt;p&gt;HDRが再生出来る場合、HDRアイコンが表示されます。
 分かりやすいものとしては、&lt;a href=&#34;https://www.youtube.com/watch?v=9uyyOHIidMA&amp;amp;t=63s&#34;&gt;こちらの動画&lt;/a&gt;がお勧めです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/youtube_hdr.JPG&#34; alt=&#34;&#34; width=&#34;600&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;ちなみに、&lt;a href=&#34;https://www.youtube.com/watch?time_continue=2&amp;amp;v=mkggXE5e2yk&#34;&gt;こちらのHDR動画&lt;/a&gt;はHDRに出来ませんでした。
 HDRには二種類のガンマカーブ(PQ, HLG)というものがあるそうです。PCディスプレイの場合はPQのみの対応が多いようです。HLGは互換性を重視したテレビ放送向けだそうです。
@@ -1066,10 +1210,9 @@ Youtube上でHDR再生できないものは、おそらくこの辺りが原因�
 &lt;p&gt;Netflixは必要な動作環境をしっかり提示してくれているので、その通りに用意すれば問題ないはずです。
 HDR対応の動画では「ULTRA HD 4K」などと表示されます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/netflix_hdr.JPG&#34; alt=&#34;&#34; width=&#34;350&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;私は当初HDCP1.4ディスプレイ混在のマルチディスプレイだったのですが、この状態だと上のロゴは表示されずにHDでした。
 ご注意下さい。&lt;/p&gt;
@@ -1153,10 +1296,9 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 
 &lt;p&gt;ちなみにNvidiaのコントロールパネルからもHDR関連の設定が行えるようです。私のマシンの場合、どう頑張っても&amp;rdquo;HDR(64bit)&amp;ldquo;が選択できないので、やはり対応していないのでしょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/hdr0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/hdr0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/hdr0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
@@ -1189,10 +1331,9 @@ DisplayHDR規格では、信号は10bit以上であるべし、とされてい�
 &lt;p&gt;これまでHuawei Watch2を使っていたのですが、ボタンが取れてしまったり充電端子の接触が悪かったりと不満が貯まっていました。
 安く手に入れたので、レビューします。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fossilsport0.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;メリットその１-wearos&#34;&gt;メリットその１：WearOS&lt;/h2&gt;
 
@@ -1216,10 +1357,9 @@ Fossilのスマートウォッチ部門は最近Googleに買収されていま�
 &lt;p&gt;電池を長持ちさせるために心拍数系をOFFにして使っていますが、HuaweiWatch2が２日持ったところ、こちらは１日半といった感じです。
 どうもアイドル時の消費電力が多いようで、何もしていなくても電池がかなり減ってしまっている印象です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/fossilsport1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fossilsport1.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;微妙な点２-日本での販売価格が高い&#34;&gt;微妙な点２：日本での販売価格が高い&lt;/h2&gt;
 
@@ -1555,10 +1695,9 @@ Ver2.1のアップデートがなかなか良かったので紹介したいと�
 
 &lt;p&gt;ウォッチフェイスの変更はしにくくなりましたが、むしろ滅多に変更しないので私としては問題ないです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_update.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;電池持ちが向上&#34;&gt;電池持ちが向上&lt;/h2&gt;
 
@@ -1573,14 +1712,12 @@ v2.1以降、余裕で2日持っている気がします。&lt;/p&gt;
 &lt;p&gt;v2.1が配信された頃から、バックグラウンドでの心拍計測をOFFに出来るようになっています。
 OFFにすると、余裕で3日は持つ印象です。私は結局ONにしたままですが、電池持ちを追求したい人にはカスタマイズ必須です。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_update_version.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_fit.jpg&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;今後の展開に期待&#34;&gt;今後の展開に期待&lt;/h2&gt;
 
@@ -1652,19 +1789,17 @@ OFFにすると、余裕で3日は持つ印象です。私は結局ONにした�
 
 &lt;p&gt;ANAアプリを起動したら、左上のメニューから「国内線 機内WiFi」を選択しましょう。以下のような画面になるはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ana0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ana0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ana0.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;「インターネット接続はこちら」ボタンを押すと、自動でブラウザが起動し、初回登録画面が表示されます。
 メールアドレスなど必要な情報を入力すると、インターネットに繋がります。
 一度登録すると、フライト中は何度でも再接続できます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ana1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ana1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ana1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;速度は&#34;&gt;速度は？&lt;/h3&gt;
 
@@ -1703,10 +1838,9 @@ Youtubeの動画再生は厳しいと思いますが、メールを見たりニ�
 &lt;p&gt;発表当初はUbuntuしか使えませんでしたが、今では色々なディストロが用意されています。
 Windows Storeから簡単にインストールすることができますが、なんと複数同時に使えます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wsl_multi.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;1つのディストロで十分な気もしますが、出来るか出来ないかは重要です・・・。&lt;/p&gt;
 
@@ -1801,10 +1935,9 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;h4 id=&#34;まずはpowershellを管理者権限で起動&#34;&gt;まずはPowershellを管理者権限で起動&lt;/h4&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco0.png&#34; alt=&#34;&#34; width=&#34;100&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;スタート画面などでPowershellを検索しましょう。右クリックをすると、「管理者として実行」が現れます。
 コマンドラインが現れたら、以下のコマンドを入力して実行してください。インストールが開始されます。
@@ -1826,14 +1959,12 @@ WidonwsとLinuxライフを満喫しましょう。&lt;/p&gt;
 
 &lt;p&gt;ウィンドウには大まかに2つのタブがあります。「ローカル」と「Chocolatey」です。ローカルタブでは、インストール済みのアプリの一覧・更新・削除ができます。Chocolateyは、WEBにアップロードされているアプリがすべて検索できます。Chocolateyが公式に管理しているアプリや有志が管理しているアプリなど様々ですが、かなりたくさんの種類のアプリがサポートされています。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/choco1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/choco2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/choco2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;インストールについて&#34;&gt;インストールについて&lt;/h4&gt;
 
@@ -1881,10 +2012,9 @@ Choco自体のアンインストールはフォルダを消せばOKです。&lt;
 &lt;p&gt;古いプロジェクトファイルは最新のVSでは動きません。
 これまでに作ったプロジェクトファイルは諦めて、一からプロジェクトを作り直すことにしました。空のプロジェクトを作ると、Makefileを含む様々なビルドシステムを選択できます。Makefileプロジェクトにすると設定内容が大きく変わるので、Makefileを使うなら初めからそうしましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux0.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;予想ですが、将来的には一つのプロジェクトでWindowsとLinux開発の両方を行えるようにしているのだと思います。特殊なプロジェクトとして扱われていたLinuxプロジェクトが、変更を経て徐々に普通のプロジェクトファイルに近付きつつあります。期待しましょう！&lt;/p&gt;
 
@@ -1899,10 +2029,9 @@ Choco自体のアンインストールはフォルダを消せばOKです。&lt;
 &lt;p&gt;ボタンを辿って、以下のページを表示して下さい。&lt;br /&gt;
 [ツール]→[オプション]→[クロスプラットフォーム]→[接続マネージャ]→[リモートヘッダ]→[IntelliSenseマネージャ]&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux1.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;&lt;code&gt;sudo apt install zip&lt;/code&gt;コマンドの実行がクライアント側で必要になるかもしれません。クライアント側の設定は以前のものにしたがって下さい。&lt;/p&gt;
 
@@ -1936,10 +2065,9 @@ End of search list.
 &lt;p&gt;ソリューションエクスプローラ内からプロジェクトを右クリックすると、以下のようなプロパティページを表示できます。
 [C/C++]→[インクルードの検索パス]に先ほど作ったパスをすべて入力して下さい。&lt;code&gt;;&lt;/code&gt;で区切れます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/vslinux2.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;これでようやく補完がまともに働きます。&lt;/p&gt;
 
@@ -1983,60 +2111,53 @@ Classicと無印の違いは、デザインだけです。無印はスポーツ�
 
 &lt;p&gt;結論から言うと、2日間はたっぷり持ちます。3日目に突入すると、日中にバッテリーが切れてしまうかもしれないので、使い方次第です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_battery.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;使い方には工夫が必要で、いつでも明るく光らせておくとすぐに電池がなくなっていまいます。
 例えば、しっかり見るときは左の画像のように明るく表示すればよいのですが、見ていないときやチラ見するだけの時は右の画像のように極力光らせないモードにする設定があります。こういうのを使っていると、しっかり2日持つようになります。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_clock2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ランニングに最適&#34;&gt;ランニングに最適&lt;/h2&gt;
 
 &lt;p&gt;GPSが搭載されているので、Runtasticなどを使ってスマホなしでランニングに出かけられます。
 下の画像のように、スタートボタンを押すだけでワークアウトの記録が行われます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic_app.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;自宅に到着するとバックグラウンドでデータがサーバに自動送信されます。
 WEBで見てみると、GPSと心拍がしっかり記録されているのが分かります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_runtastic.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;単体で音楽が聴ける&#34;&gt;単体で音楽が聴ける&lt;/h2&gt;
 
 &lt;p&gt;Google Play Music を使っている人は、プレイリストや楽曲単位でスマートウォッチに曲を保存して、外部スピーカやBluetoothを使って聞くことができます。
 ランニングに出るときや、スマホの電池が無くなってしまったときに便利です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_music.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;簡単な返信ならスマホを取り出さずにok&#34;&gt;簡単な返信ならスマホを取り出さずにOK&lt;/h2&gt;
 
 &lt;p&gt;スマホに来ているLINEやAlloの通知は、取り出さなくても時計から閲覧して返信までできます。
 日本語に対応した手書きキーボードや音声入力があるので、定型文に限らず好きな文章を入力できます。これも便利です。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/huawei_watch2_keyboard.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;通知の取得の仕方が頭良い&#34;&gt;通知の取得の仕方が頭良い&lt;/h2&gt;
 
@@ -2072,10 +2193,9 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
 &lt;p&gt;アップルがAirPodsを発表してから、左右独立型のBluetoothイヤホンが流行り始めています。
 Bluetoothイヤホンは左右がワイヤで繋がっているのが普通でしたが、フルワイヤレスではどちらか一方がスマホと接続してもう一方に転送する仕組みとなっています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/fullwireless.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;ワイヤがなくなるので激しい運動をしても外れにくいなどのメリットがありますが、電池持ち・接続途切れなどの別の問題も発生します。
 今回はWF-1000Xの長所・短所をそれぞれ紹介します。&lt;/p&gt;
@@ -2359,10 +2479,9 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;p&gt;まずはブラーバの形に合うように薄いポリボードをカットします。これはブラーバ側にくっつます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item2_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;カチッと音が鳴って固定されるように、ボードには穴を2カ所開けなくてはいけません。これが一番大変でした。
 穴を無事に作れたら、センサーがドライパッドとして認識できるようにサインペンで模様を作ります。他のパッドを参考にして下さい。
@@ -2370,43 +2489,37 @@ Amazonなどで調べてもそれらしいものが売っていないので、�
 
 &lt;p&gt;次に厚い発泡ボードをパッドと同じ大きさにカットします。マジックテープもサクッと取り付けて、完成です。厚い発泡ボードのほうに固いテープを使った方が良いです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_item1_inked.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;完成&#34;&gt;完成！&lt;/h3&gt;
 
 &lt;p&gt;完成したものをブラーバにとりつけてみます。まずは薄い発泡ボードの方から。
 画像の通り、しっかり穴をあければ落っこちません。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;次に厚めの発泡ボードの方をセットアップします。まずはクイックルワイパーの上に置いて・・・
 それをぐるぐる巻いてマジックテープで固定すれば完成です。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_3.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ブラーバに取り付けるとこんな感じ。すこし盛り上がってしまっているので、5mm厚の発泡ボードを使っても良かったかも。とにかくコレで動きます。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/braava_new_set_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ちなみにちゃんと掃除もできているので「&lt;a href=&#34;https://blog.yyyak.com/images/braava_new_4.jpg&#34;&gt;証拠&lt;/a&gt;」を貼っておきます。（汚い画像が表示されます。）&lt;/p&gt;
 
@@ -2609,10 +2722,9 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 &lt;p&gt;Photoという名前のソフトウェアがインストールされるので、起動してみましょう。&lt;/p&gt;
 
 &lt;p&gt;アプリを起動します。ディスプレイの設定だけをすればよいので、２つめの選択肢を選びます。
-&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color01.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color01.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;設定したいディスプレイを選びます。複数ディスプレイを使っている場合には、１つずつ設定します。ディスプレイによって色合いが違うので、当然両方やらないとダメです。&lt;/p&gt;
 
@@ -2625,45 +2737,38 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
 &lt;li&gt;輝度：120cd/m2&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color02.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color02.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color03.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color03.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;設定が終わったら、センサーのキャリブレーションをしてディスプレイに設定します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color04.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color04.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color05.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color05.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;キャリブレーション中にやるべきことは、輝度とコントラストを調整することだけです。
 インジケーターが中央に来るように、輝度とコントラストを動かしましょう。ディスプレイ本体の設定画面を使います。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/color06.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color06.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color07.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color07.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;あとはやることはありません。5分間、いろいろな色が表示されます。
 キャリブレーション結果はカラープロファイルとして登録されます。コントロールパネルから「色の管理」を見ると、確かに登録されていることがわかるはずです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/color08.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/color08.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
@@ -2928,10 +3033,9 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
 
 &lt;h3 id=&#34;追記&#34;&gt;追記&lt;/h3&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/firefox55_threads.JPG&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Firefox55からはパフォーマンス調整のためのオプションが追加されて、PCの性能によってはあえて性能が制限されることもあるようです。私の場合は、スレッド数1が既定の設定となっていました。サイトの表示が遅かったのはこのせいかもしれないです。メモリ消費量が微減したのも納得です。&lt;/p&gt;</description>
         </item>
@@ -3152,25 +3256,23 @@ WN-AX1167GRを使ってどのようにこの機能を使うか解説します。
 &lt;p&gt;192.168.0.1にブラウザでアクセスすると、下の画像のような設定画面が出てきます。
 ここでv6プラスを選択すれば、それで終わりです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ax1167gr.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;プロバイダ側でv6プラスの設定が済んでいれば、下の画像のようなステータス表示が出てくるはずです。
 （私の場合、プロバイダの設定が終わるまでに1週間くらいかかりました。）&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ax1167gr-2.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;通信速度&#34;&gt;通信速度&lt;/h2&gt;
 
 &lt;p&gt;v6プラス設定後の速度は常に100Mbps弱で安定しています。最大速度が100Mbpsの回線を契約しているので、かなり良い成績だと言えるでしょう。
 このルータを使えば安くて高速な回線が得られます。ぜひ購入して試してみてください！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/speed_v6plus.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;</description>
         </item>
@@ -3288,10 +3390,9 @@ Tmobile純正機種以外はTmobileアプリが必要なので、予めダウン
 
 &lt;p&gt;ムンバイの空港は空港内撮影禁止なので写真はアップできませんが、受託手荷物受け取り所を出るとすぐに正面に見えます。Airtelのマークが大きく看板にあるので、見逃すことはありません。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.ana.co.jp/wws/cn/j/asw_common/departure/airport/map.html?c=bom&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ana.co.jp/wws/cn/j/asw_common/departure/airport/map.html?c=bom&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/bom_arr.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;購入の仕方&#34;&gt;購入の仕方&lt;/h2&gt;
 
@@ -3408,10 +3509,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 
 &lt;p&gt;Texlipseとスペルチェッカの相性が余り良くないようで、設定が不十分だとプロジェクトを終了させるごとにEclipseがハングアップします。スペルチェッカのユーザファイル設定をしておきましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/eclipse_spellcheck.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;このファイルは、ユーザ辞書として使われます。特に必要がないときは、空のtxtファイルを作ってとりあえず設定しておくことをお勧めします。&lt;/p&gt;
 
@@ -3434,10 +3534,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;標準でStaging Viewを使うように変更になったのか、私が設定変更したのか忘れてしまったのですが、これを使うようになってからトラブっています。
 もし同じ問題に直面している人が居たら、Staging Viewを使っていないか確認してみて下さい。画像を貼っておきます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_staging.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;解決策-staging-viewを使わない&#34;&gt;解決策：Staging Viewを使わない&lt;/h2&gt;
 
@@ -3445,10 +3544,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 「ウインドウ→設定→チーム→Git→コミット」と選択して、「コミットダイアログの代わりに・・・」のチェックを外して下さい。
 私の場合はこれだけでPush後にEclipseを閉じてもハングアップしなくなりました。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/egit_config.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;上手くいかなかった解決策&#34;&gt;上手くいかなかった解決策&lt;/h2&gt;
 
@@ -3476,10 +3574,9 @@ KitkatとかMarshmallowとかのあれです。&lt;/p&gt;
 
 &lt;p&gt;お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。&lt;/p&gt;
 
@@ -3598,20 +3695,18 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;p&gt;メディアドライブの電源ボタンを長押ししてLEDが点滅し始めたら、アプリを起動します。デバイスを選択する画面が表されるはずなので、&amp;rdquo;Sandisk Media ****&amp;ldquo;というものを選択します。初期のパスワードは&amp;rdquo;admin&amp;rdquo;です。
 すると、メモリー内の内容が表示されるようになります。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;設定&#34;&gt;設定&lt;/h3&gt;
 
 &lt;p&gt;設定ボタンを押すと、様々な設定を行えます。ワイヤレスドライブの無線LANのパスワード変更は必ずしておきましょう。
 既存のWifiネットワークに接続して、LAN内のすべてのマシンから閲覧できるようにもできます。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h3 id=&#34;ブラウザから接続する&#34;&gt;ブラウザから接続する&lt;/h3&gt;
 
@@ -4162,10 +4257,9 @@ Kindle Oasisは良い機種のようですが、価格も考えるとマスト�
 
 &lt;h2 id=&#34;gmailのpop3は更新が遅い&#34;&gt;GmailのPOP3は更新が遅い！&lt;/h2&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/gmail.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/gmail.png&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;Gmailには外部のPOP3メールサーバのメールを読み込む機能があります。IMAPを使えないとか欠点はありますが、使っている人も多いはずです。&lt;/p&gt;
 
@@ -4327,10 +4421,9 @@ Kindle Oasisは良い機種のようですが、価格も考えるとマスト�
 BatteryMixなどはインストールしていないので、設定画面から得られるグラフをキャプチャして時間軸を調整した上で重ねています。
 グレーの方がAndroid5.0の時のバッテリーの減り、オレンジの方がAndroid6.0の時のバッテリーの減りです。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/z3_battery.jpg&#34; alt=&#34;&#34; width=&#34;600&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;全く同じ使い方をしていないので単純比較はできませんが、スリープ時のバッテリーの減少がAndroid6.0のほうが少し多い印象です。
 逆にAndroid6.0は急激な減りが少ないように見えます。最適化によって動作そのものは高速化していることが減少でしょうか。&lt;/p&gt;
@@ -4539,28 +4632,25 @@ BatteryMixなどはインストールしていないので、設定画面から�
 &lt;p&gt;my docomoなどで契約すると自動でインストールが開始されます。常駐するので特別な設定は必要ありません。とりあえずメインの画面を以下で見てみましょう。
 とてもシンプルで、歩数が表示されているのが分かるかと思います。観光地を散歩するゲームになっていて、歩数に応じて途中途中でポイントがもらえるようになっています。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_0.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;コースの最後でポイントをもらえる仕組みで、途中途中でもらえるのは実はプレゼントボックスです。コースの最後で一気に中身を見てポイントが付与されます。
 注意して欲しいのは、プレゼントを確認しないまま次のチェックポイントに進んでしまうと、その前のプレゼントが流れてしまうことです。私はそのせいで2回ほどプレゼントをムダにしてしまいました。広告が出るわけではないので何故それほど頻繁にアプリにアクセスさせたがるのか謎で、改善してもらいたい点ではあります・・・。&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;h2 id=&#34;どれくらい貯まるのか&#34;&gt;どれくらい貯まるのか？&lt;/h2&gt;
 
 &lt;p&gt;クリップ画像から分かると思いますが、コースごとに50pt~100ptが貯まるようです。まだ私は初めて間もないですが、1週間で3コース目に突入しています。
 このままだと月に600ptとかが貯まってしまう計算になってしまいます。もしこれが本当ならばスゴいことです、何てったって月300円払って600円もらえることになります！&lt;/p&gt;
 
-&lt;a href=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
   &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/aruite_2.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
-
 
 &lt;p&gt;ちなみに『dヘルスケア』にはruntasticサービスも同梱されていますが、こちらもランニング・サイクリング距離に応じてポイントが付与されます。ただ月20ptが上限と明言されてしまっていますので、儲かるサービスではありません。本当に儲けたいだけなら、歩いておトクを単体で契約するのをおすすめします。&lt;/p&gt;
 
@@ -5111,208 +5201,6 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
 &lt;h2 id=&#34;注意したいこと&#34;&gt;注意したいこと&lt;/h2&gt;
 
 &lt;p&gt;自分でWEBから取得したrpmファイルやdebファイルを使う場合、ウイルス等には注意しましょう。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Linux基礎講座：ユーザの追加(CUI)</title>
-          <link>https://blog.yyyak.com/post/linux_basic_useradd/</link>
-          <pubDate>Sun, 13 Mar 2016 12:07:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/linux_basic_useradd/</guid>
-          <description>&lt;p&gt;LinuxPCを複数のユーザで使いたい時、どのようにユーザを追加すればよいか説明します。
-&lt;/p&gt;
-
-&lt;h2 id=&#34;linuxのユーザ概念&#34;&gt;Linuxのユーザ概念&lt;/h2&gt;
-
-&lt;p&gt;CUIでの操作を説明する前に、Linuxのユーザ管理手法について簡単に説明します。&lt;/p&gt;
-
-&lt;h3 id=&#34;ユーザとグループ&#34;&gt;ユーザとグループ&lt;/h3&gt;
-
-&lt;p&gt;LinuxにはWindowsと同じように複数ユーザが同じマシンを用いる仕組みが導入されています。
-ユーザの識別は「ユーザ名」で行われていて、各ユーザは「パスワード」を設定することが出来ます。&lt;/p&gt;
-
-&lt;p&gt;Linuxではさらに利便性を向上させるため「グループ」という仕組みも導入しており、各ユーザは好きなグループに入ることができます。
-グループには「グループ名」と「グループパスワード」があり、ユーザは複数のグループに所属することが可能です。
-ファイルのアクセス権をグループに付与することもできるので、簡単に同じPC上の他ユーザとデータを共有することができます。&lt;/p&gt;
-
-&lt;p&gt;Windowsにも複数ユーザのアクセス管理を行う仕組みはありますが、グループはあまり良く登場する概念ではありませんね。&lt;/p&gt;
-
-&lt;h3 id=&#34;ファイル構成&#34;&gt;ファイル構成&lt;/h3&gt;
-
-&lt;p&gt;Linuxではユーザ名やパスワードはテキスト形式のファイルに保存されています。
-それぞれ、以下のファイルを参照してみて下さい。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;ファイル名&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;説明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ユーザ名&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;/etc/passwd&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ユーザ名やホームディレクトリが記述されている&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ユーザパスワード&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;/etc/shadow&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ハッシュ化されたパスワードとハッシュアルゴリズムが記載されている&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;グループ名&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;/etc/group&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;グループ名や所属するユーザが記述されている&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;グループパスワード&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;/etc/gshadow&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;グループパスワードが記述されている&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;以前はpasswdファイル中にパスワードもハッシュ化された上で保存されていましたが、最近のディストリビュションではすべて別ファイルに保存されます。また、OSを新しくインストールした場合、これらのファイルをコピーすればユーザ情報を復活することが出来ます。&lt;/p&gt;
-
-&lt;h2 id=&#34;cuiでユーザ追加&#34;&gt;CUIでユーザ追加&lt;/h2&gt;
-
-&lt;p&gt;新たなユーザ&amp;rdquo;newuser&amp;rdquo;を追加するには、以下のようにコマンドラインに入力します。
-これでユーザが追加され、ホームディレクトリなども自動で作成されます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# adduser newuser
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;ユーザを作成するだけでは、パスワードがありません。パスワードを設定するには、以下のようなコマンドを実行します。
-対話形式でパスワードを2度聞かれますので、同じ文字列を入力してパスワードを設定しましょう。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# passwd newuser
-&lt;/code&gt;&lt;/pre&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Linux基礎講座：SSH(外部サーバへのアクセス)</title>
-          <link>https://blog.yyyak.com/post/linux_basic_ssh/</link>
-          <pubDate>Thu, 10 Mar 2016 04:39:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/linux_basic_ssh/</guid>
-          <description>&lt;p&gt;Linuxマシンに外部からアクセスするためにSSHを使ってみましょう。
-&lt;/p&gt;
-
-&lt;p&gt;SSH(Secure Shell)とは、外部からシェルを動かすための仕組みです。
-アクセスされる側がSSHサーバ、アクセスする側がSSHクライアントを動作させることによって、マシンに接続されたキーボードとディスプレイを見ることなくCUI操作をすることができます。&lt;/p&gt;
-
-&lt;p&gt;当ポストではすでにサーバ側の設定は済んでいるものとして、どのようにクライアントを使えば良いかを説明します。
-サーバにアクセスするにはパスワードなどの情報を事前に知っておく必要がありますが、それらは自分で用意してください。
-クライアントとなるPCはLinuxの場合とWindowsの場合について説明します。&lt;/p&gt;
-
-&lt;h2 id=&#34;認証の種類&#34;&gt;認証の種類&lt;/h2&gt;
-
-&lt;p&gt;SSHで用いられる認証方法は主に以下の2つです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ユーザ名・パスワード認証&lt;/li&gt;
-&lt;li&gt;ユーザ名・公開鍵認証&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;パスワード認証では、ユーザ名とそのパスワードが分かっていればOKです。WEBサイトにログインするのと同じ感覚で利用できます。&lt;/p&gt;
-
-&lt;p&gt;一方公開鍵認証ではログインにパスワードは使わず、代わりに秘密鍵を使います。サーバ管理者から秘密鍵ファイルを渡されるはずなので、クライアントPC内に紛失しないように保管しましょう。
-秘密鍵には念のためにパスフレーズが設定されることが多いです。パスフレーズはサーバにログインするパスワードとは違いますが、こちらも忘れずに覚えておきましょう。ログインの際に使います。&lt;/p&gt;
-
-&lt;h2 id=&#34;linuxクライアントの場合&#34;&gt;Linuxクライアントの場合&lt;/h2&gt;
-
-&lt;h3 id=&#34;パスワード認証&#34;&gt;パスワード認証&lt;/h3&gt;
-
-&lt;p&gt;UbuntuやFedoraなどの多くのLinuxディストリビュションにはSSHクライアントが内蔵されています。
-例えば、www.hoge.com というサーバにユーザ名fugaで接続するには、以下のようにコマンドラインに入力します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;すると、パスワードを聞かれるはずですのでパスワードを入力します。
-なお、始めて接続するサーバの場合、本当に接続するかどうか確認されることがあります。&amp;rdquo;yes&amp;rdquo;と入力すれば良いでしょう。&lt;/p&gt;
-
-&lt;h3 id=&#34;公開鍵認証&#34;&gt;公開鍵認証&lt;/h3&gt;
-
-&lt;p&gt;公開鍵がある場合には、公開鍵ファイルを指定します。以下は、ホームフォルダ下の.sshディレクトリに秘密鍵&amp;rdquo;key&amp;rdquo;が保管されている場合の例です。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -i ~/.ssh/key
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;いくつかの重要なオプション&#34;&gt;いくつかの重要なオプション&lt;/h3&gt;
-
-&lt;p&gt;サーバによってはSSHサーバのポート番号が変更されている場合があります。デフォルトは22番ですが、それ以外の場合には明記する必要があります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -p 1022
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;X転送という機能を用いる場合、オプションを追加します。X転送ではGUIを持つエディタ等はGUIで起動することができます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -X
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;セキュリティレベルを下げたX転送のため、Yオプションがあります。信頼できるネットワーク内ではこちらを用いた方が動作が速いでしょう。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ssh fuga@www.hoge.com -Y
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;オプションではありませんが、クライアントのユーザ名とサーバのユーザ名が同じ場合、ユーザー名は省略できます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ ssh www.hoge.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;windowsクライアント&#34;&gt;Windowsクライアント&lt;/h2&gt;
-
-&lt;p&gt;Windowsには2016年3月現在ではSSHクライアント機能がありませんので別途ソフトウェアをインストールする必要があります。以下が有名です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;putty&lt;/li&gt;
-&lt;li&gt;TeraTerm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;くれぐれもソフトウェアバグには注意し、アップデートの有無をまめに確認しましょう。
-私の場合にはTeraTermを使うので、そちらで説明します。&lt;/p&gt;
-
-&lt;h3 id=&#34;パスワード認証-1&#34;&gt;パスワード認証&lt;/h3&gt;
-
-&lt;p&gt;TeraTermを起動すると、以下のような画面が表示されます。&lt;/p&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm1.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-
-&lt;p&gt;ここでサーバアドレスを入力します。ポート番号は必要であれば変更します。
-OKボタンを押すと、次の画面に遷移するはずです。&lt;/p&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/blog/images/ssh_teraterm2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ssh_teraterm2.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-
-&lt;p&gt;ここでユーザ名とパスワードを指定します。このとき「プレインパスワードを使う」というラジオボタンを選択しておきましょう。&lt;/p&gt;
-
-&lt;h3 id=&#34;公開鍵認証-1&#34;&gt;公開鍵認証&lt;/h3&gt;
-
-&lt;p&gt;公開鍵認証では、途中まで操作は一緒ですが、「RSA&amp;hellip;鍵を使う」というラジオボタンを選択して、さらに秘密鍵を指定しておく必要があります。秘密鍵の指定は「秘密鍵(K):」というボタンを押して行いましょう。&lt;/p&gt;
-
-&lt;h2 id=&#34;ssh利用上の注意&#34;&gt;SSH利用上の注意&lt;/h2&gt;
-
-&lt;p&gt;SSHを利用する際はセキュリティに注意しましょう。通信は暗号化されますが、盗聴の危険は0ではありません。
-出所の分からないWifi経由で使わないなどの注意が必要です。&lt;/p&gt;
-
-&lt;p&gt;さらに、パスワード認証よりは公開鍵認証の利用をお勧めします。鍵長を長くすればそれだけ安心です。
-サーバという形式をとっているマシンは、何か問題が起きると多くの人に迷惑をかけてしまうことが多いかと思います。くれぐれも注意深く使いましょう。&lt;/p&gt;</description>
         </item>
       
     

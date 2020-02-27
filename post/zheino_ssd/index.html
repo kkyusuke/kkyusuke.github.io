@@ -17,13 +17,13 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Let&#39;sNote RZ4をWindows10にアップグレード &middot; Make &amp; Review">
+<meta property="og:title" content="Zheino製SSDのアクセス速度 &middot; Make &amp; Review">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Let&#39;sNote RZ4をWindows10にアップグレード
+    Zheino製SSDのアクセス速度
     
 </title>
 
@@ -91,74 +91,77 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2015-12-16T00:43+09:00">
-                        2015.12.16 00:43
+                    <time itemprop="datePublished" datetime="2020-02-18T05:51+09:00">
+                        2020.2.18 05:51
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/lets_rz/" itemprop="url">Let&#39;sNote RZ4をWindows10にアップグレード</a>
+                    <a href="https://blog.yyyak.com/post/zheino_ssd/" itemprop="url">Zheino製SSDのアクセス速度</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>Let&rsquo;s Note RZ4(2015春モデル)をWindows10にアップグレードしました。
-快適に利用するには設定が必要でしたので、まとめました。
+                <p>ZheinoというメーカのSSDを評価する機会があったので、速度を測定してみました。
 </p>
 
-<h2 id="rzシリーズは使い方にコツが必要">RZシリーズは使い方にコツが必要？</h2>
+<h2 id="悪質なssdメーカの存在">悪質なSSDメーカの存在</h2>
 
-<p>Let&rsquo;s Note RZシリーズはCoreMプロセッサを搭載した超軽量モバイルノートブック。
-745gは確かに圧倒的な軽さで、「今日は重いのが嫌だからPC持っていくのやめようかな」みたいな思考がなくなります。
-CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイルの編集などまでなら余裕でこなしてくれる性能を持っています。</p>
+<p>SSDはHDDと違って小さなメーカでも製造が簡単という事情があり、有名メーカ以外の製品が広く出回っています。</p>
 
-<p>ただ、バッテリーの持ちがあまり良くないです・・・。特にWindows10にアップデートしてからはその傾向が顕著になってしまっていました。以下が挙げられます。
-* バッテリーがフル充電から3時間程度しか持たない
-* バッテリー表示が不正確。残量80%で、残り30分とか言う
-* 電源管理をモバイルにすると異様に動作が遅い</p>
+<p>SSDにデータを記録するフラッシュメモリチップは大きなメーカしか作れませんが、それらのメーカで作られたものの検査落ちしたB級品を組み入れるメーカがあります。
+それ自体はいいのですが、B級品であること隠して販売するメーカもあるようです。Zheinoはその件で炎上しています。</p>
 
-<p>この状態で2ヶ月くらい使い続けたのですが、さすがに不便だったので設定を見直してみました。</p>
+<div class="blog-card" style="padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;"><div class="blog-card-thumbnail" style="float:left;"><a href="http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/" class="blog-card-thumbnail-link" target="_blank"><img src="http://capture.heartrails.com/120x120/shorten?http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/" class="blog-card-thumb-image wp-post-image" alt="12436288584_94d6bc46d2_b.jpg" style="width:100px;height:100px;"></a></div><div class="blog-card-content" style="margin-left:110px;line-height:120%;"><div class="blog-card-title" style="margin-bottom:5px;"><a href="http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/" class="blog-card-title-link" style="font-weight:bold;text-decoration:none;color:#111;" target="_blank">中華 SSD分解祭りの中で、Zheino製の SSDにヤバイのがあったので問い合わせてみた (「検査不合格」の「不良品」「廃棄物」のメモリチップを使用したインチキ SSDか？)</a></div><div class="blog-card-excerpt" style="color:#333;font-size:90%;">xxxxxxxxxx</div></div><div class="blog-card-footer" style="font-size:70%;color:#777;margin-top:10px;clear:both;"><span class="blog-card-hatena"><a href="http://b.hatena.ne.jp/entry/http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/" target="_blank"><img border="0" src="http://b.hatena.ne.jp/entry/image/http://www.neko.ne.jp/~freewing/hardware/china_ssd_high_quality_defected_memory_chip_ssd/" border="0" alt="" /></a></span></div></div>
 
-<h2 id="常駐ソフトウェアを減らす">常駐ソフトウェアを減らす</h2>
+<h2 id="zheinoのssdをテストする">ZheinoのSSDをテストする</h2>
 
-<p>Windows10には常駐ソフトウェアのON/OFFを設定する画面があります。
-「スタートボタン → 設定 → プライバシー → バックグラウンドアプリ」を開いてみましょう。</p>
+<p>ヤフオクで中古PCを落札した際、SSDがZheino製に入れ替えられていました。
+すぐにWD製に入れ替えたのですが、速度テストをしたので結果を張ります。
+どちらもM.2コネクタ接続のSATA-SSD(500GB)です。</p>
 
-<a href="/blog/images/background.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/background.png" alt="" itemprop="thumbnailUrl"/>
+<p>あらかじめ総括してしまうと、2社に大きな差はなくコントローラとしては良い仕事をしていることがわかりました。</p>
+
+<h3 id="crystal-diskmark-v6でのテスト">Crystal Diskmark v6でのテスト</h3>
+
+<p>1つめがZheino、2つめがWDの結果です。驚くべきことに、Zheinoはマルチスレッドでの読み込み性能が劣るだけで、WDと大差のない結果を出しています。</p>
+
+<p><a href="/images/speed_6_zheino.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=Zheino>
+  <img class="page1 img-thumbnail" src="/images/speed_6_zheino.png" alt="" width="400" itemprop="thumbnailUrl"/>
 </a>
+<a href="/images/speed_6_wd.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=WD>
+  <img class="page1 img-thumbnail" src="/images/speed_6_wd.png" alt="" width="400" itemprop="thumbnailUrl"/>
+</a></p>
 
+<h3 id="crystal-diskmark-v7でのテスト">Crystal Diskmark v7でのテスト</h3>
 
-<p>初期設定では、すべてのアプリにバックグラウンド実行が許可されていました。いらないものはすべてOFFにしてしまいましょう。</p>
+<p>1つめがZheino、2つめがWDの結果です。v6でのテストと同様に、マルチスレッドでの読み込み性能が伸び悩んでいますが、ほかはWDとほぼ同じ結果となっています。</p>
 
-<h2 id="windows-searchを無効にする">Windows Searchを無効にする</h2>
-
-<p>常駐ソフトウェアを切るだけでかなり電池持ちは長くなりますが、さらにWindows Searchを無効にすると電池持ちが長くなります。</p>
-
-<p>ウィンドウズボダンを右クリックして「コントロールパネル」を起動しましょう。
-検索バーで&rdquo;service&rdquo;を検索すると、以下のような画面になるはずです。</p>
-
-<a href="/blog/images/services.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/services.PNG" alt="" itemprop="thumbnailUrl"/>
+<p><a href="/images/speed_7_zheino.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=Zheino>
+  <img class="page1 img-thumbnail" src="/images/speed_7_zheino.jpg" alt="" width="400" itemprop="thumbnailUrl"/>
 </a>
+<a href="/images/speed_7_wd.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=WD>
+  <img class="page1 img-thumbnail" src="/images/speed_7_wd.png" alt="" width="400" itemprop="thumbnailUrl"/>
+</a></p>
 
+<h3 id="crystal-disk-infoで気になったこと">Crystal Disk Infoで気になったこと</h3>
 
-<p>ここで、「ローカルサービスの表示」をクリックします。</p>
+<p>Zheino製はだいたいいつも45度、WD製は37度の温度を指していました。
+高い温度で動いているだけ消耗が激しいですし、検査落ちしたチップを動かすために電圧を高めに与えているのかもしれません。信頼性という意味では、WDが良さそうです。</p>
 
-<a href="/blog/images/local_services.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/local_services.png" alt="" itemprop="thumbnailUrl"/>
-</a>
+<h2 id="まとめ">まとめ</h2>
 
+<p>ちょっと予想とは異なる結果となりましたが、自己責任で使う分にはZheinoは悪くないのかもしれません。
+ただし、価格差も大したことなくなりつつあります。</p>
 
-<p>ここから&rdquo;Windows Search&rdquo;を探して、プロパティから「無効」にします。</p>
+<ul>
+<li>Zheino製SSDは、アクセス性能は悪くない</li>
+<li>動作温度や信頼性はWDのほうが良いと思われる</li>
+<li>価格対性能比を考えて、自己責任で使う分にはZheinoも良いかも</li>
+</ul>
 
-<p>この操作を行うと、スタートボタンからの検索はほとんど出来なくなってしまいます。Windows10は検索機能がウリのOSでもあるのでこの機能を無効化するかどうかはよく考えましょう。本当に必要のない人は無効にした方が快適になると思います。</p>
-
-<h2 id="2つの設定の効果">2つの設定の効果</h2>
-
-<p>私の場合、この2つを行うだけでかなり電池持ちが改善しました。
-常にCPU使用率が90%以上だったのが、10％未満で安定するようになっています。ファンもうるさくなくなりました。
-試してみると良いと思います。</p>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B07JG3VJVY&linkId=e6bce966c6710c6d839c07689a580b4b"></iframe>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B082VZKK3L&linkId=f9b737b7717fb68aa13b5a1527143b6f"></iframe>
             </div>
 
 	    <script type="text/javascript">
@@ -182,13 +185,6 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
                         </a>
                     </li>
                     
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            Windows
-                        </a>
-                    </li>
-                    
                 </ul>
 
                 
@@ -201,13 +197,13 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/smt/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous"><a href="https://blog.yyyak.com/post/auction_pc/"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/credit_us/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/linux_migration/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
