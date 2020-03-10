@@ -11,6 +11,232 @@
     
       
         <item>
+          <title>AndroidのテザリングはUSB, BT, WiFiのどれが良いか？</title>
+          <link>https://blog.yyyak.com/post/tether/</link>
+          <pubDate>Tue, 10 Mar 2020 05:02:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/tether/</guid>
+          <description>
+
+&lt;p&gt;出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。&lt;/p&gt;
+
+&lt;h2 id=&#34;androidテザリングの整理&#34;&gt;Androidテザリングの整理&lt;/h2&gt;
+
+&lt;p&gt;Androidにはテザリング機能がついており、最近の端末だと3つの方法から選んで接続できます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;USB&lt;/li&gt;
+&lt;li&gt;Bluetooth&lt;/li&gt;
+&lt;li&gt;WiFi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注意したいのは、WiFiテザリングを選択したときだけはLTEの電波しか共有できずWiFiを再配信することは出来ない点です。USBやBluetoothの場合にはスマートフォンが接続されたWiFiを共有できるので、少し便利だと言えます。&lt;/p&gt;
+
+&lt;p&gt;また、Bluetoothの場合には接続方法が少し面倒で上級者向けです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続方法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFiの再配信&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;簡単さ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;できる&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ケーブルが必要だが、簡単&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Bluetooth&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;できる&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;設定が面倒&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;できない&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;簡単&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&#34;blog-card&#34; style=&#34;padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;&#34;&gt;&lt;div class=&#34;blog-card-thumbnail&#34; style=&#34;float:left;&#34;&gt;&lt;a href=&#34;https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; class=&#34;blog-card-thumbnail-link&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://capture.heartrails.com/120x120/shorten?https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; class=&#34;blog-card-thumb-image wp-post-image&#34; alt=&#34;12436288584_94d6bc46d2_b.jpg&#34; style=&#34;width:100px;height:100px;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-content&#34; style=&#34;margin-left:110px;line-height:120%;&#34;&gt;&lt;div class=&#34;blog-card-title&#34; style=&#34;margin-bottom:5px;&#34;&gt;&lt;a href=&#34;https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; class=&#34;blog-card-title-link&#34; style=&#34;font-weight:bold;text-decoration:none;color:#111;&#34; target=&#34;_blank&#34;&gt;AndroidスマホBluetoothテザリング使い方。Windows 10をインターネットへ接続&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-excerpt&#34; style=&#34;color:#333;font-size:90%;&#34;&gt;xxxxxxxxxx&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-footer&#34; style=&#34;font-size:70%;color:#777;margin-top:10px;clear:both;&#34;&gt;&lt;span class=&#34;blog-card-hatena&#34;&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; target=&#34;_blank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://b.hatena.ne.jp/entry/image/https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; border=&#34;0&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;各接続の速度&#34;&gt;各接続の速度&lt;/h2&gt;
+
+&lt;h3 id=&#34;調査環境&#34;&gt;調査環境&lt;/h3&gt;
+
+&lt;p&gt;どの接続方法が最も快適か、回線速度を調査しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;テザリング元: Xperia XZ2 Compact&lt;/li&gt;
+&lt;li&gt;USB接続にはUSB2.0ケーブルを使用&lt;/li&gt;
+&lt;li&gt;WiFi接続時は11nで接続されていました (WiFi4)&lt;/li&gt;
+&lt;li&gt;スマートフォン側をWiFiに接続した際には、USENのフリースポットを使いました。&lt;/li&gt;
+&lt;li&gt;測定サイトはGoogleスピードテスト&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;接続した場所は近くのカフェで、そこそこ人がいました。実践的な電波環境だと思います。&lt;/p&gt;
+
+&lt;p&gt;測定した組み合わせは7種類になります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;接続元のスマートフォンをLTEに接続
+
+&lt;ul&gt;
+&lt;li&gt;スマートフォン上で計測&lt;/li&gt;
+&lt;li&gt;USB経由のPCで計測&lt;/li&gt;
+&lt;li&gt;Bluetooth経由のPCで計測&lt;/li&gt;
+&lt;li&gt;WiFi経由のPCで計測&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;接続元のスマートフォンをWiFiに接続
+
+&lt;ul&gt;
+&lt;li&gt;スマートフォン上で計測&lt;/li&gt;
+&lt;li&gt;USB経由のPCで計測&lt;/li&gt;
+&lt;li&gt;Bluetooth経由のPCで計測&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ダウンロード速度比較&#34;&gt;ダウンロード速度比較&lt;/h3&gt;
+
+&lt;p&gt;元の速度と比較すると、どのテザリング方法でも速度が低下してしまっているのが分かりますね。USB経由は8割程度、WiFi経由は半分程度の速度になってしまうことが分かります。Bluetoothはほとんど速度が出ず、使い物になりませんでした。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;ダウンロード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;LTE回線&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFi回線&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;スマホのみ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;80.6Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;87.8Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56.5Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;68.1Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BT経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.58Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.56Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;38.1Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;アップロード速度比較&#34;&gt;アップロード速度比較&lt;/h3&gt;
+
+&lt;p&gt;USB接続の場合、元回線の速度に応じた結果が得られています。WiFi経由では速度が大幅に低下してしまっています。Bluetoothに至っては、ほとんど通信できていません。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;アップロード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;LTE回線&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFi回線&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;スマホのみ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;18.3Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;79.1Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13.6Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;95.3Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BT経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.55Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;レイテンシ速度比較&#34;&gt;レイテンシ速度比較&lt;/h3&gt;
+
+&lt;p&gt;USB,　WiFi経由の場合、元接続並みのレイテンシで通信できているようです。Bluetoothは全然ダメでした。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;レイテンシ&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;LTE回線&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFi回線&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;スマホのみ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7ms&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;67ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10ms&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BT経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;200ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;200ms&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;45ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに&lt;/h2&gt;
+
+&lt;p&gt;今回はテザリングごとの通信速度を計測しました。本当はスマートフォンの消費電力も調べたかったのですが、それをしようとするとデータ通信料を使い果たしそうなので出来ませんでした。誰かやってみてください&amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bluetooth経由のテザリングは全然使い物にならなかった。(Xperia XZ2 Compactでは)&lt;/li&gt;
+&lt;li&gt;USB経由は早い&lt;/li&gt;
+&lt;li&gt;WiFi接続はアップロード速度が遅くなるが、それが我慢出来ればケーブル不要な分だけ簡単&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Galaxy Tab A (2019) の惜しいところ</title>
           <link>https://blog.yyyak.com/post/galaxy_tab_a/</link>
           <pubDate>Sun, 16 Feb 2020 08:19:00 JST</pubDate>

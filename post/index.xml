@@ -6,8 +6,234 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2020</rights>
-    <updated>2020-02-27 06:44:00 &#43;0900 JST</updated>
+    <updated>2020-03-10 05:02:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>AndroidのテザリングはUSB, BT, WiFiのどれが良いか？</title>
+          <link>https://blog.yyyak.com/post/tether/</link>
+          <pubDate>Tue, 10 Mar 2020 05:02:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/tether/</guid>
+          <description>
+
+&lt;p&gt;出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。&lt;/p&gt;
+
+&lt;h2 id=&#34;androidテザリングの整理&#34;&gt;Androidテザリングの整理&lt;/h2&gt;
+
+&lt;p&gt;Androidにはテザリング機能がついており、最近の端末だと3つの方法から選んで接続できます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;USB&lt;/li&gt;
+&lt;li&gt;Bluetooth&lt;/li&gt;
+&lt;li&gt;WiFi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注意したいのは、WiFiテザリングを選択したときだけはLTEの電波しか共有できずWiFiを再配信することは出来ない点です。USBやBluetoothの場合にはスマートフォンが接続されたWiFiを共有できるので、少し便利だと言えます。&lt;/p&gt;
+
+&lt;p&gt;また、Bluetoothの場合には接続方法が少し面倒で上級者向けです。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続方法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFiの再配信&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;簡単さ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;できる&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ケーブルが必要だが、簡単&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Bluetooth&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;できる&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;設定が面倒&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;できない&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;簡単&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&#34;blog-card&#34; style=&#34;padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;&#34;&gt;&lt;div class=&#34;blog-card-thumbnail&#34; style=&#34;float:left;&#34;&gt;&lt;a href=&#34;https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; class=&#34;blog-card-thumbnail-link&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://capture.heartrails.com/120x120/shorten?https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; class=&#34;blog-card-thumb-image wp-post-image&#34; alt=&#34;12436288584_94d6bc46d2_b.jpg&#34; style=&#34;width:100px;height:100px;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-content&#34; style=&#34;margin-left:110px;line-height:120%;&#34;&gt;&lt;div class=&#34;blog-card-title&#34; style=&#34;margin-bottom:5px;&#34;&gt;&lt;a href=&#34;https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; class=&#34;blog-card-title-link&#34; style=&#34;font-weight:bold;text-decoration:none;color:#111;&#34; target=&#34;_blank&#34;&gt;AndroidスマホBluetoothテザリング使い方。Windows 10をインターネットへ接続&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-excerpt&#34; style=&#34;color:#333;font-size:90%;&#34;&gt;xxxxxxxxxx&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-footer&#34; style=&#34;font-size:70%;color:#777;margin-top:10px;clear:both;&#34;&gt;&lt;span class=&#34;blog-card-hatena&#34;&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; target=&#34;_blank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://b.hatena.ne.jp/entry/image/https://inakadaisuki.com/android-bluetooth-tethering-windows10/&#34; border=&#34;0&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;各接続の速度&#34;&gt;各接続の速度&lt;/h2&gt;
+
+&lt;h3 id=&#34;調査環境&#34;&gt;調査環境&lt;/h3&gt;
+
+&lt;p&gt;どの接続方法が最も快適か、回線速度を調査しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;テザリング元: Xperia XZ2 Compact&lt;/li&gt;
+&lt;li&gt;USB接続にはUSB2.0ケーブルを使用&lt;/li&gt;
+&lt;li&gt;WiFi接続時は11nで接続されていました (WiFi4)&lt;/li&gt;
+&lt;li&gt;スマートフォン側をWiFiに接続した際には、USENのフリースポットを使いました。&lt;/li&gt;
+&lt;li&gt;測定サイトはGoogleスピードテスト&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;接続した場所は近くのカフェで、そこそこ人がいました。実践的な電波環境だと思います。&lt;/p&gt;
+
+&lt;p&gt;測定した組み合わせは7種類になります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;接続元のスマートフォンをLTEに接続
+
+&lt;ul&gt;
+&lt;li&gt;スマートフォン上で計測&lt;/li&gt;
+&lt;li&gt;USB経由のPCで計測&lt;/li&gt;
+&lt;li&gt;Bluetooth経由のPCで計測&lt;/li&gt;
+&lt;li&gt;WiFi経由のPCで計測&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;接続元のスマートフォンをWiFiに接続
+
+&lt;ul&gt;
+&lt;li&gt;スマートフォン上で計測&lt;/li&gt;
+&lt;li&gt;USB経由のPCで計測&lt;/li&gt;
+&lt;li&gt;Bluetooth経由のPCで計測&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ダウンロード速度比較&#34;&gt;ダウンロード速度比較&lt;/h3&gt;
+
+&lt;p&gt;元の速度と比較すると、どのテザリング方法でも速度が低下してしまっているのが分かりますね。USB経由は8割程度、WiFi経由は半分程度の速度になってしまうことが分かります。Bluetoothはほとんど速度が出ず、使い物になりませんでした。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;ダウンロード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;LTE回線&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFi回線&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;スマホのみ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;80.6Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;87.8Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;56.5Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;68.1Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BT経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.58Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.56Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;38.1Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;アップロード速度比較&#34;&gt;アップロード速度比較&lt;/h3&gt;
+
+&lt;p&gt;USB接続の場合、元回線の速度に応じた結果が得られています。WiFi経由では速度が大幅に低下してしまっています。Bluetoothに至っては、ほとんど通信できていません。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;アップロード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;LTE回線&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFi回線&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;スマホのみ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;18.3Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;79.1Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;13.6Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;95.3Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BT経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0Mbps&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.55Mbps&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;レイテンシ速度比較&#34;&gt;レイテンシ速度比較&lt;/h3&gt;
+
+&lt;p&gt;USB,　WiFi経由の場合、元接続並みのレイテンシで通信できているようです。Bluetoothは全然ダメでした。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;レイテンシ&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;LTE回線&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;WiFi回線&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;スマホのみ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;32ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;7ms&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;67ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10ms&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BT経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;200ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;200ms&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi経由&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;45ms&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに&lt;/h2&gt;
+
+&lt;p&gt;今回はテザリングごとの通信速度を計測しました。本当はスマートフォンの消費電力も調べたかったのですが、それをしようとするとデータ通信料を使い果たしそうなので出来ませんでした。誰かやってみてください&amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bluetooth経由のテザリングは全然使い物にならなかった。(Xperia XZ2 Compactでは)&lt;/li&gt;
+&lt;li&gt;USB経由は早い&lt;/li&gt;
+&lt;li&gt;WiFi接続はアップロード速度が遅くなるが、それが我慢出来ればケーブル不要な分だけ簡単&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -5059,148 +5285,6 @@ $ chown user1:group2 file1.txt //file1の所有ユーザをuser1に、所有グ�
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;その他、細かな変更方法はmanコマンドなどを当たってみましょう。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Linux基礎講座：アプリケーション管理(yum/aptitude)</title>
-          <link>https://blog.yyyak.com/post/linux_basic_app/</link>
-          <pubDate>Sat, 19 Mar 2016 08:53:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/linux_basic_app/</guid>
-          <description>&lt;p&gt;アプリケーション管理をCUIで行いましょう。
-&lt;/p&gt;
-
-&lt;h2 id=&#34;linuxのアプリケーション管理手法&#34;&gt;Linuxのアプリケーション管理手法&lt;/h2&gt;
-
-&lt;p&gt;WindowsのアプリケーションインストールとLinuxとの対応を考えてみましょう。
-同じような概念ですが、一部異なるところがあることが表から分かるはずです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;Windows&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Linux(Redhat系)&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Linux(Debian系)&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;違い&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ストア&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;yum&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;aptitude&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;これらのツールはネットワークからアプリをインストール出来る。&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ソフトウェアの追加と削除&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;rpmコマンド&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;dpkgコマンド&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Linux系のツールはインストールもできる。&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;ソフトウェア固有のインストーラ&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;rpmファイル&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;debファイル&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;プログラムや依存関係データがまとめられたもの&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;OSにはアプリケーションの一覧を管理する機能が与えられていることがほとんどです。Windowsの場合はコントロールパネル内の「プログラムの追加と削除」がその役割をしますが、Linuxの場合にはOSによって「rpm」や「dpkg」などがその役割をします。Windowsの場合にはアプリケーションのインストールはできませんが、Linux系ならばインストールファイルを用意するとインストールも行えます。rpmの場合にはrpmファイル、dpkgコマンドの場合にはdebファイルをインストールすることができます。&lt;/p&gt;
-
-&lt;p&gt;最近はアプリストアなどを用意してネットワーク経由でアプリを取得できるようにするOSが増えています。Windowsで言うところのストアアプリがこれですが、Linuxの場合はyumやaptitudeコマンドが行います。さらにディストリビューションごとにGUI画面も用意していることが多いです。なお、yumなどがソフトウェアを探しに行く先を「レポジトリ」と呼び、OS標準のものから個人的なものまで色々用意されています。&lt;/p&gt;
-
-&lt;p&gt;なお、インストールするためのファイルをまとめたものには、rpmやdebファイルがあります。ネットワーク経由でインストールできないものについてはこれらのファイルを直接取得してインストールします。&lt;/p&gt;
-
-&lt;h2 id=&#34;redhat系のアプリケーション管理&#34;&gt;Redhat系のアプリケーション管理&lt;/h2&gt;
-
-&lt;h3 id=&#34;インストール&#34;&gt;インストール&lt;/h3&gt;
-
-&lt;p&gt;yum経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをインストールする場合、以下のようにします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# yum install hoge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;レポジトリに登録されていないソフトウェアをインストールするときは、rpmファイルを用意して以下のコマンドを実行します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# rpm -ivh hoge.rpm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;アンインストール&#34;&gt;アンインストール&lt;/h3&gt;
-
-&lt;p&gt;yum経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをアンインストールする場合、以下のようにします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# yum remove hoge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;アップデート&#34;&gt;アップデート&lt;/h3&gt;
-
-&lt;p&gt;レポジトリ内に新しいバージョンが登録された場合、アップデートすることができます。以下のコマンドを実行します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# yum update
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;一覧の取得&#34;&gt;一覧の取得&lt;/h3&gt;
-
-&lt;p&gt;以下のコマンドを実行すると、インストール済みのアプリケーション一覧が得られます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# yum list installed
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;インストールしていないアプリを含めてレポジトリ内を検索したい場合、以下のコマンドを実行します。ここではfugaを検索するものとします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# yum search fuga
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;debian系のアプリケーション管理&#34;&gt;Debian系のアプリケーション管理&lt;/h2&gt;
-
-&lt;h3 id=&#34;インストール-1&#34;&gt;インストール&lt;/h3&gt;
-
-&lt;p&gt;aptitude経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをインストールする場合、以下のようにします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# aptitude install hoge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;レポジトリに登録されていないソフトウェアをインストールするときは、debファイルを用意して以下のコマンドを実行します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# dpkg -i hoge.deb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;アンインストール-1&#34;&gt;アンインストール&lt;/h3&gt;
-
-&lt;p&gt;aptitude経由で&amp;rdquo;hoge&amp;rdquo;というソフトウェアをアンインストールする場合、以下のようにします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# aptitude remove hoge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;アップデート-1&#34;&gt;アップデート&lt;/h3&gt;
-
-&lt;p&gt;レポジトリ内に新しいバージョンが登録された場合、アップデートすることができます。以下のコマンドを実行します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# aptitude update //レポジトリの情報を新しくする（アップデートはしない）
-# aptitude upgrade //新しくしたレポジトリ情報をもとにアップデート
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;一覧の取得-1&#34;&gt;一覧の取得&lt;/h3&gt;
-
-&lt;p&gt;インストール済みアプリの一覧は以下のコマンドで見られます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# aptitude search ‘~i’
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;インストールしていないアプリを含めてレポジトリ内を検索したい場合、以下のコマンドを実行します。ここではfugaを検索するものとします。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# aptitude search fuga
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;注意したいこと&#34;&gt;注意したいこと&lt;/h2&gt;
-
-&lt;p&gt;自分でWEBから取得したrpmファイルやdebファイルを使う場合、ウイルス等には注意しましょう。&lt;/p&gt;</description>
         </item>
       
     
