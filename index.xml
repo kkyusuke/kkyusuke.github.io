@@ -16,9 +16,8 @@
           <pubDate>Tue, 10 Mar 2020 05:02:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/tether/</guid>
-          <description>
-
-&lt;p&gt;出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。&lt;/p&gt;
+          <description>&lt;p&gt;出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;androidテザリングの整理&#34;&gt;Androidテザリングの整理&lt;/h2&gt;
 
@@ -230,8 +229,7 @@
 &lt;li&gt;Bluetooth経由のテザリングは全然使い物にならなかった。(Xperia XZ2 Compactでは)&lt;/li&gt;
 &lt;li&gt;USB経由は早い&lt;/li&gt;
 &lt;li&gt;WiFi接続はアップロード速度が遅くなるが、それが我慢出来ればケーブル不要な分だけ簡単&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
         </item>
       
     
