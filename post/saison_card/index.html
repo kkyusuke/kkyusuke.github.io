@@ -17,19 +17,17 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Make &amp; Review | ひかり回線が繋がらなくなる問題">
-<meta name="description" content="光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-こちらの投稿も関係しています。
+<meta property="og:title" content="Make &amp; Review | セゾンゴールドAMEXの還元率がスゴい話">
+<meta name="description" content="セゾンクラッセを使うとポイント還元率が最大1.75%になります！
 ">
-<meta property="og:description" content="光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-こちらの投稿も関係しています。
+<meta property="og:description" content="セゾンクラッセを使うとポイント還元率が最大1.75%になります！
 ">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Make &amp; Review | ひかり回線が繋がらなくなる問題
+    Make &amp; Review | セゾンゴールドAMEXの還元率がスゴい話
     
 </title>
 
@@ -97,43 +95,224 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2015-10-11T08:30+09:00">
-                        2015.10.11 08:30
+                    <time itemprop="datePublished" datetime="2020-03-27T04:06+09:00">
+                        2020.3.27 04:06
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/router_nat/" itemprop="url">ひかり回線が繋がらなくなる問題</a>
+                    <a href="https://blog.yyyak.com/post/saison_card/" itemprop="url">セゾンゴールドAMEXの還元率がスゴい話</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>光が繋がらなくなる不具合が発生している人のための投稿です。私の場合はルータを再起動すると解決するのですが・・・。
-<a href="/post/push/">こちらの投稿</a>も関係しています。
+                <p>セゾンクラッセを使うとポイント還元率が最大1.75%になります！
 </p>
 
-<h2 id="概要">概要</h2>
+<h3 id="セゾンクラッセがサービス開始">セゾンクラッセがサービス開始</h3>
 
-<p>自宅の光回線が、プロバイダを変更してから定期的に繋がらなくなる問題がありました。
-光終端装置（ルータ機能付き, PR-400NE）を再起動すると解決しますが、数日するとまた繋がらなくなっていまいます。</p>
+<p>セゾンカードはセゾンクラッセという会員向け特典サービスを始めました。</p>
 
-<h2 id="原因">原因</h2>
+<div class="blog-card" style="padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;"><div class="blog-card-thumbnail" style="float:left;"><a href="https://www.saisoncard.co.jp/app/classe/" class="blog-card-thumbnail-link" target="_blank"><img src="http://capture.heartrails.com/120x120/shorten?https://www.saisoncard.co.jp/app/classe/" class="blog-card-thumb-image wp-post-image" alt="12436288584_94d6bc46d2_b.jpg" style="width:100px;height:100px;"></a></div><div class="blog-card-content" style="margin-left:110px;line-height:120%;"><div class="blog-card-title" style="margin-bottom:5px;"><a href="https://www.saisoncard.co.jp/app/classe/" class="blog-card-title-link" style="font-weight:bold;text-decoration:none;color:#111;" target="_blank">セゾンクラッセ｜セゾンカードのスマートフォンアプリ「セゾンPortal」｜クレジットカードは永久不滅ポイントのセゾンカード</a></div><div class="blog-card-excerpt" style="color:#333;font-size:90%;">xxxxxxxxxx</div></div><div class="blog-card-footer" style="font-size:70%;color:#777;margin-top:10px;clear:both;"><span class="blog-card-hatena"><a href="http://b.hatena.ne.jp/entry/https://www.saisoncard.co.jp/app/classe/" target="_blank"><img border="0" src="http://b.hatena.ne.jp/entry/image/https://www.saisoncard.co.jp/app/classe/" border="0" alt="" /></a></span></div></div>
 
-<p>「NAT溢れ」が原因のようです。NATは内容に応じて各端末に通信の振り分けを行う機能です。
-NATはどの通信をどこに転送するかをリストにして覚えているのですが、このリストが長くなりすぎるとハングアップしてしまうルータがあるようです。
-PR-400NEなどのルータはこの問題が起こることで有名らしいです。</p>
+<p>このサービスはスマホアプリ限定のサービスで、セゾンカードの利用状況に応じて様々な特典が得られます。
+いくつか代表的な得点を挙げておきます。（特典は良く変わります）</p>
 
-<h2 id="解決策">解決策</h2>
+<table>
+<thead>
+<tr>
+<th align="center">ポイント数</th>
+<th align="center">ランク</th>
+<th align="left">得点</th>
+</tr>
+</thead>
 
-<p>NATのリストを定期的に削除するよう設定してあげれば良いようです。<a href="/post/push/">こちらの投稿</a>で説明していますが、SPI設定で値を小さくしてあげればOKです。
-たとえば、TCP:2400, UDP:300, ICMP:300などで良いでしょう。（写真の設定では問題が発生するはずです。）
-<img src="/images/pr400ne_3.png" alt="" /></p>
+<tbody>
+<tr>
+<td align="center">600-699</td>
+<td align="center">星4</td>
+<td align="left">セゾンゴールドアメックス招待＆年会費無料</td>
+</tr>
 
-<h2 id="でも">でも・・・</h2>
+<tr>
+<td align="center">700-799</td>
+<td align="center">星5</td>
+<td align="left">セゾンプラチナアメックス招待</td>
+</tr>
 
-<p>この設定でも、OCNやInterlinkの時は問題なく通信できていたんですよね・・・。IIJになってからおかしくなってしまいました。
-もしかしたらプロバイダの変更時期がたまたま重複しただけで他の問題が発生しているのかもしれません。
-とりあえずUDPとICMPの設定値を小さくしてからは問題は発生していません。参考にしてください。</p>
+<tr>
+<td align="center">800-900</td>
+<td align="center">星6</td>
+<td align="left">永久不滅ポイント2倍</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="星6でセゾンが高還元カードに進化">星6でセゾンが高還元カードに進化！</h3>
+
+<p>ここでざっくりとセゾンカードのルールを確認しておきます。セゾン系カードのほとんどは、1000円につき永久不滅ポイント1ポイントが還元されます。1ポイントは約5円の価値があり、100ポイントで500円のアマゾンギフト券などに交換できます。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">摘要</th>
+<th align="center">1000円ごとに</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">通常</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">合計</td>
+<td align="center">1 (0.5%)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="セゾンゴールドamexの還元率-国内">セゾンゴールドAMEXの還元率（国内）</h4>
+
+<p>セゾンゴールドAMEXを使っている人は、特典ポイントがもらえます。国内ではプラス0.5ポイント、海外ではプラス1ポイントです。還元率は0.75パーセントになりますが、依然高還元率の楽天カード等には追いつきません。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">摘要</th>
+<th align="center">1000円ごとに</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">通常</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">ゴールド特典</td>
+<td align="center">0.5</td>
+</tr>
+
+<tr>
+<td align="center">合計</td>
+<td align="center">1.5 (0.75%)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="セゾンゴールドでidを使った時">セゾンゴールドでiDを使った時</h4>
+
+<p>セゾンではiDを使うと<a href="https://www.saisoncard.co.jp/services/sj094.html">さらにボーナスポイントをもらえます</a>。iDを使える場所は多いので、コンビニ・家電量販店などでは既に良い還元率となっていることが分かります。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">摘要</th>
+<th align="center">1000円ごとに</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">通常</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">ゴールド特典</td>
+<td align="center">0.5</td>
+</tr>
+
+<tr>
+<td align="center">iD特典</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">合計</td>
+<td align="center">2.5 (1.25%)</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="セゾンクラッセ星6になると">セゾンクラッセ星6になると･･･</h4>
+
+<p>星6になるとさらに1ポイントもらえるので、iD未使用時の還元率は1.25%、使用時は1.75%となります。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">摘要</th>
+<th align="center">1000円ごとに</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">通常</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">ゴールド特典</td>
+<td align="center">0.5</td>
+</tr>
+
+<tr>
+<td align="center">iD特典</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">星6特典</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">合計</td>
+<td align="center">3.5 (1.75%)</td>
+</tr>
+</tbody>
+</table>
+
+<p>この還元率のスゴいところは、どの加盟店にも適用されることです。カードごとに得意な分野がありますが、すべてについて1.25%もらえるカードは珍しいのではないでしょうか？</p>
+
+<h3 id="セゾンクラッセで星6になるには">セゾンクラッセで星6になるには</h3>
+
+<a href="/images/saison.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=セゾンクラッセ>
+  <img class="page1 img-thumbnail" src="/images/saison.png" alt="" width="200" itemprop="thumbnailUrl"/>
+</a>
+
+<p>セゾンクラッセで星６になるのは、人によっては超簡単ですが、難しい人もいるようです。</p>
+
+<p>以下の条件を満たす人は、スコアを確認した自伝で星６になってしまっていることが多いようです。</p>
+
+<ul>
+<li>セゾンカードを長く使っている人</li>
+<li>ゴールドカード以上を持っている人</li>
+<li>永久不滅ポイントサイトに頻繁にアクセスする人</li>
+</ul>
+
+<p>逆に、星6でなかった人はいくつかのポイントを抑えて星を挙げましょう。</p>
+
+<ul>
+<li>普段の買い物をセゾンカードでする</li>
+<li>永久不滅ポイントサイト経由でAmazonを閲覧する（買い物しなくても良い）</li>
+<li>ペンとすくんの質問に答える。</li>
+</ul>
+
+<h3 id="まとめ">まとめ</h3>
+
+<p>セゾンゴールドの提灯記事になってしまいましたが、おすすめです。是非カード作ってみてください。</p>
+
+<ul>
+<li>セゾンカードは、セゾンクラッセ次第で高還元に</li>
+<li>セゾンゴールドは特におすすめ</li>
+<li>iD使用で1.75%還元を実現できる</li>
+</ul>
             </div>
 
 	    <script type="text/javascript">
@@ -151,16 +330,9 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/network" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/other" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            Network
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            HowTo
+                            other
                         </a>
                     </li>
                     
@@ -176,13 +348,13 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/dns_centos7/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/netflix/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/tether/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
