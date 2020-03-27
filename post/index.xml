@@ -4931,7 +4931,7 @@ BatteryMixなどはインストールしていないので、設定画面から�
 DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&amp;rdquo;192.168.1.10&amp;rdquo;をホストに設定しています。&lt;/p&gt;
 
 &lt;a href=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/blog/images/DMZ.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 
@@ -5228,7 +5228,7 @@ total 0
 この場合、rootユーザには「r(読み込み), w(書き込み), x(実行)」の全権限が、yusukeグループには「r(読み込み), x(実行)」が、その他のユーザには「r(読み込み)」のみが許されている事になります。&lt;/p&gt;
 
 &lt;a href=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/ls_intro.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/blog/images/ls_intro.png&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 &lt;/a&gt;
 
 

@@ -136,21 +136,18 @@ GRUB_CMDLINE_LINUX=&quot;....... rd.driver.blacklist=nouveau&quot;
 <p>このあたりにから、自分のPCにあうドライバを探してください。ホームフォルダに入れてください。<br>
 <a href="http://www.nvidia.co.jp/Download/index.aspx">http://www.nvidia.co.jp/Download/index.aspx</a><br></p>
 
-<a href="/blog/images/nvidiadriver.JPG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/nvidiadriver.JPG" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/nvidiadriver.JPG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=NvidiaSite>
+  <img class="page1 img-thumbnail" src="/images/nvidiadriver.JPG" alt="" width="400" itemprop="thumbnailUrl"/>
 </a>
-
 
 <h2 id="3-osをランレベル3相当で再起動">3. OSをランレベル3相当で再起動</h2>
 
 <p>厳密にはFedora22などの systemd採用環境にランレベルという概念はないですが、各ランレベルに相当するターゲットファイルが用意されています。
 デフォルトではランレベル５で起動するOSがほとんどですが、これを一時的にランレベル３で起動するには、Grub2の起動画面で一手間加えることになります。まず、再起動して以下の画面を表示させましょう。</p>
 
-<p><a href="/blog/images/GRUB.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/images/GRUB.png" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/GRUB.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=GRUB>
+  <img class="page1 img-thumbnail" src="/images/GRUB.png" alt="" width="400" itemprop="thumbnailUrl"/>
 </a>
-
-Grub2―enWikipediaより</p>
 
 <p>まずドライバをインストールしたいカーネルを矢印キーで選び、<code>e</code>を押します。すると起動のためのコマンドがたくさん現れます。
 さて、ブートオプションの末尾に&rdquo;<code>3</code>&ldquo;を書き加えて、<code>Ctrl + x</code>をします。これで、ランレベル３での起動は完了です。CUIでOSが起動しますから、ログインしましょう。<br><br></p>
