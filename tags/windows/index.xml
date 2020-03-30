@@ -11,6 +11,240 @@
     
       
         <item>
+          <title>WEBミーティング向け！マイクの性能比較</title>
+          <link>https://blog.yyyak.com/post/mic/</link>
+          <pubDate>Sat, 28 Mar 2020 05:40:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/mic/</guid>
+          <description>&lt;p&gt;内蔵マイク・WEBカメラ・Skype用スピーカーホンなど、様々なマイクを比較しました！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;どのマイクを使うか&#34;&gt;どのマイクを使うか？&lt;/h3&gt;
+
+&lt;p&gt;コロナウイルスのせいで、自宅勤務になっている方も多いと思います。&lt;/p&gt;
+
+&lt;p&gt;WEB会議をするに当たって、カメラはとにかくマイクの音質は重要です。自分の声がどれくらいちゃんと拾われているのか気になる方のために、色々な種類のマイクの聞こえ方を調べました。&lt;/p&gt;
+
+&lt;p&gt;調べたマイクは4種類です。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;名前&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;価格&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;備考&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Let&amp;rsquo;s Note SZ5&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;N/A&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ノートPC内蔵のアレイマイク&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://amzn.to/2vUVvAK&#34;&gt;Logicool C270&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;\2,000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;WEBカメラ内蔵のマイク&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://amzn.to/2xv7fdV&#34;&gt;Sony ECM-PC60&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;\2,000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;PC用コンデンサーマイク&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://amzn.to/39tkVmE&#34;&gt;Jabra 410&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;\20,000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;会議用スピーカフォン&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B07QMKND9M&amp;linkId=d6f5c20652a9f06b0bfac1c3f75c9b85&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B004KVIZCA&amp;linkId=156b8a276476999e92ca99c8c83fc872&#34;&gt;&lt;/iframe&gt;
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B004MOWGZ2&amp;linkId=9ff77a0f50d75b735cee0d16dd005d57&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&#34;調べ方&#34;&gt;調べ方&lt;/h3&gt;
+
+&lt;p&gt;同じ音声でマイクを調べるために、1kHzのサイン波音声を使いました。同じ音量です。&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7RrmBoPXdPA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;1m, 2mの2種類の距離で音声を入力し、さらに0°, 90°, 180°の角度を付けました。
+音声ファイルはそのまま載せますが、それ以外に無音時との音量差をデジベルで表記します。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/mic_env.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/mic_env.jpg&#34; alt=&#34;&#34; width=&#34;560&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h3 id=&#34;録音ファイル&#34;&gt;録音ファイル&lt;/h3&gt;
+
+&lt;p&gt;まずはそれぞれの生の録音ファイルを聴けるようにします。歩いて録音場所を変えているので、足音が入ってしまっていますがご容赦下さい。&lt;/p&gt;
+
+&lt;h4 id=&#34;let-s-note-sz5-内蔵マイク&#34;&gt;Let&amp;rsquo;s Note SZ5 内蔵マイク&lt;/h4&gt;
+
+&lt;p&gt;ノートPCに付属のマイクはあまり性能が良くない印象がありますが、この機種に関しては最低限の性能を備えているような気がしました。WEBカメラ横に２つのマイク口があり、効率よく音声を取り込めているようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/lets_0.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;0° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/lets_90.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;90° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/lets_180.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;180° (順に1m. 2m)&lt;/p&gt;
+
+&lt;h4 id=&#34;logicool-c270&#34;&gt;Logicool C270&lt;/h4&gt;
+
+&lt;p&gt;音声をお聞きの方は分かるとおり、初めはしっかり音が聞き取れるのに、1秒後には急に音量が小さくなってしまいます。このC270はWindows10に対応していないため、正しいドライバが当たっていないことが原因かと思われます。&lt;/p&gt;
+
+&lt;p&gt;正しいドライバがあれば、聞きやすい音が取れそうです。&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/logi_0.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;0° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/logi_90.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;90° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/logi_180.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;180° (順に1m. 2m)&lt;/p&gt;
+
+&lt;h4 id=&#34;sony-ecm-pc60&#34;&gt;Sony ECM-PC60&lt;/h4&gt;
+
+&lt;p&gt;ソニーから販売されているPC用のマイクです。とても期待していたのですが、全く音が聞き取れません。&lt;/p&gt;
+
+&lt;p&gt;あまりに聞き取れないので信号をブーストしたファイルも用意しておきました。こちらはちゃんと聞き取れるのですが、無音時のノイズも酷く、調査したマイクの中では最悪でした。ミニプラグ接続なので、特段の高音質かが行われていない点が悪く出ました。&lt;/p&gt;
+
+&lt;p&gt;どうやらこのタイプのマイクは口元で使うのが最適らしく、机の上に置いて使うのには適していないようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/sony_0.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;0° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/sony_90.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;90° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/sony_180.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;180° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/sony_0_boost.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;Boost 0° (順に1m. 2m)&lt;/p&gt;
+
+&lt;h4 id=&#34;jabra-410&#34;&gt;Jabra 410&lt;/h4&gt;
+
+&lt;p&gt;Skype用として販売されている、他より高価なマイクです。ハウリングもしにくく、様々な高音質化処理が機器内で行われていると思われます。値段に違わぬ性能でした。&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/jabra_0.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;0° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/jabra_90.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;90° (順に1m. 2m)&lt;/p&gt;
+
+&lt;p&gt;&lt;audio controls&gt;
+&lt;source src=&#34;https://blog.yyyak.com/audio/jabra_180.m4a&#34; type=&#34;audio/aac&#34;&gt;
+&lt;/audio&gt;180° (順に1m. 2m)&lt;/p&gt;
+
+&lt;h3 id=&#34;定量的な比較&#34;&gt;定量的な比較&lt;/h3&gt;
+
+&lt;p&gt;音を聞いただけでは違いが分からないので、サイン波と環境雑音のdB差で比較します。
+値が大きい方が、良い値です。&lt;/p&gt;
+
+&lt;p&gt;ロジクールとJabraの性能は非常に良いです。ただしどちらもマイク性能だけでなく、高音質化処理の賜物です。Jabraの場合はこの処理がハードウェアレベルで行われているようですが、ロジクールはソフトウェアレベルのようです。ロジクールの場合は特に対応OSには注意しましょう。&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s Noteも意外と健闘しました。下手なマイクを用意するよりは、これで十分でしょう。&lt;/p&gt;
+
+&lt;p&gt;Sonyはミニプラグ接続だったので、良い音が得られていません。雑音を拾いやすい高性能マイクである点も裏目に出ました。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th align=&#34;right&#34;&gt;角度&lt;/th&gt;
+    &lt;th&gt;距離&lt;/th&gt;
+    &lt;th&gt;Let&#39;s Note&lt;/th&gt;
+    &lt;th&gt;Logicool C270&lt;/th&gt;
+    &lt;th&gt;Sony ECM-PC60&lt;/th&gt;
+    &lt;th&gt;Jabra 410&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;2&#34; align=&#34;center&#34;&gt;0&lt;/td&gt;
+    &lt;td&gt;1m&lt;/td&gt;
+    &lt;td&gt;22.74&lt;/td&gt;
+    &lt;td&gt;54.68&lt;/td&gt;
+    &lt;td&gt;25.24&lt;/td&gt;
+    &lt;td&gt;40.58&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2m&lt;/td&gt;
+    &lt;td&gt;20.37&lt;/td&gt;
+    &lt;td&gt;49.28&lt;/td&gt;
+    &lt;td&gt;18.98&lt;/td&gt;
+    &lt;td&gt;36.95&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;2&#34; align=&#34;center&#34;&gt;90&lt;/td&gt;
+    &lt;td&gt;1m&lt;/td&gt;
+    &lt;td&gt;18.62&lt;/td&gt;
+    &lt;td&gt;41.72&lt;/td&gt;
+    &lt;td&gt;23.21&lt;/td&gt;
+    &lt;td&gt;35.11&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2m&lt;/td&gt;
+    &lt;td&gt;18.72&lt;/td&gt;
+    &lt;td&gt;49.30&lt;/td&gt;
+    &lt;td&gt;13.65&lt;/td&gt;
+    &lt;td&gt;35.11&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan=&#34;2&#34; align=&#34;center&#34;&gt;180&lt;/td&gt;
+    &lt;td&gt;1m&lt;/td&gt;
+    &lt;td&gt;21.48&lt;/td&gt;
+    &lt;td&gt;47.47&lt;/td&gt;
+    &lt;td&gt;10.68&lt;/td&gt;
+    &lt;td&gt;41.88&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2m&lt;/td&gt;
+    &lt;td&gt;14.49&lt;/td&gt;
+    &lt;td&gt;36.38&lt;/td&gt;
+    &lt;td&gt;10.71&lt;/td&gt;
+    &lt;td&gt;29.85&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;まとめ&#34;&gt;まとめ&lt;/h3&gt;
+
+&lt;p&gt;いくつかのマイクでWEB会議を想定した実験をしました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Jabraのスピーカーフォンは買う価値がある&lt;/li&gt;
+&lt;li&gt;Logicoolのドライバは優秀だが、相性問題あり。要事前検証&lt;/li&gt;
+&lt;li&gt;Sonyのコンデンサマイクには期待するな&lt;/li&gt;
+&lt;li&gt;PC内蔵マイクは意外と悪くない。まずは録音を&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>AndroidのテザリングはUSB, BT, WiFiのどれが良いか？</title>
           <link>https://blog.yyyak.com/post/tether/</link>
           <pubDate>Tue, 10 Mar 2020 05:02:00 JST</pubDate>
