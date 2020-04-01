@@ -123,8 +123,8 @@ Flet&rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕
 だから、これまでの通信履歴から「外からの通信をどの内部端末に転送すれば良いか」が分かります。
 （一定時間するとこの履歴は消えてしまいますから、接続を維持したければ定期的に通信をする必要があります。プッシュ通信などは、この仕組みを使っています。）</p>
 
-<a href="/blog/images/NAT.svg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/NAT.svg" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/NAT.svg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/NAT.svg" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -154,16 +154,16 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
  ntt.setup
 ルータによってアドレスは違うので、取扱説明書を見てくださいね。さて、表示される画面から、「DHCPv4サーバ設定」をクリックします。</p>
 
-<a href="/blog/images/menu.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/menu.png" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/menu.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/menu.png" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
 <p>DHCPサーバこそがIPアドレスの自動割り当てを行っています。たとえば以下のように設定すると、自動割り当て区間が192.168.1.2~192.168.1.81になります。
 「手動設定は、192.168.1.100以降」などと覚えておくと良いですね。なお、「LAN側IPアドレス」というのが、ルータのアドレスです。</p>
 
-<a href="/blog/images/dhcp.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/dhcp.png" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/dhcp.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/dhcp.png" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -171,15 +171,15 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 <p>さて、先ほど設定した結果をもとにIPアドレスを手動設定します。転送先に設定したいマシンはWindowsの場合を想定しています。まずはコントロールパネルから「ネットワーク共有センター」を開きましょう。</p>
 
-<a href="/blog/images/control_network.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/control_network.PNG" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/control_network.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/control_network.PNG" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
 <p>以下のような画面が開くはずなので、LANに接続するアダプタのプロパティを開きます。下の画像は、「ローカル エリア接続」のプロパティを開いています。</p>
 
-<a href="/blog/images/control_network_adapter.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/control_network_adapter.PNG" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/control_network_adapter.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/control_network_adapter.PNG" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -187,8 +187,8 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 <p>以下の画面が表示されたはずです。「次のIPアドレスを使う」を選択し、「デフォルトゲートウェイ」にはルータのアドレスを設定します。DHCP設定で設定したはずですね。「サブネットマスク」はとりあえず&rdquo;255.255.255.0&rdquo;にしておきましょう。「IPアドレス」に好きなアドレスを設定します。</p>
 
-<a href="/blog/images/control_network_property.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/control_network_property.PNG" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/control_network_property.PNG" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/control_network_property.PNG" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
@@ -196,8 +196,8 @@ PCを使っていて、普段はわざわざIPアドレスを指定はしてい�
 
 <p>さて、ルータの設定画面にもどり、「静的IPマスカレード設定」に入りましょう。適当なエントリー番号を「編集」します。次の画面が表示されます。</p>
 
-<a href="/blog/images/port_open.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
-  <img class="page1 img-thumbnail" src="/blog/images/port_open.png" alt="" itemprop="thumbnailUrl"/>
+<a href="/images/port_open.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/">
+  <img class="page1 img-thumbnail" src="/images/port_open.png" alt="" itemprop="thumbnailUrl"/>
 </a>
 
 
