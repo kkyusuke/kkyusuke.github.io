@@ -378,24 +378,25 @@ Choco自体のアンインストールはフォルダを消せばOKです。<a h
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-65248081-1', 'auto');
 ga('send', 'pageview');</script>
+<script>
 (function(window, document) {
     function main() {
-      // GoogleAdSense読込み
+      
       var ad = document.createElement('script');
       ad.type = 'text/javascript';
       ad.async = true;
-      // 新コードの場合、サイト運営者IDを書き換えてコメントアウトを外す
+      
       ad.dataset.adClient = 'ca-pub-9557285789637667';
       ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
       var sc = document.getElementsByTagName('script')[0];
       sc.parentNode.insertBefore(ad, sc);
     }
   
-    // 遅延読込み
+    
     var lazyLoad = false;
     function onLazyLoad() {
       if (lazyLoad === false) {
-        // 複数呼び出し回避 + イベント解除
+        
         lazyLoad = true;
         window.removeEventListener('scroll', onLazyLoad);
         window.removeEventListener('mousemove', onLazyLoad);
@@ -412,12 +413,13 @@ ga('send', 'pageview');</script>
     window.addEventListener('touchstart', onLazyLoad);
     window.addEventListener('keydown', onLazyLoad);
     window.addEventListener('load', function() {
-      // ドキュメント途中（更新時 or ページ内リンク）
+      
       if (window.pageYOffset) {
         onLazyLoad();
       }
     });
   })(window, document);
+</script>
 </body>
 </html>
 
