@@ -795,9 +795,8 @@ WEBで見てみると、GPSと心拍がしっかり記録されているのが�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
           <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
-有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
 
@@ -982,8 +981,9 @@ Sonyと比べると日本版のアップデート頻度は悪いです。&lt;/p&
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
           <description>&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。
+&lt;/p&gt;
 
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルの確認の仕方&#34;&gt;セキュリティパッチレベルの確認の仕方&lt;/h2&gt;
 
@@ -1185,8 +1185,9 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec/</guid>
           <description>&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。
+&lt;/p&gt;
 
-Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
+&lt;p&gt;Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
 
 &lt;h2 id=&#34;主張その1-絶対にいらない&#34;&gt;主張その1：絶対にいらない。&lt;/h2&gt;
 

@@ -60,17 +60,17 @@
 
                     <ul class="nav navbar-nav navbar-right">	
                         <li>
-                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank" rel="noopener">
                                 <i class="fa fa-facebook-square"></i>
                                 Facebook</a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank" rel="noopener">
                                 <i class="fa fa-twitter-square"></i>
                                 Twitter</a>
                         </li>
                         <li>
-                            <a href="https://github.com/kkyusuke" target="_blank">
+                            <a href="https://github.com/kkyusuke" target="_blank" rel="noopener">
                                 <i class="fa fa-github-square"></i>
                                 GitHub
                             </a>
@@ -204,7 +204,9 @@
         </h1>
     </header>
     <div class="post-content">
-        
+        <p>ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
+<a href="http://www.interlink.or.jp/">インターリンク</a>という会社です。
+</p>
     </div>
     <footer class="readon">
         <a href="https://blog.yyyak.com/post/interlink/" class="btn btn-default">
@@ -229,7 +231,9 @@
         </h1>
     </header>
     <div class="post-content">
-        
+        <p>ポート開放の仕組みを説明した上で、
+Flet&rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。
+</p>
     </div>
     <footer class="readon">
         <a href="https://blog.yyyak.com/post/port_open/" class="btn btn-default">
@@ -310,9 +314,7 @@
     <div class="post-content">
         <p>これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
 速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
-
-測定は<a href="http://netspeed-tokyo.studio-radish.com">Radish</a>を使いました。
-測定地は茨城県南、精度高、圧縮率普通で計測しています。</p>
+</p>
     </div>
     <footer class="readon">
         <a href="https://blog.yyyak.com/post/iijhikari/" class="btn btn-default">
@@ -376,22 +378,17 @@ ga('send', 'pageview');</script>
 <script>
 (function(window, document) {
     function main() {
-      
       var ad = document.createElement('script');
       ad.type = 'text/javascript';
       ad.async = true;
-      
       ad.dataset.adClient = 'ca-pub-9557285789637667';
       ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
       var sc = document.getElementsByTagName('script')[0];
       sc.parentNode.insertBefore(ad, sc);
     }
-  
-    
     var lazyLoad = false;
     function onLazyLoad() {
       if (lazyLoad === false) {
-        
         lazyLoad = true;
         window.removeEventListener('scroll', onLazyLoad);
         window.removeEventListener('mousemove', onLazyLoad);
@@ -408,7 +405,6 @@ ga('send', 'pageview');</script>
     window.addEventListener('touchstart', onLazyLoad);
     window.addEventListener('keydown', onLazyLoad);
     window.addEventListener('load', function() {
-      
       if (window.pageYOffset) {
         onLazyLoad();
       }

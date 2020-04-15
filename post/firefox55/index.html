@@ -22,13 +22,11 @@
 
 Firefox55がついにリリースされました。
 改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？
-
 ">
 <meta property="og:description" content="
 
 Firefox55がついにリリースされました。
 改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？
-
 ">
 
 <meta property="og:site_name" content="Make &amp; Review">
@@ -73,17 +71,17 @@ Firefox55がついにリリースされました。
 
                     <ul class="nav navbar-nav navbar-right">	
                         <li>
-                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank">
+                            <a href="https://www.facebook.com/yusuke.kimura.501" target="_blank" rel="noopener">
                                 <i class="fa fa-facebook-square"></i>
                                 Facebook</a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/KimurayaNext2" target="_blank">
+                            <a href="https://twitter.com/KimurayaNext2" target="_blank" rel="noopener">
                                 <i class="fa fa-twitter-square"></i>
                                 Twitter</a>
                         </li>
                         <li>
-                            <a href="https://github.com/kkyusuke" target="_blank">
+                            <a href="https://github.com/kkyusuke" target="_blank" rel="noopener">
                                 <i class="fa fa-github-square"></i>
                                 GitHub
                             </a>
@@ -117,9 +115,8 @@ Firefox55がついにリリースされました。
                 <img src="/images/firefox55.JPG" alt="" style="max-width: 100%;" itemprop="thumbnailUrl"/>
 
 <p><a href="https://www.mozilla.org/ja/firefox/">Firefox</a>55がついにリリースされました。
-改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？</p>
-
-<p></p>
+改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？
+</p>
 
 <h2 id="firefox55のポイント">Firefox55のポイント</h2>
 
@@ -405,22 +402,17 @@ ga('send', 'pageview');</script>
 <script>
 (function(window, document) {
     function main() {
-      
       var ad = document.createElement('script');
       ad.type = 'text/javascript';
       ad.async = true;
-      
       ad.dataset.adClient = 'ca-pub-9557285789637667';
       ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
       var sc = document.getElementsByTagName('script')[0];
       sc.parentNode.insertBefore(ad, sc);
     }
-  
-    
     var lazyLoad = false;
     function onLazyLoad() {
       if (lazyLoad === false) {
-        
         lazyLoad = true;
         window.removeEventListener('scroll', onLazyLoad);
         window.removeEventListener('mousemove', onLazyLoad);
@@ -437,7 +429,6 @@ ga('send', 'pageview');</script>
     window.addEventListener('touchstart', onLazyLoad);
     window.addEventListener('keydown', onLazyLoad);
     window.addEventListener('load', function() {
-      
       if (window.pageYOffset) {
         onLazyLoad();
       }

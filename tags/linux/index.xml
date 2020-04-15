@@ -16,9 +16,8 @@
           <pubDate>Sun, 16 Feb 2020 08:47:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_migration/</guid>
-          <description>&lt;p&gt;CentOS6からメジャーバージョンアップ出来なくて困っている方へ&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+          <description>&lt;p&gt;CentOS6からメジャーバージョンアップ出来なくて困っている方へ
+&lt;/p&gt;
 
 &lt;h2 id=&#34;centosはメジャーバージョンアップ出来ない&#34;&gt;CentOSはメジャーバージョンアップ出来ない&lt;/h2&gt;
 
@@ -324,8 +323,9 @@ Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/teraterm/</guid>
           <description>&lt;p&gt;TeraTermでのトラブルについてです。
+&lt;/p&gt;
 
-この記事は&lt;a href=&#34;https://qiita.com/kkyusuke/items/72d28d42f72a6cab5f9d&#34;&gt;Qiita&lt;/a&gt;にも転載しています。&lt;/p&gt;
+&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/kkyusuke/items/72d28d42f72a6cab5f9d&#34;&gt;Qiita&lt;/a&gt;にも転載しています。&lt;/p&gt;
 
 &lt;h1 id=&#34;問題の概要&#34;&gt;問題の概要&lt;/h1&gt;
 
@@ -554,8 +554,9 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/texlipse/</guid>
           <description>&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。
+&lt;/p&gt;
 
-皆さんTexを書く時にはどんな環境を利用していますか。
+&lt;p&gt;皆さんTexを書く時にはどんな環境を利用していますか。
 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。
 例えば次のような良い点があります。&lt;/p&gt;
 

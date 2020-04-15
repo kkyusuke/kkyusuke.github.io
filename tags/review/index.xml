@@ -16,9 +16,8 @@
           <pubDate>Sat, 28 Mar 2020 05:40:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/mic/</guid>
-          <description>&lt;p&gt;内蔵マイク・WEBカメラ・Skype用スピーカーホンなど、様々なマイクを比較しました！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+          <description>&lt;p&gt;内蔵マイク・WEBカメラ・Skype用スピーカーホンなど、様々なマイクを比較しました！
+&lt;/p&gt;
 
 &lt;h3 id=&#34;どのマイクを使うか&#34;&gt;どのマイクを使うか？&lt;/h3&gt;
 
@@ -2326,9 +2325,8 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
           <description>&lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
-改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？
+&lt;/p&gt;
 
 &lt;h2 id=&#34;firefox55のポイント&#34;&gt;Firefox55のポイント&lt;/h2&gt;
 
@@ -2430,9 +2428,8 @@ WEBサイトしか購入先がないのに、証明書切れてたら商売に�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
           <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
-有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
 
@@ -2825,8 +2822,9 @@ Tmobile純正機種以外はTmobileアプリが必要なので、予めダウン
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
           <description>&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。
+&lt;/p&gt;
 
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルの確認の仕方&#34;&gt;セキュリティパッチレベルの確認の仕方&lt;/h2&gt;
 
@@ -3028,8 +3026,9 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec/</guid>
           <description>&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。
+&lt;/p&gt;
 
-Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
+&lt;p&gt;Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
 
 &lt;h2 id=&#34;主張その1-絶対にいらない&#34;&gt;主張その1：絶対にいらない。&lt;/h2&gt;
 
@@ -3117,8 +3116,9 @@ Android向けにウイルス対策ソフトが販売されています。「そ�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/sonicare_easyclena/</guid>
           <description>&lt;p&gt;ソニッケアーの独特の販売手法を解き明かしながら、ベストバイの「イージークリーン」を解説します。
+&lt;/p&gt;
 
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.philips.co.jp%2F&#34; title=&#34;Philips - 日本&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://www.philips.co.jp/&#34; target=&#34;\_blank&#34;&gt;Philips - 日本&lt;/a&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.philips.co.jp%2F&#34; title=&#34;Philips - 日本&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://www.philips.co.jp/&#34; target=&#34;\_blank&#34;&gt;Philips - 日本&lt;/a&gt;&lt;/iframe&gt;
 
 &lt;p&gt;そもそも何でこんな投稿を作ったのかを書きたいと思います。&lt;/p&gt;
 
@@ -3317,8 +3317,9 @@ BatteryMixなどはインストールしていないので、設定画面から�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/kairos2016/</guid>
           <description>&lt;p&gt;KairosWatchの購入を考えている人のために、現状をお伝えします。
+&lt;/p&gt;
 
-続編記事は「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
+&lt;p&gt;続編記事は「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
 
 &lt;h2 id=&#34;kairoswathcとは&#34;&gt;KairosWathcとは&lt;/h2&gt;
 
@@ -3453,8 +3454,9 @@ BatteryMixなどはインストールしていないので、設定画面から�
           <guid>https://blog.yyyak.com/post/interlink/</guid>
           <description>&lt;p&gt;ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
 &lt;a href=&#34;http://www.interlink.or.jp/&#34;&gt;インターリンク&lt;/a&gt;という会社です。
+&lt;/p&gt;
 
-契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
+&lt;p&gt;契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
 測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;ここ&lt;/a&gt;で行っていて、茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
@@ -3633,8 +3635,7 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/netflix/</guid>
           <description>&lt;p&gt;ついに日本上陸を果たしたNetflixを1ヶ月間無料体験しました。結論としては１ヶ月で解約となりましたが、また再契約するかもしれません。視聴した映画やドラマを紹介します。
-
-&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/p&gt;
 
 &lt;h2 id=&#34;映画&#34;&gt;映画&lt;/h2&gt;
 
@@ -3690,8 +3691,9 @@ CoreMはAtomほど非力ではなく、ちょっとしたIllusratorファイル�
           <guid>https://blog.yyyak.com/post/iijhikari/</guid>
           <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
 速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
+&lt;/p&gt;
 
-測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;Radish&lt;/a&gt;を使いました。
+&lt;p&gt;測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;Radish&lt;/a&gt;を使いました。
 測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;結論としては、大満足です。回線はNTT東日本のままで何も変わりませんが、これまでに契約していたOCN、インターリンクよりも

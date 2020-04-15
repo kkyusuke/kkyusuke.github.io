@@ -408,8 +408,9 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/texlipse/</guid>
           <description>&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。
+&lt;/p&gt;
 
-皆さんTexを書く時にはどんな環境を利用していますか。
+&lt;p&gt;皆さんTexを書く時にはどんな環境を利用していますか。
 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。
 例えば次のような良い点があります。&lt;/p&gt;
 

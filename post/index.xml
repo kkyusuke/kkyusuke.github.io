@@ -16,9 +16,8 @@
           <pubDate>Sat, 28 Mar 2020 05:40:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/mic/</guid>
-          <description>&lt;p&gt;内蔵マイク・WEBカメラ・Skype用スピーカーホンなど、様々なマイクを比較しました！&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+          <description>&lt;p&gt;内蔵マイク・WEBカメラ・Skype用スピーカーホンなど、様々なマイクを比較しました！
+&lt;/p&gt;
 
 &lt;h3 id=&#34;どのマイクを使うか&#34;&gt;どのマイクを使うか？&lt;/h3&gt;
 
@@ -842,9 +841,8 @@ PC購入時に付属したライセンスキー付きのオフィスを付属さ
           <pubDate>Sun, 16 Feb 2020 08:47:00 JST</pubDate>
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/linux_migration/</guid>
-          <description>&lt;p&gt;CentOS6からメジャーバージョンアップ出来なくて困っている方へ&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+          <description>&lt;p&gt;CentOS6からメジャーバージョンアップ出来なくて困っている方へ
+&lt;/p&gt;
 
 &lt;h2 id=&#34;centosはメジャーバージョンアップ出来ない&#34;&gt;CentOSはメジャーバージョンアップ出来ない&lt;/h2&gt;
 
@@ -2266,8 +2264,9 @@ Kasperskyをそこまで無条件に信頼出来ないので、私は無効に�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/teraterm/</guid>
           <description>&lt;p&gt;TeraTermでのトラブルについてです。
+&lt;/p&gt;
 
-この記事は&lt;a href=&#34;https://qiita.com/kkyusuke/items/72d28d42f72a6cab5f9d&#34;&gt;Qiita&lt;/a&gt;にも転載しています。&lt;/p&gt;
+&lt;p&gt;この記事は&lt;a href=&#34;https://qiita.com/kkyusuke/items/72d28d42f72a6cab5f9d&#34;&gt;Qiita&lt;/a&gt;にも転載しています。&lt;/p&gt;
 
 &lt;h1 id=&#34;問題の概要&#34;&gt;問題の概要&lt;/h1&gt;
 
@@ -3620,9 +3619,8 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
           <description>&lt;img src=&#34;https://blog.yyyak.com/images/firefox55.JPG&#34; alt=&#34;&#34; style=&#34;max-width: 100%;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.mozilla.org/ja/firefox/&#34;&gt;Firefox&lt;/a&gt;55がついにリリースされました。
-改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+改善点として大量のタブを扱う際のメモリ消費量の削減などが挙げられていますが、普段使いでの変化や如何に？？
+&lt;/p&gt;
 
 &lt;h2 id=&#34;firefox55のポイント&#34;&gt;Firefox55のポイント&lt;/h2&gt;
 
@@ -3724,9 +3722,8 @@ gateway                  ether   XX:XX:XX:XX:XX:XX   C                     eth0
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec_compare/</guid>
           <description>&lt;p&gt;Androidはメーカによって更新頻度が違うと言われていますが、実際にはどうなのでしょうか。
-有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+有名機種としてXperia XZ, Galaxy S6 edge, Znefone3(ZE552KL)の3つをチョイスして、調べてみました。
+&lt;/p&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルについて&#34;&gt;セキュリティパッチレベルについて&lt;/h2&gt;
 
@@ -4119,8 +4116,9 @@ Tmobile純正機種以外はTmobileアプリが必要なので、予めダウン
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/texlipse/</guid>
           <description>&lt;p&gt;TexlipseというEclipseプラグインの使い方を解説します。
+&lt;/p&gt;
 
-皆さんTexを書く時にはどんな環境を利用していますか。
+&lt;p&gt;皆さんTexを書く時にはどんな環境を利用していますか。
 TexshopやTexworksなどTex専用の環境はいろいろありますが、私はEclipseを使用しています。
 例えば次のような良い点があります。&lt;/p&gt;
 
@@ -4239,8 +4237,9 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
           <description>&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。
+&lt;/p&gt;
 
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&#34;セキュリティパッチレベルの確認の仕方&#34;&gt;セキュリティパッチレベルの確認の仕方&lt;/h2&gt;
 
@@ -4442,8 +4441,9 @@ Androidはセキュリティの対応がグダグダであることが問題と�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/android_sec/</guid>
           <description>&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。
+&lt;/p&gt;
 
-Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
+&lt;p&gt;Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
 
 &lt;h2 id=&#34;主張その1-絶対にいらない&#34;&gt;主張その1：絶対にいらない。&lt;/h2&gt;
 
@@ -4531,8 +4531,9 @@ Android向けにウイルス対策ソフトが販売されています。「そ�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/sonicare_easyclena/</guid>
           <description>&lt;p&gt;ソニッケアーの独特の販売手法を解き明かしながら、ベストバイの「イージークリーン」を解説します。
+&lt;/p&gt;
 
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.philips.co.jp%2F&#34; title=&#34;Philips - 日本&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://www.philips.co.jp/&#34; target=&#34;\_blank&#34;&gt;Philips - 日本&lt;/a&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.philips.co.jp%2F&#34; title=&#34;Philips - 日本&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://www.philips.co.jp/&#34; target=&#34;\_blank&#34;&gt;Philips - 日本&lt;/a&gt;&lt;/iframe&gt;
 
 &lt;p&gt;そもそも何でこんな投稿を作ったのかを書きたいと思います。&lt;/p&gt;
 
@@ -4602,8 +4603,9 @@ USB充電とか、歯茎ケアモードとか、そういうのに価値を感�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/ebook2016/</guid>
           <description>&lt;p&gt;2016年版、電子書籍リーダ比較です。
+&lt;/p&gt;
 
-新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
+&lt;p&gt;新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
 現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;a href=&#34;../ebook2015/&#34;&gt;2015年版はこちら。&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -5121,8 +5123,9 @@ BatteryMixなどはインストールしていないので、設定画面から�
           <author>Y.K.</author>
           <guid>https://blog.yyyak.com/post/kairos2016/</guid>
           <description>&lt;p&gt;KairosWatchの購入を考えている人のために、現状をお伝えします。
+&lt;/p&gt;
 
-続編記事は「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
+&lt;p&gt;続編記事は「&lt;a href=&#34;https://blog.yyyak.com/post/kairos2017/&#34;&gt;Kairos Watch倒産したみたい&lt;/a&gt;」です。&lt;/p&gt;
 
 &lt;h2 id=&#34;kairoswathcとは&#34;&gt;KairosWathcとは&lt;/h2&gt;
 

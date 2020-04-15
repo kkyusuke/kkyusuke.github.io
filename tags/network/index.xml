@@ -402,8 +402,9 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
           <guid>https://blog.yyyak.com/post/interlink/</guid>
           <description>&lt;p&gt;ビック光に乗り換えをしてプロバイダは標準のものを使っていたのですが、あまりに回線速度が遅いためプロバイダだけ新たに契約をしました。
 &lt;a href=&#34;http://www.interlink.or.jp/&#34;&gt;インターリンク&lt;/a&gt;という会社です。
+&lt;/p&gt;
 
-契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
+&lt;p&gt;契約している回線はフレッツ光ファミリーハイスピードタイプで、速度は下り200Mbps,上りは100Mbpsです。理論的にはこの値に近付くのが理想なのですが、どうなのでしょうか。
 測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;ここ&lt;/a&gt;で行っていて、茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;h2 id=&#34;2016-03-21-19-10&#34;&gt;2016/03/21 19:10&lt;/h2&gt;
@@ -441,8 +442,9 @@ VPNという機能を使うと、そのような事が出来ます。&lt;/p&gt;
           <guid>https://blog.yyyak.com/post/port_open/</guid>
           <description>&lt;p&gt;ポート開放の仕組みを説明した上で、
 Flet&amp;rsquo;s契約で貸し出しされるPRシリーズのポート開放の仕方をまとめています。
+&lt;/p&gt;
 
-なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
+&lt;p&gt;なおPR-400NEのスクリーンショットを掲載しますが、他のPRシリーズでも似たような操作で
 ポート開放することが出来るはずです。&lt;/p&gt;
 
 &lt;h2 id=&#34;ポート開放とは&#34;&gt;ポート開放とは&lt;/h2&gt;
@@ -709,8 +711,9 @@ PR-400NEなどのルータはこの問題が起こることで有名らしいで
           <guid>https://blog.yyyak.com/post/iijhikari/</guid>
           <description>&lt;p&gt;これまでフレッツ光ネクストで契約していた光回線をビック光に乗り換えました。
 速度を計測してアップします。回線速度は下り200Mbps,上りは100Mbpsです。
+&lt;/p&gt;
 
-測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;Radish&lt;/a&gt;を使いました。
+&lt;p&gt;測定は&lt;a href=&#34;http://netspeed-tokyo.studio-radish.com&#34;&gt;Radish&lt;/a&gt;を使いました。
 測定地は茨城県南、精度高、圧縮率普通で計測しています。&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;結論としては、大満足です。回線はNTT東日本のままで何も変わりませんが、これまでに契約していたOCN、インターリンクよりも
