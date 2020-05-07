@@ -6,8 +6,169 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2020</rights>
-    <updated>2020-03-28 05:40:00 &#43;0900 JST</updated>
+    <updated>2020-05-07 12:45:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>WiFiルーター601HW/602HWの設定</title>
+          <link>https://blog.yyyak.com/post/601_602/</link>
+          <pubDate>Thu, 07 May 2020 12:45:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/601_602/</guid>
+          <description>
+
+&lt;p&gt;モバイルWiFiで少しでも高速に通信したい方へ&lt;/p&gt;
+
+&lt;h2 id=&#34;モバイルwifiの設定は複雑&#34;&gt;モバイルWiFiの設定は複雑&lt;/h2&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/602HW.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=602HW&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/602HW.JPG&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;コロナ対応で自宅勤務となり、モバイルWiFiルータを配られている方がいると思います。
+通信速度は仕事の効率に直結しますから、少しでも良い設定をしたいと思っている人がいるはずです。
+本記事では、通信速度に関係ありそうな機能をON/OFFして、どういうときに通信速度が速くなるかを調べました。&lt;/p&gt;
+
+&lt;p&gt;（スマートフォンのテザリングでの調査結果は&lt;a href=&#34;https://blog.yyyak.com/post/tether/&#34;&gt;こちら&lt;/a&gt;）&lt;/p&gt;
+
+&lt;h2 id=&#34;調査した設定&#34;&gt;調査した設定&lt;/h2&gt;
+
+&lt;p&gt;調査に使用した機種は&lt;a href=&#34;https://www.softbank.jp/biz/mobile/lineup/data/602hw/&#34;&gt;602HW&lt;/a&gt;です。&lt;a href=&#34;https://www.softbank.jp/mobile/support/product/601hw/&#34;&gt;601HW&lt;/a&gt;も同一メーカですから似た挙動をすると思われます。&lt;/p&gt;
+
+&lt;p&gt;このWiFiルーターはWiFiとUSBの2通りの接続ができますから、まずはこの違いを調査します。
+ちなみにUSBにはUSB2.0接続とUSB3.0接続があり、選べるようになっています。普通は3.0接続の方が高速ですが、希に2.0の方が良いこともあるようです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;WiFi&lt;/li&gt;
+&lt;li&gt;USB (2.0/3.9)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;602HWには「省電力モード」がありました。これが何かよく分かりませんが、ON/OFFを比較したいです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;省電力モードON&lt;/li&gt;
+&lt;li&gt;省電力モードOFF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;WiFiルータは、「ファームウェアの自動更新機能」のせいで通信が数分ごとに切れることがあります。これはON/OFFできます。
+また、USB接続中にはWiFi接続機能は必要ありませんが、普通はスタンバイさせておきます。これを無理に機能OFFしてしまう場合もチェックしておきましょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自動更新ON・USB接続時もWiFiはON&lt;/li&gt;
+&lt;li&gt;自動更新OFF・USB接続時はWiFiはOFF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;通信速度の測定結果&#34;&gt;通信速度の測定結果&lt;/h2&gt;
+
+&lt;h3 id=&#34;その１&#34;&gt;その１&lt;/h3&gt;
+
+&lt;p&gt;まずは接続方法と省電力モードだけ調べました。その他の設定は初期状態（自動更新ON・WiFiは常にスタンバイ）です。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続方法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;省電力モード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;その他の設定&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;速度 (Mbps)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;- :初期状態&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7.8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15.2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;やはり、無線よりは有線の方が圧倒的に速いようです。省電力モードは通信速度に若干影響するようです。USB3.0で省電力モードONの時だけ大幅に速度が低下していますが、誤差のような気がします。&lt;/p&gt;
+
+&lt;h3 id=&#34;その２&#34;&gt;その２&lt;/h3&gt;
+
+&lt;p&gt;次に、その他の設定を変えてみます。一番早かったUSB2.0で省電力OFFの場合だけ調べました。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続方法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;省電力モード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;その他の設定&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;速度 (Mbps)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;- :初期状態&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;変更&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;結果は、むしろ低速になってしまいました。機器の負荷を減らす設定なので、誤差の範囲だと思えば良いでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;いくつかの設定で計測してみました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;USB接続はWiFiよりも圧倒的に速い&lt;/li&gt;
+&lt;li&gt;省電力機能・その他の設定は変えても大きな変化はない&lt;/li&gt;
+&lt;li&gt;利便性を重視するなら、初期設定のままUSB接続で使うのが最も良い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;様々な機種があるので一概には言えませんが、少なくともHuawei機種にはこの法則は当てはまる気がします！&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
@@ -5401,146 +5562,6 @@ DMZホストにされるPCは固定IPでなければなりません。適当な�
 &lt;a href=&#34;https://blog.yyyak.com/post/dynamic_router&#34;&gt;こちらのポスト&lt;/a&gt;を確認して下さい。&lt;/p&gt;
 
 &lt;p&gt;以上です。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Linux基礎講座：定期的なプログラムの実行(cron)</title>
-          <link>https://blog.yyyak.com/post/linux_basic_cron/</link>
-          <pubDate>Mon, 21 Mar 2016 10:18:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/linux_basic_cron/</guid>
-          <description>&lt;p&gt;定期的にプログラムを実行する方法を説明します。
-&lt;/p&gt;
-
-&lt;p&gt;Linuxでは&amp;rdquo;cron&amp;rdquo;というソフトウェアが定期実行を管理しています。
-自分で書いたスクリプトなどを定期的に実行させることができるので便利です。
-仕組みと利用法を見てみましょう。
-なお、当ポストはRedHat系の利用を前提としていますが、ディレクトリ構成を除いてDebian系などでも同様に使えます。&lt;/p&gt;
-
-&lt;h2 id=&#34;cronとは&#34;&gt;cronとは&lt;/h2&gt;
-
-&lt;p&gt;cronとは、定期実行を管理するソフトウェアの名前です。
-定期実行したいプログラムの一覧を保持したり、定期的に指定されたプログラムを実行する機能を持っています。&lt;/p&gt;
-
-&lt;p&gt;プログラムを実行する際に問題となるのは、実行権限です。
-cronそのものの実行権限でしかプログラムを動かせないとroot権限下のファイルなどを読み書きできなくなってしまいますが、それでは困ります。
-そこでcronでは実行するプログラム名の他に実行権限などの情報を事前に与えることになっています。
-以下の表にcronに与える必要のある情報をまとめました。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;名前&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;説明&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;例&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;分(minute)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;時刻を指定 / 間隔を指定&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;20(20分), */20(20分ごと), *(毎分)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;時(hour)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;時刻を指定 / 間隔を指定&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;3(3時), */2(2時間ごと), *(毎時)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;日付(date)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;日にちを指定 / 間隔を指定&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;13(13日), */2(2日ごと), *(毎日)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;月(month)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;月を指定 / 間隔を指定&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;1(1月), */2(2ヶ月ごと), *(毎月)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;曜日(day)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;曜日を指定&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;sun(日曜日),*(毎日)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;実行権限&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;ユーザ名を指定する&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;root, apache&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;プログラム名&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;コマンドラインに入力するのと同じ要領で与える&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&amp;rdquo;/usr/local/bin/hoge -c -s&amp;rdquo;など&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;設定ファイル&#34;&gt;設定ファイル&lt;/h3&gt;
-
-&lt;p&gt;定期実行に関するデータは以下の2カ所に保存されています。
-crontabは直接ユーザが編集するタイプの場所ですが、spool下のファイルはcrontabコマンドから編集するものなので一般にはいじらなものです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;/var/spool/cron/(ユーザ名)&lt;/li&gt;
-&lt;li&gt;/etc/crontab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;それでは/etc/crontabファイルを見てみましょう。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cat /etc/crontab
-SHELL=/bin/bash
-PATH=/sbin:/bin:/usr/sbin:/usr/bin
-MAILTO=root
-
-# For details see man 4 crontabs
-
-# Example of job definition:
-# .---------------- minute (0 - 59)
-# |  .------------- hour (0 - 23)
-# |  |  .---------- day of month (1 - 31)
-# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
-# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
-# |  |  |  |  |
-# *  *  *  *  * user-name  command to be executed
-30 2 * * * root /usr/local/sbin/backup 1&amp;gt;/dev/null
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最後の1行が私が追加しているものです。この場合、「毎日2時30分にroot権限でbackupコマンドを実行」します。&lt;/p&gt;
-
-&lt;h2 id=&#34;cronサービスの起動&#34;&gt;cronサービスの起動&lt;/h2&gt;
-
-&lt;p&gt;cronはサービスなので、起動していることを確認しましょう。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// RHEL7以降
-$ systemctl status cron
-$ systemctl status cron //起動していない場合
-// RHEL6以前
-$ service cron status
-$ service cron status //起動していない場合
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;cronの設定&#34;&gt;cronの設定&lt;/h2&gt;
-
-&lt;p&gt;#＃＃ 編集
-基本的にはすべてcrontabコマンドを利用します。ユーザ&amp;rdquo;hoge&amp;rdquo;のcrontabを編集する場合、以下のコマンドを実行します。vimが起動して編集出来るようになります。終了時には文法チェックが行われるようです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# crontab -e -u hoge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;一覧の表示&#34;&gt;一覧の表示&lt;/h3&gt;
-
-&lt;p&gt;ユーザ&amp;rdquo;hoge&amp;rdquo;のcrontab内容は以下のコマンドで分かります。ユーザを指定していない場合、ログイン中のユーザ情報を表示します。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# crontab -u hoge -l
-&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
       
     

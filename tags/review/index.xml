@@ -11,6 +11,167 @@
     
       
         <item>
+          <title>WiFiルーター601HW/602HWの設定</title>
+          <link>https://blog.yyyak.com/post/601_602/</link>
+          <pubDate>Thu, 07 May 2020 12:45:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/601_602/</guid>
+          <description>
+
+&lt;p&gt;モバイルWiFiで少しでも高速に通信したい方へ&lt;/p&gt;
+
+&lt;h2 id=&#34;モバイルwifiの設定は複雑&#34;&gt;モバイルWiFiの設定は複雑&lt;/h2&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/602HW.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=602HW&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/602HW.JPG&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;コロナ対応で自宅勤務となり、モバイルWiFiルータを配られている方がいると思います。
+通信速度は仕事の効率に直結しますから、少しでも良い設定をしたいと思っている人がいるはずです。
+本記事では、通信速度に関係ありそうな機能をON/OFFして、どういうときに通信速度が速くなるかを調べました。&lt;/p&gt;
+
+&lt;p&gt;（スマートフォンのテザリングでの調査結果は&lt;a href=&#34;https://blog.yyyak.com/post/tether/&#34;&gt;こちら&lt;/a&gt;）&lt;/p&gt;
+
+&lt;h2 id=&#34;調査した設定&#34;&gt;調査した設定&lt;/h2&gt;
+
+&lt;p&gt;調査に使用した機種は&lt;a href=&#34;https://www.softbank.jp/biz/mobile/lineup/data/602hw/&#34;&gt;602HW&lt;/a&gt;です。&lt;a href=&#34;https://www.softbank.jp/mobile/support/product/601hw/&#34;&gt;601HW&lt;/a&gt;も同一メーカですから似た挙動をすると思われます。&lt;/p&gt;
+
+&lt;p&gt;このWiFiルーターはWiFiとUSBの2通りの接続ができますから、まずはこの違いを調査します。
+ちなみにUSBにはUSB2.0接続とUSB3.0接続があり、選べるようになっています。普通は3.0接続の方が高速ですが、希に2.0の方が良いこともあるようです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;WiFi&lt;/li&gt;
+&lt;li&gt;USB (2.0/3.9)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;602HWには「省電力モード」がありました。これが何かよく分かりませんが、ON/OFFを比較したいです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;省電力モードON&lt;/li&gt;
+&lt;li&gt;省電力モードOFF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;WiFiルータは、「ファームウェアの自動更新機能」のせいで通信が数分ごとに切れることがあります。これはON/OFFできます。
+また、USB接続中にはWiFi接続機能は必要ありませんが、普通はスタンバイさせておきます。これを無理に機能OFFしてしまう場合もチェックしておきましょう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自動更新ON・USB接続時もWiFiはON&lt;/li&gt;
+&lt;li&gt;自動更新OFF・USB接続時はWiFiはOFF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;通信速度の測定結果&#34;&gt;通信速度の測定結果&lt;/h2&gt;
+
+&lt;h3 id=&#34;その１&#34;&gt;その１&lt;/h3&gt;
+
+&lt;p&gt;まずは接続方法と省電力モードだけ調べました。その他の設定は初期状態（自動更新ON・WiFiは常にスタンバイ）です。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続方法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;省電力モード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;その他の設定&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;速度 (Mbps)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;- :初期状態&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;WiFi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2.4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;7.8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB3&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15.2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;やはり、無線よりは有線の方が圧倒的に速いようです。省電力モードは通信速度に若干影響するようです。USB3.0で省電力モードONの時だけ大幅に速度が低下していますが、誤差のような気がします。&lt;/p&gt;
+
+&lt;h3 id=&#34;その２&#34;&gt;その２&lt;/h3&gt;
+
+&lt;p&gt;次に、その他の設定を変えてみます。一番早かったUSB2.0で省電力OFFの場合だけ調べました。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続方法&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;省電力モード&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;その他の設定&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;速度 (Mbps)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;- :初期状態&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;USB2&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;変更&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;結果は、むしろ低速になってしまいました。機器の負荷を減らす設定なので、誤差の範囲だと思えば良いでしょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;いくつかの設定で計測してみました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;USB接続はWiFiよりも圧倒的に速い&lt;/li&gt;
+&lt;li&gt;省電力機能・その他の設定は変えても大きな変化はない&lt;/li&gt;
+&lt;li&gt;利便性を重視するなら、初期設定のままUSB接続で使うのが最も良い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;様々な機種があるので一概には言えませんが、少なくともHuawei機種にはこの法則は当てはまる気がします！&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>WEBミーティング向け！マイクの性能比較</title>
           <link>https://blog.yyyak.com/post/mic/</link>
           <pubDate>Sat, 28 Mar 2020 05:40:00 JST</pubDate>
