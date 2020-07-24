@@ -6,8 +6,121 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2020</rights>
-    <updated>2020-05-07 12:45:00 &#43;0900 JST</updated>
+    <updated>2020-07-24 05:52:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>新型コロナ接触確認アプリのプライバシーについて、仕組みから解説します</title>
+          <link>https://blog.yyyak.com/post/cocoa/</link>
+          <pubDate>Fri, 24 Jul 2020 05:52:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/cocoa/</guid>
+          <description>&lt;p&gt;Cocoaアプリのリスクを考えました
+&lt;/p&gt;
+
+&lt;h2 id=&#34;cocoaをインストールしましょう&#34;&gt;COCOAをインストールしましょう&lt;/h2&gt;
+
+&lt;p&gt;プライバシーの懸念からアプリをインストールしていない方がいるかもしれませんが、私はインストールをお勧めします。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#39;https://play.google.com/store/apps/details?id=jp.go.mhlw.covid19radar&amp;hl=ja&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&#39;&gt;&lt;img alt=&#39;Google Play で手に入れよう&#39; src=&#39;https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png&#39; style=&#34;height: 60px;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://apps.apple.com/jp/app/cocoa-%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E6%8E%A5%E8%A7%A6%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA/id1516764458?mt=8&#34; style=&#34;display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-06-18&amp;kind=iossoftware&amp;bubble=apple_music) no-repeat;width:135px;height:40px;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;アプリを支える３つのグループ&#34;&gt;アプリを支える３つのグループ&lt;/h2&gt;
+
+&lt;p&gt;接触感染アプリは厚労省だけで作成したものではありません。３つのグループが役割を分担してシステムを支えています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Google/Apple: スマートフォンで周囲のデバイスとトークンを交換する部分を担当&lt;/li&gt;
+&lt;li&gt;保健所: 感染者に処理番号を発行する&lt;/li&gt;
+&lt;li&gt;厚生労働省: 感染者から処理番号をもらったら、全スマートフォンにトークンを通知する。スマートフォンアプリも配布&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/cocoa.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=cocoa&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/cocoa.jpg&#34; alt=&#34;&#34; width=&#34;400&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;トークンとは、氏名や電話番号ではなくランダムな文字列のことです。十分に長いトークンはどのデバイスでも一意になるので、個人は特定できなくても、接触した際に交換しておけば、接触の事実だけは分かるようになります。&lt;/p&gt;
+
+&lt;p&gt;参考１：&lt;a href=&#34;https://developers.google.com/android/exposure-notifications/exposure-notifications-api#reference-design&#34;&gt;Exposure Notification API&lt;/a&gt;&lt;br /&gt;
+参考２：&lt;a href=&#34;https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/cocoa_00138.html&#34;&gt;新型コロナウイルス接触確認アプリ（COCOA)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;1-google-appleは信頼出来るのか&#34;&gt;(1) Google/Appleは信頼出来るのか？&lt;/h2&gt;
+
+&lt;p&gt;この仕組みの中で最も危険たり得るのは、スマートフォンOSを作成しているGoogle / Appleでしょう。
+例えば、以下のようなことが考えられます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;周囲の人とやりとりする際に、トークンだけでなく個人情報も交換する&lt;/li&gt;
+&lt;li&gt;やりとりした情報をGoogleやAppleの本社サーバーに密かに送信する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;何を目的にするかによりますが、これらの事をして2社が経済的利益を上げることが出来るシナリオはあるのでしょうか？例えば、以下が考えられます&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コロナに感染した人向けの特別な広告を配信する&lt;/li&gt;
+&lt;li&gt;コロナに感染した人の名簿を製薬会社に販売する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これらのシナリオは違法行為だと思われますので、密かに取引するしかありません。発覚した場合に失う信頼も絶大です。私としては、2社がこんなことをするとは思えず、安心して良いと思います。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、2社は普段からスマートフォン経由で個人情報を収集しています。接触確認アプリとは関係なく、懸念がある方はスマートフォンの使用そのものを考え直しましょう。&lt;/p&gt;
+
+&lt;h2 id=&#34;2-保健所は信頼出来るのか&#34;&gt;(2) 保健所は信頼出来るのか？&lt;/h2&gt;
+
+&lt;p&gt;これは簡単です。保健所はあくまで処理番号を発行するだけなので、ユーザのスマートフォンには一切アクセス出来ません。&lt;/p&gt;
+
+&lt;p&gt;保健所の信頼性とは関係なく、このアプリは活用できます。&lt;/p&gt;
+
+&lt;h2 id=&#34;3-厚労省は信頼出来るのか&#34;&gt;(3) 厚労省は信頼出来るのか？&lt;/h2&gt;
+
+&lt;p&gt;厚労省は以下の２つの役割を担っています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;感染者から受け取ったトークンを、全体に配信する。&lt;/li&gt;
+&lt;li&gt;ユーザにアプリを配信する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;トークン配信について&#34;&gt;トークン配信について&lt;/h3&gt;
+
+&lt;p&gt;トークン配信で、プライバシーを侵害することは出来ません。あなたがわざわざ自分から自分のトークンを氏名付きで公表しない限りは安心です。&lt;/p&gt;
+
+&lt;p&gt;もし厚労省が誤って無関係なトークンをランダムに感染者として配信した場合、以下の行為が可能です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;居もしない感染者をでっち上げ、社会不安を醸成する&lt;/li&gt;
+&lt;li&gt;膨大な感染情報を配信し、スマートフォンを処理落ちさせる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これをすることのメリットが政府には無いように思えます。&lt;/p&gt;
+
+&lt;h3 id=&#34;アプリについて&#34;&gt;アプリについて&lt;/h3&gt;
+
+&lt;p&gt;アプリが実際に動作するのは、感染者が処理番号を入力するときです。
+Google/Appleが提供するAPIを用いてトークンを取得し、それを厚労省に送信します。&lt;/p&gt;
+
+&lt;p&gt;これだけならプライバシー上問題なしです。しかし、アプリには以下の権限が付与されています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pair with Bluetooth devices (API利用に必須)&lt;/li&gt;
+&lt;li&gt;run at startup&lt;/li&gt;
+&lt;li&gt;view network connections&lt;/li&gt;
+&lt;li&gt;full network access&lt;/li&gt;
+&lt;li&gt;prevent device from sleeping&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;技術的には、これらの権限が悪用可能です。個人情報（電話番号・メールアドレス等）は取得できませんが、接続しているWiFiアクセスポイント名などをリアルタイムに送信することが可能です。頑張れば、個人との紐付けが出来なくはないです。&lt;/p&gt;
+
+&lt;p&gt;現政府がこれを行うかどうかは分かりません。ただし技術的・事務的ハードルは高いと思われます。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;Google/Apple, 保健所, 厚労省の３つに分けてリスクを考えてみました。&lt;/p&gt;
+
+&lt;p&gt;Google/Appleと厚労省には、悪用のタイミングがあります。これらを信用できるかどうか、に落ち着きますが、私としてはインストールをお勧めします。&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -5495,71 +5608,6 @@ BatteryMixなどはインストールしていないので、設定画面から�
 
 &lt;p&gt;とりあえず、最初の1ヶ月は確実に儲かりそうです。半年、1年とアプリを進めてそれでもまだ儲かるアプリなのかは分かりませんが、さすがにそれでは問屋が卸さないでしょう。
 その時、実質の月額料金がどれ位になるかで継続可否を決めようと思います。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>宅内サーバを外部に公開する</title>
-          <link>https://blog.yyyak.com/post/public_server/</link>
-          <pubDate>Wed, 20 Apr 2016 00:38:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/public_server/</guid>
-          <description>&lt;p&gt;宅内に設置したサーバに外部からアクセスする方法について説明します。
-&lt;/p&gt;
-
-&lt;h2 id=&#34;宅内サーバを公開するメリット&#34;&gt;宅内サーバを公開するメリット&lt;/h2&gt;
-
-&lt;p&gt;宅内にサーバを設置して公開するメリットとしては、以下のことが考えられます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;外部にサーバを借りるお金がかからない&lt;/li&gt;
-&lt;li&gt;自宅に保存してあるデータを簡単に公開できる。データ容量がほぼ無制限。&lt;/li&gt;
-&lt;li&gt;お金をかけずにサーバ設置の練習をしたい&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;サーバ管理者志望の方でも、月1000円ほどするVPSなどを借りて勉強するのは難しい方もいるかと思います。そういった方には、とりあえず自宅で設置してみて、一通りできるようになってから外部のものを借りるのは良いステップかと思います。
-また、写真や動画を公開したい人にとって、ディスク容量は非常に重要です。しかし、数TBものディスクを借りようとすると、それだけで月に数万円も払わなくてはなりません。その点、自宅サーバであればディスクは自分が購入した分だけ使用できるのでとても経済的です。&lt;/p&gt;
-
-&lt;p&gt;ただし、デメリットもあります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;プロバイダによって、宅内サーバ設置を禁止していることがある&lt;/li&gt;
-&lt;li&gt;短期間で大容量のアップロードをする場合、プロバイダから契約解除される可能性がある&lt;/li&gt;
-&lt;li&gt;VPSやレンタルサーバと違って、あらゆる問題に自分で対処する必要がある。（特にセキュリティ）&lt;/li&gt;
-&lt;li&gt;セキュリティ的な問題が発生した場合、自宅内のあらゆるPCに影響が発生する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;プロバイダはサーバが設置されているかどうか分かるわけではないので、異様に大量の通信をしなければ問題ないでしょう。問題はセキュリティです。外部サーバでもセキュリティには注意しなくてはなりませんが、基幹部分のアップデートは自動で行われることが多いですし、通信内容をある程度監視して問題のあるトラフィックを通知してもらうこともできます。こういったサービスは一切受けられないので、しっかり自己責任で管理しなくてはなりません。最低限、ソフトウェアアップデートくらいはしっかりしないといけないでしょう。&lt;/p&gt;
-
-&lt;h2 id=&#34;外部からくる通信をすべて特定マシンに転送&#34;&gt;外部からくる通信をすべて特定マシンに転送&lt;/h2&gt;
-
-&lt;p&gt;とにかく標題のことができれば、サーバは完成です。IPアドレスであとはアクセスすればOKです。どのように設定するか以下に説明します。&lt;/p&gt;
-
-&lt;h3 id=&#34;dmz機能を利用&#34;&gt;DMZ機能を利用&lt;/h3&gt;
-
-&lt;p&gt;例えばフレッツ光の付属ルータ(PR-400ne)には、DMZ機能があります。DMZに特定マシンのIPアドレスを設定すると、外部からの新規の通信はすべてこのマシンに設定されます。以下のように設定します。&lt;/p&gt;
-
-&lt;p&gt;詳細設定-&amp;gt;高度な設定から「DMZホスト」を見つけて下さい。DMZホストの設置場所はLAN側にするのが都合が良いでしょう。これでDMZホストに設定されたPCはLANにアクセスしながら外部へも公開が可能になります。
-DMZホストにされるPCは固定IPでなければなりません。適当なアドレスを設定して、この欄に入力しましょう。以下の画像では、&amp;rdquo;192.168.1.10&amp;rdquo;をホストに設定しています。&lt;/p&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34;&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/DMZ.PNG&#34; alt=&#34;&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-
-&lt;h2 id=&#34;アクセス&#34;&gt;アクセス&lt;/h2&gt;
-
-&lt;h3 id=&#34;ipアドレスでアクセス&#34;&gt;IPアドレスでアクセス&lt;/h3&gt;
-
-&lt;p&gt;自宅のIPアドレスが分かれば、DMZのマシンにアクセス出来ます。IPアドレスは、例えば&lt;a href=&#34;https://www.cman.jp/network/support/go_access.cgi&#34;&gt;このWEBページ&lt;/a&gt;から確認できます。HTTPサーバなどを立ててみて確認しましょう。&lt;/p&gt;
-
-&lt;h3 id=&#34;ドメイン名でアクセス&#34;&gt;ドメイン名でアクセス&lt;/h3&gt;
-
-&lt;p&gt;IPアドレスは、固定サービスに加入しない限りは変更されますので、その場合にはダイナミックDNSを使いましょう。
-&lt;a href=&#34;https://blog.yyyak.com/post/dynamic_router&#34;&gt;こちらのポスト&lt;/a&gt;を確認して下さい。&lt;/p&gt;
-
-&lt;p&gt;以上です。&lt;/p&gt;</description>
         </item>
       
     
