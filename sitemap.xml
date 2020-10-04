@@ -3,6 +3,15 @@
   
   
   <url>
+    <loc>https://blog.yyyak.com/post/summary_pocket/</loc>
+    <lastmod>2020-10-04T14:11:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://blog.yyyak.com/post/cocoa/</loc>
     <lastmod>2020-07-24T05:52:00+09:00</lastmod>
     <changefreq>monthly</changefreq>
