@@ -11,6 +11,63 @@
     
       
         <item>
+          <title>Androidの動作を軽くし、電池持ちを長引かせる方法</title>
+          <link>https://blog.yyyak.com/post/android_battery/</link>
+          <pubDate>Sat, 27 Mar 2021 05:27:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/android_battery/</guid>
+          <description>&lt;p&gt;何もしなくても快適なiPhoneと違い、Androidは設定次第で大きく変わることがある気がします。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;androidは使い方のコツが多すぎる&#34;&gt;Androidは使い方のコツが多すぎる&lt;/h2&gt;
+
+&lt;p&gt;「Android　重い」「Android　電池持ち」等で検索すると、無限の結果が得られると思います。&lt;/p&gt;
+
+&lt;p&gt;コツそのものの良し悪しもありますが、アプリストアの審査がAppleと比較してザルなので「太陽光発電アプリ」等まで氾濫しており、初心者には厳しいOSであるのは確かだと思います。
+そこで、この記事では、おそらく最も効果のある１つのコツだけを紹介します。&lt;/p&gt;
+
+&lt;h2 id=&#34;コツ-ok-googleを無効にする&#34;&gt;コツ=「OK Googleを無効にする」&lt;/h2&gt;
+
+&lt;p&gt;Googleアシスタントを使っている方はどのくらいいるでしょうか？
+私は家ではGoogleホームに向かって話しかけていますが、外出先で使う事はありません。&lt;/p&gt;
+
+&lt;p&gt;しかし、Googleアシスタントは&amp;rdquo;OK Google&amp;rdquo;を聞き逃すまいと常に準備しており、これが電池持ちや動作に大きな影響を与えていることが多いです。
+そこで、必要ない方のため、&amp;rdquo;OK Google&amp;rdquo;を無効にする方法を解説します。&lt;/p&gt;
+
+&lt;h3 id=&#34;google検索アプリから簡単にoffにできる&#34;&gt;Google検索アプリから簡単にOFFにできる&lt;/h3&gt;
+
+&lt;p&gt;①まずは、Google検索アプリを開き、その他タブを開きます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/android_battery_1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_battery_1.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;②すると、設定画面が出てくるので、「Googleアシスタント」を選択します。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/android_battery_2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_battery_2.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;③アカウント画像の下に、「Voice Match」という項目が出てくるので、選択します。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/android_battery_3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_battery_3.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;④「OK Google」のトグルをOFFにします。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/android_battery_4.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_battery_4.png&#34; alt=&#34;&#34; width=&#34;150&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;以上の操作をするだけで、私の端末はグンと稼働時間や快適さが変わりました。ぜひ試してみて下さい。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>ぷらら光はOCNバーチャルコネクトかtransixが使える</title>
           <link>https://blog.yyyak.com/post/plala/</link>
           <pubDate>Sat, 27 Mar 2021 05:01:00 JST</pubDate>
