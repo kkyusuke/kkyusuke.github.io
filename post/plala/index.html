@@ -21,17 +21,17 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Make &amp; Review | SMT2ファイルの書き方">
-<meta name="description" content="多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
+<meta property="og:title" content="Make &amp; Review | ぷらら光はOCNバーチャルコネクトかtransixが使える">
+<meta name="description" content="ぷらら光のIPv4 over IPv6周りで色々試行錯誤したのでまとめます。
 ">
-<meta property="og:description" content="多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
+<meta property="og:description" content="ぷらら光のIPv4 over IPv6周りで色々試行錯誤したのでまとめます。
 ">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Make &amp; Review | SMT2ファイルの書き方
+    Make &amp; Review | ぷらら光はOCNバーチャルコネクトかtransixが使える
     
 </title>
 
@@ -99,90 +99,71 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2015-12-17T00:08+09:00">
-                        2015.12.17 00:08
+                    <time itemprop="datePublished" datetime="2021-03-27T05:01+09:00">
+                        2021.3.27 05:01
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/smt/" itemprop="url">SMT2ファイルの書き方</a>
+                    <a href="https://blog.yyyak.com/post/plala/" itemprop="url">ぷらら光はOCNバーチャルコネクトかtransixが使える</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>多くのSMTソルバが対応するSMT2形式の記述方法を説明します。
+                <p>ぷらら光のIPv4 over IPv6周りで色々試行錯誤したのでまとめます。
 </p>
 
-<h2 id="smtソルバーとは">SMTソルバーとは</h2>
+<h2 id="ぷらら光は基本は-ocnバーチャルコネクト">ぷらら光は基本は「OCNバーチャルコネクト」</h2>
 
-<p>SMT(Satisfaction Modulo Theory)ソルバとは与えられた複数の制約式の充足可否や、
-充足可能時の値の組み合わせを求める事が出来るソフトウェアです。
-この分野には先行してSATソルバというものがあり、こちらは全量演算子∀などが扱えないという条件があります。
-SMTソルバではこのような条件はなくほとんどすべての論理制約を解析可能であると同時に、ビット幅のある変数の宣言などを直接記述できるなど使い勝手が向上しています。個人的には、多様な変数名を設定できることはとても便利です。</p>
+<p>家の光回線にぷららを考えている方は多いかもしれません。
+NTT系列の会社で古くからあるプロバイダなので安心感がありますし（正式名称は、株式会社NTTぷらら）、その割に料金が安いです。</p>
 
-<p>SATソルバは数十万変数から数百万変数の制約式が解析可能と言われていますが、SMTソルバは高機能故にそこまでのスケーラビリティを実現出来ていません。大きな問題を解く場合にはSATソルバをうまく活用する事を考える必要があるけれど、それほど大きな問題を解かないのであればSMTソルバの活用を考えるべきでしょう。</p>
+<p>最近の光回線サービスには「IPv4 over IPv6」という高速化サービスがセットになっていることが多く、ぷらら光もしっかり対応しています。
+このサービスにはいくつか種類があり、ぷららでは「OCNバーチャルコネクト」がデフォルトとなっています。</p>
 
-<p>このポストでは、今までSATソルバで記述できていたような制約式(CNF式、DIMACS形式など)を、SMT2式で書く方法について説明します。</p>
+<ul>
+<li>v6プラス: 最もメジャーならサービス</li>
+<li>transix: IIJが運営するサービス、こちらも有名</li>
+<li>OCNバーチャルコネクト: 仕組みはv6プラスと同様だが、OCN（NTT系列）が提供。新し目のサービス</li>
+<li>他にも色々&hellip;</li>
+</ul>
 
-<h2 id="変数の宣言">変数の宣言</h2>
+<h2 id="不具合があると-transix-に交換してもらえる">不具合があると「transix」に交換してもらえる</h2>
 
-<p>まずは変数の宣言を行います。例えば1bit変数aは以下のようにして宣言します。</p>
+<p>OCNバーチャルコネクト、仕組みとしてはv6プラスと大して変わらないのですが、新しいせいかトラブルが多いようです。
+ぷらら光からレンタルされたWiFiルーターでは、ぶつぶつネットワークが途切れる不具合があり、数ヶ月待っても改善しませんでした。</p>
 
-<pre><code>( declare-fun a () Bool )
-</code></pre>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=makereview-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B086WDY9XS&linkId=de12cfee4f6a6e7ab4132760030f6a83"></iframe>
 
-<h2 id="制約の追加">制約の追加</h2>
+<p>困ってぷらら光のサポートに電話したところ、どうやらこの手の不具合は少なくないようで、すんなりとtransixへの変更を案内されます。
+サポートによると、以下の条件を満たすとtransixにしてくれるそうです。1回目の電話の後、専門部署から2度目の電話をもらって確定します。</p>
 
-<p>必要な変数を宣言し終わったら、制約を追加することができます。例えば変数bが変数aの否定である場合(b != a)は以下のように制約を記述します。</p>
+<ul>
+<li>OCNバーチャルコネクトで不具合が発生している（口頭でOK）</li>
+<li>スピードに満足していない（PPPoEでは不足）</li>
+</ul>
 
-<pre><code>( assert (=  (not a) b) )
-</code></pre>
+<p>私の場合、1週間程度で実際に変更になりました！</p>
 
-<p>##例） 2入力AND回路の出力が1になるかどうかの検査
-2入力ANDの出力が1になるのは、両方の入力が1になる時です。「1になるかどうか」という命題は真ですので、その旨を出力させたいです。</p>
+<h2 id="transix-に不満があった場合-ocnバーチャルコネクト-に戻せる">「transix」に不満があった場合「OCNバーチャルコネクト」に戻せる</h2>
 
-<pre><code>( declare-fun in0 () Bool )
-( declare-fun in1 () Bool )
-( declare-fun out () Bool )
-( assert (= out (and in0 in1) ) )
-( assert (= out true) )
-( check-sat )
-</code></pre>
+<p>さて、transixに変更後は特に問題はなかったのですが、transixはOCNバーチャルコネクトと比較して自由度の低いサービスで、ポート開放できません。
+すると、サーバーを建てて遊んだり、VPNしたりできないのです。リモートワークの関係でVPNが必要だったので、ネットがブチブチ切れるよりも困ったことになりました。</p>
 
-<p>これをSMTソルバに入力すると以下のように出力するはずです。今回はZ3というSMTソルバを使います。</p>
+<p>そこで、ぷららにもう一度電話すると、transixからOCNバーチャルコネクトに戻してくれるました。
+ただし、レンタルルーターを別機種に交換する対応はしてくれないそうで、仕方ないので自分で購入しました。
+<a href="https://www.aterm.jp/product/atermstation/product/warpstar/wg1200hp4/">NECの製品</a>にしたところ、問題なく動いています。（なぜかAmazonで売ってない&hellip;）</p>
 
-<pre><code>$ z3 -smt2 test1.stm2
-sat
-</code></pre>
+<h2 id="まとめ">まとめ</h2>
 
-<p>&ldquo;sat&rdquo;と表示されました。できれば、どのようなときに1になるかも出力させたいので、それもやってみます。</p>
+<p>OCNバーチャルコネクトは、新しいサービスのせいか安定して動かないルーターがあるようです。
+個人的に購入したNECの製品はうまく動いているので、レンタルルーターのメーカーは確認するようにした方が良いかも知れません。</p>
 
-<p>SATの場合に値の割り当てを見たい場合には、get-valueを用います。以下のようになるはずです。</p>
-
-<pre><code>( declare-fun in0 () Bool )
-( declare-fun in1 () Bool )
-( declare-fun out () Bool )
-( assert (= out (and in0 in1) ) )
-( assert (= out true) )
-( check-sat )
-( get-value (in0) )
-( get-valule (in1) )
-</code></pre>
-
-<p>では、実行してみましょう。</p>
-
-<pre><code>$ z3 -smt2 test2.stm2
-sat
-((in0 true))
-((in1 true))
-</code></pre>
-
-<h2 id="まだまだあるsmt2形式の言語仕様">まだまだあるSMT2形式の言語仕様</h2>
-
-<p>SMT2式の書き方についてはPDFにまとまっている言語仕様を参照すると良いでしょう。
-<a href="http://smtlib.cs.uiowa.edu/">http://smtlib.cs.uiowa.edu/</a></p>
-
-<p>SMTソルバによってはPythonAPIなどを提供していることもあるので、それを利用して実装を簡単にすることもできます。</p>
+<ul>
+<li>ぷらら光のデフォルトはOCNバーチャルコネクト</li>
+<li>transixに変えてもらえ、元にも戻せる</li>
+<li>ルーターの機種変更はしてくれない</li>
+</ul>
             </div>
 
 	    <script type="text/javascript">
@@ -200,16 +181,9 @@ sat
                 <ul class="list-inline post-tags">
                     
                     <li>
-                        <a href="https://blog.yyyak.com/tags/research" itemprop="keywords">
+                        <a href="https://blog.yyyak.com/tags/review" itemprop="keywords">
                             <i class="fa fa-tags"></i>
-                            research
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/howto" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            HowTo
+                            review
                         </a>
                     </li>
                     
@@ -225,13 +199,13 @@ sat
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/kairos/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/lets_rz/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/ipoe/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>

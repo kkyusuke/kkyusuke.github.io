@@ -11,6 +11,70 @@
     
       
         <item>
+          <title>ぷらら光はOCNバーチャルコネクトかtransixが使える</title>
+          <link>https://blog.yyyak.com/post/plala/</link>
+          <pubDate>Sat, 27 Mar 2021 05:01:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/plala/</guid>
+          <description>&lt;p&gt;ぷらら光のIPv4 over IPv6周りで色々試行錯誤したのでまとめます。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;ぷらら光は基本は-ocnバーチャルコネクト&#34;&gt;ぷらら光は基本は「OCNバーチャルコネクト」&lt;/h2&gt;
+
+&lt;p&gt;家の光回線にぷららを考えている方は多いかもしれません。
+NTT系列の会社で古くからあるプロバイダなので安心感がありますし（正式名称は、株式会社NTTぷらら）、その割に料金が安いです。&lt;/p&gt;
+
+&lt;p&gt;最近の光回線サービスには「IPv4 over IPv6」という高速化サービスがセットになっていることが多く、ぷらら光もしっかり対応しています。
+このサービスにはいくつか種類があり、ぷららでは「OCNバーチャルコネクト」がデフォルトとなっています。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;v6プラス: 最もメジャーならサービス&lt;/li&gt;
+&lt;li&gt;transix: IIJが運営するサービス、こちらも有名&lt;/li&gt;
+&lt;li&gt;OCNバーチャルコネクト: 仕組みはv6プラスと同様だが、OCN（NTT系列）が提供。新し目のサービス&lt;/li&gt;
+&lt;li&gt;他にも色々&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;不具合があると-transix-に交換してもらえる&#34;&gt;不具合があると「transix」に交換してもらえる&lt;/h2&gt;
+
+&lt;p&gt;OCNバーチャルコネクト、仕組みとしてはv6プラスと大して変わらないのですが、新しいせいかトラブルが多いようです。
+ぷらら光からレンタルされたWiFiルーターでは、ぶつぶつネットワークが途切れる不具合があり、数ヶ月待っても改善しませんでした。&lt;/p&gt;
+
+&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;language=ja_JP&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B086WDY9XS&amp;linkId=de12cfee4f6a6e7ab4132760030f6a83&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;困ってぷらら光のサポートに電話したところ、どうやらこの手の不具合は少なくないようで、すんなりとtransixへの変更を案内されます。
+サポートによると、以下の条件を満たすとtransixにしてくれるそうです。1回目の電話の後、専門部署から2度目の電話をもらって確定します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OCNバーチャルコネクトで不具合が発生している（口頭でOK）&lt;/li&gt;
+&lt;li&gt;スピードに満足していない（PPPoEでは不足）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;私の場合、1週間程度で実際に変更になりました！&lt;/p&gt;
+
+&lt;h2 id=&#34;transix-に不満があった場合-ocnバーチャルコネクト-に戻せる&#34;&gt;「transix」に不満があった場合「OCNバーチャルコネクト」に戻せる&lt;/h2&gt;
+
+&lt;p&gt;さて、transixに変更後は特に問題はなかったのですが、transixはOCNバーチャルコネクトと比較して自由度の低いサービスで、ポート開放できません。
+すると、サーバーを建てて遊んだり、VPNしたりできないのです。リモートワークの関係でVPNが必要だったので、ネットがブチブチ切れるよりも困ったことになりました。&lt;/p&gt;
+
+&lt;p&gt;そこで、ぷららにもう一度電話すると、transixからOCNバーチャルコネクトに戻してくれるました。
+ただし、レンタルルーターを別機種に交換する対応はしてくれないそうで、仕方ないので自分で購入しました。
+&lt;a href=&#34;https://www.aterm.jp/product/atermstation/product/warpstar/wg1200hp4/&#34;&gt;NECの製品&lt;/a&gt;にしたところ、問題なく動いています。（なぜかAmazonで売ってない&amp;hellip;）&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;OCNバーチャルコネクトは、新しいサービスのせいか安定して動かないルーターがあるようです。
+個人的に購入したNECの製品はうまく動いているので、レンタルルーターのメーカーは確認するようにした方が良いかも知れません。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ぷらら光のデフォルトはOCNバーチャルコネクト&lt;/li&gt;
+&lt;li&gt;transixに変えてもらえ、元にも戻せる&lt;/li&gt;
+&lt;li&gt;ルーターの機種変更はしてくれない&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>光回線にIPoEは必要か？</title>
           <link>https://blog.yyyak.com/post/ipoe/</link>
           <pubDate>Sun, 10 Jan 2021 15:05:47 JST</pubDate>
