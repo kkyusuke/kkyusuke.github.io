@@ -6,8 +6,114 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2021</rights>
-    <updated>2021-07-25 06:28:00 &#43;0900 JST</updated>
+    <updated>2021-07-25 07:32:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>Androidタブレットを有線で外部ディスプレイ化</title>
+          <link>https://blog.yyyak.com/post/spacedesk-wired/</link>
+          <pubDate>Sun, 25 Jul 2021 07:32:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/spacedesk-wired/</guid>
+          <description>&lt;p&gt;有線接続でAndroidタブレットを外部ディスプレイ化する方法を詳しく解説します！
+
+以前、Androidを外部ディスプレイ化する方法や有線・無線の比較を行いました。今回は、特に有線で接続する方法について説明します。&lt;/p&gt;
+
+&lt;div class=&#34;blog-card&#34; style=&#34;padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;&#34;&gt;&lt;div class=&#34;blog-card-thumbnail&#34; style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/spacedesk/&#34; class=&#34;blog-card-thumbnail-link&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://capture.heartrails.com/120x120/shorten?https://blog.yyyak.com/post/spacedesk/&#34; class=&#34;blog-card-thumb-image wp-post-image&#34; alt=&#34;12436288584_94d6bc46d2_b.jpg&#34; style=&#34;width:100px;height:100px;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-content&#34; style=&#34;margin-left:0;margin-right:110px;line-height:120%;&#34;&gt;&lt;div class=&#34;blog-card-title&#34; style=&#34;margin-bottom:5px;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/spacedesk/&#34; class=&#34;blog-card-title-link&#34; style=&#34;font-weight:bold;text-decoration:none;color:#111;&#34; target=&#34;_blank&#34;&gt;Make &amp; Review | 2019年版！古いタブレットをサブディスプレイ化&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-excerpt&#34; style=&#34;color:#333;font-size:90%;&#34;&gt;古くて動作の遅いタブレットがサブディスプレイとして使えるか検証してみました。&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-footer&#34; style=&#34;font-size:70%;color:#777;margin-top:10px;clear:both;&#34;&gt;&lt;span class=&#34;blog-card-hatena&#34;&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/https://blog.yyyak.com/post/spacedesk/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://b.hatena.ne.jp/entry/image/https://blog.yyyak.com/post/spacedesk/&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;spacedeskを使ってみよう&#34;&gt;spacedeskを使ってみよう&lt;/h2&gt;
+
+&lt;p&gt;spacedeskは、タブレットをPCの外部ディスプレイにするアプリです。似たようなサービスはいくつかあるのですが、おそらくAndroidでは唯一無料です。
+使い方は難しくなく、PCとタブレットにそれぞれアプリを入れるだけで、同じネットワーク内ならば簡単に外部ディスプレイ化できます。&lt;/p&gt;
+
+&lt;p&gt;有線でも使う事が出来るのですが、すこしコツがあるので説明したいと思います。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;メリット&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;デメリット&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;無線&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;簡単に設定できる&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;少し有線よりも遅い&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;有線&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;充電しながら使える&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;設定が面倒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
+
+&lt;h3 id=&#34;まずは無線でサブディスプレイ化出来るようにしよう&#34;&gt;まずは無線でサブディスプレイ化出来るようにしよう&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/post/spacedesk/&#34;&gt;以前の記事&lt;/a&gt;などを参考に、無線でサブディスプレイ化できるようにして下さい。&lt;/p&gt;
+
+&lt;p&gt;難しいことはなく、それぞれにアプリを入れるだけです。&lt;a href=&#34;https://www.spacedesk.net/&#34;&gt;公式サイト&lt;/a&gt;からどうぞ。うまくいけば、画像のようにアプリ上に接続先PCが出てくるはずです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=WiFi接続&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-0.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h3 id=&#34;usbケーブルで接続&#34;&gt;USBケーブルで接続&lt;/h3&gt;
+
+&lt;p&gt;タブレットとPCをUSBケーブルで接続します。
+速度を気にするなら、高品質なUSB3.0ケーブルを使用するようにして下さい。&lt;/p&gt;
+
+&lt;p&gt;接続直後にAndroidタブレット上にはアクセス許可に関する警告が出るかも知れません。
+これはどちらを選択しても大丈夫です。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=接続直後&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;設定画面から、USBテザリング機能を有効にしましょう。Galaxyタブレットでは、設定画面から「テザリング」と検索するとメニュー項目が現れました。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=接続直後&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-2.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h3 id=&#34;pc側の設定&#34;&gt;PC側の設定&lt;/h3&gt;
+
+&lt;p&gt;USBテザリングをONにすると、PC側にネットワーク接続に関する質問が表示されるはずです。
+こちらはONにしないとうまく行かないはずなので注意して下さい。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=接続直後&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-3.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;これで準備完了です。Android側のアプリを見てみると、先ほどの無線接続に加えて、有線経由の接続先も現れるはずです！&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-4.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=完了&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-4.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;spacedeskの使用感&#34;&gt;spacedeskの使用感&lt;/h2&gt;
+
+&lt;p&gt;リモートデスクトップとは違い、ディスプレイを追加したようにタブレットを使えます。
+Zoomでタブレット画面側を画面共有すれば、ホワイトボードアプリで書き込みしながらリアルタイムに意見を集約したり出来るようになります。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-5.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=ディスプレイ設定&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-5.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;spacedeskは一手間加えると有線接続も可能&lt;/li&gt;
+&lt;li&gt;無線よりは少しだけレスポンスが良好&lt;/li&gt;
+&lt;li&gt;ディスプレイを追加するのと同じように扱える&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -5385,333 +5491,6 @@ USB充電とか、歯茎ケアモードとか、そういうのに価値を感�
 おすすめですので、ぜひ購入して下さい。&lt;/p&gt;
 
 &lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00C905644&amp;linkId=a5c34e09b008d0ae31ce16f55de03524&#34;&gt;&lt;/iframe&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>電子書籍サービス徹底比較！2016</title>
-          <link>https://blog.yyyak.com/post/ebook2016/</link>
-          <pubDate>Mon, 15 Aug 2016 06:36:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/ebook2016/</guid>
-          <description>&lt;p&gt;2016年版、電子書籍リーダ比較です。
-&lt;/p&gt;
-
-&lt;p&gt;新たに電子書籍を使ってみたい人はどのサービスを使って、どの機器を買うのがよいのでしょうか。
-現状をまとめてみました。今回は Kindle, Kobo, Sony Readerの3つを扱います。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;a href=&#34;../ebook2015/&#34;&gt;2015年版はこちら。&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;電子書籍ストア&#34;&gt;電子書籍ストア&lt;/h2&gt;
-
-&lt;h3 id=&#34;書籍数&#34;&gt;書籍数&lt;/h3&gt;
-
-&lt;p&gt;まずは主要な電子書籍ストアの取り扱い書籍数を比較してみましょう。2016年8月15日現在の書籍数をまとめました。
-括弧内の数字は昨年との比較です。&lt;/p&gt;
-
-&lt;p&gt;書籍数ですが、依然Kindleが最強です。ただしAmazonが個人出版に力を注いでいることは無視できないでしょう。
-なぜかKindleストアからライトノベルが大幅減していますが、これは何かあったのでしょうか。&lt;/p&gt;
-
-&lt;p&gt;実は各社とも増加率は大して変わりません。Reader Storeはとりあえずのところちゃんと他社に追随できていると言えるので、いますぐ撤退することはなさそうです。
-ただ端末がいつまでもアップデートされないので、先細りするのは確かでしょう。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;()は昨年比&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kindle&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kobo&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Reader&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;コミック・ゲーム攻略&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;163,111&lt;br&gt;(+31%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;128,093&lt;br&gt;(+33%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;129,767 &lt;br&gt;(+35%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;雑誌&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;13,205&lt;br&gt; (+97%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;14,563&lt;br&gt; (+86%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;13,149&lt;br&gt; (+63%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;文学・新書&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;86,642&lt;br&gt; (+23%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;76,384&lt;br&gt; (+24%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;57,811&lt;br&gt; (+20%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ライトノベル&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;22,130&lt;br&gt; (-28%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;16,480&lt;br&gt; (+31%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;21,055&lt;br&gt; (+37%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ビジネス・経済&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;19,506&lt;br&gt; (+5%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;21,264&lt;br&gt; (+28%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;16,647&lt;br&gt; (+33%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;人文・思想・歴史&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;36,973 &lt;br&gt;(+15%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;41,440 &lt;br&gt;(+72%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;8,141 &lt;br&gt;(+23%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;PC・情報&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;7,084&lt;br&gt; (+38%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5,018&lt;br&gt; (+32%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;3,478 &lt;br&gt;(+65%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;サイエンス&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;15,750&lt;br&gt; (+13%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;7,842 &lt;br&gt;(+20%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;3,250&lt;br&gt; (+25%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ノンフィクション&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5,565 &lt;br&gt;(+79%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;10,357 &lt;br&gt;(+45%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;4,846&lt;br&gt; (+20%)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&#34;1-2-書店の特徴&#34;&gt;1.2 書店の特徴&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;ここは2015年版と全く同じです&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;各書店とも独自のDRMを採用しています。そのためどこの書店を利用するかは結構重要な問題になるわけです。&lt;/p&gt;
-
-&lt;p&gt;ちなみにReaderは、海外ストアが閉店するときに、購入済みの本がKoboストアに移管された例があります。その点Readerストアは閉店しても悪いようにはしないだろうという安心感はありますね。逆に楽天は依然運営していRabooをいい加減に閉店した例がありますので、どうなることやら。やはり初めての方はKindleで買うに限ります！&lt;/p&gt;
-
-&lt;p&gt;ちなみに各書店ごとに価格の設定が違います。Kindleは現金値引きが主であるのに対して、Kobo/Readerはポイント還元を採ることが多いです。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kindle&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kobo&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Reader&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;DRM&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;価格&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;安価なKindle版書籍あり、割引あり(~50%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;数百円の割引あり&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;割引は少ない&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;ポイント&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;ポイント還元は少ない&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;楽天ポイント還元あり(1~30%)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;ソニーポイント還元あり(1~20%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;利用可能な端末&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Win/Mac/iOS/Android&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Win/Mac/iOS/Android&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;ブラウザ/iOS/Android/PSVita&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;利用可能な電子書籍リーダ&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Kindle&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Kobo&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Sony Reader&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;電子書籍端末&#34;&gt;電子書籍端末&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;2016年版ですが、各社の主力製品が更新されていないのでそのままです。&lt;/em&gt;
-&lt;a href=&#34;http://amzn.to/2bh5lkf&#34;&gt;Kindle Paper White (Gen3)&lt;/a&gt;, &lt;a href=&#34;http://books.rakuten.co.jp/event/e-book/ereaders/koboglohd/&#34;&gt;Kobo Glo HD&lt;/a&gt;, &lt;a href=&#34;http://www.sony.jp/reader/&#34;&gt;Sony PRS-T3S&lt;/a&gt;の3機種を比較しました。&lt;/p&gt;
-
-&lt;h3 id=&#34;hw性能&#34;&gt;HW性能&lt;/h3&gt;
-
-&lt;p&gt;重要な違いの1つは、E-inkの種類です。Sonyのものだけは1世代古いE-inkを使っていますので、コントラスト比(白黒の明るさ比)が少し小さいです。薄暗い場所ではすこし読みにくくなります。
-高品位なコピー用紙と再生紙くらいの違いでしょうか。私は電車の往復でPRS-T3Sを使っていますが、特に読みにくさは感じません。&lt;/p&gt;
-
-&lt;p&gt;もう1つ重要なのが、重量です。さすがにSony Readerの160gとKindlePWの205gの差は大きいです。長時間掴んで読むことを考えると、軽さは思ったよりも大切かと思います。&lt;/p&gt;
-
-&lt;p&gt;余談ですが、自炊派の人たちには解像度とmicroSDの有無も重要です。ただ、現実に自炊派ってどれだけいるのだろう・・・？
-とにかくどれも、帯に短したすきに長し、完璧な機種はないですね。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kindle Paper White 第3世代&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kobo Glo HD&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Sony Reader PRS-T3S&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;画面サイズ&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;6インチ&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;E-ink性能&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Carta&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Carta&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Pearl&lt;br&gt;(Cartaより古い)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;バックライト&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;あり&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;なし&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;解像度&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;300dpi&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;300dpi&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;214dpi&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;サイズ&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;169/117/9.1mm&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;115/157/9.2mm&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;107/160/8.8mm&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;重量&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Wifi:205g Wifi+3G:217g&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;180g&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;160g&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;容量&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;4GB&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;4GB+microSD&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;2GB+microSD&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;通信&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Wifi / Wifi+3G&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Wifi&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Wifi&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;保証&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;標準1年&lt;br&gt;延長保証2年:+1,980円&lt;br&gt;延長保証3年:+2,970円&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;1年&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;標準1年&lt;br&gt;延長保証3年:+514円&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;価格(税込)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;14,280円&lt;br&gt;+3G: +5,200円&lt;br&gt;キャンペーン情報付き: -2,000円&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;13,824円&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;10,265円&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;em&gt;なお、Amazonは&lt;a href=&#34;http://amzn.to/2b8qonD&#34;&gt;Kindle Oasis&lt;/a&gt;を&lt;a href=&#34;http://amzn.to/2bh5lkf&#34;&gt;Paper White&lt;/a&gt;の上位機種として、&lt;a href=&#34;http://amzn.to/2b8pS9n&#34;&gt;Kindle&lt;/a&gt;を下位機種として登場させています。他社は特に変わりありません。&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;sw性能&#34;&gt;SW性能&lt;/h3&gt;
-
-&lt;p&gt;各社とも、自社の電子書籍ストアが閲覧できること以外では対応フォーマットに大きな差はありません。
-古いKindleはPDFが読めないなどの不利がありましたが、もう解消されたようですね。地味に便利なのがクラウドサービスとの連携で、
-KoboはPocket、ReaderはEvernoteとそれぞれ連携します。この機能だけで購入を決めてしまう人もいそうですね。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kindle Paper White 第3世代&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Kobo Glo HD&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Sony Reader PRS-T3S&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;対応フォーマット&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Kindle/TXT/PDF/MOBI/PRC/HTML&lt;br&gt;DOC/DOCX/JPEG/GIF/PNG/BMP&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;EPUB/PDF/JPEG/GIF/PNG/BMP&lt;br&gt;TIFF/HTML/CBZ/CBR/MOBI&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;MNH/ZBF/BOOK/EPUB/PDF/TXT&lt;br&gt;JPEG/GIF/PNG/BMP&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;辞書&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;大辞林/Oxford Dictionary of English&lt;br&gt;The New Oxford American English Dictionary&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;ジーニアス英和辞典&lt;br&gt;プログレッシブ和英中辞典&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;大辞林/ジーニアス英和辞典&lt;br&gt;New Oxford Ameican Dictionary&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;SNS&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Facebook/Twitter&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;なし？&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;なし&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;記事共有&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;独自のクラウドサービス&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Pocketと同期&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Evernoteと同期&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;書籍の購入&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Kindle&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Kobo&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Reader Store/紀伊國屋&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;SCRIPT charset=&#34;utf-8&#34; type=&#34;text/javascript&#34; src=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Fmakereview-22%2F8001%2F8bb21e5d-8397-48f4-9b3f-1afa43b52853&#34;&gt; &lt;/SCRIPT&gt; &lt;NOSCRIPT&gt;&lt;A rel=&#34;nofollow&#34; HREF=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?rt=ss_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Fmakereview-22%2F8001%2F8bb21e5d-8397-48f4-9b3f-1afa43b52853&amp;Operation=NoScript&#34;&gt;Amazon.co.jp ウィジェット&lt;/A&gt;&lt;/NOSCRIPT&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2016年-hwレベルで大きな差なし-kindle優勢も他社奮闘&#34;&gt;2016年：HWレベルで大きな差なし。Kindle優勢も他社奮闘。&lt;/h2&gt;
-
-&lt;p&gt;Amazonが上位機種と下位機種をリリースしただけで、HW関連で大きなニュースは1年間ありませんでした。
-Kindle Oasisは良い機種のようですが、価格も考えるとマストバイとは言えません。新機種が出ないのは、E-Inkが1社独占供給状態なので仕方ないですね。&lt;/p&gt;
-
-&lt;p&gt;書籍数はKindleが優勢ですが、他社も諦めずに当分戦いを続けるようです。どこが覇者になるのか、という考え方がもう時代遅れなのかもしれません。電子書籍市場は小康状態に入り、カラー対応端末登場までは当分この状況が続く可能性があります。その後どうなるかは、誰にも分かりません。&lt;/p&gt;</description>
         </item>
       
     

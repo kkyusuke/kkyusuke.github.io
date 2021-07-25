@@ -11,6 +11,112 @@
     
       
         <item>
+          <title>Androidタブレットを有線で外部ディスプレイ化</title>
+          <link>https://blog.yyyak.com/post/spacedesk-wired/</link>
+          <pubDate>Sun, 25 Jul 2021 07:32:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/spacedesk-wired/</guid>
+          <description>&lt;p&gt;有線接続でAndroidタブレットを外部ディスプレイ化する方法を詳しく解説します！
+
+以前、Androidを外部ディスプレイ化する方法や有線・無線の比較を行いました。今回は、特に有線で接続する方法について説明します。&lt;/p&gt;
+
+&lt;div class=&#34;blog-card&#34; style=&#34;padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;&#34;&gt;&lt;div class=&#34;blog-card-thumbnail&#34; style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/spacedesk/&#34; class=&#34;blog-card-thumbnail-link&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://capture.heartrails.com/120x120/shorten?https://blog.yyyak.com/post/spacedesk/&#34; class=&#34;blog-card-thumb-image wp-post-image&#34; alt=&#34;12436288584_94d6bc46d2_b.jpg&#34; style=&#34;width:100px;height:100px;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-content&#34; style=&#34;margin-left:0;margin-right:110px;line-height:120%;&#34;&gt;&lt;div class=&#34;blog-card-title&#34; style=&#34;margin-bottom:5px;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/spacedesk/&#34; class=&#34;blog-card-title-link&#34; style=&#34;font-weight:bold;text-decoration:none;color:#111;&#34; target=&#34;_blank&#34;&gt;Make &amp; Review | 2019年版！古いタブレットをサブディスプレイ化&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-excerpt&#34; style=&#34;color:#333;font-size:90%;&#34;&gt;古くて動作の遅いタブレットがサブディスプレイとして使えるか検証してみました。&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-footer&#34; style=&#34;font-size:70%;color:#777;margin-top:10px;clear:both;&#34;&gt;&lt;span class=&#34;blog-card-hatena&#34;&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/https://blog.yyyak.com/post/spacedesk/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://b.hatena.ne.jp/entry/image/https://blog.yyyak.com/post/spacedesk/&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;spacedeskを使ってみよう&#34;&gt;spacedeskを使ってみよう&lt;/h2&gt;
+
+&lt;p&gt;spacedeskは、タブレットをPCの外部ディスプレイにするアプリです。似たようなサービスはいくつかあるのですが、おそらくAndroidでは唯一無料です。
+使い方は難しくなく、PCとタブレットにそれぞれアプリを入れるだけで、同じネットワーク内ならば簡単に外部ディスプレイ化できます。&lt;/p&gt;
+
+&lt;p&gt;有線でも使う事が出来るのですが、すこしコツがあるので説明したいと思います。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;接続&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;メリット&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;デメリット&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;無線&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;簡単に設定できる&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;少し有線よりも遅い&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;有線&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;充電しながら使える&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;設定が面倒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
+
+&lt;h3 id=&#34;まずは無線でサブディスプレイ化出来るようにしよう&#34;&gt;まずは無線でサブディスプレイ化出来るようにしよう&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/post/spacedesk/&#34;&gt;以前の記事&lt;/a&gt;などを参考に、無線でサブディスプレイ化できるようにして下さい。&lt;/p&gt;
+
+&lt;p&gt;難しいことはなく、それぞれにアプリを入れるだけです。&lt;a href=&#34;https://www.spacedesk.net/&#34;&gt;公式サイト&lt;/a&gt;からどうぞ。うまくいけば、画像のようにアプリ上に接続先PCが出てくるはずです。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-0.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=WiFi接続&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-0.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h3 id=&#34;usbケーブルで接続&#34;&gt;USBケーブルで接続&lt;/h3&gt;
+
+&lt;p&gt;タブレットとPCをUSBケーブルで接続します。
+速度を気にするなら、高品質なUSB3.0ケーブルを使用するようにして下さい。&lt;/p&gt;
+
+&lt;p&gt;接続直後にAndroidタブレット上にはアクセス許可に関する警告が出るかも知れません。
+これはどちらを選択しても大丈夫です。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-1.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=接続直後&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-1.jpg&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;設定画面から、USBテザリング機能を有効にしましょう。Galaxyタブレットでは、設定画面から「テザリング」と検索するとメニュー項目が現れました。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-2.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=接続直後&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-2.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h3 id=&#34;pc側の設定&#34;&gt;PC側の設定&lt;/h3&gt;
+
+&lt;p&gt;USBテザリングをONにすると、PC側にネットワーク接続に関する質問が表示されるはずです。
+こちらはONにしないとうまく行かないはずなので注意して下さい。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-3.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=接続直後&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-3.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;これで準備完了です。Android側のアプリを見てみると、先ほどの無線接続に加えて、有線経由の接続先も現れるはずです！&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-4.jpg&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=完了&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-4.jpg&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;spacedeskの使用感&#34;&gt;spacedeskの使用感&lt;/h2&gt;
+
+&lt;p&gt;リモートデスクトップとは違い、ディスプレイを追加したようにタブレットを使えます。
+Zoomでタブレット画面側を画面共有すれば、ホワイトボードアプリで書き込みしながらリアルタイムに意見を集約したり出来るようになります。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/wired-5.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=ディスプレイ設定&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wired-5.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;spacedeskは一手間加えると有線接続も可能&lt;/li&gt;
+&lt;li&gt;無線よりは少しだけレスポンスが良好&lt;/li&gt;
+&lt;li&gt;ディスプレイを追加するのと同じように扱える&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>WEBミーティング向け！マイクの性能比較</title>
           <link>https://blog.yyyak.com/post/mic/</link>
           <pubDate>Sat, 28 Mar 2020 05:40:00 JST</pubDate>
