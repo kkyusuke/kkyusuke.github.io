@@ -11,6 +11,120 @@
     
       
         <item>
+          <title>古いビデオカードでPCが起動しないとき</title>
+          <link>https://blog.yyyak.com/post/k420/</link>
+          <pubDate>Sun, 25 Jul 2021 06:28:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/k420/</guid>
+          <description>&lt;p&gt;古いビデオカードを挿したらPCが起動しなくなったので、解決策を探しました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;新しいpcに古いビデオカードを挿すと起動しない&#34;&gt;新しいPCに古いビデオカードを挿すと起動しない！？&lt;/h2&gt;
+
+&lt;p&gt;「ゲームをしないのに高価なGPUは勿体ないな」と思って、低価格で消費電力の少なそうな中古GPUに差し替えたところ、なぜかPCが起動しなくなって焦りました。
+BIOSとの兼ね合いでトラブっていたようなので、どうすれば回避できるか解説します。&lt;/p&gt;
+
+&lt;h3 id=&#34;pc環境&#34;&gt;PC環境&lt;/h3&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;項目&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;メーカー&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;DELL 5810 Tower&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CPU&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Xeon E5 1660-v3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;メモリ&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;DDR4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;元のGPU&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Geforce GTX1660 6GB (2019年発売)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;失敗したGPU&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Quadro K420 (2015年発売)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;原因&#34;&gt;原因&lt;/h3&gt;
+
+&lt;p&gt;DELLからPCが出荷されてきた時点では、Legacy BIOSと呼ばれる古めの設定になっていました。
+起動速度が速くなると聞いたので、UEFIと呼ばれる次世代BIOSが使えるように設定し直しました。&lt;/p&gt;
+
+&lt;div class=&#34;blog-card&#34; style=&#34;padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;&#34;&gt;&lt;div class=&#34;blog-card-thumbnail&#34; style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/uefi/&#34; class=&#34;blog-card-thumbnail-link&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://capture.heartrails.com/120x120/shorten?https://blog.yyyak.com/post/uefi/&#34; class=&#34;blog-card-thumb-image wp-post-image&#34; alt=&#34;12436288584_94d6bc46d2_b.jpg&#34; style=&#34;width:100px;height:100px;&#34;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-content&#34; style=&#34;margin-left:0;margin-right:110px;line-height:120%;&#34;&gt;&lt;div class=&#34;blog-card-title&#34; style=&#34;margin-bottom:5px;&#34;&gt;&lt;a href=&#34;https://blog.yyyak.com/post/uefi/&#34; class=&#34;blog-card-title-link&#34; style=&#34;font-weight:bold;text-decoration:none;color:#111;&#34; target=&#34;_blank&#34;&gt;Make &amp; Review | 古いマシンをUEFI化する&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-excerpt&#34; style=&#34;color:#333;font-size:90%;&#34;&gt;古いBIOS方式のマシンをUEFIに変更します。&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;blog-card-footer&#34; style=&#34;font-size:70%;color:#777;margin-top:10px;clear:both;&#34;&gt;&lt;span class=&#34;blog-card-hatena&#34;&gt;&lt;a href=&#34;http://b.hatena.ne.jp/entry/https://blog.yyyak.com/post/uefi/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://b.hatena.ne.jp/entry/image/https://blog.yyyak.com/post/uefi/&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;UEFI向けに設定すると、LegacyBIOSに戻すのは面倒です。色々と設定を見直したところ、次のように設定すれば上手く行くことが分かりました。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;項目&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;出荷時&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;UEFI導入時&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;古いGPU対応時&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;BIOSタイプ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Legacy&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;UEFI&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;UEFI&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Secure Boot&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Legacy Option ROMs (CSM)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;OFF&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ON&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;ちなみに、Legacy Option ROMsを有効にするには、SecureBootを無効にしなくてはいけません。
+Legacy Option ROMsは、CSMと呼ばれることもあるそうです。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;ようは、以下のようにすれば良いです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Secure Bootを無効にする&lt;/li&gt;
+&lt;li&gt;Legacy Boot Options (CSM)を有効にする&lt;/li&gt;
+&lt;li&gt;UEFIからLegacy BIOSに戻す必要はない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ちなみに、Windows11からはSecure Bootが必須になるそうです。
+5年間以上の古いGPUには厳しい時代になりますね。&lt;/p&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Androidの動作を軽くし、電池持ちを長引かせる方法</title>
           <link>https://blog.yyyak.com/post/android_battery/</link>
           <pubDate>Sat, 27 Mar 2021 05:27:00 JST</pubDate>

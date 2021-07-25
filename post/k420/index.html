@@ -21,17 +21,17 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Make &amp; Review | AndroidのテザリングはUSB, BT, WiFiのどれが良いか？">
-<meta name="description" content="出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。
+<meta property="og:title" content="Make &amp; Review | 古いビデオカードでPCが起動しないとき">
+<meta name="description" content="古いビデオカードを挿したらPCが起動しなくなったので、解決策を探しました。
 ">
-<meta property="og:description" content="出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。
+<meta property="og:description" content="古いビデオカードを挿したらPCが起動しなくなったので、解決策を探しました。
 ">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Make &amp; Review | AndroidのテザリングはUSB, BT, WiFiのどれが良いか？
+    Make &amp; Review | 古いビデオカードでPCが起動しないとき
     
 </title>
 
@@ -99,231 +99,121 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2020-03-10T05:02+09:00">
-                        2020.3.10 05:02
+                    <time itemprop="datePublished" datetime="2021-07-25T06:28+09:00">
+                        2021.7.25 06:28
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/tether/" itemprop="url">AndroidのテザリングはUSB, BT, WiFiのどれが良いか？</a>
+                    <a href="https://blog.yyyak.com/post/k420/" itemprop="url">古いビデオカードでPCが起動しないとき</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>出先でPCをネットに接続したいときに、Androidのテザリング機能を使うことが出来ます。USB経由・Bluetooth経由・WiFi経由のどれがいいかを確認します。
+                <p>古いビデオカードを挿したらPCが起動しなくなったので、解決策を探しました。
 </p>
 
-<h2 id="androidテザリングの整理">Androidテザリングの整理</h2>
+<h2 id="新しいpcに古いビデオカードを挿すと起動しない">新しいPCに古いビデオカードを挿すと起動しない！？</h2>
 
-<p>Androidにはテザリング機能がついており、最近の端末だと3つの方法から選んで接続できます。</p>
+<p>「ゲームをしないのに高価なGPUは勿体ないな」と思って、低価格で消費電力の少なそうな中古GPUに差し替えたところ、なぜかPCが起動しなくなって焦りました。
+BIOSとの兼ね合いでトラブっていたようなので、どうすれば回避できるか解説します。</p>
 
-<ul>
-<li>USB</li>
-<li>Bluetooth</li>
-<li>WiFi</li>
-</ul>
-
-<p>注意したいのは、WiFiテザリングを選択したときだけはLTEの電波しか共有できずWiFiを再配信することは出来ない点です。USBやBluetoothの場合にはスマートフォンが接続されたWiFiを共有できるので、少し便利だと言えます。</p>
-
-<p>また、Bluetoothの場合には接続方法が少し面倒で上級者向けです。</p>
+<h3 id="pc環境">PC環境</h3>
 
 <table>
 <thead>
 <tr>
-<th align="center">接続方法</th>
-<th align="center">WiFiの再配信</th>
-<th align="left">簡単さ</th>
+<th align="left">項目</th>
+<th align="left">内容</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">USB</td>
-<td align="center">できる</td>
-<td align="left">ケーブルが必要だが、簡単</td>
+<td align="left">メーカー</td>
+<td align="left">DELL 5810 Tower</td>
 </tr>
 
 <tr>
-<td align="center">Bluetooth</td>
-<td align="center">できる</td>
-<td align="left">設定が面倒</td>
+<td align="left">CPU</td>
+<td align="left">Xeon E5 1660-v3</td>
 </tr>
 
 <tr>
-<td align="center">WiFi</td>
-<td align="center">できない</td>
-<td align="left">簡単</td>
+<td align="left">メモリ</td>
+<td align="left">DDR4</td>
+</tr>
+
+<tr>
+<td align="left">元のGPU</td>
+<td align="left">Geforce GTX1660 6GB (2019年発売)</td>
+</tr>
+
+<tr>
+<td align="left">失敗したGPU</td>
+<td align="left">Quadro K420 (2015年発売)</td>
 </tr>
 </tbody>
 </table>
 
-<div class="blog-card" style="padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;"><div class="blog-card-thumbnail" style="float:left;"><a href="https://inakadaisuki.com/android-bluetooth-tethering-windows10/" class="blog-card-thumbnail-link" target="_blank"><img src="http://capture.heartrails.com/120x120/shorten?https://inakadaisuki.com/android-bluetooth-tethering-windows10/" class="blog-card-thumb-image wp-post-image" alt="12436288584_94d6bc46d2_b.jpg" style="width:100px;height:100px;"></a></div><div class="blog-card-content" style="margin-left:110px;line-height:120%;"><div class="blog-card-title" style="margin-bottom:5px;"><a href="https://inakadaisuki.com/android-bluetooth-tethering-windows10/" class="blog-card-title-link" style="font-weight:bold;text-decoration:none;color:#111;" target="_blank">AndroidスマホBluetoothテザリング使い方。Windows 10をインターネットへ接続</a></div><div class="blog-card-excerpt" style="color:#333;font-size:90%;">xxxxxxxxxx</div></div><div class="blog-card-footer" style="font-size:70%;color:#777;margin-top:10px;clear:both;"><span class="blog-card-hatena"><a href="http://b.hatena.ne.jp/entry/https://inakadaisuki.com/android-bluetooth-tethering-windows10/" target="_blank"><img border="0" src="http://b.hatena.ne.jp/entry/image/https://inakadaisuki.com/android-bluetooth-tethering-windows10/" border="0" alt="" /></a></span></div></div>
+<h3 id="原因">原因</h3>
 
-<h2 id="各接続の速度">各接続の速度</h2>
+<p>DELLからPCが出荷されてきた時点では、Legacy BIOSと呼ばれる古めの設定になっていました。
+起動速度が速くなると聞いたので、UEFIと呼ばれる次世代BIOSが使えるように設定し直しました。</p>
 
-<h3 id="調査環境">調査環境</h3>
+<div class="blog-card" style="padding:12px;margin:15px 0;border:1px solid #ddd;word-wrap:break-word;max-width:474px;width:auto;border-radius:5px;"><div class="blog-card-thumbnail" style="float:right;"><a href="https://blog.yyyak.com/post/uefi/" class="blog-card-thumbnail-link" target="_blank"><img src="http://capture.heartrails.com/120x120/shorten?https://blog.yyyak.com/post/uefi/" class="blog-card-thumb-image wp-post-image" alt="12436288584_94d6bc46d2_b.jpg" style="width:100px;height:100px;"></a></div><div class="blog-card-content" style="margin-left:0;margin-right:110px;line-height:120%;"><div class="blog-card-title" style="margin-bottom:5px;"><a href="https://blog.yyyak.com/post/uefi/" class="blog-card-title-link" style="font-weight:bold;text-decoration:none;color:#111;" target="_blank">Make & Review | 古いマシンをUEFI化する</a></div><div class="blog-card-excerpt" style="color:#333;font-size:90%;">古いBIOS方式のマシンをUEFIに変更します。</div></div><div class="blog-card-footer" style="font-size:70%;color:#777;margin-top:10px;clear:both;"><span class="blog-card-hatena"><a href="http://b.hatena.ne.jp/entry/https://blog.yyyak.com/post/uefi/" target="_blank"><img src="https://b.hatena.ne.jp/entry/image/https://blog.yyyak.com/post/uefi/" alt="" /></a></span></div></div>
 
-<p>どの接続方法が最も快適か、回線速度を調査しました。</p>
-
-<ul>
-<li>テザリング元: Xperia XZ2 Compact</li>
-<li>USB接続にはUSB2.0ケーブルを使用</li>
-<li>WiFi接続時は11nで接続されていました (WiFi4)</li>
-<li>スマートフォン側をWiFiに接続した際には、USENのフリースポットを使いました。</li>
-<li>測定サイトはGoogleスピードテスト</li>
-</ul>
-
-<p>接続した場所は近くのカフェで、そこそこ人がいました。実践的な電波環境だと思います。</p>
-
-<p>測定した組み合わせは7種類になります。</p>
-
-<ul>
-<li>接続元のスマートフォンをLTEに接続
-
-<ul>
-<li>スマートフォン上で計測</li>
-<li>USB経由のPCで計測</li>
-<li>Bluetooth経由のPCで計測</li>
-<li>WiFi経由のPCで計測</li>
-</ul></li>
-<li>接続元のスマートフォンをWiFiに接続
-
-<ul>
-<li>スマートフォン上で計測</li>
-<li>USB経由のPCで計測</li>
-<li>Bluetooth経由のPCで計測</li>
-</ul></li>
-</ul>
-
-<h3 id="ダウンロード速度比較">ダウンロード速度比較</h3>
-
-<p>元の速度と比較すると、どのテザリング方法でも速度が低下してしまっているのが分かりますね。USB経由は8割程度、WiFi経由は半分程度の速度になってしまうことが分かります。Bluetoothはほとんど速度が出ず、使い物になりませんでした。</p>
+<p>UEFI向けに設定すると、LegacyBIOSに戻すのは面倒です。色々と設定を見直したところ、次のように設定すれば上手く行くことが分かりました。</p>
 
 <table>
 <thead>
 <tr>
-<th align="center">ダウンロード</th>
-<th align="center">LTE回線</th>
-<th align="center">WiFi回線</th>
+<th align="center">項目</th>
+<th align="center">出荷時</th>
+<th align="center">UEFI導入時</th>
+<th align="center">古いGPU対応時</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">スマホのみ</td>
-<td align="center">80.6Mbps</td>
-<td align="center">87.8Mbps</td>
+<td align="center">BIOSタイプ</td>
+<td align="center">Legacy</td>
+<td align="center">UEFI</td>
+<td align="center">UEFI</td>
 </tr>
 
 <tr>
-<td align="center">USB経由</td>
-<td align="center">56.5Mbps</td>
-<td align="center">68.1Mbps</td>
-</tr>
-
-<tr>
-<td align="center">BT経由</td>
-<td align="center">0.58Mbps</td>
-<td align="center">0.56Mbps</td>
-</tr>
-
-<tr>
-<td align="center">WiFi経由</td>
-<td align="center">38.1Mbps</td>
+<td align="center">Secure Boot</td>
 <td align="center">-</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="アップロード速度比較">アップロード速度比較</h3>
-
-<p>USB接続の場合、元回線の速度に応じた結果が得られています。WiFi経由では速度が大幅に低下してしまっています。Bluetoothに至っては、ほとんど通信できていません。</p>
-
-<table>
-<thead>
-<tr>
-<th align="center">アップロード</th>
-<th align="center">LTE回線</th>
-<th align="center">WiFi回線</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">スマホのみ</td>
-<td align="center">18.3Mbps</td>
-<td align="center">79.1Mbps</td>
+<td align="center">ON</td>
+<td align="center">OFF</td>
 </tr>
 
 <tr>
-<td align="center">USB経由</td>
-<td align="center">13.6Mbps</td>
-<td align="center">95.3Mbps</td>
-</tr>
-
-<tr>
-<td align="center">BT経由</td>
-<td align="center">0Mbps</td>
-<td align="center">0Mbps</td>
-</tr>
-
-<tr>
-<td align="center">WiFi経由</td>
-<td align="center">0.55Mbps</td>
+<td align="center">Legacy Option ROMs (CSM)</td>
 <td align="center">-</td>
+<td align="center">OFF</td>
+<td align="center">ON</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="レイテンシ速度比較">レイテンシ速度比較</h3>
+<p>ちなみに、Legacy Option ROMsを有効にするには、SecureBootを無効にしなくてはいけません。
+Legacy Option ROMsは、CSMと呼ばれることもあるそうです。</p>
 
-<p>USB,　WiFi経由の場合、元接続並みのレイテンシで通信できているようです。Bluetoothは全然ダメでした。</p>
+<h2 id="まとめ">まとめ</h2>
 
-<table>
-<thead>
-<tr>
-<th align="center">レイテンシ</th>
-<th align="center">LTE回線</th>
-<th align="center">WiFi回線</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center">スマホのみ</td>
-<td align="center">32ms</td>
-<td align="center">7ms</td>
-</tr>
-
-<tr>
-<td align="center">USB経由</td>
-<td align="center">67ms</td>
-<td align="center">10ms</td>
-</tr>
-
-<tr>
-<td align="center">BT経由</td>
-<td align="center">200ms</td>
-<td align="center">200ms</td>
-</tr>
-
-<tr>
-<td align="center">WiFi経由</td>
-<td align="center">45ms</td>
-<td align="center">-</td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="さいごに">さいごに</h2>
-
-<p>今回はテザリングごとの通信速度を計測しました。本当はスマートフォンの消費電力も調べたかったのですが、それをしようとするとデータ通信料を使い果たしそうなので出来ませんでした。誰かやってみてください&hellip;</p>
+<p>ようは、以下のようにすれば良いです。</p>
 
 <ul>
-<li>Bluetooth経由のテザリングは全然使い物にならなかった。(Xperia XZ2 Compactでは)</li>
-<li>USB経由は早い</li>
-<li>WiFi接続はアップロード速度が遅くなるが、それが我慢出来ればケーブル不要な分だけ簡単</li>
+<li>Secure Bootを無効にする</li>
+<li>Legacy Boot Options (CSM)を有効にする</li>
+<li>UEFIからLegacy BIOSに戻す必要はない</li>
 </ul>
+
+<p>ちなみに、Windows11からはSecure Bootが必須になるそうです。
+5年間以上の古いGPUには厳しい時代になりますね。</p>
             </div>
 
 	    <script type="text/javascript">
@@ -347,20 +237,6 @@
                         </a>
                     </li>
                     
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/android" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            android
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            windows
-                        </a>
-                    </li>
-                    
                 </ul>
 
                 
@@ -373,13 +249,13 @@
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/saison_card/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/auction_pc/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/android_battery/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
