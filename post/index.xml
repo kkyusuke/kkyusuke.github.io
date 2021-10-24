@@ -6,8 +6,147 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2021</rights>
-    <updated>2021-07-25 07:32:00 &#43;0900 JST</updated>
+    <updated>2021-10-24 10:15:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>SSDの速度比較 ― SATA3 vs. PCIe</title>
+          <link>https://blog.yyyak.com/post/ssd/</link>
+          <pubDate>Sun, 24 Oct 2021 10:15:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/ssd/</guid>
+          <description>&lt;p&gt;接続方式によってどれくらい速度が変わるか調べてみました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;調査したssd&#34;&gt;調査したSSD&lt;/h2&gt;
+
+&lt;h3 id=&#34;intelのssd&#34;&gt;IntelのSSD&lt;/h3&gt;
+
+&lt;p&gt;1つ目は古い方のSSDです。7年前に購入したPCに最初から搭載されていたものです。当時Intel製といえば、性能・信頼性とも一目置かれていた感があります。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;メーカー&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Intel&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;容量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;360GB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;接続方式&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;SATA3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;型番&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://www.intel.co.jp/content/www/jp/ja/products/sku/81047/intel-ssd-pro-2500-series-360gb-2-5in-sata-6gbs-20nm-mlc/specifications.html&#34;&gt;Pro2500&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Read&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;540 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Write&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;490 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;wdのssd&#34;&gt;WDのSSD&lt;/h3&gt;
+
+&lt;p&gt;2つ目は新しく購入したSSDです。PCIeスロットに差し込むタイプのもので、ボード内ではRAID0が組まれているようです。接続側のPCIeスロットもPCIe3.0 x8にしています。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;メーカー&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wester Digital&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;容量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1TB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;接続方式&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;PCIe3.0 x8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;型番&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://shop.westerndigital.com/ja-jp/products/internal-drives/wd-black-an1500-nvme-ssd#WDS100T1X0L&#34;&gt;AN1500&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Read&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6500 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Write&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4100 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;調査結果&#34;&gt;調査結果&lt;/h2&gt;
+
+&lt;p&gt;CrystalDiskMark8.0で測定しました。
+通常モードとNVMeモードがあったので、両方で計測しています。&lt;/p&gt;
+
+&lt;p&gt;結果としては、数倍～10倍程度の結果が得られています。ただ、数字上早いだけで体感速度は全然変わりませんでした。
+起動速度もほとんど変わらずです。&lt;/p&gt;
+
+&lt;h3 id=&#34;通常計測モード&#34;&gt;通常計測モード&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/Intel_default.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=SATA_通常&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/Intel_default.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wd_default.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=PCIe_通常&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wd_default.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;nvme計測モード&#34;&gt;NVMe計測モード&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/Intel_NVMe.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=SATA_NVMe&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/Intel_NVMe.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wd_NVMe.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=PCIe_NVMe&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wd_NVMe.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;一昔前のSSDと最新のSSDの速度差を計測しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;数字上はかなり違う&lt;/li&gt;
+&lt;li&gt;体感は全然変わらない（ゲームとかをすれば大きい？かもしれない）&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -5419,78 +5558,6 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;/ul&gt;
 
 &lt;p&gt;みなさん、くれぐれもウイルスとマルウェアには注意しましょう。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Sonicareのイージークリーンを購入してみた</title>
-          <link>https://blog.yyyak.com/post/sonicare_easyclena/</link>
-          <pubDate>Fri, 18 Nov 2016 00:46:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/sonicare_easyclena/</guid>
-          <description>&lt;p&gt;ソニッケアーの独特の販売手法を解き明かしながら、ベストバイの「イージークリーン」を解説します。
-&lt;/p&gt;
-
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.philips.co.jp%2F&#34; title=&#34;Philips - 日本&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://www.philips.co.jp/&#34; target=&#34;\_blank&#34;&gt;Philips - 日本&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;p&gt;そもそも何でこんな投稿を作ったのかを書きたいと思います。&lt;/p&gt;
-
-&lt;p&gt;私は3年前から「フレックスケアー・プラチナ」を使っていました。ドイツ製らしいシンプルで分かりやすいデザインや機能性を気に入っていたのですが、ついに最近壊れてしまいました。数回に1回、異様に振動が弱くなってしまったのです。&lt;/p&gt;
-
-&lt;p&gt;ソニッケアーの保証期間は2年間。すでに過ぎていたので、とりあえず修理に頼み、もしだめそうなら新たに購入しようと考えていました。電話窓口では、交換扱いで”￥12,000”との案内を頂き、「さてさて新品を買うか交換してもらうか、どうしようか」と思い調査を開始しました。すると・・・&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;モデルチェンジしてなくね？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;そう、ちょっとずつ型番が変わったり買えブラシの種類が変わったりしてはいましたが、本体は何も変わっていないのです。何か嫌な予感がして、ラインナップを詳細に調べててみました。&lt;/p&gt;
-
-&lt;h2 id=&#34;ラインナップ&#34;&gt;ラインナップ&lt;/h2&gt;
-
-&lt;p&gt;現在、ソニッケアには以下の7種類があります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ダイヤモンドクリーン&lt;/li&gt;
-&lt;li&gt;フレックスケアープラチナ&lt;/li&gt;
-&lt;li&gt;フレックスケアープラス&lt;/li&gt;
-&lt;li&gt;ヘルシーホワイト&lt;/li&gt;
-&lt;li&gt;ガムヘルス&lt;/li&gt;
-&lt;li&gt;ソニッケアーキッズ&lt;/li&gt;
-&lt;li&gt;イージークリーン&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;上に有るものほど、高価なものです。イージークリーンが5000円で買えるところ、ダイヤモンドクリーンは3万円オーバーくらいです。値段的には大きな違いで、この差は主に&lt;strong&gt;動作モードの違い&lt;/strong&gt; によるものです。これまでプラチナを使っていた身としては、こう言いたい。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;動作モードはクリーンしか使ったことがない&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;ちなみに買えブラシはすべて共通規格なので、上位製品のものも填められます。
-こうなってくると、上位製品を買うメリットは何だったのか。もちろん、彼らと本気で戦う気はありません。
-USB充電とか、歯茎ケアモードとか、そういうのに価値を感じる人はそれを買えばいいでしょう。&lt;strong&gt;そう、本当に必要ならね。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;滅多にモデルチェンジしない-上位機種でも数年前の技術&#34;&gt;滅多にモデルチェンジしない＝上位機種でも数年前の技術&lt;/h2&gt;
-
-&lt;p&gt;これは一概に悪とは言えませんが、高いお金を出して買うものは最新技術を採用していてもらいたいものです。
-ちょっとでも振動数を上げてくれるだけで、買う気になるのになぁと思うわけです。
-そのまま売るのに、全く値下がりしないというのは納得行かないのです・・・。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ならば、安いのを買えばいいじゃないか。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;イージークリーンを買おう&#34;&gt;イージークリーンを買おう&lt;/h2&gt;
-
-&lt;p&gt;さてさて、ソニッケアの最大の特徴は&lt;strong&gt;毎分31000回の超音波振動&lt;/strong&gt;です。これこそが、電動歯ブラシを使う最大のメリットです。これが搭載されている最安の製品、それが我々の求める電動歯ブラシです。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ソニッケア　イージークリーン&lt;br /&gt;
-最もコスパの良いフィリップスの電動歯ブラシ&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;という訳で、私はこれを買いました。歯を磨くというだけなら、プラチナと遜色ありません。ブラシは廉価版が付いてきましたが、もちろん他の高価な純正ブラシが付けられます。
-おすすめですので、ぜひ購入して下さい。&lt;/p&gt;
-
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00C905644&amp;linkId=a5c34e09b008d0ae31ce16f55de03524&#34;&gt;&lt;/iframe&gt;</description>
         </item>
       
     

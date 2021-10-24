@@ -11,6 +11,145 @@
     
       
         <item>
+          <title>SSDの速度比較 ― SATA3 vs. PCIe</title>
+          <link>https://blog.yyyak.com/post/ssd/</link>
+          <pubDate>Sun, 24 Oct 2021 10:15:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/ssd/</guid>
+          <description>&lt;p&gt;接続方式によってどれくらい速度が変わるか調べてみました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;調査したssd&#34;&gt;調査したSSD&lt;/h2&gt;
+
+&lt;h3 id=&#34;intelのssd&#34;&gt;IntelのSSD&lt;/h3&gt;
+
+&lt;p&gt;1つ目は古い方のSSDです。7年前に購入したPCに最初から搭載されていたものです。当時Intel製といえば、性能・信頼性とも一目置かれていた感があります。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;メーカー&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Intel&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;容量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;360GB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;接続方式&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;SATA3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;型番&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://www.intel.co.jp/content/www/jp/ja/products/sku/81047/intel-ssd-pro-2500-series-360gb-2-5in-sata-6gbs-20nm-mlc/specifications.html&#34;&gt;Pro2500&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Read&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;540 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Write&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;490 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;wdのssd&#34;&gt;WDのSSD&lt;/h3&gt;
+
+&lt;p&gt;2つ目は新しく購入したSSDです。PCIeスロットに差し込むタイプのもので、ボード内ではRAID0が組まれているようです。接続側のPCIeスロットもPCIe3.0 x8にしています。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;メーカー&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Wester Digital&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;容量&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1TB&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;接続方式&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;PCIe3.0 x8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;型番&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;a href=&#34;https://shop.westerndigital.com/ja-jp/products/internal-drives/wd-black-an1500-nvme-ssd#WDS100T1X0L&#34;&gt;AN1500&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Read&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6500 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Sequential Write&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4100 MB/s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;調査結果&#34;&gt;調査結果&lt;/h2&gt;
+
+&lt;p&gt;CrystalDiskMark8.0で測定しました。
+通常モードとNVMeモードがあったので、両方で計測しています。&lt;/p&gt;
+
+&lt;p&gt;結果としては、数倍～10倍程度の結果が得られています。ただ、数字上早いだけで体感速度は全然変わりませんでした。
+起動速度もほとんど変わらずです。&lt;/p&gt;
+
+&lt;h3 id=&#34;通常計測モード&#34;&gt;通常計測モード&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/Intel_default.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=SATA_通常&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/Intel_default.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wd_default.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=PCIe_通常&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wd_default.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;nvme計測モード&#34;&gt;NVMe計測モード&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.yyyak.com/images/Intel_NVMe.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=SATA_NVMe&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/Intel_NVMe.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://blog.yyyak.com/images/wd_NVMe.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=PCIe_NVMe&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/wd_NVMe.png&#34; alt=&#34;&#34; width=&#34;300&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;一昔前のSSDと最新のSSDの速度差を計測しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;数字上はかなり違う&lt;/li&gt;
+&lt;li&gt;体感は全然変わらない（ゲームとかをすれば大きい？かもしれない）&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Androidタブレットを有線で外部ディスプレイ化</title>
           <link>https://blog.yyyak.com/post/spacedesk-wired/</link>
           <pubDate>Sun, 25 Jul 2021 07:32:00 JST</pubDate>

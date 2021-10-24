@@ -21,17 +21,17 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="Make &amp; Review | PCオークションで注意すること">
-<meta name="description" content="ヤフオクでPCを落札する際に注意すべきことをまとめました。
+<meta property="og:title" content="Make &amp; Review | SSDの速度比較 ― SATA3 vs. PCIe">
+<meta name="description" content="接続方式によってどれくらい速度が変わるか調べてみました。
 ">
-<meta property="og:description" content="ヤフオクでPCを落札する際に注意すべきことをまとめました。
+<meta property="og:description" content="接続方式によってどれくらい速度が変わるか調べてみました。
 ">
 
 <meta property="og:site_name" content="Make &amp; Review">
 
 <title>
     
-    Make &amp; Review | PCオークションで注意すること
+    Make &amp; Review | SSDの速度比較 ― SATA3 vs. PCIe
     
 </title>
 
@@ -99,87 +99,145 @@
             <header>
                 <div class="post-date">
                     
-                    <time itemprop="datePublished" datetime="2020-02-27T06:44+09:00">
-                        2020.2.27 06:44
+                    <time itemprop="datePublished" datetime="2021-10-24T10:15+09:00">
+                        2021.10.24 10:15
                     </time>
                 </div>
                 <h1 class="post-title" itemprop="name headline">
-                    <a href="https://blog.yyyak.com/post/auction_pc/" itemprop="url">PCオークションで注意すること</a>
+                    <a href="https://blog.yyyak.com/post/ssd/" itemprop="url">SSDの速度比較 ― SATA3 vs. PCIe</a>
                 </h1>
             </header>
             
 
             <div class="post-content" itemprop="articleBody">
-                <p>ヤフオクでPCを落札する際に注意すべきことをまとめました。
+                <p>接続方式によってどれくらい速度が変わるか調べてみました。
 </p>
 
-<h2 id="ヤフオク業者にカモられないために">ヤフオク業者にカモられないために</h2>
+<h2 id="調査したssd">調査したSSD</h2>
 
-<p>最近のPCは性能向上が緩やかになってきているので、4-5年前のPCでも十分実用的に使用することが出来ます。
-新品にこだわりがなければ良いのでおすすめです。</p>
+<h3 id="intelのssd">IntelのSSD</h3>
 
-<p>しかし、買い取ったPCをなるべく高く売るために卑怯なことをする業者も多いので、注意が必要です。
-心配な方は大手の中古業者を使うことがおすすめですが、ここではヤフオク業者と付き合う際の注意点を挙げます。</p>
+<p>1つ目は古い方のSSDです。7年前に購入したPCに最初から搭載されていたものです。当時Intel製といえば、性能・信頼性とも一目置かれていた感があります。</p>
 
-<a href="/images/pc_auction.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=SSDやOfficeに注意>
-  <img class="page1 img-thumbnail" src="/images/pc_auction.jpg" alt="" width="400" itemprop="thumbnailUrl"/>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">メーカー</td>
+<td align="center">Intel</td>
+</tr>
+
+<tr>
+<td align="center">容量</td>
+<td align="center">360GB</td>
+</tr>
+
+<tr>
+<td align="center">接続方式</td>
+<td align="center">SATA3</td>
+</tr>
+
+<tr>
+<td align="center">型番</td>
+<td align="center"><a href="https://www.intel.co.jp/content/www/jp/ja/products/sku/81047/intel-ssd-pro-2500-series-360gb-2-5in-sata-6gbs-20nm-mlc/specifications.html">Pro2500</a></td>
+</tr>
+
+<tr>
+<td align="center">Sequential Read</td>
+<td align="center">540 MB/s</td>
+</tr>
+
+<tr>
+<td align="center">Sequential Write</td>
+<td align="center">490 MB/s</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="wdのssd">WDのSSD</h3>
+
+<p>2つ目は新しく購入したSSDです。PCIeスロットに差し込むタイプのもので、ボード内ではRAID0が組まれているようです。接続側のPCIeスロットもPCIe3.0 x8にしています。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">メーカー</td>
+<td align="center">Wester Digital</td>
+</tr>
+
+<tr>
+<td align="center">容量</td>
+<td align="center">1TB</td>
+</tr>
+
+<tr>
+<td align="center">接続方式</td>
+<td align="center">PCIe3.0 x8</td>
+</tr>
+
+<tr>
+<td align="center">型番</td>
+<td align="center"><a href="https://shop.westerndigital.com/ja-jp/products/internal-drives/wd-black-an1500-nvme-ssd#WDS100T1X0L">AN1500</a></td>
+</tr>
+
+<tr>
+<td align="center">Sequential Read</td>
+<td align="center">6500 MB/s</td>
+</tr>
+
+<tr>
+<td align="center">Sequential Write</td>
+<td align="center">4100 MB/s</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="調査結果">調査結果</h2>
+
+<p>CrystalDiskMark8.0で測定しました。
+通常モードとNVMeモードがあったので、両方で計測しています。</p>
+
+<p>結果としては、数倍～10倍程度の結果が得られています。ただ、数字上早いだけで体感速度は全然変わりませんでした。
+起動速度もほとんど変わらずです。</p>
+
+<h3 id="通常計測モード">通常計測モード</h3>
+
+<p><a href="/images/Intel_default.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=SATA_通常>
+  <img class="page1 img-thumbnail" src="/images/Intel_default.png" alt="" width="300" itemprop="thumbnailUrl"/>
 </a>
+<a href="/images/wd_default.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=PCIe_通常>
+  <img class="page1 img-thumbnail" src="/images/wd_default.png" alt="" width="300" itemprop="thumbnailUrl"/>
+</a></p>
 
-<h2 id="メモリー-ssdの換装">メモリー・SSDの換装</h2>
+<h3 id="nvme計測モード">NVMe計測モード</h3>
 
-<p>中古業者は、PCの中に入っているPCパーツのうち、高く売れる商品は取り出して単品販売する傾向にあります。
-取り出された元のPCには代替パーツを入れるのですが、似たような仕様の怪しい格安中華メーカがあると、十中八九この手のメーカに換装されます。</p>
-
-<p>メモリー・SSDは特に注意が必要です。どちらも格安中華製品がAmazonなどで出回っています。
-「新品SSDに換装済！」などと売り文句にしている場合がありますが、むしろマイナスポイントと捉えましょう。</p>
-
-<p>PCの中には、基板にメモリが直にハンダ付けされている場合があり、その場合は安心です。</p>
-
-<h3 id="解決策">解決策</h3>
-
-<p>元の型番と記載スペックを比べて、異なる場合には換装されています。同じスペックである場合でも、換装の可能性はあります。同スペック表記で「換装済み」と書かれていなければ、もし換装されていれば返品できる可能性はありますが、相手は悪徳業者なので期待はしないようにしましょう。</p>
-
-<p>業者が換装出来るくらいなので、自分でも簡単に換装出来ます。安く手にいれて、問題点は自分でなんとかする姿勢も時には必要です。</p>
-
-<h2 id="型番">型番</h2>
-
-<p>有名メーカのPCなのに型番が書いていない場合には、内部のパーツが相当入れ替えられていると考えてください。</p>
-
-<p>シリーズ名だけの表記で、詳細な型番が書かれていない場合には、注意深く商品説明を読みましょう。
-特段の説明がなければ、その業者は使わないのが無難です。</p>
-
-<h2 id="office-adobe">Office, Adobe</h2>
-
-<a href="/images/pc_auction_2.jpg" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=Adobe製品に注意>
-  <img class="page1 img-thumbnail" src="/images/pc_auction_2.jpg" alt="" width="400" itemprop="thumbnailUrl"/>
+<p><a href="/images/Intel_NVMe.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=SATA_NVMe>
+  <img class="page1 img-thumbnail" src="/images/Intel_NVMe.png" alt="" width="300" itemprop="thumbnailUrl"/>
 </a>
-
-<p>MicrosoftのOfficeは高価な製品なので、数万円で落札できるPCについてくることはまずありません。
-PC購入時に付属したライセンスキー付きのオフィスを付属させて出品してくれる業者はないと思いましょう。（新品除く）</p>
-
-<p>「Office付き」となっている製品のほとんどは、企業向けOffice365にインストール数制限がないことを悪用した、ライセンス違反商品です。アンインストールし、自分のOfficeをインストールしましょう。今は、月額1,000円程度で個人向けOffice365が契約できます。</p>
-
-<p>「Office Onlineが使えます」となっている商品があります。Office Onlineは無料サービスなので、誤りではありません。デスクトップ版のOfficeアプリは付属しませんので注意してください。この表記をしている業者はむしろライセンス違反をしていないので、信用できそうです。</p>
-
-<p>Adobe CS6インストール済みのPCなども出品されています。海賊版ソフトがインストールされているので、すぐにアンインストールしましょう。</p>
-
-<h2 id="出品写真の生活感">出品写真の生活感</h2>
-
-<p>これまでの記事を見ると、悪徳業者怖い！と思うことでしょう。
-ヤフオクには個人出品者だけを表示するフィルタがありますが、業者の中には個人アカウントを使っているものもあります。</p>
-
-<p>そういう業者は、わざわざ生活感のある写真をアップしているのですが、実際には業者です。</p>
-
-<p>また、「写真はイメージです」となっており、実際の傷の状態がわからない業者もあります。注意してください。</p>
+<a href="/images/wd_NVMe.png" data-lightbox="page1" itemtype="https://schema.org/ImageObject/" data-title=PCIe_NVMe>
+  <img class="page1 img-thumbnail" src="/images/wd_NVMe.png" alt="" width="300" itemprop="thumbnailUrl"/>
+</a></p>
 
 <h2 id="まとめ">まとめ</h2>
 
-<p>PC落札の際に注意すべきことをまとめました。ある程度知識を持って当たれば、良い製品に巡り会えるはずです！</p>
+<p>一昔前のSSDと最新のSSDの速度差を計測しました。</p>
 
 <ul>
-<li>ハードウェアの変更には注意。基板直付け率の高い製品を選ぶ・自分で直すなどの回避策あり</li>
-<li>Office,Adobe系の付属ソフトには期待しない</li>
-<li>悪徳出品者を避けて快適なオークションライフを！</li>
+<li>数字上はかなり違う</li>
+<li>体感は全然変わらない（ゲームとかをすれば大きい？かもしれない）</li>
 </ul>
             </div>
 
@@ -204,13 +262,6 @@ PC購入時に付属したライセンスキー付きのオフィスを付属さ
                         </a>
                     </li>
                     
-                    <li>
-                        <a href="https://blog.yyyak.com/tags/windows" itemprop="keywords">
-                            <i class="fa fa-tags"></i>
-                            windows
-                        </a>
-                    </li>
-                    
                 </ul>
 
                 
@@ -223,13 +274,13 @@ PC購入時に付属したライセンスキー付きのオフィスを付属さ
                     <ul class="pager">
 
                         
-                        <li class="previous"><a href="https://blog.yyyak.com/post/tether/"><span aria-hidden="true">&larr;</span> Older</a></li>
+                        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                         
 
                         <li><a href="https://blog.yyyak.com/post">All Posts</a></li>
 
                         
-                        <li class="next"><a href="https://blog.yyyak.com/post/zheino_ssd/">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="next"><a href="https://blog.yyyak.com/post/spacedesk-wired/">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         
 
                     </ul>
