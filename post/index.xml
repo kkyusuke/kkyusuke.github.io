@@ -5,9 +5,54 @@
     <link>https://blog.yyyak.com/post/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
-    <rights>(C) 2021</rights>
-    <updated>2021-10-24 10:15:00 &#43;0900 JST</updated>
+    <rights>(C) 2022</rights>
+    <updated>2022-07-12 12:25:03 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>任意団体とクレジットカード決済</title>
+          <link>https://blog.yyyak.com/post/stripe_ninni/</link>
+          <pubDate>Tue, 12 Jul 2022 12:25:03 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/stripe_ninni/</guid>
+          <description>&lt;p&gt;任意団体のクレジットカード集金(Stripe)について調べました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;任意団体とは&#34;&gt;任意団体とは？&lt;/h2&gt;
+
+&lt;p&gt;任意団体とは、法人格がない団体のことです。同窓会や町内会など、登記していない団体は何でも当てはまります。&lt;/p&gt;
+
+&lt;p&gt;法人格がないので、契約を結ぶことが出来ません。
+銀行口座は作れますが、最近は審査が厳しくなっているようです。ただし、一度口座が作れれば、デビットカード等は使えるようです。&lt;/p&gt;
+
+&lt;h2 id=&#34;任意団体はクレジットカードでお金を集められるか&#34;&gt;任意団体はクレジットカードでお金を集められるか？&lt;/h2&gt;
+
+&lt;p&gt;結論から言うと、法人格がないので正攻法では無理です。&lt;/p&gt;
+
+&lt;p&gt;ただし、代表者を用意してその人の名義の元には集められます。
+Stripeの場合、単に個人名でアカウントを登録し、審査も個人で行えます。&lt;/p&gt;
+
+&lt;p&gt;なお、銀行口座の所有者とアカウント所有者の名前は異なるものでも大丈夫でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;請求書やカード明細の表記&#34;&gt;請求書やカード明細の表記&lt;/h2&gt;
+
+&lt;p&gt;Stripeの場合、請求書やカード明細には自由に名前を設定できるので、そこに団体名を設定すれば利用者が必要以上に心配することはありません。「設定→公開情報」からいつでも変えられます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/stripe_name.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/stripe_name.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;任意団体でのクレジットカード集金についてまとめました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;任意団体は、代表者名義のアカウントでならカード集金が出来る&lt;/li&gt;
+&lt;li&gt;カード明細等には自由に団体名が設定できる&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -5468,96 +5513,6 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 
 &lt;p&gt;どうしてもWifi経由でファイルを公開したい人向けのデバイスだと思います。PCで参加する人が多い会議では、そこそこ便利でしょう。いっそ会議室に常駐させておくと良いかもしれません。
 スマホアプリの作りは甘いです。タイムスタンプをチェックする機能が実装されれば使い勝手が急激に改善するはずです。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Androidにもセキュリティソフトが必要な理由</title>
-          <link>https://blog.yyyak.com/post/android_sec/</link>
-          <pubDate>Fri, 18 Nov 2016 03:55:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/android_sec/</guid>
-          <description>&lt;p&gt;Androidにセキュリティ対策ソフトが必要ない、という言説の誤りを解説します。
-&lt;/p&gt;
-
-&lt;p&gt;Android向けにウイルス対策ソフトが販売されています。「そもそもウイルス対策ソフトがウイルスだった」みたいなトラブルは良くあることなので気にしたら負けですが、シマンテックやカスペルスキーなどからも対策ソフトは販売されています。&lt;/p&gt;
-
-&lt;h2 id=&#34;主張その1-絶対にいらない&#34;&gt;主張その1：絶対にいらない。&lt;/h2&gt;
-
-&lt;p&gt;さて、Android用対策ソフトについて検索すると必ず出てくるニュースに以下のようなものがあります。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Androidにはウイルス対策ソフトは必要ない。&lt;br /&gt;
-ウイルス対策なんて言っているのは全部詐欺だ！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=http%3A%2F%2Fblog.livedoor.jp%2Fyoblo%2Farchives%2F42617284.html&#34; title=&#34;Androidにウイルス対策アプリは不要。グーグル関係者、ウイルス企業は「ペテン師」と痛烈批判 : スマホ口コミ評価速報&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;http://blog.livedoor.jp/yoblo/archives/42617284.html&#34; target=&#34;\_blank&#34;&gt;Androidにウイルス対策アプリは不要。グーグル関係者、ウイルス企業は「ペテン師」と痛烈批判 : スマホ口コミ評価速報&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;p&gt;まあ、なかの人がそういうのなら、そういうものなのかな。&lt;br /&gt;
-でも、本当？&lt;/p&gt;
-
-&lt;h2 id=&#34;主張その2-なんだかんだ必要-だってウイルスあるんだもん&#34;&gt;主張その2：なんだかんだ必要。だってウイルスあるんだもん。&lt;/h2&gt;
-
-&lt;p&gt;さて、商売の邪魔をされて黙っているバカはいません。各ベンダーはこぞってブログに以下のような記事を投稿します。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;知っていますか？Androidのウイルスの脅威は日に日に増しています。&lt;br /&gt;
-当社の対策ソフトを購入してあなたの社会的信頼を守りましょう&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fjapan.norton.com%2Fandroid-virus-1763&#34; title=&#34;Android ウイルス感染の不安を解消する3つのポイント&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://japan.norton.com/android-virus-1763&#34; target=&#34;\_blank&#34;&gt;Android ウイルス感染の不安を解消する3つのポイント&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;p&gt;たしかに、Androidのウイルスの話題はよく聞くし、このあいだも友達がFBに変な投稿してました。やっぱり必要なのでは？&lt;/p&gt;
-
-&lt;h2 id=&#34;この議論の問題点-ウイルス-とは何か&#34;&gt;この議論の問題点：「ウイルス」とは何か&lt;/h2&gt;
-
-&lt;h3 id=&#34;主張その1の-ウイルス-は-ウイルスではない&#34;&gt;主張その1の「ウイルス」は、ウイルスではない・・・&lt;/h3&gt;
-
-&lt;p&gt;多くの人が指摘していますが、1つ目の主張で言うところの「ウイルス」は、Androidには存在しないか、あったとしても悪さができません。&lt;/p&gt;
-
-&lt;p&gt;Androidはアプリをインストールして使うように設計されています。各アプリはサンドボックスと呼ばれる保護機構によって、他のアプリとは高度に切り離された状態にあります。もしウイルスが悪さをしようとしても、このサンドボックスによって目論見は阻止されるのです！&lt;/p&gt;
-
-&lt;p&gt;ん？？なんかおかしい・・・&lt;br /&gt;
-気付きましたか？そう、彼らのいうウイルスとは&lt;strong&gt;マルウェア&lt;/strong&gt;なのです。Windowsで悪さを働くマルウェアは、Androidではうまく動きません。&lt;/p&gt;
-
-&lt;h3 id=&#34;androidで俗に言う-マルウェア-は-身から出たサビ&#34;&gt;Androidで俗に言う「マルウェア」は、身から出たサビ&lt;/h3&gt;
-
-&lt;p&gt;さて、マルウェアはAndroidでは動作しないことはお話しました。しかし、例外があります。それは「&lt;strong&gt;マルウェアの活動をユーザ自身が許可した場合&lt;/strong&gt;」です。
-多くの人はアプリをインストールする際にアプリの要求権限を深く吟味しません。不注意によって、悪意のあるアプリをユーザーが自発的にインストールしてしまうことがあるのです。&lt;/p&gt;
-
-&lt;p&gt;販売されているウイルス対策ソフトは、ユーザによる自発的なアプリのインストールも監視していて、あまりに怪しいアプリをインストールしようとしていれば警告を発してくれます。ベンダーによっては、インストール数の多いアプリを独自に解析して、危険なアプリをインストールしないよう啓蒙しているところもあります。&lt;/p&gt;
-
-&lt;p&gt;権限の確認はいちいち面倒ですし、権限を確認したとしても意図しない動作をされてしまうことは考えられます。そういった観点から、ウイルス対策ソフトは有効です。&lt;/p&gt;
-
-&lt;h2 id=&#34;ウイルスにはどう対処するのか&#34;&gt;ウイルスにはどう対処するのか&lt;/h2&gt;
-
-&lt;p&gt;さて、最も深刻なのは「サンドボックスの脆弱性を突かれる」ことです。これこそが&lt;strong&gt;ウイルス&lt;/strong&gt;です。
-ウイルス対策ソフトはウイルスを駆除することができるのでしょうか。&lt;/p&gt;
-
-&lt;p&gt;できません。（おそらく）&lt;/p&gt;
-
-&lt;p&gt;ウイルスを駆除するには、OSの奥深くの領域まで検査する必要が有ります。しかしウイルス対策ソフトもアプリの１つ。サンドボックスによって行動が制限されています。ウイルス対策ソフトがサンドボックスの脆弱性を突く以外、ウイルスを駆除する手立てはないのです。
-もしそんなウイルス対策ソフトがあったとして、それはもうウイルスです。&lt;/p&gt;
-
-&lt;p&gt;重大な脆弱性が発見された場合、その脆弱性を塞ぐアップデートを適用するしかないのです。&lt;/p&gt;
-
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01M1893YL&amp;linkId=5330526d2740fcc4ad424153e815574f&#34;&gt;&lt;/iframe&gt;
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B01KGS7GTS&amp;linkId=bd22d6ebb819fa52fc9210fab9e3d702&#34;&gt;&lt;/iframe&gt;
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B006RD7L8I&amp;linkId=a2417b4aa3191df657ef978037e382d5&#34;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;ウイルスに感染しないために&#34;&gt;ウイルスに感染しないために&lt;/h2&gt;
-
-&lt;p&gt;脆弱性を突かれてしまっては、もうどうしようもないのですが、なるべくやられないようにするポイントがあります。
-以下に挙げます。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;アップデートが頻繁に行われる機種を使う。&lt;/li&gt;
-&lt;li&gt;不要なアプリはインストールしない。&lt;/li&gt;
-&lt;li&gt;標準アプリでも、使っていないものは無効化する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;みなさん、くれぐれもウイルスとマルウェアには注意しましょう。&lt;/p&gt;</description>
         </item>
       
     

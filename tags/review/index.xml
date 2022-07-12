@@ -5,9 +5,54 @@
     <link>https://blog.yyyak.com/tags/review/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
-    <rights>(C) 2021</rights>
+    <rights>(C) 2022</rights>
     <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>任意団体とクレジットカード決済</title>
+          <link>https://blog.yyyak.com/post/stripe_ninni/</link>
+          <pubDate>Tue, 12 Jul 2022 12:25:03 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/stripe_ninni/</guid>
+          <description>&lt;p&gt;任意団体のクレジットカード集金(Stripe)について調べました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;任意団体とは&#34;&gt;任意団体とは？&lt;/h2&gt;
+
+&lt;p&gt;任意団体とは、法人格がない団体のことです。同窓会や町内会など、登記していない団体は何でも当てはまります。&lt;/p&gt;
+
+&lt;p&gt;法人格がないので、契約を結ぶことが出来ません。
+銀行口座は作れますが、最近は審査が厳しくなっているようです。ただし、一度口座が作れれば、デビットカード等は使えるようです。&lt;/p&gt;
+
+&lt;h2 id=&#34;任意団体はクレジットカードでお金を集められるか&#34;&gt;任意団体はクレジットカードでお金を集められるか？&lt;/h2&gt;
+
+&lt;p&gt;結論から言うと、法人格がないので正攻法では無理です。&lt;/p&gt;
+
+&lt;p&gt;ただし、代表者を用意してその人の名義の元には集められます。
+Stripeの場合、単に個人名でアカウントを登録し、審査も個人で行えます。&lt;/p&gt;
+
+&lt;p&gt;なお、銀行口座の所有者とアカウント所有者の名前は異なるものでも大丈夫でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;請求書やカード明細の表記&#34;&gt;請求書やカード明細の表記&lt;/h2&gt;
+
+&lt;p&gt;Stripeの場合、請求書やカード明細には自由に名前を設定できるので、そこに団体名を設定すれば利用者が必要以上に心配することはありません。「設定→公開情報」からいつでも変えられます。&lt;/p&gt;
+
+&lt;a href=&#34;https://blog.yyyak.com/images/stripe_name.JPG&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
+  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/stripe_name.JPG&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
+&lt;/a&gt;
+
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;任意団体でのクレジットカード集金についてまとめました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;任意団体は、代表者名義のアカウントでならカード集金が出来る&lt;/li&gt;
+&lt;li&gt;カード明細等には自由に団体名が設定できる&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
     
       
         <item>
