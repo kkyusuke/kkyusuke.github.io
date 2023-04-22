@@ -5,9 +5,37 @@
     <link>https://blog.yyyak.com/tags/review/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
-    <rights>(C) 2022</rights>
+    <rights>(C) 2023</rights>
     <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
+    
+      
+        <item>
+          <title>2台だけでもメッシュ中継機能は有用</title>
+          <link>https://blog.yyyak.com/post/mesh/</link>
+          <pubDate>Sat, 22 Apr 2023 05:43:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/mesh/</guid>
+          <description>&lt;p&gt;同じWiFiルーターが2台あったので、古くからある中継機能とメッシュ中継機能を比較しました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;2つの中継機能&#34;&gt;2つの中継機能&lt;/h2&gt;
+
+&lt;p&gt;NECの無線LANルーター &lt;a href=&#34;https://www.aterm.jp/product/atermstation/product/warpstar/wg1200hp4/&#34;&gt;AWG1200HP4&lt;/a&gt;を2台持っているのですが、似たような機能が2つ搭載されています。&lt;/p&gt;
+
+&lt;p&gt;1つは「Wi-Fi中継機能」、もう1つは「メッシュ中継機能」。前者の中継機能は、親機と子機の2台を用意して通信範囲を広くする機能です。子機の台数は1台と決まっています。
+一方でメッシュ中継機能は2台以上（3台も可）を使って通信範囲を広くします。&lt;/p&gt;
+
+&lt;p&gt;3台以上ある際はメッシュ中継機能1択なのですが、2台の場合にはどちらを使えば良いのか気になったので調べてみました。
+メッシュ中継機能は3台以上を管理するために余計な通信が増えそうなので、「2台の時には従来の中継機能の方が有利かも？」と思っていましたが・・・？&lt;/p&gt;
+
+&lt;h2 id=&#34;メッシュの方が速い&#34;&gt;メッシュの方が速い！&lt;/h2&gt;
+
+&lt;p&gt;2台の際にもメッシュ中継機能の方が格段に高速でした。（すみません、スクショを取り忘れました）&lt;/p&gt;
+
+&lt;p&gt;通信速度が数倍変わりますので、2台しか使わない場合でもメッシュ中継機能を使うことをお薦めします。&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>

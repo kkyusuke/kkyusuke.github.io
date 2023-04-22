@@ -5,9 +5,37 @@
     <link>https://blog.yyyak.com/post/index.xml</link>
     <language>en-us</language>
     <author>Y.K.</author>
-    <rights>(C) 2022</rights>
-    <updated>2022-07-12 12:25:03 &#43;0900 JST</updated>
+    <rights>(C) 2023</rights>
+    <updated>2023-04-22 05:43:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>2台だけでもメッシュ中継機能は有用</title>
+          <link>https://blog.yyyak.com/post/mesh/</link>
+          <pubDate>Sat, 22 Apr 2023 05:43:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/mesh/</guid>
+          <description>&lt;p&gt;同じWiFiルーターが2台あったので、古くからある中継機能とメッシュ中継機能を比較しました。
+&lt;/p&gt;
+
+&lt;h2 id=&#34;2つの中継機能&#34;&gt;2つの中継機能&lt;/h2&gt;
+
+&lt;p&gt;NECの無線LANルーター &lt;a href=&#34;https://www.aterm.jp/product/atermstation/product/warpstar/wg1200hp4/&#34;&gt;AWG1200HP4&lt;/a&gt;を2台持っているのですが、似たような機能が2つ搭載されています。&lt;/p&gt;
+
+&lt;p&gt;1つは「Wi-Fi中継機能」、もう1つは「メッシュ中継機能」。前者の中継機能は、親機と子機の2台を用意して通信範囲を広くする機能です。子機の台数は1台と決まっています。
+一方でメッシュ中継機能は2台以上（3台も可）を使って通信範囲を広くします。&lt;/p&gt;
+
+&lt;p&gt;3台以上ある際はメッシュ中継機能1択なのですが、2台の場合にはどちらを使えば良いのか気になったので調べてみました。
+メッシュ中継機能は3台以上を管理するために余計な通信が増えそうなので、「2台の時には従来の中継機能の方が有利かも？」と思っていましたが・・・？&lt;/p&gt;
+
+&lt;h2 id=&#34;メッシュの方が速い&#34;&gt;メッシュの方が速い！&lt;/h2&gt;
+
+&lt;p&gt;2台の際にもメッシュ中継機能の方が格段に高速でした。（すみません、スクショを取り忘れました）&lt;/p&gt;
+
+&lt;p&gt;通信速度が数倍変わりますので、2台しか使わない場合でもメッシュ中継機能を使うことをお薦めします。&lt;/p&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -5399,120 +5427,6 @@ Androidはセキュリティの対応がグダグダであることが問題と�
 &lt;p&gt;この例の場合Android6.0.1ならパッチがアップされていますが、おそらくAndroid3.0系ではパッチがありません。（脆弱性そのものに関係ないかもしれません。）&lt;/p&gt;
 
 &lt;p&gt;問題は、メーカがそのアップデートを反映させるかどうかです。こういったセキュリティの心配に対してわかりやすさを提供してくれるのが「セキュリティパッチレベル」と言うことが出来そうです。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>SanDisk ワイヤレスメディアドライブのレビュー</title>
-          <link>https://blog.yyyak.com/post/sandisk_wireless/</link>
-          <pubDate>Tue, 29 Nov 2016 23:39:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/sandisk_wireless/</guid>
-          <description>&lt;p&gt;Sandisk・コネクト・ワイヤレスメディアドライブ(32GB)を入手したので、使ってみました。
-&lt;/p&gt;
-
-&lt;h2 id=&#34;どんなデバイス&#34;&gt;どんなデバイス？&lt;/h2&gt;
-
-&lt;p&gt;ワイヤレスメディアドライブには32GB/64GBのフラッシュメモリが搭載されていて、スマートフォンアプリやブラウザ・USB経由で中にアクセス出来るようになっています。SDカードスロットが搭載されていて、容量を拡張することが出来ます。&lt;/p&gt;
-
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fwww.sandisk.co.jp%2Fhome%2Fmobile-device-storage%2Fconnect-wireless-media-drive&#34; title=&#34;サンディスク コネクト ワイヤレスメディアドライブ&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://www.sandisk.co.jp/home/mobile-device-storage/connect-wireless-media-drive&#34; target=&#34;\_blank&#34;&gt;サンディスク コネクト ワイヤレスメディアドライブ&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;p&gt;用途としては、次のようなことが考えられそうです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iPhone/Androidのバックアップとして&lt;/li&gt;
-&lt;li&gt;PC/スマホ間のデータの受け渡しに&lt;/li&gt;
-&lt;li&gt;ペーパーレスでの資料配布に&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;すでに製造は収束しつつあるようで、ビックカメラなどでは製品そのものが確認できません。Amazonでは15000円程度で売っているようです。&lt;/p&gt;
-
-&lt;iframe style=&#34;width:120px;height:240px;&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; src=&#34;//rcm-fe.amazon-adsystem.com/e/cm?lt1=\_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=makereview-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=as_ss_li_til&amp;asins=B00DR8LAE2&amp;linkId=fec513350ad563a2edfcd2a90df7ce28&#34;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
-
-&lt;p&gt;接続の仕方は以下の3通りです。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;iOS/Androidアプリ経由&lt;/li&gt;
-&lt;li&gt;ブラウザ&lt;/li&gt;
-&lt;li&gt;USBデバイスとして&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;このうち、機器の設定を管理できるのはアプリ・ブラウザ経由のみです。&lt;/p&gt;
-
-&lt;h3 id=&#34;アプリ経由で初期設定してみる&#34;&gt;アプリ経由で初期設定してみる&lt;/h3&gt;
-
-&lt;p&gt;ストアからアプリをダウンロードしてください。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/jp/app/sandisk-connect-wireless-media/id646153884?mt=8&#34; style=&#34;display:block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/ja-jp/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;margin-left: auto;margin-right: auto;&#34;&gt;&lt;/a&gt;
-&lt;a href=&#39;https://play.google.com/store/apps/details?id=com.SanDisk.AirCruzer&amp;hl=ja&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&#39;&gt;&lt;img alt=&#39;Google Play で手に入れよう&#39; style=&#34;width:156px; display:block;margin-left: auto;margin-right: auto;&#34; src=&#39;https://play.google.com/intl/en_us/badges/images/generic/ja_badge_web_generic.png&#39;/&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;メディアドライブの電源ボタンを長押ししてLEDが点滅し始めたら、アプリを起動します。デバイスを選択する画面が表されるはずなので、&amp;rdquo;Sandisk Media ****&amp;ldquo;というものを選択します。初期のパスワードは&amp;rdquo;admin&amp;rdquo;です。
-すると、メモリー内の内容が表示されるようになります。&lt;/p&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-1.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-&lt;h3 id=&#34;設定&#34;&gt;設定&lt;/h3&gt;
-
-&lt;p&gt;設定ボタンを押すと、様々な設定を行えます。ワイヤレスドライブの無線LANのパスワード変更は必ずしておきましょう。
-既存のWifiネットワークに接続して、LAN内のすべてのマシンから閲覧できるようにもできます。&lt;/p&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/sandisk-wireless-2.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-&lt;h3 id=&#34;ブラウザから接続する&#34;&gt;ブラウザから接続する&lt;/h3&gt;
-
-&lt;p&gt;メディアデバイスが出すWifiに接続する場合、192.168.11.1にアクセスすれば中身を閲覧できます。
-メディアデバイスが既存のWifiネットワークに接続する場合、IPアドレスは割り当てられたものを使用します。&lt;/p&gt;
-
-&lt;h2 id=&#34;良い点&#34;&gt;良い点&lt;/h2&gt;
-
-&lt;h4 id=&#34;コンパクト&#34;&gt;コンパクト&lt;/h4&gt;
-
-&lt;p&gt;軽くて小さくて持ち運びやすいです。フラッシュメモリなので振動にも強い！&lt;/p&gt;
-
-&lt;h4 id=&#34;安定性&#34;&gt;安定性&lt;/h4&gt;
-
-&lt;p&gt;ここ数週間、特に問題なく使えています。&lt;br /&gt;
-また、スマホアプリは無駄な権限を取得することもなく、非常に安定して動作します。似たようなデバイスはたくさん販売されていますが、さすが大手メーカ製といった所です。&lt;/p&gt;
-
-&lt;h4 id=&#34;豊富な接続方法&#34;&gt;豊富な接続方法&lt;/h4&gt;
-
-&lt;p&gt;アプリ経由だけでなく、ブラウザ経由やUSB経由でデータを閲覧することができます。特にブラウザが使えるということは、事実上あらゆるマシンからデータを閲覧できることになります。&lt;/p&gt;
-
-&lt;h4 id=&#34;sdカードでデータ容量を拡張できる&#34;&gt;SDカードでデータ容量を拡張できる。&lt;/h4&gt;
-
-&lt;p&gt;数百GBまでデータ容量を拡張できます。ネットワークに接続できない事情のあるマシンにも、最悪SD経由でデータを渡せるので便利だと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;悪い点&#34;&gt;悪い点&lt;/h2&gt;
-
-&lt;h4 id=&#34;ファイルの重複検出ができない&#34;&gt;ファイルの重複検出ができない&lt;/h4&gt;
-
-&lt;p&gt;アプリ経由でデータをアップロードすると、同じファイルが存在しても別ファイルとして書き込んでしまいます。
-ですので、スマホ内の写真をバックアップしたい場合には、その都度バックアップしたい新しい画像を指定する必要があります。本当はフォルダを指定すると新ファイルだけを自動でアップして欲しいのですが・・・。&lt;/p&gt;
-
-&lt;h4 id=&#34;最大接続数は8&#34;&gt;最大接続数は8&lt;/h4&gt;
-
-&lt;p&gt;Wifiの最大接続数は8つです。みんなにデータを配布するにしても、同時に8人しか受け付けられないとなる、小さな会議でしか使えそうにないです。&lt;/p&gt;
-
-&lt;h4 id=&#34;アクセス権限の概念がない&#34;&gt;アクセス権限の概念がない&lt;/h4&gt;
-
-&lt;p&gt;バックアップ用途・ファイル公開用途の両方に同時に使う事は出来ません。なぜなら、デバイスに接続できる人はすべてのデータにアクセス出来てしまうのです。&lt;/p&gt;
-
-&lt;p&gt;本当は、もっときめ細かな管理がしたいです。例えば・・・
-* 2つのWifiアクセスポイントがあって、Guest用は限られたフォルダしか閲覧できない
-* Adminにしか見れないフォルダが作れる
-* ブラウザ経由では見れないフォルダが作れる&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;どうしてもWifi経由でファイルを公開したい人向けのデバイスだと思います。PCで参加する人が多い会議では、そこそこ便利でしょう。いっそ会議室に常駐させておくと良いかもしれません。
-スマホアプリの作りは甘いです。タイムスタンプをチェックする機能が実装されれば使い勝手が急激に改善するはずです。&lt;/p&gt;</description>
         </item>
       
     
