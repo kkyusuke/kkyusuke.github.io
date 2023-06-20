@@ -3,6 +3,15 @@
   
   
   <url>
+    <loc>https://blog.yyyak.com/post/privacy/</loc>
+    <lastmod>2023-06-20T13:26:00+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  <url>
     <loc>https://blog.yyyak.com/post/mesh/</loc>
     <lastmod>2023-04-22T05:43:00+09:00</lastmod>
     <changefreq>monthly</changefreq>

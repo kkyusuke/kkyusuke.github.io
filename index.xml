@@ -6,8 +6,35 @@
     <language>en-us</language>
     <author>Y.K.</author>
     <rights>(C) 2023</rights>
-    <updated>2023-04-22 05:43:00 &#43;0900 JST</updated>
+    <updated>2023-06-20 13:26:00 &#43;0900 JST</updated>
 
+    
+      
+        <item>
+          <title>本ブログが外部に送信する情報について</title>
+          <link>https://blog.yyyak.com/post/privacy/</link>
+          <pubDate>Tue, 20 Jun 2023 13:26:00 JST</pubDate>
+          <author>Y.K.</author>
+          <guid>https://blog.yyyak.com/post/privacy/</guid>
+          <description>&lt;p&gt;外部送信規律に関しての情報を提供します。
+
+本ブログは、以下の外部サービスを利用しており、閲覧者の情報を外部に送信しています。&lt;/p&gt;
+
+&lt;h3 id=&#34;google-adsense&#34;&gt;Google Adsense&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;目的：広告の表示&lt;/li&gt;
+&lt;li&gt;送信される情報：閲覧ページ・ブラウザやデバイスの情報・一部クッキー情報・その他&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;目的：WEBサイト運用に当たって、閲覧者数などの把握&lt;/li&gt;
+&lt;li&gt;送信される情報：閲覧ページ・ブラウザやデバイスの情報・一部クッキー情報・その他&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+      
     
       
         <item>
@@ -5337,96 +5364,6 @@ TexshopやTexworksなどTex専用の環境はいろいろありますが、私�
 &lt;p&gt;EGitを最新版にする、アンインストールした後に再インストールし直す、など基本的なことは試したのですが問題は解決しませんでした。&lt;/p&gt;
 
 &lt;p&gt;VisualStudioがGitサポートを始めているので、そちらに移るのもありなのかなぁ、とか思ったりもしました。&lt;/p&gt;</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Android Security Bulletinsについて</title>
-          <link>https://blog.yyyak.com/post/android_secutiry/</link>
-          <pubDate>Sat, 10 Dec 2016 11:23:00 JST</pubDate>
-          <author>Y.K.</author>
-          <guid>https://blog.yyyak.com/post/android_secutiry/</guid>
-          <description>&lt;p&gt;Androidの「セキュリティパッチレベル」について説明します。
-&lt;/p&gt;
-
-&lt;iframe class=&#34;bookmarklet hatena-embed&#34; src=&#34;https://hatenablog-parts.com/embed?url=https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2Findex.html&#34; title=&#34;Android Security Bulletins | Android Open Source Project&#34; style=&#34;border:none;display:block;margin:0 0 1.7rem;overflow:hidden;height:155px;width:100%;max-width:100%;&#34;&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34; target=&#34;\_blank&#34;&gt;Android Security Bulletins | Android Open Source Project&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&#34;セキュリティパッチレベルの確認の仕方&#34;&gt;セキュリティパッチレベルの確認の仕方&lt;/h2&gt;
-
-&lt;p&gt;Android端末を購入するとき、Androidのバージョンを調べる人は多いと思います。だいたい年1回ごとにアップデートされ、開発コード名はアルファベット順にお菓子の名前が割り当てられます。
-KitkatとかMarshmallowとかのあれです。&lt;/p&gt;
-
-&lt;p&gt;お菓子のバージョンは搭載されている機能などの比較に使えますが、これとは別に重要なものとして「セキュリティパッチレベル」というものがあります。レベルは日付で表記される点が特徴的です。「設定」→「端末情報」から確認してみましょう。&lt;/p&gt;
-
-&lt;a href=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; data-lightbox=&#34;page1&#34; itemtype=&#34;https://schema.org/ImageObject/&#34; data-title=&gt;
-  &lt;img class=&#34;page1 img-thumbnail&#34; src=&#34;https://blog.yyyak.com/images/android_sec_level.png&#34; alt=&#34;&#34; width=&#34;200&#34; itemprop=&#34;thumbnailUrl&#34;/&gt;
-&lt;/a&gt;
-
-&lt;p&gt;なおセキュリティパッチレベルが明示されるのはAndroid6.0以降の端末で、メーカによっては表示されていないかもしれません。例えばXperia Z3ではAndroid6.0.1のアップデート以降はセキュリティパッチレベルが表示されています。&lt;/p&gt;
-
-&lt;h2 id=&#34;セキュリティパッチレベルとは&#34;&gt;セキュリティパッチレベルとは？&lt;/h2&gt;
-
-&lt;p&gt;セキュリティパッチレベルは基準となる日付で表記されており、その一覧は&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34;&gt;Android Security Bulletins&lt;/a&gt;から確認できます。日付が後の方が、セキュリティがしっかりしているという事になります。&lt;/p&gt;
-
-&lt;p&gt;例えば2016年11月では、1日・5日・6日の3種類が用意されています。
-2016/11/01では、主に以下の脆弱性に対処する必要があります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CVE-2016-6699&lt;/li&gt;
-&lt;li&gt;CVE-2016-6700&lt;/li&gt;
-&lt;li&gt;他&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;2016/11/05では、2016/11/01で対応される脆弱性に加えて主に以下に対処する必要があります。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CVE-2016-6725&lt;/li&gt;
-&lt;li&gt;CVE-2016-6828&lt;/li&gt;
-&lt;li&gt;他&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;2016/11/06では、2016/11/05に加えて以下に対処します。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CVE-2016-5195&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;このように、各セキュリティレベルには「対処すべき脆弱性」が定められており、それらにすべて対応出来た端末だけが当該パッチレベルを表示できます。
-Androidはセキュリティの対応がグダグダであることが問題となっていますが、Googleもその現状を何とかしたいと考えているようです。セキュリティパッチレベルは2015年10月から始まっています。&lt;/p&gt;
-
-&lt;h2 id=&#34;androidのバージョンとセキュリティパッチレベルについて&#34;&gt;Androidのバージョンとセキュリティパッチレベルについて&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://source.android.com/security/bulletin/index.html&#34;&gt;Android Security Bulletins&lt;/a&gt;では、各脆弱性がAndroidのどのバージョンで改修されるかが分かります。
-例えばCVE-2016-6703では以下のように示されます。&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;CVE&lt;/th&gt;
-&lt;th&gt;参照&lt;/th&gt;
-&lt;th&gt;重大度&lt;/th&gt;
-&lt;th&gt;更新対象のGoogle端末&lt;/th&gt;
-&lt;th&gt;更新対象のAOSPバージョン&lt;/th&gt;
-&lt;th&gt;報告日&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;CVE-2016-6703&lt;/td&gt;
-&lt;td&gt;A-30765246&lt;/td&gt;
-&lt;td&gt;高&lt;/td&gt;
-&lt;td&gt;なし&lt;/td&gt;
-&lt;td&gt;4.4.4, 5.0.2, 5.1.1&lt;br&gt;6.0, 6.0.1&lt;/td&gt;
-&lt;td&gt;Google 社内&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;この例の場合Android6.0.1ならパッチがアップされていますが、おそらくAndroid3.0系ではパッチがありません。（脆弱性そのものに関係ないかもしれません。）&lt;/p&gt;
-
-&lt;p&gt;問題は、メーカがそのアップデートを反映させるかどうかです。こういったセキュリティの心配に対してわかりやすさを提供してくれるのが「セキュリティパッチレベル」と言うことが出来そうです。&lt;/p&gt;</description>
         </item>
       
     
